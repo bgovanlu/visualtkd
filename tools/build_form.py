@@ -55,6 +55,8 @@ def build(path, do_print):
         "TITLE": F["title"], "KO": F["ko"], "PDF": F["pdf"], "BOARD_MIN": str(F["boardMin"]),
         "TRI": tri(tg), "TRIGRAM": f'{tg["name"]} {tg["sym"]} · {tg["meaning"]}',
         "MOVEMENTS": str(F["movements"]), "COUNTS": str(len(F["moves"]) - 1),
+        # big forms shrink the cards so every bar fits: optional cardW / figH in the JSON
+        "SIZE_CSS": f':root{{--card-w:{F["cardW"]}px;--fig-h:{F["figH"]}px}}' if "cardW" in F else "",
         "NOTE_H": F["note"]["h"], "NOTE_P": F["note"]["p"], "REFS": refs(F), "FOOTER": F["footer"], "FORM_JSON": data,
     }
     for k, v in rep.items(): t = t.replace("{{" + k + "}}", v)

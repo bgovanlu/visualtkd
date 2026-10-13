@@ -36,10 +36,11 @@ After building a new form: set its `url` in the `FORMS` list in `site/index.html
 
 - `id`: Kukkiwon counting. A kick and the strike after it share a number: `8-1` (kick), `8-2` (strike). Ready is `J`.
 - `dir`: `na` (top/start), `ga` (bottom), `da1–3` (right side of page), `ra1–3` (left side). You start at na facing ga, so a **left** turn from the start faces **da** (right of the page).
-- `view`: `side` for moves along the ra/da bars (needs `face`: `R` = facing right of page, `L` = left); `front` for moves toward ga; `back` for moves toward na.
-- `stance`: `ready`, `walk` (ap seogi), `front` (ap kubi), `kick`. `lead` = forward foot, or the kicking leg for `kick`.
-- `arms`: per hand, any of `low`, `punch`, `hpunch`, `inside`, `high`, `guard`, `junbi`; unlisted hands are chambered at the hip.
-- `tech` keys the label table (`junbi, low, punch, inside, high, kick, hpunch`); add new techniques to `T` in the template.
+- `view`: `side` for moves along the ra/da bars (needs `face`: `R` = facing right of page, `L` = left); `front` for moves toward ga; `back` for moves toward na. Exception: side kicks (`skick`) are always drawn in profile, even on the centre line, with `face` set so the kicking leg is the near (white) leg.
+- `stance`: `ready`, `walk` (ap seogi), `front` (ap kubi), `back` (dwit kubi), `kick` (ap chagi), `skick` (yeop chagi). `lead` = forward foot, or the kicking leg for kicks. For `back`, `lead` is the **front** foot; descriptions say "back stance with the left foot forward" so the naming convention can't be misread.
+- `arms`: per hand. Fist: `low`, `punch`, `hpunch`, `inside`, `outer`, `high`, `backfist`, `guard`, `junbi`. Open hand (drawn flat): `ksout` (single knife-hand outer block), `ksblock` + `ksguard` (double knife-hand block: blocking hand + guarding hand), `spear` + `press` (spear-hand thrust + pressing hand under the elbow), `neck` (knife-hand neck strike), `khigh` (knife-hand high block; with `neck` = swallow-form). Unlisted hands are chambered at the hip.
+- `tech` keys the label table `T` in the template (`junbi, low, punch, hpunch, inside, outer, high, kick, skick, ksout, ksblock, spear, neck, jebi, backfist`); add new techniques there.
+- Steps with several techniques (double punch, block then punch) get sub-numbers like kicks: `17-1` block, `17-2` punch, `17-3` punch. One figure per count.
 - `note`: `bandae` (punch hand = lead foot) or `baro` (opposite hand). `kihap: true` on the shouting move.
 - `desc`: one plain instruction sentence: turn and direction, stance, technique.
 
@@ -49,19 +50,21 @@ After building a new form: set its `url` in the `FORMS` list in `site/index.html
 - Every move id must appear exactly once in `layout` and in `pos` (build fails otherwise).
 - `pos` is the phone minimap position on a 100×60 grid: bars at y 8/30/52, centre x 50, ra side x 10–30, da side x 70–90.
 - `boardMin` = desktop board width in px; raise it when a bar holds more figures (Il Jang 1120, Ee Jang 1320).
+- Optional `cardW` / `figH` shrink the figure cards when a bar holds 9+ figures (Sam Jang 104/124, Sa Jang 112/132). Keep the print sheet to exactly 2 pages; check the page count after building.
 
 ## Figure
 
 - Design **Textbook line A1 "Natural"**: realistic adult proportions, single-contour limbs, sloped shoulders, faceless head (profile shape only on side views), short hair cap above the hairline, black-collar dobok, belt in the selected colour.
 - **Near limbs white, far limbs grey** — this is how left/right is read; keep it for every pose.
-- Seen from behind, a kicking leg is raised in front of the body: draw it over the torso in the far-side grey.
+- Seen from behind, a kicking leg is raised in front of the body: draw it over the torso in the far-side grey. (Brian finds this weak; redesign tracked in GitHub issue #1.)
+- Seen from the front, punches and knife-hand neck strikes come toward the viewer: draw the arm foreshortened with the fist face / knife-hand edge, never across the face.
 - New poses go in the template's `skel()`; check them in front, side and back views before use.
 - No faces, no brand logos, no copyrighted characters.
 
 ## Stance cues
 
-- Chips: walking stance = outlined, front stance = **filled**, kick = dashed.
-- Footprint glyph (top view, rotated to the facing direction): red foot leads, blue tick = facing. Ap seogi short and nearly in line; ap kubi long and fist-width wide with the rear foot turned out.
+- Chips: walking stance = outlined, front stance = **filled**, back stance = double outline, kick = dashed.
+- Footprint glyph (top view, rotated to the facing direction): red foot leads, blue tick = facing. Ap seogi short and nearly in line; ap kubi long and fist-width wide with the rear foot turned out; dwit kubi an L shape, heels in line, rear foot turned 90°.
 
 ## URLs — stable, because they are printed
 
