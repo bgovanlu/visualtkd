@@ -1,0 +1,7 @@
+# visualtkd.com short links used by printed QR codes
+# format: /path  destination  status
+/go/kukkiwon-t1        https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1347&page=2&menuLevel=3&menuNo=72  302
+/go/kukkiwon-poomsae   https://www.kukkiwon.or.kr/eng/board/list?boardManagementNo=55&menuLevel=3&menuNo=72  302
+/go/video-t1           https://www.youtube.com/watch?v=T6J2C1QJLts  302
+/go/kukkiwon-youtube   https://www.youtube.com/channel/UCaQb3jutLu15oSfhPh8FACQ  302
+/go/wt-poomsae-rules   https://www.worldtaekwondo.org/att_file/documents/Poomsae%20Competition%20Rules%20and%20Interpretation%20(In%20force%20as%20of%20September%2030%202024).pdf  302

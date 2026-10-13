@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 rx=%223%22 fill=%22%231f3a8a%22/%3E%3Cpath d=%22M3 4h10M3 8h10M3 12h10%22 stroke=%22white%22 stroke-width=%221.6%22/%3E%3C/svg%3E">
+<style>body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
+</head>
+<body>
+<title>Textbook Figure Variations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700;900&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one row per variation (A1–A5) standing on a shared floor line in the same six poses, for pose-by-pose comparison. */
+:root{
+  --bg:#edf0f5; --surface:#ffffff; --mat:#e2e7ef; --ink:#141a2b; --muted:#5a6377; --line:#c3cbd8;
+  --heaven:#1f3a8a; --fire:#c8102e; --figbg:var(--surface);
+  --f-display:"Noto Serif KR","Nanum Myeongjo",Georgia,serif;
+  --f-body:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0d1220; --surface:#151c2d; --mat:#1b2437; --ink:#e7ebf3; --muted:#97a1b6; --line:#2c3650;
+  --heaven:#87a3ff; --fire:#ff5a6e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1220; --surface:#151c2d; --mat:#1b2437; --ink:#e7ebf3; --muted:#97a1b6; --line:#2c3650;
+  --heaven:#87a3ff; --fire:#ff5a6e; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:20px;padding-block:28px 56px;display:flex;flex-direction:column;gap:20px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(30px,4.6vw,46px);line-height:1.05}
+header p{margin:6px 0 0;color:var(--muted);max-width:66ch}
+.tools{display:flex;flex-direction:column;gap:6px}
+.tools small{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+.belts{display:flex;gap:6px}
+.belts button{width:26px;height:26px;border-radius:50%;border:2px solid var(--line);cursor:pointer;padding:0}
+.belts button[aria-pressed="true"]{border-color:var(--ink);box-shadow:0 0 0 2px var(--surface) inset}
+.belts button:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+.design{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 22px 14px;display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:20px;align-items:center}
+.meta{display:flex;flex-direction:column;gap:6px;min-width:0}
+.letter{font-family:var(--f-mono);font-size:13px;color:var(--fire);letter-spacing:.08em}
+.meta h2{margin:0;font-family:var(--f-display);font-size:24px;font-weight:700;line-height:1.15}
+.meta p{margin:0;font-size:14px;color:var(--muted)}
+.poses{overflow-x:auto}
+.row{position:relative;display:grid;grid-template-columns:repeat(6,minmax(112px,1fr));min-width:690px;align-items:end}
+.row::before{content:"";position:absolute;left:0;right:0;bottom:38px;height:2px;background:var(--line)}
+.pose{display:flex;flex-direction:column;align-items:center;gap:6px}
+.pose svg{height:200px;width:auto;overflow:visible}
+.pose span{font-size:11.5px;color:var(--muted);text-align:center;line-height:1.25;height:24px}
+footer{font-size:13px;color:var(--muted);max-width:72ch}
+@media (max-width:760px){.design{grid-template-columns:1fr}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Textbook line · variations</h1>
+      <p>Five more realistic takes on design A. Limbs are now single drawn contours, shoulders slope, the torso tapers, and side views show a real profile. Near limbs are white and far limbs grey, so left and right stay easy to read.</p>
+    </div>
+    <div class="tools"><small>Belt</small><div class="belts" id="belts"></div></div>
+  </header>
+  <div id="designs" style="display:flex;flex-direction:column;gap:16px"></div>
+  <footer>Every variation shares the same skeleton and move data, so the one you choose drops straight into Taegeuk Il Jang and the forms that follow.</footer>
+</div>
+
+<script>
+(function(){
+const BELTS={white:"#f4f4f2",yellow:"#f2c230",green:"#2f8f4e",blue:"#2456c8",red:"#c8102e",black:"#17181c"};
+let belt="black",gid=0;
+
+/* ---------- vector helpers ---------- */
+const f=n=>(+n).toFixed(2);
+const add=(a,b)=>[a[0]+b[0],a[1]+b[1]],sub=(a,b)=>[a[0]-b[0],a[1]-b[1]],mul=(a,k)=>[a[0]*k,a[1]*k];
+const norm=a=>{const l=Math.hypot(a[0],a[1])||1;return[a[0]/l,a[1]/l]};
+const lerp=(a,b,t)=>[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t];
+const dist=(a,b)=>Math.hypot(a[0]-b[0],a[1]-b[1]);
+function ik(a,b,l1,l2,pref){
+  let dx=b[0]-a[0],dy=b[1]-a[1],d=Math.hypot(dx,dy);const mx=l1+l2-.6;
+  if(d>mx){b=[a[0]+dx/d*mx,a[1]+dy/d*mx];dx=b[0]-a[0];dy=b[1]-a[1];d=mx}
+  d=Math.max(d,1e-3);
+  const ang=Math.acos(Math.max(-1,Math.min(1,(l1*l1+d*d-l2*l2)/(2*l1*d)))),base=Math.atan2(dy,dx);
+  const c1=[a[0]+Math.cos(base+ang)*l1,a[1]+Math.sin(base+ang)*l1],c2=[a[0]+Math.cos(base-ang)*l1,a[1]+Math.sin(base-ang)*l1];
+  const mid=lerp(a,b,.5),s=p=>(p[0]-mid[0])*pref[0]+(p[1]-mid[1])*pref[1];
+  return[s(c1)>=s(c2)?c1:c2,b];
+}
+const area=P=>P.reduce((s,p,i)=>{const q=P[(i+1)%P.length];return s+p[0]*q[1]-q[0]*p[1]},0);
+const orient=P=>area(P)<0?P.slice().reverse():P;
+function spline(Q,tension=1){
+  const P=orient(Q),n=P.length,k=6/tension;let d=`M${f(P[0][0])} ${f(P[0][1])}`;
+  for(let i=0;i<n;i++){const p0=P[(i-1+n)%n],p1=P[i],p2=P[(i+1)%n],p3=P[(i+2)%n];
+    d+=`C${f(p1[0]+(p2[0]-p0[0])/k)} ${f(p1[1]+(p2[1]-p0[1])/k)} ${f(p2[0]-(p3[0]-p1[0])/k)} ${f(p2[1]-(p3[1]-p1[1])/k)} ${f(p2[0])} ${f(p2[1])}`}
+  return d+"Z";
+}
+function openCurve(P){ // smooth open stroke
+  let d=`M${f(P[0][0])} ${f(P[0][1])}`;const n=P.length;
+  for(let i=0;i<n-1;i++){const p0=P[Math.max(i-1,0)],p1=P[i],p2=P[i+1],p3=P[Math.min(i+2,n-1)];
+    d+=`C${f(p1[0]+(p2[0]-p0[0])/6)} ${f(p1[1]+(p2[1]-p0[1])/6)} ${f(p2[0]-(p3[0]-p1[0])/6)} ${f(p2[1]-(p3[1]-p1[1])/6)} ${f(p2[0])} ${f(p2[1])}`}
+  return d;
+}
+function xf(P,o,ang=0,sx=1,sy=1){const c=Math.cos(ang),s=Math.sin(ang);return P.map(([x,y])=>[o[0]+x*sx*c-y*sy*s,o[1]+x*sx*s+y*sy*c])}
+const ellPts=(c,rx,ry,ang=0)=>{const P=[];for(let i=0;i<14;i++){const t=i/14*Math.PI*2;P.push([Math.cos(t)*rx,Math.sin(t)*ry])}return xf(P,c,ang)};
+const ln=(a,b)=>`M${f(a[0])} ${f(a[1])}L${f(b[0])} ${f(b[1])}`;
+
+/* ---------- limb contour ----------
+   One closed outline around shoulder→elbow→wrist (or hip→knee→ankle),
+   offset by a width profile so cloth tapers and flares like a dobok. */
+const TS=[0,.14,.28,.42,.5,.58,.72,.86,1];
+function contour(ch,W,capTop){
+  const[a,j,b]=ch,d1=norm(sub(j,a)),d2=norm(sub(b,j)),dm=norm(add(d1,d2));
+  const Lp=[],Rp=[],mid=[];
+  TS.forEach((t,i)=>{
+    let p,d;
+    if(t<.5){p=lerp(a,j,t/.5);d=d1}else if(t>.5){p=lerp(j,b,(t-.5)/.5);d=d2}else{p=j;d=dm}
+    const n=[-d[1],d[0]],w=W[i];Lp.push(add(p,mul(n,w)));Rp.push(add(p,mul(n,-w)));mid.push({p,n,w,d});
+  });
+  const pts=[...Lp,...Rp.reverse()];
+  if(capTop)pts.push(add(a,mul(d1,-W[0]*.75)));
+  return{pts,mid,d1,d2};
+}
+
+/* ---------- skeleton ---------- */
+const FOOT_SIDE=[[-3.4,-1.6],[1.6,-1.8],[5,.8],[9.4,3],[12.8,4.4],[14,5.9],[11,6.5],[6,6.1],[2.6,5.7],[-1.8,6.4],[-5,6],[-5.9,2.8]];
+const FOOT_FRONT=[[-3.9,-1.4],[3.9,-1.4],[5.1,3.4],[5.6,6],[2,6.9],[-2,6.9],[-5.6,6],[-5.1,3.4]];
+const FOOT_HEEL=[[-3.7,-1],[3.7,-1],[4.4,3.8],[3.2,6.5],[-3.2,6.5],[-4.4,3.8]];
+const FIST=[[-.4,-3.8],[3,-4.6],[7.6,-4.5],[9.8,-2.8],[10.3,.4],[9.4,3.6],[6,4.8],[1.6,4.3],[-.4,3.6]];
+const FIST_FACE=[[-5.4,-4.3],[5.4,-4.3],[6.3,0],[5.6,4.5],[-5.6,4.5],[-6.3,0]];
+const mk=far=>({far,legs:[],arms:[],feet:[],fists:[],torso:null,head:null,neck:null});
+
+function skel(m,pr){
+  const k=(pr.thigh+pr.shin)/65,tk=pr.torso/55,ak=(pr.upper+pr.fore)/47,sw=pr.shW/18.5,hw=pr.hipW/9;
+  function addArm(L,sh,h,pref,pf){
+    if(pf){L.arms.push({ch:[sh,lerp(sh,h,.5),h],front:true});L.fists.push({c:h,front:true});return}
+    const[e,w]=ik(sh,h,pr.upper,pr.fore,pref);L.arms.push({ch:[sh,e,w]});L.fists.push({w,d:norm(sub(w,e))});
+  }
+  if(m.view==="side"){
+    const near=m.face==="R"?"R":"L",st=m.stance;
+    const hipY={walk:0,front:14,kick:-2}[st]*k,lean={walk:2,front:5,kick:-8}[st]*tk;
+    const H=[0,hipY],S=[lean,hipY-pr.torso],u=norm(sub(S,H)),r=[-u[1],u[0]],Lt=pr.torso;
+    const P=(x,y)=>add(add(H,mul(r,x)),mul(u,y));
+    const Lay={farArm:mk(1),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0),nearArm:mk(0)};
+    const shN=P(0,Lt-5.5*tk),SH={near:shN,far:add(shN,[-3,-1.2])},hN=P(0,1),HP={near:hN,far:add(hN,[-3,0])};
+    ["L","R"].forEach(s=>{
+      const dp=s===near?"near":"far",lead=s===m.lead;
+      let t,pref=[1,-.25];
+      if(st==="walk")t=lead?[24,56]:[-22,56];
+      else if(st==="front")t=lead?[38,56]:[-44,56];
+      else{t=lead?[58,-16]:[-5,56];if(lead)pref=[.4,-1];}
+      t=mul(t,k);
+      const hp=HP[dp],[kn,an]=ik(hp,t,pr.thigh,pr.shin,pref),Lg=dp==="near"?Lay.nearLeg:Lay.farLeg;
+      Lg.legs.push({ch:[hp,kn,an]});
+      const kick=st==="kick"&&lead;
+      Lg.feet.push({pts:xf(FOOT_SIDE,an,kick?-1.25:0,(lead||st==="kick"?1:.82)*pr.foot,pr.foot)});
+      const act=(m.arms&&m.arms[s])||"chamber",sh=SH[dp];let h,p=[0,1];
+      if(act==="chamber"){h=[-4,hipY-11*tk];p=[-1,.1]}
+      else if(act==="punch")h=add(sh,mul([46,6],ak));
+      else if(act==="low")h=[26*ak,hipY-2];
+      else if(act==="inside")h=add(sh,mul([22,-1],ak));
+      else if(act==="high"){h=add(sh,mul([17,-30],ak));p=[1,-.15]}
+      else h=dp==="near"?add(sh,mul([24,14],ak)):add(sh,mul([17,7],ak));
+      addArm(dp==="near"?Lay.nearArm:Lay.farArm,sh,h,p);
+    });
+    const ang=Math.atan2(u[0],-u[1]),hs=pr.head,Hc=P(2.2,Lt+10.6*hs+3);
+    Lay.head.head={c:Hc,s:hs,ang,view:"side"};
+    Lay.head.neck={pts:[P(-3.2,Lt-3),P(5.2,Lt-3),add(Hc,xf([[5.2,7.5*hs]],[0,0],ang)[0]),add(Hc,xf([[-2.8,7.2*hs]],[0,0],ang)[0])]};
+    const ww=pr.waist;
+    Lay.torso.torso={
+      pts:[P(-4.8,Lt+1.8),P(-10.2,Lt-5),P(-11*ww,Lt-23*tk),P(-9.6*ww,9),P(-13,-11),P(0,-13),P(12.8,-11),P(10*ww,11),P(12.6,Lt-20*tk),P(10.6,Lt-6),P(4.6,Lt+1.2)],
+      collar:openCurve([P(3.8,Lt+.6),P(7.6,Lt-6),P(10.4,Lt-15*tk)]),
+      lapel:"",
+      under:openCurve([P(-13,-10.5),P(0,-12),P(12.8,-10.5)]),
+      gather:"",
+      band:[P(-10.4*ww,7),P(10.6*ww,7),P(10.6*ww,2.4),P(-10.4*ww,2.4)],
+      tails:[[P(9.6*ww,4.6),P(13.6,-13)],[P(9.2*ww,4.6),P(8.2,-14.2)]],knot:null,
+      shadeA:P(-12,Lt/2),shadeB:P(12,Lt/2)
+    };
+    return{k,mirror:m.face==="L",layers:["farArm","farLeg","nearLeg","head","torso","nearArm"].map(q=>Lay[q])};
+  }
+  const back=m.view==="back",sx=s=>(s==="L"?1:-1)*(back?-1:1),st=m.stance;
+  const hipY=st==="front"?6*k:-3*k,T=hipY-pr.torso;
+  const Lay={arms:mk(0),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0)};
+  ["L","R"].forEach(s=>{
+    const x=sx(s),hp=[x*pr.hipW*.95,hipY];let an,kn,nearer=true,sc=1;
+    if(st==="ready"){an=[x*11*hw,58*k];kn=add(lerp(hp,an,.5),[x*.6,0])}
+    else{
+      const lead=s===m.lead;nearer=back?!lead:lead;
+      if(nearer){an=[x*14*hw,63*k];kn=lead?[x*13.5*hw,hipY+pr.thigh*.7]:add(lerp(hp,an,.5),[x*.4,0]);sc=1.1}
+      else{an=[x*12.5*hw,52*k];kn=lead?[x*12.5*hw,hipY+pr.thigh*.62]:add(lerp(hp,an,.5),[x*.4,0]);sc=.86}
+    }
+    const Lg=nearer?Lay.nearLeg:Lay.farLeg;
+    Lg.legs.push({ch:[hp,kn,an],front:true});
+    Lg.feet.push({pts:xf(back?FOOT_HEEL:FOOT_FRONT,add(an,[x*.8,0]),0,sc*x*pr.foot,sc*pr.foot)});
+    const act=(m.arms&&m.arms[s])||"chamber",sh=[x*pr.shW,T+8*tk];
+    if(act==="punch"){
+      if(back)addArm(Lay.arms,sh,[x*-3,T+20*tk],[x,.2]);
+      else addArm(Lay.arms,sh,[x*1.5,T+20*tk],null,true);
+    }else{
+      const h=act==="chamber"?[x*(pr.hipW+7),hipY-9*tk]:act==="low"?[x*(pr.hipW+15),hipY+4*k]:[x*6.5,hipY-12*tk];
+      addArm(Lay.arms,sh,h,[x,.15]);
+    }
+  });
+  const hs=pr.head,Hc=[0,T-10.4*hs-2.6];
+  Lay.head.head={c:Hc,s:hs,ang:0,view:back?"back":"front"};
+  Lay.head.neck={pts:[[-4.3*hs,Hc[1]+6*hs],[4.3*hs,Hc[1]+6*hs],[5.4,T+2],[-5.4,T+2]]};
+  const ww=pr.waist;
+  Lay.torso.torso={
+    pts:[[-5.6,T-.6],[-13*sw,T+1.6],[-19.6*sw,T+4.8],[-21*sw,T+9],[-18.6*sw,T+24*tk],[-14.6*hw*ww,hipY-8],[-16.8*hw,hipY+12],[0,hipY+13.4],[16.8*hw,hipY+12],[14.6*hw*ww,hipY-8],[18.6*sw,T+24*tk],[21*sw,T+9],[19.6*sw,T+4.8],[13*sw,T+1.6],[5.6,T-.6]],
+    collar:back?openCurve([[-6.5,T+.4],[0,T+3.2],[6.5,T+.4]]):openCurve([[-6,T-.2],[-2,T+9*tk],[1.4,T+20*tk]])+openCurve([[6,T-.2],[2.4,T+8*tk],[-1.4,T+15*tk]]),
+    lapel:back?openCurve([[0,T+5],[0,hipY-8]]):openCurve([[1.4,T+20*tk],[3.6,T+34*tk],[5.6*hw,hipY-8]]),
+    under:back?"":ln([5.6*hw,hipY-1],[6.2*hw,hipY+12.8]),
+    gather:openCurve([[-8*hw,hipY-.2],[-9*hw,hipY+5]])+openCurve([[8*hw,hipY-.2],[9*hw,hipY+5]]),
+    band:[[-15*hw*ww,hipY-6.8],[15*hw*ww,hipY-6.8],[15.1*hw*ww,hipY-2],[-15.1*hw*ww,hipY-2]],
+    tails:back?[]:[[[0,hipY-3],[-4.6,hipY+14]],[[0,hipY-3],[4.6,hipY+14]]],
+    knot:back?null:[[-3.6,hipY-8.6],[3.6,hipY-8.6],[3.6,hipY+.2],[-3.6,hipY+.2]],
+    shadeA:[-20,T+20],shadeB:[20,T+20]
+  };
+  return{k,mirror:false,layers:back?[Lay.arms,Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso]:[Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso,Lay.arms]};
+}
+
+/* ---------- head shapes (local units, x forward / y down) ---------- */
+const HEAD_SIDE=[[-8.6,-1],[-7.6,-7.6],[-3,-11],[3,-10.8],[7.2,-7.4],[8.1,-3.4],[8.9,-1.2],[9.6,.4],[8.4,1.5],[8.6,3.4],[8.1,5.1],[7.4,7.3],[4.8,9.3],[.6,9],[-4.6,6.4],[-7.6,3.6]];
+const HEAD_FRONT=[[0,-11],[5.8,-9.6],[8,-4.4],[7.9,1],[6.6,6],[3.6,9.2],[0,10.2],[-3.6,9.2],[-6.6,6],[-7.9,1],[-8,-4.4],[-5.8,-9.6]];
+const HAIR={
+  short:{side:[[6.6,-7.6],[2.5,-11.5],[-3.8,-11.4],[-8.8,-6],[-9.2,0],[-8,4.2],[-6.2,4.6],[-5.4,.2],[-3.4,-3.6],[.6,-5.8],[5,-6]],
+         front:[[-8.3,-3],[-7,-9.2],[0,-11.8],[7,-9.2],[8.3,-3],[7.4,-3.6],[5.2,-7.2],[0,-7.8],[-5.2,-7.2],[-7.4,-3.6]]},
+  part:{side:[[7.4,-6.6],[3,-11.8],[-3.8,-11.9],[-9,-6.2],[-9.4,.6],[-8,4.8],[-6,5],[-5.4,0],[-3,-3.8],[1.6,-5.2],[6.4,-4.4]],
+         front:[[-8.5,-2.4],[-7.3,-9.5],[-1,-12.1],[7.2,-9.8],[8.5,-2.6],[7.4,-3.8],[4.6,-7],[-2.4,-7.4],[-4.6,-5.6],[-7.5,-3.4]]},
+  crop:{side:[[6,-8.2],[2.4,-11.2],[-3.6,-11.1],[-8.4,-6],[-8.8,-.6],[-7.6,2.8],[-6.2,3],[-5.4,-.8],[-3,-4.4],[.6,-6.6],[4.6,-6.9]],
+         front:[[-8.1,-4],[-6.8,-9.1],[0,-11.4],[6.8,-9.1],[8.1,-4],[7.2,-4.6],[5,-7.8],[0,-8.4],[-5,-7.8],[-7.2,-4.6]]},
+  bun:{side:[[7,-7],[2.6,-11.7],[-4,-11.5],[-8.9,-6],[-9.3,0],[-8,4.4],[-6,4.6],[-5.3,0],[-3.2,-4],[1.4,-6],[6,-5.6]],
+         front:[[-8.4,-2.4],[-7.1,-9.4],[0,-11.9],[7.1,-9.4],[8.4,-2.4],[7.5,-3.2],[6,-6.8],[0,-8.4],[-6,-6.8],[-7.5,-3.2]],
+         bun:{side:[-8.6,-8.4,4.6],front:[0,-12.6,4.4],back:[0,-7.4,5]}}
+};
+
+/* ---------- renderer ---------- */
+function draw(sk,D){
+  const bc=BELTS[belt],O=D.ink,pr=D.pr;
+  let defs="";
+  const grad=(A,B,c1,c2)=>{const id="g"+(++gid);defs+=`<linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="${f(A[0])}" y1="${f(A[1])}" x2="${f(B[0])}" y2="${f(B[1])}"><stop offset="0" stop-color="${c1}"/><stop offset=".55" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient>`;return`url(#${id})`};
+  const out=sk.layers.map(L=>{
+    const gi=L.far?D.giFar:D.gi,skin=L.far?D.skinFar:D.skin,hair=D.hair;
+    const shapes=[];let det="";
+    L.legs.forEach(l=>{
+      const W=pr.legW.map((w,i)=>w*(l.front?1.08:1)+(i===TS.length-1?pr.flare:0));
+      const c=contour(l.ch,W,true);shapes.push({d:spline(c.pts),c});
+      const e=c.mid[TS.length-1],a=add(e.p,mul(e.d,-.6));det+=ln(add(a,mul(e.n,e.w*.96)),add(a,mul(e.n,-e.w*.96)));
+      if(D.folds){const kk=c.mid[4];det+=openCurve([add(kk.p,mul(kk.n,-kk.w*.2)),add(add(kk.p,mul(kk.d,3)),mul(kk.n,-kk.w*.65))]);
+        const sh=c.mid[6];det+=ln(add(sh.p,mul(sh.n,sh.w*.3)),add(c.mid[7].p,mul(c.mid[7].n,c.mid[7].w*.35)))}
+    });
+    L.arms.forEach(a=>{
+      const W=pr.armW.map((w,i)=>w*(a.front?1.05:1)+(i===TS.length-1?pr.flare*.8:0));
+      const c=contour(a.ch,W,true);shapes.push({d:spline(c.pts),c});
+      if(!a.front){const e=c.mid[TS.length-1];det+=ln(add(e.p,mul(e.n,e.w*.96)),add(e.p,mul(e.n,-e.w*.96)))}
+      if(D.folds&&!a.front){const el=c.mid[4];det+=openCurve([add(el.p,mul(el.n,el.w*.15)),add(add(el.p,mul(el.d,-3.2)),mul(el.n,el.w*.75))])+openCurve([add(c.mid[6].p,mul(c.mid[6].n,-c.mid[6].w*.7)),add(c.mid[7].p,mul(c.mid[7].n,-c.mid[7].w*.1))])}
+    });
+    if(L.torso){shapes.push({d:spline(L.torso.pts,1.1),torso:true});det+=L.torso.lapel+L.torso.under+(D.folds?L.torso.gather:"")}
+    let g="";
+    if(shapes.length){
+      const all=shapes.map(s=>s.d).join("");
+      g+=`<path d="${all}" fill="none" stroke="${O}" stroke-width="${D.ow*2}" stroke-linejoin="round"/>`;
+      shapes.forEach(s=>{
+        let fill=gi;
+        if(D.shade){
+          if(s.c){const m=s.c.mid[4];fill=grad(add(m.p,mul(m.n,m.w)),add(m.p,mul(m.n,-m.w)),gi,L.far?D.shadeFar:D.shadeCol)}
+          else fill=grad(L.torso.shadeA,L.torso.shadeB,gi,D.shadeCol);
+        }
+        g+=`<path d="${s.d}" fill="${fill}"/>`;
+      });
+      if(det)g+=`<path d="${det}" fill="none" stroke="${O}" stroke-width="${D.dw}" stroke-linecap="round" stroke-linejoin="round"/>`;
+    }
+    const skinPath=d=>g+=`<path d="${d}" fill="${skin}" stroke="${O}" stroke-width="${D.sw}" stroke-linejoin="round"/>`;
+    L.feet.forEach(ft=>skinPath(spline(ft.pts)));
+    L.fists.forEach(q=>{
+      if(q.front){skinPath(spline(xf(FIST_FACE,q.c,0,1.05,1.05)));g+=`<path d="${[-2.7,0,2.7].map(x=>ln([q.c[0]+x,q.c[1]-4],[q.c[0]+x,q.c[1]-.6])).join("")}" stroke="${O}" stroke-width="${D.dw}" stroke-linecap="round"/>`}
+      else{const ang=Math.atan2(q.d[1],q.d[0]);skinPath(spline(xf(FIST,q.w,ang,pr.fist,pr.fist)));g+=`<path d="${openCurve(xf([[3.2,1.4],[6,1.9],[8.4,1.6]],q.w,ang,pr.fist,pr.fist))}" fill="none" stroke="${O}" stroke-width="${D.dw}" stroke-linecap="round"/>`}
+    });
+    if(L.neck)skinPath(spline(L.neck.pts,1.4));
+    if(L.head){
+      const h=L.head,Hd=HAIR[pr.hair],bun=Hd.bun;
+      const loc=P=>xf(P,h.c,h.ang,h.s,h.s);
+      const hairPath=d=>g+=`<path d="${d}" fill="${hair}" stroke="${O}" stroke-width="${D.sw}" stroke-linejoin="round"/>`;
+      if(bun&&h.view!=="back"){const b=bun[h.view];hairPath(spline(ellPts(loc([[b[0],b[1]]])[0],b[2]*h.s,b[2]*h.s*.9)))}
+      if(h.view==="side"){
+        skinPath(spline(loc(HEAD_SIDE)));
+        hairPath(spline(loc(Hd.side)));
+        skinPath(spline(ellPts(loc([[-2.2,.6]])[0],1.9*h.s,2.9*h.s,h.ang)));
+      }else if(h.view==="front"){
+        [-1,1].forEach(s=>skinPath(spline(ellPts(loc([[s*7.8,.6]])[0],1.7*h.s,2.8*h.s))));
+        skinPath(spline(loc(HEAD_FRONT)));
+        hairPath(spline(loc(Hd.front)));
+      }else{
+        [-1,1].forEach(s=>skinPath(spline(ellPts(loc([[s*7.8,.6]])[0],1.7*h.s,2.8*h.s))));
+        hairPath(spline(loc(HEAD_FRONT.map(([x,y])=>[x*1.02,y<6?y*1.02:y*.86]))));
+        if(bun){const b=bun.back;hairPath(spline(ellPts(loc([[b[0],b[1]]])[0],b[2]*h.s,b[2]*h.s*.92)))}
+      }
+    }
+    if(L.torso){
+      const t=L.torso;
+      g+=`<path d="${t.collar}" fill="none" stroke="${D.collarCol||O}" stroke-width="${D.collar}" stroke-linecap="round" stroke-linejoin="round"/>`;
+      let b=spline(t.band,2);t.tails.forEach(([a,c])=>{const d=norm(sub(c,a)),n=[-d[1],d[0]];b+=spline([add(a,mul(n,1.5)),add(c,mul(n,1.4)),add(c,mul(n,-1.4)),add(a,mul(n,-1.5))],3)});
+      if(t.knot)b+=spline(t.knot,2);
+      g+=`<path d="${b}" fill="${bc}" stroke="${O}" stroke-width="${D.dw}" stroke-linejoin="round"/>`;
+    }
+    return g;
+  }).join("");
+  return{defs,out};
+}
+
+/* ---------- the five variations ---------- */
+const LEG=[9.8,9.5,8.7,7.7,7.4,7.3,7,7.2,7.9];
+const ARM=[6.6,6.3,5.9,5.4,5.1,5,4.9,5.1,5.8];
+const BASE={thigh:33,shin:32,upper:24,fore:23,torso:55,head:.95,shW:18.5,hipW:9,waist:1,legW:LEG,armW:ARM,flare:.6,fist:.95,foot:1,hair:"short"};
+const LINE={ink:"#1b2030",gi:"#fdfdfb",giFar:"#dfe3ea",skin:"#ecd0b6",skinFar:"#cfb39b",hair:"#2a2f3a",ow:1.45,dw:1,sw:1.6,collar:3.2};
+const sc=(A,k)=>A.map(x=>x*k);
+const V=[
+  {L:"A1",name:"Natural",about:"Realistic adult proportions, a standard dobok and the cleanest line. The closest to a modern Kukkiwon manual.",
+   pr:{...BASE},D:{...LINE}},
+  {L:"A2",name:"Draped dobok",about:"Same body in a looser uniform: wider sleeves and trousers that flare at the hem, with creases at the elbow, knee and under the belt.",
+   pr:{...BASE,legW:sc(LEG,1.1),armW:sc(ARM,1.12),flare:2.2,hair:"part"},D:{...LINE,folds:true}},
+  {L:"A3",name:"Athlete",about:"Competition build: broader shoulders, narrow waist, longer legs and a fitted poomsae dobok. Reads as a demonstration-team performer.",
+   pr:{...BASE,shW:22.5,hipW:8.4,waist:.8,torso:57,thigh:35,shin:34,head:.86,legW:sc(LEG,.92),armW:sc(ARM,1.1),flare:.2,hair:"crop",fist:1.02},D:{...LINE}},
+  {L:"A4",name:"Athlete, women's",about:"The same fitted dobok on a women's build, with narrower shoulders and the hair up in a bun. Useful alongside A3 so both appear in course material.",
+   pr:{...BASE,shW:17,hipW:9.5,waist:.9,torso:52,thigh:33.5,shin:32.5,head:.94,legW:sc(LEG,.96),armW:sc(ARM,.9),flare:.4,hair:"bun",fist:.88,foot:.92},D:{...LINE,hair:"#3a2a24"}},
+  {L:"A5",name:"Illustrated",about:"A1's proportions with a heavier outer contour and soft shading on the turned-away side of each limb, for a more drawn, three-dimensional look.",
+   pr:{...BASE,hair:"part"},D:{...LINE,ow:2,dw:.85,sw:1.8,shade:true,shadeCol:"#cfd5e0",shadeFar:"#b9c0cd",giFar:"#e3e7ee"}}
+];
+
+const POSES=[
+  {label:"Junbi · ready",view:"front",stance:"ready",arms:{L:"junbi",R:"junbi"}},
+  {label:"2 · middle punch",view:"side",face:"R",stance:"walk",lead:"R",arms:{R:"punch"}},
+  {label:"7 · inside block",view:"side",face:"L",stance:"walk",lead:"R",arms:{L:"inside"}},
+  {label:"5 · low block, front stance",view:"front",stance:"front",lead:"L",arms:{L:"low"}},
+  {label:"14-1 · front kick",view:"side",face:"R",stance:"kick",lead:"R",arms:{L:"guard",R:"guard"}},
+  {label:"18 · punch, from behind",view:"back",stance:"front",lead:"R",arms:{R:"punch"}}
+];
+function fig(v,p){
+  const sk=skel(p,v.pr),{defs,out}=draw(sk,{...v.D,pr:v.pr}),dy=56*(1-sk.k);
+  return`<svg viewBox="-62 -106 124 176" role="img" aria-label="${v.name}: ${p.label}"><defs>${defs}</defs><g transform="translate(0 ${f(dy)})">${sk.mirror?`<g transform="scale(-1,1)">${out}</g>`:out}</g></svg>`;
+}
+function render(){
+  gid=0;
+  document.getElementById("designs").innerHTML=V.map(v=>`
+    <section class="design" aria-label="Variation ${v.L}">
+      <div class="meta"><div class="letter">${v.L}</div><h2>${v.name}</h2><p>${v.about}</p></div>
+      <div class="poses"><div class="row">${POSES.map(p=>`<div class="pose">${fig(v,p)}<span>${p.label}</span></div>`).join("")}</div></div>
+    </section>`).join("");
+}
+const bEl=document.getElementById("belts");
+bEl.innerHTML=Object.entries(BELTS).map(([k,v])=>`<button type="button" style="background:${v}" aria-label="${k} belt" aria-pressed="${k===belt}" data-b="${k}"></button>`).join("");
+bEl.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;belt=b.dataset.b;
+  bEl.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));render();});
+render();
+})();
+</script>
+
+</body>
+</html>

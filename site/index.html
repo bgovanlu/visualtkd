@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 rx=%223%22 fill=%22%231f3a8a%22/%3E%3Cpath d=%22M3 4h10M3 8h10M3 12h10%22 stroke=%22white%22 stroke-width=%221.6%22/%3E%3C/svg%3E">
+<style>body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
+</head>
+<body>
+<title>Taegeuk Poomsae</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700;900&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: an index of the eight Taegeuk forms as trigram cards in teaching order, then the black-belt forms; the trigram is each card's mark because it is what each form is named for. */
+:root{
+  --bg:#edf0f5; --surface:#ffffff; --mat:#e2e7ef; --ink:#141a2b; --muted:#5a6377; --line:#c3cbd8;
+  --heaven:#1f3a8a; --fire:#c8102e;
+  --f-display:"Noto Serif KR","Noto Serif CJK KR","Nanum Myeongjo",Georgia,serif;
+  --f-body:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0d1220; --surface:#151c2d; --mat:#1b2437; --ink:#e7ebf3; --muted:#97a1b6; --line:#2c3650;
+  --heaven:#87a3ff; --fire:#ff5a6e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1220; --surface:#151c2d; --mat:#1b2437; --ink:#e7ebf3; --muted:#97a1b6; --line:#2c3650;
+  --heaven:#87a3ff; --fire:#ff5a6e; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:32px 56px;display:flex;flex-direction:column;gap:28px}
+header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px 32px;align-items:end}
+.eyebrow{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.1em;color:var(--fire)}
+h1{margin:4px 0 0;font-family:var(--f-display);font-weight:900;font-size:clamp(38px,6vw,64px);line-height:1;letter-spacing:-.01em}
+h1 span{font-weight:700;color:var(--muted);font-size:.55em;margin-left:.3em}
+.lede{margin:12px 0 0;max-width:62ch;color:var(--muted);font-size:16px}
+.status{display:flex;flex-direction:column;gap:8px;min-width:220px}
+.status b{font-family:var(--f-mono);font-weight:500;font-size:26px;font-variant-numeric:tabular-nums}
+.status small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.meter{display:grid;grid-template-columns:repeat(8,1fr);gap:4px}
+.meter i{height:6px;border-radius:3px;background:var(--line)}
+.meter i.done{background:var(--fire)}
+
+.grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:12px;min-height:236px;color:inherit;text-decoration:none;transition:border-color .2s,transform .2s}
+a.card:hover{border-color:var(--heaven);transform:translateY(-2px)}
+a.card:focus-visible{outline:2px solid var(--heaven);outline-offset:3px}
+.card.soon{background:transparent;border-style:dashed}
+.top{display:flex;justify-content:space-between;align-items:flex-start}
+.num{font-family:var(--f-display);font-weight:900;font-size:44px;line-height:.9}
+.card.soon .num{color:var(--muted)}
+.tri{display:flex;flex-direction:column;gap:6px;width:58px;padding-top:4px}
+.tri .bar{display:flex;gap:8px;height:8px}
+.tri .bar i{flex:1;background:var(--heaven);border-radius:2px}
+.card.soon .tri .bar i{background:var(--muted);opacity:.55}
+.name{display:flex;flex-direction:column;gap:2px}
+.name h2{margin:0;font-size:20px;font-weight:700;letter-spacing:.01em}
+.name .ko{font-family:var(--f-display);font-weight:700;color:var(--muted);font-size:15px}
+.mean{margin:0;font-size:14px;color:var(--muted)}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px}
+.foot .mv{font-family:var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.pill{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:99px}
+.pill.live{background:var(--ink);color:var(--surface)}
+.pill.next{border:1.5px solid var(--fire);color:var(--fire)}
+.pill.plan{border:1.5px solid var(--line);color:var(--muted)}
+
+section h3{margin:0 0 6px;font-family:var(--f-display);font-weight:700;font-size:24px}
+section > p{margin:0 0 14px;color:var(--muted);max-width:66ch}
+.bb{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}
+.bb li{border:1px dashed var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column}
+.bb b{font-weight:600}
+.bb span{font-size:12.5px;color:var(--muted)}
+.bb .ko{font-family:var(--f-display);font-weight:700}
+footer{font-size:13px;color:var(--muted);max-width:72ch}
+footer a{color:var(--heaven)}
+@media (max-width:640px){header{grid-template-columns:1fr}.card{min-height:0}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">KUKKIWON POOMSAE · GUP FORMS</div>
+      <h1>Taegeuk <span>태극</span></h1>
+      <p class="lede">The eight Taegeuk forms, each named for one of the eight trigrams. Every form gets the same treatment: the floor plan on its line, move-by-move cards on phones, the full sequence, and a two-page print sheet.</p>
+    </div>
+    <div class="status" aria-label="Progress">
+      <small>Forms published</small>
+      <b id="count">1 / 8</b>
+      <div class="meter" id="meter"></div>
+    </div>
+  </header>
+
+  <ul class="grid" id="forms"></ul>
+
+  <section>
+    <h3>Black-belt forms</h3>
+    <p>Yudanja poomsae, planned after the Taegeuk set, drawn the same way.</p>
+    <ul class="bb" id="bb"></ul>
+  </section>
+
+  <footer>Form names, trigram meanings and move counts follow Kukkiwon. See the <a href="https://www.kukkiwon.or.kr/eng/board/list?boardManagementNo=55&amp;menuLevel=3&amp;menuNo=72" target="_blank" rel="noopener">Kukkiwon poomsae index ↗</a> for the official descriptions.</footer>
+</div>
+
+<script>
+(function(){
+// lines listed top to bottom: 1 = solid, 0 = broken
+const FORMS=[
+  {n:1,rom:"Il Jang",ko:"태극 1장",tri:"Geon",triKo:"건",sym:"Heaven",mean:"Heaven and light; the beginning of all things.",lines:[1,1,1],moves:18,url:"/taegeuk/1/"},
+  {n:2,rom:"Ee Jang",ko:"태극 2장",tri:"Tae",triKo:"태",sym:"Lake",mean:"Joy; a calm mind that stays firm inside.",lines:[0,1,1],moves:18},
+  {n:3,rom:"Sam Jang",ko:"태극 3장",tri:"Ri",triKo:"리",sym:"Fire",mean:"Fire and sun; passion and enthusiasm.",lines:[1,0,1],moves:20},
+  {n:4,rom:"Sa Jang",ko:"태극 4장",tri:"Jin",triKo:"진",sym:"Thunder",mean:"Thunder; great power and dignity.",lines:[0,0,1],moves:20},
+  {n:5,rom:"Oh Jang",ko:"태극 5장",tri:"Seon",triKo:"손",sym:"Wind",mean:"Wind; gentle yet able to be mighty.",lines:[1,1,0],moves:20},
+  {n:6,rom:"Yuk Jang",ko:"태극 6장",tri:"Gam",triKo:"감",sym:"Water",mean:"Water; flowing past obstacles without losing course.",lines:[0,1,0],moves:19},
+  {n:7,rom:"Chil Jang",ko:"태극 7장",tri:"Gan",triKo:"간",sym:"Mountain",mean:"Mountain; stillness, and moving only when it is time.",lines:[1,0,0],moves:25},
+  {n:8,rom:"Pal Jang",ko:"태극 8장",tri:"Gon",triKo:"곤",sym:"Earth",mean:"Earth; the root and end of all things, completing the set.",lines:[0,0,0],moves:24}
+];
+const BB=[["Koryo","고려"],["Keumgang","금강"],["Taebaek","태백"],["Pyongwon","평원"],["Sipjin","십진"],["Jitae","지태"],["Cheonkwon","천권"],["Hansu","한수"],["Ilyeo","일여"]];
+const live=FORMS.filter(x=>x.url).length;
+document.getElementById("count").textContent=`${live} / ${FORMS.length}`;
+document.getElementById("meter").innerHTML=FORMS.map(x=>`<i class="${x.url?"done":""}"></i>`).join("");
+const tri=l=>`<div class="tri" aria-hidden="true">${l.map(s=>`<div class="bar">${s?"<i></i>":"<i></i><i></i>"}</div>`).join("")}</div>`;
+document.getElementById("forms").innerHTML=FORMS.map((x,i)=>{
+  const firstSoon=!x.url&&FORMS.slice(0,i).every(y=>y.url);
+  const pill=x.url?`<span class="pill live">Open</span>`:firstSoon?`<span class="pill next">Up next</span>`:`<span class="pill plan">Planned</span>`;
+  const inner=`<div class="top"><span class="num">${x.n}</span>${tri(x.lines)}</div>
+    <div class="name"><h2>${x.rom}</h2><span class="ko">${x.ko} · ${x.tri} ${x.triKo} · ${x.sym}</span></div>
+    <p class="mean">${x.mean}</p>
+    <div class="foot"><span class="mv">${x.moves} movements</span>${pill}</div>`;
+  return`<li>${x.url?`<a class="card" href="${x.url}" aria-label="Open Taegeuk ${x.rom}">${inner}</a>`:`<div class="card soon">${inner}</div>`}</li>`;
+}).join("");
+document.getElementById("bb").innerHTML=BB.map(([r,k])=>`<li><b>${r}</b><span><span class="ko">${k}</span> · planned</span></li>`).join("");
+})();
+</script>
+
+</body>
+</html>

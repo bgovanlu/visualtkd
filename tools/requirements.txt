@@ -1,0 +1,5 @@
+playwright
+qrcode
+# optional: verify every QR code in a finished PDF
+zxing-cpp
+pypdf

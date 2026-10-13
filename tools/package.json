@@ -1,0 +1,9 @@
+{
+  "name": "visualtkd-print-tools",
+  "private": true,
+  "description": "Fonts embedded in the printable PDF sheets",
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "5.0.13",
+    "@fontsource/ibm-plex-sans-condensed": "5.0.13"
+  }
+}
