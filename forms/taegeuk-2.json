@@ -1,0 +1,556 @@
+{
+ "slug": "taegeuk/2",
+ "pdf": "taegeuk-2-print.pdf",
+ "title": "Taegeuk Ee Jang",
+ "ko": "태극 2장",
+ "trigram": {
+  "name": "Tae",
+  "ko": "태",
+  "sym": "☱",
+  "meaning": "Lake",
+  "lines": [
+   0,
+   1,
+   1
+  ]
+ },
+ "movements": 18,
+ "note": {
+  "h": "Tae · 태 · Lake",
+  "p": "Tae is a lake with a calm surface and real depth below it. The form asks for steady breathing and an even temper: soft outside, firm inside. It builds on Il Jang with the front stance, the high punch and the kick-and-punch combination."
+ },
+ "footer": "Move counting follows the Kukkiwon convention, where a kick and the strike that follows it share one number (8-1, 8-2). Finish with <b>Baro</b>: turn to face ga and return to the ready stance at the starting point.",
+ "boardMin": 1320,
+ "layout": {
+  "r1": [
+   "4",
+   "3",
+   "J",
+   "1",
+   "2"
+  ],
+  "c2": [
+   "5",
+   "18-1",
+   "18-2"
+  ],
+  "r3": [
+   [
+    "10-2",
+    "10-1"
+   ],
+   "9",
+   [
+    "6",
+    "17-1",
+    "17-2"
+   ],
+   "7",
+   [
+    "8-1",
+    "8-2"
+   ]
+  ],
+  "c4": [
+   "11",
+   "16-1",
+   "16-2"
+  ],
+  "r5": [
+   "13",
+   [
+    "12",
+    "15"
+   ],
+   "14"
+  ]
+ },
+ "pos": {
+  "J": [
+   50,
+   8
+  ],
+  "1": [
+   70,
+   8
+  ],
+  "2": [
+   90,
+   8
+  ],
+  "3": [
+   30,
+   8
+  ],
+  "4": [
+   10,
+   8
+  ],
+  "5": [
+   50,
+   19
+  ],
+  "6": [
+   50,
+   30
+  ],
+  "7": [
+   70,
+   30
+  ],
+  "8-1": [
+   80,
+   30
+  ],
+  "8-2": [
+   90,
+   30
+  ],
+  "9": [
+   30,
+   30
+  ],
+  "10-1": [
+   20,
+   30
+  ],
+  "10-2": [
+   10,
+   30
+  ],
+  "11": [
+   50,
+   41
+  ],
+  "12": [
+   50,
+   52
+  ],
+  "13": [
+   30,
+   52
+  ],
+  "14": [
+   70,
+   52
+  ],
+  "15": [
+   50,
+   52
+  ],
+  "16-1": [
+   50,
+   46
+  ],
+  "16-2": [
+   50,
+   41
+  ],
+  "17-1": [
+   50,
+   35
+  ],
+  "17-2": [
+   50,
+   30
+  ],
+  "18-1": [
+   50,
+   24
+  ],
+  "18-2": [
+   50,
+   19
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "na",
+   "view": "front",
+   "stance": "ready",
+   "arms": {
+    "L": "junbi",
+    "R": "junbi"
+   },
+   "tech": "junbi",
+   "desc": "Stand at na facing ga, feet parallel and one foot-width apart, fists in front of the belt."
+  },
+  {
+   "id": "1",
+   "dir": "da1",
+   "view": "side",
+   "stance": "walk",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "hand": "L",
+   "desc": "Turn 90° left toward da¹, stepping the left foot into a left walking stance. Left low block."
+  },
+  {
+   "id": "2",
+   "dir": "da1",
+   "view": "side",
+   "stance": "front",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Step forward into a right front stance. Right middle punch."
+  },
+  {
+   "id": "3",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "walk",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "R": "low"
+   },
+   "tech": "low",
+   "hand": "R",
+   "desc": "Turn 180° to the right toward ra¹, right walking stance. Right low block."
+  },
+  {
+   "id": "4",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "front",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "hand": "L",
+   "note": "bandae",
+   "desc": "Step forward into a left front stance. Left middle punch."
+  },
+  {
+   "id": "5",
+   "dir": "ga",
+   "view": "front",
+   "stance": "walk",
+   "lead": "L",
+   "arms": {
+    "R": "inside"
+   },
+   "tech": "inside",
+   "hand": "R",
+   "desc": "Turn 90° left toward ga, left walking stance. Right inside middle block."
+  },
+  {
+   "id": "6",
+   "dir": "ga",
+   "view": "front",
+   "stance": "walk",
+   "lead": "R",
+   "arms": {
+    "L": "inside"
+   },
+   "tech": "inside",
+   "hand": "L",
+   "desc": "Step forward into a right walking stance. Left inside middle block."
+  },
+  {
+   "id": "7",
+   "dir": "da2",
+   "view": "side",
+   "stance": "walk",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "hand": "L",
+   "desc": "Turn 90° left toward da², left walking stance. Left low block."
+  },
+  {
+   "id": "8-1",
+   "dir": "da2",
+   "view": "side",
+   "stance": "kick",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "R",
+   "foot": true,
+   "desc": "Right front kick, striking with the ball of the foot."
+  },
+  {
+   "id": "8-2",
+   "dir": "da2",
+   "view": "side",
+   "stance": "front",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "R": "hpunch"
+   },
+   "tech": "hpunch",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Land forward in a right front stance. Right high punch."
+  },
+  {
+   "id": "9",
+   "dir": "ra2",
+   "view": "side",
+   "stance": "walk",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "R": "low"
+   },
+   "tech": "low",
+   "hand": "R",
+   "desc": "Turn 180° to the right toward ra², right walking stance. Right low block."
+  },
+  {
+   "id": "10-1",
+   "dir": "ra2",
+   "view": "side",
+   "stance": "kick",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "L",
+   "foot": true,
+   "desc": "Left front kick, striking with the ball of the foot."
+  },
+  {
+   "id": "10-2",
+   "dir": "ra2",
+   "view": "side",
+   "stance": "front",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "hpunch"
+   },
+   "tech": "hpunch",
+   "hand": "L",
+   "note": "bandae",
+   "desc": "Land forward in a left front stance. Left high punch."
+  },
+  {
+   "id": "11",
+   "dir": "ga",
+   "view": "front",
+   "stance": "walk",
+   "lead": "L",
+   "arms": {
+    "L": "high"
+   },
+   "tech": "high",
+   "hand": "L",
+   "desc": "Turn 90° left toward ga, left walking stance. Left high block."
+  },
+  {
+   "id": "12",
+   "dir": "ga",
+   "view": "front",
+   "stance": "walk",
+   "lead": "R",
+   "arms": {
+    "R": "high"
+   },
+   "tech": "high",
+   "hand": "R",
+   "desc": "Step forward into a right walking stance. Right high block."
+  },
+  {
+   "id": "13",
+   "dir": "ra3",
+   "view": "side",
+   "stance": "walk",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "R": "inside"
+   },
+   "tech": "inside",
+   "hand": "R",
+   "desc": "Turn 270° to the left toward ra³, left walking stance. Right inside middle block."
+  },
+  {
+   "id": "14",
+   "dir": "da3",
+   "view": "side",
+   "stance": "walk",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "L": "inside"
+   },
+   "tech": "inside",
+   "hand": "L",
+   "desc": "Pivot 180° to the right toward da³, right walking stance. Left inside middle block."
+  },
+  {
+   "id": "15",
+   "dir": "na",
+   "view": "back",
+   "stance": "walk",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "hand": "L",
+   "desc": "Turn 90° left toward na, left walking stance. Left low block."
+  },
+  {
+   "id": "16-1",
+   "dir": "na",
+   "view": "back",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "R",
+   "foot": true,
+   "desc": "Right front kick, striking with the ball of the foot."
+  },
+  {
+   "id": "16-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "walk",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Land forward in a right walking stance. Right middle punch."
+  },
+  {
+   "id": "17-1",
+   "dir": "na",
+   "view": "back",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "L",
+   "foot": true,
+   "desc": "Left front kick, striking with the ball of the foot."
+  },
+  {
+   "id": "17-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "walk",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "hand": "L",
+   "note": "bandae",
+   "desc": "Land forward in a left walking stance. Left middle punch."
+  },
+  {
+   "id": "18-1",
+   "dir": "na",
+   "view": "back",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "R",
+   "foot": true,
+   "desc": "Right front kick, striking with the ball of the foot."
+  },
+  {
+   "id": "18-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "walk",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "bandae",
+   "kihap": true,
+   "desc": "Land forward in a right walking stance. Right middle punch with a kihap."
+  }
+ ],
+ "refs": [
+  {
+   "go": "kukkiwon-t2",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Taegeuk 2 Jang",
+   "desc": "The form’s official description and meaning.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1349&page=2&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "kukkiwon-poomsae",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Poomsae index",
+   "desc": "Every official poomsae, Taegeuk 1–8 and the black-belt forms.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/list?boardManagementNo=55&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "video-t2",
+   "kind": "yt",
+   "icon": "play",
+   "src": "YouTube · Video",
+   "title": "Taegeuk 2 Jang, full performance",
+   "desc": "Kukkiwon Digital Encyclopedia, published by Mookas TV.",
+   "url": "https://www.youtube.com/watch?v=uSzqk_EJszk"
+  },
+  {
+   "go": "kukkiwon-youtube",
+   "kind": "yt",
+   "icon": "channel",
+   "src": "YouTube · Channel",
+   "title": "Kukkiwon World Taekwondo Headquarters",
+   "desc": "The official Kukkiwon channel.",
+   "url": "https://www.youtube.com/channel/UCaQb3jutLu15oSfhPh8FACQ"
+  },
+  {
+   "go": "wt-poomsae-rules",
+   "kind": "wt",
+   "icon": "pdf",
+   "src": "World Taekwondo · PDF",
+   "title": "Poomsae Competition Rules and Interpretation",
+   "desc": "In force from 30 September 2024; how poomsae are judged.",
+   "url": "https://www.worldtaekwondo.org/att_file/documents/Poomsae%20Competition%20Rules%20and%20Interpretation%20(In%20force%20as%20of%20September%2030%202024).pdf"
+  }
+ ]
+}

@@ -101,6 +101,10 @@ footer = f"""<div style="width:100%;margin:0 0.4in;padding-top:5px;border-top:0.
 with sync_playwright() as p:
     br = p.chromium.launch(); pg = br.new_page(viewport={"width": 1180, "height": 1400})
     pg.goto("file://" + tmp); pg.wait_for_timeout(900)
+    # wider forms need a wider layout before measuring
+    bw = pg.evaluate("document.querySelector('.board').scrollWidth")
+    if bw + 40 > 1180:
+        pg.set_viewport_size({"width": bw + 40, "height": 1400}); pg.wait_for_timeout(300)
     h1 = pg.evaluate("document.querySelector('.scroller').getBoundingClientRect().bottom - document.querySelector('header').getBoundingClientRect().top")
     w = pg.evaluate("document.querySelector('.wrap').scrollWidth")
     avail_w, avail_h = 7.7 * 96, (11 - 0.4 - 0.65) * 96

@@ -30,13 +30,15 @@
   --heaven:#87a3ff; --fire:#ff5a6e; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
-.wrap{max-width:1240px;margin:0 auto;padding-inline:20px;padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
+.wrap{max-width:max(1240px, calc(1120px + 40px));margin:0 auto;padding-inline:20px;padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 
 /* Header */
 header{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
 .title{display:flex;align-items:center;gap:22px}
 .tri{display:flex;flex-direction:column;gap:7px}
 .tri i{display:block;width:54px;height:9px;background:var(--heaven);border-radius:2px}
+.tri i.brk{background:none;display:flex;gap:10px}
+.tri i.brk s{flex:1;background:var(--heaven);border-radius:2px}
 h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6vw,64px);line-height:1;letter-spacing:-.01em}
 .sub{margin:6px 0 0;font-size:clamp(17px,2vw,21px);font-weight:600;letter-spacing:.02em}
 .sub span{color:var(--muted);font-weight:400}
@@ -314,6 +316,7 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
 
 <script>
 (function(){
+const FORM={"moves": [{"id": "J", "dir": "na", "view": "front", "stance": "ready", "arms": {"L": "junbi", "R": "junbi"}, "tech": "junbi", "desc": "Stand at na facing ga, feet parallel and one foot-width apart, fists in front of the belt."}, {"id": "1", "dir": "da1", "face": "R", "view": "side", "stance": "walk", "lead": "L", "arms": {"L": "low"}, "tech": "low", "hand": "L", "desc": "Turn 90° left toward da¹, stepping the left foot into a left walking stance. Left low block."}, {"id": "2", "dir": "da1", "face": "R", "view": "side", "stance": "walk", "lead": "R", "arms": {"R": "punch"}, "tech": "punch", "hand": "R", "note": "bandae", "desc": "Step forward with the right foot into a right walking stance. Right middle punch."}, {"id": "3", "dir": "ra1", "face": "L", "view": "side", "stance": "walk", "lead": "R", "arms": {"R": "low"}, "tech": "low", "hand": "R", "desc": "Pivot 180° to the right toward ra¹, right walking stance. Right low block."}, {"id": "4", "dir": "ra1", "face": "L", "view": "side", "stance": "walk", "lead": "L", "arms": {"L": "punch"}, "tech": "punch", "hand": "L", "note": "bandae", "desc": "Step forward into a left walking stance. Left middle punch."}, {"id": "5", "dir": "ga", "view": "front", "stance": "front", "lead": "L", "arms": {"L": "low"}, "tech": "low", "hand": "L", "desc": "Turn 90° left toward ga, stepping the left foot into a left front stance. Left low block."}, {"id": "6", "dir": "ga", "view": "front", "stance": "front", "lead": "L", "arms": {"R": "punch"}, "tech": "punch", "hand": "R", "note": "baro", "desc": "Hold the left front stance. Right middle punch (reverse punch)."}, {"id": "7", "dir": "ra2", "face": "L", "view": "side", "stance": "walk", "lead": "R", "arms": {"L": "inside"}, "tech": "inside", "hand": "L", "desc": "Turn 90° right toward ra², right walking stance. Left inside middle block."}, {"id": "8", "dir": "ra2", "face": "L", "view": "side", "stance": "walk", "lead": "L", "arms": {"R": "punch"}, "tech": "punch", "hand": "R", "note": "baro", "desc": "Step forward into a left walking stance. Right middle punch."}, {"id": "9", "dir": "da2", "face": "R", "view": "side", "stance": "walk", "lead": "L", "arms": {"R": "inside"}, "tech": "inside", "hand": "R", "desc": "Pivot 180° to the left toward da², left walking stance. Right inside middle block."}, {"id": "10", "dir": "da2", "face": "R", "view": "side", "stance": "walk", "lead": "R", "arms": {"L": "punch"}, "tech": "punch", "hand": "L", "note": "baro", "desc": "Step forward into a right walking stance. Left middle punch."}, {"id": "11", "dir": "ga", "view": "front", "stance": "front", "lead": "R", "arms": {"R": "low"}, "tech": "low", "hand": "R", "desc": "Turn 90° right toward ga, right front stance. Right low block."}, {"id": "12", "dir": "ga", "view": "front", "stance": "front", "lead": "R", "arms": {"L": "punch"}, "tech": "punch", "hand": "L", "note": "baro", "desc": "Hold the right front stance. Left middle punch (reverse punch)."}, {"id": "13", "dir": "da3", "face": "R", "view": "side", "stance": "walk", "lead": "L", "arms": {"L": "high"}, "tech": "high", "hand": "L", "desc": "Turn 90° left toward da³, left walking stance. Left high block."}, {"id": "14-1", "dir": "da3", "face": "R", "view": "side", "stance": "kick", "lead": "R", "arms": {"L": "guard", "R": "guard"}, "tech": "kick", "hand": "R", "foot": true, "desc": "Right front kick, striking with the ball of the foot."}, {"id": "14-2", "dir": "da3", "face": "R", "view": "side", "stance": "walk", "lead": "R", "arms": {"R": "punch"}, "tech": "punch", "hand": "R", "note": "bandae", "desc": "Land forward in a right walking stance. Right middle punch."}, {"id": "15", "dir": "ra3", "face": "L", "view": "side", "stance": "walk", "lead": "R", "arms": {"R": "high"}, "tech": "high", "hand": "R", "desc": "Pivot 180° to the right toward ra³, right walking stance. Right high block."}, {"id": "16-1", "dir": "ra3", "face": "L", "view": "side", "stance": "kick", "lead": "L", "arms": {"L": "guard", "R": "guard"}, "tech": "kick", "hand": "L", "foot": true, "desc": "Left front kick, striking with the ball of the foot."}, {"id": "16-2", "dir": "ra3", "face": "L", "view": "side", "stance": "walk", "lead": "L", "arms": {"L": "punch"}, "tech": "punch", "hand": "L", "note": "bandae", "desc": "Land forward in a left walking stance. Left middle punch."}, {"id": "17", "dir": "na", "view": "back", "stance": "front", "lead": "L", "arms": {"L": "low"}, "tech": "low", "hand": "L", "desc": "Turn 90° toward na, stepping the left foot into a left front stance. Left low block."}, {"id": "18", "dir": "na", "view": "back", "stance": "front", "lead": "R", "arms": {"R": "punch"}, "tech": "punch", "hand": "R", "note": "bandae", "kihap": true, "desc": "Step forward into a right front stance. Right middle punch with a kihap."}], "layout": {"r1": ["4", "3", "J", "1", "2"], "c2": ["5", "18"], "r3": ["8", "7", "6", "9", "10"], "c4": ["11", "17"], "r5": [["16-2", "16-1"], "15", "12", "13", ["14-1", "14-2"]]}, "pos": {"1": [70, 8], "2": [90, 8], "3": [30, 8], "4": [10, 8], "5": [50, 19], "6": [50, 30], "7": [30, 30], "8": [10, 30], "9": [70, 30], "10": [90, 30], "11": [50, 41], "12": [50, 52], "13": [70, 52], "15": [30, 52], "17": [50, 41], "18": [50, 19], "J": [50, 8], "14-1": [80, 52], "14-2": [90, 52], "16-1": [20, 52], "16-2": [10, 52]}};
 const BELTS={white:"#f4f4f2",yellow:"#f2c230",green:"#2f8f4e",blue:"#2456c8",red:"#c8102e",black:"#17181c"};
 let belt="black";
 
@@ -323,7 +326,8 @@ const T={
   punch:["Momtong jireugi","몸통지르기","Middle punch"],
   inside:["Momtong an makki","몸통안막기","Inside middle block"],
   high:["Eolgul makki","얼굴막기","High block"],
-  kick:["Ap chagi","앞차기","Front kick"]
+  kick:["Ap chagi","앞차기","Front kick"],
+  hpunch:["Eolgul jireugi","얼굴지르기","High punch"]
 };
 const STANCE={
   ready:["Naranhi seogi","나란히서기","Parallel stance"],
@@ -334,29 +338,7 @@ const STANCE={
 const DIRN={na:"na",ga:"ga",da1:"da¹",da2:"da²",da3:"da³",ra1:"ra¹",ra2:"ra²",ra3:"ra³"};
 
 // m: id, dir (line), face (side view R/L), view, stance, lead, arms, tech, side ("bandae"/"baro"), desc
-const M=[
- {id:"J",dir:"na",view:"front",stance:"ready",arms:{L:"junbi",R:"junbi"},tech:"junbi",desc:"Stand at na facing ga, feet parallel and one foot-width apart, fists in front of the belt."},
- {id:"1",dir:"da1",face:"R",view:"side",stance:"walk",lead:"L",arms:{L:"low"},tech:"low",hand:"L",desc:"Turn 90° left toward da¹, stepping the left foot into a left walking stance. Left low block."},
- {id:"2",dir:"da1",face:"R",view:"side",stance:"walk",lead:"R",arms:{R:"punch"},tech:"punch",hand:"R",note:"bandae",desc:"Step forward with the right foot into a right walking stance. Right middle punch."},
- {id:"3",dir:"ra1",face:"L",view:"side",stance:"walk",lead:"R",arms:{R:"low"},tech:"low",hand:"R",desc:"Pivot 180° to the right toward ra¹, right walking stance. Right low block."},
- {id:"4",dir:"ra1",face:"L",view:"side",stance:"walk",lead:"L",arms:{L:"punch"},tech:"punch",hand:"L",note:"bandae",desc:"Step forward into a left walking stance. Left middle punch."},
- {id:"5",dir:"ga",view:"front",stance:"front",lead:"L",arms:{L:"low"},tech:"low",hand:"L",desc:"Turn 90° left toward ga, stepping the left foot into a left front stance. Left low block."},
- {id:"6",dir:"ga",view:"front",stance:"front",lead:"L",arms:{R:"punch"},tech:"punch",hand:"R",note:"baro",desc:"Hold the left front stance. Right middle punch (reverse punch)."},
- {id:"7",dir:"ra2",face:"L",view:"side",stance:"walk",lead:"R",arms:{L:"inside"},tech:"inside",hand:"L",desc:"Turn 90° right toward ra², right walking stance. Left inside middle block."},
- {id:"8",dir:"ra2",face:"L",view:"side",stance:"walk",lead:"L",arms:{R:"punch"},tech:"punch",hand:"R",note:"baro",desc:"Step forward into a left walking stance. Right middle punch."},
- {id:"9",dir:"da2",face:"R",view:"side",stance:"walk",lead:"L",arms:{R:"inside"},tech:"inside",hand:"R",desc:"Pivot 180° to the left toward da², left walking stance. Right inside middle block."},
- {id:"10",dir:"da2",face:"R",view:"side",stance:"walk",lead:"R",arms:{L:"punch"},tech:"punch",hand:"L",note:"baro",desc:"Step forward into a right walking stance. Left middle punch."},
- {id:"11",dir:"ga",view:"front",stance:"front",lead:"R",arms:{R:"low"},tech:"low",hand:"R",desc:"Turn 90° right toward ga, right front stance. Right low block."},
- {id:"12",dir:"ga",view:"front",stance:"front",lead:"R",arms:{L:"punch"},tech:"punch",hand:"L",note:"baro",desc:"Hold the right front stance. Left middle punch (reverse punch)."},
- {id:"13",dir:"da3",face:"R",view:"side",stance:"walk",lead:"L",arms:{L:"high"},tech:"high",hand:"L",desc:"Turn 90° left toward da³, left walking stance. Left high block."},
- {id:"14-1",dir:"da3",face:"R",view:"side",stance:"kick",lead:"R",arms:{L:"guard",R:"guard"},tech:"kick",hand:"R",foot:true,desc:"Right front kick, striking with the ball of the foot."},
- {id:"14-2",dir:"da3",face:"R",view:"side",stance:"walk",lead:"R",arms:{R:"punch"},tech:"punch",hand:"R",note:"bandae",desc:"Land forward in a right walking stance. Right middle punch."},
- {id:"15",dir:"ra3",face:"L",view:"side",stance:"walk",lead:"R",arms:{R:"high"},tech:"high",hand:"R",desc:"Pivot 180° to the right toward ra³, right walking stance. Right high block."},
- {id:"16-1",dir:"ra3",face:"L",view:"side",stance:"kick",lead:"L",arms:{L:"guard",R:"guard"},tech:"kick",hand:"L",foot:true,desc:"Left front kick, striking with the ball of the foot."},
- {id:"16-2",dir:"ra3",face:"L",view:"side",stance:"walk",lead:"L",arms:{L:"punch"},tech:"punch",hand:"L",note:"bandae",desc:"Land forward in a left walking stance. Left middle punch."},
- {id:"17",dir:"na",view:"back",stance:"front",lead:"L",arms:{L:"low"},tech:"low",hand:"L",desc:"Turn 90° toward na, stepping the left foot into a left front stance. Left low block."},
- {id:"18",dir:"na",view:"back",stance:"front",lead:"R",arms:{R:"punch"},tech:"punch",hand:"R",note:"bandae",kihap:true,desc:"Step forward into a right front stance. Right middle punch with a kihap."}
-];
+const M=FORM.moves;
 
 let gid=0;
 /* ---------- vector helpers ---------- */
@@ -444,6 +426,7 @@ function skel(m,pr){
       const act=(m.arms&&m.arms[s])||"chamber",sh=SH[dp];let h,p=[0,1];
       if(act==="chamber"){h=[-4,hipY-11*tk];p=[-1,.1]}
       else if(act==="punch")h=add(sh,mul([46,6],ak));
+      else if(act==="hpunch")h=add(sh,mul([45,-9],ak));
       else if(act==="low")h=[26*ak,hipY-2];
       else if(act==="inside")h=add(sh,mul([22,-1],ak));
       else if(act==="high"){h=add(sh,mul([17,-30],ak));p=[1,-.15]}
@@ -468,16 +451,26 @@ function skel(m,pr){
   }
   const back=m.view==="back",sx=s=>(s==="L"?1:-1)*(back?-1:1),st=m.stance;
   const hipY=st==="front"?6*k:-3*k,T=hipY-pr.torso;
-  const Lay={arms:mk(0),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0)};
+  const Lay={arms:mk(0),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0),kick:mk(1)};
   ["L","R"].forEach(s=>{
     const x=sx(s),hp=[x*pr.hipW*.95,hipY];let an,kn,nearer=true,sc=1;
     if(st==="ready"){an=[x*11*hw,58*k];kn=add(lerp(hp,an,.5),[x*.6,0])}
+    else if(st==="walk"){ // ap seogi seen from front/back: both legs straight, lead foot nearer the viewer from the front
+      const lead=s===m.lead;nearer=back?!lead:lead;
+      if(nearer){an=[x*10.5*hw,62*k];sc=1.06}else{an=[x*9.5*hw,54*k];sc=.9}
+      kn=add(lerp(hp,an,.5),[x*.4,0]);
+    }else if(st==="kick"){ // front kick seen from behind: kicking leg raised away from the viewer, foot just clear of the body
+      const kicker=s===m.lead;nearer=back?!kicker:kicker;
+      if(kicker){kn=back?[x*9*hw,hipY-4]:[x*11*hw,hipY+12];an=back?[x*8*hw,hipY-24]:[x*10*hw,hipY+4];sc=back?.78:1.25}
+      else{an=[x*10.5*hw,58*k];kn=add(lerp(hp,an,.5),[x*.4,0])}
+    }
     else{
       const lead=s===m.lead;nearer=back?!lead:lead;
       if(nearer){an=[x*14*hw,63*k];kn=lead?[x*13.5*hw,hipY+pr.thigh*.7]:add(lerp(hp,an,.5),[x*.4,0]);sc=1.1}
       else{an=[x*12.5*hw,52*k];kn=lead?[x*12.5*hw,hipY+pr.thigh*.62]:add(lerp(hp,an,.5),[x*.4,0]);sc=.86}
     }
-    const Lg=nearer?Lay.nearLeg:Lay.farLeg;
+    // seen from behind, the kicking leg is raised in front of the body: draw it over the torso in the far-side tone
+    const Lg=(st==="kick"&&back&&s===m.lead)?Lay.kick:(nearer?Lay.nearLeg:Lay.farLeg);
     Lg.legs.push({ch:[hp,kn,an],front:true});
     Lg.feet.push({pts:xf(back?FOOT_HEEL:FOOT_FRONT,add(an,[x*.8,0]),0,sc*x*pr.foot,sc*pr.foot)});
     const act=(m.arms&&m.arms[s])||"chamber",sh=[x*pr.shW,T+8*tk];
@@ -485,8 +478,14 @@ function skel(m,pr){
       if(back)addArm(Lay.arms,sh,[x*-3,T+20*tk],[x,.2]);
       else addArm(Lay.arms,sh,[x*1.5,T+20*tk],null,true);
     }else{
-      const h=act==="chamber"?[x*(pr.hipW+7),hipY-9*tk]:act==="low"?[x*(pr.hipW+15),hipY+4*k]:[x*6.5,hipY-12*tk];
-      addArm(Lay.arms,sh,h,[x,.15]);
+      let h,p=[x,.15];
+      if(act==="chamber")h=[x*(pr.hipW+7),hipY-9*tk];
+      else if(act==="low")h=[x*(pr.hipW+15),hipY+4*k];
+      else if(act==="inside"){h=[x*-3,T+9*tk];p=[x*.5,1]}      // forearm upright, fist at the centre line
+      else if(act==="high"){h=[x*-4,T-24*tk];p=[x,-.4]}        // forearm across, above the forehead
+      else if(act==="guard")h=[x*8,T+28*tk];
+      else h=[x*6.5,hipY-12*tk];                                 // junbi
+      addArm(Lay.arms,sh,h,p);
     }
   });
   const hs=pr.head,Hc=[0,T-10.4*hs-2.6];
@@ -504,7 +503,7 @@ function skel(m,pr){
     knot:back?null:[[-3.6,hipY-8.6],[3.6,hipY-8.6],[3.6,hipY+.2],[-3.6,hipY+.2]],
     shadeA:[-20,T+20],shadeB:[20,T+20]
   };
-  return{k,mirror:false,layers:back?[Lay.arms,Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso]:[Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso,Lay.arms]};
+  return{k,mirror:false,layers:back?[Lay.arms,Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso,Lay.kick]:[Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso,Lay.arms,Lay.kick]};
 }
 
 /* ---------- head shapes (local units, x forward / y down) ---------- */
@@ -649,15 +648,15 @@ function card(id){
     <span class="tech">${T[m.tech][0]}</span><span class="en">${T[m.tech][2]}</span>${chip(m)}${m.kihap?'<span class="kh">기합 KIHAP</span>':""}</button>`;
 }
 const pair=ids=>`<div class="pair">${ids.map(card).join("")}</div>`;
-const LAYOUT={r1:["4","3","J","1","2"],r3:["8","7","6","9","10"],r5:[["16-2","16-1"],"15","12","13",["14-1","14-2"]]};
+const LAYOUT={r1:FORM.layout.r1,r3:FORM.layout.r3,r5:FORM.layout.r5};
 function build(){
   for(const r in LAYOUT){
     const el=document.getElementById(r);
     el.querySelectorAll(".fig,.pair").forEach(n=>n.remove());
     el.insertAdjacentHTML("beforeend",LAYOUT[r].map(x=>Array.isArray(x)?pair(x):card(x)).join(""));
   }
-  document.getElementById("c2").innerHTML=card("5")+card("18");
-  document.getElementById("c4").innerHTML=card("11")+card("17");
+  document.getElementById("c2").innerHTML=FORM.layout.c2.map(card).join("");
+  document.getElementById("c4").innerHTML=FORM.layout.c4.map(card).join("");
   document.querySelectorAll(".fig").forEach(b=>b.addEventListener("click",()=>{stop();show(+b.dataset.i)}));
   buildSlides();
   placeRail();
@@ -694,8 +693,7 @@ rows.innerHTML=M.map((m,i)=>{
 rows.addEventListener("click",e=>{const r=e.target.closest("tr");if(r){stop();show(+r.dataset.i);(carouselOn()?track:document.getElementById("stage")).scrollIntoView({behavior:"smooth",block:"center"})}});
 
 /* mini floor map for the carousel: the 王 line with every position on it */
-const POS={"J":[50,8],"1":[70,8],"2":[90,8],"3":[30,8],"4":[10,8],"5":[50,19],"6":[50,30],"7":[30,30],"8":[10,30],"9":[70,30],"10":[90,30],
-  "11":[50,41],"12":[50,52],"13":[70,52],"14-1":[80,52],"14-2":[90,52],"15":[30,52],"16-1":[20,52],"16-2":[10,52],"17":[50,41],"18":[50,19]};
+const POS=FORM.pos;
 const ROT={na:-90,ga:90,da1:0,da2:0,da3:0,ra1:180,ra2:180,ra3:180};
 function minimap(i){
   const m=M[i],[x,y]=POS[m.id];

@@ -7,14 +7,15 @@ Modern, mobile-friendly diagrams of the Kukkiwon poomsae. Each form keeps the or
 ```
 site/                     ← deploy this folder (the publish directory)
   index.html              forms index: Taegeuk 1–8 and the black-belt forms
-  taegeuk/1/index.html    Taegeuk Il Jang
-  taegeuk/1/taegeuk-1-print.pdf
-  _redirects              /go/ short links used by printed QR codes
+  taegeuk/1/, taegeuk/2/  generated form pages + their 2-page print PDFs
+  _redirects              /go/ short links used by printed QR codes (generated)
+forms/                    one JSON file of data per form
+templates/form.html       the shared form page template
 tools/
-  build_print.py          builds a form's 2-page PDF (floor plan + sequence)
-  package.json            fonts embedded in the PDFs
-  requirements.txt
+  build_form.py           builds pages, PDFs (--print), QR check, _redirects
+  build_print.py          the 2-page print sheet
 design/                   character studies kept for reference (not deployed)
+CLAUDE.md                 conventions for adding and changing forms
 ```
 
 ## URLs
@@ -25,7 +26,7 @@ design/                   character studies kept for reference (not deployed)
 | `/taegeuk/1` … `/taegeuk/8` | One page per form. **Printed QR codes point here, so keep these paths stable.** |
 | `/go/<name>` | Short links behind the reference QR codes on the print sheets |
 
-Reference QR codes never point at outside sites directly. They go through `/go/<name>`, defined in `site/_redirects` as temporary (302) redirects. If Kukkiwon, YouTube or World Taekwondo moves a page, change one line in `_redirects`; every printed sheet keeps working.
+Reference QR codes never point at outside sites directly. They go through `/go/<name>`, defined in `site/_redirects` as temporary (302) redirects. `_redirects` is generated from the `refs` in `forms/*.json`: if Kukkiwon, YouTube or World Taekwondo moves a page, update its `url` there and rebuild; every printed sheet keeps working.
 
 ## Deploy
 
@@ -33,15 +34,15 @@ Reference QR codes never point at outside sites directly. They go through `/go/<
 
 Other hosts (Vercel, GitHub Pages, nginx) don't read `_redirects`; convert the rules to that host's format.
 
-## Rebuilding a print sheet
+## Building
 
 ```
 cd tools && npm install && pip install -r requirements.txt && python -m playwright install chromium && cd ..
-python3 tools/build_print.py site/taegeuk/1/index.html site/taegeuk/1/taegeuk-1-print.pdf \
-  https://visualtkd.com/taegeuk/1 "Taegeuk Il Jang" "태극 1장 · 18 movements"
+python3 tools/build_form.py forms/taegeuk-2.json --print   # one form
+python3 tools/build_form.py --all --print                   # every form
 ```
 
-The sheet is US Letter: page 1 is the floor plan, page 2 the full sequence and references. Both pages carry a QR to the form's page and a footer naming where the sheet was printed from, its edition and page number. Korean text uses Noto Serif CJK KR from the system.
+Pages are generated from `templates/form.html` + `forms/*.json`; don't edit `site/*/index.html` by hand. `--print` also builds the PDF and decodes every QR code in it. See `CLAUDE.md` for the full conventions.
 
 ## Sources
 
