@@ -19,6 +19,10 @@ Setup: `cd tools && npm install && pip install -r requirements.txt && python -m 
 
 After building a new form: set its `url` in the `FORMS` list in `site/index.html` (this flips its card to "Open" and moves the progress meter).
 
+## Review list
+
+`REVIEW.md` lists every source disagreement and unsettled choice, per form. When you add or change a form, add its open items there (and in the commit message).
+
 ## Adding a form — checklist
 
 1. **Verify the sequence against at least two sources** before writing data: the Kukkiwon page for the form plus a published move chart. Check stance (ap seogi vs ap kubi, which foot leads), technique, hand/foot, direction, and kihap for every move. The taekwondo.fandom.com wiki may be used as a cross-check source, never as a page link. Any disagreement between sources, or any choice not settled by a source, is listed for Brian's review in the commit/PR, not decided silently.
@@ -36,10 +40,10 @@ After building a new form: set its `url` in the `FORMS` list in `site/index.html
 
 - `id`: Kukkiwon counting. A kick and the strike after it share a number: `8-1` (kick), `8-2` (strike). Ready is `J`.
 - `dir`: `na` (top/start), `ga` (bottom), `da1–3` (right side of page), `ra1–3` (left side). You start at na facing ga, so a **left** turn from the start faces **da** (right of the page).
-- `view`: `side` for moves along the ra/da bars (needs `face`: `R` = facing right of page, `L` = left); `front` for moves toward ga; `back` for moves toward na. Exception: side kicks (`skick`) are always drawn in profile, even on the centre line, with `face` set so the kicking leg is the near (white) leg.
-- `stance`: `ready`, `walk` (ap seogi), `front` (ap kubi), `back` (dwit kubi), `kick` (ap chagi), `skick` (yeop chagi). `lead` = forward foot, or the kicking leg for kicks. For `back`, `lead` is the **front** foot; descriptions say "back stance with the left foot forward" so the naming convention can't be misread.
-- `arms`: per hand. Fist: `low`, `punch`, `hpunch`, `inside`, `outer`, `high`, `backfist`, `guard`, `junbi`. Open hand (drawn flat): `ksout` (single knife-hand outer block), `ksblock` + `ksguard` (double knife-hand block: blocking hand + guarding hand), `spear` + `press` (spear-hand thrust + pressing hand under the elbow), `neck` (knife-hand neck strike), `khigh` (knife-hand high block; with `neck` = swallow-form). Unlisted hands are chambered at the hip.
-- `tech` keys the label table `T` in the template (`junbi, low, punch, hpunch, inside, outer, high, kick, skick, ksout, ksblock, spear, neck, jebi, backfist`); add new techniques there.
+- `view`: `side` for moves along the ra/da bars (needs `face`: `R` = facing right of page, `L` = left); `front` for moves toward ga; `back` for moves toward na. Exception: side and roundhouse kicks (`skick`, `rkick`) are always drawn in profile. On the centre line, set `face` so the kicking leg is the near (white) leg; on the side bars, `face` follows the direction of travel.
+- `stance`: `ready`, `close` (moa seogi), `walk` (ap seogi), `front` (ap kubi), `back` (dwit kubi), `tiger` (beom seogi), `horse` (juchum seogi), `cross` (kkoa seogi), `kick` (ap chagi, also used for jumping and target kicks), `skick` (yeop chagi), `rkick` (dollyeo chagi), `knee` (mureup chigi). `lead` = forward foot, or the kicking leg for kicks. For `back`, `lead` is the **front** foot; descriptions say "back stance with the left foot forward" so the naming convention can't be misread.
+- `arms`: per hand. Fist: `low`, `punch`, `hpunch`, `inside`, `outer`, `high`, `backfist`, `guard`, `junbi`. Open hand (drawn flat): `ksout` (single knife-hand outer block), `ksblock` + `ksguard` (double knife-hand block: blocking hand + guarding hand), `spear` + `press` (spear-hand thrust + pressing hand under the elbow), `neck` (knife-hand neck strike), `khigh` (knife-hand high block; with `neck` = swallow-form), `twist` (twisted knife-hand high block), `palm` (palm inside block), `kslow` (low knife-hand block), `ksside` (knife-hand side block), `eltarget` / `grab` (open target or pulling hand). More fists: `hammer`, `elbow`, `houter` (high outer block), `spread`, `xlow` (low X block), `wedge`, `uppercut`, `cover` (covered fist), `sidepunch`, `assist` (supporting fist under the blocking arm). Combined techniques are built per hand: scissors = `outer` + `low`, mountain = `houter` + `low`. Unlisted hands are chambered at the hip.
+- `tech` keys the label table `T` in the template (every key above plus combined names such as `scissors`, `mountain`, `duppercut`, `apalm`, `aouter`, `alow`, `obackfist`, `tkick`, `jkick`); add new techniques there.
 - Steps with several techniques (double punch, block then punch) get sub-numbers like kicks: `17-1` block, `17-2` punch, `17-3` punch. One figure per count.
 - `note`: `bandae` (punch hand = lead foot) or `baro` (opposite hand). `kihap: true` on the shouting move.
 - `desc`: one plain instruction sentence: turn and direction, stance, technique.

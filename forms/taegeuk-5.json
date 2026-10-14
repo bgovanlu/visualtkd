@@ -1,0 +1,719 @@
+{
+ "slug": "taegeuk/5",
+ "pdf": "taegeuk-5-print.pdf",
+ "title": "Taegeuk Oh Jang",
+ "ko": "태극 5장",
+ "trigram": {
+  "name": "Seon",
+  "ko": "손",
+  "sym": "☴",
+  "meaning": "Wind",
+  "lines": [
+   1,
+   1,
+   0
+  ]
+ },
+ "movements": 20,
+ "note": {
+  "h": "Seon · 손 · Wind",
+  "p": "Seon is the wind: gentle as a breeze, fierce as a storm, and able to reach everywhere. The form adds the hammer-fist, elbow strikes, the side kick and a jumping finish into a cross stance."
+ },
+ "footer": "Move counting follows the Kukkiwon step numbers; a kick and the techniques that follow it in the same step share one number (6-1, 6-2, 6-3). Finish with <b>Baro</b>: turn to face ga and return to the ready stance at the starting point.",
+ "boardMin": 1340,
+ "cardW": 100,
+ "figH": 120,
+ "layout": {
+  "r1": [
+   "4",
+   "3",
+   "J",
+   "1",
+   "2"
+  ],
+  "c2": [
+   "5-1",
+   "5-2",
+   "19-1",
+   "19-2",
+   "20-1",
+   "20-2"
+  ],
+  "r3": [
+   [
+    "16-2",
+    "16-1"
+   ],
+   "15",
+   [
+    "6-1",
+    "6-2",
+    "6-3"
+   ],
+   "17",
+   [
+    "18-1",
+    "18-2"
+   ]
+  ],
+  "c4": [
+   "7-1",
+   "7-2",
+   "7-3",
+   "14-1",
+   "14-2",
+   "14-3"
+  ],
+  "r5": [
+   "10",
+   "9",
+   [
+    "8",
+    "13-1",
+    "13-2"
+   ],
+   "11",
+   "12"
+  ]
+ },
+ "pos": {
+  "4": [
+   8,
+   8
+  ],
+  "3": [
+   29,
+   8
+  ],
+  "J": [
+   50,
+   8
+  ],
+  "1": [
+   71,
+   8
+  ],
+  "2": [
+   92,
+   8
+  ],
+  "16-2": [
+   8,
+   30
+  ],
+  "16-1": [
+   18,
+   30
+  ],
+  "15": [
+   29,
+   30
+  ],
+  "6-1": [
+   40,
+   30
+  ],
+  "6-2": [
+   50,
+   30
+  ],
+  "6-3": [
+   60,
+   30
+  ],
+  "17": [
+   71,
+   30
+  ],
+  "18-1": [
+   82,
+   30
+  ],
+  "18-2": [
+   92,
+   30
+  ],
+  "10": [
+   8,
+   52
+  ],
+  "9": [
+   22,
+   52
+  ],
+  "8": [
+   36,
+   52
+  ],
+  "13-1": [
+   50,
+   52
+  ],
+  "13-2": [
+   64,
+   52
+  ],
+  "11": [
+   78,
+   52
+  ],
+  "12": [
+   92,
+   52
+  ],
+  "5-1": [
+   50,
+   19
+  ],
+  "5-2": [
+   50,
+   19
+  ],
+  "19-1": [
+   50,
+   19
+  ],
+  "19-2": [
+   50,
+   19
+  ],
+  "20-1": [
+   50,
+   19
+  ],
+  "20-2": [
+   50,
+   19
+  ],
+  "7-1": [
+   50,
+   41
+  ],
+  "7-2": [
+   50,
+   41
+  ],
+  "7-3": [
+   50,
+   41
+  ],
+  "14-1": [
+   50,
+   41
+  ],
+  "14-2": [
+   50,
+   41
+  ],
+  "14-3": [
+   50,
+   41
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "na",
+   "view": "front",
+   "stance": "ready",
+   "arms": {
+    "L": "junbi",
+    "R": "junbi"
+   },
+   "tech": "junbi",
+   "desc": "Stand at na facing ga, feet parallel and one foot-width apart, fists in front of the belt."
+  },
+  {
+   "id": "1",
+   "dir": "da1",
+   "view": "side",
+   "stance": "front",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "hand": "L",
+   "desc": "Turn 90° left toward da¹, left front stance. Left low block."
+  },
+  {
+   "id": "2",
+   "dir": "da1",
+   "view": "side",
+   "stance": "walk",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "L": "hammer"
+   },
+   "tech": "hammer",
+   "hand": "L",
+   "desc": "Draw the left foot back into a short stance (oen seogi). Left hammer-fist strike."
+  },
+  {
+   "id": "3",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "front",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "R": "low"
+   },
+   "tech": "low",
+   "hand": "R",
+   "desc": "Turn 180° to the right toward ra¹, right front stance. Right low block."
+  },
+  {
+   "id": "4",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "walk",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "R": "hammer"
+   },
+   "tech": "hammer",
+   "hand": "R",
+   "desc": "Draw the right foot back into a short stance (oreun seogi). Right hammer-fist strike."
+  },
+  {
+   "id": "5-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "inside"
+   },
+   "tech": "inside",
+   "hand": "L",
+   "desc": "Turn 90° left toward ga, left front stance. Left inside middle block."
+  },
+  {
+   "id": "5-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "inside"
+   },
+   "tech": "inside",
+   "hand": "R",
+   "desc": "Right inside middle block."
+  },
+  {
+   "id": "6-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "R",
+   "foot": true,
+   "desc": "Right front kick."
+  },
+  {
+   "id": "6-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "backfist"
+   },
+   "tech": "backfist",
+   "hand": "R",
+   "desc": "Land forward in a right front stance. Right back-fist strike."
+  },
+  {
+   "id": "6-3",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "inside"
+   },
+   "tech": "inside",
+   "hand": "L",
+   "desc": "Left inside middle block."
+  },
+  {
+   "id": "7-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "L",
+   "foot": true,
+   "desc": "Left front kick."
+  },
+  {
+   "id": "7-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "backfist"
+   },
+   "tech": "backfist",
+   "hand": "L",
+   "desc": "Land forward in a left front stance. Left back-fist strike."
+  },
+  {
+   "id": "7-3",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "inside"
+   },
+   "tech": "inside",
+   "hand": "R",
+   "desc": "Right inside middle block."
+  },
+  {
+   "id": "8",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "backfist"
+   },
+   "tech": "backfist",
+   "hand": "R",
+   "desc": "Step forward into a right front stance. Right back-fist strike."
+  },
+  {
+   "id": "9",
+   "dir": "ra3",
+   "view": "side",
+   "stance": "back",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "ksout"
+   },
+   "tech": "ksout",
+   "hand": "L",
+   "desc": "Turn 270° to the left toward ra³, back stance with the left foot forward. Left knife-hand outer block."
+  },
+  {
+   "id": "10",
+   "dir": "ra3",
+   "view": "side",
+   "stance": "front",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "R": "elbow",
+    "L": "eltarget"
+   },
+   "tech": "elbow",
+   "hand": "R",
+   "desc": "Step forward into a right front stance. Right elbow strike into the left palm."
+  },
+  {
+   "id": "11",
+   "dir": "da3",
+   "view": "side",
+   "stance": "back",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "R": "ksout"
+   },
+   "tech": "ksout",
+   "hand": "R",
+   "desc": "Turn 180° to the right toward da³, back stance with the right foot forward. Right knife-hand outer block."
+  },
+  {
+   "id": "12",
+   "dir": "da3",
+   "view": "side",
+   "stance": "front",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "L": "elbow",
+    "R": "eltarget"
+   },
+   "tech": "elbow",
+   "hand": "L",
+   "desc": "Step forward into a left front stance. Left elbow strike into the right palm."
+  },
+  {
+   "id": "13-1",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "hand": "L",
+   "desc": "Turn 90° left toward na, left front stance. Left low block."
+  },
+  {
+   "id": "13-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "inside"
+   },
+   "tech": "inside",
+   "hand": "R",
+   "desc": "Right inside middle block."
+  },
+  {
+   "id": "14-1",
+   "dir": "na",
+   "view": "back",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "R",
+   "foot": true,
+   "desc": "Right front kick."
+  },
+  {
+   "id": "14-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "low"
+   },
+   "tech": "low",
+   "hand": "R",
+   "desc": "Land forward in a right front stance. Right low block."
+  },
+  {
+   "id": "14-3",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "inside"
+   },
+   "tech": "inside",
+   "hand": "L",
+   "desc": "Left inside middle block."
+  },
+  {
+   "id": "15",
+   "dir": "ra2",
+   "view": "side",
+   "stance": "front",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "high"
+   },
+   "tech": "high",
+   "hand": "L",
+   "desc": "Turn 90° left toward ra², left front stance. Left high block."
+  },
+  {
+   "id": "16-1",
+   "dir": "ra2",
+   "view": "side",
+   "stance": "skick",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "R": "sidepunch"
+   },
+   "tech": "skick",
+   "hand": "R",
+   "foot": true,
+   "desc": "Right side kick, right arm extended toward the target."
+  },
+  {
+   "id": "16-2",
+   "dir": "ra2",
+   "view": "side",
+   "stance": "front",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "elbow",
+    "R": "eltarget"
+   },
+   "tech": "eltarget",
+   "hand": "L",
+   "desc": "Land in a right front stance. Left elbow strike into the right palm."
+  },
+  {
+   "id": "17",
+   "dir": "da2",
+   "view": "side",
+   "stance": "front",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "R": "high"
+   },
+   "tech": "high",
+   "hand": "R",
+   "desc": "Turn 180° to the right toward da², right front stance. Right high block."
+  },
+  {
+   "id": "18-1",
+   "dir": "da2",
+   "view": "side",
+   "stance": "skick",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "L": "sidepunch"
+   },
+   "tech": "skick",
+   "hand": "L",
+   "foot": true,
+   "desc": "Left side kick, left arm extended toward the target."
+  },
+  {
+   "id": "18-2",
+   "dir": "da2",
+   "view": "side",
+   "stance": "front",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "R": "elbow",
+    "L": "eltarget"
+   },
+   "tech": "eltarget",
+   "hand": "R",
+   "desc": "Land in a left front stance. Right elbow strike into the left palm."
+  },
+  {
+   "id": "19-1",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "hand": "L",
+   "desc": "Turn 90° left toward na, left front stance. Left low block."
+  },
+  {
+   "id": "19-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "inside"
+   },
+   "tech": "inside",
+   "hand": "R",
+   "desc": "Right inside middle block."
+  },
+  {
+   "id": "20-1",
+   "dir": "na",
+   "view": "back",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "R",
+   "foot": true,
+   "desc": "Right front kick."
+  },
+  {
+   "id": "20-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "R": "backfist"
+   },
+   "tech": "backfist",
+   "hand": "R",
+   "kihap": true,
+   "desc": "Jump forward into a cross stance, left foot tucked behind the right. Right back-fist strike with a kihap."
+  }
+ ],
+ "refs": [
+  {
+   "go": "kukkiwon-t5",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Taegeuk 5 Jang",
+   "desc": "The form’s official description and meaning.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1352&page=2&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "kukkiwon-poomsae",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Poomsae index",
+   "desc": "Every official poomsae, Taegeuk 1–8 and the black-belt forms.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/list?boardManagementNo=55&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "video-t5",
+   "kind": "yt",
+   "icon": "play",
+   "src": "YouTube · Video",
+   "title": "Taegeuk 5 Jang, full performance",
+   "desc": "Kukkiwon Digital Encyclopedia, published by Mookas TV.",
+   "url": "https://www.youtube.com/watch?v=4afL-NT521s"
+  },
+  {
+   "go": "kukkiwon-youtube",
+   "kind": "yt",
+   "icon": "channel",
+   "src": "YouTube · Channel",
+   "title": "Kukkiwon World Taekwondo Headquarters",
+   "desc": "The official Kukkiwon channel.",
+   "url": "https://www.youtube.com/channel/UCaQb3jutLu15oSfhPh8FACQ"
+  },
+  {
+   "go": "wt-poomsae-rules",
+   "kind": "wt",
+   "icon": "pdf",
+   "src": "World Taekwondo · PDF",
+   "title": "Poomsae Competition Rules and Interpretation",
+   "desc": "In force from 30 September 2024; how poomsae are judged.",
+   "url": "https://www.worldtaekwondo.org/att_file/documents/Poomsae%20Competition%20Rules%20and%20Interpretation%20(In%20force%20as%20of%20September%2030%202024).pdf"
+  }
+ ]
+}

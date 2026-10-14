@@ -78,6 +78,8 @@ h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6v
 .chip.front{background:var(--ink);border-color:var(--ink);color:var(--surface)}
 .chip.kick{border-style:dashed}
 .chip.back{border:3px double var(--ink);color:var(--ink)}
+.chip.tiger{border-style:dotted;border-width:2px;color:var(--ink)}
+.chip.horse{background:var(--mat);border-color:var(--ink);color:var(--ink)}
 .chip.ready{border-color:var(--line)}
 .fig.on .chip{outline:2px solid var(--fire);outline-offset:2px}
 .kh{font-family:var(--f-mono);font-size:10px;color:var(--fire);letter-spacing:.06em;margin-top:3px}
@@ -332,7 +334,32 @@ const T={
   neck:["Sonnal mok chigi","손날목치기","Knife-hand neck strike"],
   jebi:["Jebipoom mok chigi","제비품목치기","Swallow-form neck strike"],
   backfist:["Deung jumeok ap chigi","등주먹앞치기","Back-fist strike"],
-  skick:["Yeop chagi","옆차기","Side kick"]
+  skick:["Yeop chagi","옆차기","Side kick"],
+  rkick:["Dollyeo chagi","돌려차기","Roundhouse kick"],
+  tkick:["Pyojeok chagi","표적차기","Target kick"],
+  jkick:["Twimyeo ap chagi","뛰어앞차기","Jumping front kick"],
+  knee:["Mureup chigi","무릎치기","Knee strike"],
+  hammer:["Mejumeok naeryeo chigi","메주먹내려치기","Hammer-fist strike"],
+  elbow:["Palkup dollyeo chigi","팔굽돌려치기","Elbow strike"],
+  eltarget:["Palkup pyojeok chigi","팔굽표적치기","Elbow target strike"],
+  houter:["Eolgul bakkat makki","얼굴바깥막기","High outer block"],
+  twist:["Hansonnal eolgul bitureo makki","한손날얼굴비틀어막기","Twisted knife-hand high block"],
+  spread:["Arae hecho makki","아래헤쳐막기","Low spread block"],
+  palm:["Batangson momtong an makki","바탕손몸통안막기","Palm inside block"],
+  apalm:["Geodeureo batangson momtong an makki","거들어바탕손몸통안막기","Augmented palm block"],
+  aouter:["Geodeureo momtong bakkat makki","거들어몸통바깥막기","Augmented outer block"],
+  alow:["Geodeureo arae makki","거들어아래막기","Augmented low block"],
+  xlow:["Eotgeoreo arae makki","엇걸어아래막기","Low X block"],
+  wedge:["Momtong hecho makki","몸통헤쳐막기","Middle wedge block"],
+  scissors:["Gawi makki","가위막기","Scissors block"],
+  mountain:["Oesanteul makki","외산틀막기","Single mountain block"],
+  uppercut:["Dangkyeo teok jireugi","당겨턱지르기","Pulling uppercut"],
+  duppercut:["Dujumeok jeocho jireugi","두주먹젖혀지르기","Double uppercut"],
+  cover:["Bojumeok","보주먹","Covered fist"],
+  sidepunch:["Yeop jireugi","옆지르기","Side punch"],
+  ksside:["Hansonnal yeop makki","한손날옆막기","Knife-hand side block"],
+  kslow:["Sonnal arae makki","손날아래막기","Low knife-hand block"],
+  obackfist:["Deung jumeok bakkat chigi","등주먹바깥치기","Outward back-fist"]
 };
 const STANCE={
   ready:["Naranhi seogi","나란히서기","Parallel stance"],
@@ -340,7 +367,13 @@ const STANCE={
   front:["Ap kubi","앞굽이","Front stance"],
   kick:["Ap chagi","앞차기","Kicking"],
   back:["Dwit kubi","뒷굽이","Back stance"],
-  skick:["Yeop chagi","옆차기","Kicking"]
+  skick:["Yeop chagi","옆차기","Kicking"],
+  rkick:["Dollyeo chagi","돌려차기","Kicking"],
+  knee:["Mureup chigi","무릎치기","Knee strike"],
+  tiger:["Beom seogi","범서기","Tiger stance"],
+  horse:["Juchum seogi","주춤서기","Horse stance"],
+  cross:["Kkoa seogi","꼬아서기","Cross stance"],
+  close:["Moa seogi","모아서기","Closed stance"]
 };
 const DIRN={na:"na",ga:"ga",da1:"da¹",da2:"da²",da3:"da³",ra1:"ra¹",ra2:"ra²",ra3:"ra³"};
 
@@ -405,7 +438,7 @@ const FOOT_HEEL=[[-3.7,-1],[3.7,-1],[4.4,3.8],[3.2,6.5],[-3.2,6.5],[-4.4,3.8]];
 const FIST=[[-.4,-3.8],[3,-4.6],[7.6,-4.5],[9.8,-2.8],[10.3,.4],[9.4,3.6],[6,4.8],[1.6,4.3],[-.4,3.6]];
 const HAND_FLAT=[[-.4,-3],[3,-3.4],[9,-3.2],[13.2,-2],[14,0],[13.2,2],[9,3.1],[3,3.3],[-.4,2.8]];
 // open-hand techniques draw a flat hand instead of a fist
-const OPEN=new Set(["ksout","ksblock","ksguard","spear","press","neck","khigh"]);
+const OPEN=new Set(["ksout","ksblock","ksguard","spear","press","neck","khigh","eltarget","twist","palm","grab","ksside","kslow"]);
 const KNIFE_FACE=[[-6.8,-2.4],[6.8,-2.4],[7.6,0],[6.8,2.4],[-6.8,2.4],[-7.6,0]];
 const FIST_FACE=[[-5.4,-4.3],[5.4,-4.3],[6.3,0],[5.6,4.5],[-5.6,4.5],[-6.3,0]];
 const mk=far=>({far,legs:[],arms:[],feet:[],fists:[],torso:null,head:null,neck:null});
@@ -418,7 +451,7 @@ function skel(m,pr){
   }
   if(m.view==="side"){
     const near=m.face==="R"?"R":"L",st=m.stance;
-    const hipY={walk:0,front:14,kick:-2,back:8,skick:-4}[st]*k,lean={walk:2,front:5,kick:-8,back:-3,skick:-13}[st]*tk;
+    const hipY={walk:0,front:14,kick:-2,back:8,skick:-4,rkick:-4,knee:-2,tiger:10,horse:14,cross:6,close:-1,ready:-1}[st]*k,lean={walk:2,front:5,kick:-8,back:-3,skick:-13,rkick:-12,knee:-4,tiger:-1,horse:0,cross:3,close:0,ready:0}[st]*tk;
     const H=[0,hipY],S=[lean,hipY-pr.torso],u=norm(sub(S,H)),r=[-u[1],u[0]],Lt=pr.torso;
     const P=(x,y)=>add(add(H,mul(r,x)),mul(u,y));
     const Lay={farArm:mk(1),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0),nearArm:mk(0)};
@@ -430,13 +463,19 @@ function skel(m,pr){
       else if(st==="front")t=lead?[38,56]:[-44,56];
       else if(st==="back")t=lead?[22,56]:[-17,56];                    // dwit kubi: weight on the bent rear leg
       else if(st==="skick"){t=lead?[60,-6]:[-6,56];if(lead)pref=[.3,-1];} // yeop chagi: leg level, body leaning away
+      else if(st==="rkick"){t=lead?[54,-30]:[-6,56];if(lead)pref=[.6,-1];} // dollyeo chagi: kick at face height
+      else if(st==="knee"){t=lead?[18,22]:[-4,56];if(lead)pref=[1,-1];}    // mureup chigi: knee driven up
+      else if(st==="tiger")t=lead?[12,56]:[-14,56];                      // beom seogi: short, weight on the bent rear leg
+      else if(st==="horse")t=lead?[24,56]:[-24,56];
+      else if(st==="cross")t=lead?[8,56]:[-6,56];                        // kkoa seogi: rear foot tucked behind
+      else if(st==="close"||st==="ready")t=lead?[3,56]:[-1,56];
       else{t=lead?[58,-16]:[-5,56];if(lead)pref=[.4,-1];}
       t=mul(t,k);
       const hp=HP[dp],[kn,an]=ik(hp,t,pr.thigh,pr.shin,pref),Lg=dp==="near"?Lay.nearLeg:Lay.farLeg;
       Lg.legs.push({ch:[hp,kn,an]});
-      const kick=(st==="kick"||st==="skick")&&lead,kicking=st==="kick"||st==="skick";
+      const kicking=["kick","skick","rkick","knee"].includes(st),kick=kicking&&lead;
       const fs=lead||kicking?1:st==="back"?.6:.82;   // back-stance rear foot is turned out 90°, so it reads short
-      Lg.feet.push({pts:xf(FOOT_SIDE,an,kick?(st==="skick"?-.15:-1.25):0,fs*pr.foot,pr.foot)});
+      Lg.feet.push({pts:xf(FOOT_SIDE,an,kick?({skick:-.15,rkick:-.4,knee:.9}[st]??-1.25):(st==="tiger"&&lead?-.35:0),fs*pr.foot,pr.foot)});
       const act=(m.arms&&m.arms[s])||"chamber",sh=SH[dp];let h,p=[0,1];
       if(act==="chamber"){h=[-4,hipY-11*tk];p=[-1,.1]}
       else if(act==="punch")h=add(sh,mul([46,6],ak));
@@ -452,6 +491,22 @@ function skel(m,pr){
       else if(act==="press")h=add(sh,mul([24,20],ak));
       else if(act==="neck")h=add(sh,mul([40,-4],ak));
       else if(act==="backfist")h=add(sh,mul([36,-12],ak));
+      else if(act==="hammer")h=add(sh,mul([38,10],ak));
+      else if(act==="elbow"){h=add(sh,mul([10,2],ak));p=[1,.3]}
+      else if(act==="eltarget")h=add(sh,mul([24,2],ak));
+      else if(act==="houter"){h=add(sh,mul([14,-26],ak));p=[1,.5]}
+      else if(act==="twist")h=add(sh,mul([24,-14],ak));
+      else if(act==="spread")h=[8,hipY+10];
+      else if(act==="palm")h=add(sh,mul([22,-1],ak));
+      else if(act==="xlow")h=[24*ak,hipY+2];
+      else if(act==="wedge")h=add(sh,mul([18,-8],ak));
+      else if(act==="uppercut")h=add(sh,mul([26,-6],ak));
+      else if(act==="grab")h=add(sh,mul([30,-4],ak));
+      else if(act==="cover")h=add(sh,mul([16,14],ak));
+      else if(act==="sidepunch")h=add(sh,mul([46,4],ak));
+      else if(act==="ksside")h=add(sh,mul([24,-2],ak));
+      else if(act==="kslow")h=[26*ak,hipY-2];
+      else if(act==="assist")h=add(sh,mul([14,14],ak));
       else h=dp==="near"?add(sh,mul([24,14],ak)):add(sh,mul([17,7],ak));
       addArm(dp==="near"?Lay.nearArm:Lay.farArm,sh,h,p,false,OPEN.has(act));
     });
@@ -472,11 +527,22 @@ function skel(m,pr){
     return{k,mirror:m.face==="L",layers:["farArm","farLeg","nearLeg","head","torso","nearArm"].map(q=>Lay[q])};
   }
   const back=m.view==="back",sx=s=>(s==="L"?1:-1)*(back?-1:1),st=m.stance;
-  const hipY=st==="front"||st==="back"?6*k:-3*k,T=hipY-pr.torso;
+  const hipY=(st==="front"||st==="back"||st==="tiger")?6*k:st==="horse"?10*k:st==="cross"?4*k:-3*k,T=hipY-pr.torso;
   const Lay={arms:mk(0),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0),kick:mk(1)};
   ["L","R"].forEach(s=>{
     const x=sx(s),hp=[x*pr.hipW*.95,hipY];let an,kn,nearer=true,sc=1;
     if(st==="ready"){an=[x*11*hw,58*k];kn=add(lerp(hp,an,.5),[x*.6,0])}
+    else if(st==="close"){an=[x*4.5*hw,58*k];kn=add(lerp(hp,an,.5),[x*.3,0])}
+    else if(st==="horse"){an=[x*24*hw,60*k];kn=add(lerp(hp,an,.5),[x*6,0])}  // juchum seogi: wide, knees pushed out
+    else if(st==="tiger"){ // beom seogi: front foot light and close, rear knee bent
+      const lead=s===m.lead;nearer=back?!lead:lead;
+      if(lead){an=[x*6*hw,(back?55:60)*k];kn=add(lerp(hp,an,.5),[x*2,0]);sc=back?.9:1}
+      else{an=[x*10*hw,(back?60:55)*k];kn=add(lerp(hp,an,.5),[x*4,0]);sc=back?1:.9}
+    }else if(st==="cross"){ // kkoa seogi after a jump: rear foot crossed behind the front one
+      const lead=s===m.lead;nearer=back?!lead:lead;
+      if(lead){an=[x*5*hw,(back?55:60)*k];kn=lerp(hp,an,.5);sc=back?.9:1}
+      else{an=[x*-1*hw,(back?60:54)*k];kn=add(lerp(hp,an,.5),[x*2,0]);sc=back?1:.86}
+    }
     else if(st==="walk"){ // ap seogi seen from front/back: both legs straight, lead foot nearer the viewer from the front
       const lead=s===m.lead;nearer=back?!lead:lead;
       if(nearer){an=[x*10.5*hw,62*k];sc=1.06}else{an=[x*9.5*hw,54*k];sc=.9}
@@ -517,6 +583,21 @@ function skel(m,pr){
       else if(act==="ksguard"){h=[x*-2,T+22*tk];p=[x,.3]}
       else if(act==="neck"){h=[x*-7,T-2*tk];p=[x,.6]}          // knife hand ends at neck height, palm up
       else if(act==="backfist"){h=[x*3,T-14*tk];p=[x,.2]}
+      else if(act==="hammer")h=[x*(pr.shW+30),T+16*tk];
+      else if(act==="elbow"){h=[x*-6,T+4*tk];p=[x,.2]}
+      else if(act==="eltarget"||act==="grab"){h=[x*-8,T+6*tk];p=[x,.4]}
+      else if(act==="houter"){h=[x*(pr.shW+4),T-14*tk];p=[x*.4,1]}
+      else if(act==="twist"){h=[x*-2,T-4*tk];p=[x*.5,1]}
+      else if(act==="spread"){h=[x*(pr.shW+12),hipY+12*k];p=[x,.2]}
+      else if(act==="palm"){h=[x*-3,T+9*tk];p=[x*.5,1]}
+      else if(act==="xlow"){h=[x*-3,hipY+4*k];p=[x,.4]}
+      else if(act==="wedge"){h=[x*(pr.shW+6),T+2*tk];p=[x*.4,1]}
+      else if(act==="uppercut"){h=[x*-2,T-2*tk];p=[x*.3,1]}
+      else if(act==="cover"){h=[x*2,T+18*tk];p=[x,.3]}
+      else if(act==="sidepunch")h=[x*(pr.shW+46),T+10*tk];
+      else if(act==="ksside"){h=[x*(pr.shW+28),T+6*tk];p=[x*.3,1]}
+      else if(act==="kslow"){h=[x*(pr.shW+12),hipY+6*k];p=[x,.2]}
+      else if(act==="assist"){h=[x*-2,T+20*tk];p=[x,.3]}
       else if(act==="guard")h=[x*8,T+28*tk];
       else h=[x*6.5,hipY-12*tk];                                 // junbi
       addArm(Lay.arms,sh,h,p,false,OPEN.has(act));
@@ -658,6 +739,12 @@ function feet(m){
     s=foot(l*2.6,-6,0,1)+foot(o*2.6,6.5,o*.5,0)+`<path d="M-11 -6H11M-11 6.5H11" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 2"/>`;}
   else if(m.stance==="front"){const l=sgn(m.lead),o=sgn(other(m.lead));
     s=`<path d="M${l*7} -12V12M${o*7} -12V12" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 2"/>`+foot(l*7,-11,0,1)+foot(o*7,11,o*.5,0);}
+  else if(m.stance==="tiger"){const l=sgn(m.lead),o=sgn(other(m.lead));  // beom seogi: short, front foot on the ball
+    s=foot(l*1.5,-6,0,1)+foot(o*3,6,o*.6,0);}
+  else if(m.stance==="horse")s=foot(-11,1,0,0)+foot(11,1,0,0)+`<path d="M-11 -9V11M11 -9V11" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 2"/>`;
+  else if(m.stance==="close")s=foot(-3.5,1,0,0)+foot(3.5,1,0,0);
+  else if(m.stance==="cross"){const l=sgn(m.lead),o=sgn(other(m.lead));
+    s=foot(l*1.5,-3,0,1)+foot(o*-2,7,o*.4,0);}
   else if(m.stance==="back"){const l=sgn(m.lead),o=sgn(other(m.lead));   // dwit kubi: an L shape, rear foot turned 90° out
     s=`<path d="M0 -14V13" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 2"/>`+foot(0,-8,0,1)+foot(o*3,9,o*Math.PI/2,0);}
   else{const l=sgn(m.lead),o=sgn(other(m.lead));
@@ -670,13 +757,20 @@ function chip(m){
   if(m.stance==="ready")return`<span class="chip ready">Naranhi</span>`;
   if(m.stance==="kick")return`<span class="chip kick">${m.lead} · Ap chagi</span>`;
   if(m.stance==="skick")return`<span class="chip kick">${m.lead} · Yeop chagi</span>`;
+  if(m.stance==="rkick")return`<span class="chip kick">${m.lead} · Dollyeo chagi</span>`;
+  if(m.stance==="knee")return`<span class="chip kick">${m.lead} · Mureup</span>`;
+  if(m.stance==="tiger")return`<span class="chip tiger">${m.lead} · Beom seogi</span>`;
+  if(m.stance==="horse")return`<span class="chip horse">Juchum seogi</span>`;
+  if(m.stance==="cross")return`<span class="chip">${m.lead} · Kkoa seogi</span>`;
+  if(m.stance==="close")return`<span class="chip ready">Moa seogi</span>`;
   if(m.stance==="back")return`<span class="chip back">${m.lead} · Dwit kubi</span>`;
   return`<span class="chip ${m.stance}">${m.lead} · ${m.stance==="walk"?"Ap seogi":"Ap kubi"}</span>`;
 }
 function stanceLabel(m){
   if(m.stance==="ready")return"parallel";
-  if(m.stance==="kick"||m.stance==="skick")return sideWord(m.lead)+" kick";
-  return sideWord(m.lead)+({walk:" walking",front:" front",back:" back"})[m.stance];
+  if(["kick","skick","rkick","knee"].includes(m.stance))return sideWord(m.lead)+" kick";
+  if(m.stance==="horse"||m.stance==="close")return m.stance;
+  return sideWord(m.lead)+({walk:" walking",front:" front",back:" back",tiger:" tiger",cross:" cross"})[m.stance];
 }
 
 /* ---------- build board ---------- */
@@ -714,6 +808,8 @@ document.getElementById("legend").innerHTML=
   feet({dir:"na",stance:"walk",lead:"L"})+`<p><b>Ap seogi</b> · walking stance. One natural step, feet almost in line.</p>`+
   feet({dir:"na",stance:"front",lead:"L"})+`<p><b>Ap kubi</b> · front stance. About 1½ steps long, one fist wide, front knee bent.</p>`+
   (M.some(x=>x.stance==="back")?feet({dir:"na",stance:"back",lead:"L"})+`<p><b>Dwit kubi</b> · back stance. Heels in line, rear foot turned out, weight on the bent rear leg.</p>`:"")+
+  (M.some(x=>x.stance==="tiger")?feet({dir:"na",stance:"tiger",lead:"L"})+`<p><b>Beom seogi</b> · tiger stance. Short, front foot on the ball, weight on the bent rear leg.</p>`:"")+
+  (M.some(x=>x.stance==="horse")?feet({dir:"na",stance:"horse"})+`<p><b>Juchum seogi</b> · horse stance. Feet wide and parallel, knees bent and pushed out.</p>`:"")+
   feet({dir:"na",stance:"kick",lead:"R"})+`<p><b>Ap chagi</b> · front kick from the rear leg.</p>`+
   `<span></span><p style="font-size:12px">Red foot leads; the blue tick is the direction you face. Front-stance chips are filled.${M.some(x=>x.stance==="back")?" Back-stance chips have a double outline.":""}</p>`;
 const beltEls=[document.getElementById("belts"),document.getElementById("mbelts")];
@@ -727,8 +823,8 @@ beltEls.forEach(el=>{
 const rows=document.getElementById("rows");
 rows.innerHTML=M.map((m,i)=>{
   const st=STANCE[m.stance],te=T[m.tech];
-  const stTxt=m.stance==="ready"?`${st[0]} <span class="ko">${st[1]}</span>`:
-    m.stance==="kick"||m.stance==="skick"?`${sideWord(m.lead)} leg <span class="ko">${st[1]}</span>`:
+  const stTxt=["ready","horse","close"].includes(m.stance)?`${st[0]} <span class="ko">${st[1]}</span>`:
+    ["kick","skick","rkick","knee"].includes(m.stance)?`${sideWord(m.lead)} leg <span class="ko">${st[1]}</span>`:
     `${sideWord(m.lead)} ${st[0].toLowerCase()} <span class="ko">${st[1]}</span>`;
   return `<tr data-i="${i}"><td class="n">${m.id==="J"?"—":m.id}</td><td>${DIRN[m.dir]}</td><td>${stTxt}</td><td>${te[0]}${m.note?` (${m.note})`:""} <span class="ko">${te[1]}</span></td><td>${m.desc}</td></tr>`}).join("");
 rows.addEventListener("click",e=>{const r=e.target.closest("tr");if(r){stop();show(+r.dataset.i);(carouselOn()?track:document.getElementById("stage")).scrollIntoView({behavior:"smooth",block:"center"})}});
@@ -789,7 +885,7 @@ function show(i,src){
   const te=T[m.tech],st=STANCE[m.stance];
   document.getElementById("name").innerHTML=`${te[0]} <span style="font-weight:400;color:var(--muted)">${te[1]}</span><small>${te[2]}${m.note?" · "+m.note:""}</small>`;
   document.getElementById("facts").innerHTML=
-    `<div><small>Stance</small><b>${m.stance==="ready"||m.stance==="kick"||m.stance==="skick"?st[0]:sideWord(m.lead)+" "+st[0].toLowerCase()} · ${st[1]}</b></div>`+
+    `<div><small>Stance</small><b>${["ready","kick","skick","rkick","knee","horse","close"].includes(m.stance)?st[0]:sideWord(m.lead)+" "+st[0].toLowerCase()} · ${st[1]}</b></div>`+
     (m.hand?`<div><small>${m.foot?"Kicking leg":"Hand"}</small><b>${sideWord(m.hand)}</b></div>`:"")+
     `<div><small>Line</small><b>${DIRN[m.dir]}</b></div>`+(m.kihap?`<div><small>Shout</small><b style="color:var(--fire)">Kihap 기합</b></div>`:"");
   document.getElementById("desc").textContent=m.desc;

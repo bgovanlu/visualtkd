@@ -7,7 +7,7 @@ Modern, mobile-friendly diagrams of the Kukkiwon poomsae. Each form keeps the or
 ```
 site/                     ← deploy this folder (the publish directory)
   index.html              forms index: Taegeuk 1–8 and the black-belt forms
-  taegeuk/1/, taegeuk/2/  generated form pages + their 2-page print PDFs
+  taegeuk/1/ … /8/        generated form pages + their 2-page print PDFs
   _redirects              /go/ short links used by printed QR codes (generated)
 forms/                    one JSON file of data per form
 templates/form.html       the shared form page template
@@ -16,6 +16,7 @@ tools/
   build_print.py          the 2-page print sheet
 design/                   character studies kept for reference (not deployed)
 CLAUDE.md                 conventions for adding and changing forms
+REVIEW.md                 open questions per form, to check against the Kukkiwon videos
 ```
 
 ## URLs
