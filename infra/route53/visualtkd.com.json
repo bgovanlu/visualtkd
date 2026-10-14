@@ -1,0 +1,44 @@
+{
+  "Comment": "visualtkd.com sends and receives no mail: null MX, SPF -all, DMARC reject. Applied 2026-10-14. Website records (A/AAAA aliases, ACM validation) are owned by the CloudFormation stack in infra/aws/site.yaml.",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "visualtkd.com.",
+        "Type": "MX",
+        "TTL": 3600,
+        "ResourceRecords": [
+          {
+            "Value": "0 ."
+          }
+        ]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "visualtkd.com.",
+        "Type": "TXT",
+        "TTL": 3600,
+        "ResourceRecords": [
+          {
+            "Value": "\"v=spf1 -all\""
+          }
+        ]
+      }
+    },
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_dmarc.visualtkd.com.",
+        "Type": "TXT",
+        "TTL": 3600,
+        "ResourceRecords": [
+          {
+            "Value": "\"v=DMARC1; p=reject\""
+          }
+        ]
+      }
+    }
+  ]
+}

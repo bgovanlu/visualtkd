@@ -105,4 +105,4 @@ Plain, direct English. Korean names romanised as Kukkiwon does (Taegeuk Il Jang,
 
 ## Deploy
 
-Netlify or Cloudflare Pages: no build command, publish directory `site`. Both read `site/_redirects`.
+AWS S3 + CloudFront via `python3 tools/deploy_aws.py` (stack `infra/aws/site.yaml`). The `/go/` short links are compiled from `site/_redirects` into the CloudFront function, so after changing any `refs` run the full deploy, not `--content`. Keep the directory-style URLs: the function redirects `/taegeuk/1` to `/taegeuk/1/` so each page's relative PDF link resolves.

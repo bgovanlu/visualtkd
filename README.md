@@ -15,8 +15,11 @@ templates/form.html       the shared form page template
 tools/
   build_form.py           builds pages, PDFs (--print), QR check, _redirects
   build_print.py          the 2-page print sheet
+  deploy_aws.py           deploys site/ to AWS (stack, upload, cache invalidation)
   check/                  screenshots for review: shot.py (board / phone), figs.py (enlarged poses) -> shots/
   authoring/              scripts that wrote some forms/*.json (reference only; re-running overwrites)
+infra/aws/                CloudFormation stack (S3, CloudFront, ACM, Route 53), viewer-request function, deployer IAM policy
+infra/route53/            DNS records kept outside the stack (no-mail MX/SPF/DMARC)
 design/                   character studies kept for reference (not deployed)
 CLAUDE.md                 conventions for adding and changing forms
 REVIEW.md                 open questions per form, to check against the Kukkiwon videos
@@ -36,14 +39,21 @@ Reference QR codes never point at outside sites directly. They go through `/go/<
 
 ## Deploy
 
-**Netlify or Cloudflare Pages.** Connect this repo, leave the build command empty, and set the publish/output directory to `site`. Both read `site/_redirects` as-is. Then add `visualtkd.com` as the custom domain.
+**AWS: S3 + CloudFront**, defined in `infra/aws/site.yaml` (stack `visualtkd-site`, us-east-1). The bucket is private and read only by CloudFront; ACM issues the certificate for `visualtkd.com` and `www`; the stack also owns the Route 53 alias records.
 
-Other hosts (Vercel, GitHub Pages, nginx) don't read `_redirects`; convert the rules to that host's format.
+```
+python3 tools/deploy_aws.py             # update the stack, upload site/, invalidate the cache
+python3 tools/deploy_aws.py --content   # upload + invalidate only (page or PDF changes)
+```
+
+CloudFront doesn't read `_redirects`. A viewer-request function (`infra/aws/viewer-request.js`) does what a static host would: `www` → `visualtkd.com`, `/taegeuk/1` → `/taegeuk/1/` → `index.html`, and the `/go/` short links, which `deploy_aws.py` compiles in from `site/_redirects`. **A new or changed short link therefore needs the full deploy, not `--content`.**
+
+The deploying credentials need `infra/aws/deployer-policy.json` (or admin).
 
 ## Building
 
 ```
-cd tools && npm install && pip install -r requirements.txt && python -m playwright install chromium && cd ..
+cd tools && npm install && python3 -m venv ../.venv && ../.venv/bin/pip install -r requirements.txt && ../.venv/bin/python -m playwright install chromium && cd ..
 python3 tools/build_form.py forms/taegeuk-2.json --print   # one form
 python3 tools/build_form.py --all --print                   # every form
 ```
