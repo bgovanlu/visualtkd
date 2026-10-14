@@ -19,9 +19,10 @@ Every print sheet is exactly 2 pages and every QR code decodes to its expected l
 - Videos (Kukkiwon Digital Encyclopedia, Mookas TV): `video-t1` … `t6`, `video-koryo`; `video-t7`, `t8`, `keumgang`, `taebaek` point to the series playlist until individual videos are found
 - `kukkiwon-youtube`, `wt-poomsae-rules`
 
-## Deployment
-- Live at visualtkd.com: launched by Brian on 15 October from a Claude Code session with AWS (Route 53) and GitHub access.
-- `site/` is the publish directory; `site/_redirects` holds the `/go/` short links.
+## Deployment — live on AWS since 14 October 2026
+- https://visualtkd.com, served by CloudFront distribution `EGPPRILDVGXUB` from the private bucket `visualtkd-site-820501670514`. Stack `visualtkd-site` in us-east-1 (`infra/aws/site.yaml`); deploy with `tools/deploy_aws.py`.
+- Route 53 zone `Z06165962R1Q3DUXU1VLW`. The stack owns the A/AAAA aliases (apex and `www`) and the ACM validation CNAMEs; the no-mail records (null MX, `v=spf1 -all`, DMARC `p=reject`) are applied by hand from `infra/route53/visualtkd.com.json`.
+- Checked live on 14 Oct: every form path 301s to its trailing-slash page and serves its PDF, all 25 `/go/` links 302 to their `_redirects` targets, `www` and `http` redirect to `https://visualtkd.com`, missing pages return 404 with the forms index.
 
 ## Design assets
 - `design/character-v2.md`: brief, references, the 10 directions and model sheet v1 (MS-1–MS-8) with correction checklists.

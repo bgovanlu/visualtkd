@@ -62,9 +62,9 @@ def content():
     dest = f's3://{o["BucketName"]}'
     site = os.path.join(ROOT, "site")
     # PDFs and everything else first, so no page ever links to a file not yet uploaded.
-    subprocess.check_call(AWS + ["s3", "sync", site, dest, "--delete", "--exclude", "*.html",
+    subprocess.check_call(AWS + ["s3", "sync", site, dest, "--delete", "--only-show-errors", "--exclude", "*.html",
                                  "--exclude", "_redirects", "--cache-control", "public, max-age=3600"])
-    subprocess.check_call(AWS + ["s3", "sync", site, dest, "--delete", "--exclude", "*", "--include", "*.html",
+    subprocess.check_call(AWS + ["s3", "sync", site, dest, "--delete", "--only-show-errors", "--exclude", "*", "--include", "*.html",
                                  "--content-type", "text/html; charset=utf-8",
                                  "--cache-control", "public, max-age=300"])
     inv = subprocess.check_output(AWS + ["cloudfront", "create-invalidation", "--distribution-id",
