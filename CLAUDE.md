@@ -28,7 +28,7 @@ After building a new form: set its `url` in `FORMS` (Taegeuk) or `BB` (black-bel
 1. **Verify the sequence against at least two sources** before writing data: the Kukkiwon page for the form plus a published move chart. Check stance (ap seogi vs ap kubi, which foot leads), technique, hand/foot, direction, and kihap for every move. The taekwondo.fandom.com wiki may be used as a cross-check source, never as a page link. Any disagreement between sources, or any choice not settled by a source, is listed for Brian's review in the commit/PR, not decided silently.
 2. Write `forms/<form>.json` (copy the nearest existing form).
 3. Build with `--print`; the QR check must pass.
-4. Look at the desktop floor plan, a phone carousel card and both PDF pages before committing.
+4. Look at the desktop floor plan, a phone carousel card and both PDF pages before committing (`tools/check/shot.py <slug> [phone]`, `tools/check/figs.py` for new poses).
 5. Update the index card, commit, push.
 
 ## Move data (`moves[]`)

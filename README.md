@@ -15,9 +15,12 @@ templates/form.html       the shared form page template
 tools/
   build_form.py           builds pages, PDFs (--print), QR check, _redirects
   build_print.py          the 2-page print sheet
+  check/                  screenshots for review: shot.py (board / phone), figs.py (enlarged poses) -> shots/
+  authoring/              scripts that wrote some forms/*.json (reference only; re-running overwrites)
 design/                   character studies kept for reference (not deployed)
 CLAUDE.md                 conventions for adding and changing forms
 REVIEW.md                 open questions per form, to check against the Kukkiwon videos
+docs/STATUS.md            what's built, short links, deployment state, follow-ups
 ```
 
 ## URLs

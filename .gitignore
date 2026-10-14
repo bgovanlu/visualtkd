@@ -5,3 +5,4 @@ __pycache__/
 # scratch renders from checking PDFs
 *.png
 !site/**/*.png
+shots/
