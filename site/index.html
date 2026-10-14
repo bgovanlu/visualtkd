@@ -37,7 +37,7 @@ h1 span{font-weight:700;color:var(--muted);font-size:.55em;margin-left:.3em}
 .status{display:flex;flex-direction:column;gap:8px;min-width:220px}
 .status b{font-family:var(--f-mono);font-weight:500;font-size:26px;font-variant-numeric:tabular-nums}
 .status small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.meter{display:grid;grid-template-columns:repeat(8,1fr);gap:4px}
+.meter{display:grid;grid-template-columns:repeat(17,1fr);gap:4px}
 .meter i{height:6px;border-radius:3px;background:var(--line)}
 .meter i.done{background:var(--fire)}
 
@@ -70,6 +70,12 @@ section > p{margin:0 0 14px;color:var(--muted);max-width:66ch}
 .bb li{border:1px dashed var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column}
 .bb b{font-weight:600}
 .bb span{font-size:12.5px;color:var(--muted)}
+.bb a{display:flex;flex-direction:column;gap:2px;color:inherit;text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:10px 12px;margin:-11px -13px;transition:border-color .2s}
+.bb a:hover{border-color:var(--ink)}
+.bb a:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+.bb li.live{border-style:solid;border-color:transparent}
+.bb .hj{font-family:var(--f-display);font-weight:900;color:var(--heaven);font-size:15px}
+.bb .row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:4px}
 .bb .ko{font-family:var(--f-display);font-weight:700}
 footer{font-size:13px;color:var(--muted);max-width:72ch}
 footer a{color:var(--heaven)}
@@ -82,7 +88,7 @@ footer a{color:var(--heaven)}
     <div>
       <div class="eyebrow">KUKKIWON POOMSAE · GUP FORMS</div>
       <h1>Taegeuk <span>태극</span></h1>
-      <p class="lede">The eight Taegeuk forms, each named for one of the eight trigrams. Every form gets the same treatment: the floor plan on its line, move-by-move cards on phones, the full sequence, and a two-page print sheet.</p>
+      <p class="lede">The eight Taegeuk forms, each named for one of the eight trigrams, and the black-belt forms. Every form gets the same treatment: the floor plan on its line, move-by-move cards on phones, the full sequence, and a two-page print sheet.</p>
     </div>
     <div class="status" aria-label="Progress">
       <small>Forms published</small>
@@ -95,7 +101,7 @@ footer a{color:var(--heaven)}
 
   <section>
     <h3>Black-belt forms</h3>
-    <p>Yudanja poomsae, planned after the Taegeuk set, drawn the same way.</p>
+    <p>Yudanja poomsae, drawn the same way, each on its own floor line.</p>
     <ul class="bb" id="bb"></ul>
   </section>
 
@@ -115,10 +121,12 @@ const FORMS=[
   {n:7,rom:"Chil Jang",ko:"태극 7장",tri:"Gan",triKo:"간",sym:"Mountain",mean:"Mountain; stillness, and moving only when it is time.",lines:[1,0,0],moves:25,url:"/taegeuk/7/"},
   {n:8,rom:"Pal Jang",ko:"태극 8장",tri:"Gon",triKo:"곤",sym:"Earth",mean:"Earth; the root and end of all things, completing the set.",lines:[0,0,0],moves:24,url:"/taegeuk/8/"}
 ];
-const BB=[["Koryo","고려"],["Keumgang","금강"],["Taebaek","태백"],["Pyongwon","평원"],["Sipjin","십진"],["Jitae","지태"],["Cheonkwon","천권"],["Hansu","한수"],["Ilyeo","일여"]];
-const live=FORMS.filter(x=>x.url).length;
-document.getElementById("count").textContent=`${live} / ${FORMS.length}`;
-document.getElementById("meter").innerHTML=FORMS.map(x=>`<i class="${x.url?"done":""}"></i>`).join("");
+// black-belt forms: name, Korean, Hanja, floor line, movements, page (set url when published)
+const BB=[["Koryo","고려","高麗","士",30,"/koryo/"],["Keumgang","금강","金剛","山",27,"/keumgang/"],["Taebaek","태백","太白","工",26,"/taebaek/"],
+  ["Pyongwon","평원"],["Sipjin","십진"],["Jitae","지태"],["Cheonkwon","천권"],["Hansu","한수"],["Ilyeo","일여"]];
+const all=[...FORMS.map(x=>!!x.url),...BB.map(x=>!!x[5])],live=all.filter(Boolean).length;
+document.getElementById("count").textContent=`${live} / ${all.length}`;
+document.getElementById("meter").innerHTML=all.map(d=>`<i class="${d?"done":""}"></i>`).join("");
 const tri=l=>`<div class="tri" aria-hidden="true">${l.map(s=>`<div class="bar">${s?"<i></i>":"<i></i><i></i>"}</div>`).join("")}</div>`;
 document.getElementById("forms").innerHTML=FORMS.map((x,i)=>{
   const firstSoon=!x.url&&FORMS.slice(0,i).every(y=>y.url);
@@ -129,7 +137,9 @@ document.getElementById("forms").innerHTML=FORMS.map((x,i)=>{
     <div class="foot"><span class="mv">${x.moves} movements</span>${pill}</div>`;
   return`<li>${x.url?`<a class="card" href="${x.url}" aria-label="Open Taegeuk ${x.rom}">${inner}</a>`:`<div class="card soon">${inner}</div>`}</li>`;
 }).join("");
-document.getElementById("bb").innerHTML=BB.map(([r,k])=>`<li><b>${r}</b><span><span class="ko">${k}</span> · planned</span></li>`).join("");
+document.getElementById("bb").innerHTML=BB.map(([r,k,h,fl,mv,url])=>url?
+  `<li class="live"><a href="${url}" aria-label="Open ${r}"><b>${r} <span class="hj" lang="zh-Hant">${h}</span></b><span><span class="ko">${k}</span> · floor line ${fl}</span><span class="row"><span>${mv} movements</span><span class="pill live">Open</span></span></a></li>`:
+  `<li><b>${r}</b><span><span class="ko">${k}</span> · planned</span></li>`).join("");
 })();
 </script>
 

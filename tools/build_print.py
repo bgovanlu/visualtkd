@@ -44,6 +44,7 @@ body{{background:#fff}}
 .fig .glow{{display:none}}
 .seq{{break-before:page}}
 table{{min-width:0}} th,td{{padding:6px 10px}} tr.on td{{background:none}}
+body.dense th,body.dense td{{padding:2px 10px;line-height:1.3}} body.dense .ref .qr{{width:100px;height:100px}}
 .ruled{{display:flex;flex-direction:column;gap:22px;margin-top:6px}}
 .ruled i{{display:block;border-bottom:1px solid var(--line);width:240px}}
 /* form QR block, top right of both pages */
@@ -74,7 +75,7 @@ const FORM_QR={form_qr!r};
 const REF_QRS={ref_qrs!r};
 addEventListener("load",()=>{{
   document.querySelectorAll(".fig.on").forEach(e=>e.classList.remove("on"));
-  const n=document.querySelector("#r4 .note");
+  const n=document.getElementById("nBelt");
   n.innerHTML='<h3>Practice notes</h3><div class="ruled"><i></i><i></i><i></i><i></i></div>';
   const scan=`<div class="scan">${{FORM_QR}}<p><b>Scan to practise</b>Step-by-step on your phone<br><code>{short}</code></p></div>`;
   document.querySelector("header").insertAdjacentHTML("beforeend",scan);
@@ -105,10 +106,24 @@ with sync_playwright() as p:
     bw = pg.evaluate("document.querySelector('.board').scrollWidth")
     if bw + 40 > 1180:
         pg.set_viewport_size({"width": bw + 40, "height": 1400}); pg.wait_for_timeout(300)
-    h1 = pg.evaluate("document.querySelector('.scroller').getBoundingClientRect().bottom - document.querySelector('header').getBoundingClientRect().top")
+    # page 1 ends after the board, or after the notes box when a form moves its notes under the board
+    h1 = pg.evaluate("""(()=>{const n=document.getElementById('notes'),b=(n&&!n.hidden?n:document.querySelector('.scroller'));
+      return b.getBoundingClientRect().bottom - document.querySelector('header').getBoundingClientRect().top})()""")
     w = pg.evaluate("document.querySelector('.wrap').scrollWidth")
     avail_w, avail_h = 7.7 * 96, (11 - 0.4 - 0.65) * 96
     scale = round(min(avail_w / w, (avail_h - 10) / h1) - 0.004, 3)
+    # Wide boards shrink everything; zoom page 2 back up so the sequence table stays readable
+    # (target: the type size of Taegeuk 8, scale ~0.54), as far as it still fits on one page.
+    k = round(0.54 / scale, 2)
+    if k < 1.1: k = 1.0          # Taegeuk-sized sheets print as they are
+    if k > 1.0: pg.evaluate("document.body.classList.add('dense')")   # long forms: tighter table rows
+    while k > 1.0:
+        pg.evaluate(f"document.querySelectorAll('.seq,.refs').forEach(e=>e.style.zoom={k})")
+        h2 = pg.evaluate("document.querySelector('.refs').getBoundingClientRect().bottom - document.querySelector('.seq').getBoundingClientRect().top")
+        if h2 * scale <= avail_h - 12: break
+        k = round(k - 0.05, 2)
+    if k <= 1.0: pg.evaluate("document.querySelectorAll('.seq,.refs').forEach(e=>e.style.zoom='')")
+    print(f"page-2 zoom {k}")
     pg.pdf(path=out, format="Letter", scale=scale, print_background=True,
            margin={"top": "0.4in", "bottom": "0.65in", "left": "0.4in", "right": "0.4in"},
            display_header_footer=True, header_template="<div></div>", footer_template=footer)

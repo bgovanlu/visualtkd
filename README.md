@@ -1,6 +1,6 @@
 # visualtkd.com
 
-Modern, mobile-friendly diagrams of the Kukkiwon poomsae. Each form keeps the original 王-shaped floor plan on desktop, becomes a move-by-move carousel on phones, and ships with a two-page print sheet carrying QR codes back to the site.
+Modern, mobile-friendly diagrams of the Kukkiwon poomsae. Each form keeps its original floor line on desktop (王 for the Taegeuk forms; 士, 山, 工 for Koryo, Keumgang, Taebaek), becomes a move-by-move carousel on phones, and ships with a two-page print sheet carrying QR codes back to the site.
 
 ## Layout
 
@@ -8,6 +8,7 @@ Modern, mobile-friendly diagrams of the Kukkiwon poomsae. Each form keeps the or
 site/                     ← deploy this folder (the publish directory)
   index.html              forms index: Taegeuk 1–8 and the black-belt forms
   taegeuk/1/ … /8/        generated form pages + their 2-page print PDFs
+  koryo/ keumgang/ taebaek/  black-belt form pages + print PDFs
   _redirects              /go/ short links used by printed QR codes (generated)
 forms/                    one JSON file of data per form
 templates/form.html       the shared form page template
@@ -24,7 +25,7 @@ REVIEW.md                 open questions per form, to check against the Kukkiwon
 | Path | Purpose |
 |---|---|
 | `/` | Forms index |
-| `/taegeuk/1` … `/taegeuk/8` | One page per form. **Printed QR codes point here, so keep these paths stable.** |
+| `/taegeuk/1` … `/taegeuk/8`, `/koryo`, `/keumgang`, `/taebaek` | One page per form. **Printed QR codes point here, so keep these paths stable.** |
 | `/go/<name>` | Short links behind the reference QR codes on the print sheets |
 
 Reference QR codes never point at outside sites directly. They go through `/go/<name>`, defined in `site/_redirects` as temporary (302) redirects. `_redirects` is generated from the `refs` in `forms/*.json`: if Kukkiwon, YouTube or World Taekwondo moves a page, update its `url` there and rebuild; every printed sheet keeps working.

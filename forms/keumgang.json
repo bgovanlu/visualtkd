@@ -1,0 +1,620 @@
+{
+ "slug": "keumgang",
+ "pdf": "keumgang-print.pdf",
+ "title": "Keumgang",
+ "ko": "금강",
+ "symbol": {
+  "name": "Keumgang",
+  "hanja": "金剛",
+  "meaning": "Diamond · too hard to break"
+ },
+ "movements": 27,
+ "note": {
+  "h": "山 · San · the mountain",
+  "p": "Keumgang means diamond, the hardest thing there is; the name also recalls Keumgangsan, the Diamond Mountains. The floor line is 山 (mountain). Move with weight and calm, and hold each crane stance still."
+ },
+ "footer": "Move numbers follow the Kukkiwon movement count (27 movements); a kick and the techniques that follow it in the same movement share one number (one figure per movement). Finish with <b>Baro</b>: draw the left foot in and return to the ready stance facing ga.",
+ "boardMin": 1500,
+ "cardW": 100,
+ "figH": 120,
+ "floor": {
+  "glyph": "山",
+  "bars": {
+   "r3": "gone",
+   "r5": "gone"
+  },
+  "rail": [
+   "r1",
+   "c4"
+  ],
+  "notesBelow": true,
+  "prongs": [
+   {
+    "at": "c2l",
+    "from": "r1"
+   },
+   {
+    "at": "c2r",
+    "from": "r1"
+   }
+  ],
+  "map": "M4 8H96M12 8V26M88 8V26M50 8V44"
+ },
+ "layout": {
+  "r1": [
+   [
+    "25",
+    "20"
+   ],
+   [
+    "26",
+    "19"
+   ],
+   [
+    "27"
+   ],
+   [
+    "J",
+    "8",
+    "18"
+   ],
+   [
+    "17"
+   ],
+   [
+    "16",
+    "9"
+   ],
+   [
+    "15",
+    "10"
+   ]
+  ],
+  "c2l": [
+   "21",
+   "22",
+   "23",
+   "24"
+  ],
+  "c2": [
+   "1",
+   "2",
+   "6",
+   "7"
+  ],
+  "c2r": [
+   "11",
+   "12",
+   "13",
+   "14"
+  ],
+  "c4": [
+   "3",
+   "4",
+   "5"
+  ]
+ },
+ "pos": {
+  "J": [
+   50,
+   8
+  ],
+  "1": [
+   50,
+   16
+  ],
+  "2": [
+   50,
+   24
+  ],
+  "3": [
+   50,
+   32
+  ],
+  "4": [
+   50,
+   40
+  ],
+  "5": [
+   50,
+   32
+  ],
+  "6": [
+   50,
+   24
+  ],
+  "7": [
+   50,
+   16
+  ],
+  "8": [
+   50,
+   8
+  ],
+  "9": [
+   62,
+   8
+  ],
+  "10": [
+   76,
+   8
+  ],
+  "11": [
+   88,
+   11
+  ],
+  "12": [
+   88,
+   21
+  ],
+  "13": [
+   88,
+   23
+  ],
+  "14": [
+   88,
+   15
+  ],
+  "15": [
+   88,
+   8
+  ],
+  "16": [
+   74,
+   8
+  ],
+  "17": [
+   60,
+   8
+  ],
+  "18": [
+   50,
+   8
+  ],
+  "19": [
+   38,
+   8
+  ],
+  "20": [
+   24,
+   8
+  ],
+  "21": [
+   12,
+   11
+  ],
+  "22": [
+   12,
+   21
+  ],
+  "23": [
+   12,
+   23
+  ],
+  "24": [
+   12,
+   15
+  ],
+  "25": [
+   12,
+   8
+  ],
+  "26": [
+   26,
+   8
+  ],
+  "27": [
+   40,
+   8
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "na",
+   "view": "front",
+   "stance": "ready",
+   "arms": {
+    "L": "junbi",
+    "R": "junbi"
+   },
+   "tech": "junbi",
+   "desc": "Stand at na facing ga, feet parallel and one foot-width apart, fists in front of the belt (gibon junbi)."
+  },
+  {
+   "id": "1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "tech": "wedge",
+   "desc": "Step forward toward ga into a left front stance. Inner-forearm opening block (an palmok momtong hecho makki)."
+  },
+  {
+   "id": "2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "palmjaw"
+   },
+   "tech": "palmjaw",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Step forward into a right front stance. Right palm-heel jaw strike."
+  },
+  {
+   "id": "3",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "palmjaw"
+   },
+   "tech": "palmjaw",
+   "hand": "L",
+   "note": "bandae",
+   "desc": "Step forward into a left front stance. Left palm-heel jaw strike."
+  },
+  {
+   "id": "4",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "palmjaw"
+   },
+   "tech": "palmjaw",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Step forward into a right front stance. Right palm-heel jaw strike."
+  },
+  {
+   "id": "5",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksin"
+   },
+   "tech": "ksin",
+   "hand": "L",
+   "desc": "Step back with the right foot into a back stance with the left foot forward. Left knife-hand inside block."
+  },
+  {
+   "id": "6",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksin"
+   },
+   "tech": "ksin",
+   "hand": "R",
+   "desc": "Step back with the left foot into a back stance with the right foot forward. Right knife-hand inside block."
+  },
+  {
+   "id": "7",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksin"
+   },
+   "tech": "ksin",
+   "hand": "L",
+   "desc": "Step back with the right foot into a back stance with the left foot forward. Left knife-hand inside block."
+  },
+  {
+   "id": "8",
+   "dir": "ga",
+   "view": "front",
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "low",
+    "R": "high"
+   },
+   "tech": "keumgang",
+   "desc": "Lift the left foot to the right knee: crane stance on the right leg, looking left toward da. Diamond block, slowly: left low block, right high block."
+  },
+  {
+   "id": "9",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "sideelbow",
+    "R": "hingepunch"
+   },
+   "tech": "khinge",
+   "desc": "Step the left foot down toward da into a horse stance. Large hinge: left elbow out toward da, right fist across the chest."
+  },
+  {
+   "id": "10",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "sideelbow",
+    "R": "hingepunch"
+   },
+   "tech": "khinge",
+   "desc": "Turn 360° to the left, travelling toward da, and land in a horse stance. Large hinge again."
+  },
+  {
+   "id": "11",
+   "dir": "da1",
+   "view": "side",
+   "stance": "horse",
+   "face": "R",
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "kihap": true,
+   "desc": "Turn 90° left to face da and stamp into a horse stance. Mountain block."
+  },
+  {
+   "id": "12",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "horse",
+   "face": "L",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "tech": "wedge",
+   "desc": "Turn 180° to the right, stepping round to face ra, horse stance. Inner-forearm opening block."
+  },
+  {
+   "id": "13",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "ready",
+   "face": "L",
+   "arms": {
+    "L": "spread",
+    "R": "spread"
+   },
+   "tech": "spread",
+   "desc": "Draw the left foot in to a parallel stance. Low spread block, slowly."
+  },
+  {
+   "id": "14",
+   "dir": "da1",
+   "view": "side",
+   "stance": "horse",
+   "face": "R",
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "desc": "Turn 180° to the right to face da and stamp into a horse stance. Mountain block."
+  },
+  {
+   "id": "15",
+   "dir": "ga",
+   "view": "front",
+   "stance": "crane",
+   "lead": "L",
+   "arms": {
+    "R": "low",
+    "L": "high"
+   },
+   "tech": "keumgang",
+   "desc": "Turn to face ga and lift the right foot to the left knee: crane stance on the left leg, looking right toward ra. Diamond block, slowly."
+  },
+  {
+   "id": "16",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "sideelbow",
+    "L": "hingepunch"
+   },
+   "tech": "khinge",
+   "desc": "Step the right foot down toward ra into a horse stance. Large hinge: right elbow out toward ra, left fist across the chest."
+  },
+  {
+   "id": "17",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "sideelbow",
+    "L": "hingepunch"
+   },
+   "tech": "khinge",
+   "desc": "Turn 360° to the right, travelling toward ra, and land in a horse stance. Large hinge again."
+  },
+  {
+   "id": "18",
+   "dir": "ga",
+   "view": "front",
+   "stance": "crane",
+   "lead": "L",
+   "arms": {
+    "R": "low",
+    "L": "high"
+   },
+   "tech": "keumgang",
+   "desc": "Lift the right foot to the left knee: crane stance on the left leg, looking toward ra. Diamond block, slowly."
+  },
+  {
+   "id": "19",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "sideelbow",
+    "L": "hingepunch"
+   },
+   "tech": "khinge",
+   "desc": "Step the right foot down toward ra into a horse stance. Large hinge."
+  },
+  {
+   "id": "20",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "sideelbow",
+    "L": "hingepunch"
+   },
+   "tech": "khinge",
+   "desc": "Turn 360° to the right, travelling toward ra, and land in a horse stance. Large hinge again."
+  },
+  {
+   "id": "21",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "horse",
+   "face": "L",
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "kihap": true,
+   "desc": "Turn 90° right to face ra and stamp into a horse stance. Mountain block."
+  },
+  {
+   "id": "22",
+   "dir": "da1",
+   "view": "side",
+   "stance": "horse",
+   "face": "R",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "tech": "wedge",
+   "desc": "Turn 180° to the left, stepping round to face da, horse stance. Inner-forearm opening block."
+  },
+  {
+   "id": "23",
+   "dir": "da1",
+   "view": "side",
+   "stance": "ready",
+   "face": "R",
+   "arms": {
+    "L": "spread",
+    "R": "spread"
+   },
+   "tech": "spread",
+   "desc": "Draw the right foot in to a parallel stance. Low spread block, slowly."
+  },
+  {
+   "id": "24",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "horse",
+   "face": "L",
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "desc": "Turn 180° to the left to face ra and stamp into a horse stance. Mountain block."
+  },
+  {
+   "id": "25",
+   "dir": "ga",
+   "view": "front",
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "low",
+    "R": "high"
+   },
+   "tech": "keumgang",
+   "desc": "Turn to face ga and lift the left foot to the right knee: crane stance on the right leg, looking left toward da. Diamond block, slowly."
+  },
+  {
+   "id": "26",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "sideelbow",
+    "R": "hingepunch"
+   },
+   "tech": "khinge",
+   "desc": "Step the left foot down toward da into a horse stance. Large hinge."
+  },
+  {
+   "id": "27",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "sideelbow",
+    "R": "hingepunch"
+   },
+   "tech": "khinge",
+   "desc": "Turn 360° to the left, travelling toward da, and land in a horse stance. Large hinge again."
+  }
+ ],
+ "refs": [
+  {
+   "go": "kukkiwon-keumgang",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Keumgang",
+   "desc": "The form’s official description and meaning.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1357&page=1&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "kukkiwon-poomsae",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Poomsae index",
+   "desc": "Every official poomsae, Taegeuk 1–8 and the black-belt forms.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/list?boardManagementNo=55&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "video-keumgang",
+   "kind": "yt",
+   "icon": "channel",
+   "src": "YouTube · Playlist",
+   "title": "Kukkiwon Digital Encyclopedia series",
+   "desc": "Mookas TV playlist of the full series, including Keumgang.",
+   "url": "https://www.youtube.com/playlist?list=PL4lzP9nwMEv2A-vF-GaNNn2OdjXjZfA6k"
+  },
+  {
+   "go": "kukkiwon-youtube",
+   "kind": "yt",
+   "icon": "channel",
+   "src": "YouTube · Channel",
+   "title": "Kukkiwon World Taekwondo Headquarters",
+   "desc": "The official Kukkiwon channel.",
+   "url": "https://www.youtube.com/channel/UCaQb3jutLu15oSfhPh8FACQ"
+  },
+  {
+   "go": "wt-poomsae-rules",
+   "kind": "wt",
+   "icon": "pdf",
+   "src": "World Taekwondo · PDF",
+   "title": "Poomsae Competition Rules and Interpretation",
+   "desc": "In force from 30 September 2024; how poomsae are judged.",
+   "url": "https://www.worldtaekwondo.org/att_file/documents/Poomsae%20Competition%20Rules%20and%20Interpretation%20(In%20force%20as%20of%20September%2030%202024).pdf"
+  }
+ ]
+}

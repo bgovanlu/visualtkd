@@ -1,0 +1,1001 @@
+{
+ "slug": "koryo",
+ "pdf": "koryo-print.pdf",
+ "title": "Koryo",
+ "ko": "고려",
+ "symbol": {
+  "name": "Koryo",
+  "hanja": "高麗",
+  "meaning": "Goryeo · the learned warrior"
+ },
+ "movements": 30,
+ "note": {
+  "h": "士 · Seonbi · the learned warrior",
+  "p": "Named for the Goryeo dynasty, whose people held off the Mongol invasions. The floor line is 士 (seonbi): a scholar who carries a warrior’s strength and conviction. It opens from the pushing-hands ready posture."
+ },
+ "footer": "Move numbers follow the Kukkiwon movement count (30 movements); a kick and the techniques that follow it in the same movement share one number (2-1 kick, 2-2 strike). Finish with <b>Baro</b>: draw the left foot back, turn to face ga and return to the pushing-hands ready posture at the starting point.",
+ "boardMin": 1700,
+ "cardW": 98,
+ "figH": 118,
+ "floor": {
+  "glyph": "士",
+  "bars": {
+   "r1": "fit",
+   "r5": "gone"
+  },
+  "rail": [
+   "r1",
+   "c4"
+  ],
+  "notesBelow": true,
+  "map": "M30 8H70M6 36H94M50 8V52"
+ },
+ "layout": {
+  "r1": [
+   [
+    "8",
+    "7",
+    "6-2",
+    "6-1"
+   ],
+   [
+    "5"
+   ],
+   "J",
+   [
+    "1"
+   ],
+   [
+    "2-1",
+    "2-2",
+    "3",
+    "4"
+   ]
+  ],
+  "c2": [
+   "9-1",
+   "9-2",
+   "10-1",
+   "10-2",
+   "10-3",
+   "27-1",
+   "27-2",
+   "28-1",
+   "28-2",
+   "29-1",
+   "29-2",
+   "30"
+  ],
+  "r3": [
+   [
+    "24",
+    "23-2",
+    "23-1"
+   ],
+   [
+    "25-2",
+    "25-1"
+   ],
+   [
+    "22",
+    "21"
+   ],
+   "26",
+   [
+    "16",
+    "17"
+   ],
+   [
+    "20-1",
+    "20-2"
+   ],
+   [
+    "18-1",
+    "18-2",
+    "19"
+   ]
+  ],
+  "c4": [
+   "11-1",
+   "11-2",
+   "11-3",
+   "12-1",
+   "12-2",
+   "13",
+   "14-1",
+   "14-2",
+   "15"
+  ]
+ },
+ "pos": {
+  "J": [
+   50,
+   8
+  ],
+  "1": [
+   56,
+   8
+  ],
+  "2-1": [
+   62,
+   8
+  ],
+  "2-2": [
+   66,
+   8
+  ],
+  "3": [
+   66,
+   8
+  ],
+  "4": [
+   66,
+   8
+  ],
+  "5": [
+   44,
+   8
+  ],
+  "6-1": [
+   38,
+   8
+  ],
+  "6-2": [
+   34,
+   8
+  ],
+  "7": [
+   34,
+   8
+  ],
+  "8": [
+   34,
+   8
+  ],
+  "9-1": [
+   50,
+   17
+  ],
+  "9-2": [
+   50,
+   17
+  ],
+  "10-1": [
+   50,
+   23
+  ],
+  "10-2": [
+   50,
+   27
+  ],
+  "10-3": [
+   50,
+   27
+  ],
+  "11-1": [
+   50,
+   33
+  ],
+  "11-2": [
+   50,
+   39
+  ],
+  "11-3": [
+   50,
+   39
+  ],
+  "12-1": [
+   50,
+   45
+  ],
+  "12-2": [
+   50,
+   51
+  ],
+  "13": [
+   50,
+   51
+  ],
+  "14-1": [
+   50,
+   47
+  ],
+  "14-2": [
+   50,
+   42
+  ],
+  "15": [
+   50,
+   40
+  ],
+  "16": [
+   56,
+   36
+  ],
+  "17": [
+   56,
+   36
+  ],
+  "18-1": [
+   68,
+   36
+  ],
+  "18-2": [
+   80,
+   36
+  ],
+  "19": [
+   76,
+   36
+  ],
+  "20-1": [
+   70,
+   36
+  ],
+  "20-2": [
+   62,
+   36
+  ],
+  "21": [
+   62,
+   36
+  ],
+  "22": [
+   62,
+   36
+  ],
+  "23-1": [
+   44,
+   36
+  ],
+  "23-2": [
+   24,
+   36
+  ],
+  "24": [
+   28,
+   36
+  ],
+  "25-1": [
+   34,
+   36
+  ],
+  "25-2": [
+   42,
+   36
+  ],
+  "26": [
+   50,
+   36
+  ],
+  "27-1": [
+   50,
+   29
+  ],
+  "27-2": [
+   50,
+   29
+  ],
+  "28-1": [
+   50,
+   21
+  ],
+  "28-2": [
+   50,
+   21
+  ],
+  "29-1": [
+   50,
+   15
+  ],
+  "29-2": [
+   50,
+   15
+  ],
+  "30": [
+   50,
+   9
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "na",
+   "view": "front",
+   "stance": "ready",
+   "arms": {
+    "L": "tongmil",
+    "R": "tongmil"
+   },
+   "tech": "tongmil",
+   "desc": "Stand at na facing ga. Raise both open hands slowly from the belt to the chest, then push them forward to face height, fingertips angled toward each other (tongmilgi junbi)."
+  },
+  {
+   "id": "1",
+   "dir": "da1",
+   "view": "side",
+   "stance": "back",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "hand": "L",
+   "desc": "Turn 90° left toward da¹, back stance with the left foot forward. Double knife-hand middle block."
+  },
+  {
+   "id": "2-1",
+   "dir": "da1",
+   "view": "side",
+   "stance": "skick",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "dskick",
+   "hand": "R",
+   "foot": true,
+   "desc": "Right double side kick: low to the knee, then high, without setting the foot down."
+  },
+  {
+   "id": "2-2",
+   "dir": "da1",
+   "view": "side",
+   "stance": "front",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "R": "ksstrike"
+   },
+   "tech": "ksstrike",
+   "hand": "R",
+   "desc": "Land forward in a right front stance. Right knife-hand outer strike to the neck."
+  },
+  {
+   "id": "3",
+   "dir": "da1",
+   "view": "side",
+   "stance": "front",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "hand": "L",
+   "note": "baro",
+   "desc": "Left middle punch."
+  },
+  {
+   "id": "4",
+   "dir": "da1",
+   "view": "side",
+   "stance": "back",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "R": "inside"
+   },
+   "tech": "inside",
+   "hand": "R",
+   "desc": "Shift the weight back into a back stance with the right foot forward. Right inside middle block."
+  },
+  {
+   "id": "5",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "back",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "ksblock",
+   "hand": "R",
+   "desc": "Turn 180° right toward ra¹, back stance with the right foot forward. Double knife-hand middle block."
+  },
+  {
+   "id": "6-1",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "skick",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "dskick",
+   "hand": "L",
+   "foot": true,
+   "desc": "Left double side kick: low to the knee, then high, without setting the foot down."
+  },
+  {
+   "id": "6-2",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "front",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "ksstrike"
+   },
+   "tech": "ksstrike",
+   "hand": "L",
+   "desc": "Land forward in a left front stance. Left knife-hand outer strike to the neck."
+  },
+  {
+   "id": "7",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "front",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "baro",
+   "desc": "Right middle punch."
+  },
+  {
+   "id": "8",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "back",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "inside"
+   },
+   "tech": "inside",
+   "hand": "L",
+   "desc": "Shift the weight back into a back stance with the left foot forward. Left inside middle block."
+  },
+  {
+   "id": "9-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "kslow"
+   },
+   "tech": "kslow",
+   "hand": "L",
+   "desc": "Turn 90° left toward ga, left front stance. Left knife-hand low block."
+  },
+  {
+   "id": "9-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "arc"
+   },
+   "tech": "arc",
+   "hand": "R",
+   "desc": "Right arc-hand strike to the throat (kaljaebi)."
+  },
+  {
+   "id": "10-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "R",
+   "foot": true,
+   "desc": "Right front kick."
+  },
+  {
+   "id": "10-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "kslow"
+   },
+   "tech": "kslow",
+   "hand": "R",
+   "desc": "Land forward in a right front stance. Right knife-hand low block."
+  },
+  {
+   "id": "10-3",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "arc"
+   },
+   "tech": "arc",
+   "hand": "L",
+   "desc": "Left arc-hand strike to the throat (kaljaebi)."
+  },
+  {
+   "id": "11-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "L",
+   "foot": true,
+   "desc": "Left front kick."
+  },
+  {
+   "id": "11-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "kslow"
+   },
+   "tech": "kslow",
+   "hand": "L",
+   "desc": "Land forward in a left front stance. Left knife-hand low block."
+  },
+  {
+   "id": "11-3",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "arc"
+   },
+   "tech": "arc",
+   "hand": "R",
+   "kihap": true,
+   "desc": "Right arc-hand strike to the throat (kaljaebi)."
+  },
+  {
+   "id": "12-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "R",
+   "foot": true,
+   "desc": "Right front kick."
+  },
+  {
+   "id": "12-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "kneebreak",
+    "R": "hold"
+   },
+   "tech": "kneebreak",
+   "hand": "L",
+   "desc": "Land in a right front stance. Knee break: the right hand holds the kicked foot at the waist while the left arc hand presses the knee down."
+  },
+  {
+   "id": "13",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "tech": "wedge",
+   "desc": "Turn 180° toward na into a right front stance. Inner-forearm opening block (an palmok momtong hecho makki)."
+  },
+  {
+   "id": "14-1",
+   "dir": "na",
+   "view": "back",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "L",
+   "foot": true,
+   "desc": "Left front kick."
+  },
+  {
+   "id": "14-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "kneebreak",
+    "L": "hold"
+   },
+   "tech": "kneebreak",
+   "hand": "R",
+   "desc": "Land in a left front stance. Knee break: the left hand holds the foot, the right arc hand presses the knee down."
+  },
+  {
+   "id": "15",
+   "dir": "na",
+   "view": "back",
+   "stance": "walk",
+   "lead": "L",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "tech": "wedge",
+   "desc": "Draw the left foot back into a left walking stance. Inner-forearm opening block."
+  },
+  {
+   "id": "16",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "ksside"
+   },
+   "tech": "ksside",
+   "hand": "L",
+   "desc": "Turn toward ga, stepping the right foot out into a horse stance. Left knife-hand side block toward da."
+  },
+  {
+   "id": "17",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "target",
+    "R": "crosspunch"
+   },
+   "tech": "tpunch",
+   "hand": "R",
+   "desc": "Right target punch across into the open left hand."
+  },
+  {
+   "id": "18-1",
+   "dir": "da2",
+   "view": "side",
+   "stance": "skick",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "hand": "L",
+   "foot": true,
+   "desc": "Cross the right foot in front of the left (ap kkoa seogi), then left side kick toward da."
+  },
+  {
+   "id": "18-2",
+   "dir": "ra2",
+   "view": "side",
+   "stance": "front",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "lspear",
+    "R": "shoulder"
+   },
+   "tech": "lspear",
+   "hand": "L",
+   "desc": "Set the left foot down and turn back to face ra, right front stance. Left low spear hand, palm up; the right fist pulls to the left shoulder."
+  },
+  {
+   "id": "19",
+   "dir": "ra2",
+   "view": "side",
+   "stance": "walk",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "R": "low"
+   },
+   "tech": "low",
+   "hand": "R",
+   "desc": "Draw the right foot back into a right walking stance. Right low block."
+  },
+  {
+   "id": "20-1",
+   "dir": "ra2",
+   "view": "side",
+   "stance": "walk",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "pressdown"
+   },
+   "tech": "pressdown",
+   "hand": "L",
+   "desc": "Step forward into a left walking stance. Left palm pressing block."
+  },
+  {
+   "id": "20-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "sideelbow",
+    "L": "elbowpush"
+   },
+   "tech": "sideelbow",
+   "hand": "R",
+   "desc": "Step the right foot forward and turn into a horse stance facing ga. Right side elbow strike toward ra, the left palm pushing the right fist."
+  },
+  {
+   "id": "21",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "ksside"
+   },
+   "tech": "ksside",
+   "hand": "R",
+   "desc": "Right knife-hand side block toward ra."
+  },
+  {
+   "id": "22",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "target",
+    "L": "crosspunch"
+   },
+   "tech": "tpunch",
+   "hand": "L",
+   "desc": "Left target punch across into the open right hand."
+  },
+  {
+   "id": "23-1",
+   "dir": "ra2",
+   "view": "side",
+   "stance": "skick",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "hand": "R",
+   "foot": true,
+   "desc": "Cross the left foot in front of the right (ap kkoa seogi), then right side kick toward ra."
+  },
+  {
+   "id": "23-2",
+   "dir": "da2",
+   "view": "side",
+   "stance": "front",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "R": "lspear",
+    "L": "shoulder"
+   },
+   "tech": "lspear",
+   "hand": "R",
+   "desc": "Set the right foot down and turn back to face da, left front stance. Right low spear hand, palm up; the left fist pulls to the right shoulder."
+  },
+  {
+   "id": "24",
+   "dir": "da2",
+   "view": "side",
+   "stance": "walk",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "hand": "L",
+   "desc": "Draw the left foot back into a left walking stance. Left low block."
+  },
+  {
+   "id": "25-1",
+   "dir": "da2",
+   "view": "side",
+   "stance": "walk",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "R": "pressdown"
+   },
+   "tech": "pressdown",
+   "hand": "R",
+   "desc": "Step forward into a right walking stance. Right palm pressing block."
+  },
+  {
+   "id": "25-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "sideelbow",
+    "R": "elbowpush"
+   },
+   "tech": "sideelbow",
+   "hand": "L",
+   "desc": "Step the left foot forward and turn into a horse stance facing ga. Left side elbow strike toward da, the right palm pushing the left fist."
+  },
+  {
+   "id": "26",
+   "dir": "ga",
+   "view": "front",
+   "stance": "close",
+   "arms": {
+    "L": "hammerlow",
+    "R": "palmlow"
+   },
+   "tech": "hammerlow",
+   "hand": "L",
+   "desc": "Draw the right foot to the left into a closed stance facing ga. Raise both hands overhead, circle them out and down slowly, and strike the left hammer fist into the right palm in front of the belly."
+  },
+  {
+   "id": "27-1",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "ksstrike"
+   },
+   "tech": "ksstrike",
+   "hand": "L",
+   "desc": "Turn 180° left toward na, left front stance. Left knife-hand outer strike."
+  },
+  {
+   "id": "27-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "kslow"
+   },
+   "tech": "kslow",
+   "hand": "L",
+   "desc": "Left knife-hand low block."
+  },
+  {
+   "id": "28-1",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "neck"
+   },
+   "tech": "neck",
+   "hand": "R",
+   "desc": "Step forward into a right front stance. Right knife-hand inward strike to the neck."
+  },
+  {
+   "id": "28-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "kslow"
+   },
+   "tech": "kslow",
+   "hand": "R",
+   "desc": "Right knife-hand low block."
+  },
+  {
+   "id": "29-1",
+   "dir": "na",
+   "view": "back",
+   "stance": "walk",
+   "lead": "L",
+   "arms": {
+    "L": "neck"
+   },
+   "tech": "neck",
+   "hand": "L",
+   "desc": "Step forward into a left walking stance. Left knife-hand inward strike to the neck."
+  },
+  {
+   "id": "29-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "walk",
+   "lead": "L",
+   "arms": {
+    "L": "kslow"
+   },
+   "tech": "kslow",
+   "hand": "L",
+   "desc": "Left knife-hand low block."
+  },
+  {
+   "id": "30",
+   "dir": "na",
+   "view": "back",
+   "stance": "walk",
+   "lead": "R",
+   "arms": {
+    "R": "arc"
+   },
+   "tech": "arc",
+   "hand": "R",
+   "kihap": true,
+   "desc": "Step forward into a right walking stance. Right arc-hand strike to the throat (kaljaebi)."
+  }
+ ],
+ "refs": [
+  {
+   "go": "kukkiwon-koryo",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Koryo",
+   "desc": "The form’s official description and meaning.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1356&page=1&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "kukkiwon-poomsae",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Poomsae index",
+   "desc": "Every official poomsae, Taegeuk 1–8 and the black-belt forms.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/list?boardManagementNo=55&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "video-koryo",
+   "kind": "yt",
+   "icon": "play",
+   "src": "YouTube · Video",
+   "title": "Koryo, full performance",
+   "desc": "Kukkiwon Digital Encyclopedia, published by Mookas TV.",
+   "url": "https://www.youtube.com/watch?v=keZTTPuXHJo"
+  },
+  {
+   "go": "kukkiwon-youtube",
+   "kind": "yt",
+   "icon": "channel",
+   "src": "YouTube · Channel",
+   "title": "Kukkiwon World Taekwondo Headquarters",
+   "desc": "The official Kukkiwon channel.",
+   "url": "https://www.youtube.com/channel/UCaQb3jutLu15oSfhPh8FACQ"
+  },
+  {
+   "go": "wt-poomsae-rules",
+   "kind": "wt",
+   "icon": "pdf",
+   "src": "World Taekwondo · PDF",
+   "title": "Poomsae Competition Rules and Interpretation",
+   "desc": "In force from 30 September 2024; how poomsae are judged.",
+   "url": "https://www.worldtaekwondo.org/att_file/documents/Poomsae%20Competition%20Rules%20and%20Interpretation%20(In%20force%20as%20of%20September%2030%202024).pdf"
+  }
+ ]
+}

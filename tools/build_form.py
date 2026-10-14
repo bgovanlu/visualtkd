@@ -24,6 +24,10 @@ def tri(t):
     bars = "".join('<i></i>' if l else '<i class="brk"><s></s><s></s></i>' for l in t["lines"])
     return f'<div class="tri" aria-label="{t["name"]} trigram {t["sym"]}">{bars}</div>'
 
+def seal(sym):
+    """Black-belt forms: the name in Hanja, set as a vertical seal, instead of a trigram."""
+    return f'<div class="seal" lang="zh-Hant" aria-label="{sym["name"]} {sym["hanja"]}">{sym["hanja"]}</div>'
+
 def refs(F):
     out = ""
     for r in F["refs"]:
@@ -49,11 +53,14 @@ def build(path, do_print):
     F = json.load(open(path))
     check(F)
     t = open(os.path.join(ROOT, "templates/form.html")).read()
-    data = json.dumps({k: F[k] for k in ("moves","layout","pos")}, ensure_ascii=False).replace("</", "<\\/")
-    tg = F["trigram"]
+    data = json.dumps({k: F[k] for k in ("moves","layout","pos","floor") if k in F}, ensure_ascii=False).replace("</", "<\\/")
+    if "trigram" in F:      # Taegeuk: trigram bars + "Geon ☰ · Heaven"
+        tg = F["trigram"]; mark, line = tri(tg), f'{tg["name"]} {tg["sym"]} · {tg["meaning"]}'
+    else:                   # black-belt forms: Hanja seal + "高麗 · Goryeo, the scholar-warrior"
+        sym = F["symbol"]; mark, line = seal(sym), f'{sym["hanja"]} · {sym["meaning"]}'
     rep = {
         "TITLE": F["title"], "KO": F["ko"], "PDF": F["pdf"], "BOARD_MIN": str(F["boardMin"]),
-        "TRI": tri(tg), "TRIGRAM": f'{tg["name"]} {tg["sym"]} · {tg["meaning"]}',
+        "TRI": mark, "TRIGRAM": line, "GLYPH": F.get("floor", {}).get("glyph", "王"),
         "MOVEMENTS": str(F["movements"]), "COUNTS": str(len(F["moves"]) - 1),
         # big forms shrink the cards so every bar fits: optional cardW / figH in the JSON
         "SIZE_CSS": f':root{{--card-w:{F["cardW"]}px;--fig-h:{F["figH"]}px}}' if "cardW" in F else "",

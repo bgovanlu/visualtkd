@@ -1,0 +1,891 @@
+{
+ "slug": "taebaek",
+ "pdf": "taebaek-print.pdf",
+ "title": "Taebaek",
+ "ko": "태백",
+ "symbol": {
+  "name": "Taebaek",
+  "hanja": "太白",
+  "meaning": "Bright mountain · Baekdusan"
+ },
+ "movements": 26,
+ "note": {
+  "h": "工 · Gong · the craftsman",
+  "p": "Taebaek is the old name for Baekdusan, the mountain where, in legend, Dangun founded the first Korean kingdom. The floor line is 工: the character for a skilled maker, read as a bridge between heaven and earth. The first line is walked twice."
+ },
+ "footer": "Move numbers follow the Kukkiwon movement count (26 movements); a kick and the techniques that follow it in the same movement share one number (2-1 kick, 2-2 and 2-3 punches). Finish with <b>Baro</b>: turn to face ga and return to the ready stance at the starting point.",
+ "boardMin": 1760,
+ "cardW": 94,
+ "figH": 114,
+ "floor": {
+  "glyph": "工",
+  "bars": {
+   "r3": "gone"
+  },
+  "rail": [
+   "r1",
+   "r5"
+  ],
+  "notesBelow": true,
+  "map": "M4 8H96M16 52H84M50 8V52"
+ },
+ "layout": {
+  "r1": [
+   [
+    "24-3",
+    "24-2",
+    "24-1"
+   ],
+   [
+    "4-3",
+    "4-2",
+    "4-1"
+   ],
+   [
+    "23",
+    "3"
+   ],
+   "J",
+   [
+    "1",
+    "25"
+   ],
+   [
+    "2-1",
+    "2-2",
+    "2-3"
+   ],
+   [
+    "26-1",
+    "26-2",
+    "26-3"
+   ]
+  ],
+  "c2": [
+   "5",
+   "6-1",
+   "6-2",
+   "7-1",
+   "21",
+   "22"
+  ],
+  "c4": [
+   "7-2",
+   "8-1",
+   "8-2",
+   "19",
+   "20"
+  ],
+  "r5": [
+   [
+    "13-2",
+    "13-1",
+    "12"
+   ],
+   [
+    "11",
+    "10",
+    "9"
+   ],
+   [
+    "14",
+    "15",
+    "16"
+   ],
+   [
+    "17",
+    "18-1",
+    "18-2"
+   ]
+  ]
+ },
+ "pos": {
+  "J": [
+   50,
+   8
+  ],
+  "1": [
+   58,
+   8
+  ],
+  "2-1": [
+   64,
+   8
+  ],
+  "2-2": [
+   70,
+   8
+  ],
+  "2-3": [
+   70,
+   8
+  ],
+  "3": [
+   42,
+   8
+  ],
+  "4-1": [
+   36,
+   8
+  ],
+  "4-2": [
+   30,
+   8
+  ],
+  "4-3": [
+   30,
+   8
+  ],
+  "5": [
+   50,
+   15
+  ],
+  "6-1": [
+   50,
+   15
+  ],
+  "6-2": [
+   50,
+   24
+  ],
+  "7-1": [
+   50,
+   24
+  ],
+  "7-2": [
+   50,
+   34
+  ],
+  "8-1": [
+   50,
+   34
+  ],
+  "8-2": [
+   50,
+   44
+  ],
+  "9": [
+   44,
+   52
+  ],
+  "10": [
+   40,
+   52
+  ],
+  "11": [
+   40,
+   52
+  ],
+  "12": [
+   38,
+   52
+  ],
+  "13-1": [
+   32,
+   52
+  ],
+  "13-2": [
+   26,
+   52
+  ],
+  "14": [
+   58,
+   52
+  ],
+  "15": [
+   62,
+   52
+  ],
+  "16": [
+   62,
+   52
+  ],
+  "17": [
+   64,
+   52
+  ],
+  "18-1": [
+   70,
+   52
+  ],
+  "18-2": [
+   76,
+   52
+  ],
+  "19": [
+   50,
+   44
+  ],
+  "20": [
+   50,
+   34
+  ],
+  "21": [
+   50,
+   24
+  ],
+  "22": [
+   50,
+   15
+  ],
+  "23": [
+   40,
+   8
+  ],
+  "24-1": [
+   34,
+   8
+  ],
+  "24-2": [
+   26,
+   8
+  ],
+  "24-3": [
+   26,
+   8
+  ],
+  "25": [
+   60,
+   8
+  ],
+  "26-1": [
+   66,
+   8
+  ],
+  "26-2": [
+   74,
+   8
+  ],
+  "26-3": [
+   74,
+   8
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "na",
+   "view": "front",
+   "stance": "ready",
+   "arms": {
+    "L": "junbi",
+    "R": "junbi"
+   },
+   "tech": "junbi",
+   "desc": "Stand at na facing ga, feet parallel and one foot-width apart, fists in front of the belt (gibon junbi)."
+  },
+  {
+   "id": "1",
+   "dir": "da1",
+   "view": "side",
+   "stance": "tiger",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "L": "kspread",
+    "R": "kspread"
+   },
+   "tech": "kspread",
+   "desc": "Turn 90° left toward da¹, left tiger stance. Knife-hand low spread block."
+  },
+  {
+   "id": "2-1",
+   "dir": "da1",
+   "view": "side",
+   "stance": "kick",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "R",
+   "foot": true,
+   "desc": "Right front kick."
+  },
+  {
+   "id": "2-2",
+   "dir": "da1",
+   "view": "side",
+   "stance": "front",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Land in a right front stance. Right middle punch."
+  },
+  {
+   "id": "2-3",
+   "dir": "da1",
+   "view": "side",
+   "stance": "front",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "hand": "L",
+   "note": "baro",
+   "desc": "Left middle punch."
+  },
+  {
+   "id": "3",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "tiger",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "kspread",
+    "R": "kspread"
+   },
+   "tech": "kspread",
+   "desc": "Turn 180° right on the left foot toward ra¹, right tiger stance. Knife-hand low spread block."
+  },
+  {
+   "id": "4-1",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "kick",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "L",
+   "foot": true,
+   "desc": "Left front kick."
+  },
+  {
+   "id": "4-2",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "front",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "hand": "L",
+   "note": "bandae",
+   "desc": "Land in a left front stance. Left middle punch."
+  },
+  {
+   "id": "4-3",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "front",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "baro",
+   "desc": "Right middle punch."
+  },
+  {
+   "id": "5",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "khigh",
+    "R": "neck"
+   },
+   "tech": "jebi",
+   "hand": "R",
+   "desc": "Turn 90° left toward ga, left front stance. Swallow-form knife-hand strike: left knife-hand high block, right knife hand to the neck."
+  },
+  {
+   "id": "6-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "tgrab"
+   },
+   "tech": "tgrab",
+   "hand": "R",
+   "desc": "Without stepping, twist the right hand over and grab the opponent’s wrist."
+  },
+  {
+   "id": "6-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "hand": "L",
+   "note": "baro",
+   "desc": "Pull with the right hand as you step forward into a right front stance. Left middle punch."
+  },
+  {
+   "id": "7-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "tgrab"
+   },
+   "tech": "tgrab",
+   "hand": "L",
+   "desc": "Without stepping, twist the left hand over and grab the opponent’s wrist."
+  },
+  {
+   "id": "7-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "baro",
+   "desc": "Pull with the left hand as you step forward into a left front stance. Right middle punch."
+  },
+  {
+   "id": "8-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "tgrab"
+   },
+   "tech": "tgrab",
+   "hand": "R",
+   "desc": "Without stepping, twist the right hand over and grab the opponent’s wrist."
+  },
+  {
+   "id": "8-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "hand": "L",
+   "note": "baro",
+   "kihap": true,
+   "desc": "Pull with the right hand as you step forward into a right front stance. Left middle punch."
+  },
+  {
+   "id": "9",
+   "dir": "ra3",
+   "view": "side",
+   "stance": "back",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "outer",
+    "R": "high"
+   },
+   "tech": "kmomtong",
+   "desc": "Turn 270° to the left on the right foot to face ra³, back stance with the left foot forward. Diamond middle block: left middle block, right high block."
+  },
+  {
+   "id": "10",
+   "dir": "ra3",
+   "view": "side",
+   "stance": "back",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "R": "uppercut",
+    "L": "grab"
+   },
+   "tech": "uppercut",
+   "hand": "R",
+   "desc": "Right pulling uppercut to the jaw; the left hand pulls in."
+  },
+  {
+   "id": "11",
+   "dir": "ra3",
+   "view": "side",
+   "stance": "back",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "hand": "L",
+   "note": "bandae",
+   "desc": "Left middle punch."
+  },
+  {
+   "id": "12",
+   "dir": "ra3",
+   "view": "side",
+   "stance": "crane",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "hingetop"
+   },
+   "tech": "shinge",
+   "desc": "Draw the left foot up to the right knee: crane stance on the right leg. Small hinge: both fists at the right hip."
+  },
+  {
+   "id": "13-1",
+   "dir": "ra3",
+   "view": "side",
+   "stance": "skick",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "hammerout"
+   },
+   "tech": "hskick",
+   "hand": "L",
+   "foot": true,
+   "desc": "Left side kick with a left hammer-fist outer strike."
+  },
+  {
+   "id": "13-2",
+   "dir": "ra3",
+   "view": "side",
+   "stance": "front",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "R": "elbow",
+    "L": "eltarget"
+   },
+   "tech": "eltarget",
+   "hand": "R",
+   "desc": "Land in a left front stance. Right elbow strike into the left palm."
+  },
+  {
+   "id": "14",
+   "dir": "da3",
+   "view": "side",
+   "stance": "back",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "R": "outer",
+    "L": "high"
+   },
+   "tech": "kmomtong",
+   "desc": "Draw the left foot back to the right, then turn to face da³, back stance with the right foot forward. Diamond middle block: right middle block, left high block."
+  },
+  {
+   "id": "15",
+   "dir": "da3",
+   "view": "side",
+   "stance": "back",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "L": "uppercut",
+    "R": "grab"
+   },
+   "tech": "uppercut",
+   "hand": "L",
+   "desc": "Left pulling uppercut to the jaw; the right hand pulls in."
+  },
+  {
+   "id": "16",
+   "dir": "da3",
+   "view": "side",
+   "stance": "back",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Right middle punch."
+  },
+  {
+   "id": "17",
+   "dir": "da3",
+   "view": "side",
+   "stance": "crane",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "R": "hingetop"
+   },
+   "tech": "shinge",
+   "desc": "Draw the right foot up to the left knee: crane stance on the left leg. Small hinge: both fists at the left hip."
+  },
+  {
+   "id": "18-1",
+   "dir": "da3",
+   "view": "side",
+   "stance": "skick",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "R": "hammerout"
+   },
+   "tech": "hskick",
+   "hand": "R",
+   "foot": true,
+   "desc": "Right side kick with a right hammer-fist outer strike."
+  },
+  {
+   "id": "18-2",
+   "dir": "da3",
+   "view": "side",
+   "stance": "front",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "L": "elbow",
+    "R": "eltarget"
+   },
+   "tech": "eltarget",
+   "hand": "L",
+   "desc": "Land in a right front stance. Left elbow strike into the right palm."
+  },
+  {
+   "id": "19",
+   "dir": "na",
+   "view": "back",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "hand": "L",
+   "desc": "Turn left to face na, back stance with the left foot forward. Double knife-hand block (sonnal geodeureo makki)."
+  },
+  {
+   "id": "20",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "spear",
+    "L": "press"
+   },
+   "tech": "spear",
+   "hand": "R",
+   "desc": "Step forward into a right front stance. Right spear-hand thrust over the left pressing hand."
+  },
+  {
+   "id": "21",
+   "dir": "na",
+   "view": "back",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "backfist"
+   },
+   "tech": "obackfist",
+   "hand": "L",
+   "desc": "The opponent holds the right wrist: pull it free, turn round to the left and step the left foot forward into a back stance with the left foot forward. Left back-fist strike to the face."
+  },
+  {
+   "id": "22",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "bandae",
+   "kihap": true,
+   "desc": "Step forward into a right front stance. Right middle punch."
+  },
+  {
+   "id": "23",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "front",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "R": "outer",
+    "L": "low"
+   },
+   "tech": "scissors",
+   "desc": "Turn 90° left toward ra¹, left front stance. Scissors block."
+  },
+  {
+   "id": "24-1",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "kick",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "R",
+   "foot": true,
+   "desc": "Right front kick."
+  },
+  {
+   "id": "24-2",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "front",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Land in a right front stance. Right middle punch."
+  },
+  {
+   "id": "24-3",
+   "dir": "ra1",
+   "view": "side",
+   "stance": "front",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "hand": "L",
+   "note": "baro",
+   "desc": "Left middle punch."
+  },
+  {
+   "id": "25",
+   "dir": "da1",
+   "view": "side",
+   "stance": "front",
+   "face": "R",
+   "lead": "R",
+   "arms": {
+    "L": "outer",
+    "R": "low"
+   },
+   "tech": "scissors",
+   "desc": "Turn 180° right on the left foot toward da¹, right front stance. Scissors block."
+  },
+  {
+   "id": "26-1",
+   "dir": "da1",
+   "view": "side",
+   "stance": "kick",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "hand": "L",
+   "foot": true,
+   "desc": "Left front kick."
+  },
+  {
+   "id": "26-2",
+   "dir": "da1",
+   "view": "side",
+   "stance": "front",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "hand": "L",
+   "note": "bandae",
+   "desc": "Land in a left front stance. Left middle punch."
+  },
+  {
+   "id": "26-3",
+   "dir": "da1",
+   "view": "side",
+   "stance": "front",
+   "face": "R",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "baro",
+   "desc": "Right middle punch."
+  }
+ ],
+ "refs": [
+  {
+   "go": "kukkiwon-taebaek",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Taebaek",
+   "desc": "The form’s official description and meaning.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1358&page=1&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "kukkiwon-poomsae",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Poomsae index",
+   "desc": "Every official poomsae, Taegeuk 1–8 and the black-belt forms.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/list?boardManagementNo=55&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "video-taebaek",
+   "kind": "yt",
+   "icon": "channel",
+   "src": "YouTube · Playlist",
+   "title": "Kukkiwon Digital Encyclopedia series",
+   "desc": "Mookas TV playlist of the full series, including Taebaek.",
+   "url": "https://www.youtube.com/playlist?list=PL4lzP9nwMEv2A-vF-GaNNn2OdjXjZfA6k"
+  },
+  {
+   "go": "kukkiwon-youtube",
+   "kind": "yt",
+   "icon": "channel",
+   "src": "YouTube · Channel",
+   "title": "Kukkiwon World Taekwondo Headquarters",
+   "desc": "The official Kukkiwon channel.",
+   "url": "https://www.youtube.com/channel/UCaQb3jutLu15oSfhPh8FACQ"
+  },
+  {
+   "go": "wt-poomsae-rules",
+   "kind": "wt",
+   "icon": "pdf",
+   "src": "World Taekwondo · PDF",
+   "title": "Poomsae Competition Rules and Interpretation",
+   "desc": "In force from 30 September 2024; how poomsae are judged.",
+   "url": "https://www.worldtaekwondo.org/att_file/documents/Poomsae%20Competition%20Rules%20and%20Interpretation%20(In%20force%20as%20of%20September%2030%202024).pdf"
+  }
+ ]
+}

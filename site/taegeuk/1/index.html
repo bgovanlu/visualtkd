@@ -40,6 +40,8 @@ header{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;
 .tri i{display:block;width:54px;height:9px;background:var(--heaven);border-radius:2px}
 .tri i.brk{background:none;display:flex;gap:10px}
 .tri i.brk s{flex:1;background:var(--heaven);border-radius:2px}
+/* black-belt forms carry their name in Hanja instead of a trigram */
+.seal{font-family:var(--f-display);font-weight:900;font-size:27px;line-height:1.05;color:var(--heaven);border:2.5px solid var(--heaven);border-radius:8px;padding:9px 7px;writing-mode:vertical-rl;letter-spacing:.06em}
 h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6vw,64px);line-height:1;letter-spacing:-.01em}
 .sub{margin:6px 0 0;font-size:clamp(17px,2vw,21px);font-weight:600;letter-spacing:.02em}
 .sub span{color:var(--muted);font-weight:400}
@@ -53,13 +55,23 @@ h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6v
 .board{position:relative;min-width:1120px;padding:44px 64px 52px;display:flex;flex-direction:column;gap:6px}
 .rail{position:absolute;left:50%;width:3px;margin-left:-1.5px;background:var(--line);z-index:0}
 .bar{position:relative;display:flex;justify-content:space-between;align-items:flex-start}
-.bar::before{content:"";position:absolute;left:-34px;right:-34px;top:calc(20px + var(--fig-h)*var(--gf));height:3px;background:var(--line);z-index:0}
+.bar::before{content:"";position:absolute;left:var(--bl,-34px);right:var(--br,-34px);top:calc(20px + var(--fig-h)*var(--gf));height:3px;background:var(--line);z-index:0}
 .pair{display:flex;gap:2px}
 .mid{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;position:relative}
 .mid .pair{gap:10px}
 .dl{position:absolute;font-family:var(--f-mono);font-size:13px;color:var(--heaven);top:calc(20px + var(--fig-h)*var(--gf) - 26px)}
 .dl.l{left:-50px}.dl.r{right:-50px}
 .dl sup{font-size:9px}
+/* other floor shapes (士 山 工): short bars, bars without a line, side prongs */
+.bar.fit{justify-content:center;gap:56px}
+.bar.noline::before{display:none}
+.bar.gone{display:none}
+.prong{position:absolute;width:3px;margin-left:-1.5px;background:var(--line);z-index:0}
+.mid .side.r{justify-self:end}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px 30px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 24px}
+.notes[hidden]{display:none}
+.notes .note{max-width:none}
+.notes .note.right{justify-self:stretch}
 .compass{position:absolute;left:50%;transform:translateX(-50%);font-family:var(--f-mono);font-size:13px;color:var(--heaven);letter-spacing:.1em}
 .compass.n{top:14px}.compass.s{bottom:18px}
 
@@ -81,6 +93,7 @@ h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6v
 .chip.tiger{border-style:dotted;border-width:2px;color:var(--ink)}
 .chip.horse{background:var(--mat);border-color:var(--ink);color:var(--ink)}
 .chip.ready{border-color:var(--line)}
+.chip.crane{border-style:dotted;border-width:2px;border-color:var(--heaven);color:var(--heaven)}
 .fig.on .chip{outline:2px solid var(--fire);outline-offset:2px}
 .kh{font-family:var(--f-mono);font-size:10px;color:var(--fire);letter-spacing:.06em;margin-top:3px}
 .seg{display:inline-flex;align-self:flex-start;border:1px solid var(--line);border-radius:99px;padding:2px;gap:2px}
@@ -200,6 +213,8 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
   .meta{display:none}
   .title{gap:14px}
   .tri{gap:4px}.tri i{width:30px;height:5px}
+  .seal{writing-mode:horizontal-tb;font-size:17px;padding:5px 7px;border-width:2px;white-space:nowrap}
+  body[data-mview="swipe"] .notes{display:none}
   .mtoggle{display:inline-flex}
   .mtoggle button{padding:7px 14px;font-size:14px}
   body[data-mview="swipe"] .carousel{display:flex}
@@ -212,7 +227,7 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
 
 <div class="wrap">
   <nav class="actions" aria-label="Page actions">
-    <a class="back" href="/">← All Taegeuk forms</a>
+    <a class="back" href="/">← All forms</a>
     <a class="print" href="taegeuk-1-print.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4.5V9.5A1.5 1.5 0 0 1 6 8h12a1.5 1.5 0 0 1 1.5 1.5V17H17M7 13.5h10V21H7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>Print sheet <span>PDF · 2 pages</span></a>
   </nav>
   <header>
@@ -253,32 +268,33 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
 
       <div class="bar" id="r1"><span class="dl l">ra<sup>1</sup></span><span class="dl r">da<sup>1</sup></span></div>
       <div class="mid" id="r2">
-        <div class="note">
+        <div class="note" id="nForm">
           <h3>Geon · 건 · Heaven</h3>
           <p>The first Taegeuk represents heaven and light, the source of all creation. It is built from the two most basic stances and simple, honest techniques, the foundation every later form grows from.</p>
         </div>
         <div class="pair" id="c2"></div>
-        <div class="note right">
+        <div class="note right" id="nLegend">
           <h3>Reading the footprints</h3>
           <div class="legend" id="legend"></div>
         </div>
       </div>
       <div class="bar" id="r3"><span class="dl l">ra<sup>2</sup></span><span class="dl r">da<sup>2</sup></span></div>
       <div class="mid" id="r4">
-        <div class="note">
+        <div class="note" id="nBelt">
           <h3>Belt</h3>
           <div class="belts" id="belts"></div>
           <p>Choose the rank you are teaching; every figure updates.</p>
         </div>
         <div class="pair" id="c4"></div>
-        <div class="note right">
+        <div class="note right" id="nRead">
           <h3>How the diagram reads</h3>
-          <p>You start at <b>na</b> facing <b>ga</b> (the bottom of the page). Figures on the left and right are seen from the side; centre figures face you going toward ga and show their back returning toward na.</p>
+          <p>You start at <b>na</b> facing <b>ga</b> (the bottom of the page). Figures on the left and right are seen from the side; centre figures face you going toward ga and show their back returning toward na. Horse- and crane-stance figures face the way the body faces.</p>
         </div>
       </div>
       <div class="bar" id="r5"><span class="dl l">ra<sup>3</sup></span><span class="dl r">da<sup>3</sup></span></div>
     </div>
   </div>
+  <div class="notes" id="notes" hidden></div>
 
   <section class="study" aria-live="polite">
     <div class="stage" id="stage"></div>
@@ -364,7 +380,28 @@ const T={
   sidepunch:["Yeop jireugi","옆지르기","Side punch"],
   ksside:["Hansonnal yeop makki","한손날옆막기","Knife-hand side block"],
   kslow:["Sonnal arae makki","손날아래막기","Low knife-hand block"],
-  obackfist:["Deung jumeok bakkat chigi","등주먹바깥치기","Outward back-fist"]
+  obackfist:["Deung jumeok bakkat chigi","등주먹바깥치기","Outward back-fist"],
+  // black-belt forms
+  tongmil:["Tongmilgi junbi","통밀기 준비","Pushing-hands ready"],
+  dskick:["Geodeup yeop chagi","거듭옆차기","Double side kick"],
+  ksstrike:["Hansonnal bakkat chigi","한손날바깥치기","Knife-hand outer strike"],
+  arc:["Kaljaebi","칼재비","Arc-hand throat strike"],
+  kneebreak:["Mureup kkeokgi","무릎꺾기","Knee break"],
+  tpunch:["Pyojeok jireugi","표적지르기","Target punch"],
+  lspear:["Pyeonsonkkeut jeocho jjireugi","편손끝젖혀찌르기","Low spear hand, palm up"],
+  pressdown:["Batangson nulleo makki","바탕손눌러막기","Palm pressing block"],
+  sideelbow:["Palkup yeop chigi","팔굽옆치기","Side elbow strike"],
+  hammerlow:["Mejumeok arae pyojeok chigi","메주먹아래표적치기","Low hammer-fist target strike"],
+  palmjaw:["Batangson teok chigi","바탕손턱치기","Palm-heel jaw strike"],
+  ksin:["Hansonnal momtong an makki","한손날몸통안막기","Knife-hand inside block"],
+  keumgang:["Keumgang makki","금강막기","Diamond block"],
+  khinge:["Keun doljjeogwi","큰돌쩌귀","Large hinge"],
+  santeul:["Santeul makki","산틀막기","Mountain block"],
+  kspread:["Sonnal arae hecho makki","손날아래헤쳐막기","Knife-hand low spread block"],
+  tgrab:["Sonnal eopeo japgi","손날엎어잡기","Twisting knife-hand grab"],
+  kmomtong:["Keumgang momtong makki","금강몸통막기","Diamond middle block"],
+  shinge:["Jageun doljjeogwi","작은돌쩌귀","Small hinge"],
+  hskick:["Yeop chagi · mejumeok bakkat chigi","옆차기 · 메주먹바깥치기","Side kick with hammer-fist strike"]
 };
 const STANCE={
   ready:["Naranhi seogi","나란히서기","Parallel stance"],
@@ -378,7 +415,8 @@ const STANCE={
   tiger:["Beom seogi","범서기","Tiger stance"],
   horse:["Juchum seogi","주춤서기","Horse stance"],
   cross:["Kkoa seogi","꼬아서기","Cross stance"],
-  close:["Moa seogi","모아서기","Closed stance"]
+  close:["Moa seogi","모아서기","Closed stance"],
+  crane:["Hakdari seogi","학다리서기","Crane stance"]
 };
 const DIRN={na:"na",ga:"ga",da1:"da¹",da2:"da²",da3:"da³",ra1:"ra¹",ra2:"ra²",ra3:"ra³"};
 
@@ -443,7 +481,10 @@ const FOOT_HEEL=[[-3.7,-1],[3.7,-1],[4.4,3.8],[3.2,6.5],[-3.2,6.5],[-4.4,3.8]];
 const FIST=[[-.4,-3.8],[3,-4.6],[7.6,-4.5],[9.8,-2.8],[10.3,.4],[9.4,3.6],[6,4.8],[1.6,4.3],[-.4,3.6]];
 const HAND_FLAT=[[-.4,-3],[3,-3.4],[9,-3.2],[13.2,-2],[14,0],[13.2,2],[9,3.1],[3,3.3],[-.4,2.8]];
 // open-hand techniques draw a flat hand instead of a fist
-const OPEN=new Set(["ksout","ksblock","ksguard","spear","press","neck","khigh","eltarget","twist","palm","grab","ksside","kslow"]);
+const OPEN=new Set(["ksout","ksblock","ksguard","spear","press","neck","khigh","eltarget","twist","palm","grab","ksside","kslow",
+  "tongmil","ksstrike","arc","kneebreak","hold","target","lspear","pressdown","elbowpush","palmlow","palmjaw","ksin","kspread","tgrab"]);
+// seen from the front, these come straight at the viewer: drawn foreshortened (fist face or hand edge), never across the face
+const TOWARD={punch:k=>[1.5,20],neck:k=>[-3,5],arc:k=>[-1,5],palmjaw:k=>[-1,9],tgrab:k=>[-2,16]};
 const KNIFE_FACE=[[-6.8,-2.4],[6.8,-2.4],[7.6,0],[6.8,2.4],[-6.8,2.4],[-7.6,0]];
 const FIST_FACE=[[-5.4,-4.3],[5.4,-4.3],[6.3,0],[5.6,4.5],[-5.6,4.5],[-6.3,0]];
 const mk=far=>({far,legs:[],arms:[],feet:[],fists:[],torso:null,head:null,neck:null});
@@ -456,7 +497,7 @@ function skel(m,pr){
   }
   if(m.view==="side"){
     const near=m.face==="R"?"R":"L",st=m.stance;
-    const hipY={walk:0,front:14,kick:-2,back:8,skick:-4,rkick:-4,knee:-2,tiger:10,horse:14,cross:6,close:-1,ready:-1}[st]*k,lean={walk:2,front:5,kick:-8,back:-3,skick:-13,rkick:-12,knee:-4,tiger:-1,horse:0,cross:3,close:0,ready:0}[st]*tk;
+    const hipY={walk:0,front:14,kick:-2,back:8,skick:-4,rkick:-4,knee:-2,tiger:10,horse:12,cross:6,close:-1,ready:-1,crane:0}[st]*k,lean={walk:2,front:5,kick:-8,back:-3,skick:-13,rkick:-12,knee:-4,tiger:-1,horse:0,cross:3,close:0,ready:0,crane:0}[st]*tk;
     const H=[0,hipY],S=[lean,hipY-pr.torso],u=norm(sub(S,H)),r=[-u[1],u[0]],Lt=pr.torso;
     const P=(x,y)=>add(add(H,mul(r,x)),mul(u,y));
     const Lay={farArm:mk(1),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0),nearArm:mk(0)};
@@ -471,7 +512,8 @@ function skel(m,pr){
       else if(st==="rkick"){t=lead?[54,-30]:[-6,56];if(lead)pref=[.6,-1];} // dollyeo chagi: kick at face height
       else if(st==="knee"){t=lead?[18,22]:[-4,56];if(lead)pref=[1,-1];}    // mureup chigi: knee driven up
       else if(st==="tiger")t=lead?[12,56]:[-14,56];                      // beom seogi: short, weight on the bent rear leg
-      else if(st==="horse")t=lead?[24,56]:[-24,56];
+      else if(st==="horse"){t=dp==="near"?[19,56]:[11,56];pref=[1,-.1]}             // juchum seogi in profile: legs side by side, knees forward
+      else if(st==="crane"){t=lead?[1,56]:[4,25];if(!lead)pref=[1,-.35]}  // hakdari seogi: lifted foot against the standing knee
       else if(st==="cross")t=lead?[8,56]:[-6,56];                        // kkoa seogi: rear foot tucked behind
       else if(st==="close"||st==="ready")t=lead?[3,56]:[-1,56];
       else{t=lead?[58,-16]:[-5,56];if(lead)pref=[.4,-1];}
@@ -479,8 +521,8 @@ function skel(m,pr){
       const hp=HP[dp],[kn,an]=ik(hp,t,pr.thigh,pr.shin,pref),Lg=dp==="near"?Lay.nearLeg:Lay.farLeg;
       Lg.legs.push({ch:[hp,kn,an]});
       const kicking=["kick","skick","rkick","knee"].includes(st),kick=kicking&&lead;
-      const fs=lead||kicking?1:st==="back"?.6:.82;   // back-stance rear foot is turned out 90°, so it reads short
-      Lg.feet.push({pts:xf(FOOT_SIDE,an,kick?({skick:-.15,rkick:-.4,knee:.9}[st]??-1.25):(st==="tiger"&&lead?-.35:0),fs*pr.foot,pr.foot)});
+      const fs=lead||kicking?1:st==="back"?.6:st==="crane"?.9:.82;   // back-stance rear foot is turned out 90°, so it reads short
+      Lg.feet.push({pts:xf(FOOT_SIDE,an,kick?({skick:-.15,rkick:-.4,knee:.9}[st]??-1.25):(st==="tiger"&&lead?-.35:st==="crane"&&!lead?1.15:0),fs*pr.foot,pr.foot)});
       const act=(m.arms&&m.arms[s])||"chamber",sh=SH[dp];let h,p=[0,1];
       if(act==="chamber"){h=[-4,hipY-11*tk];p=[-1,.1]}
       else if(act==="punch")h=add(sh,mul([46,6],ak));
@@ -512,6 +554,26 @@ function skel(m,pr){
       else if(act==="ksside")h=add(sh,mul([24,-2],ak));
       else if(act==="kslow")h=[26*ak,hipY-2];
       else if(act==="assist")h=add(sh,mul([14,14],ak));
+      else if(act==="tongmil")h=add(sh,mul([24,-8],ak));
+      else if(act==="ksstrike")h=add(sh,mul([40,-6],ak));
+      else if(act==="arc")h=add(sh,mul([44,-8],ak));
+      else if(act==="kneebreak")h=[30*ak,hipY+4];
+      else if(act==="hold"){h=[5,hipY-17*tk];p=[-1,.2]}
+      else if(act==="target")h=add(sh,mul([36,2],ak));
+      else if(act==="crosspunch")h=add(sh,mul([44,4],ak));
+      else if(act==="lspear")h=[36*ak,hipY-1];
+      else if(act==="shoulder"){h=add(sh,mul([8,5],ak));p=[1,.7]}
+      else if(act==="pressdown")h=add(sh,mul([24,26],ak));
+      else if(act==="sideelbow"){h=add(sh,mul([2,10],ak));p=[-1,.2]}
+      else if(act==="elbowpush")h=add(sh,mul([14,8],ak));
+      else if(act==="hammerlow"||act==="palmlow")h=add(sh,mul([20,30],ak));
+      else if(act==="palmjaw")h=add(sh,mul([42,-10],ak));
+      else if(act==="ksin")h=add(sh,mul([22,-1],ak));
+      else if(act==="hingepunch")h=add(sh,mul([26,4],ak));
+      else if(act==="hingetop")h=add(sh,mul([10,16],ak));
+      else if(act==="hammerout")h=add(sh,mul([44,-2],ak));
+      else if(act==="kspread")h=[22*ak,hipY+2];
+      else if(act==="tgrab")h=add(sh,mul([36,4],ak));
       else h=dp==="near"?add(sh,mul([24,14],ak)):add(sh,mul([17,7],ak));
       addArm(dp==="near"?Lay.nearArm:Lay.farArm,sh,h,p,false,OPEN.has(act));
     });
@@ -532,7 +594,7 @@ function skel(m,pr){
     return{k,mirror:m.face==="L",layers:["farArm","farLeg","nearLeg","head","torso","nearArm"].map(q=>Lay[q])};
   }
   const back=m.view==="back",sx=s=>(s==="L"?1:-1)*(back?-1:1),st=m.stance;
-  const hipY=(st==="front"||st==="back"||st==="tiger")?6*k:st==="horse"?10*k:st==="cross"?4*k:-3*k,T=hipY-pr.torso;
+  const hipY=(st==="front"||st==="back"||st==="tiger")?6*k:st==="horse"?10*k:st==="cross"?4*k:st==="crane"?-1*k:-3*k,T=hipY-pr.torso;
   const Lay={arms:mk(0),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0),kick:mk(1)};
   ["L","R"].forEach(s=>{
     const x=sx(s),hp=[x*pr.hipW*.95,hipY];let an,kn,nearer=true,sc=1;
@@ -547,6 +609,11 @@ function skel(m,pr){
       const lead=s===m.lead;nearer=back?!lead:lead;
       if(lead){an=[x*5*hw,(back?55:60)*k];kn=lerp(hp,an,.5);sc=back?.9:1}
       else{an=[x*-1*hw,(back?60:54)*k];kn=add(lerp(hp,an,.5),[x*2,0]);sc=back?1:.86}
+    }
+    else if(st==="crane"){ // hakdari seogi: lifted knee turned out, foot resting against the standing knee
+      const lead=s===m.lead;nearer=back?lead:!lead;
+      if(lead){an=[x*4*hw,58*k];kn=add(lerp(hp,an,.5),[x*.6,0])}
+      else{kn=[x*17*hw,hipY+21];an=[x*-2.5*hw,hipY+31];sc=.9}
     }
     else if(st==="walk"){ // ap seogi seen from front/back: both legs straight, lead foot nearer the viewer from the front
       const lead=s===m.lead;nearer=back?!lead:lead;
@@ -569,13 +636,13 @@ function skel(m,pr){
     // seen from behind, the kicking leg is raised in front of the body: draw it over the torso in the far-side tone
     const Lg=(st==="kick"&&back&&s===m.lead)?Lay.kick:(nearer?Lay.nearLeg:Lay.farLeg);
     Lg.legs.push({ch:[hp,kn,an],front:true});
-    Lg.feet.push({pts:xf(back?FOOT_HEEL:FOOT_FRONT,add(an,[x*.8,0]),0,sc*x*pr.foot,sc*pr.foot)});
+    if(st==="crane"&&s!==m.lead)Lg.feet.push({pts:xf(FOOT_SIDE,an,Math.PI/2,.8*pr.foot,-.8*x*pr.foot)});
+    else Lg.feet.push({pts:xf(back?FOOT_HEEL:FOOT_FRONT,add(an,[x*.8,0]),0,sc*x*pr.foot,sc*pr.foot)});
     const act=(m.arms&&m.arms[s])||"chamber",sh=[x*pr.shW,T+8*tk];
-    if(act==="punch"){
-      if(back)addArm(Lay.arms,sh,[x*-3,T+20*tk],[x,.2]);
-      else addArm(Lay.arms,sh,[x*1.5,T+20*tk],null,true);
-    }else if(act==="neck"&&!back){  // neck strike seen from the front: arm comes toward the viewer, knife hand edge-on at neck height
-      addArm(Lay.arms,sh,[x*-3,T+5*tk],null,true,true);
+    if(act==="punch"&&back)addArm(Lay.arms,sh,[x*-3,T+20*tk],[x,.2]);
+    else if(act==="lspear"&&!back)addArm(Lay.arms,sh,[x*-2,hipY+1],null,true,true);
+    else if(TOWARD[act]&&!back){   // strikes toward the viewer: fist face or knife-hand edge, foreshortened
+      const q=TOWARD[act]();addArm(Lay.arms,sh,[x*q[0],T+q[1]*tk],null,true,OPEN.has(act));
     }else{
       let h,p=[x,.15];
       if(act==="chamber")h=[x*(pr.hipW+7),hipY-9*tk];
@@ -604,6 +671,26 @@ function skel(m,pr){
       else if(act==="kslow"){h=[x*(pr.shW+12),hipY+6*k];p=[x,.2]}
       else if(act==="assist"){h=[x*-2,T+20*tk];p=[x,.3]}
       else if(act==="guard")h=[x*8,T+28*tk];
+      else if(act==="tongmil"){h=[x*-1.5,T+15*tk];p=[x,.15]}   // hands meet below the chin, elbows out
+      else if(act==="ksstrike"){h=[x*(pr.shW+30),T+2*tk];p=[x*.3,1]}
+      else if(act==="arc"||act==="palmjaw"){h=[x*-3,T+5*tk];p=[x,.3]}
+      else if(act==="tgrab"){h=[x*-3,T+14*tk];p=[x,.3]}
+      else if(act==="lspear"){h=[x*-3,hipY-1];p=[x,.2]}
+      else if(act==="kneebreak"){h=[x*-2,hipY+12*k];p=[x,.2]}
+      else if(act==="hold"){h=[x*(pr.hipW+8),hipY-16*tk];p=[x,.2]}
+      else if(act==="target"){h=[x*(pr.shW+30),T+8*tk];p=[x*.2,1]}
+      else if(act==="crosspunch"){h=[x*-(pr.shW+14),T+8*tk];p=[x*.2,1]}
+      else if(act==="shoulder"){h=[x*-(pr.shW-5),T+5*tk];p=[x,.6]}
+      else if(act==="pressdown"){h=[x*-2,T+30*tk];p=[x,.3]}
+      else if(act==="sideelbow"){h=[x*(pr.shW+3),T+11*tk];p=[x,.05]}   // arm folded, elbow driven out to the side
+      else if(act==="elbowpush"){h=[x*-(pr.shW+1),T+12*tk];p=[x,.3]}
+      else if(act==="hammerlow"){h=[x*-1,hipY-5*k];p=[x,.2]}
+      else if(act==="palmlow"){h=[x*-1,hipY-8*k];p=[x,.2]}
+      else if(act==="ksin"){h=[x*-3,T+9*tk];p=[x*.5,1]}
+      else if(act==="hingepunch"){h=[x*-(pr.shW+4),T+11*tk];p=[x*.3,1]}
+      else if(act==="hingetop"){h=[x*-(pr.hipW+6),hipY-18*tk];p=[x,.3]}
+      else if(act==="hammerout"){h=[x*(pr.shW+40),T+6*tk];p=[x*.2,1]}
+      else if(act==="kspread"){h=[x*(pr.shW+12),hipY+12*k];p=[x,.2]}
       else h=[x*6.5,hipY-12*tk];                                 // junbi
       addArm(Lay.arms,sh,h,p,false,OPEN.has(act));
     }
@@ -748,6 +835,8 @@ function feet(m){
     s=foot(l*1.5,-6,0,1)+foot(o*3,6,o*.6,0);}
   else if(m.stance==="horse")s=foot(-11,1,0,0)+foot(11,1,0,0)+`<path d="M-11 -9V11M11 -9V11" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 2"/>`;
   else if(m.stance==="close")s=foot(-3.5,1,0,0)+foot(3.5,1,0,0);
+  else if(m.stance==="crane"){const l=sgn(m.lead),o=sgn(other(m.lead));  // hakdari seogi: one foot down, the other lifted to the knee
+    s=foot(l*3,1,0,1)+`<circle cx="${o*5}" cy="1" r="4.6" fill="none" stroke="var(--muted)" stroke-width="1.4" stroke-dasharray="2 1.6"/>`;}
   else if(m.stance==="cross"){const l=sgn(m.lead),o=sgn(other(m.lead));
     s=foot(l*1.5,-3,0,1)+foot(o*-2,7,o*.4,0);}
   else if(m.stance==="back"){const l=sgn(m.lead),o=sgn(other(m.lead));   // dwit kubi: an L shape, rear foot turned 90° out
@@ -768,6 +857,7 @@ function chip(m){
   if(m.stance==="horse")return`<span class="chip horse">Juchum seogi</span>`;
   if(m.stance==="cross")return`<span class="chip">${m.lead} · Kkoa seogi</span>`;
   if(m.stance==="close")return`<span class="chip ready">Moa seogi</span>`;
+  if(m.stance==="crane")return`<span class="chip crane">${m.lead} · Hakdari</span>`;
   if(m.stance==="back")return`<span class="chip back">${m.lead} · Dwit kubi</span>`;
   return`<span class="chip ${m.stance}">${m.lead} · ${m.stance==="walk"?"Ap seogi":"Ap kubi"}</span>`;
 }
@@ -775,7 +865,7 @@ function stanceLabel(m){
   if(m.stance==="ready")return"parallel";
   if(["kick","skick","rkick","knee"].includes(m.stance))return sideWord(m.lead)+" kick";
   if(m.stance==="horse"||m.stance==="close")return m.stance;
-  return sideWord(m.lead)+({walk:" walking",front:" front",back:" back",tiger:" tiger",cross:" cross"})[m.stance];
+  return sideWord(m.lead)+({walk:" walking",front:" front",back:" back",tiger:" tiger",cross:" cross",crane:" crane"})[m.stance];
 }
 
 /* ---------- build board ---------- */
@@ -787,25 +877,55 @@ function card(id){
     <span class="tech">${T[m.tech][0]}</span><span class="en">${T[m.tech][2]}</span>${chip(m)}${m.kihap?'<span class="kh">기합 KIHAP</span>':""}</button>`;
 }
 const pair=ids=>`<div class="pair">${ids.map(card).join("")}</div>`;
-const LAYOUT={r1:FORM.layout.r1,r3:FORM.layout.r3,r5:FORM.layout.r5};
+/* Floor shape. Default is the Taegeuk 王: three full bars joined by the centre line.
+   FORM.floor can change it for other forms (士 山 工):
+     bars:  {r1|r3|r5: "full" | "fit" (line only under its figures) | "noline" | "gone" (row removed)}
+     rail:  [from, to] rows joined by the centre line (default ["r1","r5"])
+     prongs:[{at:"c2l", from:"r1"}]  extra vertical lines down to side groups c2l/c2r/c4l/c4r
+     notesBelow: move the four side notes under the board so the middle rows can hold figures
+     map:   minimap path on the 100×60 grid */
+const FL=FORM.floor||{};
+const LAYOUT={};["r1","r3","r5"].forEach(r=>{if(FORM.layout[r])LAYOUT[r]=FORM.layout[r]});
+["r1","r3","r5"].forEach(r=>{const b=(FL.bars||{})[r];if(b&&b!=="full")document.getElementById(r).classList.add(b)});
+if(FL.notesBelow){
+  const box=document.getElementById("notes");["nForm","nLegend","nBelt","nRead"].forEach(id=>box.appendChild(document.getElementById(id)));box.hidden=false;
+  [["r2","c2"],["r4","c4"]].forEach(([r,c])=>{const el=document.getElementById(r);
+    el.insertAdjacentHTML("afterbegin",`<div class="pair side l" id="${c}l"></div>`);el.insertAdjacentHTML("beforeend",`<div class="pair side r" id="${c}r"></div>`)});
+}
 function build(){
   for(const r in LAYOUT){
     const el=document.getElementById(r);
     el.querySelectorAll(".fig,.pair").forEach(n=>n.remove());
     el.insertAdjacentHTML("beforeend",LAYOUT[r].map(x=>Array.isArray(x)?pair(x):card(x)).join(""));
   }
-  document.getElementById("c2").innerHTML=FORM.layout.c2.map(card).join("");
-  document.getElementById("c4").innerHTML=FORM.layout.c4.map(card).join("");
+  ["c2","c4","c2l","c2r","c4l","c4r"].forEach(c=>{const el=document.getElementById(c);if(el)el.innerHTML=(FORM.layout[c]||[]).map(card).join("")});
   document.querySelectorAll(".fig").forEach(b=>b.addEventListener("click",()=>{stop();show(+b.dataset.i)}));
   buildSlides();
   placeRail();
   show(cur,"init");
 }
 function placeRail(){
-  const board=document.getElementById("board"),r1=document.getElementById("r1"),r5=document.getElementById("r5");
+  const board=document.getElementById("board"),B=board.getBoundingClientRect();
+  if(!B.width)return;
   const fh=parseFloat(getComputedStyle(board).getPropertyValue("--fig-h"))||150,off=20+fh*.956;
-  const rail=document.getElementById("rail");
-  rail.style.top=(r1.offsetTop+off)+"px";rail.style.height=(r5.offsetTop-r1.offsetTop)+"px";
+  // the floor line through a row sits at the figures' feet
+  const lineY=id=>document.getElementById(id).getBoundingClientRect().top-B.top+off;
+  const[from,to]=FL.rail||["r1","r5"],rail=document.getElementById("rail");
+  rail.style.top=lineY(from)+"px";rail.style.height=(lineY(to)-lineY(from))+"px";
+  // short bars: the line spans only the figures on it
+  board.querySelectorAll(".bar.fit").forEach(bar=>{
+    const R=bar.getBoundingClientRect(),kids=[...bar.children].filter(n=>!n.classList.contains("dl"));
+    if(!kids.length)return;
+    const l=kids[0].getBoundingClientRect().left-R.left-34,r=R.right-kids[kids.length-1].getBoundingClientRect().right-34;
+    bar.style.setProperty("--bl",l+"px");bar.style.setProperty("--br",r+"px");
+    bar.querySelector(".dl.l").style.left=(l-16)+"px";bar.querySelector(".dl.r").style.right=(r-16)+"px";
+  });
+  board.querySelectorAll(".prong").forEach(n=>n.remove());
+  (FL.prongs||[]).forEach(pg=>{
+    const el=document.getElementById(pg.at);if(!el||!el.children.length)return;
+    const R=el.getBoundingClientRect(),x=R.left+R.width/2-B.left,y0=lineY(pg.from),y1=lineY(pg.at);
+    board.insertAdjacentHTML("beforeend",`<div class="prong" style="left:${x}px;top:${y0}px;height:${y1-y0}px"></div>`);
+  });
 }
 
 /* legend + belts + style */
@@ -815,6 +935,7 @@ document.getElementById("legend").innerHTML=
   (M.some(x=>x.stance==="back")?feet({dir:"na",stance:"back",lead:"L"})+`<p><b>Dwit kubi</b> · back stance. Heels in line, rear foot turned out, weight on the bent rear leg.</p>`:"")+
   (M.some(x=>x.stance==="tiger")?feet({dir:"na",stance:"tiger",lead:"L"})+`<p><b>Beom seogi</b> · tiger stance. Short, front foot on the ball, weight on the bent rear leg.</p>`:"")+
   (M.some(x=>x.stance==="horse")?feet({dir:"na",stance:"horse"})+`<p><b>Juchum seogi</b> · horse stance. Feet wide and parallel, knees bent and pushed out.</p>`:"")+
+  (M.some(x=>x.stance==="crane")?feet({dir:"na",stance:"crane",lead:"R"})+`<p><b>Hakdari seogi</b> · crane stance. Stand on the red foot; the other foot rests against the standing knee. Named for the standing leg.</p>`:"")+
   feet({dir:"na",stance:"kick",lead:"R"})+`<p><b>Ap chagi</b> · front kick from the rear leg.</p>`+
   `<span></span><p style="font-size:12px">Red foot leads; the blue tick is the direction you face. Front-stance chips are filled.${M.some(x=>x.stance==="back")?" Back-stance chips have a double outline.":""}</p>`;
 const beltEls=[document.getElementById("belts"),document.getElementById("mbelts")];
@@ -841,7 +962,7 @@ function minimap(i){
   const m=M[i],[x,y]=POS[m.id];
   let trail="";for(let k=0;k<i;k++){const p=POS[M[k].id];trail+=`<circle cx="${p[0]}" cy="${p[1]}" r="2" fill="var(--heaven)" opacity=".45"/>`}
   return`<svg class="minimap" viewBox="0 0 100 60" aria-hidden="true">
-    <path d="M4 8H96M4 30H96M4 52H96M50 8V52" stroke="var(--line)" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+    <path d="${FL.map||"M4 8H96M4 30H96M4 52H96M50 8V52"}" stroke="var(--line)" stroke-width="2.4" stroke-linecap="round" fill="none"/>
     <text x="50" y="4" font-size="5.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono,monospace">na</text>
     ${trail}<circle cx="${x}" cy="${y}" r="6" fill="var(--fire)" opacity=".18"/><circle cx="${x}" cy="${y}" r="3.4" fill="var(--fire)"/>
     <path d="M${x} ${y} l9 0" transform="rotate(${ROT[m.dir]} ${x} ${y})" stroke="var(--fire)" stroke-width="1.6" stroke-linecap="round"/>

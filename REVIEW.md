@@ -1,8 +1,8 @@
-# Review list — Taegeuk 1–8
+# Review list — Taegeuk 1–8 and the first three black-belt forms
 
 Everything below is either a place where sources disagree or a choice no source settled. Each item says what the site shows now. Tick an item when you've checked it against your school's practice or the Kukkiwon video; if the site needs to change, note the fix and the move id (e.g. `T5 5-1`).
 
-To change a form, edit `forms/taegeuk-N.json` and run `python3 tools/build_form.py forms/taegeuk-N.json --print`.
+To change a form, edit `forms/<form>.json` (e.g. `taegeuk-3.json`, `koryo.json`) and run `python3 tools/build_form.py forms/<form>.json --print`.
 
 **How to read the move ids:** a step with several counts uses sub-numbers, the same way kicks already do. For example, `6-1` is a kick, `6-2` the strike that follows it, and `6-3` the block after that.
 
@@ -126,4 +126,58 @@ Sources: [Yonggi Taekwondo](https://www.sites.google.com/site/yonggitaekwondo/po
 
 ---
 
-_Generated while building Taegeuk 5–8 on 13 October 2026. Add new items under the form they belong to._
+# Black-belt forms
+
+These three were harder to source than the Taegeuk forms. The Kukkiwon pages give the meaning but not the moves, and several chart sites were unreachable (NBTKDA chart images, Yonggi's Koryo page, Bob Allen). Each sequence below was checked against two or three step lists; the video is the real test. **Review these against the Kukkiwon videos before teaching from them.**
+
+## All three black-belt forms
+
+- [ ] **New floor shapes.** The page template now draws other floor lines besides 王. Koryo is 士 (short start bar, long bar below it, stem continuing to ga). Keumgang is 山 (base bar with three prongs). Taebaek is 工 (two bars joined by the stem). As on the Taegeuk pages, start (na) is at the top, so each glyph is drawn upside down from how it's printed. Check that this matches how you expect to read them.
+- [ ] **Side groups are stylised.** On the bars, groups are placed by the order of the moves, not by exact floor position, as in the 王 forms. Taebaek 9–18 is the clearest case: the sources put both groups to one side of the far bar, but the site draws one group on each side.
+- [ ] **Notes moved under the board.** These forms need the middle rows for figures, so the four side notes (form note, footprints, belt, how the diagram reads) sit in a box below the floor plan.
+- [ ] **Horse-stance figures face the way the body faces.** On the bars, horse-stance and crane-stance figures are drawn facing ga (front view) even though they sit on a side line. Their technique goes to the side: knife-hand side block, target punch, large hinge.
+- [ ] **Print sheets for long forms.** The boards are 1,500–1,760 px wide, so page 1 prints at about 0.41–0.48 scale. Page 2 zooms back up and uses tighter rows so the sequence table stays readable (about 7 pt). Check a printed copy for legibility.
+- [ ] **Videos.** Koryo links its own Kukkiwon Digital Encyclopedia video (Mookas TV, `keZTTPuXHJo`). I couldn't find individual videos for Keumgang and Taebaek, so `/go/video-keumgang` and `/go/video-taebaek` point to the series playlist. When you find the right video, swap its URL into the JSON and rebuild; the printed QR keeps working.
+
+## Koryo · 고려
+
+Sources: [Blue Dragon TKD](https://www.bluedragontkd.net/taekwondo/poomse/black-belt-forms/koryo.html) (30 numbered steps), [Taekwondo Nation](https://www.taekwondonation.com/tae-kwon-do-black-belt-form-one-koryo) (36 steps, several mislabelled blocks), [MTC Koryo terminology sheet](https://www.martialarts.com.au/mtcmedia/MTC-1st-Dan-Koryo-KoreanWords.pdf) (24 steps), [NBTKDA](https://www.nbtkda.com/koryo) (technique list and kihaps), [Kukkiwon](https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1356&page=1&menuLevel=3&menuNo=72). Numbering follows Blue Dragon's 30 steps, which matches Kukkiwon's 30 movements.
+
+- [ ] **Move 2-1 and 6-1, kicking leg.** Blue Dragon and Taekwondo Nation have the **rear** leg doing the double side kick and landing forward. **Drawn as the rear leg.**
+- [ ] **Moves 4 and 8, which arm blocks.** Both sources say the arm on the side of the front foot (right arm in 4). **Drawn that way.** Blue Dragon's back-stance names are inconsistent here, so the stance is described by the front foot.
+- [ ] **Moves 9–11, the knife-hand block.** Taekwondo Nation calls it a palm block; Blue Dragon, MTC and NBTKDA have a single knife-hand low block. **Drawn as a knife-hand low block.**
+- [ ] **Move 13, turn direction.** Taekwondo Nation says turn left; Blue Dragon says step the left foot and turn right. Both end in a right front stance facing na. **The text says "turn 180° toward na" without naming a side.**
+- [ ] **Move 15, stance.** Blue Dragon and MTC have the left foot drawn back into a walking stance. **Drawn as walking stance.**
+- [ ] **Move 18, cross step.** The ap kkoa seogi before the side kick isn't counted, so it's folded into the kick's instruction rather than drawn as its own figure. Should it get a figure?
+- [ ] **Moves 18-2 and 23-2, the low spear hand.** All sources have a turn back toward the centre after the kick. Taekwondo Nation puts the pulling fist at the opposite shoulder; Blue Dragon says "upper shoulder". **Drawn with the fist at the shoulder of the striking arm.**
+- [ ] **Moves 20-2 and 25-2, side elbow.** **Drawn facing ga in a horse stance,** with the elbow toward the side you came from and the other palm pushing the fist.
+- [ ] **Moves 27–30, strikes and stances.** Blue Dragon has an outer strike in 27 and inward neck strikes in 28–29, with walking stances in 29 and 30. MTC has front stances throughout. **Drawn as Blue Dragon** (walking stances bring you back to the start; four front stances would overshoot).
+- [ ] **Kihaps** at 11-3 and 30 (Blue Dragon, NBTKDA, Taekwondo Nation agree).
+
+## Keumgang · 금강
+
+Sources: [Blue Dragon TKD](https://www.bluedragontkd.net/poomse/keumgang/) (27 motions, kihaps at 11 and 21), [Frontline Martial Arts](https://www.frontline-ma.co.uk/Poomsae%20Keumgang.pdf) (27 moves with turn directions), [Phoenix Taekwondo](https://www.phoenixtaekwondo.net/images/poomsae/Poomsae_keumgang.pdf), [Taekwondo Nation](https://www.taekwondonation.com/tae-kwon-do-black-belt-form-two-keumgang/), [NBTKDA](https://nbtkda.com/keumgang) (technique list, timings), [Kukkiwon](https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1357&page=1&menuLevel=3&menuNo=72).
+
+- [ ] **Which way the body faces in the mountain-block groups (11–14, 21–24).** No source says so directly. I worked it out from Frontline's turn directions: 11 and 14 face da, 12 and 13 face ra, and the mirror for 21–24. That puts these figures in profile, which is the weakest drawing on the page (a mountain block reads best from the front). **Please check against the video.** If the body faces ga or na there, these become front or back views.
+- [ ] **Crane stances (8, 15, 18, 25) face ga,** looking toward the side you're about to travel. Frontline's "90° turn left" at move 8 could mean the body turns, not only the head.
+- [ ] **Large hinge.** Drawn with the elbow pointing toward the direction of travel and the other fist across the chest. Blue Dragon describes it as a "hook punch with the elbow back", which could also mean the elbow points away from the travel direction.
+- [ ] **360° turns (10, 17, 20, 27).** Blue Dragon says step across with the left foot; Frontline says turn over the left shoulder. The text only says "turn 360° travelling toward da/ra".
+- [ ] **Moves 5–7, which hand blocks.** Blue Dragon has the knife hand on the same side as the front foot. **Drawn that way.**
+- [ ] **Move 13 and 23, parallel stance.** Drawn as the ready (naranhi) stance with a low spread block. NBTKDA says hold it for about 5 seconds, and the crane-stance diamond blocks for about 8 seconds.
+
+## Taebaek · 태백
+
+Sources: [Blue Dragon TKD](https://www.bluedragontkd.net/taekwondo/poomse/black-belt-forms/taebaek.html) (26 steps), [Taekwondo fandom wiki](https://taekwondo.fandom.com/wiki/Taebaek) (steps 5–8 only, cross-check), [NBTKDA](https://www.nbtkda.com/taebaek) (techniques, kihaps, linking notes), [Korea Taekwondo News](https://koreatkdnews.com/news/article.html?no=17394) (technique order by section), [namu.wiki](https://namu.wiki/w/%ED%83%9C%EB%B0%B1(%ED%92%88%EC%83%88)) (floor line, linking notes), [Kukkiwon](https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1358&page=1&menuLevel=3&menuNo=72).
+
+- [ ] **Moves 6–8, grab then punch.** Fandom has the twisting grab done in place (6-1), then a step and punch (6-2). Blue Dragon and Korea Taekwondo News describe the same thing as one motion. **Drawn as two figures per step.**
+- [ ] **Move 9, which side first.** Blue Dragon has a 270° turn to the left on the right foot, which faces **ra**. No other source gives a direction. **Drawn facing ra³ first, then da³ from move 14.**
+- [ ] **Moves 10–11 and 15–16, stance.** Blue Dragon keeps the back stance for the pulling uppercut and the punch. It may instead slide into a front stance; no second source settles it. **Drawn as back stance.** Check the video.
+- [ ] **Move 11 and 16, the punch.** Blue Dragon calls it a side punch; NBTKDA calls it a forward (bandae) punch. **Drawn as a middle punch with the front-side hand.**
+- [ ] **Moves 13-1 and 18-1.** NBTKDA has a hammer-fist outer strike together with the side kick. **Drawn in one figure** ("side kick with hammer-fist strike").
+- [ ] **Move 21, the wrist release.** The release (japhin sonmok ppaegi) and the turning back-fist are one count in all sources. **Drawn as one figure (the back-fist),** with the release in the instruction.
+- [ ] **Moves 23–26 repeat the first line.** namu.wiki notes the first bar is walked twice. Both passes sit on the top bar; 23–26 are placed nearest the centre and at the ends.
+- [ ] **Kihaps** at 8-2 and 22 (NBTKDA: third reverse punch and third forward punch; Blue Dragon agrees).
+
+---
+
+_Taegeuk items generated while building Taegeuk 5–8, and black-belt items while building Koryo, Keumgang and Taebaek, both on 13 October 2026. Add new items under the form they belong to._
