@@ -12,7 +12,7 @@ Plan for the open GitHub issues and the work around them. Updated 15 October 202
 | 2 | Diagram clarity | #4 same-stance moves, #3 footwork diagram | Now (after 1 defines the links) | L |
 | 3 | Character v2 | #7 new figure rig, #1 back-view kicks, #2 hand and foot art | After the MS-1–MS-8 review | L |
 | 4 | Poomsae sheets v2 | re-pose and rebuild all 11 forms | After phase 3 | M |
-| — | Launch | #8 hosting and DNS | Any time (blocked on AWS access and a host choice) | S |
+| — | Launch | #8 hosting and DNS | **Done**: launched by Brian from another Claude Code session (15 Oct) | — |
 
 Phases 1 and 2 use the current figure. Everything they add (pages, links, footwork, the same-stance treatment) is built so that the new figure in phase 3 drops in without redoing them.
 
@@ -137,9 +137,8 @@ Replace the phase 1 placeholder art on `/library/hands-feet/` with figures drawn
 
 ---
 
-## Launch · #8 hosting and DNS (new tracking issue)
-**Blocked on:** (1) the Claude AWS role working in this environment (requests currently reach AWS but with a placeholder key) and (2) a host choice: Cloudflare Pages or Netlify (recommended; both read `_redirects`), all-AWS (S3 + CloudFront, with `/go/` links as a CloudFront function), or GitHub Pages (stub redirect pages).
-**Then:** Route 53 records, HTTPS, and a smoke test of `/`, a form page and one `/go/` link. This can ship before or after any phase; earlier means the printed QR codes start working sooner.
+## Launch · #8 hosting and DNS — done
+Brian launched visualtkd.com on 15 October from a Claude Code session with AWS and GitHub access. Not verifiable from this workspace (the domain is outside its network allowlist).
 
 ---
 
@@ -150,5 +149,4 @@ Replace the phase 1 placeholder art on `/library/hands-feet/` with figures drawn
 | 2 | Library URL scheme `/library/<family>/#<slug>` | #6, #2 |
 | 3 | Pick treatment A, B or C after the prototypes | #4 |
 | 4 | Commit or describe the footwork example | #3 |
-| 5 | Host choice and AWS role fix | #8 |
-| 6 | Review MS-1 to MS-8 | #7, #1, phase 4 |
+| 5 | Review MS-1 to MS-8 | #7, #1, phase 4 |

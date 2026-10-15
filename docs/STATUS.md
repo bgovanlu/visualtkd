@@ -19,14 +19,16 @@ Every print sheet is exactly 2 pages and every QR code decodes to its expected l
 - Videos (Kukkiwon Digital Encyclopedia, Mookas TV): `video-t1` … `t6`, `video-koryo`; `video-t7`, `t8`, `keumgang`, `taebaek` point to the series playlist until individual videos are found
 - `kukkiwon-youtube`, `wt-poomsae-rules`
 
-## Deployment — not live yet
-- `visualtkd.com` is registered and delegated to Route 53.
-- No host is set up and no records exist in the hosted zone yet.
-- Planned host: Cloudflare Pages or Netlify (no build command, publish directory `site`); both read `_redirects`. Then in Route 53: apex alias/ALIAS and `www` CNAME to the host, and the host's domain-verification record if it asks for one.
-- On AWS-only hosting (S3 + CloudFront + ACM), `_redirects` would need converting to CloudFront Function or S3 routing rules.
+## Deployment
+- Live at visualtkd.com: launched by Brian on 15 October from a Claude Code session with AWS (Route 53) and GitHub access.
+- `site/` is the publish directory; `site/_redirects` holds the `/go/` short links.
+
+## Design assets
+- `design/character-v2.md`: brief, references, the 10 directions and model sheet v1 (MS-1–MS-8) with correction checklists.
+- `design/models/manifest.json`: every generated image with job ID, URL and full prompt; the **Fetch design images** Action downloads them into `design/models/directions/` and `design/models/ms-v1/`.
 
 ## Plan
-See ROADMAP.md: Phase 1 site structure (#5, #6, #2) → Phase 2 diagram clarity (#4, #3) → Brian reviews model sheets MS-1–MS-8 → Phase 3 character v2 (#7, #1) → Phase 4 poomsae sheets v2. Launch (#8) whenever hosting is unblocked.
+See ROADMAP.md: Phase 1 site structure (#5, #6, #2) → Phase 2 diagram clarity (#4, #3) → Brian reviews model sheets MS-1–MS-8 → Phase 3 character v2 (#7, #1) → Phase 4 poomsae sheets v2. Launch (#8) done.
 
 ## Follow-ups
 - GitHub issue #1: redesign front kicks seen from behind, and front-view kicks that read like knee lifts.

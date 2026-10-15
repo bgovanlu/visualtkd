@@ -70,6 +70,8 @@ The full prompts are stored with each job in Higgsfield (job IDs above). Image m
 
 ---
 
+Local copies of every image: `design/models/directions/` and `design/models/ms-v1/` (downloaded by the *Fetch design images* Action from `design/models/manifest.json`, which also holds each full prompt).
+
 # Chosen: #10, realistic anatomical drawing. Model sheet v1 (15 October 2026)
 
 Brian picked #10. The sheet below was generated from it in 8 parts, each using image #10 as the reference so the character stays the same. Correct each part here before any of it is used on the poomsae sheets. A part that needs changes is regenerated with the correction added to its prompt, and gets a new version (v2, v3…) under the same number.

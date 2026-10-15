@@ -1,0 +1,28 @@
+name: Fetch design images
+# Downloads the generated model images listed in design/models/manifest.json
+# into the repo (the Claude workspace can't reach the image CDN).
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [design/models/manifest.json]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download missing images
+        run: |
+          jq -r '.images[] | "\(.file)\t\(.url)"' design/models/manifest.json | while IFS=$'\t' read -r file url; do
+            if [ -s "$file" ]; then echo "have $file"; continue; fi
+            mkdir -p "$(dirname "$file")"
+            curl -fsSL --retry 3 -o "$file" "$url" && echo "got  $file" || { echo "FAILED $file"; rm -f "$file"; }
+          done
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add design/models
+          git diff --cached --quiet && echo "nothing new" || { git commit -m "Add generated design images from design/models/manifest.json"; git push; }

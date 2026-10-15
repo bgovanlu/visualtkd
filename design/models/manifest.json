@@ -1,0 +1,177 @@
+{
+ "generated": "2026-10-15",
+ "service": "Higgsfield",
+ "note": "Result URLs are on Higgsfield's CDN. The 'Fetch design images' GitHub Action downloads them into the paths in 'file'. Full prompts are kept so any sheet can be regenerated.",
+ "images": [
+  {
+   "set": "directions",
+   "n": 1,
+   "file": "design/models/directions/d01-instructional-line.png",
+   "job_id": "afc8d6f9-9454-4e67-993c-76e0ecd06fbf",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140003_afc8d6f9-9454-4e67-993c-76e0ecd06fbf.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "prompt": "STYLE: modern instructional textbook line art. Uniform 2.5px dark navy contour line, pure white fill, far-side limbs filled light cool grey, no shading otherwise.\n\nCHARACTER MODEL SHEET on a plain white background: one adult taekwondo practitioner, realistic adult proportions (7.5 heads tall), athletic, gender-neutral, faceless head (smooth head shape, short hair cap, no eyes or mouth, ears not drawn or a tiny simple curve), white dobok with black V-collar, black belt with knot and tails. Six poses in one row, evenly spaced, same scale, small pose numbers 1-6 under each: (1) standing ready, front view, fists in front of belt; (2) same, side profile; (3) same, back view; (4) FRONT STANCE (ap kubi) in side profile: long stance about 1.5 shoulder widths, front knee bent directly over the ankle, REAR LEG ALMOST STRAIGHT, rear heel flat on the floor, rear foot turned out 30 degrees, torso upright, middle punch with the arm extended; (5) BACK STANCE (dwit kubi) in side profile: hips and chest turned SIDEWAYS 90 degrees from the direction of the front foot, about 70 percent of weight on the bent rear leg, REAR KNEE PUSHED OUT TO THE SIDE, rear foot turned 90 degrees, both heels on one line, front foot light and pointing forward, double knife-hand block; (6) HORSE STANCE front view, feet wide and parallel, knees bent and pushed outward. Both feet always clearly visible with heel, arch and toes, never hidden. Fists compact and rounded with a visible knuckle line and the thumb wrapped across. No text other than the small numbers, no logos."
+  },
+  {
+   "set": "directions",
+   "n": 2,
+   "file": "design/models/directions/d02-ligne-claire.png",
+   "job_id": "db03bdf1-f7a8-4c38-93f5-e7af4249de79",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140004_db03bdf1-f7a8-4c38-93f5-e7af4249de79.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "prompt": "STYLE: ligne claire comic illustration, clean even black contour, flat colours, white dobok with pale blue-grey shadow shapes, warm skin tone, crisp and calm, original character (not any existing comic character).\n\nCHARACTER MODEL SHEET on a plain off-white background: one adult taekwondo practitioner, realistic adult proportions (7.5 heads tall), athletic, gender-neutral, faceless head (smooth head shape, short dark hair cap, no facial features, ears not drawn), white dobok with black V-collar, black belt with knot and tails. Six poses in one row, same scale, small numbers 1-6 under each: (1) standing ready, front view, fists in front of belt; (2) same, side profile; (3) same, back view; (4) FRONT STANCE (ap kubi) side profile: long stance, front knee bent over the ankle, REAR LEG ALMOST STRAIGHT, rear heel down, rear foot turned out 30 degrees, middle punch; (5) BACK STANCE (dwit kubi) side profile: hips and chest turned SIDEWAYS 90 degrees, weight mostly on the bent rear leg, REAR KNEE PUSHED OUT TO THE SIDE, rear foot turned 90 degrees, heels on one line, front foot light pointing forward, double knife-hand block; (6) HORSE STANCE front view, feet wide and parallel, knees pushed out. Both feet clearly visible with heel and toes. Fists compact with knuckle line and wrapped thumb. Far-side limbs a shade darker than near limbs. No text other than numbers, no logos."
+  },
+  {
+   "set": "directions",
+   "n": 3,
+   "file": "design/models/directions/d03-flat-pictogram.png",
+   "job_id": "a9b36c9c-ed79-4bca-9d14-cb88837b9e11",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140003_a9b36c9c-ed79-4bca-9d14-cb88837b9e11.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "prompt": "STYLE: flat vector pictogram, NO outlines, shapes defined only by tone like an airline safety card or modern wayfinding pictogram: dobok white with light grey far-side limbs, skin a single mid tone, belt black, shadows as one flat tone. Clean geometric simplification but realistic proportions.\n\nCHARACTER MODEL SHEET on a pale grey background: one adult taekwondo practitioner, 7.5 heads tall, athletic, gender-neutral, faceless head (simple oval, short hair cap, no features, no ears), white dobok with black V-collar, black belt. Six poses in one row, same scale, small numbers 1-6: (1) standing ready front view, fists in front of belt; (2) side profile; (3) back view; (4) FRONT STANCE (ap kubi) side profile: long stance, front knee bent over the ankle, REAR LEG ALMOST STRAIGHT, rear heel down, rear foot turned out 30 degrees, middle punch; (5) BACK STANCE (dwit kubi) side profile: hips and chest turned SIDEWAYS 90 degrees, weight on the bent rear leg, REAR KNEE PUSHED OUT TO THE SIDE, rear foot turned 90 degrees, heels on one line, front foot light, double knife-hand block; (6) HORSE STANCE front view, wide, knees pushed out. Feet always visible as clear shapes with heel and toes. Fists simple rounded blocks with a thumb shape. No text other than numbers, no logos."
+  },
+  {
+   "set": "directions",
+   "n": 4,
+   "file": "design/models/directions/d04-articulated-rig.png",
+   "job_id": "dc19ade8-eaef-40fd-ac75-acb97c05e7a0",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140005_dc19ade8-eaef-40fd-ac75-acb97c05e7a0.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "prompt": "STYLE: articulated rig-friendly figure. The body is built from clean overlapping segments (upper arm, forearm, hand, thigh, shin, foot, torso, pelvis, head) with small visible joint circles at shoulders, elbows, wrists, hips, knees and ankles, like a well-designed paper puppet or 2D animation rig, but dressed in a white dobok drawn per segment. Thin navy outline, white near limbs, grey far limbs.\n\nCHARACTER MODEL SHEET on white: one adult taekwondo practitioner, realistic proportions 7.5 heads tall, gender-neutral, faceless head (no features, no ears), black V-collar, black belt. Six poses in one row, same scale, numbers 1-6: (1) standing ready front view; (2) side profile; (3) back view; (4) FRONT STANCE (ap kubi) side profile: long stance, front knee bent over the ankle, REAR LEG ALMOST STRAIGHT, rear heel down, rear foot turned out 30 degrees, middle punch; (5) BACK STANCE (dwit kubi) side profile: hips and chest turned SIDEWAYS 90 degrees, weight on the bent rear leg, REAR KNEE PUSHED OUT TO THE SIDE, rear foot turned 90 degrees, heels in line, front foot light, double knife-hand block; (6) HORSE STANCE front view, knees out. Feet always clearly visible with heel, arch and toes. Fists compact with knuckle line and wrapped thumb. No text other than numbers, no logos."
+  },
+  {
+   "set": "directions",
+   "n": 5,
+   "file": "design/models/directions/d05-geometric-capsules.png",
+   "job_id": "f622cd30-ead2-4e98-a58e-3474eb0a8178",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140004_f622cd30-ead2-4e98-a58e-3474eb0a8178.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "prompt": "STYLE: bold geometric modernist figure, limbs as tapered rounded capsules, torso as a soft trapezoid, very clean, like a premium fitness app illustration. Deep navy outline 3px, white dobok, far limbs light grey, a single red accent on the belt knot.\n\nCHARACTER MODEL SHEET on white: one adult taekwondo practitioner, realistic proportions 7.5 heads tall, gender-neutral, faceless rounded head with hair cap, no ears, no features, black V-collar, black belt. Six poses in one row, same scale, numbers 1-6: (1) standing ready front view; (2) side profile; (3) back view; (4) FRONT STANCE (ap kubi) side profile: long stance, front knee over ankle, REAR LEG ALMOST STRAIGHT, rear heel down, rear foot turned out 30 degrees, middle punch; (5) BACK STANCE (dwit kubi) side profile: hips and chest turned SIDEWAYS 90 degrees, weight on the bent rear leg, REAR KNEE PUSHED OUT TO THE SIDE, rear foot turned 90 degrees, heels in line, front foot light, double knife-hand block; (6) HORSE STANCE front view, knees out. Feet clearly visible with heel and toes. Fists compact with knuckle line and thumb. No text other than numbers, no logos."
+  },
+  {
+   "set": "directions",
+   "n": 6,
+   "file": "design/models/directions/d06-ink-brush.png",
+   "job_id": "8aa9240b-1831-4426-a840-2e8d1cd5ee13",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140004_8aa9240b-1831-4426-a840-2e8d1cd5ee13.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "prompt": "STYLE: Korean ink brush illustration on warm hanji paper, confident sumi brush contour with natural thick-thin line, minimal pale ink wash on the far limbs, restrained and elegant, still clear enough to teach from.\n\nCHARACTER MODEL SHEET: one adult taekwondo practitioner, realistic proportions 7.5 heads tall, gender-neutral, faceless head (no features, ears not drawn), white dobok with black V-collar, black belt. Six poses in one row, same scale, small numerals 1-6: (1) standing ready front view; (2) side profile; (3) back view; (4) FRONT STANCE (ap kubi) side profile: long stance, front knee over ankle, REAR LEG ALMOST STRAIGHT, rear heel down, rear foot turned out 30 degrees, middle punch; (5) BACK STANCE (dwit kubi) side profile: hips and chest turned SIDEWAYS 90 degrees, weight on the bent rear leg, REAR KNEE PUSHED OUT TO THE SIDE, rear foot turned 90 degrees, heels in line, front foot light, double knife-hand block; (6) HORSE STANCE front view, knees out. Feet clearly visible with heel and toes. Fists compact with wrapped thumb. No other text, no seals, no logos."
+  },
+  {
+   "set": "directions",
+   "n": 7,
+   "file": "design/models/directions/d07-blueprint.png",
+   "job_id": "11ebfb49-5702-4d5b-a9e5-6f8c1cf766c1",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140002_11ebfb49-5702-4d5b-a9e5-6f8c1cf766c1.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "prompt": "STYLE: technical blueprint figure drawing, crisp white and pale cyan lines on deep navy, faint construction lines: a dashed centre-of-gravity plumb line, small angle arcs at the knees, and a top-down footprint diagram drawn under each stance showing foot placement. Precise and instructive.\n\nCHARACTER MODEL SHEET: one adult taekwondo practitioner, realistic proportions 7.5 heads tall, gender-neutral, faceless head (no features, no ears), dobok with V-collar and belt drawn in line. Six poses in one row, same scale, numbers 1-6: (1) standing ready front view; (2) side profile; (3) back view; (4) FRONT STANCE (ap kubi) side profile: long stance, front knee over ankle, REAR LEG ALMOST STRAIGHT, rear heel down, rear foot turned out 30 degrees, middle punch; (5) BACK STANCE (dwit kubi) side profile: hips and chest turned SIDEWAYS 90 degrees, weight on the bent rear leg, REAR KNEE PUSHED OUT TO THE SIDE, rear foot turned 90 degrees, heels on one line (L shape in the footprint), front foot light, double knife-hand block; (6) HORSE STANCE front view, knees out. Feet clearly visible with heel and toes. Fists compact with knuckle line and thumb. No words, only numbers, no logos."
+  },
+  {
+   "set": "directions",
+   "n": 8,
+   "file": "design/models/directions/d08-soft-3d.png",
+   "job_id": "0987fc31-6e70-44db-80b6-6945fef383d9",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140003_0987fc31-6e70-44db-80b6-6945fef383d9.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "prompt": "STYLE: soft matte 3D render of a smooth vinyl designer figure, studio lighting, soft shadows, plain light grey background; near limbs bright white, far limbs very slightly darker for left/right reading. Used to judge volume and silhouette.\n\nCHARACTER MODEL SHEET: one adult taekwondo practitioner, realistic proportions 7.5 heads tall, gender-neutral, faceless smooth head (no features, no ears), short dark hair cap, white dobok with black V-collar, black belt. Six poses in one row, same scale, small numbers 1-6 on the floor: (1) standing ready front view; (2) side profile; (3) back view; (4) FRONT STANCE (ap kubi) side profile: long stance, front knee over ankle, REAR LEG ALMOST STRAIGHT, rear heel down, rear foot turned out 30 degrees, middle punch; (5) BACK STANCE (dwit kubi) side profile: hips and chest turned SIDEWAYS 90 degrees, weight on the bent rear leg, REAR KNEE PUSHED OUT TO THE SIDE, rear foot turned 90 degrees, heels in line, front foot light, double knife-hand block; (6) HORSE STANCE front view, knees out. Bare feet clearly visible with heel and toes. Fists compact with wrapped thumb. No other text, no logos."
+  },
+  {
+   "set": "directions",
+   "n": 9,
+   "file": "design/models/directions/d09-risograph.png",
+   "job_id": "17c305da-94d5-4896-8b52-feba84680dfc",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140005_17c305da-94d5-4896-8b52-feba84680dfc.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "prompt": "STYLE: two-colour risograph print, deep navy and signal red ink on cream paper, slight grain and halftone in the far-side limbs, red only on the belt knot and the striking hand. Editorial and modern.\n\nCHARACTER MODEL SHEET: one adult taekwondo practitioner, realistic proportions 7.5 heads tall, gender-neutral, faceless head (no features, no ears), dobok with V-collar, belt. Six poses in one row, same scale, numbers 1-6: (1) standing ready front view; (2) side profile; (3) back view; (4) FRONT STANCE (ap kubi) side profile: long stance, front knee over ankle, REAR LEG ALMOST STRAIGHT, rear heel down, rear foot turned out 30 degrees, middle punch; (5) BACK STANCE (dwit kubi) side profile: hips and chest turned SIDEWAYS 90 degrees, weight on the bent rear leg, REAR KNEE PUSHED OUT TO THE SIDE, rear foot turned 90 degrees, heels in line, front foot light, double knife-hand block; (6) HORSE STANCE front view, knees out. Feet clearly visible with heel and toes. Fists compact with knuckle line and thumb. No other text, no logos."
+  },
+  {
+   "set": "directions",
+   "n": 10,
+   "file": "design/models/directions/d10-realistic-anatomical-CHOSEN.png",
+   "job_id": "77900b89-d25b-4d37-bf41-6e558940072d",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140005_77900b89-d25b-4d37-bf41-6e558940072d.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "prompt": "STYLE: realistic anatomical figure drawing in fine graphite-like ink, accurate musculature implied under the dobok folds, light cross-contour shading, like a high-quality martial arts instruction manual illustration. Original drawing.\n\nCHARACTER MODEL SHEET on white: one adult taekwondo practitioner, realistic adult proportions 7.5 heads tall, athletic, gender-neutral, faceless head (smooth, short hair, no facial features, ears only as a minimal shape), white dobok with black V-collar, black belt with knot. Six poses in one row, same scale, numbers 1-6: (1) standing ready front view; (2) side profile; (3) back view; (4) FRONT STANCE (ap kubi) side profile: long stance, front knee bent over the ankle, REAR LEG ALMOST STRAIGHT, rear heel flat, rear foot turned out 30 degrees, torso upright, middle punch; (5) BACK STANCE (dwit kubi) side profile: hips and chest turned SIDEWAYS 90 degrees, about 70 percent weight on the bent rear leg, REAR KNEE PUSHED OUT TO THE SIDE, rear foot turned 90 degrees, heels on one line, front foot light and pointing forward, double knife-hand block; (6) HORSE STANCE front view, feet wide, knees pushed out. Bare feet clearly visible with heel, arch and toes. Fists anatomically correct with knuckles and wrapped thumb. No other text, no logos."
+  },
+  {
+   "set": "model-sheet-v1",
+   "n": 1,
+   "file": "design/models/ms-v1/ms1-basic-stances.png",
+   "job_id": "1d6df0e5-a36e-47d8-999e-0e1153197f00",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140706_1d6df0e5-a36e-47d8-999e-0e1153197f00.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "reference": "77900b89-d25b-4d37-bf41-6e558940072d (direction #10)",
+   "prompt": "Use the SAME character and the SAME drawing style as the reference image: realistic anatomical ink figure drawing, fine graphite-like line, light cross-contour shading, faceless head with short hair and no facial features, white dobok with black V-collar, black belt with knot, bare feet. Same proportions (7.5 heads).\n\nMODEL SHEET 1 — BASIC STANCES. White background, 3 rows x 3 columns, every figure the same scale on a faint floor line, small label under each figure. Fists held at the belt (chambered at the hips) in every figure so the legs are unobstructed.\nRow 1 'NARANHI SEOGI (parallel ready stance)': feet parallel, one foot-width apart, legs straight. Columns: FRONT, SIDE, BACK.\nRow 2 'MOA SEOGI (closed stance)': feet together, toes and heels touching. Columns: FRONT, SIDE, BACK.\nRow 3 'AP SEOGI (walking stance)': one natural walking step, left foot forward, both legs straight, feet pointing forward, rear foot turned out slightly, weight even, hips square. Columns: FRONT, SIDE, BACK.\nBoth feet clearly visible in every view with heel, arch and toes. No ears. No other text, no logos."
+  },
+  {
+   "set": "model-sheet-v1",
+   "n": 2,
+   "file": "design/models/ms-v1/ms2-ap-kubi.png",
+   "job_id": "4e2fd5c1-9808-47b9-89dd-1be03be9f25d",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140703_4e2fd5c1-9808-47b9-89dd-1be03be9f25d.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "reference": "77900b89-d25b-4d37-bf41-6e558940072d (direction #10)",
+   "prompt": "Use the SAME character and the SAME drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, faceless head with short hair, white dobok with black V-collar, black belt, bare feet, 7.5 heads tall.\n\nMODEL SHEET 2 — AP KUBI (front stance), left foot forward. White background, four panels in a row, same scale, small label under each: FRONT, SIDE, BACK, and TOP-DOWN FOOTPRINT diagram.\nStance rules, follow exactly: length about one and a half shoulder widths, width one fist; FRONT KNEE BENT so the knee is directly over the toes and the shin is vertical; REAR LEG STRAIGHT (locked, no bend); rear heel flat on the floor; rear foot turned out about 30 degrees; front foot pointing straight forward; hips and chest square to the front; torso upright; weight about two-thirds on the front leg. Arms: right middle punch extended forward at solar-plexus height, left fist chambered at the hip.\nThe footprint panel shows both footprints from above with the stance length and width marked by thin lines. Feet clearly visible in every view. No ears. No other text, no logos."
+  },
+  {
+   "set": "model-sheet-v1",
+   "n": 3,
+   "file": "design/models/ms-v1/ms3-dwit-kubi.png",
+   "job_id": "391d3663-f909-4ab2-9f98-8a550db3a562",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140704_391d3663-f909-4ab2-9f98-8a550db3a562.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "reference": "77900b89-d25b-4d37-bf41-6e558940072d (direction #10)",
+   "prompt": "Use the SAME character and the SAME drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, faceless head with short hair, white dobok with black V-collar, black belt, bare feet, 7.5 heads tall.\n\nMODEL SHEET 3 — DWIT KUBI (back stance), left foot forward. White background, four panels in a row, same scale, small label under each: FRONT (viewer stands where the front foot points), SIDE, BACK, and TOP-DOWN FOOTPRINT diagram.\nStance rules, follow exactly: feet form an L: the front (left) foot points forward, the rear (right) foot is turned 90 degrees out, and BOTH HEELS ARE ON ONE LINE; stance length about one and a half foot lengths; about 70 percent of the weight on the REAR leg, which is deeply bent with the REAR KNEE PUSHED OUT TO THE SIDE over the rear toes; front knee slightly bent, front foot light; HIPS AND CHEST TURNED SIDEWAYS, about 90 degrees from the front foot, so the torso is seen side-on when the front foot points at the viewer; head turned to look over the front foot. Arms: double knife-hand middle block (sonnal momtong makki): left knife hand forward at shoulder height, right knife hand palm-up in front of the solar plexus.\nThe footprint panel shows the L shape with the heel line marked. Feet clearly visible in every view. No ears. No other text, no logos."
+  },
+  {
+   "set": "model-sheet-v1",
+   "n": 4,
+   "file": "design/models/ms-v1/ms4-beom-seogi.png",
+   "job_id": "bafe3eb7-39f0-4d90-92bf-661657b4728c",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140704_bafe3eb7-39f0-4d90-92bf-661657b4728c.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "reference": "77900b89-d25b-4d37-bf41-6e558940072d (direction #10)",
+   "prompt": "Use the SAME character and the SAME drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, faceless head with short hair, white dobok with black V-collar, black belt, bare feet, 7.5 heads tall.\n\nMODEL SHEET 4 — BEOM SEOGI (tiger stance), left foot forward. White background, four panels in a row, same scale, small label under each: FRONT, SIDE, BACK, TOP-DOWN FOOTPRINT.\nStance rules: short stance, about one foot length between the feet; the FRONT FOOT rests lightly on the BALL of the foot with the heel raised; almost all weight on the REAR leg, which is bent, rear foot turned out about 30 degrees; both knees bent and drawn slightly inward; hips turned about 45 degrees; torso upright. Arms: right palm inside block (batangson momtong an makki) in front of the chest, left fist chambered at the hip.\nFeet clearly visible in every view, showing the raised front heel. No ears. No other text, no logos."
+  },
+  {
+   "set": "model-sheet-v1",
+   "n": 5,
+   "file": "design/models/ms-v1/ms5-juchum-kkoa.png",
+   "job_id": "7e365688-d872-488a-ad38-a6c5bc21626c",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140705_7e365688-d872-488a-ad38-a6c5bc21626c.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "reference": "77900b89-d25b-4d37-bf41-6e558940072d (direction #10)",
+   "prompt": "Use the SAME character and the SAME drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, faceless head with short hair, white dobok with black V-collar, black belt, bare feet, 7.5 heads tall.\n\nMODEL SHEET 5 — two stances, 2 rows x 3 columns, same scale, small label under each.\nRow 1 'JUCHUM SEOGI (horse stance)': feet two shoulder widths apart and parallel, toes forward; knees deeply bent and PUSHED OUTWARD over the toes; thighs nearly level; back upright; weight even. Arms: right side punch extended to the side at shoulder height, left fist chambered. Columns: FRONT, SIDE (profile: knees forward over the toes, shins near vertical), BACK.\nRow 2 'KKOA SEOGI (cross stance)': the left foot is planted, the right foot crosses BEHIND it with only the ball of the right foot on the floor beside the left heel; both knees bent and pressed together; body upright. Arms: double uppercut, both fists at chin height. Columns: FRONT, SIDE, BACK.\nFeet clearly visible in every view. No ears. No other text, no logos."
+  },
+  {
+   "set": "model-sheet-v1",
+   "n": 6,
+   "file": "design/models/ms-v1/ms6-hakdari.png",
+   "job_id": "205afba2-835a-4af6-bd9b-f99200d44bb5",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140703_205afba2-835a-4af6-bd9b-f99200d44bb5.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "reference": "77900b89-d25b-4d37-bf41-6e558940072d (direction #10)",
+   "prompt": "Use the SAME character and the SAME drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, faceless head with short hair, white dobok with black V-collar, black belt, bare feet, 7.5 heads tall.\n\nMODEL SHEET 6 — HAKDARI SEOGI (crane stance), standing on the RIGHT leg. White background, three panels in a row, same scale, small label under each: FRONT, SIDE, BACK.\nStance rules: the standing right leg slightly bent at the knee; the left foot lifted with its sole resting against the INSIDE of the right knee, the left knee turned OUT to the side; hips level; torso upright and still. Arms: diamond block (keumgang makki): right forearm high block above the forehead, left arm low block out to the left side; head turned to look left.\nBoth feet clearly visible. No ears. No other text, no logos."
+  },
+  {
+   "set": "model-sheet-v1",
+   "n": 7,
+   "file": "design/models/ms-v1/ms7-kicks.png",
+   "job_id": "3196b2a2-e1d7-4a89-a629-2b1a5913a59a",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140707_3196b2a2-e1d7-4a89-a629-2b1a5913a59a.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "reference": "77900b89-d25b-4d37-bf41-6e558940072d (direction #10)",
+   "prompt": "Use the SAME character and the SAME drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, faceless head with short hair, white dobok with black V-collar, black belt, bare feet, 7.5 heads tall.\n\nMODEL SHEET 7 — KICKS, 2 rows x 4 columns, same scale, small label under each.\nRow 1, SIDE PROFILE of each kick at full extension: 'AP CHAGI (front kick)': right leg kicks forward at chest height, striking with the ball of the foot, toes pulled back, supporting foot flat, body upright with guard. 'YEOP CHAGI (side kick)': right leg extended to the side at chest height, striking with the foot blade and heel, foot horizontal, torso leaning away in line with the leg, supporting foot turned away. 'DOLLYEO CHAGI (roundhouse kick)': right leg swung round at head height, striking with the instep, hips turned over, supporting foot pivoted. 'MUREUP CHIGI (knee strike)': right knee driven up to chest height, both hands pulling down in front.\nRow 2, the SAME four kicks seen from the FRONT (the kick coming toward the viewer), showing the foot shape clearly and the chambered knee.\nFeet clearly visible. No ears. No other text, no logos."
+  },
+  {
+   "set": "model-sheet-v1",
+   "n": 8,
+   "file": "design/models/ms-v1/ms8-hands-feet.png",
+   "job_id": "b6833877-949a-4156-8bfa-775b324abbf6",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140703_b6833877-949a-4156-8bfa-775b324abbf6.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "reference": "77900b89-d25b-4d37-bf41-6e558940072d (direction #10)",
+   "prompt": "Use the SAME drawing style as the reference image: realistic anatomical ink drawing, fine line, light cross-contour shading, dobok sleeve cuffs visible at the wrists.\n\nMODEL SHEET 8 — HANDS AND FEET close-ups on white, a neat grid, small label under each.\nTop half, HANDS (right hand): FIST (jumeok) from the front showing the four knuckles and the thumb wrapped across the index and middle fingers; FIST from the side; FIST from the back; KNIFE HAND (sonnal) side view, fingers together and straight, thumb bent in; SPEAR HAND (pyeonsonkkeut), fingertips forward; PALM HEEL (batangson), wrist bent back; ARC HAND (ageumson / kaljaebi), thumb and fingers spread in a C; BACK FIST (deungjumeok) from above.\nBottom half, BARE FEET (right foot): SIDE (inside arch view); FRONT; BACK (heel); TOP-DOWN; BALL OF THE FOOT strike position with toes pulled back; FOOT BLADE (balnal) strike position; INSTEP (baldeung) with toes pointed; HEEL (dwichook).\nAnatomically correct, clean and clear. No other text, no logos."
+  }
+ ]
+}
