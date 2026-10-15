@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [design/models/manifest.json]
+    paths: [design/models/manifest.json, .github/workflows/fetch-design-images.yml]
 permissions:
   contents: write
 jobs:
