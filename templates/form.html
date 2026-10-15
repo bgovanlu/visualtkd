@@ -64,7 +64,7 @@ h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6v
 .fig:hover{background:var(--mat);--figbg:var(--mat)}
 .fig:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
 .fig .no{position:absolute;top:4px;left:8px;font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
-.fig .fp{position:absolute;top:0;right:2px;width:38px;height:38px}
+.fig .fp{position:absolute;top:0;right:0;width:44px;height:44px}
 .fig svg.body{height:var(--fig-h);width:auto;overflow:visible}
 .fig .glow{opacity:0;transition:opacity .25s}
 .fig.on .glow{opacity:1}
@@ -123,21 +123,35 @@ svg.fw .pivot,.fwplan .pivot{fill:none;stroke:var(--heaven);stroke-width:1.1;str
 svg.fw .tick{fill:var(--heaven)}
 .fwsec h2{font-family:var(--f-display);font-weight:700;font-size:24px;margin:0 0 6px}
 .fwsec > p{margin:0 0 12px;color:var(--muted);max-width:76ch;font-size:14px}
-.fwbox{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;justify-content:center}
+.fwbox{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;align-items:center;gap:12px}
+#fwbox{width:100%;display:flex;justify-content:center}
+.fwctrl{width:100%;max-width:760px;display:flex;flex-direction:column;gap:10px}
+.fwcap{margin:0;font-size:15px;min-height:1.5em}.fwcap b{font-family:var(--f-mono);font-weight:500;color:var(--fire)}
+/* View bar */
+.viewbar{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;margin-bottom:-10px}
+.vgroup{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.vlabel{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600}
+.viewbar .seg button{padding:4px 11px}
+@media (max-width:760px){.viewbar{gap:8px 14px;margin-bottom:-4px}.viewbar .seg button{padding:3px 9px;font-size:13px}.vgroup{gap:6px}.vlabel{font-size:10px}}
 .fwplan{width:100%;max-width:760px;height:auto;max-height:80vh}
 .fwplan .print{fill:var(--muted);opacity:.55;cursor:pointer}
-.fwplan .start{fill:none;stroke:var(--ink);stroke-width:.9}
+.fwplan .start{fill:var(--line);stroke:none}
 .fwplan .step{stroke:var(--muted);opacity:.6}
 .fwplan .step.head{fill:var(--muted)}
 .fwplan .on .step{stroke:var(--fire);opacity:1}.fwplan .on .step.head{fill:var(--fire)}
 .fwplan .on .print{opacity:1}
 .fwplan .pivot{opacity:.6}
 .fwplan .labels text{font-family:var(--f-mono);font-size:3.4px;fill:var(--muted);text-anchor:middle;cursor:pointer}
+.fwplan .labels text.on,.fwplan .labels text.stand{font-size:4.6px}
 .fwplan .labels text.on{fill:var(--fire);font-weight:500;font-size:4.6px}
 .fwplan .nesw{font-family:var(--f-mono);font-size:3.6px;fill:var(--heaven);text-anchor:middle;letter-spacing:.1em}
 .fwplan .now{fill:none;stroke:var(--ink);stroke-width:.7}
-.fwplan .step{stroke-width:.7}.fwplan .pivot{stroke-width:.6}.fwplan .start{stroke-width:.5}
-.fig svg.fw{width:46px;height:46px;top:-2px}.stage svg.fw{width:84px;height:84px}.sc-fig svg.fw{width:64px;height:64px}
+.fwplan .stand .print,.fwplan .stand .start{opacity:1;fill:var(--fire)}
+.fwplan text.stand,.fwplan text.on{fill:var(--fire)}
+.fwplan .on .print{fill:var(--fire)}
+svg.fw .still{font-family:var(--f-mono);font-size:6px;fill:var(--muted);text-anchor:middle;letter-spacing:.06em}
+.fwplan .step{stroke-width:.7}.fwplan .pivot{stroke-width:.6}
+.fig svg.fw{width:56px;height:56px;top:-4px;right:-4px}.stage svg.fw{width:96px;height:96px}.sc-fig svg.fw{width:76px;height:76px}
 /* same-stance treatments (#4) */
 .fig .same{font-family:var(--f-mono);font-size:10px;color:var(--muted);letter-spacing:.04em;margin-top:3px}
 .fig.mini{width:calc(var(--card-w,128px)*.8);padding-top:20px}
@@ -145,10 +159,6 @@ svg.fw .tick{fill:var(--heaven)}
 .fig.combo{width:calc(var(--card-w,128px)*1.25)}
 .fig.combo .no{white-space:nowrap}
 svg.body .badge text{font-weight:500}
-.seg.proto{align-items:center;font-size:13px}
-.seg.proto span{padding:0 8px;color:var(--muted);font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
-.seg.proto a{padding:4px 11px;border-radius:99px;border:0;background:none;color:var(--muted);font-weight:600}
-.seg.proto a[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
 .info .more{font-size:14px;font-weight:600;align-self:flex-start}
 .chiplink{text-decoration:none;color:inherit;border-radius:99px}
 .chiplink:hover .chip{border-color:var(--heaven);color:var(--heaven)}
@@ -268,6 +278,13 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
     </div>
   </header>
 
+  <div class="viewbar" id="viewbar" role="group" aria-label="View options">
+    <div class="vgroup"><span class="vlabel" id="vl-same">Same-stance moves</span>
+      <div class="seg" role="group" aria-labelledby="vl-same"><button type="button" data-same="">Full figures</button><button type="button" data-same="a" title="Legs light, an arc shows the moving hand">Carry-over</button><button type="button" data-same="b" title="One figure per stance, counts numbered">Combined</button><button type="button" data-same="c" title="Small arm-only figures for the later counts">Inset</button></div></div>
+    <div class="vgroup"><span class="vlabel" id="vl-fw">Footwork</span>
+      <div class="seg" role="group" aria-labelledby="vl-fw"><button type="button" data-fw="off">Hide</button><button type="button" data-fw="on">Show</button></div></div>
+  </div>
+
   <div class="mtoggle seg" role="group" aria-label="View">
     <button type="button" data-v="swipe" aria-pressed="true">Move by move</button><button type="button" data-v="plan" aria-pressed="false">Floor plan</button>
   </div>
@@ -338,8 +355,10 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
 
   <section class="fwsec" id="fwsec" hidden>
     <h2>Footwork</h2>
-    <p>Every footprint, numbered by the count that puts the foot there. Dashed arrows are steps; a ring marks a foot that pivots in place. Red shows the selected count, and the outlined pair is where you stand after it. Positions are worked out from the stances and turns, so the distances are approximate.</p>
-    <div class="fwbox" id="fwbox"></div>
+    <p>Every footprint, labelled with the count that puts the foot there. Counts made without a step (a block then a punch) are added to the label of the feet you stand on, e.g. “5 6”. Dashed arrows are steps; a ring marks a foot that pivots in place. The selected count is red and the outlined pair is where you stand after it. Positions are worked out from the stances and turns, so distances are approximate.</p>
+    <div class="fwbox"><div id="fwbox"></div>
+      <div class="fwctrl"><p class="fwcap" id="fwcap" aria-live="polite"></p>
+        <div class="ctrl"><button id="fwprev" type="button">Previous</button><button id="fwplay" type="button" class="primary">Play the form</button><button id="fwnext" type="button">Next</button><div class="progress"><i id="fwbar"></i></div></div></div></div>
   </section>
 
   <section class="seq">
@@ -386,11 +405,15 @@ const carries=i=>{if(i<1)return false;const a=M[i-1],b=M[i];
 const CARRY=M.map((_,i)=>carries(i));
 const HEAD=M.map((_,i)=>{let h=i;while(CARRY[h])h--;return h});
 const GROUP=i=>M.map((_,j)=>j).filter(j=>HEAD[j]===HEAD[i]);
-const SAME=(()=>{const q=new URLSearchParams(location.search).get("same");return["a","b","c"].includes(q)?q:(FORM.same||"")})();
+/* view options (View bar): URL ?same= / ?footwork win, then the reader's last choice, then the form default */
+const QS=new URLSearchParams(location.search);
+const saved=k=>{try{return localStorage.getItem("vtkd."+k)}catch(e){return null}};
+const save=(k,v)=>{try{localStorage.setItem("vtkd."+k,v)}catch(e){}};
+let SAME=(()=>{const q=QS.get("same"),v=q!==null?q:saved("same");return["a","b","c"].includes(v)?v:(v==="off"?"":(FORM.same||""))})();
 const label=id=>id==="J"?"준비":id;
 /* footwork (issue #3): simulated foot positions; the new glyph and the whole-form plan show with ?footwork (FORM.footwork sets the default) */
 const SIM=FW.simulate(M);
-const FWON=new URLSearchParams(location.search).has("footwork")||!!FORM.footwork;
+let FWON=QS.has("footwork")?QS.get("footwork")!=="off":saved("footwork")!==null?saved("footwork")==="on":!!FORM.footwork;
 const fp=i=>FWON?FWDRAW.glyph(SIM,i,M):feet(M[i]);
 // the figure for count i on a card, a slide or the study stage
 function fig(i,where){
@@ -466,15 +489,26 @@ function placeRail(){
   });
 }
 
-/* prototype switch for the same-stance treatments: only with ?same= in the URL */
-if(new URLSearchParams(location.search).has("same")){
-  const opts=[["","Off"],["a","A · carry-over"],["b","B · combined"],["c","C · inset"]];
-  document.querySelector(".actions").insertAdjacentHTML("beforeend",`<div class="seg proto" role="group" aria-label="Same-stance prototype"><span>Same stance</span>${
-    opts.map(([k,t])=>`<a href="?same=${k||"off"}${location.hash}" aria-pressed="${SAME===k}">${t}</a>`).join("")}</div>`);
+/* View bar: same-stance treatment and footwork, switched in place */
+const viewbar=document.getElementById("viewbar");
+function paintView(){
+  viewbar.querySelectorAll("[data-same]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.same===SAME));
+  viewbar.querySelectorAll("[data-fw]").forEach(b=>b.setAttribute("aria-pressed",(b.dataset.fw==="on")===FWON));
+  const sec=document.getElementById("fwsec");sec.hidden=!FWON;
+  if(FWON&&!sec.querySelector("svg.fwplan"))document.getElementById("fwbox").innerHTML=FWDRAW.plan(SIM,M);
 }
-if(FWON){const sec=document.getElementById("fwsec");sec.hidden=false;
-  document.getElementById("fwbox").innerHTML=FWDRAW.plan(SIM,M);
-  sec.addEventListener("click",e=>{const t=e.target.closest("[data-i]");if(t){stop();show(+t.dataset.i)}});}
+viewbar.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.same!==undefined){SAME=b.dataset.same;save("same",SAME||"off")}
+  if(b.dataset.fw!==undefined){FWON=b.dataset.fw==="on";save("footwork",FWON?"on":"off")}
+  const q=new URLSearchParams(location.search);q.delete("same");q.delete("footwork");   // the bar now owns these
+  history.replaceState(null,"",location.pathname+(q.toString()?"?"+q:"")+location.hash);
+  paintView();build();});
+document.getElementById("fwsec").addEventListener("click",e=>{const t=e.target.closest("[data-i],[data-is]");
+  if(t&&t.closest("svg")){stop();show(+(t.dataset.i??t.dataset.is.split(" ").pop()))}});
+document.getElementById("fwprev").addEventListener("click",()=>{stop();show(cur-1)});
+document.getElementById("fwnext").addEventListener("click",()=>{stop();show(cur+1)});
+document.getElementById("fwplay").addEventListener("click",togglePlay);
+paintView();
 /* legend + belts + style */
 document.getElementById("legend").innerHTML=
   feet({dir:"na",stance:"walk",lead:"L"})+`<p><b>Ap seogi</b> · walking stance. One natural step, feet almost in line.</p>`+
@@ -554,7 +588,9 @@ function show(i,src){
   document.querySelectorAll(".fig").forEach(b=>b.classList.toggle("on",b.dataset.g?b.dataset.g.split(" ").includes(String(cur)):+b.dataset.i===cur));
   rows.querySelectorAll("tr").forEach(r=>r.classList.toggle("on",+r.dataset.i===cur));
   document.getElementById("stage").innerHTML=fig(cur,"stage")+fp(cur);
-  if(FWON)FWDRAW.mark(document.querySelector("#fwsec svg"),SIM,cur);
+  if(FWON){FWDRAW.mark(document.querySelector("#fwsec svg.fwplan"),SIM,cur);
+    document.getElementById("fwcap").innerHTML=`<b>${m.id==="J"?"Ready":"Move "+m.id}</b> · ${FWDRAW.say(SIM,cur,M)}`;
+    document.getElementById("fwbar").style.width=(cur/(M.length-1)*100)+"%";}
   document.getElementById("kicker").textContent=(m.id==="J"?"READY":"MOVE "+m.id)+"  ·  FACING "+DIRN[m.dir].toUpperCase();
   const te=T[m.tech],st=STANCE[m.stance];
   document.getElementById("name").innerHTML=`<a class="lib" href="${techHref(m.tech)}">${te[0]}</a> <span style="font-weight:400;color:var(--muted)">${te[1]}</span><small>${te[2]}${m.note?" · "+m.note:""}</small>`;
@@ -566,11 +602,11 @@ function show(i,src){
   document.getElementById("more").href=techHref(m.tech);
   document.getElementById("bar").style.width=(cur/(M.length-1)*100)+"%";
 }
-function stop(){clearInterval(timer);timer=null;["play","mplay"].forEach(id=>document.getElementById(id).textContent="Play the form")}
+function stop(){clearInterval(timer);timer=null;["play","mplay","fwplay"].forEach(id=>document.getElementById(id).textContent="Play the form")}
 function togglePlay(){
   if(timer){stop();return}
   if(cur===M.length-1)show(0);
-  ["play","mplay"].forEach(id=>document.getElementById(id).textContent="Pause");
+  ["play","mplay","fwplay"].forEach(id=>document.getElementById(id).textContent="Pause");
   timer=setInterval(()=>{if(cur>=M.length-1){stop();return}show(cur+1)},1900);
 }
 document.getElementById("play").addEventListener("click",togglePlay);

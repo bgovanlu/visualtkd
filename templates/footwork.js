@@ -166,39 +166,67 @@ const FWDRAW=(()=>{
     r.moved.forEach(s=>{g+=arrow(P[s].p,F[s].p,"step")});
     (r.pivot||[]).forEach(s=>{g+=ring(F[s].p,"pivot")});
     ["L","R"].forEach(s=>{g+=F[s].air?foot(F[s].p,F[s].a,"air"):foot(F[s].p,F[s].a,s===lead?"lead":"other")});
+    const still=i>0&&!r.moved.length&&!(r.pivot||[]).length;   // no step: say so, or the glyph looks like a missing arrow
     const fv=FW.DIRV[m.dir],t=[fv[0]*27,fv[1]*27];
     return`<svg class="fp fw" viewBox="-30 -30 60 60" aria-hidden="true"><circle r="29" class="rim"/>`+
       `<g transform="translate(${f(-c[0]*S)} ${f(-c[1]*S)})">${g}</g>`+
+      (still?`<text class="still" x="0" y="22.5">NO STEP</text>`:"")+
       `<path class="tick" transform="translate(${f(t[0])} ${f(t[1])}) rotate(${f(Math.atan2(fv[1],fv[0])*180/Math.PI+90)})" d="M0 -3.5L-3.2 2.2H3.2Z"/></svg>`;
   }
-  // the whole form: every footprint numbered by the count that placed it, steps dashed
+  // the whole form: every footprint labelled with the counts that stand on it, steps dashed.
+  // Counts with no step (a block then a punch, "feet in place") are added to the label of the feet they stand on.
   function plan(sim,M){
     Z=PLAN;const S=Z.u;
     let xs=[],ys=[];sim.forEach(r=>["L","R"].forEach(s=>{xs.push(r.feet[s].p[0]);ys.push(r.feet[s].p[1])}));
     const x0=Math.min(...xs)-1.2,x1=Math.max(...xs)+1.2,y0=Math.min(...ys)-1.4,y1=Math.max(...ys)+1.2;
-    let steps="",prints="",labels="";
+    let steps="";const spots=[];   // spots: {p,a,ids:[]} one per placed footprint
+    const last={L:null,R:null};
     sim.forEach((r,i)=>{
-      const m=M[i],P=r.prev;
-      if(i===0){["L","R"].forEach(s=>{prints+=`<g data-i="0">${foot(r.feet[s].p,r.feet[s].a,"start")}</g>`});return}
+      const P=r.prev;
+      if(i===0){["L","R"].forEach(s=>{last[s]={p:r.feet[s].p,a:r.feet[s].a,ids:[0],start:true};spots.push(last[s])});return}
       r.moved.forEach(s=>{
         const q=r.feet[s];
         if(P&&!P[s].air)steps+=`<g data-i="${i}">${arrow(P[s].p,q.p,"step")}</g>`;
-        if(!q.air){prints+=`<g data-i="${i}">${foot(q.p,q.a,"print")}</g>`;
-          labels+=`<text data-i="${i}" x="${f(q.p[0]*S)}" y="${f(q.p[1]*S-4.6)}">${m.id}</text>`}
+        if(!q.air){last[s]={p:q.p,a:q.a,ids:[i]};spots.push(last[s])}
       });
       (r.pivot||[]).forEach(s=>{steps+=`<g data-i="${i}">${ring(r.feet[s].p,"pivot")}</g>`});
+      // a count with no step (block then punch, "feet in place", a pivot on the spot) is added to the feet it stands on
+      ["L","R"].forEach(s=>{if(!r.moved.length&&!r.feet[s].air&&last[s]&&!last[s].ids.includes(i))last[s].ids.push(i)});
     });
-    return`<svg class="fwplan" viewBox="${f(x0*S)} ${f(y0*S)} ${f((x1-x0)*S)} ${f((y1-y0)*S)}" role="img" aria-label="Footwork for the whole form: every footprint, numbered by the count that places it">`+
+    let prints="",labels="";
+    spots.forEach(sp=>{
+      const is=sp.ids.join(" ");
+      prints+=`<g data-is="${is}">${foot(sp.p,sp.a,sp.start?"start":"print")}</g>`;
+      // label: the count that put the foot here, then any no-step counts made on it
+      const names=sp.ids.map(i=>M[i].id==="J"?"준비":M[i].id);
+      const txt=names.length>3?names[0]+"…"+names[names.length-1]:names.join(" ");
+      labels+=`<text data-is="${is}" x="${f(sp.p[0]*S)}" y="${f(sp.p[1]*S-4.6)}">${txt}</text>`;
+    });
+    return`<svg class="fwplan" viewBox="${f(x0*S)} ${f(y0*S)} ${f((x1-x0)*S)} ${f((y1-y0)*S)}" role="img" aria-label="Footwork for the whole form: every footprint, labelled with the counts that stand on it">`+
       `<text class="nesw" x="${f((x0+x1)/2*S)}" y="${f(y0*S+4)}">NA · 나</text>`+
       `<g class="steps">${steps}</g><g class="prints">${prints}</g><g class="labels">${labels}</g>`+
       `<g class="cur"></g></svg>`;
   }
-  // highlight count i on the plan: its footprints and step in red, the feet you stand on now outlined
+  // highlight count i: its step and the footprints it uses in red, the feet you stand on outlined
   function mark(svg,sim,i){
     if(!svg)return;Z=PLAN;
     svg.querySelectorAll("[data-i]").forEach(e=>e.classList.toggle("on",+e.dataset.i===i));
+    svg.querySelectorAll("[data-is]").forEach(e=>{const ids=e.dataset.is.split(" ").map(Number);
+      e.classList.toggle("on",ids[0]===i&&i>0);e.classList.toggle("stand",ids.includes(i)&&!(ids[0]===i&&i>0))});
     const F=sim[i].feet;
     svg.querySelector(".cur").innerHTML=["L","R"].filter(s=>!F[s].air).map(s=>foot(F[s].p,F[s].a,"now",.46)).join("");
   }
-  return{glyph,plan,mark};
+  // one line for the caption under the plan
+  const SIDE={L:"left",R:"right"};
+  function say(sim,i,M){
+    const r=sim[i],m=M[i];
+    if(i===0)return"Ready: feet parallel, one foot-width apart.";
+    if(r.how==="kick"||r.how==="jump kick")return`${r.how==="jump kick"?"Jumping kick":"Kick"} with the ${SIDE[m.lead||"R"]} leg; the ${SIDE[(m.lead||"R")==="L"?"R":"L"]} foot stays planted.`;
+    if(r.how==="lift")return`Stand on the ${SIDE[m.lead]} foot; the ${SIDE[m.lead==="L"?"R":"L"]} foot lifts to the knee.`;
+    if(!r.moved.length)return r.pivot&&r.pivot.length?`No step: pivot on the spot to face ${m.dir.replace(/\d/,"")}.`:"No step: the feet stay where they are; only the arms move.";
+    if(r.moved.length===2)return r.how==="jump"?"Jump: both feet leave the floor and land together.":r.how==="pivot"?"Both feet pivot to the new facing.":"Both feet move (turn and travel).";
+    const mv=r.moved[0],pl=mv==="L"?"R":"L";
+    return`The ${SIDE[mv]} foot ${r.prev[mv].air?"lands":"steps"}; the ${SIDE[pl]} foot stays planted${r.pivot&&r.pivot.includes(pl)?" and pivots":""}.`;
+  }
+  return{glyph,plan,mark,say};
 })();

@@ -39,7 +39,7 @@ css = f"""<style>
 *{{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 body{{background:#fff}}
 .wrap{{max-width:none;padding:0;gap:14px}}
-.actions,.mtoggle,.carousel,.study,footer,header .meta,.sitenav,.fwsec{{display:none!important}}
+.actions,.mtoggle,.carousel,.study,footer,header .meta,.sitenav,.fwsec,.viewbar{{display:none!important}}
 a.lib{{text-decoration:none}}
 .scroller{{overflow:visible}}
 .fig .glow{{display:none}}
