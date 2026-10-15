@@ -25,6 +25,9 @@ Every print sheet is exactly 2 pages and every QR code decodes to its expected l
 - Planned host: Cloudflare Pages or Netlify (no build command, publish directory `site`); both read `_redirects`. Then in Route 53: apex alias/ALIAS and `www` CNAME to the host, and the host's domain-verification record if it asks for one.
 - On AWS-only hosting (S3 + CloudFront + ACM), `_redirects` would need converting to CloudFront Function or S3 routing rules.
 
+## Plan
+See ROADMAP.md: Phase 1 site structure (#5, #6, #2) → Phase 2 diagram clarity (#4, #3) → Brian reviews model sheets MS-1–MS-8 → Phase 3 character v2 (#7, #1) → Phase 4 poomsae sheets v2. Launch (#8) whenever hosting is unblocked.
+
 ## Follow-ups
 - GitHub issue #1: redesign front kicks seen from behind, and front-view kicks that read like knee lifts.
 - Find individual Digital Encyclopedia videos for T7, T8, Keumgang, Taebaek.

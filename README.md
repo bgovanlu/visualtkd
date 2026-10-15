@@ -21,6 +21,7 @@ design/                   character studies kept for reference (not deployed)
 CLAUDE.md                 conventions for adding and changing forms
 REVIEW.md                 open questions per form, to check against the Kukkiwon videos
 docs/STATUS.md            what's built, short links, deployment state, follow-ups
+ROADMAP.md                phases and plan for every open GitHub issue
 ```
 
 ## URLs
