@@ -8,7 +8,7 @@ Plan for the open GitHub issues and the work around them. Updated 15 October 202
 
 | Phase | Milestone | Issues | Can start | Size |
 |---|---|---|---|---|
-| 1 | Site structure | #5 landing page, #6 details section, #2 hand and foot details (pages and links) | Now | M |
+| 1 | Site structure | #5 landing page, #6 details section, #2 hand and foot details (pages and links) | **Built 15 Oct**; open items in REVIEW.md | M |
 | 2 | Diagram clarity | #4 same-stance moves, #3 footwork diagram | Now (after 1 defines the links) | L |
 | 3 | Character v2 | #7 new figure rig, #1 back-view kicks, #2 hand and foot art | After the MS-1–MS-8 review | L |
 | 4 | Poomsae sheets v2 | re-pose and rebuild all 11 forms | After phase 3 | M |

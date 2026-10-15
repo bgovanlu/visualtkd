@@ -1,0 +1,24 @@
+{
+  "_comment": "Every form the site will cover, in teaching order. A form is published once forms/<file>.json exists for its slug; the forms index, landing page, progress meter and library 'appears in' lists all read this file. lines: trigram top to bottom, 1 = solid, 0 = broken.",
+  "taegeuk": [
+    {"n": 1, "slug": "taegeuk/1", "rom": "Il Jang",   "ko": "태극 1장", "tri": "Geon", "triKo": "건", "sym": "Heaven",   "mean": "Heaven and light; the beginning of all things.", "lines": [1,1,1], "moves": 18},
+    {"n": 2, "slug": "taegeuk/2", "rom": "Ee Jang",   "ko": "태극 2장", "tri": "Tae",  "triKo": "태", "sym": "Lake",     "mean": "Joy; a calm mind that stays firm inside.", "lines": [0,1,1], "moves": 18},
+    {"n": 3, "slug": "taegeuk/3", "rom": "Sam Jang",  "ko": "태극 3장", "tri": "Ri",   "triKo": "리", "sym": "Fire",     "mean": "Fire and sun; passion and enthusiasm.", "lines": [1,0,1], "moves": 20},
+    {"n": 4, "slug": "taegeuk/4", "rom": "Sa Jang",   "ko": "태극 4장", "tri": "Jin",  "triKo": "진", "sym": "Thunder",  "mean": "Thunder; great power and dignity.", "lines": [0,0,1], "moves": 20},
+    {"n": 5, "slug": "taegeuk/5", "rom": "Oh Jang",   "ko": "태극 5장", "tri": "Seon", "triKo": "손", "sym": "Wind",     "mean": "Wind; gentle yet able to be mighty.", "lines": [1,1,0], "moves": 20},
+    {"n": 6, "slug": "taegeuk/6", "rom": "Yuk Jang",  "ko": "태극 6장", "tri": "Gam",  "triKo": "감", "sym": "Water",    "mean": "Water; flowing past obstacles without losing course.", "lines": [0,1,0], "moves": 19},
+    {"n": 7, "slug": "taegeuk/7", "rom": "Chil Jang", "ko": "태극 7장", "tri": "Gan",  "triKo": "간", "sym": "Mountain", "mean": "Mountain; stillness, and moving only when it is time.", "lines": [1,0,0], "moves": 25},
+    {"n": 8, "slug": "taegeuk/8", "rom": "Pal Jang",  "ko": "태극 8장", "tri": "Gon",  "triKo": "곤", "sym": "Earth",    "mean": "Earth; the root and end of all things, completing the set.", "lines": [0,0,0], "moves": 24}
+  ],
+  "blackbelt": [
+    {"slug": "koryo",    "rom": "Koryo",    "ko": "고려", "hanja": "高麗", "floor": "士", "moves": 30},
+    {"slug": "keumgang", "rom": "Keumgang", "ko": "금강", "hanja": "金剛", "floor": "山", "moves": 27},
+    {"slug": "taebaek",  "rom": "Taebaek",  "ko": "태백", "hanja": "太白", "floor": "工", "moves": 26},
+    {"slug": "pyongwon", "rom": "Pyongwon", "ko": "평원"},
+    {"slug": "sipjin",   "rom": "Sipjin",   "ko": "십진"},
+    {"slug": "jitae",    "rom": "Jitae",    "ko": "지태"},
+    {"slug": "cheonkwon","rom": "Cheonkwon","ko": "천권"},
+    {"slug": "hansu",    "rom": "Hansu",    "ko": "한수"},
+    {"slug": "ilyeo",    "rom": "Ilyeo",    "ko": "일여"}
+  ]
+}

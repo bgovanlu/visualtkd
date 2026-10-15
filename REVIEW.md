@@ -46,6 +46,19 @@ To change a form, edit `forms/<form>.json` (e.g. `taegeuk-3.json`, `koryo.json`)
 
 - [ ] **Video links for T7 and T8** go to the Kukkiwon Digital Encyclopedia playlist, not a single video. Once you find the individual videos, change `refs[].url` for `video-t7` and `video-t8`. Printed sheets keep working because they go through `/go/`.
 
+## Site pages and technique library (Phase 1, #5 #6 #2)
+
+- [ ] **About text** on the landing page (`/#about`, written in `tools/build_site.py`). It currently names no person, school or federation and gives no contact. It says the site is independent and not affiliated with Kukkiwon or World Taekwondo. Tell me what to add.
+- [ ] **Library URL scheme** `/library/<family>/#<slug>` (families `stances`, `blocks`, `strikes`, `kicks`, `hands-feet`; slugs are the romanised names). Built as proposed in ROADMAP.md. Confirm before any of these paths get printed.
+- [ ] **Library descriptions** (`data/techniques.json`, all 60 techniques and 9 stances) are written in our own words from general Kukkiwon practice. Please read them through. These points are the least settled:
+  - **Forearm blocks:** they all name the surface as *palmok* (forearm). Kukkiwon distinguishes bakkat palmok and an palmok per block; we haven't assigned these block by block yet.
+  - **No surface given:** knee break (Koryo 12-2), large hinge and small hinge (keun / jageun doljjeogwi).
+  - **Grouping:** we filed jageun doljjeogwi and keun doljjeogwi under blocks, and the knee break and twisting grab under strikes ("grabs and breaks").
+  - **Ap kubi:** described as "most of the weight on the front leg" and "rear foot turned out about 30°".
+  - **Dwit kubi:** "most of the weight on the rear leg", hips turned to the side.
+- [ ] **Hands and feet page** shows a technique that uses each surface, not a close-up of the hand or foot. The close-ups come from model sheet MS-8 in Phase 3.
+- [ ] **`figH` in the form JSON has never taken effect.** A later `:root` rule in the template resets `--fig-h` to 150px, so only `cardW` shrinks the cards. We left this alone so the print sheets don't move. Fix it with the character v2 rebuild, or drop the field.
+
 ## Taegeuk 1 · Il Jang
 
 Sources: Kukkiwon page, standard Kukkiwon sequence. The fandom page wouldn't load when this was built.

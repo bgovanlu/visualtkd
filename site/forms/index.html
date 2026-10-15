@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Forms · visualtkd</title>
+<meta name="description" content="Every Kukkiwon poomsae on visualtkd: Taegeuk 1–8 and the black-belt forms, with floor plans, move-by-move cards and print sheets.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 rx=%223%22 fill=%22%231f3a8a%22/%3E%3Cpath d=%22M3 4h10M3 8h10M3 12h10%22 stroke=%22white%22 stroke-width=%221.6%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700;900&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+body{margin:0}[hidden]{display:none!important}img{max-width:100%}
+/* Shared by every page (form pages, landing, forms index, library, how-to-read): colour tokens, type, site nav and footer.
+   Inlined by tools/build_form.py and tools/build_site.py. */
+:root{
+  --bg:#edf0f5; --surface:#ffffff; --mat:#e2e7ef; --ink:#141a2b; --muted:#5a6377; --line:#c3cbd8;
+  --heaven:#1f3a8a; --fire:#c8102e;
+  --f-display:"Noto Serif KR","Noto Serif CJK KR","Nanum Myeongjo",Georgia,serif;
+  --f-body:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0d1220; --surface:#151c2d; --mat:#1b2437; --ink:#e7ebf3; --muted:#97a1b6; --line:#2c3650;
+  --heaven:#87a3ff; --fire:#ff5a6e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1220; --surface:#151c2d; --mat:#1b2437; --ink:#e7ebf3; --muted:#97a1b6; --line:#2c3650;
+  --heaven:#87a3ff; --fire:#ff5a6e; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
+
+/* Site nav: the same bar on every page */
+.sitenav{display:flex;align-items:center;justify-content:space-between;gap:8px 20px;flex-wrap:wrap;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.sitenav .brand{display:inline-flex;align-items:center;gap:9px;font-family:var(--f-mono);font-size:14px;font-weight:500;letter-spacing:.04em;color:var(--ink);text-decoration:none}
+.sitenav .brand svg{width:22px;height:22px;flex:none}
+.sitenav ul{list-style:none;margin:0;padding:0;display:flex;gap:2px 4px;flex-wrap:wrap}
+.sitenav ul a{display:block;font-size:14px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 10px;border-radius:99px}
+.sitenav ul a:hover{color:var(--ink);background:var(--mat)}
+.sitenav ul a[aria-current="page"]{color:var(--ink);background:var(--mat)}
+.sitenav a:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+@media (max-width:480px){.sitenav ul a{padding:4px 7px;font-size:13.5px}}
+
+/* Site footer */
+.sitefoot{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.sitefoot a{color:var(--heaven)}
+.sitefoot p{margin:0;max-width:72ch}
+
+/* Stance chips (form pages, library, how-to-read): walking outlined, front filled, back double, kick dashed, crane dotted blue */
+.chip{font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:99px;border:1.5px solid var(--muted);color:var(--muted);white-space:nowrap;display:inline-flex;gap:5px;align-items:center}
+.chip.front{background:var(--ink);border-color:var(--ink);color:var(--surface)}
+.chip.kick{border-style:dashed}
+.chip.back{border:3px double var(--ink);color:var(--ink)}
+.chip.tiger{border-style:dotted;border-width:2px;color:var(--ink)}
+.chip.horse{background:var(--mat);border-color:var(--ink);color:var(--ink)}
+.chip.ready{border-color:var(--line)}
+.chip.crane{border-style:dotted;border-width:2px;border-color:var(--heaven);color:var(--heaven)}
+
+/* library links inside form pages and the library itself: quiet until hovered */
+a.lib{color:inherit;text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent);text-decoration-thickness:1px;text-underline-offset:3px}
+a.lib:hover{color:var(--heaven);text-decoration-color:currentColor}
+a.lib:focus-visible{outline:2px solid var(--heaven);outline-offset:2px;border-radius:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:28px 56px;display:flex;flex-direction:column;gap:30px}
+.eyebrow{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.1em;color:var(--fire);text-transform:uppercase}
+h1{margin:4px 0 0;font-family:var(--f-display);font-weight:900;font-size:clamp(36px,6vw,60px);line-height:1.05;letter-spacing:-.01em}
+h1 span{font-weight:700;color:var(--muted);font-size:.55em;margin-left:.3em}
+h2{margin:0 0 10px;font-family:var(--f-display);font-weight:700;font-size:26px;line-height:1.2}
+h2 span{font-weight:700;color:var(--muted);font-size:.7em;margin-left:.3em}
+.lede{margin:12px 0 0;max-width:64ch;color:var(--muted);font-size:16.5px}
+section > p.intro{margin:0 0 16px;color:var(--muted);max-width:68ch}
+.pill{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:99px;white-space:nowrap}
+.pill.live{background:var(--ink);color:var(--surface)}
+.pill.plan{border:1.5px solid var(--line);color:var(--muted)}
+
+header.top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px 32px;align-items:end}
+.status{display:flex;flex-direction:column;gap:8px;min-width:220px}
+.status b{font-family:var(--f-mono);font-weight:500;font-size:26px;font-variant-numeric:tabular-nums}
+.status small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.meter{display:grid;grid-template-columns:repeat(17,1fr);gap:4px}
+.meter i{height:6px;border-radius:3px;background:var(--line)}
+.meter i.done{background:var(--fire)}
+.grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:12px;min-height:236px;color:inherit;text-decoration:none;transition:border-color .2s,transform .2s}
+a.card:hover{border-color:var(--heaven);transform:translateY(-2px)}
+a.card:focus-visible{outline:2px solid var(--heaven);outline-offset:3px}
+.card.soon{background:transparent;border-style:dashed}
+.card .top{display:flex;justify-content:space-between;align-items:flex-start}
+.num{font-family:var(--f-display);font-weight:900;font-size:44px;line-height:.9}
+.card.soon .num{color:var(--muted)}
+.tri{display:flex;flex-direction:column;gap:6px;width:58px;padding-top:4px}
+.tri .bar{display:flex;gap:8px;height:8px}
+.tri .bar i{flex:1;background:var(--heaven);border-radius:2px}
+.card.soon .tri .bar i{background:var(--muted);opacity:.55}
+.name{display:flex;flex-direction:column;gap:2px}
+.name h3{margin:0;font-size:20px;font-weight:700;letter-spacing:.01em}
+.name .ko{font-family:var(--f-display);font-weight:700;color:var(--muted);font-size:15px}
+.mean{margin:0;font-size:14px;color:var(--muted)}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px}
+.foot .mv{font-family:var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.bb{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}
+.bb li{border:1px dashed var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column}
+.bb b{font-weight:600}
+.bb span{font-size:12.5px;color:var(--muted)}
+.bb a{display:flex;flex-direction:column;gap:2px;color:inherit;text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:10px 12px;margin:-11px -13px;transition:border-color .2s}
+.bb a:hover{border-color:var(--ink)}
+.bb a:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+.bb li.live{border-style:solid;border-color:transparent}
+.bb .hj{font-family:var(--f-display);font-weight:900;color:var(--heaven);font-size:15px}
+.bb .row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:4px}
+.bb .ko{font-family:var(--f-display);font-weight:700}
+@media (max-width:640px){header.top{grid-template-columns:1fr}.card{min-height:0}}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="sitenav" aria-label="Site"><a class="brand" href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="var(--heaven)"/><path d="M5 6h14M6.5 12h11M5 18h14M12 6v12" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>visualtkd</a><ul><li><a href="/forms/" aria-current="page">Forms</a></li><li><a href="/library/">Library</a></li><li><a href="/how-to-read/">How to read</a></li><li><a href="/#about">About</a></li></ul></nav>
+<header class="top">
+  <div>
+    <div class="eyebrow">Kukkiwon poomsae · gup and dan forms</div>
+    <h1>Forms <span>품새</span></h1>
+    <p class="lede">The eight Taegeuk forms, each named for one of the eight trigrams, and the black-belt forms. Every form gets the same treatment: the floor plan on its line, move-by-move cards on phones, the full sequence, and a two-page print sheet.</p>
+  </div>
+  <div class="status" aria-label="Progress"><small>Forms published</small><b>11 / 17</b><div class="meter"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></div>
+</header>
+<section aria-label="Taegeuk forms"><h2>Taegeuk <span>태극</span></h2><ul class="grid"><li><a class="card" href="/taegeuk/1/" aria-label="Open Taegeuk Il Jang"><div class="top"><span class="num">1</span><div class="tri" aria-hidden="true"><div class="bar"><i></i></div><div class="bar"><i></i></div><div class="bar"><i></i></div></div></div><div class="name"><h3>Il Jang</h3><span class="ko">태극 1장 · Geon 건 · Heaven</span></div><p class="mean">Heaven and light; the beginning of all things.</p><div class="foot"><span class="mv">18 movements</span><span class="pill live">Open</span></div></a></li><li><a class="card" href="/taegeuk/2/" aria-label="Open Taegeuk Ee Jang"><div class="top"><span class="num">2</span><div class="tri" aria-hidden="true"><div class="bar"><i></i><i></i></div><div class="bar"><i></i></div><div class="bar"><i></i></div></div></div><div class="name"><h3>Ee Jang</h3><span class="ko">태극 2장 · Tae 태 · Lake</span></div><p class="mean">Joy; a calm mind that stays firm inside.</p><div class="foot"><span class="mv">18 movements</span><span class="pill live">Open</span></div></a></li><li><a class="card" href="/taegeuk/3/" aria-label="Open Taegeuk Sam Jang"><div class="top"><span class="num">3</span><div class="tri" aria-hidden="true"><div class="bar"><i></i></div><div class="bar"><i></i><i></i></div><div class="bar"><i></i></div></div></div><div class="name"><h3>Sam Jang</h3><span class="ko">태극 3장 · Ri 리 · Fire</span></div><p class="mean">Fire and sun; passion and enthusiasm.</p><div class="foot"><span class="mv">20 movements</span><span class="pill live">Open</span></div></a></li><li><a class="card" href="/taegeuk/4/" aria-label="Open Taegeuk Sa Jang"><div class="top"><span class="num">4</span><div class="tri" aria-hidden="true"><div class="bar"><i></i><i></i></div><div class="bar"><i></i><i></i></div><div class="bar"><i></i></div></div></div><div class="name"><h3>Sa Jang</h3><span class="ko">태극 4장 · Jin 진 · Thunder</span></div><p class="mean">Thunder; great power and dignity.</p><div class="foot"><span class="mv">20 movements</span><span class="pill live">Open</span></div></a></li><li><a class="card" href="/taegeuk/5/" aria-label="Open Taegeuk Oh Jang"><div class="top"><span class="num">5</span><div class="tri" aria-hidden="true"><div class="bar"><i></i></div><div class="bar"><i></i></div><div class="bar"><i></i><i></i></div></div></div><div class="name"><h3>Oh Jang</h3><span class="ko">태극 5장 · Seon 손 · Wind</span></div><p class="mean">Wind; gentle yet able to be mighty.</p><div class="foot"><span class="mv">20 movements</span><span class="pill live">Open</span></div></a></li><li><a class="card" href="/taegeuk/6/" aria-label="Open Taegeuk Yuk Jang"><div class="top"><span class="num">6</span><div class="tri" aria-hidden="true"><div class="bar"><i></i><i></i></div><div class="bar"><i></i></div><div class="bar"><i></i><i></i></div></div></div><div class="name"><h3>Yuk Jang</h3><span class="ko">태극 6장 · Gam 감 · Water</span></div><p class="mean">Water; flowing past obstacles without losing course.</p><div class="foot"><span class="mv">19 movements</span><span class="pill live">Open</span></div></a></li><li><a class="card" href="/taegeuk/7/" aria-label="Open Taegeuk Chil Jang"><div class="top"><span class="num">7</span><div class="tri" aria-hidden="true"><div class="bar"><i></i></div><div class="bar"><i></i><i></i></div><div class="bar"><i></i><i></i></div></div></div><div class="name"><h3>Chil Jang</h3><span class="ko">태극 7장 · Gan 간 · Mountain</span></div><p class="mean">Mountain; stillness, and moving only when it is time.</p><div class="foot"><span class="mv">25 movements</span><span class="pill live">Open</span></div></a></li><li><a class="card" href="/taegeuk/8/" aria-label="Open Taegeuk Pal Jang"><div class="top"><span class="num">8</span><div class="tri" aria-hidden="true"><div class="bar"><i></i><i></i></div><div class="bar"><i></i><i></i></div><div class="bar"><i></i><i></i></div></div></div><div class="name"><h3>Pal Jang</h3><span class="ko">태극 8장 · Gon 곤 · Earth</span></div><p class="mean">Earth; the root and end of all things, completing the set.</p><div class="foot"><span class="mv">24 movements</span><span class="pill live">Open</span></div></a></li></ul></section>
+<section><h2>Black-belt forms <span>유단자 품새</span></h2>
+  <p class="intro">Yudanja poomsae, drawn the same way, each on its own floor line.</p>
+  <ul class="bb"><li class="live"><a href="/koryo/" aria-label="Open Koryo"><b>Koryo <span class="hj" lang="zh-Hant">高麗</span></b><span><span class="ko">고려</span> · floor line 士</span><span class="row"><span>30 movements</span><span class="pill live">Open</span></span></a></li><li class="live"><a href="/keumgang/" aria-label="Open Keumgang"><b>Keumgang <span class="hj" lang="zh-Hant">金剛</span></b><span><span class="ko">금강</span> · floor line 山</span><span class="row"><span>27 movements</span><span class="pill live">Open</span></span></a></li><li class="live"><a href="/taebaek/" aria-label="Open Taebaek"><b>Taebaek <span class="hj" lang="zh-Hant">太白</span></b><span><span class="ko">태백</span> · floor line 工</span><span class="row"><span>26 movements</span><span class="pill live">Open</span></span></a></li><li><b>Pyongwon</b><span><span class="ko">평원</span> · planned</span></li><li><b>Sipjin</b><span><span class="ko">십진</span> · planned</span></li><li><b>Jitae</b><span><span class="ko">지태</span> · planned</span></li><li><b>Cheonkwon</b><span><span class="ko">천권</span> · planned</span></li><li><b>Hansu</b><span><span class="ko">한수</span> · planned</span></li><li><b>Ilyeo</b><span><span class="ko">일여</span> · planned</span></li></ul></section>
+<section><p class="intro">New to the diagrams? <a class="lib" href="/how-to-read/">How to read a diagram</a> explains the floor line, the figures and the footprints. Every technique links to the <a class="lib" href="/library/">technique library</a>.</p></section>
+<footer class="sitefoot"><p>Form names, sequences and counts follow Kukkiwon. Descriptions are our own words; see each form&rsquo;s official references for the source text.</p><p><a href="/">visualtkd.com</a></p></footer>
+</div>
+
+</body>
+</html>

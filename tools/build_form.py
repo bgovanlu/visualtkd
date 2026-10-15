@@ -9,9 +9,8 @@ Also regenerates site/_redirects from the refs of every form, so the /go/
 short links used by printed QR codes always cover every published sheet.
 """
 import glob, html, json, os, subprocess, sys
-
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = "https://visualtkd.com"
+import sitekit as S
+from sitekit import ROOT, SITE
 
 ICON = {
  "gate": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 7.5c3 .9 6 1.3 9.5 1.3s6.5-.4 9.5-1.3M4 10.5h16M6 10.5V20M18 10.5V20M10 10.5V20M14 10.5V20M4.5 20h15M7.5 8.6 6.4 5.8M16.5 8.6l1.1-2.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>',
@@ -46,6 +45,9 @@ def check(F):
     assert not missing and not extra, f"layout mismatch: missing {missing} extra {extra}"
     assert set(F["pos"]) == set(ids), f"minimap positions missing for {set(ids) - set(F['pos'])}"
     for m in F["moves"]:
+        # every technique and stance must have a library entry (data/techniques.json)
+        assert m["tech"] in S.LIB["techniques"], f'move {m["id"]}: no library entry for technique "{m["tech"]}"'
+        assert m["stance"] in S.LIB["stances"], f'move {m["id"]}: no library entry for stance "{m["stance"]}"'
         assert m["dir"] in ("na","ga","da1","da2","da3","ra1","ra2","ra3"), m
         if m["view"] == "side": assert m.get("face") in ("L","R"), m
 
@@ -64,6 +66,8 @@ def build(path, do_print):
         "MOVEMENTS": str(F["movements"]), "COUNTS": str(len(F["moves"]) - 1),
         # big forms shrink the cards so every bar fits: optional cardW / figH in the JSON
         "SIZE_CSS": f':root{{--card-w:{F["cardW"]}px;--fig-h:{F["figH"]}px}}' if "cardW" in F else "",
+        "BASE_CSS": S.read("templates/base.css"), "NAV": S.nav("forms"), "SITEFOOT": S.footer(),
+        "FIGURE_JS": S.read("templates/figure.js"), "LIB_JSON": S.lib_js(),
         "NOTE_H": F["note"]["h"], "NOTE_P": F["note"]["p"], "REFS": refs(F), "FOOTER": F["footer"], "FORM_JSON": data,
     }
     for k, v in rep.items(): t = t.replace("{{" + k + "}}", v)
@@ -104,6 +108,8 @@ def redirects():
 
 if __name__ == "__main__":
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
-    files = sorted(glob.glob(os.path.join(ROOT, "forms/*.json"))) if "--all" in sys.argv else args
+    files = S.form_files() if "--all" in sys.argv else args
     for f in files: build(f, "--print" in sys.argv)
     redirects()
+    # landing, forms index, how-to-read and the library list every form and move: keep them in step
+    subprocess.check_call([sys.executable, os.path.join(ROOT, "tools/build_site.py")])

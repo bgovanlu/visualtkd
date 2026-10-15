@@ -14,14 +14,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700;900&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
 /* Layout: the original 王-shaped floor plan kept intact — three bars (ra/da lines) joined by the centre na–ga line — with figures standing on the floor lines; a study panel and full sequence table follow. */
+/* Shared by every page (form pages, landing, forms index, library, how-to-read): colour tokens, type, site nav and footer.
+   Inlined by tools/build_form.py and tools/build_site.py. */
 :root{
   --bg:#edf0f5; --surface:#ffffff; --mat:#e2e7ef; --ink:#141a2b; --muted:#5a6377; --line:#c3cbd8;
   --heaven:#1f3a8a; --fire:#c8102e;
-  --figbg:var(--surface); --gf:.956;
-  --f-display:"Noto Serif KR","Nanum Myeongjo",Georgia,serif;
+  --f-display:"Noto Serif KR","Noto Serif CJK KR","Nanum Myeongjo",Georgia,serif;
   --f-body:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
   --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
-  --fig-h:150px;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#0d1220; --surface:#151c2d; --mat:#1b2437; --ink:#e7ebf3; --muted:#97a1b6; --line:#2c3650;
@@ -31,6 +31,40 @@
   --heaven:#87a3ff; --fire:#ff5a6e; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
+
+/* Site nav: the same bar on every page */
+.sitenav{display:flex;align-items:center;justify-content:space-between;gap:8px 20px;flex-wrap:wrap;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.sitenav .brand{display:inline-flex;align-items:center;gap:9px;font-family:var(--f-mono);font-size:14px;font-weight:500;letter-spacing:.04em;color:var(--ink);text-decoration:none}
+.sitenav .brand svg{width:22px;height:22px;flex:none}
+.sitenav ul{list-style:none;margin:0;padding:0;display:flex;gap:2px 4px;flex-wrap:wrap}
+.sitenav ul a{display:block;font-size:14px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 10px;border-radius:99px}
+.sitenav ul a:hover{color:var(--ink);background:var(--mat)}
+.sitenav ul a[aria-current="page"]{color:var(--ink);background:var(--mat)}
+.sitenav a:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+@media (max-width:480px){.sitenav ul a{padding:4px 7px;font-size:13.5px}}
+
+/* Site footer */
+.sitefoot{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.sitefoot a{color:var(--heaven)}
+.sitefoot p{margin:0;max-width:72ch}
+
+/* Stance chips (form pages, library, how-to-read): walking outlined, front filled, back double, kick dashed, crane dotted blue */
+.chip{font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:99px;border:1.5px solid var(--muted);color:var(--muted);white-space:nowrap;display:inline-flex;gap:5px;align-items:center}
+.chip.front{background:var(--ink);border-color:var(--ink);color:var(--surface)}
+.chip.kick{border-style:dashed}
+.chip.back{border:3px double var(--ink);color:var(--ink)}
+.chip.tiger{border-style:dotted;border-width:2px;color:var(--ink)}
+.chip.horse{background:var(--mat);border-color:var(--ink);color:var(--ink)}
+.chip.ready{border-color:var(--line)}
+.chip.crane{border-style:dotted;border-width:2px;border-color:var(--heaven);color:var(--heaven)}
+
+/* library links inside form pages and the library itself: quiet until hovered */
+a.lib{color:inherit;text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent);text-decoration-thickness:1px;text-underline-offset:3px}
+a.lib:hover{color:var(--heaven);text-decoration-color:currentColor}
+a.lib:focus-visible{outline:2px solid var(--heaven);outline-offset:2px;border-radius:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+:root{--figbg:var(--surface); --gf:.956; --fig-h:150px}
 .wrap{max-width:max(1240px, calc(1320px + 40px));margin:0 auto;padding-inline:20px;padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
 
 /* Header */
@@ -86,14 +120,7 @@ h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6v
 .fig.on .no{color:var(--fire);font-weight:700}
 .fig .tech{margin-top:4px;font-weight:600;font-size:13.5px;line-height:1.2;text-align:center}
 .fig .en{font-size:12px;color:var(--muted);line-height:1.2}
-.chip{margin-top:5px;font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:99px;border:1.5px solid var(--muted);color:var(--muted);white-space:nowrap;display:inline-flex;gap:5px;align-items:center}
-.chip.front{background:var(--ink);border-color:var(--ink);color:var(--surface)}
-.chip.kick{border-style:dashed}
-.chip.back{border:3px double var(--ink);color:var(--ink)}
-.chip.tiger{border-style:dotted;border-width:2px;color:var(--ink)}
-.chip.horse{background:var(--mat);border-color:var(--ink);color:var(--ink)}
-.chip.ready{border-color:var(--line)}
-.chip.crane{border-style:dotted;border-width:2px;border-color:var(--heaven);color:var(--heaven)}
+.fig .chip{margin-top:5px}
 .fig.on .chip{outline:2px solid var(--fire);outline-offset:2px}
 .kh{font-family:var(--f-mono);font-size:10px;color:var(--fire);letter-spacing:.06em;margin-top:3px}
 .seg{display:inline-flex;align-self:flex-start;border:1px solid var(--line);border-radius:99px;padding:2px;gap:2px}
@@ -133,6 +160,12 @@ h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6v
 .ctrl button{font:inherit;font-weight:600;font-size:14px;padding:9px 16px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
 .ctrl button.primary{background:var(--ink);color:var(--surface);border-color:var(--ink)}
 .ctrl button:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+.info .more{font-size:14px;font-weight:600;align-self:flex-start}
+.chiplink{text-decoration:none;color:inherit;border-radius:99px}
+.chiplink:hover .chip{border-color:var(--heaven);color:var(--heaven)}
+.chiplink:hover .chip.front{background:var(--heaven);color:var(--surface)}
+.chiplink:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+.sitenav{margin-bottom:-10px}
 .progress{flex:1;min-width:120px;height:4px;background:var(--line);border-radius:4px;overflow:hidden}
 .progress i{display:block;height:100%;background:var(--fire);width:0;transition:width .3s}
 
@@ -226,8 +259,9 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
 </style>
 
 <div class="wrap">
+  <nav class="sitenav" aria-label="Site"><a class="brand" href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="var(--heaven)"/><path d="M5 6h14M6.5 12h11M5 18h14M12 6v12" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>visualtkd</a><ul><li><a href="/forms/" aria-current="page">Forms</a></li><li><a href="/library/">Library</a></li><li><a href="/how-to-read/">How to read</a></li><li><a href="/#about">About</a></li></ul></nav>
   <nav class="actions" aria-label="Page actions">
-    <a class="back" href="/">← All forms</a>
+    <a class="back" href="/forms/">← All forms</a>
     <a class="print" href="taegeuk-2-print.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4.5V9.5A1.5 1.5 0 0 1 6 8h12a1.5 1.5 0 0 1 1.5 1.5V17H17M7 13.5h10V21H7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>Print sheet <span>PDF · 2 pages</span></a>
   </nav>
   <header>
@@ -303,6 +337,7 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
       <h2 id="name"></h2>
       <div class="facts" id="facts"></div>
       <p id="desc"></p>
+      <a class="lib more" id="more" href="/library/">Technique details →</a>
       <div class="ctrl">
         <button id="prev" type="button">Previous</button>
         <button id="play" type="button" class="primary">Play the form</button>
@@ -332,96 +367,24 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
   </section>
 
   <footer>Move counting follows the Kukkiwon convention, where a kick and the strike that follows it share one number (8-1, 8-2). Finish with <b>Baro</b>: turn to face ga and return to the ready stance at the starting point.</footer>
+  <footer class="sitefoot"><p>Form names, sequences and counts follow Kukkiwon. Descriptions are our own words; see each form&rsquo;s official references for the source text.</p><p><a href="/">visualtkd.com</a></p></footer>
 </div>
 
 <script>
 (function(){
 const FORM={"moves": [{"id": "J", "dir": "na", "view": "front", "stance": "ready", "arms": {"L": "junbi", "R": "junbi"}, "tech": "junbi", "desc": "Stand at na facing ga, feet parallel and one foot-width apart, fists in front of the belt."}, {"id": "1", "dir": "da1", "view": "side", "stance": "walk", "face": "R", "lead": "L", "arms": {"L": "low"}, "tech": "low", "hand": "L", "desc": "Turn 90° left toward da¹, stepping the left foot into a left walking stance. Left low block."}, {"id": "2", "dir": "da1", "view": "side", "stance": "front", "face": "R", "lead": "R", "arms": {"R": "punch"}, "tech": "punch", "hand": "R", "note": "bandae", "desc": "Step forward into a right front stance. Right middle punch."}, {"id": "3", "dir": "ra1", "view": "side", "stance": "walk", "face": "L", "lead": "R", "arms": {"R": "low"}, "tech": "low", "hand": "R", "desc": "Turn 180° to the right toward ra¹, right walking stance. Right low block."}, {"id": "4", "dir": "ra1", "view": "side", "stance": "front", "face": "L", "lead": "L", "arms": {"L": "punch"}, "tech": "punch", "hand": "L", "note": "bandae", "desc": "Step forward into a left front stance. Left middle punch."}, {"id": "5", "dir": "ga", "view": "front", "stance": "walk", "lead": "L", "arms": {"R": "inside"}, "tech": "inside", "hand": "R", "desc": "Turn 90° left toward ga, left walking stance. Right inside middle block."}, {"id": "6", "dir": "ga", "view": "front", "stance": "walk", "lead": "R", "arms": {"L": "inside"}, "tech": "inside", "hand": "L", "desc": "Step forward into a right walking stance. Left inside middle block."}, {"id": "7", "dir": "da2", "view": "side", "stance": "walk", "face": "R", "lead": "L", "arms": {"L": "low"}, "tech": "low", "hand": "L", "desc": "Turn 90° left toward da², left walking stance. Left low block."}, {"id": "8-1", "dir": "da2", "view": "side", "stance": "kick", "face": "R", "lead": "R", "arms": {"L": "guard", "R": "guard"}, "tech": "kick", "hand": "R", "foot": true, "desc": "Right front kick, striking with the ball of the foot."}, {"id": "8-2", "dir": "da2", "view": "side", "stance": "front", "face": "R", "lead": "R", "arms": {"R": "hpunch"}, "tech": "hpunch", "hand": "R", "note": "bandae", "desc": "Land forward in a right front stance. Right high punch."}, {"id": "9", "dir": "ra2", "view": "side", "stance": "walk", "face": "L", "lead": "R", "arms": {"R": "low"}, "tech": "low", "hand": "R", "desc": "Turn 180° to the right toward ra², right walking stance. Right low block."}, {"id": "10-1", "dir": "ra2", "view": "side", "stance": "kick", "face": "L", "lead": "L", "arms": {"L": "guard", "R": "guard"}, "tech": "kick", "hand": "L", "foot": true, "desc": "Left front kick, striking with the ball of the foot."}, {"id": "10-2", "dir": "ra2", "view": "side", "stance": "front", "face": "L", "lead": "L", "arms": {"L": "hpunch"}, "tech": "hpunch", "hand": "L", "note": "bandae", "desc": "Land forward in a left front stance. Left high punch."}, {"id": "11", "dir": "ga", "view": "front", "stance": "walk", "lead": "L", "arms": {"L": "high"}, "tech": "high", "hand": "L", "desc": "Turn 90° left toward ga, left walking stance. Left high block."}, {"id": "12", "dir": "ga", "view": "front", "stance": "walk", "lead": "R", "arms": {"R": "high"}, "tech": "high", "hand": "R", "desc": "Step forward into a right walking stance. Right high block."}, {"id": "13", "dir": "ra3", "view": "side", "stance": "walk", "face": "L", "lead": "L", "arms": {"R": "inside"}, "tech": "inside", "hand": "R", "desc": "Turn 270° to the left toward ra³, left walking stance. Right inside middle block."}, {"id": "14", "dir": "da3", "view": "side", "stance": "walk", "face": "R", "lead": "R", "arms": {"L": "inside"}, "tech": "inside", "hand": "L", "desc": "Pivot 180° to the right toward da³, right walking stance. Left inside middle block."}, {"id": "15", "dir": "na", "view": "back", "stance": "walk", "lead": "L", "arms": {"L": "low"}, "tech": "low", "hand": "L", "desc": "Turn 90° left toward na, left walking stance. Left low block."}, {"id": "16-1", "dir": "na", "view": "back", "stance": "kick", "lead": "R", "arms": {"L": "guard", "R": "guard"}, "tech": "kick", "hand": "R", "foot": true, "desc": "Right front kick, striking with the ball of the foot."}, {"id": "16-2", "dir": "na", "view": "back", "stance": "walk", "lead": "R", "arms": {"R": "punch"}, "tech": "punch", "hand": "R", "note": "bandae", "desc": "Land forward in a right walking stance. Right middle punch."}, {"id": "17-1", "dir": "na", "view": "back", "stance": "kick", "lead": "L", "arms": {"L": "guard", "R": "guard"}, "tech": "kick", "hand": "L", "foot": true, "desc": "Left front kick, striking with the ball of the foot."}, {"id": "17-2", "dir": "na", "view": "back", "stance": "walk", "lead": "L", "arms": {"L": "punch"}, "tech": "punch", "hand": "L", "note": "bandae", "desc": "Land forward in a left walking stance. Left middle punch."}, {"id": "18-1", "dir": "na", "view": "back", "stance": "kick", "lead": "R", "arms": {"L": "guard", "R": "guard"}, "tech": "kick", "hand": "R", "foot": true, "desc": "Right front kick, striking with the ball of the foot."}, {"id": "18-2", "dir": "na", "view": "back", "stance": "walk", "lead": "R", "arms": {"R": "punch"}, "tech": "punch", "hand": "R", "note": "bandae", "kihap": true, "desc": "Land forward in a right walking stance. Right middle punch with a kihap."}], "layout": {"r1": ["4", "3", "J", "1", "2"], "c2": ["5", "18-1", "18-2"], "r3": [["10-2", "10-1"], "9", ["6", "17-1", "17-2"], "7", ["8-1", "8-2"]], "c4": ["11", "16-1", "16-2"], "r5": ["13", ["12", "15"], "14"]}, "pos": {"J": [50, 8], "1": [70, 8], "2": [90, 8], "3": [30, 8], "4": [10, 8], "5": [50, 19], "6": [50, 30], "7": [70, 30], "8-1": [80, 30], "8-2": [90, 30], "9": [30, 30], "10-1": [20, 30], "10-2": [10, 30], "11": [50, 41], "12": [50, 52], "13": [30, 52], "14": [70, 52], "15": [50, 52], "16-1": [50, 46], "16-2": [50, 41], "17-1": [50, 35], "17-2": [50, 30], "18-1": [50, 24], "18-2": [50, 19]}};
+const LIB={"t": {"junbi": ["Junbi", "준비", "Ready", "/library/stances/#gibon-junbi"], "tongmil": ["Tongmilgi junbi", "통밀기 준비", "Pushing-hands ready", "/library/stances/#tongmilgi-junbi"], "cover": ["Bojumeok", "보주먹", "Covered fist", "/library/stances/#bojumeok"], "low": ["Arae makki", "아래막기", "Low block", "/library/blocks/#arae-makki"], "alow": ["Geodeureo arae makki", "거들어아래막기", "Augmented low block", "/library/blocks/#geodeureo-arae-makki"], "inside": ["Momtong an makki", "몸통안막기", "Inside middle block", "/library/blocks/#momtong-an-makki"], "outer": ["Momtong bakkat makki", "몸통바깥막기", "Outer middle block", "/library/blocks/#momtong-bakkat-makki"], "aouter": ["Geodeureo momtong bakkat makki", "거들어몸통바깥막기", "Augmented outer block", "/library/blocks/#geodeureo-momtong-bakkat-makki"], "high": ["Eolgul makki", "얼굴막기", "High block", "/library/blocks/#eolgul-makki"], "houter": ["Eolgul bakkat makki", "얼굴바깥막기", "High outer block", "/library/blocks/#eolgul-bakkat-makki"], "wedge": ["Momtong hecho makki", "몸통헤쳐막기", "Middle wedge block", "/library/blocks/#momtong-hecho-makki"], "spread": ["Arae hecho makki", "아래헤쳐막기", "Low spread block", "/library/blocks/#arae-hecho-makki"], "xlow": ["Eotgeoreo arae makki", "엇걸어아래막기", "Low X block", "/library/blocks/#eotgeoreo-arae-makki"], "scissors": ["Gawi makki", "가위막기", "Scissors block", "/library/blocks/#gawi-makki"], "mountain": ["Oesanteul makki", "외산틀막기", "Single mountain block", "/library/blocks/#oesanteul-makki"], "santeul": ["Santeul makki", "산틀막기", "Mountain block", "/library/blocks/#santeul-makki"], "keumgang": ["Keumgang makki", "금강막기", "Diamond block", "/library/blocks/#keumgang-makki"], "kmomtong": ["Keumgang momtong makki", "금강몸통막기", "Diamond middle block", "/library/blocks/#keumgang-momtong-makki"], "ksout": ["Hansonnal bakkat makki", "한손날바깥막기", "Knife-hand outer block", "/library/blocks/#hansonnal-bakkat-makki"], "ksblock": ["Sonnal momtong makki", "손날몸통막기", "Double knife-hand block", "/library/blocks/#sonnal-momtong-makki"], "ksin": ["Hansonnal momtong an makki", "한손날몸통안막기", "Knife-hand inside block", "/library/blocks/#hansonnal-momtong-an-makki"], "kslow": ["Sonnal arae makki", "손날아래막기", "Low knife-hand block", "/library/blocks/#sonnal-arae-makki"], "ksside": ["Hansonnal yeop makki", "한손날옆막기", "Knife-hand side block", "/library/blocks/#hansonnal-yeop-makki"], "kspread": ["Sonnal arae hecho makki", "손날아래헤쳐막기", "Knife-hand low spread block", "/library/blocks/#sonnal-arae-hecho-makki"], "twist": ["Hansonnal eolgul bitureo makki", "한손날얼굴비틀어막기", "Twisted knife-hand high block", "/library/blocks/#hansonnal-eolgul-bitureo-makki"], "palm": ["Batangson momtong an makki", "바탕손몸통안막기", "Palm inside block", "/library/blocks/#batangson-momtong-an-makki"], "apalm": ["Geodeureo batangson momtong an makki", "거들어바탕손몸통안막기", "Augmented palm block", "/library/blocks/#geodeureo-batangson-momtong-an-makki"], "pressdown": ["Batangson nulleo makki", "바탕손눌러막기", "Palm pressing block", "/library/blocks/#batangson-nulleo-makki"], "khinge": ["Keun doljjeogwi", "큰돌쩌귀", "Large hinge", "/library/blocks/#keun-doljjeogwi"], "shinge": ["Jageun doljjeogwi", "작은돌쩌귀", "Small hinge", "/library/blocks/#jageun-doljjeogwi"], "punch": ["Momtong jireugi", "몸통지르기", "Middle punch", "/library/strikes/#momtong-jireugi"], "hpunch": ["Eolgul jireugi", "얼굴지르기", "High punch", "/library/strikes/#eolgul-jireugi"], "sidepunch": ["Yeop jireugi", "옆지르기", "Side punch", "/library/strikes/#yeop-jireugi"], "tpunch": ["Pyojeok jireugi", "표적지르기", "Target punch", "/library/strikes/#pyojeok-jireugi"], "uppercut": ["Dangkyeo teok jireugi", "당겨턱지르기", "Pulling uppercut", "/library/strikes/#dangkyeo-teok-jireugi"], "duppercut": ["Dujumeok jeocho jireugi", "두주먹젖혀지르기", "Double uppercut", "/library/strikes/#dujumeok-jeocho-jireugi"], "backfist": ["Deung jumeok ap chigi", "등주먹앞치기", "Back-fist strike", "/library/strikes/#deung-jumeok-ap-chigi"], "obackfist": ["Deung jumeok bakkat chigi", "등주먹바깥치기", "Outward back-fist", "/library/strikes/#deung-jumeok-bakkat-chigi"], "hammer": ["Mejumeok naeryeo chigi", "메주먹내려치기", "Hammer-fist strike", "/library/strikes/#mejumeok-naeryeo-chigi"], "hammerlow": ["Mejumeok arae pyojeok chigi", "메주먹아래표적치기", "Low hammer-fist target strike", "/library/strikes/#mejumeok-arae-pyojeok-chigi"], "neck": ["Sonnal mok chigi", "손날목치기", "Knife-hand neck strike", "/library/strikes/#sonnal-mok-chigi"], "jebi": ["Jebipoom mok chigi", "제비품목치기", "Swallow-form neck strike", "/library/strikes/#jebipoom-mok-chigi"], "ksstrike": ["Hansonnal bakkat chigi", "한손날바깥치기", "Knife-hand outer strike", "/library/strikes/#hansonnal-bakkat-chigi"], "spear": ["Pyeonsonkkeut sewo jjireugi", "편손끝세워찌르기", "Spear-hand thrust", "/library/strikes/#pyeonsonkkeut-sewo-jjireugi"], "lspear": ["Pyeonsonkkeut jeocho jjireugi", "편손끝젖혀찌르기", "Low spear hand, palm up", "/library/strikes/#pyeonsonkkeut-jeocho-jjireugi"], "palmjaw": ["Batangson teok chigi", "바탕손턱치기", "Palm-heel jaw strike", "/library/strikes/#batangson-teok-chigi"], "arc": ["Kaljaebi", "칼재비", "Arc-hand throat strike", "/library/strikes/#kaljaebi"], "elbow": ["Palkup dollyeo chigi", "팔굽돌려치기", "Elbow strike", "/library/strikes/#palkup-dollyeo-chigi"], "eltarget": ["Palkup pyojeok chigi", "팔굽표적치기", "Elbow target strike", "/library/strikes/#palkup-pyojeok-chigi"], "sideelbow": ["Palkup yeop chigi", "팔굽옆치기", "Side elbow strike", "/library/strikes/#palkup-yeop-chigi"], "tgrab": ["Sonnal eopeo japgi", "손날엎어잡기", "Twisting knife-hand grab", "/library/strikes/#sonnal-eopeo-japgi"], "kneebreak": ["Mureup kkeokgi", "무릎꺾기", "Knee break", "/library/strikes/#mureup-kkeokgi"], "kick": ["Ap chagi", "앞차기", "Front kick", "/library/kicks/#ap-chagi"], "jkick": ["Twimyeo ap chagi", "뛰어앞차기", "Jumping front kick", "/library/kicks/#twimyeo-ap-chagi"], "dskick": ["Geodeup yeop chagi", "거듭옆차기", "Double side kick", "/library/kicks/#geodeup-yeop-chagi"], "skick": ["Yeop chagi", "옆차기", "Side kick", "/library/kicks/#yeop-chagi"], "hskick": ["Yeop chagi · mejumeok bakkat chigi", "옆차기 · 메주먹바깥치기", "Side kick with hammer-fist strike", "/library/kicks/#yeop-chagi-mejumeok-bakkat-chigi"], "rkick": ["Dollyeo chagi", "돌려차기", "Roundhouse kick", "/library/kicks/#dollyeo-chagi"], "tkick": ["Pyojeok chagi", "표적차기", "Target kick", "/library/kicks/#pyojeok-chagi"], "knee": ["Mureup chigi", "무릎치기", "Knee strike", "/library/kicks/#mureup-chigi"]}, "s": {"ready": ["Naranhi seogi", "나란히서기", "Parallel stance", "/library/stances/#naranhi-seogi"], "close": ["Moa seogi", "모아서기", "Closed stance", "/library/stances/#moa-seogi"], "walk": ["Ap seogi", "앞서기", "Walking stance", "/library/stances/#ap-seogi"], "front": ["Ap kubi", "앞굽이", "Front stance", "/library/stances/#ap-kubi"], "back": ["Dwit kubi", "뒷굽이", "Back stance", "/library/stances/#dwit-kubi"], "tiger": ["Beom seogi", "범서기", "Tiger stance", "/library/stances/#beom-seogi"], "horse": ["Juchum seogi", "주춤서기", "Horse stance", "/library/stances/#juchum-seogi"], "cross": ["Kkoa seogi", "꼬아서기", "Cross stance", "/library/stances/#kkoa-seogi"], "crane": ["Hakdari seogi", "학다리서기", "Crane stance", "/library/stances/#hakdari-seogi"], "kick": ["Ap chagi", "앞차기", "Kicking", "/library/kicks/#ap-chagi"], "skick": ["Yeop chagi", "옆차기", "Kicking", "/library/kicks/#yeop-chagi"], "rkick": ["Dollyeo chagi", "돌려차기", "Kicking", "/library/kicks/#dollyeo-chagi"], "knee": ["Mureup chigi", "무릎치기", "Knee strike", "/library/kicks/#mureup-chigi"]}};
+/* Figure renderer, footprints and stance chips, shared by the form pages and the library.
+   Inlined by tools/build_form.py and tools/build_site.py; needs LIB (names and links from data/techniques.json). */
 const BELTS={white:"#f4f4f2",yellow:"#f2c230",green:"#2f8f4e",blue:"#2456c8",red:"#c8102e",black:"#17181c"};
 let belt="black";
 
-const T={
-  junbi:["Junbi","준비","Ready"],
-  low:["Arae makki","아래막기","Low block"],
-  punch:["Momtong jireugi","몸통지르기","Middle punch"],
-  inside:["Momtong an makki","몸통안막기","Inside middle block"],
-  high:["Eolgul makki","얼굴막기","High block"],
-  kick:["Ap chagi","앞차기","Front kick"],
-  hpunch:["Eolgul jireugi","얼굴지르기","High punch"],
-  outer:["Momtong bakkat makki","몸통바깥막기","Outer middle block"],
-  ksout:["Hansonnal bakkat makki","한손날바깥막기","Knife-hand outer block"],
-  ksblock:["Sonnal momtong makki","손날몸통막기","Double knife-hand block"],
-  spear:["Pyeonsonkkeut sewo jjireugi","편손끝세워찌르기","Spear-hand thrust"],
-  neck:["Sonnal mok chigi","손날목치기","Knife-hand neck strike"],
-  jebi:["Jebipoom mok chigi","제비품목치기","Swallow-form neck strike"],
-  backfist:["Deung jumeok ap chigi","등주먹앞치기","Back-fist strike"],
-  skick:["Yeop chagi","옆차기","Side kick"],
-  rkick:["Dollyeo chagi","돌려차기","Roundhouse kick"],
-  tkick:["Pyojeok chagi","표적차기","Target kick"],
-  jkick:["Twimyeo ap chagi","뛰어앞차기","Jumping front kick"],
-  knee:["Mureup chigi","무릎치기","Knee strike"],
-  hammer:["Mejumeok naeryeo chigi","메주먹내려치기","Hammer-fist strike"],
-  elbow:["Palkup dollyeo chigi","팔굽돌려치기","Elbow strike"],
-  eltarget:["Palkup pyojeok chigi","팔굽표적치기","Elbow target strike"],
-  houter:["Eolgul bakkat makki","얼굴바깥막기","High outer block"],
-  twist:["Hansonnal eolgul bitureo makki","한손날얼굴비틀어막기","Twisted knife-hand high block"],
-  spread:["Arae hecho makki","아래헤쳐막기","Low spread block"],
-  palm:["Batangson momtong an makki","바탕손몸통안막기","Palm inside block"],
-  apalm:["Geodeureo batangson momtong an makki","거들어바탕손몸통안막기","Augmented palm block"],
-  aouter:["Geodeureo momtong bakkat makki","거들어몸통바깥막기","Augmented outer block"],
-  alow:["Geodeureo arae makki","거들어아래막기","Augmented low block"],
-  xlow:["Eotgeoreo arae makki","엇걸어아래막기","Low X block"],
-  wedge:["Momtong hecho makki","몸통헤쳐막기","Middle wedge block"],
-  scissors:["Gawi makki","가위막기","Scissors block"],
-  mountain:["Oesanteul makki","외산틀막기","Single mountain block"],
-  uppercut:["Dangkyeo teok jireugi","당겨턱지르기","Pulling uppercut"],
-  duppercut:["Dujumeok jeocho jireugi","두주먹젖혀지르기","Double uppercut"],
-  cover:["Bojumeok","보주먹","Covered fist"],
-  sidepunch:["Yeop jireugi","옆지르기","Side punch"],
-  ksside:["Hansonnal yeop makki","한손날옆막기","Knife-hand side block"],
-  kslow:["Sonnal arae makki","손날아래막기","Low knife-hand block"],
-  obackfist:["Deung jumeok bakkat chigi","등주먹바깥치기","Outward back-fist"],
-  // black-belt forms
-  tongmil:["Tongmilgi junbi","통밀기 준비","Pushing-hands ready"],
-  dskick:["Geodeup yeop chagi","거듭옆차기","Double side kick"],
-  ksstrike:["Hansonnal bakkat chigi","한손날바깥치기","Knife-hand outer strike"],
-  arc:["Kaljaebi","칼재비","Arc-hand throat strike"],
-  kneebreak:["Mureup kkeokgi","무릎꺾기","Knee break"],
-  tpunch:["Pyojeok jireugi","표적지르기","Target punch"],
-  lspear:["Pyeonsonkkeut jeocho jjireugi","편손끝젖혀찌르기","Low spear hand, palm up"],
-  pressdown:["Batangson nulleo makki","바탕손눌러막기","Palm pressing block"],
-  sideelbow:["Palkup yeop chigi","팔굽옆치기","Side elbow strike"],
-  hammerlow:["Mejumeok arae pyojeok chigi","메주먹아래표적치기","Low hammer-fist target strike"],
-  palmjaw:["Batangson teok chigi","바탕손턱치기","Palm-heel jaw strike"],
-  ksin:["Hansonnal momtong an makki","한손날몸통안막기","Knife-hand inside block"],
-  keumgang:["Keumgang makki","금강막기","Diamond block"],
-  khinge:["Keun doljjeogwi","큰돌쩌귀","Large hinge"],
-  santeul:["Santeul makki","산틀막기","Mountain block"],
-  kspread:["Sonnal arae hecho makki","손날아래헤쳐막기","Knife-hand low spread block"],
-  tgrab:["Sonnal eopeo japgi","손날엎어잡기","Twisting knife-hand grab"],
-  kmomtong:["Keumgang momtong makki","금강몸통막기","Diamond middle block"],
-  shinge:["Jageun doljjeogwi","작은돌쩌귀","Small hinge"],
-  hskick:["Yeop chagi · mejumeok bakkat chigi","옆차기 · 메주먹바깥치기","Side kick with hammer-fist strike"]
-};
-const STANCE={
-  ready:["Naranhi seogi","나란히서기","Parallel stance"],
-  walk:["Ap seogi","앞서기","Walking stance"],
-  front:["Ap kubi","앞굽이","Front stance"],
-  kick:["Ap chagi","앞차기","Kicking"],
-  back:["Dwit kubi","뒷굽이","Back stance"],
-  skick:["Yeop chagi","옆차기","Kicking"],
-  rkick:["Dollyeo chagi","돌려차기","Kicking"],
-  knee:["Mureup chigi","무릎치기","Knee strike"],
-  tiger:["Beom seogi","범서기","Tiger stance"],
-  horse:["Juchum seogi","주춤서기","Horse stance"],
-  cross:["Kkoa seogi","꼬아서기","Cross stance"],
-  close:["Moa seogi","모아서기","Closed stance"],
-  crane:["Hakdari seogi","학다리서기","Crane stance"]
-};
+// labels from data/techniques.json: [romanised, Hangul, English]
+const T=Object.fromEntries(Object.entries(LIB.t).map(([k,v])=>[k,v.slice(0,3)]));
+const STANCE=Object.fromEntries(Object.entries(LIB.s).map(([k,v])=>[k,v.slice(0,3)]));
+// library links: /library/<family>/#<slug>
+const techHref=k=>LIB.t[k][3],stanceHref=k=>LIB.s[k][3];
 const DIRN={na:"na",ga:"ga",da1:"da¹",da2:"da²",da3:"da³",ra1:"ra¹",ra2:"ra²",ra3:"ra³"};
-
-// m: id, dir (line), face (side view R/L), view, stance, lead, arms, tech, side ("bandae"/"baro"), desc
-const M=FORM.moves;
 
 let gid=0;
 /* ---------- vector helpers ---------- */
@@ -868,6 +831,10 @@ function stanceLabel(m){
   return sideWord(m.lead)+({walk:" walking",front:" front",back:" back",tiger:" tiger",cross:" cross",crane:" crane"})[m.stance];
 }
 
+
+// m: id, dir (line), face (side view R/L), view, stance, lead, arms, tech, side ("bandae"/"baro"), desc
+const M=FORM.moves;
+
 /* ---------- build board ---------- */
 const byId=Object.fromEntries(M.map((m,i)=>[m.id,i]));
 function card(id){
@@ -952,8 +919,8 @@ rows.innerHTML=M.map((m,i)=>{
   const stTxt=["ready","horse","close"].includes(m.stance)?`${st[0]} <span class="ko">${st[1]}</span>`:
     ["kick","skick","rkick","knee"].includes(m.stance)?`${sideWord(m.lead)} leg <span class="ko">${st[1]}</span>`:
     `${sideWord(m.lead)} ${st[0].toLowerCase()} <span class="ko">${st[1]}</span>`;
-  return `<tr data-i="${i}"><td class="n">${m.id==="J"?"—":m.id}</td><td>${DIRN[m.dir]}</td><td>${stTxt}</td><td>${te[0]}${m.note?` (${m.note})`:""} <span class="ko">${te[1]}</span></td><td>${m.desc}</td></tr>`}).join("");
-rows.addEventListener("click",e=>{const r=e.target.closest("tr");if(r){stop();show(+r.dataset.i);(carouselOn()?track:document.getElementById("stage")).scrollIntoView({behavior:"smooth",block:"center"})}});
+  return `<tr data-i="${i}"><td class="n">${m.id==="J"?"—":m.id}</td><td>${DIRN[m.dir]}</td><td><a class="lib" href="${stanceHref(m.stance)}">${stTxt}</a></td><td><a class="lib" href="${techHref(m.tech)}">${te[0]}</a>${m.note?` (${m.note})`:""} <span class="ko">${te[1]}</span></td><td>${m.desc}</td></tr>`}).join("");
+rows.addEventListener("click",e=>{const r=e.target.closest("tr");if(r&&!e.target.closest("a")){stop();show(+r.dataset.i);(carouselOn()?track:document.getElementById("stage")).scrollIntoView({behavior:"smooth",block:"center"})}});
 
 /* mini floor map for the carousel: the 王 line with every position on it */
 const POS=FORM.pos;
@@ -973,9 +940,9 @@ function slide(i){
   return`<div class="slide" role="group" aria-roledescription="slide" aria-label="${m.id==="J"?"Ready":"Move "+m.id}, ${i+1} of ${M.length}"><div class="sc">
     <div class="sc-head"><div class="sc-no">${m.id==="J"?"READY":"MOVE"} · FACING ${DIRN[m.dir].toUpperCase()}<b>${m.id==="J"?"준비":m.id}</b></div>${minimap(i)}</div>
     <div class="sc-fig">${figure(m)}${feet(m)}</div>
-    <h3>${te[0]} <span>${te[1]}</span></h3>
+    <h3><a class="lib" href="${techHref(m.tech)}">${te[0]}</a> <span>${te[1]}</span></h3>
     <div class="en">${te[2]}${m.note?" · "+m.note:""}</div>
-    <div class="row">${chip(m)}<span class="ko" style="color:var(--muted);font-size:13px">${st[1]}</span>${m.kihap?'<span class="kh" style="margin:0">기합 KIHAP</span>':""}</div>
+    <div class="row"><a class="chiplink" href="${stanceHref(m.stance)}" aria-label="${st[2]}: stance details">${chip(m)}</a><span class="ko" style="color:var(--muted);font-size:13px">${st[1]}</span>${m.kihap?'<span class="kh" style="margin:0">기합 KIHAP</span>':""}</div>
     <p>${m.desc}</p>
   </div></div>`;
 }
@@ -1009,12 +976,13 @@ function show(i,src){
   document.getElementById("stage").innerHTML=figure(m)+feet(m);
   document.getElementById("kicker").textContent=(m.id==="J"?"READY":"MOVE "+m.id)+"  ·  FACING "+DIRN[m.dir].toUpperCase();
   const te=T[m.tech],st=STANCE[m.stance];
-  document.getElementById("name").innerHTML=`${te[0]} <span style="font-weight:400;color:var(--muted)">${te[1]}</span><small>${te[2]}${m.note?" · "+m.note:""}</small>`;
+  document.getElementById("name").innerHTML=`<a class="lib" href="${techHref(m.tech)}">${te[0]}</a> <span style="font-weight:400;color:var(--muted)">${te[1]}</span><small>${te[2]}${m.note?" · "+m.note:""}</small>`;
   document.getElementById("facts").innerHTML=
-    `<div><small>Stance</small><b>${["ready","kick","skick","rkick","knee","horse","close"].includes(m.stance)?st[0]:sideWord(m.lead)+" "+st[0].toLowerCase()} · ${st[1]}</b></div>`+
+    `<div><small>Stance</small><b><a class="lib" href="${stanceHref(m.stance)}">${["ready","kick","skick","rkick","knee","horse","close"].includes(m.stance)?st[0]:sideWord(m.lead)+" "+st[0].toLowerCase()}</a> · ${st[1]}</b></div>`+
     (m.hand?`<div><small>${m.foot?"Kicking leg":"Hand"}</small><b>${sideWord(m.hand)}</b></div>`:"")+
     `<div><small>Line</small><b>${DIRN[m.dir]}</b></div>`+(m.kihap?`<div><small>Shout</small><b style="color:var(--fire)">Kihap 기합</b></div>`:"");
   document.getElementById("desc").textContent=m.desc;
+  document.getElementById("more").href=techHref(m.tech);
   document.getElementById("bar").style.width=(cur/(M.length-1)*100)+"%";
 }
 function stop(){clearInterval(timer);timer=null;["play","mplay"].forEach(id=>document.getElementById(id).textContent="Play the form")}
@@ -1040,7 +1008,13 @@ document.getElementById("next").addEventListener("click",()=>{stop();show(cur+1)
 document.addEventListener("keydown",e=>{if(e.target.closest("input,textarea"))return;if(e.key==="ArrowRight"){stop();show(cur+1)}if(e.key==="ArrowLeft"){stop();show(cur-1)}});
 window.addEventListener("resize",()=>{placeRail();progScroll=true;track.scrollLeft=cur*track.clientWidth;setTimeout(()=>progScroll=false,100)});
 document.fonts&&document.fonts.ready.then(placeRail);
+// deep links from the technique library: /taegeuk/1/#move-8-2 opens that move
+function fromHash(){const h=location.hash.match(/^#move-(.+)$/),i=h?byId[decodeURIComponent(h[1])]:undefined;
+  if(i===undefined)return false;stop();show(i);
+  if(!carouselOn())document.querySelector(".study").scrollIntoView({block:"center"});return true}
+window.addEventListener("hashchange",fromHash);
 build();
+fromHash();
 })();
 </script>
 

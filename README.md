@@ -6,17 +6,26 @@ Modern, mobile-friendly diagrams of the Kukkiwon poomsae. Each form keeps its or
 
 ```
 site/                     ← deploy this folder (the publish directory)
-  index.html              forms index: Taegeuk 1–8 and the black-belt forms
+  index.html              landing page (with About)
+  forms/                  forms index: Taegeuk 1–8 and the black-belt forms
+  how-to-read/            guide to the diagram conventions
+  library/                technique library: stances, blocks, strikes, kicks, hands-feet (generated)
   taegeuk/1/ … /8/        generated form pages + their 2-page print PDFs
   koryo/ keumgang/ taebaek/  black-belt form pages + print PDFs
   _redirects              /go/ short links used by printed QR codes (generated)
 forms/                    one JSON file of data per form
+data/techniques.json      the technique library and every label on the form pages
+data/catalog.json         every form, in teaching order (drives the index, landing page and progress meter)
 templates/form.html       the shared form page template
+templates/figure.js       figure renderer, footprints and chips (form pages + library)
+templates/base.css        tokens, nav, footer and chips shared by every page
 tools/
-  build_form.py           builds pages, PDFs (--print), QR check, _redirects
+  build_form.py           builds pages, PDFs (--print), QR check, _redirects, then build_site.py
+  build_site.py           landing, forms index, how-to-read and library pages
+  sitekit.py              shared nav/footer/data helpers for both builders
   build_print.py          the 2-page print sheet
   deploy_aws.py           deploys site/ to AWS (stack, upload, cache invalidation)
-  check/                  screenshots for review: shot.py (board / phone), figs.py (enlarged poses) -> shots/
+  check/                  screenshots for review: shot.py (board / phone), figs.py (enlarged poses), pages.py (site pages) -> shots/
   authoring/              scripts that wrote some forms/*.json (reference only; re-running overwrites)
 infra/aws/                CloudFormation stack (S3, CloudFront, ACM, Route 53), viewer-request function, deployer IAM policy
 infra/route53/            DNS records kept outside the stack (no-mail MX/SPF/DMARC)
@@ -58,7 +67,7 @@ python3 tools/build_form.py forms/taegeuk-2.json --print   # one form
 python3 tools/build_form.py --all --print                   # every form
 ```
 
-Pages are generated from `templates/form.html` + `forms/*.json`; don't edit `site/*/index.html` by hand. `--print` also builds the PDF and decodes every QR code in it. See `CLAUDE.md` for the full conventions.
+Pages are generated from `templates/` + `data/` + `forms/*.json`; don't edit anything in `site/` by hand. `python3 tools/build_site.py` rebuilds just the non-form pages. `--print` also builds the PDF and decodes every QR code in it. See `CLAUDE.md` for the full conventions.
 
 ## Sources
 

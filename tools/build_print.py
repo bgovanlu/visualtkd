@@ -39,7 +39,8 @@ css = f"""<style>
 *{{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 body{{background:#fff}}
 .wrap{{max-width:none;padding:0;gap:14px}}
-.actions,.mtoggle,.carousel,.study,footer,header .meta{{display:none!important}}
+.actions,.mtoggle,.carousel,.study,footer,header .meta,.sitenav{{display:none!important}}
+a.lib{{text-decoration:none}}
 .scroller{{overflow:visible}}
 .fig .glow{{display:none}}
 .seq{{break-before:page}}
@@ -75,6 +76,8 @@ const FORM_QR={form_qr!r};
 const REF_QRS={ref_qrs!r};
 addEventListener("load",()=>{{
   document.querySelectorAll(".fig.on").forEach(e=>e.classList.remove("on"));
+  // site links would print as dead file:// links: keep the text, drop the link
+  document.querySelectorAll("a.lib").forEach(e=>e.removeAttribute("href"));
   const n=document.getElementById("nBelt");
   n.innerHTML='<h3>Practice notes</h3><div class="ruled"><i></i><i></i><i></i><i></i></div>';
   const scan=`<div class="scan">${{FORM_QR}}<p><b>Scan to practise</b>Step-by-step on your phone<br><code>{short}</code></p></div>`;

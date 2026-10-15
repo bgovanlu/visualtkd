@@ -1,14 +1,19 @@
 # visualtkd.com — working conventions
 
-Modern diagrams of the Kukkiwon poomsae (Taegeuk 1–8 and the black-belt forms): one page per form, a two-page print sheet per form, and a forms index. Read this before adding or changing a form.
+Modern diagrams of the Kukkiwon poomsae (Taegeuk 1–8 and the black-belt forms): one page per form, a two-page print sheet per form, a forms index, a landing page, a how-to-read guide and a technique library. Read this before adding or changing a form.
 
 ## How a form is built
 
-Every form page is **generated**; never hand-edit `site/<form>/index.html`.
+Every page is **generated**; never hand-edit anything under `site/`.
 
-- `templates/form.html` — the one page template (layout, figure renderer, carousel, print hooks). Change shared behaviour here.
+- `templates/form.html` — the form page template (layout, board, carousel, study panel, table, print hooks). Change shared form-page behaviour here.
+- `templates/figure.js` — the figure renderer, footprints and stance chips (`skel()`, `draw()`, `feet()`, `chip()`), inlined into form pages and the library/how-to-read pages.
+- `templates/base.css` — colour tokens, type, site nav, footer and chip styles shared by every page.
+- `data/techniques.json` — the technique library: names (romanised, Hangul, English), family, surface, height and description for every `tech` and `stance` key. The form pages read their labels from here.
+- `data/catalog.json` — every form the site will cover, in teaching order; a form is published once its `forms/*.json` exists.
 - `forms/<form>.json` — everything specific to one form: moves, floor-plan layout, minimap positions, trigram (Taegeuk) or Hanja `symbol` (black-belt forms), optional `floor` shape, notes, references.
-- `tools/build_form.py` — renders template + data into `site/<slug>/index.html`, builds the print PDF with `--print`, decodes every QR in that PDF, and regenerates `site/_redirects`.
+- `tools/build_form.py` — renders template + data into `site/<slug>/index.html`, builds the print PDF with `--print`, decodes every QR in that PDF, regenerates `site/_redirects`, then runs `build_site.py`.
+- `tools/build_site.py` — the other pages: `/` (landing + About), `/forms/`, `/how-to-read/`, `/library/` and `/library/<family>/`. "Appears in" lists and counts are computed from the forms.
 
 ```
 python3 tools/build_form.py forms/taegeuk-2.json --print     # one form
@@ -17,7 +22,7 @@ python3 tools/build_form.py --all --print                     # everything (afte
 
 Setup: `cd tools && npm install && pip install -r requirements.txt && python -m playwright install chromium`. The PDF needs `pdftoppm` (poppler) and the system font Noto Serif CJK KR.
 
-After building a new form: set its `url` in `FORMS` (Taegeuk) or `BB` (black-belt forms) in `site/index.html`. This flips its card to "Open" and moves the progress meter.
+A new form is picked up automatically: once `forms/<form>.json` exists for a slug in `data/catalog.json`, its card opens, the progress meter moves and the library lists its moves. Check the pages with `tools/check/pages.py` (desktop + phone screenshots through a local server; reports script errors and phone overflow).
 
 ## Review list
 
@@ -45,7 +50,7 @@ After building a new form: set its `url` in `FORMS` (Taegeuk) or `BB` (black-bel
 - `arms`: per hand. Fist: `low`, `punch`, `hpunch`, `inside`, `outer`, `high`, `backfist`, `guard`, `junbi`. Open hand (drawn flat): `ksout` (single knife-hand outer block), `ksblock` + `ksguard` (double knife-hand block: blocking hand + guarding hand), `spear` + `press` (spear-hand thrust + pressing hand under the elbow), `neck` (knife-hand neck strike), `khigh` (knife-hand high block; with `neck` = swallow-form), `twist` (twisted knife-hand high block), `palm` (palm inside block), `kslow` (low knife-hand block), `ksside` (knife-hand side block), `eltarget` / `grab` (open target or pulling hand). More fists: `hammer`, `elbow`, `houter` (high outer block), `spread`, `xlow` (low X block), `wedge`, `uppercut`, `cover` (covered fist), `sidepunch`, `assist` (supporting fist under the blocking arm). Combined techniques are built per hand: scissors = `outer` + `low`, mountain = `houter` + `low`. Unlisted hands are chambered at the hip.
   Black-belt forms add: `tongmil` (pushing-hands ready), `ksstrike` (knife-hand outer strike), `arc` (kaljaebi), `kneebreak` + `hold`, `target` + `crosspunch` (target punch), `lspear` + `shoulder` (low spear hand, palm up), `pressdown` (palm pressing block), `sideelbow` + `elbowpush`, `hammerlow` + `palmlow`, `palmjaw`, `ksin` (knife-hand inside block), `hingepunch` + `sideelbow` (large hinge), `hingetop` (small hinge, other fist chambered), `hammerout`, `kspread`, `tgrab` (twisting grab). Diamond block = `high` + `low`; diamond middle block = `outer` + `high`; santeul (mountain) = `houter` + `houter`.
   Strikes that come straight at the viewer in front view are listed in `TOWARD` in the template and drawn foreshortened.
-- `tech` keys the label table `T` in the template (every key above plus combined names such as `scissors`, `mountain`, `duppercut`, `apalm`, `aouter`, `alow`, `obackfist`, `tkick`, `jkick`); add new techniques there.
+- `tech` keys the technique library `data/techniques.json` (every key above plus combined names such as `scissors`, `mountain`, `duppercut`, `apalm`, `aouter`, `alow`, `obackfist`, `tkick`, `jkick`). A new technique needs an entry there (family, slug, names, surface, height, a description in our own words); **the build fails if a move uses a technique or stance with no entry.**
 - Steps with several techniques (double punch, block then punch) get sub-numbers like kicks: `17-1` block, `17-2` punch, `17-3` punch. One figure per count.
 - `note`: `bandae` (punch hand = lead foot) or `baro` (opposite hand). `kihap: true` on the shouting move.
 - `desc`: one plain instruction sentence: turn and direction, stance, technique.
@@ -79,6 +84,8 @@ After building a new form: set its `url` in `FORMS` (Taegeuk) or `BB` (black-bel
 - Form pages: `visualtkd.com/taegeuk/1` … `/taegeuk/8`; black-belt forms by name: `/koryo`, `/keumgang`, `/taebaek` (later `/pyongwon` …). **Never rename a published path**; printed QR codes point there.
 - References never link out directly from paper. Each has a short link `visualtkd.com/go/<name>` (e.g. `kukkiwon-t2`, `video-t2`) defined by the form's `refs[].go`; `site/_redirects` is generated from all forms as 302 redirects. If a destination moves, fix the JSON `url` and rebuild — never reprint.
 - One `go` name must always mean one URL (the build fails on conflicts).
+- Library: `/library/<family>/#<slug>` with families `stances`, `blocks`, `strikes`, `kicks`, `hands-feet`. Slugs are the romanised name (`ap-kubi`, `arae-makki`, `sonnal`) and must never change once published. Moves deep-link as `/<form>/#move-<id>` (e.g. `/taegeuk/8/#move-19-2`).
+- `/` is the landing page and `/forms/` the forms index; printed QR codes only use form paths and `/go/`.
 
 ## References
 

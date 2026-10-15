@@ -3,16 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>visualtkd · Taekwondo poomsae, one move at a time</title>
+<meta name="description" content="Modern diagrams of the Kukkiwon taekwondo poomsae: floor plans, move-by-move cards for phones, a technique library and two-page print sheets.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 rx=%223%22 fill=%22%231f3a8a%22/%3E%3Cpath d=%22M3 4h10M3 8h10M3 12h10%22 stroke=%22white%22 stroke-width=%221.6%22/%3E%3C/svg%3E">
-<style>body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
-</head>
-<body>
-<title>Taegeuk Poomsae</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700;900&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700;900&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
-/* Layout: an index of the eight Taegeuk forms as trigram cards in teaching order, then the black-belt forms; the trigram is each card's mark because it is what each form is named for. */
+body{margin:0}[hidden]{display:none!important}img{max-width:100%}
+/* Shared by every page (form pages, landing, forms index, library, how-to-read): colour tokens, type, site nav and footer.
+   Inlined by tools/build_form.py and tools/build_site.py. */
 :root{
   --bg:#edf0f5; --surface:#ffffff; --mat:#e2e7ef; --ink:#141a2b; --muted:#5a6377; --line:#c3cbd8;
   --heaven:#1f3a8a; --fire:#c8102e;
@@ -28,120 +26,136 @@
   --heaven:#87a3ff; --fire:#ff5a6e; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
-.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:32px 56px;display:flex;flex-direction:column;gap:28px}
-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px 32px;align-items:end}
-.eyebrow{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.1em;color:var(--fire)}
-h1{margin:4px 0 0;font-family:var(--f-display);font-weight:900;font-size:clamp(38px,6vw,64px);line-height:1;letter-spacing:-.01em}
-h1 span{font-weight:700;color:var(--muted);font-size:.55em;margin-left:.3em}
-.lede{margin:12px 0 0;max-width:62ch;color:var(--muted);font-size:16px}
-.status{display:flex;flex-direction:column;gap:8px;min-width:220px}
-.status b{font-family:var(--f-mono);font-weight:500;font-size:26px;font-variant-numeric:tabular-nums}
-.status small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.meter{display:grid;grid-template-columns:repeat(17,1fr);gap:4px}
-.meter i{height:6px;border-radius:3px;background:var(--line)}
-.meter i.done{background:var(--fire)}
 
-.grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
-.card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:12px;min-height:236px;color:inherit;text-decoration:none;transition:border-color .2s,transform .2s}
-a.card:hover{border-color:var(--heaven);transform:translateY(-2px)}
-a.card:focus-visible{outline:2px solid var(--heaven);outline-offset:3px}
-.card.soon{background:transparent;border-style:dashed}
-.top{display:flex;justify-content:space-between;align-items:flex-start}
-.num{font-family:var(--f-display);font-weight:900;font-size:44px;line-height:.9}
-.card.soon .num{color:var(--muted)}
-.tri{display:flex;flex-direction:column;gap:6px;width:58px;padding-top:4px}
-.tri .bar{display:flex;gap:8px;height:8px}
-.tri .bar i{flex:1;background:var(--heaven);border-radius:2px}
-.card.soon .tri .bar i{background:var(--muted);opacity:.55}
-.name{display:flex;flex-direction:column;gap:2px}
-.name h2{margin:0;font-size:20px;font-weight:700;letter-spacing:.01em}
-.name .ko{font-family:var(--f-display);font-weight:700;color:var(--muted);font-size:15px}
-.mean{margin:0;font-size:14px;color:var(--muted)}
-.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px}
-.foot .mv{font-family:var(--f-mono);color:var(--muted);font-variant-numeric:tabular-nums}
-.pill{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:99px}
+/* Site nav: the same bar on every page */
+.sitenav{display:flex;align-items:center;justify-content:space-between;gap:8px 20px;flex-wrap:wrap;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.sitenav .brand{display:inline-flex;align-items:center;gap:9px;font-family:var(--f-mono);font-size:14px;font-weight:500;letter-spacing:.04em;color:var(--ink);text-decoration:none}
+.sitenav .brand svg{width:22px;height:22px;flex:none}
+.sitenav ul{list-style:none;margin:0;padding:0;display:flex;gap:2px 4px;flex-wrap:wrap}
+.sitenav ul a{display:block;font-size:14px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 10px;border-radius:99px}
+.sitenav ul a:hover{color:var(--ink);background:var(--mat)}
+.sitenav ul a[aria-current="page"]{color:var(--ink);background:var(--mat)}
+.sitenav a:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+@media (max-width:480px){.sitenav ul a{padding:4px 7px;font-size:13.5px}}
+
+/* Site footer */
+.sitefoot{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.sitefoot a{color:var(--heaven)}
+.sitefoot p{margin:0;max-width:72ch}
+
+/* Stance chips (form pages, library, how-to-read): walking outlined, front filled, back double, kick dashed, crane dotted blue */
+.chip{font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:99px;border:1.5px solid var(--muted);color:var(--muted);white-space:nowrap;display:inline-flex;gap:5px;align-items:center}
+.chip.front{background:var(--ink);border-color:var(--ink);color:var(--surface)}
+.chip.kick{border-style:dashed}
+.chip.back{border:3px double var(--ink);color:var(--ink)}
+.chip.tiger{border-style:dotted;border-width:2px;color:var(--ink)}
+.chip.horse{background:var(--mat);border-color:var(--ink);color:var(--ink)}
+.chip.ready{border-color:var(--line)}
+.chip.crane{border-style:dotted;border-width:2px;border-color:var(--heaven);color:var(--heaven)}
+
+/* library links inside form pages and the library itself: quiet until hovered */
+a.lib{color:inherit;text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent);text-decoration-thickness:1px;text-underline-offset:3px}
+a.lib:hover{color:var(--heaven);text-decoration-color:currentColor}
+a.lib:focus-visible{outline:2px solid var(--heaven);outline-offset:2px;border-radius:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:28px 56px;display:flex;flex-direction:column;gap:30px}
+.eyebrow{font-family:var(--f-mono);font-size:12.5px;letter-spacing:.1em;color:var(--fire);text-transform:uppercase}
+h1{margin:4px 0 0;font-family:var(--f-display);font-weight:900;font-size:clamp(36px,6vw,60px);line-height:1.05;letter-spacing:-.01em}
+h1 span{font-weight:700;color:var(--muted);font-size:.55em;margin-left:.3em}
+h2{margin:0 0 10px;font-family:var(--f-display);font-weight:700;font-size:26px;line-height:1.2}
+h2 span{font-weight:700;color:var(--muted);font-size:.7em;margin-left:.3em}
+.lede{margin:12px 0 0;max-width:64ch;color:var(--muted);font-size:16.5px}
+section > p.intro{margin:0 0 16px;color:var(--muted);max-width:68ch}
+.pill{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:99px;white-space:nowrap}
 .pill.live{background:var(--ink);color:var(--surface)}
-.pill.next{border:1.5px solid var(--fire);color:var(--fire)}
 .pill.plan{border:1.5px solid var(--line);color:var(--muted)}
 
-section h3{margin:0 0 6px;font-family:var(--f-display);font-weight:700;font-size:24px}
-section > p{margin:0 0 14px;color:var(--muted);max-width:66ch}
-.bb{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}
-.bb li{border:1px dashed var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column}
-.bb b{font-weight:600}
-.bb span{font-size:12.5px;color:var(--muted)}
-.bb a{display:flex;flex-direction:column;gap:2px;color:inherit;text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:10px 12px;margin:-11px -13px;transition:border-color .2s}
-.bb a:hover{border-color:var(--ink)}
-.bb a:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
-.bb li.live{border-style:solid;border-color:transparent}
-.bb .hj{font-family:var(--f-display);font-weight:900;color:var(--heaven);font-size:15px}
-.bb .row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:4px}
-.bb .ko{font-family:var(--f-display);font-weight:700}
-footer{font-size:13px;color:var(--muted);max-width:72ch}
-footer a{color:var(--heaven)}
-@media (max-width:640px){header{grid-template-columns:1fr}.card{min-height:0}}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px 40px;align-items:center;padding-top:8px}
+.hero h1{font-size:clamp(40px,6.4vw,68px)}
+.hero .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;text-decoration:none;color:var(--ink);padding:10px 18px;border-radius:99px;border:1px solid var(--line);background:var(--surface)}
+.btn:hover{border-color:var(--ink)}
+.btn.primary{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.btn:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+.board{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px}
+.wang{width:100%;height:auto;display:block}
+.wang .ln{stroke:var(--line);stroke-width:2.4;stroke-linecap:round;fill:none}
+.wang .trail{stroke:var(--fire);stroke-width:1.1;fill:none;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 6s ease-in-out .4s forwards}
+.wang .dots circle{fill:var(--heaven)}
+.wang .start{fill:var(--fire)}
+.wang text{font-family:var(--f-mono);font-size:3.6px;fill:var(--heaven);letter-spacing:.1em}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.wang .trail{animation:none;stroke-dashoffset:0}}
+.board figcaption{font-size:12.5px;color:var(--muted);margin-top:8px}
+.start3{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.start3 a{display:flex;flex-direction:column;gap:8px;height:100%;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;color:inherit;text-decoration:none;transition:border-color .2s,transform .2s}
+.start3 a:hover{border-color:var(--heaven);transform:translateY(-2px)}
+.start3 a:focus-visible{outline:2px solid var(--heaven);outline-offset:3px}
+.start3 .k{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;color:var(--fire);text-transform:uppercase}
+.start3 h3{margin:0;font-family:var(--f-display);font-weight:700;font-size:22px}
+.start3 h3 span{color:var(--muted);font-size:.7em;margin-left:.25em}
+.start3 p{margin:0;color:var(--muted);font-size:14.5px}
+.start3 .go{margin-top:auto;font-weight:600;font-size:14px;color:var(--heaven)}
+.progress{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 24px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.progress b{font-family:var(--f-mono);font-weight:500;font-size:26px;font-variant-numeric:tabular-nums}
+.progress small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.meter{display:grid;grid-template-columns:repeat(17,1fr);gap:4px}
+.meter i{height:8px;border-radius:3px;background:var(--line)}
+.meter i.done{background:var(--fire)}
+.progress p{grid-column:1/-1;margin:0;font-size:14px;color:var(--muted)}
+.about{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px 36px}
+.about h3{margin:0 0 6px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+.about p{margin:0 0 10px;color:var(--muted);font-size:15px;max-width:60ch}
+.about b{color:var(--ink);font-weight:600}
+@media (max-width:760px){.hero{grid-template-columns:1fr}}
+
 </style>
-
+</head>
+<body>
 <div class="wrap">
-  <header>
-    <div>
-      <div class="eyebrow">KUKKIWON POOMSAE · GUP FORMS</div>
-      <h1>Taegeuk <span>태극</span></h1>
-      <p class="lede">The eight Taegeuk forms, each named for one of the eight trigrams, and the black-belt forms. Every form gets the same treatment: the floor plan on its line, move-by-move cards on phones, the full sequence, and a two-page print sheet.</p>
-    </div>
-    <div class="status" aria-label="Progress">
-      <small>Forms published</small>
-      <b id="count">1 / 8</b>
-      <div class="meter" id="meter"></div>
-    </div>
-  </header>
+<nav class="sitenav" aria-label="Site"><a class="brand" href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="var(--heaven)"/><path d="M5 6h14M6.5 12h11M5 18h14M12 6v12" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>visualtkd</a><ul><li><a href="/forms/">Forms</a></li><li><a href="/library/">Library</a></li><li><a href="/how-to-read/">How to read</a></li><li><a href="/#about">About</a></li></ul></nav>
+<section class="hero">
+  <div>
+    <div class="eyebrow">Kukkiwon poomsae, drawn clearly</div>
+    <h1>Every form, one move at a time</h1>
+    <p class="lede">Modern diagrams of the taekwondo poomsae. Each form is laid out on its own floor line, steps through move by move on your phone, links every technique to a plain explanation, and prints as a two-page sheet for the dojang.</p>
+    <div class="cta"><a class="btn primary" href="/forms/">Browse the forms</a><a class="btn" href="/taegeuk/1/">Start with Taegeuk Il Jang</a></div>
+  </div>
+  <figure class="board" style="margin:0"><svg class="wang" viewBox="-6 -6 112 72" role="img" aria-label="The 王 floor line of Taegeuk Il Jang with the path of the form drawn on it">
+  <path d="M4 8H96M4 30H96M4 52H96M50 8V52" class="ln"/>
+  <path d="M50 8 L70 8 L90 8 L30 8 L10 8 L50 19 L50 30 L30 30 L10 30 L70 30 L90 30 L50 41 L50 52 L70 52 L80 52 L90 52 L30 52 L20 52 L10 52 L50 41 L50 19" class="trail" pathLength="1"/>
+  <g class="dots"><circle cx="90" cy="30" r="1.6"/><circle cx="50" cy="52" r="1.6"/><circle cx="30" cy="52" r="1.6"/><circle cx="10" cy="52" r="1.6"/><circle cx="70" cy="30" r="1.6"/><circle cx="90" cy="8" r="1.6"/><circle cx="50" cy="30" r="1.6"/><circle cx="30" cy="30" r="1.6"/><circle cx="10" cy="30" r="1.6"/><circle cx="80" cy="52" r="1.6"/><circle cx="70" cy="8" r="1.6"/><circle cx="50" cy="8" r="1.6"/><circle cx="30" cy="8" r="1.6"/><circle cx="10" cy="8" r="1.6"/><circle cx="20" cy="52" r="1.6"/><circle cx="50" cy="41" r="1.6"/><circle cx="90" cy="52" r="1.6"/><circle cx="50" cy="19" r="1.6"/><circle cx="70" cy="52" r="1.6"/></g>
+  <circle cx="50" cy="8" r="3.2" class="start"/>
+  <text x="50" y="1" text-anchor="middle">NA · 나</text><text x="50" y="63" text-anchor="middle">GA · 가</text>
+</svg><figcaption>Taegeuk Il Jang on its 王 floor line: start at na, finish where you began.</figcaption></figure>
+</section>
 
-  <ul class="grid" id="forms"></ul>
+<section aria-labelledby="start"><h2 id="start">Start here</h2>
+<ul class="start3">
+  <li><a href="/forms/"><span class="k">11 of 17 forms</span><h3>Forms <span>품새</span></h3><p>Taegeuk Il Jang to Pal Jang and the black-belt forms, each with its floor plan, move-by-move cards, full sequence and print sheet.</p><span class="go">All forms →</span></a></li>
+  <li><a href="/library/"><span class="k">9 stances · 60 techniques</span><h3>Technique library <span>기술</span></h3><p>Every stance, block, strike and kick used in the forms: how it is done, the hand or foot surface it uses, and every move where it appears.</p><span class="go">Open the library →</span></a></li>
+  <li><a href="/how-to-read/"><span class="k">Two-minute read</span><h3>How to read a diagram</h3><p>The floor line, which way the figures face, the footprints and stance chips, move numbers like 8-1 and 8-2, and how the print sheets work.</p><span class="go">Read the guide →</span></a></li>
+</ul></section>
 
-  <section>
-    <h3>Black-belt forms</h3>
-    <p>Yudanja poomsae, drawn the same way, each on its own floor line.</p>
-    <ul class="bb" id="bb"></ul>
-  </section>
+<section class="progress" aria-label="Progress">
+  <div><small>Forms published</small><b>11 / 17</b></div><div class="meter"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+  <p>All eight Taegeuk forms and the first three black-belt forms are up. Pyongwon, Sipjin, Jitae, Cheonkwon, Hansu and Ilyeo follow.</p>
+</section>
 
-  <footer>Form names, trigram meanings and move counts follow Kukkiwon. See the <a href="https://www.kukkiwon.or.kr/eng/board/list?boardManagementNo=55&amp;menuLevel=3&amp;menuNo=72" target="_blank" rel="noopener">Kukkiwon poomsae index ↗</a> for the official descriptions.</footer>
+<section id="about" aria-labelledby="about-h"><h2 id="about-h">About</h2>
+<div class="about">
+  <div><h3>What this is</h3>
+    <p>visualtkd is a study aid for the official Kukkiwon poomsae. The old book diagrams are hard to read on a phone and harder to teach from; these keep the original floor lines but redraw every move with a consistent figure, footprints and plain instructions.</p>
+    <p>It is for students learning a form, and for instructors who want a clean sheet to hand out.</p></div>
+  <div><h3>Sources</h3>
+    <p>Sequences are checked against the <b>Kukkiwon</b> page for each form and at least one published move chart. Where sources disagree, or no source settles a detail, the choice is written down for review rather than decided silently.</p>
+    <p>Every form page links to its official references. visualtkd is independent and is not affiliated with Kukkiwon or World Taekwondo.</p></div>
+  <div><h3>Print sheets and QR codes</h3>
+    <p>Each form prints as two US Letter pages: the floor plan, then the full sequence and references. A QR code on each page opens the form on your phone, and every reference has its own short <b>visualtkd.com/go/</b> link, so printed sheets keep working even when a video or page moves.</p></div>
+</div></section>
+<footer class="sitefoot"><p>Form names, sequences and counts follow Kukkiwon. Descriptions are our own words; see each form&rsquo;s official references for the source text.</p><p><a href="/">visualtkd.com</a></p></footer>
 </div>
-
-<script>
-(function(){
-// lines listed top to bottom: 1 = solid, 0 = broken
-const FORMS=[
-  {n:1,rom:"Il Jang",ko:"태극 1장",tri:"Geon",triKo:"건",sym:"Heaven",mean:"Heaven and light; the beginning of all things.",lines:[1,1,1],moves:18,url:"/taegeuk/1/"},
-  {n:2,rom:"Ee Jang",ko:"태극 2장",tri:"Tae",triKo:"태",sym:"Lake",mean:"Joy; a calm mind that stays firm inside.",lines:[0,1,1],moves:18,url:"/taegeuk/2/"},
-  {n:3,rom:"Sam Jang",ko:"태극 3장",tri:"Ri",triKo:"리",sym:"Fire",mean:"Fire and sun; passion and enthusiasm.",lines:[1,0,1],moves:20,url:"/taegeuk/3/"},
-  {n:4,rom:"Sa Jang",ko:"태극 4장",tri:"Jin",triKo:"진",sym:"Thunder",mean:"Thunder; great power and dignity.",lines:[0,0,1],moves:20,url:"/taegeuk/4/"},
-  {n:5,rom:"Oh Jang",ko:"태극 5장",tri:"Seon",triKo:"손",sym:"Wind",mean:"Wind; gentle yet able to be mighty.",lines:[1,1,0],moves:20,url:"/taegeuk/5/"},
-  {n:6,rom:"Yuk Jang",ko:"태극 6장",tri:"Gam",triKo:"감",sym:"Water",mean:"Water; flowing past obstacles without losing course.",lines:[0,1,0],moves:19,url:"/taegeuk/6/"},
-  {n:7,rom:"Chil Jang",ko:"태극 7장",tri:"Gan",triKo:"간",sym:"Mountain",mean:"Mountain; stillness, and moving only when it is time.",lines:[1,0,0],moves:25,url:"/taegeuk/7/"},
-  {n:8,rom:"Pal Jang",ko:"태극 8장",tri:"Gon",triKo:"곤",sym:"Earth",mean:"Earth; the root and end of all things, completing the set.",lines:[0,0,0],moves:24,url:"/taegeuk/8/"}
-];
-// black-belt forms: name, Korean, Hanja, floor line, movements, page (set url when published)
-const BB=[["Koryo","고려","高麗","士",30,"/koryo/"],["Keumgang","금강","金剛","山",27,"/keumgang/"],["Taebaek","태백","太白","工",26,"/taebaek/"],
-  ["Pyongwon","평원"],["Sipjin","십진"],["Jitae","지태"],["Cheonkwon","천권"],["Hansu","한수"],["Ilyeo","일여"]];
-const all=[...FORMS.map(x=>!!x.url),...BB.map(x=>!!x[5])],live=all.filter(Boolean).length;
-document.getElementById("count").textContent=`${live} / ${all.length}`;
-document.getElementById("meter").innerHTML=all.map(d=>`<i class="${d?"done":""}"></i>`).join("");
-const tri=l=>`<div class="tri" aria-hidden="true">${l.map(s=>`<div class="bar">${s?"<i></i>":"<i></i><i></i>"}</div>`).join("")}</div>`;
-document.getElementById("forms").innerHTML=FORMS.map((x,i)=>{
-  const firstSoon=!x.url&&FORMS.slice(0,i).every(y=>y.url);
-  const pill=x.url?`<span class="pill live">Open</span>`:firstSoon?`<span class="pill next">Up next</span>`:`<span class="pill plan">Planned</span>`;
-  const inner=`<div class="top"><span class="num">${x.n}</span>${tri(x.lines)}</div>
-    <div class="name"><h2>${x.rom}</h2><span class="ko">${x.ko} · ${x.tri} ${x.triKo} · ${x.sym}</span></div>
-    <p class="mean">${x.mean}</p>
-    <div class="foot"><span class="mv">${x.moves} movements</span>${pill}</div>`;
-  return`<li>${x.url?`<a class="card" href="${x.url}" aria-label="Open Taegeuk ${x.rom}">${inner}</a>`:`<div class="card soon">${inner}</div>`}</li>`;
-}).join("");
-document.getElementById("bb").innerHTML=BB.map(([r,k,h,fl,mv,url])=>url?
-  `<li class="live"><a href="${url}" aria-label="Open ${r}"><b>${r} <span class="hj" lang="zh-Hant">${h}</span></b><span><span class="ko">${k}</span> · floor line ${fl}</span><span class="row"><span>${mv} movements</span><span class="pill live">Open</span></span></a></li>`:
-  `<li><b>${r}</b><span><span class="ko">${k}</span> · planned</span></li>`).join("");
-})();
-</script>
 
 </body>
 </html>
