@@ -67,3 +67,70 @@ The full prompts are stored with each job in Higgsfield (job IDs above). Image m
 1. Pick one or two directions (ideally the style of one with the posing of another).
 2. Generate a full model sheet for the chosen direction: ten stances × front, side and back views, plus fists and feet close-ups.
 3. Rebuild the SVG rig from it. The new skeleton gets hip and chest yaw, knee-direction control and a foot that is always drawn last in its leg. Then re-pose every move and regenerate all forms.
+
+---
+
+# Chosen: #10, realistic anatomical drawing. Model sheet v1 (15 October 2026)
+
+Brian picked #10. The sheet below was generated from it in 8 parts, each using image #10 as the reference so the character stays the same. Correct each part here before any of it is used on the poomsae sheets. A part that needs changes is regenerated with the correction added to its prompt, and gets a new version (v2, v3…) under the same number.
+
+Status key: **pending** = not reviewed · **ok** = approved · **fix** = needs regenerating (write what's wrong)
+
+## MS-1 · Basic stances: naranhi, moa, ap seogi (front / side / back) — pending
+[1d6df0e5](https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140706_1d6df0e5-a36e-47d8-999e-0e1153197f00.png)
+- [ ] Naranhi: feet parallel, one foot-width apart, legs straight
+- [ ] Moa: feet together, heels and toes touching
+- [ ] Ap seogi: one natural step, both legs straight, hips square, rear foot turned out slightly
+- Corrections:
+
+## MS-2 · Ap kubi, left foot forward (front / side / back / footprint) — pending
+[4e2fd5c1](https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140703_4e2fd5c1-9808-47b9-89dd-1be03be9f25d.png)
+- [ ] Rear leg straight, rear heel down, rear foot turned out about 30°
+- [ ] Front knee over the toes, shin vertical
+- [ ] Length about 1½ shoulder widths, width one fist; hips square
+- Corrections:
+
+## MS-3 · Dwit kubi, left foot forward (front / side / back / footprint) — pending
+[391d3663](https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140704_391d3663-f909-4ab2-9f98-8a550db3a562.png)
+- [ ] Hips and chest turned sideways (about 90° from the front foot)
+- [ ] Rear knee pushed out over the rear toes; about 70% of the weight on the rear leg
+- [ ] Heels on one line; rear foot turned 90° (an L)
+- [ ] Double knife-hand block reads correctly
+- Corrections:
+
+## MS-4 · Beom seogi, left foot forward (front / side / back / footprint) — pending
+[bafe3eb7](https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140704_bafe3eb7-39f0-4d90-92bf-661657b4728c.png)
+- [ ] Front foot on the ball, heel raised; almost all weight on the rear leg
+- [ ] About one foot-length between the feet
+- Corrections:
+
+## MS-5 · Juchum seogi and kkoa seogi (front / side / back) — pending
+[7e365688](https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140705_7e365688-d872-488a-ad38-a6c5bc21626c.png)
+- [ ] Horse stance: feet parallel and wide, knees out over the toes, thighs nearly level
+- [ ] Horse stance in profile: knees forward, shins near vertical
+- [ ] Cross stance: rear foot crossed behind, on the ball, beside the front heel
+- Corrections:
+
+## MS-6 · Hakdari seogi on the right leg (front / side / back) — pending
+[205afba2](https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140703_205afba2-835a-4af6-bd9b-f99200d44bb5.png)
+- [ ] Lifted sole against the inside of the standing knee; lifted knee turned out
+- [ ] Diamond block: right arm high, left arm low to the side; head turned left
+- Corrections:
+
+## MS-7 · Kicks: ap, yeop, dollyeo, mureup (side row, front row) — pending
+[3196b2a2](https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140707_3196b2a2-e1d7-4a89-a629-2b1a5913a59a.png)
+- [ ] Ap chagi: ball of the foot, toes pulled back
+- [ ] Yeop chagi: foot blade and heel, foot horizontal, body in line with the leg
+- [ ] Dollyeo chagi: instep, hips turned over, supporting foot pivoted
+- [ ] Front views read as kicks, not knee lifts (the problem in the current figure, issue #1)
+- Corrections:
+
+## MS-8 · Hands and feet close-ups — pending
+[b6833877](https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_140703_b6833877-949a-4156-8bfa-775b324abbf6.png)
+- [ ] Fist front / side / back: knuckle line, thumb wrapped
+- [ ] Knife hand, spear hand, palm heel, arc hand, back fist
+- [ ] Foot side / front / back / top; ball, blade, instep, heel
+- Corrections:
+
+### Still to draw after these are approved
+Arm techniques on the corrected stances (blocks, punches, strikes; one sheet per family), back-view kicks (issue #1), and 3/4 views if the side bars need them.
