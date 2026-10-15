@@ -127,6 +127,18 @@ svg.fw .tick{fill:var(--heaven)}
 #fwbox{width:100%;display:flex;justify-content:center}
 .fwctrl{width:100%;max-width:760px;display:flex;flex-direction:column;gap:10px}
 .fwcap{margin:0;font-size:15px;min-height:1.5em}.fwcap b{font-family:var(--f-mono);font-weight:500;color:var(--fire)}
+/* floor line section */
+.flplan{width:100%;max-width:860px;height:auto}
+.flplan .floor{stroke:var(--line);stroke-width:2.4;stroke-linecap:round;fill:none}
+.flplan .trail{fill:none;stroke:var(--fire);stroke-width:.9;stroke-linejoin:round;opacity:.45}
+.flplan .leg{fill:none;stroke:var(--fire);stroke-width:1.5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:fldraw .6s ease-out forwards}
+@keyframes fldraw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.flplan .leg{animation:none;stroke-dashoffset:0}}
+.flplan .dots circle{cursor:pointer}.flplan .been{fill:var(--heaven)}.flplan .todo{fill:var(--heaven);opacity:.25}
+.flplan .halo{fill:var(--fire);opacity:.18}.flplan .you{fill:var(--fire)}
+.flplan .face{stroke:var(--fire);stroke-width:1.6;stroke-linecap:round}
+.flplan text{font-family:var(--f-mono);font-size:3.6px;fill:var(--heaven);text-anchor:middle;letter-spacing:.1em}
+.flplan text.id{fill:var(--fire);font-size:4px;letter-spacing:0}
 /* View bar */
 .viewbar{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;margin-bottom:-10px}
 .vgroup{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
@@ -134,13 +146,14 @@ svg.fw .tick{fill:var(--heaven)}
 .viewbar .seg button{padding:4px 11px}
 @media (max-width:760px){.viewbar{gap:8px 14px;margin-bottom:-4px}.viewbar .seg button{padding:3px 9px;font-size:13px}.vgroup{gap:6px}.vlabel{font-size:10px}}
 .fwplan{width:100%;max-width:760px;height:auto;max-height:80vh}
-.fwplan .print{fill:var(--muted);opacity:.55;cursor:pointer}
+.fwplan .print{fill:var(--muted);opacity:.28;cursor:pointer}
 .fwplan .start{fill:var(--line);stroke:none}
-.fwplan .step{stroke:var(--muted);opacity:.6}
+.fwplan .step{stroke:var(--muted);opacity:.28}
 .fwplan .step.head{fill:var(--muted)}
 .fwplan .on .step{stroke:var(--fire);opacity:1}.fwplan .on .step.head{fill:var(--fire)}
 .fwplan .on .print{opacity:1}
-.fwplan .pivot{opacity:.6}
+.fwplan .pivot{opacity:.25}.fwplan .on .pivot{opacity:1}
+.fwplan .labels text{opacity:.55}.fwplan .labels text.on,.fwplan .labels text.stand{opacity:1}
 .fwplan .labels text{font-family:var(--f-mono);font-size:3.4px;fill:var(--muted);text-anchor:middle;cursor:pointer}
 .fwplan .labels text.on,.fwplan .labels text.stand{font-size:4.6px}
 .fwplan .labels text.on{fill:var(--fire);font-weight:500;font-size:4.6px}
@@ -283,6 +296,8 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
       <div class="seg" role="group" aria-labelledby="vl-same"><button type="button" data-same="">Full figures</button><button type="button" data-same="a" title="Legs light, an arc shows the moving hand">Carry-over</button><button type="button" data-same="b" title="One figure per stance, counts numbered">Combined</button><button type="button" data-same="c" title="Small arm-only figures for the later counts">Inset</button></div></div>
     <div class="vgroup"><span class="vlabel" id="vl-fw">Footwork</span>
       <div class="seg" role="group" aria-labelledby="vl-fw"><button type="button" data-fw="off">Hide</button><button type="button" data-fw="on">Show</button></div></div>
+    <div class="vgroup"><span class="vlabel" id="vl-fl">Floor line</span>
+      <div class="seg" role="group" aria-labelledby="vl-fl"><button type="button" data-fl="off">Hide</button><button type="button" data-fl="on">Show</button></div></div>
   </div>
 
   <div class="mtoggle seg" role="group" aria-label="View">
@@ -353,6 +368,14 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
     </div>
   </section>
 
+  <section class="fwsec flsec" id="flsec" hidden>
+    <h2>Floor line</h2>
+    <p>The path of the form on its {{GLYPH}} line, one count at a time: the red line is where you have been, the large dot is where you stand now and its tick points the way you face.</p>
+    <div class="fwbox"><div id="flbox"></div>
+      <div class="fwctrl"><p class="fwcap" id="flcap" aria-live="polite"></p>
+        <div class="ctrl"><button id="flprev" type="button">Previous</button><button id="flplay" type="button" class="primary">Play the form</button><button id="flnext" type="button">Next</button><div class="progress"><i id="flbar"></i></div></div></div></div>
+  </section>
+
   <section class="fwsec" id="fwsec" hidden>
     <h2>Footwork</h2>
     <p>Every footprint, labelled with the count that puts the foot there. Counts made without a step (a block then a punch) are added to the label of the feet you stand on, e.g. “5 6”. Dashed arrows are steps; a ring marks a foot that pivots in place. The selected count is red and the outlined pair is where you stand after it. Positions are worked out from the stances and turns, so distances are approximate.</p>
@@ -413,6 +436,7 @@ let SAME=(()=>{const q=QS.get("same"),v=q!==null?q:saved("same");return["a","b",
 const label=id=>id==="J"?"준비":id;
 /* footwork (issue #3): simulated foot positions; the new glyph and the whole-form plan show with ?footwork (FORM.footwork sets the default) */
 const SIM=FW.simulate(M);
+let FLON=QS.has("floorline")?QS.get("floorline")!=="off":saved("floorline")==="on";
 let FWON=QS.has("footwork")?QS.get("footwork")!=="off":saved("footwork")!==null?saved("footwork")==="on":!!FORM.footwork;
 const fp=i=>FWON?FWDRAW.glyph(SIM,i,M):feet(M[i]);
 // the figure for count i on a card, a slide or the study stage
@@ -494,13 +518,16 @@ const viewbar=document.getElementById("viewbar");
 function paintView(){
   viewbar.querySelectorAll("[data-same]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.same===SAME));
   viewbar.querySelectorAll("[data-fw]").forEach(b=>b.setAttribute("aria-pressed",(b.dataset.fw==="on")===FWON));
+  viewbar.querySelectorAll("[data-fl]").forEach(b=>b.setAttribute("aria-pressed",(b.dataset.fl==="on")===FLON));
+  document.getElementById("flsec").hidden=!FLON;
   const sec=document.getElementById("fwsec");sec.hidden=!FWON;
   if(FWON&&!sec.querySelector("svg.fwplan"))document.getElementById("fwbox").innerHTML=FWDRAW.plan(SIM,M);
 }
 viewbar.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
   if(b.dataset.same!==undefined){SAME=b.dataset.same;save("same",SAME||"off")}
   if(b.dataset.fw!==undefined){FWON=b.dataset.fw==="on";save("footwork",FWON?"on":"off")}
-  const q=new URLSearchParams(location.search);q.delete("same");q.delete("footwork");   // the bar now owns these
+  if(b.dataset.fl!==undefined){FLON=b.dataset.fl==="on";save("floorline",FLON?"on":"off")}
+  const q=new URLSearchParams(location.search);["same","footwork","floorline"].forEach(k=>q.delete(k));   // the bar now owns these
   history.replaceState(null,"",location.pathname+(q.toString()?"?"+q:"")+location.hash);
   paintView();build();});
 document.getElementById("fwsec").addEventListener("click",e=>{const t=e.target.closest("[data-i],[data-is]");
@@ -508,6 +535,10 @@ document.getElementById("fwsec").addEventListener("click",e=>{const t=e.target.c
 document.getElementById("fwprev").addEventListener("click",()=>{stop();show(cur-1)});
 document.getElementById("fwnext").addEventListener("click",()=>{stop();show(cur+1)});
 document.getElementById("fwplay").addEventListener("click",togglePlay);
+document.getElementById("flprev").addEventListener("click",()=>{stop();show(cur-1)});
+document.getElementById("flnext").addEventListener("click",()=>{stop();show(cur+1)});
+document.getElementById("flplay").addEventListener("click",togglePlay);
+document.getElementById("flsec").addEventListener("click",e=>{const t=e.target.closest("[data-i]");if(t&&t.closest("svg")){stop();show(+t.dataset.i)}});
 paintView();
 /* legend + belts + style */
 document.getElementById("legend").innerHTML=
@@ -549,6 +580,20 @@ function minimap(i){
     <path d="M${x} ${y} l9 0" transform="rotate(${ROT[m.dir]} ${x} ${y})" stroke="var(--fire)" stroke-width="1.6" stroke-linecap="round"/>
   </svg>`;
 }
+/* the large floor line (View bar → Floor line): the path so far on the form's floor shape, the newest leg drawn in */
+function floorline(i){
+  const m=M[i],[x,y]=POS[m.id],pts=M.slice(0,i+1).map(k=>POS[k.id]);
+  const dots=M.map((k,j)=>{const[px,py]=POS[k.id];return`<circle data-i="${j}" cx="${px}" cy="${py}" r="${j<=i?1.7:1.3}" class="${j<=i?"been":"todo"}"><title>${k.id==="J"?"Ready":"Move "+k.id}</title></circle>`}).join("");
+  const done=pts.length>1?`<path class="trail" d="M${pts.slice(0,-1).map(p=>p.join(" ")).join(" L")}"/>`:"";
+  const prev=i>0?POS[M[i-1].id]:null,last=prev&&(prev[0]!==x||prev[1]!==y)?`<path class="leg" pathLength="1" d="M${prev.join(" ")} L${x} ${y}"/>`:"";
+  return`<svg class="flplan" viewBox="-8 -8 116 76" role="img" aria-label="Floor line, move ${m.id} of the form">
+    <path class="floor" d="${FL.map||"M4 8H96M4 30H96M4 52H96M50 8V52"}"/>
+    <text x="50" y="-2.5">NA · 나</text><text x="50" y="64.5">GA · 가</text>
+    ${done}${last}<g class="dots">${dots}</g>
+    <circle cx="${x}" cy="${y}" r="5.2" class="halo"/><circle cx="${x}" cy="${y}" r="3.1" class="you"/>
+    <path d="M${x} ${y} l7.5 0" transform="rotate(${ROT[m.dir]} ${x} ${y})" class="face"/>
+    <text class="id" x="${x}" y="${y-7.2}">${m.id==="J"?"준비":m.id}</text></svg>`;
+}
 function slide(i){
   const m=M[i],te=T[m.tech],st=STANCE[m.stance];
   return`<div class="slide" role="group" aria-roledescription="slide" aria-label="${m.id==="J"?"Ready":"Move "+m.id}, ${i+1} of ${M.length}"><div class="sc">
@@ -588,6 +633,9 @@ function show(i,src){
   document.querySelectorAll(".fig").forEach(b=>b.classList.toggle("on",b.dataset.g?b.dataset.g.split(" ").includes(String(cur)):+b.dataset.i===cur));
   rows.querySelectorAll("tr").forEach(r=>r.classList.toggle("on",+r.dataset.i===cur));
   document.getElementById("stage").innerHTML=fig(cur,"stage")+fp(cur);
+  if(FLON){document.getElementById("flbox").innerHTML=floorline(cur);
+    document.getElementById("flcap").innerHTML=`<b>${m.id==="J"?"Ready":"Move "+m.id}</b> · facing ${DIRN[m.dir]} · ${T[m.tech][0]} <span style="color:var(--muted)">${T[m.tech][2]}</span>`;
+    document.getElementById("flbar").style.width=(cur/(M.length-1)*100)+"%";}
   if(FWON){FWDRAW.mark(document.querySelector("#fwsec svg.fwplan"),SIM,cur);
     document.getElementById("fwcap").innerHTML=`<b>${m.id==="J"?"Ready":"Move "+m.id}</b> · ${FWDRAW.say(SIM,cur,M)}`;
     document.getElementById("fwbar").style.width=(cur/(M.length-1)*100)+"%";}
@@ -602,11 +650,11 @@ function show(i,src){
   document.getElementById("more").href=techHref(m.tech);
   document.getElementById("bar").style.width=(cur/(M.length-1)*100)+"%";
 }
-function stop(){clearInterval(timer);timer=null;["play","mplay","fwplay"].forEach(id=>document.getElementById(id).textContent="Play the form")}
+function stop(){clearInterval(timer);timer=null;["play","mplay","fwplay","flplay"].forEach(id=>document.getElementById(id).textContent="Play the form")}
 function togglePlay(){
   if(timer){stop();return}
   if(cur===M.length-1)show(0);
-  ["play","mplay","fwplay"].forEach(id=>document.getElementById(id).textContent="Pause");
+  ["play","mplay","fwplay","flplay"].forEach(id=>document.getElementById(id).textContent="Pause");
   timer=setInterval(()=>{if(cur>=M.length-1){stop();return}show(cur+1)},1900);
 }
 document.getElementById("play").addEventListener("click",togglePlay);
