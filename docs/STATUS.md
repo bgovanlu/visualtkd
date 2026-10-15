@@ -26,6 +26,7 @@ Every print sheet is exactly 2 pages and every QR code decodes to its expected l
 
 ## Design assets
 - `design/character-v2.md`: brief, references, the 10 directions and model sheet v1 (MS-1–MS-8) with correction checklists.
+- `design/models/ms-v3-prompts.md`: v3 prompts for the Higgsfield web app (unlimited models aren't available through the API).
 - `design/models/manifest.json`: every generated image with job ID, URL and full prompt; the **Fetch design images** Action downloads them into `design/models/directions/` and `design/models/ms-v1/`.
 
 ## Plan
