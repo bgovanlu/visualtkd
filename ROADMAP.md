@@ -111,7 +111,7 @@ Brian's example in the issue shows the right idea at low quality. *I couldn't op
 Rebuild the renderer around the approved model sheets.
 
 **Plan**
-1. Brian reviews MS-1 to MS-8 and logs corrections in `design/character-v2.md`. Sheets marked "fix" are regenerated (Higgsfield, when re-enabled) until approved.
+1. Brian reviews MS-1 to MS-8 in GitHub issues #9–#16 (sub-issues of #7) and logs corrections there; approved sheets are closed. Sheets marked "fix" are regenerated (Higgsfield, when re-enabled) until approved.
 2. **New skeleton:**
    - hip and chest yaw separate from foot direction (dwit kubi turns the torso about 90°);
    - knee direction as its own control (out to the side in dwit kubi and juchum seogi);
