@@ -403,7 +403,7 @@
    "desc": "Pivot in place to face da³, left front stance. Slow pulling uppercut with the right fist while the left hand pulls."
   },
   {
-   "id": "7",
+   "id": "7", "carry": false,
    "dir": "da3",
    "view": "side",
    "stance": "front",

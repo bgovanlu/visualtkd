@@ -111,6 +111,17 @@ h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6v
 .ctrl button{font:inherit;font-weight:600;font-size:14px;padding:9px 16px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
 .ctrl button.primary{background:var(--ink);color:var(--surface);border-color:var(--ink)}
 .ctrl button:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+/* same-stance treatments (#4) */
+.fig .same{font-family:var(--f-mono);font-size:10px;color:var(--muted);letter-spacing:.04em;margin-top:3px}
+.fig.mini{width:calc(var(--card-w,128px)*.8);padding-top:20px}
+.fig.mini svg.body{height:calc(var(--fig-h)*.625);margin-bottom:calc(var(--fig-h)*.375)}
+.fig.combo{width:calc(var(--card-w,128px)*1.25)}
+.fig.combo .no{white-space:nowrap}
+svg.body .badge text{font-weight:500}
+.seg.proto{align-items:center;font-size:13px}
+.seg.proto span{padding:0 8px;color:var(--muted);font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.seg.proto a{padding:4px 11px;border-radius:99px;border:0;background:none;color:var(--muted);font-weight:600}
+.seg.proto a[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
 .info .more{font-size:14px;font-weight:600;align-self:flex-start}
 .chiplink{text-decoration:none;color:inherit;border-radius:99px}
 .chiplink:hover .chip{border-color:var(--heaven);color:var(--heaven)}
@@ -327,11 +338,43 @@ const M=FORM.moves;
 
 /* ---------- build board ---------- */
 const byId=Object.fromEntries(M.map((m,i)=>[m.id,i]));
+/* ---------- moves where the stance doesn't change (issue #4) ----------
+   A count "carries" its stance when stance, lead foot and facing match the count before it and
+   neither is a kick or the ready stance; "carry": false in the move data turns it off.
+   Three treatments are being compared (?same=a|b|c on the page; FORM.same sets the default):
+     a  carry-over: legs light, a dashed arc from where the moving hand was
+     b  combined card: one figure per stance, earlier counts as light arms, numbered at the hand
+     c  inset strip: the first count in full, later counts as small arm-only thumbnails */
+const KICKS=new Set(["kick","skick","rkick","knee"]);
+const carries=i=>{if(i<1)return false;const a=M[i-1],b=M[i];
+  return b.carry!==false&&!KICKS.has(a.stance)&&!KICKS.has(b.stance)&&a.stance!=="ready"&&a.stance===b.stance&&
+    a.lead===b.lead&&a.dir===b.dir&&a.view===b.view&&a.face===b.face};
+const CARRY=M.map((_,i)=>carries(i));
+const HEAD=M.map((_,i)=>{let h=i;while(CARRY[h])h--;return h});
+const GROUP=i=>M.map((_,j)=>j).filter(j=>HEAD[j]===HEAD[i]);
+const SAME=(()=>{const q=new URLSearchParams(location.search).get("same");return["a","b","c"].includes(q)?q:(FORM.same||"")})();
+const label=id=>id==="J"?"준비":id;
+// the figure for count i on a card, a slide or the study stage
+function fig(i,where){
+  const m=M[i];
+  if(SAME==="a"&&CARRY[i])return figure(m,{fade:true,from:M[i-1]});
+  if(SAME==="b"){const g=GROUP(i);if(g.length>1){const last=g[g.length-1];
+    return figure(M[last],{ghosts:g.slice(0,-1).map(j=>M[j]),badges:g.map(j=>({m:M[j],label:M[j].id,on:where!=="card"&&j===i}))})}}
+  if(SAME==="c"&&CARRY[i]&&where==="card")return figure(m,{crop:true});
+  return figure(m);
+}
 function card(id){
   const i=byId[id],m=M[i];
+  if(SAME==="b"&&CARRY[i])return"";                    // drawn on its group's card
+  if(SAME==="c"&&CARRY[i])return`<button class="fig mini" data-i="${i}" type="button" aria-label="Move ${id}: ${T[m.tech][2]}, same stance">
+    <span class="no">${id}</span>${fig(i,"card")}<span class="tech">${T[m.tech][0]}</span><span class="en">${T[m.tech][2]}</span><span class="same">same stance</span></button>`;
+  if(SAME==="b"&&GROUP(i).length>1){const g=GROUP(i);
+    return`<button class="fig combo" data-i="${i}" data-g="${g.join(" ")}" type="button" aria-label="Moves ${g.map(j=>M[j].id).join(", ")}: ${g.map(j=>T[M[j].tech][2]).join(", then ")}, ${stanceLabel(m)} stance">
+    <span class="no">${g.map(j=>label(M[j].id)).join(" · ")}</span>${feet(m)}${fig(i,"card")}
+    <span class="tech">${g.map(j=>T[M[j].tech][0]).join(" · ")}</span><span class="en">${g.map(j=>T[M[j].tech][2]).join(" · ")}</span>${chip(m)}${g.some(j=>M[j].kihap)?'<span class="kh">기합 KIHAP</span>':""}</button>`}
   return`<button class="fig" data-i="${i}" type="button" aria-label="Move ${id}: ${T[m.tech][2]}, ${stanceLabel(m)} stance">
-    <span class="no">${id==="J"?"준비":id}</span>${feet(m)}${figure(m)}
-    <span class="tech">${T[m.tech][0]}</span><span class="en">${T[m.tech][2]}</span>${chip(m)}${m.kihap?'<span class="kh">기합 KIHAP</span>':""}</button>`;
+    <span class="no">${label(id)}</span>${feet(m)}${fig(i,"card")}
+    <span class="tech">${T[m.tech][0]}</span><span class="en">${T[m.tech][2]}</span>${chip(m)}${SAME==="a"&&CARRY[i]?'<span class="same">same stance</span>':""}${m.kihap?'<span class="kh">기합 KIHAP</span>':""}</button>`;
 }
 const pair=ids=>`<div class="pair">${ids.map(card).join("")}</div>`;
 /* Floor shape. Default is the Taegeuk 王: three full bars joined by the centre line.
@@ -385,6 +428,12 @@ function placeRail(){
   });
 }
 
+/* prototype switch for the same-stance treatments: only with ?same= in the URL */
+if(new URLSearchParams(location.search).has("same")){
+  const opts=[["","Off"],["a","A · carry-over"],["b","B · combined"],["c","C · inset"]];
+  document.querySelector(".actions").insertAdjacentHTML("beforeend",`<div class="seg proto" role="group" aria-label="Same-stance prototype"><span>Same stance</span>${
+    opts.map(([k,t])=>`<a href="?same=${k||"off"}${location.hash}" aria-pressed="${SAME===k}">${t}</a>`).join("")}</div>`);
+}
 /* legend + belts + style */
 document.getElementById("legend").innerHTML=
   feet({dir:"na",stance:"walk",lead:"L"})+`<p><b>Ap seogi</b> · walking stance. One natural step, feet almost in line.</p>`+
@@ -429,7 +478,7 @@ function slide(i){
   const m=M[i],te=T[m.tech],st=STANCE[m.stance];
   return`<div class="slide" role="group" aria-roledescription="slide" aria-label="${m.id==="J"?"Ready":"Move "+m.id}, ${i+1} of ${M.length}"><div class="sc">
     <div class="sc-head"><div class="sc-no">${m.id==="J"?"READY":"MOVE"} · FACING ${DIRN[m.dir].toUpperCase()}<b>${m.id==="J"?"준비":m.id}</b></div>${minimap(i)}</div>
-    <div class="sc-fig">${figure(m)}${feet(m)}</div>
+    <div class="sc-fig">${fig(i,"slide")}${feet(m)}</div>
     <h3><a class="lib" href="${techHref(m.tech)}">${te[0]}</a> <span>${te[1]}</span></h3>
     <div class="en">${te[2]}${m.note?" · "+m.note:""}</div>
     <div class="row"><a class="chiplink" href="${stanceHref(m.stance)}" aria-label="${st[2]}: stance details">${chip(m)}</a><span class="ko" style="color:var(--muted);font-size:13px">${st[1]}</span>${m.kihap?'<span class="kh" style="margin:0">기합 KIHAP</span>':""}</div>
@@ -461,9 +510,9 @@ function show(i,src){
   if(src!=="swipe")goSlide(cur);
   document.getElementById("cpos").textContent=`${cur+1} / ${M.length}`;
   document.getElementById("cbar").style.width=((cur+1)/M.length*100)+"%";
-  document.querySelectorAll(".fig").forEach(b=>b.classList.toggle("on",+b.dataset.i===cur));
+  document.querySelectorAll(".fig").forEach(b=>b.classList.toggle("on",b.dataset.g?b.dataset.g.split(" ").includes(String(cur)):+b.dataset.i===cur));
   rows.querySelectorAll("tr").forEach(r=>r.classList.toggle("on",+r.dataset.i===cur));
-  document.getElementById("stage").innerHTML=figure(m)+feet(m);
+  document.getElementById("stage").innerHTML=fig(cur,"stage")+feet(m);
   document.getElementById("kicker").textContent=(m.id==="J"?"READY":"MOVE "+m.id)+"  ·  FACING "+DIRN[m.dir].toUpperCase();
   const te=T[m.tech],st=STANCE[m.stance];
   document.getElementById("name").innerHTML=`<a class="lib" href="${techHref(m.tech)}">${te[0]}</a> <span style="font-weight:400;color:var(--muted)">${te[1]}</span><small>${te[2]}${m.note?" · "+m.note:""}</small>`;

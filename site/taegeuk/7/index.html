@@ -160,6 +160,17 @@ h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6v
 .ctrl button{font:inherit;font-weight:600;font-size:14px;padding:9px 16px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
 .ctrl button.primary{background:var(--ink);color:var(--surface);border-color:var(--ink)}
 .ctrl button:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+/* same-stance treatments (#4) */
+.fig .same{font-family:var(--f-mono);font-size:10px;color:var(--muted);letter-spacing:.04em;margin-top:3px}
+.fig.mini{width:calc(var(--card-w,128px)*.8);padding-top:20px}
+.fig.mini svg.body{height:calc(var(--fig-h)*.625);margin-bottom:calc(var(--fig-h)*.375)}
+.fig.combo{width:calc(var(--card-w,128px)*1.25)}
+.fig.combo .no{white-space:nowrap}
+svg.body .badge text{font-weight:500}
+.seg.proto{align-items:center;font-size:13px}
+.seg.proto span{padding:0 8px;color:var(--muted);font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.seg.proto a{padding:4px 11px;border-radius:99px;border:0;background:none;color:var(--muted);font-weight:600}
+.seg.proto a[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
 .info .more{font-size:14px;font-weight:600;align-self:flex-start}
 .chiplink{text-decoration:none;color:inherit;border-radius:99px}
 .chiplink:hover .chip{border-color:var(--heaven);color:var(--heaven)}
@@ -372,7 +383,7 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
 
 <script>
 (function(){
-const FORM={"moves": [{"id": "J", "dir": "na", "view": "front", "stance": "ready", "arms": {"L": "junbi", "R": "junbi"}, "tech": "junbi", "desc": "Stand at na facing ga, feet parallel and one foot-width apart, fists in front of the belt."}, {"id": "1", "dir": "da1", "view": "side", "stance": "tiger", "face": "R", "lead": "L", "arms": {"R": "palm"}, "tech": "palm", "hand": "R", "desc": "Turn 90° left toward da¹, left tiger stance. Right palm inside block."}, {"id": "2-1", "dir": "da1", "view": "side", "stance": "kick", "face": "R", "lead": "R", "arms": {"L": "guard", "R": "guard"}, "tech": "kick", "hand": "R", "foot": true, "desc": "Right front kick."}, {"id": "2-2", "dir": "da1", "view": "side", "stance": "tiger", "face": "R", "lead": "L", "arms": {"L": "inside"}, "tech": "inside", "hand": "L", "desc": "Bring the right foot back: left tiger stance. Left inside middle block."}, {"id": "3", "dir": "ra1", "view": "side", "stance": "tiger", "face": "L", "lead": "R", "arms": {"L": "palm"}, "tech": "palm", "hand": "L", "desc": "Turn 180° to the right toward ra¹, right tiger stance. Left palm inside block."}, {"id": "4-1", "dir": "ra1", "view": "side", "stance": "kick", "face": "L", "lead": "L", "arms": {"L": "guard", "R": "guard"}, "tech": "kick", "hand": "L", "foot": true, "desc": "Left front kick."}, {"id": "4-2", "dir": "ra1", "view": "side", "stance": "tiger", "face": "L", "lead": "R", "arms": {"R": "inside"}, "tech": "inside", "hand": "R", "desc": "Bring the left foot back: right tiger stance. Right inside middle block."}, {"id": "5", "dir": "ga", "view": "front", "stance": "back", "lead": "L", "arms": {"L": "kslow", "R": "ksguard"}, "tech": "kslow", "hand": "L", "desc": "Turn 90° left toward ga, back stance with the left foot forward. Low knife-hand guarding block."}, {"id": "6", "dir": "ga", "view": "front", "stance": "back", "lead": "R", "arms": {"R": "kslow", "L": "ksguard"}, "tech": "kslow", "hand": "R", "desc": "Step forward: back stance with the right foot forward. Low knife-hand guarding block."}, {"id": "7", "dir": "da2", "view": "side", "stance": "tiger", "face": "R", "lead": "L", "arms": {"R": "palm", "L": "assist"}, "tech": "apalm", "hand": "R", "desc": "Turn 90° left toward da², left tiger stance. Right palm inside block, left fist under the right elbow."}, {"id": "8", "dir": "da2", "view": "side", "stance": "tiger", "face": "R", "lead": "L", "arms": {"R": "backfist"}, "tech": "backfist", "hand": "R", "desc": "Feet in place. Right back-fist strike."}, {"id": "9", "dir": "ra2", "view": "side", "stance": "tiger", "face": "L", "lead": "R", "arms": {"L": "palm", "R": "assist"}, "tech": "apalm", "hand": "L", "desc": "Turn 180° to the right toward ra², right tiger stance. Left palm inside block, right fist under the left elbow."}, {"id": "10", "dir": "ra2", "view": "side", "stance": "tiger", "face": "L", "lead": "R", "arms": {"L": "backfist"}, "tech": "backfist", "hand": "L", "desc": "Feet in place. Left back-fist strike."}, {"id": "11", "dir": "ga", "view": "front", "stance": "close", "arms": {"L": "cover", "R": "cover"}, "tech": "cover", "desc": "Turn 90° left toward ga, feet together. Covered fist: the right fist wrapped in the left hand, raised slowly in front of the chest."}, {"id": "12-1", "dir": "ga", "view": "front", "stance": "front", "lead": "L", "arms": {"L": "outer", "R": "low"}, "tech": "scissors", "desc": "Step forward into a left front stance. Scissors block: left outer middle block, right low block."}, {"id": "12-2", "dir": "ga", "view": "front", "stance": "front", "lead": "L", "arms": {"R": "outer", "L": "low"}, "tech": "scissors", "desc": "Scissors block reversed: right outer middle block, left low block."}, {"id": "13-1", "dir": "ga", "view": "front", "stance": "front", "lead": "R", "arms": {"R": "outer", "L": "low"}, "tech": "scissors", "desc": "Step forward into a right front stance. Scissors block: right outer middle block, left low block."}, {"id": "13-2", "dir": "ga", "view": "front", "stance": "front", "lead": "R", "arms": {"L": "outer", "R": "low"}, "tech": "scissors", "desc": "Scissors block reversed: left outer middle block, right low block."}, {"id": "14", "dir": "ra3", "view": "side", "stance": "front", "face": "L", "lead": "L", "arms": {"L": "wedge", "R": "wedge"}, "tech": "wedge", "desc": "Turn 270° to the left toward ra³, left front stance. Middle wedge block."}, {"id": "15-1", "dir": "ra3", "view": "side", "stance": "knee", "face": "L", "lead": "R", "arms": {"L": "grab", "R": "grab"}, "tech": "knee", "hand": "R", "foot": true, "desc": "Pull down with both hands and drive the right knee up."}, {"id": "15-2", "dir": "ra3", "view": "side", "stance": "cross", "face": "L", "lead": "R", "arms": {"L": "uppercut", "R": "uppercut"}, "tech": "duppercut", "desc": "Jump forward into a cross stance, left foot tucked behind the right. Double uppercut."}, {"id": "16", "dir": "ra3", "view": "side", "stance": "front", "face": "L", "lead": "R", "arms": {"L": "xlow", "R": "xlow"}, "tech": "xlow", "desc": "Step back with the left foot into a right front stance. Low X block."}, {"id": "17", "dir": "da3", "view": "side", "stance": "front", "face": "R", "lead": "R", "arms": {"L": "wedge", "R": "wedge"}, "tech": "wedge", "desc": "Turn 180° to the right toward da³, right front stance. Middle wedge block."}, {"id": "18-1", "dir": "da3", "view": "side", "stance": "knee", "face": "R", "lead": "L", "arms": {"L": "grab", "R": "grab"}, "tech": "knee", "hand": "L", "foot": true, "desc": "Pull down with both hands and drive the left knee up."}, {"id": "18-2", "dir": "da3", "view": "side", "stance": "cross", "face": "R", "lead": "L", "arms": {"L": "uppercut", "R": "uppercut"}, "tech": "duppercut", "desc": "Jump forward into a cross stance, right foot tucked behind the left. Double uppercut."}, {"id": "19", "dir": "da3", "view": "side", "stance": "front", "face": "R", "lead": "L", "arms": {"L": "xlow", "R": "xlow"}, "tech": "xlow", "desc": "Step back with the right foot into a left front stance. Low X block."}, {"id": "20", "dir": "na", "view": "back", "stance": "walk", "lead": "L", "arms": {"L": "backfist"}, "tech": "obackfist", "hand": "L", "desc": "Turn 90° left toward na, left walking stance. Left outward back-fist strike."}, {"id": "21-1", "dir": "na", "view": "back", "stance": "kick", "lead": "R", "arms": {"L": "eltarget"}, "tech": "tkick", "hand": "R", "foot": true, "desc": "Right target kick into the left palm."}, {"id": "21-2", "dir": "na", "view": "back", "stance": "horse", "arms": {"R": "elbow", "L": "eltarget"}, "tech": "eltarget", "hand": "R", "desc": "Land in a horse stance. Right elbow strike into the left palm."}, {"id": "22", "dir": "na", "view": "back", "stance": "walk", "lead": "R", "arms": {"R": "backfist"}, "tech": "obackfist", "hand": "R", "desc": "Step into a right walking stance. Right outward back-fist strike."}, {"id": "23-1", "dir": "na", "view": "back", "stance": "kick", "lead": "L", "arms": {"R": "eltarget"}, "tech": "tkick", "hand": "L", "foot": true, "desc": "Left target kick into the right palm."}, {"id": "23-2", "dir": "na", "view": "back", "stance": "horse", "arms": {"L": "elbow", "R": "eltarget"}, "tech": "eltarget", "hand": "L", "desc": "Land in a horse stance. Left elbow strike into the right palm."}, {"id": "24", "dir": "na", "view": "back", "stance": "horse", "arms": {"L": "ksside"}, "tech": "ksside", "hand": "L", "desc": "Feet in place. Left knife-hand side block."}, {"id": "25", "dir": "na", "view": "back", "stance": "horse", "arms": {"R": "sidepunch"}, "tech": "sidepunch", "hand": "R", "kihap": true, "desc": "Step the right foot forward into a horse stance. Right side punch with a kihap."}], "layout": {"r1": [["4-2", "4-1"], "3", ["J", "24", "25"], "1", ["2-1", "2-2"]], "c2": ["5", "23-1", "23-2"], "r3": ["10", "9", ["6", "11", "22"], "7", "8"], "c4": ["12-1", "12-2", "21-1", "21-2"], "r5": [["16", "15-2", "15-1"], "14", ["13-1", "13-2", "20"], "17", ["18-1", "18-2", "19"]]}, "pos": {"4-2": [8, 8], "4-1": [18, 8], "3": [29, 8], "J": [40, 8], "24": [50, 8], "25": [60, 8], "1": [71, 8], "2-1": [82, 8], "2-2": [92, 8], "10": [8, 30], "9": [22, 30], "6": [36, 30], "11": [50, 30], "22": [64, 30], "7": [78, 30], "8": [92, 30], "16": [8, 52], "15-2": [16, 52], "15-1": [25, 52], "14": [33, 52], "13-1": [42, 52], "13-2": [50, 52], "20": [58, 52], "17": [67, 52], "18-1": [75, 52], "18-2": [84, 52], "19": [92, 52], "5": [50, 19], "23-1": [50, 19], "23-2": [50, 19], "12-1": [50, 41], "12-2": [50, 41], "21-1": [50, 41], "21-2": [50, 41]}};
+const FORM={"moves": [{"id": "J", "dir": "na", "view": "front", "stance": "ready", "arms": {"L": "junbi", "R": "junbi"}, "tech": "junbi", "desc": "Stand at na facing ga, feet parallel and one foot-width apart, fists in front of the belt."}, {"id": "1", "dir": "da1", "view": "side", "stance": "tiger", "face": "R", "lead": "L", "arms": {"R": "palm"}, "tech": "palm", "hand": "R", "desc": "Turn 90° left toward da¹, left tiger stance. Right palm inside block."}, {"id": "2-1", "dir": "da1", "view": "side", "stance": "kick", "face": "R", "lead": "R", "arms": {"L": "guard", "R": "guard"}, "tech": "kick", "hand": "R", "foot": true, "desc": "Right front kick."}, {"id": "2-2", "dir": "da1", "view": "side", "stance": "tiger", "face": "R", "lead": "L", "arms": {"L": "inside"}, "tech": "inside", "hand": "L", "desc": "Bring the right foot back: left tiger stance. Left inside middle block."}, {"id": "3", "dir": "ra1", "view": "side", "stance": "tiger", "face": "L", "lead": "R", "arms": {"L": "palm"}, "tech": "palm", "hand": "L", "desc": "Turn 180° to the right toward ra¹, right tiger stance. Left palm inside block."}, {"id": "4-1", "dir": "ra1", "view": "side", "stance": "kick", "face": "L", "lead": "L", "arms": {"L": "guard", "R": "guard"}, "tech": "kick", "hand": "L", "foot": true, "desc": "Left front kick."}, {"id": "4-2", "dir": "ra1", "view": "side", "stance": "tiger", "face": "L", "lead": "R", "arms": {"R": "inside"}, "tech": "inside", "hand": "R", "desc": "Bring the left foot back: right tiger stance. Right inside middle block."}, {"id": "5", "dir": "ga", "view": "front", "stance": "back", "lead": "L", "arms": {"L": "kslow", "R": "ksguard"}, "tech": "kslow", "hand": "L", "desc": "Turn 90° left toward ga, back stance with the left foot forward. Low knife-hand guarding block."}, {"id": "6", "dir": "ga", "view": "front", "stance": "back", "lead": "R", "arms": {"R": "kslow", "L": "ksguard"}, "tech": "kslow", "hand": "R", "desc": "Step forward: back stance with the right foot forward. Low knife-hand guarding block."}, {"id": "7", "dir": "da2", "view": "side", "stance": "tiger", "face": "R", "lead": "L", "arms": {"R": "palm", "L": "assist"}, "tech": "apalm", "hand": "R", "desc": "Turn 90° left toward da², left tiger stance. Right palm inside block, left fist under the right elbow."}, {"id": "8", "dir": "da2", "view": "side", "stance": "tiger", "face": "R", "lead": "L", "arms": {"R": "backfist"}, "tech": "backfist", "hand": "R", "desc": "Feet in place. Right back-fist strike."}, {"id": "9", "dir": "ra2", "view": "side", "stance": "tiger", "face": "L", "lead": "R", "arms": {"L": "palm", "R": "assist"}, "tech": "apalm", "hand": "L", "desc": "Turn 180° to the right toward ra², right tiger stance. Left palm inside block, right fist under the left elbow."}, {"id": "10", "dir": "ra2", "view": "side", "stance": "tiger", "face": "L", "lead": "R", "arms": {"L": "backfist"}, "tech": "backfist", "hand": "L", "desc": "Feet in place. Left back-fist strike."}, {"id": "11", "dir": "ga", "view": "front", "stance": "close", "arms": {"L": "cover", "R": "cover"}, "tech": "cover", "desc": "Turn 90° left toward ga, feet together. Covered fist: the right fist wrapped in the left hand, raised slowly in front of the chest."}, {"id": "12-1", "dir": "ga", "view": "front", "stance": "front", "lead": "L", "arms": {"L": "outer", "R": "low"}, "tech": "scissors", "desc": "Step forward into a left front stance. Scissors block: left outer middle block, right low block."}, {"id": "12-2", "dir": "ga", "view": "front", "stance": "front", "lead": "L", "arms": {"R": "outer", "L": "low"}, "tech": "scissors", "desc": "Scissors block reversed: right outer middle block, left low block."}, {"id": "13-1", "dir": "ga", "view": "front", "stance": "front", "lead": "R", "arms": {"R": "outer", "L": "low"}, "tech": "scissors", "desc": "Step forward into a right front stance. Scissors block: right outer middle block, left low block."}, {"id": "13-2", "dir": "ga", "view": "front", "stance": "front", "lead": "R", "arms": {"L": "outer", "R": "low"}, "tech": "scissors", "desc": "Scissors block reversed: left outer middle block, right low block."}, {"id": "14", "dir": "ra3", "view": "side", "stance": "front", "face": "L", "lead": "L", "arms": {"L": "wedge", "R": "wedge"}, "tech": "wedge", "desc": "Turn 270° to the left toward ra³, left front stance. Middle wedge block."}, {"id": "15-1", "dir": "ra3", "view": "side", "stance": "knee", "face": "L", "lead": "R", "arms": {"L": "grab", "R": "grab"}, "tech": "knee", "hand": "R", "foot": true, "desc": "Pull down with both hands and drive the right knee up."}, {"id": "15-2", "dir": "ra3", "view": "side", "stance": "cross", "face": "L", "lead": "R", "arms": {"L": "uppercut", "R": "uppercut"}, "tech": "duppercut", "desc": "Jump forward into a cross stance, left foot tucked behind the right. Double uppercut."}, {"id": "16", "dir": "ra3", "view": "side", "stance": "front", "face": "L", "lead": "R", "arms": {"L": "xlow", "R": "xlow"}, "tech": "xlow", "desc": "Step back with the left foot into a right front stance. Low X block."}, {"id": "17", "dir": "da3", "view": "side", "stance": "front", "face": "R", "lead": "R", "arms": {"L": "wedge", "R": "wedge"}, "tech": "wedge", "desc": "Turn 180° to the right toward da³, right front stance. Middle wedge block."}, {"id": "18-1", "dir": "da3", "view": "side", "stance": "knee", "face": "R", "lead": "L", "arms": {"L": "grab", "R": "grab"}, "tech": "knee", "hand": "L", "foot": true, "desc": "Pull down with both hands and drive the left knee up."}, {"id": "18-2", "dir": "da3", "view": "side", "stance": "cross", "face": "R", "lead": "L", "arms": {"L": "uppercut", "R": "uppercut"}, "tech": "duppercut", "desc": "Jump forward into a cross stance, right foot tucked behind the left. Double uppercut."}, {"id": "19", "dir": "da3", "view": "side", "stance": "front", "face": "R", "lead": "L", "arms": {"L": "xlow", "R": "xlow"}, "tech": "xlow", "desc": "Step back with the right foot into a left front stance. Low X block."}, {"id": "20", "dir": "na", "view": "back", "stance": "walk", "lead": "L", "arms": {"L": "backfist"}, "tech": "obackfist", "hand": "L", "desc": "Turn 90° left toward na, left walking stance. Left outward back-fist strike."}, {"id": "21-1", "dir": "na", "view": "back", "stance": "kick", "lead": "R", "arms": {"L": "eltarget"}, "tech": "tkick", "hand": "R", "foot": true, "desc": "Right target kick into the left palm."}, {"id": "21-2", "dir": "na", "view": "back", "stance": "horse", "arms": {"R": "elbow", "L": "eltarget"}, "tech": "eltarget", "hand": "R", "desc": "Land in a horse stance. Right elbow strike into the left palm."}, {"id": "22", "dir": "na", "view": "back", "stance": "walk", "lead": "R", "arms": {"R": "backfist"}, "tech": "obackfist", "hand": "R", "desc": "Step into a right walking stance. Right outward back-fist strike."}, {"id": "23-1", "dir": "na", "view": "back", "stance": "kick", "lead": "L", "arms": {"R": "eltarget"}, "tech": "tkick", "hand": "L", "foot": true, "desc": "Left target kick into the right palm."}, {"id": "23-2", "dir": "na", "view": "back", "stance": "horse", "arms": {"L": "elbow", "R": "eltarget"}, "tech": "eltarget", "hand": "L", "desc": "Land in a horse stance. Left elbow strike into the right palm."}, {"id": "24", "dir": "na", "view": "back", "stance": "horse", "arms": {"L": "ksside"}, "tech": "ksside", "hand": "L", "desc": "Feet in place. Left knife-hand side block."}, {"id": "25", "carry": false, "dir": "na", "view": "back", "stance": "horse", "arms": {"R": "sidepunch"}, "tech": "sidepunch", "hand": "R", "kihap": true, "desc": "Step the right foot forward into a horse stance. Right side punch with a kihap."}], "layout": {"r1": [["4-2", "4-1"], "3", ["J", "24", "25"], "1", ["2-1", "2-2"]], "c2": ["5", "23-1", "23-2"], "r3": ["10", "9", ["6", "11", "22"], "7", "8"], "c4": ["12-1", "12-2", "21-1", "21-2"], "r5": [["16", "15-2", "15-1"], "14", ["13-1", "13-2", "20"], "17", ["18-1", "18-2", "19"]]}, "pos": {"4-2": [8, 8], "4-1": [18, 8], "3": [29, 8], "J": [40, 8], "24": [50, 8], "25": [60, 8], "1": [71, 8], "2-1": [82, 8], "2-2": [92, 8], "10": [8, 30], "9": [22, 30], "6": [36, 30], "11": [50, 30], "22": [64, 30], "7": [78, 30], "8": [92, 30], "16": [8, 52], "15-2": [16, 52], "15-1": [25, 52], "14": [33, 52], "13-1": [42, 52], "13-2": [50, 52], "20": [58, 52], "17": [67, 52], "18-1": [75, 52], "18-2": [84, 52], "19": [92, 52], "5": [50, 19], "23-1": [50, 19], "23-2": [50, 19], "12-1": [50, 41], "12-2": [50, 41], "21-1": [50, 41], "21-2": [50, 41]}};
 const LIB={"t": {"junbi": ["Junbi", "준비", "Ready", "/library/stances/#gibon-junbi"], "tongmil": ["Tongmilgi junbi", "통밀기 준비", "Pushing-hands ready", "/library/stances/#tongmilgi-junbi"], "cover": ["Bojumeok", "보주먹", "Covered fist", "/library/stances/#bojumeok"], "low": ["Arae makki", "아래막기", "Low block", "/library/blocks/#arae-makki"], "alow": ["Geodeureo arae makki", "거들어아래막기", "Augmented low block", "/library/blocks/#geodeureo-arae-makki"], "inside": ["Momtong an makki", "몸통안막기", "Inside middle block", "/library/blocks/#momtong-an-makki"], "outer": ["Momtong bakkat makki", "몸통바깥막기", "Outer middle block", "/library/blocks/#momtong-bakkat-makki"], "aouter": ["Geodeureo momtong bakkat makki", "거들어몸통바깥막기", "Augmented outer block", "/library/blocks/#geodeureo-momtong-bakkat-makki"], "high": ["Eolgul makki", "얼굴막기", "High block", "/library/blocks/#eolgul-makki"], "houter": ["Eolgul bakkat makki", "얼굴바깥막기", "High outer block", "/library/blocks/#eolgul-bakkat-makki"], "wedge": ["Momtong hecho makki", "몸통헤쳐막기", "Middle wedge block", "/library/blocks/#momtong-hecho-makki"], "spread": ["Arae hecho makki", "아래헤쳐막기", "Low spread block", "/library/blocks/#arae-hecho-makki"], "xlow": ["Eotgeoreo arae makki", "엇걸어아래막기", "Low X block", "/library/blocks/#eotgeoreo-arae-makki"], "scissors": ["Gawi makki", "가위막기", "Scissors block", "/library/blocks/#gawi-makki"], "mountain": ["Oesanteul makki", "외산틀막기", "Single mountain block", "/library/blocks/#oesanteul-makki"], "santeul": ["Santeul makki", "산틀막기", "Mountain block", "/library/blocks/#santeul-makki"], "keumgang": ["Keumgang makki", "금강막기", "Diamond block", "/library/blocks/#keumgang-makki"], "kmomtong": ["Keumgang momtong makki", "금강몸통막기", "Diamond middle block", "/library/blocks/#keumgang-momtong-makki"], "ksout": ["Hansonnal bakkat makki", "한손날바깥막기", "Knife-hand outer block", "/library/blocks/#hansonnal-bakkat-makki"], "ksblock": ["Sonnal momtong makki", "손날몸통막기", "Double knife-hand block", "/library/blocks/#sonnal-momtong-makki"], "ksin": ["Hansonnal momtong an makki", "한손날몸통안막기", "Knife-hand inside block", "/library/blocks/#hansonnal-momtong-an-makki"], "kslow": ["Sonnal arae makki", "손날아래막기", "Low knife-hand block", "/library/blocks/#sonnal-arae-makki"], "ksside": ["Hansonnal yeop makki", "한손날옆막기", "Knife-hand side block", "/library/blocks/#hansonnal-yeop-makki"], "kspread": ["Sonnal arae hecho makki", "손날아래헤쳐막기", "Knife-hand low spread block", "/library/blocks/#sonnal-arae-hecho-makki"], "twist": ["Hansonnal eolgul bitureo makki", "한손날얼굴비틀어막기", "Twisted knife-hand high block", "/library/blocks/#hansonnal-eolgul-bitureo-makki"], "palm": ["Batangson momtong an makki", "바탕손몸통안막기", "Palm inside block", "/library/blocks/#batangson-momtong-an-makki"], "apalm": ["Geodeureo batangson momtong an makki", "거들어바탕손몸통안막기", "Augmented palm block", "/library/blocks/#geodeureo-batangson-momtong-an-makki"], "pressdown": ["Batangson nulleo makki", "바탕손눌러막기", "Palm pressing block", "/library/blocks/#batangson-nulleo-makki"], "khinge": ["Keun doljjeogwi", "큰돌쩌귀", "Large hinge", "/library/blocks/#keun-doljjeogwi"], "shinge": ["Jageun doljjeogwi", "작은돌쩌귀", "Small hinge", "/library/blocks/#jageun-doljjeogwi"], "punch": ["Momtong jireugi", "몸통지르기", "Middle punch", "/library/strikes/#momtong-jireugi"], "hpunch": ["Eolgul jireugi", "얼굴지르기", "High punch", "/library/strikes/#eolgul-jireugi"], "sidepunch": ["Yeop jireugi", "옆지르기", "Side punch", "/library/strikes/#yeop-jireugi"], "tpunch": ["Pyojeok jireugi", "표적지르기", "Target punch", "/library/strikes/#pyojeok-jireugi"], "uppercut": ["Dangkyeo teok jireugi", "당겨턱지르기", "Pulling uppercut", "/library/strikes/#dangkyeo-teok-jireugi"], "duppercut": ["Dujumeok jeocho jireugi", "두주먹젖혀지르기", "Double uppercut", "/library/strikes/#dujumeok-jeocho-jireugi"], "backfist": ["Deung jumeok ap chigi", "등주먹앞치기", "Back-fist strike", "/library/strikes/#deung-jumeok-ap-chigi"], "obackfist": ["Deung jumeok bakkat chigi", "등주먹바깥치기", "Outward back-fist", "/library/strikes/#deung-jumeok-bakkat-chigi"], "hammer": ["Mejumeok naeryeo chigi", "메주먹내려치기", "Hammer-fist strike", "/library/strikes/#mejumeok-naeryeo-chigi"], "hammerlow": ["Mejumeok arae pyojeok chigi", "메주먹아래표적치기", "Low hammer-fist target strike", "/library/strikes/#mejumeok-arae-pyojeok-chigi"], "neck": ["Sonnal mok chigi", "손날목치기", "Knife-hand neck strike", "/library/strikes/#sonnal-mok-chigi"], "jebi": ["Jebipoom mok chigi", "제비품목치기", "Swallow-form neck strike", "/library/strikes/#jebipoom-mok-chigi"], "ksstrike": ["Hansonnal bakkat chigi", "한손날바깥치기", "Knife-hand outer strike", "/library/strikes/#hansonnal-bakkat-chigi"], "spear": ["Pyeonsonkkeut sewo jjireugi", "편손끝세워찌르기", "Spear-hand thrust", "/library/strikes/#pyeonsonkkeut-sewo-jjireugi"], "lspear": ["Pyeonsonkkeut jeocho jjireugi", "편손끝젖혀찌르기", "Low spear hand, palm up", "/library/strikes/#pyeonsonkkeut-jeocho-jjireugi"], "palmjaw": ["Batangson teok chigi", "바탕손턱치기", "Palm-heel jaw strike", "/library/strikes/#batangson-teok-chigi"], "arc": ["Kaljaebi", "칼재비", "Arc-hand throat strike", "/library/strikes/#kaljaebi"], "elbow": ["Palkup dollyeo chigi", "팔굽돌려치기", "Elbow strike", "/library/strikes/#palkup-dollyeo-chigi"], "eltarget": ["Palkup pyojeok chigi", "팔굽표적치기", "Elbow target strike", "/library/strikes/#palkup-pyojeok-chigi"], "sideelbow": ["Palkup yeop chigi", "팔굽옆치기", "Side elbow strike", "/library/strikes/#palkup-yeop-chigi"], "tgrab": ["Sonnal eopeo japgi", "손날엎어잡기", "Twisting knife-hand grab", "/library/strikes/#sonnal-eopeo-japgi"], "kneebreak": ["Mureup kkeokgi", "무릎꺾기", "Knee break", "/library/strikes/#mureup-kkeokgi"], "kick": ["Ap chagi", "앞차기", "Front kick", "/library/kicks/#ap-chagi"], "jkick": ["Twimyeo ap chagi", "뛰어앞차기", "Jumping front kick", "/library/kicks/#twimyeo-ap-chagi"], "dskick": ["Geodeup yeop chagi", "거듭옆차기", "Double side kick", "/library/kicks/#geodeup-yeop-chagi"], "skick": ["Yeop chagi", "옆차기", "Side kick", "/library/kicks/#yeop-chagi"], "hskick": ["Yeop chagi · mejumeok bakkat chigi", "옆차기 · 메주먹바깥치기", "Side kick with hammer-fist strike", "/library/kicks/#yeop-chagi-mejumeok-bakkat-chigi"], "rkick": ["Dollyeo chagi", "돌려차기", "Roundhouse kick", "/library/kicks/#dollyeo-chagi"], "tkick": ["Pyojeok chagi", "표적차기", "Target kick", "/library/kicks/#pyojeok-chagi"], "knee": ["Mureup chigi", "무릎치기", "Knee strike", "/library/kicks/#mureup-chigi"]}, "s": {"ready": ["Naranhi seogi", "나란히서기", "Parallel stance", "/library/stances/#naranhi-seogi"], "close": ["Moa seogi", "모아서기", "Closed stance", "/library/stances/#moa-seogi"], "walk": ["Ap seogi", "앞서기", "Walking stance", "/library/stances/#ap-seogi"], "front": ["Ap kubi", "앞굽이", "Front stance", "/library/stances/#ap-kubi"], "back": ["Dwit kubi", "뒷굽이", "Back stance", "/library/stances/#dwit-kubi"], "tiger": ["Beom seogi", "범서기", "Tiger stance", "/library/stances/#beom-seogi"], "horse": ["Juchum seogi", "주춤서기", "Horse stance", "/library/stances/#juchum-seogi"], "cross": ["Kkoa seogi", "꼬아서기", "Cross stance", "/library/stances/#kkoa-seogi"], "crane": ["Hakdari seogi", "학다리서기", "Crane stance", "/library/stances/#hakdari-seogi"], "kick": ["Ap chagi", "앞차기", "Kicking", "/library/kicks/#ap-chagi"], "skick": ["Yeop chagi", "옆차기", "Kicking", "/library/kicks/#yeop-chagi"], "rkick": ["Dollyeo chagi", "돌려차기", "Kicking", "/library/kicks/#dollyeo-chagi"], "knee": ["Mureup chigi", "무릎치기", "Knee strike", "/library/kicks/#mureup-chigi"]}};
 /* Figure renderer, footprints and stance chips, shared by the form pages and the library.
    Inlined by tools/build_form.py and tools/build_site.py; needs LIB (names and links from data/techniques.json). */
@@ -453,10 +464,11 @@ const FIST_FACE=[[-5.4,-4.3],[5.4,-4.3],[6.3,0],[5.6,4.5],[-5.6,4.5],[-6.3,0]];
 const mk=far=>({far,legs:[],arms:[],feet:[],fists:[],torso:null,head:null,neck:null});
 
 function skel(m,pr){
+  const HANDS={};let side;   // where each hand ends up (for the same-stance motion arcs and count badges)
   const k=(pr.thigh+pr.shin)/65,tk=pr.torso/55,ak=(pr.upper+pr.fore)/47,sw=pr.shW/18.5,hw=pr.hipW/9;
   function addArm(L,sh,h,pref,pf,flat){
-    if(pf){L.arms.push({ch:[sh,lerp(sh,h,.5),h],front:true});L.fists.push({c:h,front:true,flat});return}
-    const[e,w]=ik(sh,h,pr.upper,pr.fore,pref);L.arms.push({ch:[sh,e,w]});L.fists.push({w,d:norm(sub(w,e)),flat});
+    if(pf){L.arms.push({ch:[sh,lerp(sh,h,.5),h],front:true});L.fists.push({c:h,front:true,flat});HANDS[side]=h;return}
+    const[e,w]=ik(sh,h,pr.upper,pr.fore,pref);L.arms.push({ch:[sh,e,w]});L.fists.push({w,d:norm(sub(w,e)),flat});HANDS[side]=w;
   }
   if(m.view==="side"){
     const near=m.face==="R"?"R":"L",st=m.stance;
@@ -464,8 +476,9 @@ function skel(m,pr){
     const H=[0,hipY],S=[lean,hipY-pr.torso],u=norm(sub(S,H)),r=[-u[1],u[0]],Lt=pr.torso;
     const P=(x,y)=>add(add(H,mul(r,x)),mul(u,y));
     const Lay={farArm:mk(1),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0),nearArm:mk(0)};
+    Lay.farArm.part=Lay.nearArm.part="arm";Lay.farLeg.part=Lay.nearLeg.part="leg";
     const shN=P(0,Lt-5.5*tk),SH={near:shN,far:add(shN,[-3,-1.2])},hN=P(0,1),HP={near:hN,far:add(hN,[-3,0])};
-    ["L","R"].forEach(s=>{
+    ["L","R"].forEach(s=>{side=s;
       const dp=s===near?"near":"far",lead=s===m.lead;
       let t,pref=[1,-.25];
       if(st==="walk")t=lead?[24,56]:[-22,56];
@@ -554,12 +567,13 @@ function skel(m,pr){
       tails:[[P(9.6*ww,4.6),P(13.6,-13)],[P(9.2*ww,4.6),P(8.2,-14.2)]],knot:null,
       shadeA:P(-12,Lt/2),shadeB:P(12,Lt/2)
     };
-    return{k,mirror:m.face==="L",layers:["farArm","farLeg","nearLeg","head","torso","nearArm"].map(q=>Lay[q])};
+    return{k,hands:HANDS,mirror:m.face==="L",layers:["farArm","farLeg","nearLeg","head","torso","nearArm"].map(q=>Lay[q])};
   }
   const back=m.view==="back",sx=s=>(s==="L"?1:-1)*(back?-1:1),st=m.stance;
   const hipY=(st==="front"||st==="back"||st==="tiger")?6*k:st==="horse"?10*k:st==="cross"?4*k:st==="crane"?-1*k:-3*k,T=hipY-pr.torso;
   const Lay={arms:mk(0),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0),kick:mk(1)};
-  ["L","R"].forEach(s=>{
+  Lay.arms.part="arm";Lay.farLeg.part=Lay.nearLeg.part=Lay.kick.part="leg";
+  ["L","R"].forEach(s=>{side=s;
     const x=sx(s),hp=[x*pr.hipW*.95,hipY];let an,kn,nearer=true,sc=1;
     if(st==="ready"){an=[x*11*hw,58*k];kn=add(lerp(hp,an,.5),[x*.6,0])}
     else if(st==="close"){an=[x*4.5*hw,58*k];kn=add(lerp(hp,an,.5),[x*.3,0])}
@@ -673,7 +687,7 @@ function skel(m,pr){
     knot:back?null:[[-3.6,hipY-8.6],[3.6,hipY-8.6],[3.6,hipY+.2],[-3.6,hipY+.2]],
     shadeA:[-20,T+20],shadeB:[20,T+20]
   };
-  return{k,mirror:false,layers:back?[Lay.arms,Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso,Lay.kick]:[Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso,Lay.arms,Lay.kick]};
+  return{k,hands:HANDS,mirror:false,layers:back?[Lay.arms,Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso,Lay.kick]:[Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso,Lay.arms,Lay.kick]};
 }
 
 /* ---------- head shapes (local units, x forward / y down) ---------- */
@@ -692,11 +706,13 @@ const HAIR={
 };
 
 /* ---------- renderer ---------- */
-function draw(sk,D){
+// opt.only: "arm" draws just the arms (ghost arms); "upper" leaves out the legs (arm-only thumbnails).
+// opt.fadeLegs: legs drawn light (same stance as the previous count).
+function draw(sk,D,opt={}){
   const bc=BELTS[belt],O=D.ink,pr=D.pr;
   let defs="";
   const grad=(A,B,c1,c2)=>{const id="g"+(++gid);defs+=`<linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="${f(A[0])}" y1="${f(A[1])}" x2="${f(B[0])}" y2="${f(B[1])}"><stop offset="0" stop-color="${c1}"/><stop offset=".55" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient>`;return`url(#${id})`};
-  const out=sk.layers.map(L=>{
+  const out=sk.layers.filter(L=>!opt.only||(opt.only==="arm"?L.part==="arm":L.part!=="leg")).map(L=>{
     const gi=L.far?D.giFar:D.gi,skin=L.far?D.skinFar:D.skin,hair=D.hair;
     const shapes=[];let det="";
     L.legs.forEach(l=>{
@@ -762,7 +778,7 @@ function draw(sk,D){
       if(t.knot)b+=spline(t.knot,2);
       g+=`<path d="${b}" fill="${bc}" stroke="${O}" stroke-width="${D.dw}" stroke-linejoin="round"/>`;
     }
-    return g;
+    return opt.fadeLegs&&L.part==="leg"&&g?`<g opacity=".3">${g}</g>`:g;
   }).join("");
   return{defs,out};
 }
@@ -772,12 +788,40 @@ function draw(sk,D){
 const LEG=[9.8,9.5,8.7,7.7,7.4,7.3,7,7.2,7.9],ARM=[6.6,6.3,5.9,5.4,5.1,5,4.9,5.1,5.8];
 const PR={thigh:33,shin:32,upper:24,fore:23,torso:55,head:.95,shW:18.5,hipW:9,waist:1,legW:LEG,armW:ARM,flare:.6,fist:.95,foot:1,hair:"short"};
 const STY={ink:"#1b2030",gi:"#fdfdfb",giFar:"#dfe3ea",skin:"#ecd0b6",skinFar:"#cfb39b",hair:"#2a2f3a",ow:1.45,dw:1,sw:1.6,collar:3.2,pr:PR};
-function figure(m){
-  const sk=skel(m,PR),{out}=draw(sk,STY);
-  return`<svg class="body" viewBox="-62 -90 124 160" role="img" aria-label="${T[m.tech][2]}">`+
-    `<ellipse class="glow" cx="0" cy="64.5" rx="50" ry="5.5" fill="none" stroke="var(--fire)" stroke-width="2"/>`+
-    `<ellipse cx="0" cy="64" rx="40" ry="4" fill="var(--ink)" opacity=".09"/>`+
-    (sk.mirror?`<g transform="scale(-1,1)">${out}</g>`:out)+`</svg>`;
+/* opt (same-stance treatments, issue #4):
+     fade   legs drawn light: the stance is carried over from the previous count
+     from   the previous move: a dashed arc from where each changed hand was to where it ends
+     ghosts earlier counts on the same stance, drawn as light arms only
+     badges [{m,label,on}]: count numbers at the hand that acts in each count
+     crop   upper body only, cropped (arm-only thumbnail) */
+const actHand=m=>m.hand&&m.hand.length===1?m.hand:(["R","L"].find(s=>m.arms&&m.arms[s]&&m.arms[s]!=="chamber")||"R");
+function motionArc(p,q){
+  const d=dist(p,q);if(d<4)return"";
+  const mid=lerp(p,q,.5),n=norm([-(q[1]-p[1]),q[0]-p[0]]),c0=[0,-28];
+  const c=add(mid,mul(n,(dist(add(mid,n),c0)>dist(sub(mid,n),c0)?1:-1)*Math.min(d*.35,14)));
+  const t=norm(sub(q,c)),a=sub(q,mul(t,1.2)),w=[-t[1],t[0]];
+  return`<path d="M${f(p[0])} ${f(p[1])}Q${f(c[0])} ${f(c[1])} ${f(a[0])} ${f(a[1])}" fill="none" stroke="var(--fire)" stroke-width="1.5" stroke-dasharray="3 2.2" stroke-linecap="round"/>`+
+    `<path d="M${f(q[0]+t[0]*1.5)} ${f(q[1]+t[1]*1.5)}L${f(a[0]-t[0]*3+w[0]*3)} ${f(a[1]-t[1]*3+w[1]*3)}L${f(a[0]-t[0]*3-w[0]*3)} ${f(a[1]-t[1]*3-w[1]*3)}Z" fill="var(--fire)"/>`;
+}
+function figure(m,opt={}){
+  const sk=skel(m,PR),{out}=draw(sk,STY,{fadeLegs:opt.fade,only:opt.crop?"upper":null});
+  let under="",over="",marks="";
+  if(opt.from){const pk=skel(opt.from,PR);
+    const s=actHand(m),a=(opt.from.arms||{})[s]||"chamber",b=(m.arms||{})[s]||"chamber";   // the acting hand only: two arcs read as noise
+    if(a!==b&&pk.hands[s]&&sk.hands[s])over+=motionArc(pk.hands[s],sk.hands[s])}
+  (opt.ghosts||[]).forEach(g=>{under+=`<g opacity=".32">${draw(skel(g,PR),STY,{only:"arm"}).out}</g>`});
+  const placed=[];
+  (opt.badges||[]).forEach(b=>{const h=skel(b.m,PR).hands[actHand(b.m)];if(!h)return;
+    let x=sk.mirror?-h[0]:h[0],y=h[1]-9;const w=b.label.length*3.6+5;
+    while(placed.some(([px,py])=>Math.abs(px-x)<w&&Math.abs(py-y)<10))y-=10.5;   // stack badges that would overlap
+    placed.push([x,y]);
+    marks+=`<g class="badge${b.on?" on":""}"><rect x="${f(x-w/2)}" y="${f(y-4.6)}" width="${f(w)}" height="9.2" rx="4.6" fill="${b.on?"var(--fire)":"var(--surface)"}" stroke="var(--fire)" stroke-width="1"/>`+
+      `<text x="${f(x)}" y="${f(y+2.1)}" text-anchor="middle" font-size="6.2" font-family="IBM Plex Mono,monospace" fill="${b.on?"#fff":"var(--fire)"}">${b.label}</text></g>`});
+  const inner=under+out+over;
+  return`<svg class="body${opt.crop?" crop":""}" viewBox="${opt.crop?"-62 -90 124 100":"-62 -90 124 160"}" role="img" aria-label="${T[m.tech][2]}">`+
+    (opt.crop?"":`<ellipse class="glow" cx="0" cy="64.5" rx="50" ry="5.5" fill="none" stroke="var(--fire)" stroke-width="2"/>`+
+    `<ellipse cx="0" cy="64" rx="40" ry="4" fill="var(--ink)" opacity=".09"/>`)+
+    (sk.mirror?`<g transform="scale(-1,1)">${inner}</g>`:inner)+marks+`</svg>`;
 }
 
 /* ---------- stance footprints (top view, na = up) ----------
@@ -837,11 +881,43 @@ const M=FORM.moves;
 
 /* ---------- build board ---------- */
 const byId=Object.fromEntries(M.map((m,i)=>[m.id,i]));
+/* ---------- moves where the stance doesn't change (issue #4) ----------
+   A count "carries" its stance when stance, lead foot and facing match the count before it and
+   neither is a kick or the ready stance; "carry": false in the move data turns it off.
+   Three treatments are being compared (?same=a|b|c on the page; FORM.same sets the default):
+     a  carry-over: legs light, a dashed arc from where the moving hand was
+     b  combined card: one figure per stance, earlier counts as light arms, numbered at the hand
+     c  inset strip: the first count in full, later counts as small arm-only thumbnails */
+const KICKS=new Set(["kick","skick","rkick","knee"]);
+const carries=i=>{if(i<1)return false;const a=M[i-1],b=M[i];
+  return b.carry!==false&&!KICKS.has(a.stance)&&!KICKS.has(b.stance)&&a.stance!=="ready"&&a.stance===b.stance&&
+    a.lead===b.lead&&a.dir===b.dir&&a.view===b.view&&a.face===b.face};
+const CARRY=M.map((_,i)=>carries(i));
+const HEAD=M.map((_,i)=>{let h=i;while(CARRY[h])h--;return h});
+const GROUP=i=>M.map((_,j)=>j).filter(j=>HEAD[j]===HEAD[i]);
+const SAME=(()=>{const q=new URLSearchParams(location.search).get("same");return["a","b","c"].includes(q)?q:(FORM.same||"")})();
+const label=id=>id==="J"?"준비":id;
+// the figure for count i on a card, a slide or the study stage
+function fig(i,where){
+  const m=M[i];
+  if(SAME==="a"&&CARRY[i])return figure(m,{fade:true,from:M[i-1]});
+  if(SAME==="b"){const g=GROUP(i);if(g.length>1){const last=g[g.length-1];
+    return figure(M[last],{ghosts:g.slice(0,-1).map(j=>M[j]),badges:g.map(j=>({m:M[j],label:M[j].id,on:where!=="card"&&j===i}))})}}
+  if(SAME==="c"&&CARRY[i]&&where==="card")return figure(m,{crop:true});
+  return figure(m);
+}
 function card(id){
   const i=byId[id],m=M[i];
+  if(SAME==="b"&&CARRY[i])return"";                    // drawn on its group's card
+  if(SAME==="c"&&CARRY[i])return`<button class="fig mini" data-i="${i}" type="button" aria-label="Move ${id}: ${T[m.tech][2]}, same stance">
+    <span class="no">${id}</span>${fig(i,"card")}<span class="tech">${T[m.tech][0]}</span><span class="en">${T[m.tech][2]}</span><span class="same">same stance</span></button>`;
+  if(SAME==="b"&&GROUP(i).length>1){const g=GROUP(i);
+    return`<button class="fig combo" data-i="${i}" data-g="${g.join(" ")}" type="button" aria-label="Moves ${g.map(j=>M[j].id).join(", ")}: ${g.map(j=>T[M[j].tech][2]).join(", then ")}, ${stanceLabel(m)} stance">
+    <span class="no">${g.map(j=>label(M[j].id)).join(" · ")}</span>${feet(m)}${fig(i,"card")}
+    <span class="tech">${g.map(j=>T[M[j].tech][0]).join(" · ")}</span><span class="en">${g.map(j=>T[M[j].tech][2]).join(" · ")}</span>${chip(m)}${g.some(j=>M[j].kihap)?'<span class="kh">기합 KIHAP</span>':""}</button>`}
   return`<button class="fig" data-i="${i}" type="button" aria-label="Move ${id}: ${T[m.tech][2]}, ${stanceLabel(m)} stance">
-    <span class="no">${id==="J"?"준비":id}</span>${feet(m)}${figure(m)}
-    <span class="tech">${T[m.tech][0]}</span><span class="en">${T[m.tech][2]}</span>${chip(m)}${m.kihap?'<span class="kh">기합 KIHAP</span>':""}</button>`;
+    <span class="no">${label(id)}</span>${feet(m)}${fig(i,"card")}
+    <span class="tech">${T[m.tech][0]}</span><span class="en">${T[m.tech][2]}</span>${chip(m)}${SAME==="a"&&CARRY[i]?'<span class="same">same stance</span>':""}${m.kihap?'<span class="kh">기합 KIHAP</span>':""}</button>`;
 }
 const pair=ids=>`<div class="pair">${ids.map(card).join("")}</div>`;
 /* Floor shape. Default is the Taegeuk 王: three full bars joined by the centre line.
@@ -895,6 +971,12 @@ function placeRail(){
   });
 }
 
+/* prototype switch for the same-stance treatments: only with ?same= in the URL */
+if(new URLSearchParams(location.search).has("same")){
+  const opts=[["","Off"],["a","A · carry-over"],["b","B · combined"],["c","C · inset"]];
+  document.querySelector(".actions").insertAdjacentHTML("beforeend",`<div class="seg proto" role="group" aria-label="Same-stance prototype"><span>Same stance</span>${
+    opts.map(([k,t])=>`<a href="?same=${k||"off"}${location.hash}" aria-pressed="${SAME===k}">${t}</a>`).join("")}</div>`);
+}
 /* legend + belts + style */
 document.getElementById("legend").innerHTML=
   feet({dir:"na",stance:"walk",lead:"L"})+`<p><b>Ap seogi</b> · walking stance. One natural step, feet almost in line.</p>`+
@@ -939,7 +1021,7 @@ function slide(i){
   const m=M[i],te=T[m.tech],st=STANCE[m.stance];
   return`<div class="slide" role="group" aria-roledescription="slide" aria-label="${m.id==="J"?"Ready":"Move "+m.id}, ${i+1} of ${M.length}"><div class="sc">
     <div class="sc-head"><div class="sc-no">${m.id==="J"?"READY":"MOVE"} · FACING ${DIRN[m.dir].toUpperCase()}<b>${m.id==="J"?"준비":m.id}</b></div>${minimap(i)}</div>
-    <div class="sc-fig">${figure(m)}${feet(m)}</div>
+    <div class="sc-fig">${fig(i,"slide")}${feet(m)}</div>
     <h3><a class="lib" href="${techHref(m.tech)}">${te[0]}</a> <span>${te[1]}</span></h3>
     <div class="en">${te[2]}${m.note?" · "+m.note:""}</div>
     <div class="row"><a class="chiplink" href="${stanceHref(m.stance)}" aria-label="${st[2]}: stance details">${chip(m)}</a><span class="ko" style="color:var(--muted);font-size:13px">${st[1]}</span>${m.kihap?'<span class="kh" style="margin:0">기합 KIHAP</span>':""}</div>
@@ -971,9 +1053,9 @@ function show(i,src){
   if(src!=="swipe")goSlide(cur);
   document.getElementById("cpos").textContent=`${cur+1} / ${M.length}`;
   document.getElementById("cbar").style.width=((cur+1)/M.length*100)+"%";
-  document.querySelectorAll(".fig").forEach(b=>b.classList.toggle("on",+b.dataset.i===cur));
+  document.querySelectorAll(".fig").forEach(b=>b.classList.toggle("on",b.dataset.g?b.dataset.g.split(" ").includes(String(cur)):+b.dataset.i===cur));
   rows.querySelectorAll("tr").forEach(r=>r.classList.toggle("on",+r.dataset.i===cur));
-  document.getElementById("stage").innerHTML=figure(m)+feet(m);
+  document.getElementById("stage").innerHTML=fig(cur,"stage")+feet(m);
   document.getElementById("kicker").textContent=(m.id==="J"?"READY":"MOVE "+m.id)+"  ·  FACING "+DIRN[m.dir].toUpperCase();
   const te=T[m.tech],st=STANCE[m.stance];
   document.getElementById("name").innerHTML=`<a class="lib" href="${techHref(m.tech)}">${te[0]}</a> <span style="font-weight:400;color:var(--muted)">${te[1]}</span><small>${te[2]}${m.note?" · "+m.note:""}</small>`;

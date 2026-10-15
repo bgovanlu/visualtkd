@@ -341,7 +341,7 @@
    "desc": "Step the left foot down toward da into a horse stance. Large hinge: left elbow out toward da, right fist across the chest."
   },
   {
-   "id": "10",
+   "id": "10", "carry": false,
    "dir": "ga",
    "view": "front",
    "stance": "horse",
@@ -431,7 +431,7 @@
    "desc": "Step the right foot down toward ra into a horse stance. Large hinge: right elbow out toward ra, left fist across the chest."
   },
   {
-   "id": "17",
+   "id": "17", "carry": false,
    "dir": "ga",
    "view": "front",
    "stance": "horse",
@@ -468,7 +468,7 @@
    "desc": "Step the right foot down toward ra into a horse stance. Large hinge."
   },
   {
-   "id": "20",
+   "id": "20", "carry": false,
    "dir": "ga",
    "view": "front",
    "stance": "horse",
@@ -558,7 +558,7 @@
    "desc": "Step the left foot down toward da into a horse stance. Large hinge."
   },
   {
-   "id": "27",
+   "id": "27", "carry": false,
    "dir": "ga",
    "view": "front",
    "stance": "horse",

@@ -77,10 +77,11 @@ const FIST_FACE=[[-5.4,-4.3],[5.4,-4.3],[6.3,0],[5.6,4.5],[-5.6,4.5],[-6.3,0]];
 const mk=far=>({far,legs:[],arms:[],feet:[],fists:[],torso:null,head:null,neck:null});
 
 function skel(m,pr){
+  const HANDS={};let side;   // where each hand ends up (for the same-stance motion arcs and count badges)
   const k=(pr.thigh+pr.shin)/65,tk=pr.torso/55,ak=(pr.upper+pr.fore)/47,sw=pr.shW/18.5,hw=pr.hipW/9;
   function addArm(L,sh,h,pref,pf,flat){
-    if(pf){L.arms.push({ch:[sh,lerp(sh,h,.5),h],front:true});L.fists.push({c:h,front:true,flat});return}
-    const[e,w]=ik(sh,h,pr.upper,pr.fore,pref);L.arms.push({ch:[sh,e,w]});L.fists.push({w,d:norm(sub(w,e)),flat});
+    if(pf){L.arms.push({ch:[sh,lerp(sh,h,.5),h],front:true});L.fists.push({c:h,front:true,flat});HANDS[side]=h;return}
+    const[e,w]=ik(sh,h,pr.upper,pr.fore,pref);L.arms.push({ch:[sh,e,w]});L.fists.push({w,d:norm(sub(w,e)),flat});HANDS[side]=w;
   }
   if(m.view==="side"){
     const near=m.face==="R"?"R":"L",st=m.stance;
@@ -88,8 +89,9 @@ function skel(m,pr){
     const H=[0,hipY],S=[lean,hipY-pr.torso],u=norm(sub(S,H)),r=[-u[1],u[0]],Lt=pr.torso;
     const P=(x,y)=>add(add(H,mul(r,x)),mul(u,y));
     const Lay={farArm:mk(1),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0),nearArm:mk(0)};
+    Lay.farArm.part=Lay.nearArm.part="arm";Lay.farLeg.part=Lay.nearLeg.part="leg";
     const shN=P(0,Lt-5.5*tk),SH={near:shN,far:add(shN,[-3,-1.2])},hN=P(0,1),HP={near:hN,far:add(hN,[-3,0])};
-    ["L","R"].forEach(s=>{
+    ["L","R"].forEach(s=>{side=s;
       const dp=s===near?"near":"far",lead=s===m.lead;
       let t,pref=[1,-.25];
       if(st==="walk")t=lead?[24,56]:[-22,56];
@@ -178,12 +180,13 @@ function skel(m,pr){
       tails:[[P(9.6*ww,4.6),P(13.6,-13)],[P(9.2*ww,4.6),P(8.2,-14.2)]],knot:null,
       shadeA:P(-12,Lt/2),shadeB:P(12,Lt/2)
     };
-    return{k,mirror:m.face==="L",layers:["farArm","farLeg","nearLeg","head","torso","nearArm"].map(q=>Lay[q])};
+    return{k,hands:HANDS,mirror:m.face==="L",layers:["farArm","farLeg","nearLeg","head","torso","nearArm"].map(q=>Lay[q])};
   }
   const back=m.view==="back",sx=s=>(s==="L"?1:-1)*(back?-1:1),st=m.stance;
   const hipY=(st==="front"||st==="back"||st==="tiger")?6*k:st==="horse"?10*k:st==="cross"?4*k:st==="crane"?-1*k:-3*k,T=hipY-pr.torso;
   const Lay={arms:mk(0),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0),kick:mk(1)};
-  ["L","R"].forEach(s=>{
+  Lay.arms.part="arm";Lay.farLeg.part=Lay.nearLeg.part=Lay.kick.part="leg";
+  ["L","R"].forEach(s=>{side=s;
     const x=sx(s),hp=[x*pr.hipW*.95,hipY];let an,kn,nearer=true,sc=1;
     if(st==="ready"){an=[x*11*hw,58*k];kn=add(lerp(hp,an,.5),[x*.6,0])}
     else if(st==="close"){an=[x*4.5*hw,58*k];kn=add(lerp(hp,an,.5),[x*.3,0])}
@@ -297,7 +300,7 @@ function skel(m,pr){
     knot:back?null:[[-3.6,hipY-8.6],[3.6,hipY-8.6],[3.6,hipY+.2],[-3.6,hipY+.2]],
     shadeA:[-20,T+20],shadeB:[20,T+20]
   };
-  return{k,mirror:false,layers:back?[Lay.arms,Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso,Lay.kick]:[Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso,Lay.arms,Lay.kick]};
+  return{k,hands:HANDS,mirror:false,layers:back?[Lay.arms,Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso,Lay.kick]:[Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso,Lay.arms,Lay.kick]};
 }
 
 /* ---------- head shapes (local units, x forward / y down) ---------- */
@@ -316,11 +319,13 @@ const HAIR={
 };
 
 /* ---------- renderer ---------- */
-function draw(sk,D){
+// opt.only: "arm" draws just the arms (ghost arms); "upper" leaves out the legs (arm-only thumbnails).
+// opt.fadeLegs: legs drawn light (same stance as the previous count).
+function draw(sk,D,opt={}){
   const bc=BELTS[belt],O=D.ink,pr=D.pr;
   let defs="";
   const grad=(A,B,c1,c2)=>{const id="g"+(++gid);defs+=`<linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="${f(A[0])}" y1="${f(A[1])}" x2="${f(B[0])}" y2="${f(B[1])}"><stop offset="0" stop-color="${c1}"/><stop offset=".55" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient>`;return`url(#${id})`};
-  const out=sk.layers.map(L=>{
+  const out=sk.layers.filter(L=>!opt.only||(opt.only==="arm"?L.part==="arm":L.part!=="leg")).map(L=>{
     const gi=L.far?D.giFar:D.gi,skin=L.far?D.skinFar:D.skin,hair=D.hair;
     const shapes=[];let det="";
     L.legs.forEach(l=>{
@@ -386,7 +391,7 @@ function draw(sk,D){
       if(t.knot)b+=spline(t.knot,2);
       g+=`<path d="${b}" fill="${bc}" stroke="${O}" stroke-width="${D.dw}" stroke-linejoin="round"/>`;
     }
-    return g;
+    return opt.fadeLegs&&L.part==="leg"&&g?`<g opacity=".3">${g}</g>`:g;
   }).join("");
   return{defs,out};
 }
@@ -396,12 +401,40 @@ function draw(sk,D){
 const LEG=[9.8,9.5,8.7,7.7,7.4,7.3,7,7.2,7.9],ARM=[6.6,6.3,5.9,5.4,5.1,5,4.9,5.1,5.8];
 const PR={thigh:33,shin:32,upper:24,fore:23,torso:55,head:.95,shW:18.5,hipW:9,waist:1,legW:LEG,armW:ARM,flare:.6,fist:.95,foot:1,hair:"short"};
 const STY={ink:"#1b2030",gi:"#fdfdfb",giFar:"#dfe3ea",skin:"#ecd0b6",skinFar:"#cfb39b",hair:"#2a2f3a",ow:1.45,dw:1,sw:1.6,collar:3.2,pr:PR};
-function figure(m){
-  const sk=skel(m,PR),{out}=draw(sk,STY);
-  return`<svg class="body" viewBox="-62 -90 124 160" role="img" aria-label="${T[m.tech][2]}">`+
-    `<ellipse class="glow" cx="0" cy="64.5" rx="50" ry="5.5" fill="none" stroke="var(--fire)" stroke-width="2"/>`+
-    `<ellipse cx="0" cy="64" rx="40" ry="4" fill="var(--ink)" opacity=".09"/>`+
-    (sk.mirror?`<g transform="scale(-1,1)">${out}</g>`:out)+`</svg>`;
+/* opt (same-stance treatments, issue #4):
+     fade   legs drawn light: the stance is carried over from the previous count
+     from   the previous move: a dashed arc from where each changed hand was to where it ends
+     ghosts earlier counts on the same stance, drawn as light arms only
+     badges [{m,label,on}]: count numbers at the hand that acts in each count
+     crop   upper body only, cropped (arm-only thumbnail) */
+const actHand=m=>m.hand&&m.hand.length===1?m.hand:(["R","L"].find(s=>m.arms&&m.arms[s]&&m.arms[s]!=="chamber")||"R");
+function motionArc(p,q){
+  const d=dist(p,q);if(d<4)return"";
+  const mid=lerp(p,q,.5),n=norm([-(q[1]-p[1]),q[0]-p[0]]),c0=[0,-28];
+  const c=add(mid,mul(n,(dist(add(mid,n),c0)>dist(sub(mid,n),c0)?1:-1)*Math.min(d*.35,14)));
+  const t=norm(sub(q,c)),a=sub(q,mul(t,1.2)),w=[-t[1],t[0]];
+  return`<path d="M${f(p[0])} ${f(p[1])}Q${f(c[0])} ${f(c[1])} ${f(a[0])} ${f(a[1])}" fill="none" stroke="var(--fire)" stroke-width="1.5" stroke-dasharray="3 2.2" stroke-linecap="round"/>`+
+    `<path d="M${f(q[0]+t[0]*1.5)} ${f(q[1]+t[1]*1.5)}L${f(a[0]-t[0]*3+w[0]*3)} ${f(a[1]-t[1]*3+w[1]*3)}L${f(a[0]-t[0]*3-w[0]*3)} ${f(a[1]-t[1]*3-w[1]*3)}Z" fill="var(--fire)"/>`;
+}
+function figure(m,opt={}){
+  const sk=skel(m,PR),{out}=draw(sk,STY,{fadeLegs:opt.fade,only:opt.crop?"upper":null});
+  let under="",over="",marks="";
+  if(opt.from){const pk=skel(opt.from,PR);
+    const s=actHand(m),a=(opt.from.arms||{})[s]||"chamber",b=(m.arms||{})[s]||"chamber";   // the acting hand only: two arcs read as noise
+    if(a!==b&&pk.hands[s]&&sk.hands[s])over+=motionArc(pk.hands[s],sk.hands[s])}
+  (opt.ghosts||[]).forEach(g=>{under+=`<g opacity=".32">${draw(skel(g,PR),STY,{only:"arm"}).out}</g>`});
+  const placed=[];
+  (opt.badges||[]).forEach(b=>{const h=skel(b.m,PR).hands[actHand(b.m)];if(!h)return;
+    let x=sk.mirror?-h[0]:h[0],y=h[1]-9;const w=b.label.length*3.6+5;
+    while(placed.some(([px,py])=>Math.abs(px-x)<w&&Math.abs(py-y)<10))y-=10.5;   // stack badges that would overlap
+    placed.push([x,y]);
+    marks+=`<g class="badge${b.on?" on":""}"><rect x="${f(x-w/2)}" y="${f(y-4.6)}" width="${f(w)}" height="9.2" rx="4.6" fill="${b.on?"var(--fire)":"var(--surface)"}" stroke="var(--fire)" stroke-width="1"/>`+
+      `<text x="${f(x)}" y="${f(y+2.1)}" text-anchor="middle" font-size="6.2" font-family="IBM Plex Mono,monospace" fill="${b.on?"#fff":"var(--fire)"}">${b.label}</text></g>`});
+  const inner=under+out+over;
+  return`<svg class="body${opt.crop?" crop":""}" viewBox="${opt.crop?"-62 -90 124 100":"-62 -90 124 160"}" role="img" aria-label="${T[m.tech][2]}">`+
+    (opt.crop?"":`<ellipse class="glow" cx="0" cy="64.5" rx="50" ry="5.5" fill="none" stroke="var(--fire)" stroke-width="2"/>`+
+    `<ellipse cx="0" cy="64" rx="40" ry="4" fill="var(--ink)" opacity=".09"/>`)+
+    (sk.mirror?`<g transform="scale(-1,1)">${inner}</g>`:inner)+marks+`</svg>`;
 }
 
 /* ---------- stance footprints (top view, na = up) ----------

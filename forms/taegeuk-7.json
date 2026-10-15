@@ -681,7 +681,7 @@
    "desc": "Feet in place. Left knife-hand side block."
   },
   {
-   "id": "25",
+   "id": "25", "carry": false,
    "dir": "na",
    "view": "back",
    "stance": "horse",

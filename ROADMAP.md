@@ -9,7 +9,7 @@ Plan for the open GitHub issues and the work around them. Updated 15 October 202
 | Phase | Milestone | Issues | Can start | Size |
 |---|---|---|---|---|
 | 1 | Site structure | #5 landing page, #6 details section, #2 hand and foot details (pages and links) | **Built 15 Oct**; open items in REVIEW.md | M |
-| 2 | Diagram clarity | #4 same-stance moves, #3 footwork diagram | Now (after 1 defines the links) | L |
+| 2 | Diagram clarity | #4 same-stance moves, #3 footwork diagram | #4 prototypes built 15 Oct (`design/same-stance.md`, pick A/B/C); #3 in progress | L |
 | 3 | Character v2 | #7 new figure rig, #1 back-view kicks, #2 hand and foot art | After the MS-1–MS-8 review | L |
 | 4 | Poomsae sheets v2 | re-pose and rebuild all 11 forms | After phase 3 | M |
 | — | Launch | #8 hosting and DNS | **Done**: live on AWS S3 + CloudFront since 14 Oct | — |
@@ -147,6 +147,6 @@ Live since 14 October on AWS: S3 + CloudFront, stack `infra/aws/site.yaml`, depl
 |---|---|---|
 | 1 | About text: owner, school or federation to name, contact | #5 |
 | 2 | Library URL scheme `/library/<family>/#<slug>` | #6, #2 |
-| 3 | Pick treatment A, B or C after the prototypes | #4 |
+| 3 | Pick treatment A, B or C: prototypes live via `?same=a|b|c`, compared in `design/same-stance.md` | #4 |
 | 4 | ~~Commit or describe the footwork example~~ done: `design/refs/footwork-example-issue3.png` | #3 |
 | 5 | Review MS-1 to MS-8 | #7, #1, phase 4 |
