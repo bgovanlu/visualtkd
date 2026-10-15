@@ -68,6 +68,7 @@ def build(path, do_print):
         "SIZE_CSS": f':root{{--card-w:{F["cardW"]}px;--fig-h:{F["figH"]}px}}' if "cardW" in F else "",
         "BASE_CSS": S.read("templates/base.css"), "NAV": S.nav("forms"), "SITEFOOT": S.footer(),
         "FIGURE_JS": S.read("templates/figure.js"), "LIB_JSON": S.lib_js(),
+        "FOOTWORK_JS": S.read("templates/footwork.js").replace("if(typeof module", "if(false&&typeof module"),
         "NOTE_H": F["note"]["h"], "NOTE_P": F["note"]["p"], "REFS": refs(F), "FOOTER": F["footer"], "FORM_JSON": data,
     }
     for k, v in rep.items(): t = t.replace("{{" + k + "}}", v)

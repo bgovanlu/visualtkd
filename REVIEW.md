@@ -59,6 +59,17 @@ To change a form, edit `forms/<form>.json` (e.g. `taegeuk-3.json`, `koryo.json`)
 - [ ] **Hands and feet page** shows a technique that uses each surface, not a close-up of the hand or foot. The close-ups come from model sheet MS-8 in Phase 3.
 - [ ] **`figH` in the form JSON has never taken effect.** A later `:root` rule in the template resets `--fig-h` to 150px, so only `cardW` shrinks the cards. We left this alone so the print sheets don't move. Fix it with the character v2 rebuild, or drop the field.
 
+## Footwork simulator (Phase 2, #3) and same-stance moves (#4)
+
+See `design/footwork.md` and `design/same-stance.md`. Open any form with `?footwork` to see the footwork, or with `?same=a|b|c` for the same-stance treatments.
+
+- [ ] **Pick a same-stance treatment:** A, B or C.
+- [ ] **Check the footwork diagrams** on two forms against your example (`design/refs/footwork-example-issue3.png`). Then we decide whether they replace the footprint glyph by default.
+- [ ] **T7 21-2 to 25 (horse stances on the centre line).** The data draws these from behind, facing na, with the feet across the line. But the instructions ("land in a horse stance" after a kick toward na; "step the right foot forward into a horse stance") need the feet *on* the na line and the body facing sideways. The simulator assumes the latter (`"step": {"horse": "along"}`). Which is right? If the body faces sideways, the figures should be side views.
+- [ ] **T8 7** ("cross the left foot in front of the right and step out"). Does the stance travel toward da³, and how far? The simulator currently leaves it in place, because assuming a full stance length of travel made the end position worse.
+- [ ] **Where each form ends, simulated** (foot lengths from the start, before the final baro step): T1 1.4, T2 0.6, T3 1.1, T4 0.8, T5 1.7, T6 2.3, T7 5.2, T8 3.1, Koryo 2.3, Keumgang 2.7, Taebaek 4.2. The largest values point at steps worth checking against the video (T7 and Taebaek).
+- [ ] **The minimap still uses the hand-placed `pos`.** The simulated positions could replace it once the footwork is approved.
+
 ## Taegeuk 1 · Il Jang
 
 Sources: Kukkiwon page, standard Kukkiwon sequence. The fandom page wouldn't load when this was built.

@@ -616,7 +616,7 @@
    "desc": "Right target kick into the left palm."
   },
   {
-   "id": "21-2",
+   "id": "21-2", "step": {"horse": "along"},
    "dir": "na",
    "view": "back",
    "stance": "horse",
@@ -656,7 +656,7 @@
    "desc": "Left target kick into the right palm."
   },
   {
-   "id": "23-2",
+   "id": "23-2", "step": {"horse": "along"},
    "dir": "na",
    "view": "back",
    "stance": "horse",
@@ -669,7 +669,7 @@
    "desc": "Land in a horse stance. Left elbow strike into the right palm."
   },
   {
-   "id": "24",
+   "id": "24", "step": {"horse": "along"},
    "dir": "na",
    "view": "back",
    "stance": "horse",
@@ -681,7 +681,7 @@
    "desc": "Feet in place. Left knife-hand side block."
   },
   {
-   "id": "25", "carry": false,
+   "id": "25", "step": {"horse": "along"}, "carry": false,
    "dir": "na",
    "view": "back",
    "stance": "horse",

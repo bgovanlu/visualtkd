@@ -18,6 +18,7 @@ data/techniques.json      the technique library and every label on the form page
 data/catalog.json         every form, in teaching order (drives the index, landing page and progress meter)
 templates/form.html       the shared form page template
 templates/figure.js       figure renderer, footprints and chips (form pages + library)
+templates/footwork.js     floor simulator + footwork diagrams (shown with ?footwork while in review)
 templates/base.css        tokens, nav, footer and chips shared by every page
 tools/
   build_form.py           builds pages, PDFs (--print), QR check, _redirects, then build_site.py
@@ -25,7 +26,7 @@ tools/
   sitekit.py              shared nav/footer/data helpers for both builders
   build_print.py          the 2-page print sheet
   deploy_aws.py           deploys site/ to AWS (stack, upload, cache invalidation)
-  check/                  screenshots for review: shot.py (board / phone), figs.py (enlarged poses), pages.py (site pages) -> shots/
+  check/                  screenshots for review: shot.py (board / phone), figs.py (enlarged poses), pages.py (site pages), same.py (same-stance treatments), footwork.py (simulator drift per form) -> shots/
   authoring/              scripts that wrote some forms/*.json (reference only; re-running overwrites)
 infra/aws/                CloudFormation stack (S3, CloudFront, ACM, Route 53), viewer-request function, deployer IAM policy
 infra/route53/            DNS records kept outside the stack (no-mail MX/SPF/DMARC)

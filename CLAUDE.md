@@ -8,6 +8,7 @@ Every page is **generated**; never hand-edit anything under `site/`.
 
 - `templates/form.html` — the form page template (layout, board, carousel, study panel, table, print hooks). Change shared form-page behaviour here.
 - `templates/figure.js` — the figure renderer, footprints and stance chips (`skel()`, `draw()`, `feet()`, `chip()`), inlined into form pages and the library/how-to-read pages.
+- `templates/footwork.js` — the floor simulator (both feet after every count, from stance, lead, facing and the instruction text) and the footwork glyph and whole-form plan, shown with `?footwork`.
 - `templates/base.css` — colour tokens, type, site nav, footer and chip styles shared by every page.
 - `data/techniques.json` — the technique library: names (romanised, Hangul, English), family, surface, height and description for every `tech` and `stance` key. The form pages read their labels from here.
 - `data/catalog.json` — every form the site will cover, in teaching order; a form is published once its `forms/*.json` exists.
@@ -53,6 +54,8 @@ A new form is picked up automatically: once `forms/<form>.json` exists for a slu
 - `tech` keys the technique library `data/techniques.json` (every key above plus combined names such as `scissors`, `mountain`, `duppercut`, `apalm`, `aouter`, `alow`, `obackfist`, `tkick`, `jkick`). A new technique needs an entry there (family, slug, names, surface, height, a description in our own words); **the build fails if a move uses a technique or stance with no entry.**
 - Steps with several techniques (double punch, block then punch) get sub-numbers like kicks: `17-1` block, `17-2` punch, `17-3` punch. One figure per count.
 - `note`: `bandae` (punch hand = lead foot) or `baro` (opposite hand). `kihap: true` on the shouting move.
+- `carry: false` — the stance matches the count before but the feet move (a cross-step, a 360° turn); stops the same-stance treatment (#4).
+- `step` — footwork simulator hint (#3), only where the instruction text isn't enough: `{"plant": "L"|"R"|"both"|"none", "move": [forward, right], "horse": "along"}`. Check with `tools/check/footwork.py` (every form should end within a stride or two of where it started).
 - `desc`: one plain instruction sentence: turn and direction, stance, technique.
 
 ## Floor plan (`layout`, `pos`, `boardMin`)
