@@ -172,6 +172,105 @@
    "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
    "reference": "77900b89-d25b-4d37-bf41-6e558940072d (direction #10)",
    "prompt": "Use the SAME drawing style as the reference image: realistic anatomical ink drawing, fine line, light cross-contour shading, dobok sleeve cuffs visible at the wrists.\n\nMODEL SHEET 8 — HANDS AND FEET close-ups on white, a neat grid, small label under each.\nTop half, HANDS (right hand): FIST (jumeok) from the front showing the four knuckles and the thumb wrapped across the index and middle fingers; FIST from the side; FIST from the back; KNIFE HAND (sonnal) side view, fingers together and straight, thumb bent in; SPEAR HAND (pyeonsonkkeut), fingertips forward; PALM HEEL (batangson), wrist bent back; ARC HAND (ageumson / kaljaebi), thumb and fingers spread in a C; BACK FIST (deungjumeok) from above.\nBottom half, BARE FEET (right foot): SIDE (inside arch view); FRONT; BACK (heel); TOP-DOWN; BALL OF THE FOOT strike position with toes pulled back; FOOT BLADE (balnal) strike position; INSTEP (baldeung) with toes pointed; HEEL (dwichook).\nAnatomically correct, clean and clear. No other text, no logos."
+  },
+  {
+   "set": "model-sheet-v2",
+   "n": 1,
+   "file": "design/models/ms-v2/ms1-basic-stances-v2.png",
+   "job_id": "4b80a8c0-dfa6-4829-8df4-7278a8746022",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_155942_4b80a8c0-dfa6-4829-8df4-7278a8746022.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "issue": "#9",
+   "fixes": "MS-1 v1 (approved stances); arms only: fists palm-up on the belt, 2 in further back",
+   "prompt": "see Higgsfield job 4b80a8c0-dfa6-4829-8df4-7278a8746022 (generated 15 Oct from Brian's review comments in #9)"
+  },
+  {
+   "set": "model-sheet-v2",
+   "n": 2,
+   "file": "design/models/ms-v2/ms2-ap-kubi-v2.png",
+   "job_id": "8b3fce90-ec60-4890-94f8-2d4038aa7885",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_155942_8b3fce90-ec60-4890-94f8-2d4038aa7885.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "issue": "#10",
+   "fixes": "Width shoulder+2 in, no punch, fists on belt, top-down 25% less realistic with captions",
+   "prompt": "see Higgsfield job 8b3fce90-ec60-4890-94f8-2d4038aa7885 (generated 15 Oct from Brian's review comments in #10)"
+  },
+  {
+   "set": "model-sheet-v2",
+   "n": 3,
+   "file": "design/models/ms-v2/ms3-dwit-kubi-v2.png",
+   "job_id": "30a028d4-e601-41d8-a581-2ed075982d5d",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_155941_30a028d4-e601-41d8-a581-2ed075982d5d.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "issue": "#11",
+   "fixes": "Views named by face direction; fists on belt; front foot 1.5 in left of rear heel line; side/back redone",
+   "prompt": "see Higgsfield job 30a028d4-e601-41d8-a581-2ed075982d5d (generated 15 Oct from Brian's review comments in #11)"
+  },
+  {
+   "set": "model-sheet-v2",
+   "n": 4,
+   "file": "design/models/ms-v2/ms4-beom-seogi-v2.png",
+   "job_id": "fd9fdb11-c08c-4145-97f4-9a4e4c469734",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_155943_fd9fdb11-c08c-4145-97f4-9a4e4c469734.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "issue": "#12",
+   "fixes": "Feet overlap ~2 in; rear heel down; fists on belt; footprint panel shows prints only (ball of front foot)",
+   "prompt": "see Higgsfield job fd9fdb11-c08c-4145-97f4-9a4e4c469734 (generated 15 Oct from Brian's review comments in #12)"
+  },
+  {
+   "set": "model-sheet-v2",
+   "n": 5,
+   "file": "design/models/ms-v2/ms5-juchum-kkoa-v2.png",
+   "job_id": "efe7a3d4-5dcf-45d3-abb6-010a2cfd634e",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_155942_efe7a3d4-5dcf-45d3-abb6-010a2cfd634e.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "issue": "#13",
+   "fixes": "Fists on belt; horse feet turned in, side view legs on one line, shoulders square; cross stance front/side match the back view",
+   "prompt": "see Higgsfield job efe7a3d4-5dcf-45d3-abb6-010a2cfd634e (generated 15 Oct from Brian's review comments in #13)"
+  },
+  {
+   "set": "model-sheet-v2",
+   "n": 6,
+   "file": "design/models/ms-v2/ms6-hakdari-v2.png",
+   "job_id": "ce6678bf-b222-4287-b98f-9f6a5dde0534",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_155944_ce6678bf-b222-4287-b98f-9f6a5dde0534.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "issue": "#14",
+   "fixes": "Fists on belt; standing knee bent as in ap kubi; lifted knee forward; sole down, foot edge touching the knee; views named by face",
+   "prompt": "see Higgsfield job ce6678bf-b222-4287-b98f-9f6a5dde0534 (generated 15 Oct from Brian's review comments in #14)"
+  },
+  {
+   "set": "model-sheet-v2",
+   "n": 7,
+   "file": "design/models/ms-v2/ms7-kicks-v2.png",
+   "job_id": "a7869377-15a7-4de7-b1fb-7e78c8d0a1c3",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_155942_a7869377-15a7-4de7-b1fb-7e78c8d0a1c3.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "issue": "#15",
+   "fixes": "Ap chagi toes pulled back; yeop chagi foot blade flat and tense; dollyeo chagi supporting heel to target, hips turned; front row redone",
+   "prompt": "see Higgsfield job a7869377-15a7-4de7-b1fb-7e78c8d0a1c3 (generated 15 Oct from Brian's review comments in #15)"
+  },
+  {
+   "set": "model-sheet-v2",
+   "n": 8,
+   "file": "design/models/ms-v2/ms8-hands-feet-v2.png",
+   "job_id": "26991d31-8416-4688-885e-823873c5addc",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_155943_26991d31-8416-4688-885e-823873c5addc.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "issue": "#16",
+   "fixes": "Ridge hand added; palm heel fingers up; kaljaebi palm down; feet 25% less realistic; ball of foot toes bent more; foot blade outer edge",
+   "prompt": "see Higgsfield job 26991d31-8416-4688-885e-823873c5addc (generated 15 Oct from Brian's review comments in #16)"
+  },
+  {
+   "set": "model-sheet-v2",
+   "n": 8,
+   "file": "design/models/ms-v2/ms8-hands-feet-highlight-v2.png",
+   "job_id": "32a46ff3-077c-4b4c-9f98-ffa2ffbc1e6a",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3JjZnHNQSNpiNcfKNcJnUG97OZ0/hf_20261015_160021_32a46ff3-077c-4b4c-9f98-ffa2ffbc1e6a.png",
+   "model": "gpt_image_2_5 (flare), medium, 2k, 3:2",
+   "issue": "#16",
+   "fixes": "Same as ms8-hands-feet with striking/blocking surfaces tinted red (for the site toggle)",
+   "prompt": "see Higgsfield job 32a46ff3-077c-4b4c-9f98-ffa2ffbc1e6a (generated 15 Oct from Brian's review comments in #16)"
   }
  ]
 }
