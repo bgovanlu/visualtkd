@@ -12,7 +12,7 @@ Plan for the open GitHub issues and the work around them. Updated 15 October 202
 | 2 | Diagram clarity | #4 same-stance moves, #3 footwork diagram | Now (after 1 defines the links) | L |
 | 3 | Character v2 | #7 new figure rig, #1 back-view kicks, #2 hand and foot art | After the MS-1–MS-8 review | L |
 | 4 | Poomsae sheets v2 | re-pose and rebuild all 11 forms | After phase 3 | M |
-| — | Launch | #8 hosting and DNS | **Done**: launched by Brian from another Claude Code session (15 Oct) | — |
+| — | Launch | #8 hosting and DNS | **Done**: live on AWS S3 + CloudFront since 14 Oct | — |
 
 Phases 1 and 2 use the current figure. Everything they add (pages, links, footwork, the same-stance treatment) is built so that the new figure in phase 3 drops in without redoing them.
 
@@ -101,7 +101,7 @@ Brian's example in the issue shows the right idea at low quality. *I couldn't op
 
 **Done when:** every move shows where the feet go, the minimap uses computed positions, and Brian has checked the diagrams on two forms against his example.
 
-**Needs from Brian:** the example image from #3 committed to `design/refs/` (or a description). The simulator will also surface floor-position questions per form; those go in REVIEW.md.
+**Example:** `design/refs/footwork-example-issue3.png` (from #3): a kata-book footwork diagram, the whole form on one embusen with numbered footprints, dotted step paths, small circles at pivot points and letters for the directions. The simulator will also surface floor-position questions per form; those go in REVIEW.md.
 
 ---
 
@@ -138,7 +138,7 @@ Replace the phase 1 placeholder art on `/library/hands-feet/` with figures drawn
 ---
 
 ## Launch · #8 hosting and DNS — done
-Brian launched visualtkd.com on 15 October from a Claude Code session with AWS and GitHub access. Not verifiable from this workspace (the domain is outside its network allowlist).
+Live since 14 October on AWS: S3 + CloudFront, stack `infra/aws/site.yaml`, deployed with `tools/deploy_aws.py` (see docs/STATUS.md).
 
 ---
 
@@ -148,5 +148,5 @@ Brian launched visualtkd.com on 15 October from a Claude Code session with AWS a
 | 1 | About text: owner, school or federation to name, contact | #5 |
 | 2 | Library URL scheme `/library/<family>/#<slug>` | #6, #2 |
 | 3 | Pick treatment A, B or C after the prototypes | #4 |
-| 4 | Commit or describe the footwork example | #3 |
+| 4 | ~~Commit or describe the footwork example~~ done: `design/refs/footwork-example-issue3.png` | #3 |
 | 5 | Review MS-1 to MS-8 | #7, #1, phase 4 |
