@@ -50,8 +50,12 @@ h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6v
 /* other floor shapes (士 山 工): short bars, bars without a line, side prongs */
 .bar.fit{justify-content:center;gap:56px}
 .bar.noline::before{display:none}
-.bar.gone{display:none}
+.bar.gone,.mid.gone{display:none}
 .prong{position:absolute;width:3px;margin-left:-1.5px;background:var(--line);z-index:0}
+/* one-line floors (Pyongwon 一): each spot on the line is a column of the counts made there, in order */
+.spot{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(2,var(--card-w,128px));align-content:start;justify-content:center;column-gap:2px;padding-bottom:8px}
+.spot.one{grid-template-columns:var(--card-w,128px)}
+.spot::after{content:"";position:absolute;left:0;right:0;top:calc(20px + var(--fig-h)*var(--gf) + 12px);bottom:0;background:var(--bg);border-radius:0 0 14px 14px;z-index:-1}
 .mid .side.r{justify-self:end}
 .notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px 30px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 24px}
 .notes[hidden]{display:none}
@@ -468,6 +472,8 @@ const pair=ids=>`<div class="pair">${ids.map(card).join("")}</div>`;
      rail:  [from, to] rows joined by the centre line (default ["r1","r5"])
      prongs:[{at:"c2l", from:"r1"}]  extra vertical lines down to side groups c2l/c2r/c4l/c4r
      notesBelow: move the four side notes under the board so the middle rows can hold figures
+     spots: one-line floors (一): layout.r1 lists the spots on the line from ra to da; each spot is a column
+            of the counts made there, the first on the line, the rest below it, all other rows removed
      map:   minimap path on the 100×60 grid */
 const FL=FORM.floor||{};
 const LAYOUT={};["r1","r3","r5"].forEach(r=>{if(FORM.layout[r])LAYOUT[r]=FORM.layout[r]});
@@ -477,8 +483,11 @@ if(FL.notesBelow){
   [["r2","c2"],["r4","c4"]].forEach(([r,c])=>{const el=document.getElementById(r);
     el.insertAdjacentHTML("afterbegin",`<div class="pair side l" id="${c}l"></div>`);el.insertAdjacentHTML("beforeend",`<div class="pair side r" id="${c}r"></div>`)});
 }
+if(FL.spots)["r2","r3","r4","r5"].forEach(r=>document.getElementById(r).classList.add("gone"));
 function build(){
-  for(const r in LAYOUT){
+  if(FL.spots){const el=document.getElementById("r1");el.querySelectorAll(".fig,.pair,.spot").forEach(n=>n.remove());
+    el.insertAdjacentHTML("beforeend",LAYOUT.r1.map(g=>`<div class="spot${g.length<2?" one":""}">${g.map(card).join("")}</div>`).join(""))}
+  else for(const r in LAYOUT){
     const el=document.getElementById(r);
     el.querySelectorAll(".fig,.pair").forEach(n=>n.remove());
     el.insertAdjacentHTML("beforeend",LAYOUT[r].map(x=>Array.isArray(x)?pair(x):card(x)).join(""));

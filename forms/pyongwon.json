@@ -11,14 +11,15 @@
  "movements": 21,
  "note": {
   "h": "一 · Il · the plain",
-  "p": "Pyongwon is the wide plain: open ground that feeds every living thing and stretches as far as you can see. The floor line is one straight line, 一, walked back and forth. The plan shows it as three passes along that one line: out and toward da, then back toward ra, then toward da again."
+  "p": "Pyongwon is the wide plain: open ground that feeds every living thing, with no mountain to block it and no river to cut it. The floor line is one straight line, 一. You start in the middle and move only sideways along it, never forward or back. Each column on the board is one spot on the line: the first figure stands on the line and the counts made at that spot follow beneath it, in order."
  },
- "footer": "Move numbers follow the 14 steps of the NBTKDA chart; techniques in the same step share a number (3-1 kick, 3-2 kick, 3-3 and 3-4 blocks). Kukkiwon counts 21 movements. Finish with <b>Baro</b>: bring the left foot back beside the right into closed stance, hands overlapped, at the starting point.",
- "boardMin": 1760,
- "cardW": 94,
- "figH": 114,
+ "footer": "Move numbers follow the Kukkiwon count (21 movements); techniques in one movement share a number (6-1 front kick, 6-2 back-turning side kick, 6-3 knife-hand block). Finish with <b>Baro</b>: draw the left foot in beside the right into closed stance, hands overlapped, back in the middle of the line.",
+ "boardMin": 1240,
+ "cardW": 104,
+ "figH": 124,
  "floor": {
   "glyph": "一",
+  "spots": true,
   "rail": [
    "r1",
    "r1"
@@ -29,76 +30,48 @@
  "layout": {
   "r1": [
    [
-    "1-3"
+    "14-3",
+    "15",
+    "16-1",
+    "16-2",
+    "17-1",
+    "17-2"
+   ],
+   [
+    "14-2",
+    "18",
+    "19",
+    "20-1",
+    "20-2"
    ],
    [
     "J",
-    "1-1",
-    "1-2"
-   ],
-   [
-    "2-1",
-    "2-2"
-   ],
-   [
-    "3-1",
-    "3-2"
-   ],
-   [
-    "3-3",
-    "3-4"
-   ]
-  ],
-  "r3": [
-   [
-    "9-2",
-    "9-1"
-   ],
-   [
-    "8-2",
-    "8-1"
-   ],
-   [
-    "7-2",
-    "7-1"
-   ],
-   [
-    "6-2",
-    "6-1"
-   ],
-   [
-    "5-2",
-    "5-1"
-   ],
-   [
-    "4-2",
-    "4-1"
-   ]
-  ],
-  "r5": [
-   [
-    "9-3",
-    "9-4"
-   ],
-   [
-    "10-1",
-    "10-2"
-   ],
-   [
-    "11-1",
-    "11-2"
-   ],
-   [
-    "12-1",
-    "12-2"
-   ],
-   [
-    "13-1",
-    "13-2"
-   ],
-   [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "13-2",
     "14-1",
-    "14-2"
+    "21-1",
+    "21-2"
+   ],
+   [
+    "6-1",
+    "6-2",
+    "10",
+    "11",
+    "12-1",
+    "12-2",
+    "13-1"
+   ],
+   [
+    "6-3",
+    "7",
+    "8-1",
+    "8-2",
+    "9-1",
+    "9-2"
    ]
   ]
  },
@@ -107,136 +80,136 @@
    50,
    30
   ],
-  "1-1": [
-   50,
+  "1": [
+   52.2,
    30
   ],
-  "1-2": [
-   50,
+  "2": [
+   52.2,
    30
   ],
-  "1-3": [
-   45,
+  "3": [
+   44.5,
    30
   ],
-  "2-1": [
-   48,
+  "4": [
+   44.5,
    30
   ],
-  "2-2": [
-   53,
-   30
-  ],
-  "3-1": [
-   57,
-   30
-  ],
-  "3-2": [
-   62,
-   30
-  ],
-  "3-3": [
-   66,
-   30
-  ],
-  "3-4": [
-   66,
-   30
-  ],
-  "4-1": [
-   64,
-   30
-  ],
-  "4-2": [
-   64,
-   30
-  ],
-  "5-1": [
-   64,
-   30
-  ],
-  "5-2": [
-   64,
+  "5": [
+   47.8,
    30
   ],
   "6-1": [
-   59,
+   63.2,
    30
   ],
   "6-2": [
-   55,
+   80.8,
    30
   ],
-  "7-1": [
-   55,
+  "6-3": [
+   94,
    30
   ],
-  "7-2": [
-   55,
+  "7": [
+   94,
    30
   ],
   "8-1": [
-   49,
+   94,
    30
   ],
   "8-2": [
-   44,
+   94,
    30
   ],
   "9-1": [
-   40,
+   94,
    30
   ],
   "9-2": [
-   35,
+   94,
    30
   ],
-  "9-3": [
-   31,
+  "10": [
+   83,
    30
   ],
-  "9-4": [
-   31,
-   30
-  ],
-  "10-1": [
-   33,
-   30
-  ],
-  "10-2": [
-   33,
-   30
-  ],
-  "11-1": [
-   33,
-   30
-  ],
-  "11-2": [
-   33,
+  "11": [
+   72,
    30
   ],
   "12-1": [
-   38,
+   75.3,
    30
   ],
   "12-2": [
-   42,
+   75.3,
    30
   ],
   "13-1": [
-   42,
+   63.2,
    30
   ],
   "13-2": [
-   42,
+   56.6,
    30
   ],
   "14-1": [
-   48,
+   43.4,
    30
   ],
   "14-2": [
-   53,
+   23.6,
+   30
+  ],
+  "14-3": [
+   6,
+   30
+  ],
+  "15": [
+   6,
+   30
+  ],
+  "16-1": [
+   6,
+   30
+  ],
+  "16-2": [
+   6,
+   30
+  ],
+  "17-1": [
+   6,
+   30
+  ],
+  "17-2": [
+   6,
+   30
+  ],
+  "18": [
+   17,
+   30
+  ],
+  "19": [
+   28,
+   30
+  ],
+  "20-1": [
+   24.7,
+   30
+  ],
+  "20-2": [
+   24.7,
+   30
+  ],
+  "21-1": [
+   36.8,
+   30
+  ],
+  "21-2": [
+   43.4,
    30
   ]
  },
@@ -254,7 +227,7 @@
    "desc": "Stand at the centre of the line facing ga, feet together, open hands overlapped in front of the lower belly, left over right (about 5 seconds)."
   },
   {
-   "id": "1-1",
+   "id": "1",
    "dir": "ga",
    "view": "front",
    "stance": "ready",
@@ -273,7 +246,7 @@
    "desc": "Step the left foot out to the left into parallel stance. Knife-hand low spread block, slowly (about 5 seconds)."
   },
   {
-   "id": "1-2",
+   "id": "2",
    "dir": "ga",
    "view": "front",
    "stance": "ready",
@@ -285,8 +258,8 @@
    "desc": "Without moving the feet, raise both open hands slowly into pushing-hands ready (about 5 seconds)."
   },
   {
-   "id": "1-3",
-   "dir": "ra2",
+   "id": "3",
+   "dir": "ra1",
    "view": "side",
    "face": "L",
    "stance": "back",
@@ -298,8 +271,8 @@
    "desc": "Look right and step the right foot to the right (toward ra) into a back stance with the right foot forward. Right low knife-hand block."
   },
   {
-   "id": "2-1",
-   "dir": "da2",
+   "id": "4",
+   "dir": "da1",
    "view": "side",
    "face": "R",
    "stance": "back",
@@ -311,8 +284,8 @@
    "desc": "Turn to face da, into a back stance with the left foot forward. Left knife-hand block."
   },
   {
-   "id": "2-2",
-   "dir": "da2",
+   "id": "5",
+   "dir": "da1",
    "view": "side",
    "face": "R",
    "stance": "front",
@@ -324,8 +297,8 @@
    "desc": "Slide the left foot forward into a left front stance. Right rising elbow strike."
   },
   {
-   "id": "3-1",
-   "dir": "da2",
+   "id": "6-1",
+   "dir": "da1",
    "view": "side",
    "face": "R",
    "stance": "kick",
@@ -338,8 +311,8 @@
    "desc": "Right front kick toward da."
   },
   {
-   "id": "3-2",
-   "dir": "da2",
+   "id": "6-2",
+   "dir": "da1",
    "view": "side",
    "face": "R",
    "stance": "skick",
@@ -352,8 +325,8 @@
    "desc": "Set the right foot down, spin backwards and kick with the left leg: back-turning side kick toward da."
   },
   {
-   "id": "3-3",
-   "dir": "ra2",
+   "id": "6-3",
+   "dir": "ra1",
    "view": "side",
    "face": "L",
    "stance": "back",
@@ -366,8 +339,8 @@
    "desc": "Land the left foot toward da, facing ra in a back stance with the right foot forward. Right double knife-hand block."
   },
   {
-   "id": "3-4",
-   "dir": "ra2",
+   "id": "7",
+   "dir": "ra1",
    "view": "side",
    "face": "L",
    "stance": "back",
@@ -380,7 +353,7 @@
    "desc": "In the same stance, augmented low knife-hand block with the right hand."
   },
   {
-   "id": "4-1",
+   "id": "8-1",
    "dir": "ga",
    "view": "front",
    "stance": "horse",
@@ -395,7 +368,7 @@
    "desc": "Looking right, pivot to face ga in horse stance. Large hinge, right arm over left."
   },
   {
-   "id": "4-2",
+   "id": "8-2",
    "dir": "ga",
    "view": "front",
    "stance": "horse",
@@ -407,7 +380,7 @@
    "desc": "Still in horse stance, augmented high side block to the right (ra), the left fist across the chest."
   },
   {
-   "id": "5-1",
+   "id": "9-1",
    "dir": "ga",
    "view": "front",
    "stance": "horse",
@@ -420,7 +393,7 @@
    "desc": "Stamp the right foot in horse stance and strike to the right with a right back-fist, the left hand grabbing and pulling back."
   },
   {
-   "id": "5-2",
+   "id": "9-2",
    "dir": "ga",
    "view": "front",
    "stance": "horse",
@@ -432,7 +405,7 @@
    "desc": "Left back-fist strike to the right, the right arm supporting it."
   },
   {
-   "id": "6-1",
+   "id": "10",
    "dir": "ga",
    "view": "front",
    "stance": "cross",
@@ -445,7 +418,7 @@
    "desc": "Step the left foot across in front toward ra into a front cross stance. Yoke strike, both elbows out, looking right."
   },
   {
-   "id": "6-2",
+   "id": "11",
    "dir": "ga",
    "view": "front",
    "stance": "horse",
@@ -460,7 +433,7 @@
    "desc": "Step the right foot out to the right (toward ra) into horse stance. Opening mountain block."
   },
   {
-   "id": "7-1",
+   "id": "12-1",
    "dir": "ga",
    "view": "front",
    "stance": "crane",
@@ -473,7 +446,7 @@
    "desc": "Lift the right foot into crane stance on the left leg. Diamond block, looking right."
   },
   {
-   "id": "7-2",
+   "id": "12-2",
    "dir": "ga",
    "view": "front",
    "stance": "crane",
@@ -485,8 +458,8 @@
    "desc": "In the same crane stance, small hinge with both fists at the left hip."
   },
   {
-   "id": "8-1",
-   "dir": "ra2",
+   "id": "13-1",
+   "dir": "ra1",
    "view": "side",
    "face": "L",
    "stance": "skick",
@@ -499,8 +472,8 @@
    "desc": "Right side kick toward ra."
   },
   {
-   "id": "8-2",
-   "dir": "ra2",
+   "id": "13-2",
+   "dir": "ra1",
    "view": "side",
    "face": "L",
    "stance": "front",
@@ -512,8 +485,8 @@
    "desc": "Land in a right front stance toward ra. Left rising elbow strike."
   },
   {
-   "id": "9-1",
-   "dir": "ra2",
+   "id": "14-1",
+   "dir": "ra1",
    "view": "side",
    "face": "L",
    "stance": "kick",
@@ -526,8 +499,8 @@
    "desc": "Left front kick toward ra."
   },
   {
-   "id": "9-2",
-   "dir": "ra2",
+   "id": "14-2",
+   "dir": "ra1",
    "view": "side",
    "face": "L",
    "stance": "skick",
@@ -540,8 +513,8 @@
    "desc": "Set the left foot down, spin backwards and kick with the right leg: back-turning side kick toward ra."
   },
   {
-   "id": "9-3",
-   "dir": "da2",
+   "id": "14-3",
+   "dir": "da1",
    "view": "side",
    "face": "R",
    "stance": "back",
@@ -554,8 +527,8 @@
    "desc": "Land the right foot toward ra, facing da in a back stance with the left foot forward. Left double knife-hand block."
   },
   {
-   "id": "9-4",
-   "dir": "da2",
+   "id": "15",
+   "dir": "da1",
    "view": "side",
    "face": "R",
    "stance": "back",
@@ -568,7 +541,7 @@
    "desc": "In the same stance, augmented low knife-hand block with the left hand."
   },
   {
-   "id": "10-1",
+   "id": "16-1",
    "dir": "ga",
    "view": "front",
    "stance": "horse",
@@ -583,7 +556,7 @@
    "desc": "Looking left, pivot to face ga in horse stance. Large hinge, left arm over right."
   },
   {
-   "id": "10-2",
+   "id": "16-2",
    "dir": "ga",
    "view": "front",
    "stance": "horse",
@@ -595,7 +568,7 @@
    "desc": "Still in horse stance, augmented high side block to the left (da), the right fist across the chest."
   },
   {
-   "id": "11-1",
+   "id": "17-1",
    "dir": "ga",
    "view": "front",
    "stance": "horse",
@@ -608,7 +581,7 @@
    "desc": "Stamp the left foot in horse stance and strike to the left with a left back-fist, the right hand grabbing and pulling back."
   },
   {
-   "id": "11-2",
+   "id": "17-2",
    "dir": "ga",
    "view": "front",
    "stance": "horse",
@@ -620,7 +593,7 @@
    "desc": "Right back-fist strike to the left, the left arm supporting it."
   },
   {
-   "id": "12-1",
+   "id": "18",
    "dir": "ga",
    "view": "front",
    "stance": "cross",
@@ -633,7 +606,7 @@
    "desc": "Step the right foot across in front toward da into a front cross stance. Yoke strike, both elbows out, looking left."
   },
   {
-   "id": "12-2",
+   "id": "19",
    "dir": "ga",
    "view": "front",
    "stance": "horse",
@@ -648,7 +621,7 @@
    "desc": "Step the left foot out to the left (toward da) into horse stance. Opening mountain block."
   },
   {
-   "id": "13-1",
+   "id": "20-1",
    "dir": "ga",
    "view": "front",
    "stance": "crane",
@@ -661,7 +634,7 @@
    "desc": "Lift the left foot into crane stance on the right leg. Diamond block, looking left."
   },
   {
-   "id": "13-2",
+   "id": "20-2",
    "dir": "ga",
    "view": "front",
    "stance": "crane",
@@ -673,8 +646,8 @@
    "desc": "In the same crane stance, small hinge with both fists at the right hip."
   },
   {
-   "id": "14-1",
-   "dir": "da2",
+   "id": "21-1",
+   "dir": "da1",
    "view": "side",
    "face": "R",
    "stance": "skick",
@@ -686,8 +659,8 @@
    "desc": "Left side kick toward da with a left hammer-fist strike out the same side."
   },
   {
-   "id": "14-2",
-   "dir": "da2",
+   "id": "21-2",
+   "dir": "da1",
    "view": "side",
    "face": "R",
    "stance": "front",

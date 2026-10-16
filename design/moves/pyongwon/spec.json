@@ -19,8 +19,8 @@
    "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: moa seogi (closed stance): feet together, inside edges touching, legs straight. RIGHT hand: open hand resting over the other in front of the lower belly, left over right (overlapped-hands ready). LEFT hand: open hand resting over the other in front of the lower belly, left over right (overlapped-hands ready). This is the ready posture of Pyongwon: Stand at the centre of the line facing ga, feet together, open hands overlapped in front of the lower belly, left over right (about 5 seconds)."
   },
   {
-   "id": "1-1",
-   "file": "1-1.png",
+   "id": "1",
+   "file": "1.png",
    "view": "front",
    "face": null,
    "stance": "ready",
@@ -32,11 +32,11 @@
    "tech": "kspread",
    "name": "Sonnal arae hecho makki · Knife-hand low spread block",
    "desc": "Step the left foot out to the left into parallel stance. Knife-hand low spread block, slowly (about 5 seconds).",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: knife-hand spreading block: open hand extended down and out to the side. LEFT hand: knife-hand spreading block: open hand extended down and out to the side. This is count 1-1 of Pyongwon: Step the left foot out to the left into parallel stance. Knife-hand low spread block, slowly (about 5 seconds)."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: knife-hand spreading block: open hand extended down and out to the side. LEFT hand: knife-hand spreading block: open hand extended down and out to the side. This is count 1 of Pyongwon: Step the left foot out to the left into parallel stance. Knife-hand low spread block, slowly (about 5 seconds)."
   },
   {
-   "id": "1-2",
-   "file": "1-2.png",
+   "id": "2",
+   "file": "2.png",
    "view": "front",
    "face": null,
    "stance": "ready",
@@ -48,11 +48,11 @@
    "tech": "tongmil",
    "name": "Tongmilgi junbi · Pushing-hands ready",
    "desc": "Without moving the feet, raise both open hands slowly into pushing-hands ready (about 5 seconds).",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: pushing-hands ready (tongmilgi junbi): both open hands raised in front of the face, fingertips angled toward each other, as if pushing a rock. LEFT hand: pushing-hands ready (tongmilgi junbi): both open hands raised in front of the face, fingertips angled toward each other, as if pushing a rock. This is count 1-2 of Pyongwon: Without moving the feet, raise both open hands slowly into pushing-hands ready (about 5 seconds)."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: pushing-hands ready (tongmilgi junbi): both open hands raised in front of the face, fingertips angled toward each other, as if pushing a rock. LEFT hand: pushing-hands ready (tongmilgi junbi): both open hands raised in front of the face, fingertips angled toward each other, as if pushing a rock. This is count 2 of Pyongwon: Without moving the feet, raise both open hands slowly into pushing-hands ready (about 5 seconds)."
   },
   {
-   "id": "1-3",
-   "file": "1-3.png",
+   "id": "3",
+   "file": "3.png",
    "view": "side",
    "face": "L",
    "stance": "back",
@@ -63,11 +63,11 @@
    "tech": "kslow",
    "name": "Sonnal arae makki · Low knife-hand block",
    "desc": "Look right and step the right foot to the right (toward ra) into a back stance with the right foot forward. Right low knife-hand block.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 1-3 of Pyongwon: Look right and step the right foot to the right (toward ra) into a back stance with the right foot forward. Right low knife-hand block."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 3 of Pyongwon: Look right and step the right foot to the right (toward ra) into a back stance with the right foot forward. Right low knife-hand block."
   },
   {
-   "id": "2-1",
-   "file": "2-1.png",
+   "id": "4",
+   "file": "4.png",
    "view": "side",
    "face": "R",
    "stance": "back",
@@ -78,11 +78,11 @@
    "tech": "ksout",
    "name": "Hansonnal bakkat makki · Knife-hand outer block",
    "desc": "Turn to face da, into a back stance with the left foot forward. Left knife-hand block.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): single knife-hand outer block (hansonnal bakkat makki): open hand, forearm upright at the side at shoulder height, knife edge outward. This is count 2-1 of Pyongwon: Turn to face da, into a back stance with the left foot forward. Left knife-hand block."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): single knife-hand outer block (hansonnal bakkat makki): open hand, forearm upright at the side at shoulder height, knife edge outward. This is count 4 of Pyongwon: Turn to face da, into a back stance with the left foot forward. Left knife-hand block."
   },
   {
-   "id": "2-2",
-   "file": "2-2.png",
+   "id": "5",
+   "file": "5.png",
    "view": "side",
    "face": "R",
    "stance": "front",
@@ -93,11 +93,11 @@
    "tech": "upelbow",
    "name": "Palkup ollyeo chigi · Rising elbow strike",
    "desc": "Slide the left foot forward into a left front stance. Right rising elbow strike.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): rising elbow strike (palkup ollyeo chigi): elbow driven up and forward to chin height, fist finishing beside the ear. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 2-2 of Pyongwon: Slide the left foot forward into a left front stance. Right rising elbow strike."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): rising elbow strike (palkup ollyeo chigi): elbow driven up and forward to chin height, fist finishing beside the ear. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 5 of Pyongwon: Slide the left foot forward into a left front stance. Right rising elbow strike."
   },
   {
-   "id": "3-1",
-   "file": "3-1.png",
+   "id": "6-1",
+   "file": "6-1.png",
    "view": "side",
    "face": "R",
    "stance": "kick",
@@ -109,11 +109,11 @@
    "tech": "kick",
    "name": "Ap chagi · Front kick",
    "desc": "Right front kick toward da.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 3-1 of Pyongwon: Right front kick toward da."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 6-1 of Pyongwon: Right front kick toward da."
   },
   {
-   "id": "3-2",
-   "file": "3-2.png",
+   "id": "6-2",
+   "file": "6-2.png",
    "view": "side",
    "face": "R",
    "stance": "skick",
@@ -125,11 +125,11 @@
    "tech": "bskick",
    "name": "Dwi dora yeop chagi · Back-turning side kick",
    "desc": "Set the right foot down, spin backwards and kick with the left leg: back-turning side kick toward da.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: LEFT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 3-2 of Pyongwon: Set the right foot down, spin backwards and kick with the left leg: back-turning side kick toward da."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: LEFT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 6-2 of Pyongwon: Set the right foot down, spin backwards and kick with the left leg: back-turning side kick toward da."
   },
   {
-   "id": "3-3",
-   "file": "3-3.png",
+   "id": "6-3",
+   "file": "6-3.png",
    "view": "side",
    "face": "L",
    "stance": "back",
@@ -141,11 +141,11 @@
    "tech": "ksblock",
    "name": "Sonnal momtong makki · Double knife-hand block",
    "desc": "Land the left foot toward da, facing ra in a back stance with the right foot forward. Right double knife-hand block.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. LEFT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 3-3 of Pyongwon: Land the left foot toward da, facing ra in a back stance with the right foot forward. Right double knife-hand block."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. LEFT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 6-3 of Pyongwon: Land the left foot toward da, facing ra in a back stance with the right foot forward. Right double knife-hand block."
   },
   {
-   "id": "3-4",
-   "file": "3-4.png",
+   "id": "7",
+   "file": "7.png",
    "view": "side",
    "face": "L",
    "stance": "back",
@@ -157,11 +157,11 @@
    "tech": "kslowa",
    "name": "Sonnal geodeureo naeryeo makki · Augmented low knife-hand block",
    "desc": "In the same stance, augmented low knife-hand block with the right hand.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. LEFT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 3-4 of Pyongwon: In the same stance, augmented low knife-hand block with the right hand."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. LEFT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 7 of Pyongwon: In the same stance, augmented low knife-hand block with the right hand."
   },
   {
-   "id": "4-1",
-   "file": "4-1.png",
+   "id": "8-1",
+   "file": "8-1.png",
    "view": "front",
    "face": null,
    "stance": "horse",
@@ -173,11 +173,11 @@
    "tech": "khinge",
    "name": "Keun doljjeogwi · Large hinge",
    "desc": "Looking right, pivot to face ga in horse stance. Large hinge, right arm over left.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: large hinge (keun dolcheogi): forearm level across the chest at shoulder height, fist at the other shoulder. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is count 4-1 of Pyongwon: Looking right, pivot to face ga in horse stance. Large hinge, right arm over left."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: large hinge (keun dolcheogi): forearm level across the chest at shoulder height, fist at the other shoulder. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is count 8-1 of Pyongwon: Looking right, pivot to face ga in horse stance. Large hinge, right arm over left."
   },
   {
-   "id": "4-2",
-   "file": "4-2.png",
+   "id": "8-2",
+   "file": "8-2.png",
    "view": "front",
    "face": null,
    "stance": "horse",
@@ -189,11 +189,11 @@
    "tech": "ahside",
    "name": "Eolgul geodeureo yeop makki · Augmented high side block",
    "desc": "Still in horse stance, augmented high side block to the right (ra), the left fist across the chest.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: supporting fist placed under the elbow of the blocking arm. This is count 4-2 of Pyongwon: Still in horse stance, augmented high side block to the right (ra), the left fist across the chest."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: supporting fist placed under the elbow of the blocking arm. This is count 8-2 of Pyongwon: Still in horse stance, augmented high side block to the right (ra), the left fist across the chest."
   },
   {
-   "id": "5-1",
-   "file": "5-1.png",
+   "id": "9-1",
+   "file": "9-1.png",
    "view": "front",
    "face": null,
    "stance": "horse",
@@ -204,11 +204,11 @@
    "tech": "stompbf",
    "name": "Jitjjigi · danggyeo deung jumeok ap chigi · Stamp with pulling back-fist strike",
    "desc": "Stamp the right foot in horse stance and strike to the right with a right back-fist, the left hand grabbing and pulling back.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: back-fist strike out to the side at face height, arm almost straight. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 5-1 of Pyongwon: Stamp the right foot in horse stance and strike to the right with a right back-fist, the left hand grabbing and pulling back."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: back-fist strike out to the side at face height, arm almost straight. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 9-1 of Pyongwon: Stamp the right foot in horse stance and strike to the right with a right back-fist, the left hand grabbing and pulling back."
   },
   {
-   "id": "5-2",
-   "file": "5-2.png",
+   "id": "9-2",
+   "file": "9-2.png",
    "view": "front",
    "face": null,
    "stance": "horse",
@@ -220,11 +220,11 @@
    "tech": "abackfist",
    "name": "Geodeureo deung jumeok ap chigi · Augmented back-fist strike",
    "desc": "Left back-fist strike to the right, the right arm supporting it.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: supporting fist placed under the elbow of the blocking arm. LEFT hand: back-fist strike across the body to the other side at face height. This is count 5-2 of Pyongwon: Left back-fist strike to the right, the right arm supporting it."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: supporting fist placed under the elbow of the blocking arm. LEFT hand: back-fist strike across the body to the other side at face height. This is count 9-2 of Pyongwon: Left back-fist strike to the right, the right arm supporting it."
   },
   {
-   "id": "6-1",
-   "file": "6-1.png",
+   "id": "10",
+   "file": "10.png",
    "view": "front",
    "face": null,
    "stance": "cross",
@@ -236,11 +236,11 @@
    "tech": "yoke",
    "name": "Meongye chigi · Yoke strike",
    "desc": "Step the left foot across in front toward ra into a front cross stance. Yoke strike, both elbows out, looking right.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. LEFT foot forward. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is count 6-1 of Pyongwon: Step the left foot across in front toward ra into a front cross stance. Yoke strike, both elbows out, looking right."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. LEFT foot forward. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is count 10 of Pyongwon: Step the left foot across in front toward ra into a front cross stance. Yoke strike, both elbows out, looking right."
   },
   {
-   "id": "6-2",
-   "file": "6-2.png",
+   "id": "11",
+   "file": "11.png",
    "view": "front",
    "face": null,
    "stance": "horse",
@@ -252,11 +252,11 @@
    "tech": "hsanteul",
    "name": "Hecho taesan makki · Opening mountain block",
    "desc": "Step the right foot out to the right (toward ra) into horse stance. Opening mountain block.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 6-2 of Pyongwon: Step the right foot out to the right (toward ra) into horse stance. Opening mountain block."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 11 of Pyongwon: Step the right foot out to the right (toward ra) into horse stance. Opening mountain block."
   },
   {
-   "id": "7-1",
-   "file": "7-1.png",
+   "id": "12-1",
+   "file": "12-1.png",
    "view": "front",
    "face": null,
    "stance": "crane",
@@ -268,11 +268,11 @@
    "tech": "keumgang",
    "name": "Keumgang makki · Diamond block",
    "desc": "Lift the right foot into crane stance on the left leg. Diamond block, looking right.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: LEFT. RIGHT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. LEFT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. This is count 7-1 of Pyongwon: Lift the right foot into crane stance on the left leg. Diamond block, looking right."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: LEFT. RIGHT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. LEFT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. This is count 12-1 of Pyongwon: Lift the right foot into crane stance on the left leg. Diamond block, looking right."
   },
   {
-   "id": "7-2",
-   "file": "7-2.png",
+   "id": "12-2",
+   "file": "12-2.png",
    "view": "front",
    "face": null,
    "stance": "crane",
@@ -283,11 +283,11 @@
    "tech": "shinge",
    "name": "Jageun doljjeogwi · Small hinge",
    "desc": "In the same crane stance, small hinge with both fists at the left hip.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: LEFT. RIGHT hand: small hinge: fist held above the other fist in front of the chest. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 7-2 of Pyongwon: In the same crane stance, small hinge with both fists at the left hip."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: LEFT. RIGHT hand: small hinge: fist held above the other fist in front of the chest. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 12-2 of Pyongwon: In the same crane stance, small hinge with both fists at the left hip."
   },
   {
-   "id": "8-1",
-   "file": "8-1.png",
+   "id": "13-1",
+   "file": "13-1.png",
    "view": "side",
    "face": "L",
    "stance": "skick",
@@ -299,11 +299,11 @@
    "tech": "skick",
    "name": "Yeop chagi · Side kick",
    "desc": "Right side kick toward ra.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 8-1 of Pyongwon: Right side kick toward ra."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 13-1 of Pyongwon: Right side kick toward ra."
   },
   {
-   "id": "8-2",
-   "file": "8-2.png",
+   "id": "13-2",
+   "file": "13-2.png",
    "view": "side",
    "face": "L",
    "stance": "front",
@@ -314,11 +314,11 @@
    "tech": "upelbow",
    "name": "Palkup ollyeo chigi · Rising elbow strike",
    "desc": "Land in a right front stance toward ra. Left rising elbow strike.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): rising elbow strike (palkup ollyeo chigi): elbow driven up and forward to chin height, fist finishing beside the ear. This is count 8-2 of Pyongwon: Land in a right front stance toward ra. Left rising elbow strike."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): rising elbow strike (palkup ollyeo chigi): elbow driven up and forward to chin height, fist finishing beside the ear. This is count 13-2 of Pyongwon: Land in a right front stance toward ra. Left rising elbow strike."
   },
   {
-   "id": "9-1",
-   "file": "9-1.png",
+   "id": "14-1",
+   "file": "14-1.png",
    "view": "side",
    "face": "L",
    "stance": "kick",
@@ -330,11 +330,11 @@
    "tech": "kick",
    "name": "Ap chagi · Front kick",
    "desc": "Left front kick toward ra.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 9-1 of Pyongwon: Left front kick toward ra."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 14-1 of Pyongwon: Left front kick toward ra."
   },
   {
-   "id": "9-2",
-   "file": "9-2.png",
+   "id": "14-2",
+   "file": "14-2.png",
    "view": "side",
    "face": "L",
    "stance": "skick",
@@ -346,11 +346,11 @@
    "tech": "bskick",
    "name": "Dwi dora yeop chagi · Back-turning side kick",
    "desc": "Set the left foot down, spin backwards and kick with the right leg: back-turning side kick toward ra.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 9-2 of Pyongwon: Set the left foot down, spin backwards and kick with the right leg: back-turning side kick toward ra."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 14-2 of Pyongwon: Set the left foot down, spin backwards and kick with the right leg: back-turning side kick toward ra."
   },
   {
-   "id": "9-3",
-   "file": "9-3.png",
+   "id": "14-3",
+   "file": "14-3.png",
    "view": "side",
    "face": "R",
    "stance": "back",
@@ -362,11 +362,11 @@
    "tech": "ksblock",
    "name": "Sonnal momtong makki · Double knife-hand block",
    "desc": "Land the right foot toward ra, facing da in a back stance with the left foot forward. Left double knife-hand block.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand (far arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. This is count 9-3 of Pyongwon: Land the right foot toward ra, facing da in a back stance with the left foot forward. Left double knife-hand block."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand (far arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. This is count 14-3 of Pyongwon: Land the right foot toward ra, facing da in a back stance with the left foot forward. Left double knife-hand block."
   },
   {
-   "id": "9-4",
-   "file": "9-4.png",
+   "id": "15",
+   "file": "15.png",
    "view": "side",
    "face": "R",
    "stance": "back",
@@ -378,11 +378,11 @@
    "tech": "kslowa",
    "name": "Sonnal geodeureo naeryeo makki · Augmented low knife-hand block",
    "desc": "In the same stance, augmented low knife-hand block with the left hand.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand (far arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 9-4 of Pyongwon: In the same stance, augmented low knife-hand block with the left hand."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand (far arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 15 of Pyongwon: In the same stance, augmented low knife-hand block with the left hand."
   },
   {
-   "id": "10-1",
-   "file": "10-1.png",
+   "id": "16-1",
+   "file": "16-1.png",
    "view": "front",
    "face": null,
    "stance": "horse",
@@ -394,11 +394,11 @@
    "tech": "khinge",
    "name": "Keun doljjeogwi · Large hinge",
    "desc": "Looking left, pivot to face ga in horse stance. Large hinge, left arm over right.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: large hinge (keun dolcheogi): forearm level across the chest at shoulder height, fist at the other shoulder. This is count 10-1 of Pyongwon: Looking left, pivot to face ga in horse stance. Large hinge, left arm over right."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: large hinge (keun dolcheogi): forearm level across the chest at shoulder height, fist at the other shoulder. This is count 16-1 of Pyongwon: Looking left, pivot to face ga in horse stance. Large hinge, left arm over right."
   },
   {
-   "id": "10-2",
-   "file": "10-2.png",
+   "id": "16-2",
+   "file": "16-2.png",
    "view": "front",
    "face": null,
    "stance": "horse",
@@ -410,11 +410,11 @@
    "tech": "ahside",
    "name": "Eolgul geodeureo yeop makki · Augmented high side block",
    "desc": "Still in horse stance, augmented high side block to the left (da), the right fist across the chest.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: supporting fist placed under the elbow of the blocking arm. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 10-2 of Pyongwon: Still in horse stance, augmented high side block to the left (da), the right fist across the chest."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: supporting fist placed under the elbow of the blocking arm. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 16-2 of Pyongwon: Still in horse stance, augmented high side block to the left (da), the right fist across the chest."
   },
   {
-   "id": "11-1",
-   "file": "11-1.png",
+   "id": "17-1",
+   "file": "17-1.png",
    "view": "front",
    "face": null,
    "stance": "horse",
@@ -425,11 +425,11 @@
    "tech": "stompbf",
    "name": "Jitjjigi · danggyeo deung jumeok ap chigi · Stamp with pulling back-fist strike",
    "desc": "Stamp the left foot in horse stance and strike to the left with a left back-fist, the right hand grabbing and pulling back.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: back-fist strike out to the side at face height, arm almost straight. This is count 11-1 of Pyongwon: Stamp the left foot in horse stance and strike to the left with a left back-fist, the right hand grabbing and pulling back."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: back-fist strike out to the side at face height, arm almost straight. This is count 17-1 of Pyongwon: Stamp the left foot in horse stance and strike to the left with a left back-fist, the right hand grabbing and pulling back."
   },
   {
-   "id": "11-2",
-   "file": "11-2.png",
+   "id": "17-2",
+   "file": "17-2.png",
    "view": "front",
    "face": null,
    "stance": "horse",
@@ -441,11 +441,11 @@
    "tech": "abackfist",
    "name": "Geodeureo deung jumeok ap chigi · Augmented back-fist strike",
    "desc": "Right back-fist strike to the left, the left arm supporting it.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: back-fist strike across the body to the other side at face height. LEFT hand: supporting fist placed under the elbow of the blocking arm. This is count 11-2 of Pyongwon: Right back-fist strike to the left, the left arm supporting it."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: back-fist strike across the body to the other side at face height. LEFT hand: supporting fist placed under the elbow of the blocking arm. This is count 17-2 of Pyongwon: Right back-fist strike to the left, the left arm supporting it."
   },
   {
-   "id": "12-1",
-   "file": "12-1.png",
+   "id": "18",
+   "file": "18.png",
    "view": "front",
    "face": null,
    "stance": "cross",
@@ -457,11 +457,11 @@
    "tech": "yoke",
    "name": "Meongye chigi · Yoke strike",
    "desc": "Step the right foot across in front toward da into a front cross stance. Yoke strike, both elbows out, looking left.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. RIGHT foot forward. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is count 12-1 of Pyongwon: Step the right foot across in front toward da into a front cross stance. Yoke strike, both elbows out, looking left."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. RIGHT foot forward. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is count 18 of Pyongwon: Step the right foot across in front toward da into a front cross stance. Yoke strike, both elbows out, looking left."
   },
   {
-   "id": "12-2",
-   "file": "12-2.png",
+   "id": "19",
+   "file": "19.png",
    "view": "front",
    "face": null,
    "stance": "horse",
@@ -473,11 +473,11 @@
    "tech": "hsanteul",
    "name": "Hecho taesan makki · Opening mountain block",
    "desc": "Step the left foot out to the left (toward da) into horse stance. Opening mountain block.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 12-2 of Pyongwon: Step the left foot out to the left (toward da) into horse stance. Opening mountain block."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 19 of Pyongwon: Step the left foot out to the left (toward da) into horse stance. Opening mountain block."
   },
   {
-   "id": "13-1",
-   "file": "13-1.png",
+   "id": "20-1",
+   "file": "20-1.png",
    "view": "front",
    "face": null,
    "stance": "crane",
@@ -489,11 +489,11 @@
    "tech": "keumgang",
    "name": "Keumgang makki · Diamond block",
    "desc": "Lift the left foot into crane stance on the right leg. Diamond block, looking left.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: RIGHT. RIGHT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 13-1 of Pyongwon: Lift the left foot into crane stance on the right leg. Diamond block, looking left."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: RIGHT. RIGHT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 20-1 of Pyongwon: Lift the left foot into crane stance on the right leg. Diamond block, looking left."
   },
   {
-   "id": "13-2",
-   "file": "13-2.png",
+   "id": "20-2",
+   "file": "20-2.png",
    "view": "front",
    "face": null,
    "stance": "crane",
@@ -504,11 +504,11 @@
    "tech": "shinge",
    "name": "Jageun doljjeogwi · Small hinge",
    "desc": "In the same crane stance, small hinge with both fists at the right hip.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: RIGHT. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: small hinge: fist held above the other fist in front of the chest. This is count 13-2 of Pyongwon: In the same crane stance, small hinge with both fists at the right hip."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: RIGHT. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: small hinge: fist held above the other fist in front of the chest. This is count 20-2 of Pyongwon: In the same crane stance, small hinge with both fists at the right hip."
   },
   {
-   "id": "14-1",
-   "file": "14-1.png",
+   "id": "21-1",
+   "file": "21-1.png",
    "view": "side",
    "face": "R",
    "stance": "skick",
@@ -519,11 +519,11 @@
    "tech": "hskick",
    "name": "Yeop chagi · mejumeok bakkat chigi · Side kick with hammer-fist strike",
    "desc": "Left side kick toward da with a left hammer-fist strike out the same side.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: LEFT. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): hammer-fist outer strike: arm swung outward horizontally, bottom of the fist at shoulder height. This is count 14-1 of Pyongwon: Left side kick toward da with a left hammer-fist strike out the same side."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: LEFT. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): hammer-fist outer strike: arm swung outward horizontally, bottom of the fist at shoulder height. This is count 21-1 of Pyongwon: Left side kick toward da with a left hammer-fist strike out the same side."
   },
   {
-   "id": "14-2",
-   "file": "14-2.png",
+   "id": "21-2",
+   "file": "21-2.png",
    "view": "side",
    "face": "R",
    "stance": "front",
@@ -535,7 +535,7 @@
    "tech": "eltarget",
    "name": "Palkup pyojeok chigi · Elbow target strike",
    "desc": "Land in a left front stance toward da. Right elbow strike into the left palm.",
-   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): elbow strike (palkup dollyeo chigi): arm folded, elbow swung forward horizontally at chin height. LEFT hand (far arm): open hand held as a target in front of the chest, palm toward the striking elbow. This is count 14-2 of Pyongwon: Land in a left front stance toward da. Right elbow strike into the left palm."
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): elbow strike (palkup dollyeo chigi): arm folded, elbow swung forward horizontally at chin height. LEFT hand (far arm): open hand held as a target in front of the chest, palm toward the striking elbow. This is count 21-2 of Pyongwon: Land in a left front stance toward da. Right elbow strike into the left palm."
   }
  ]
 }
