@@ -878,7 +878,19 @@ function motionArc(p,q){
   return`<path d="M${f(p[0])} ${f(p[1])}Q${f(c[0])} ${f(c[1])} ${f(a[0])} ${f(a[1])}" fill="none" stroke="var(--fire)" stroke-width="1.5" stroke-dasharray="3 2.2" stroke-linecap="round"/>`+
     `<path d="M${f(q[0]+t[0]*1.5)} ${f(q[1]+t[1]*1.5)}L${f(a[0]-t[0]*3+w[0]*3)} ${f(a[1]-t[1]*3+w[1]*3)}L${f(a[0]-t[0]*3-w[0]*3)} ${f(a[1]-t[1]*3-w[1]*3)}Z" fill="var(--fire)"/>`;
 }
+/* Per-move images (#7): when the page defines FIGIMG (build_form.py --images, from design/moves/<form>/),
+   a count with an image is drawn from it instead of the vector figure, on the same ground line and scale
+   (142 units = standing height; r = the image's share of it). Ghost arms and motion arcs need the vector
+   skeleton, so they are left out on image figures. */
+function figImage(m,opt){
+  const I=FIGIMG[m.id],h=142*I.r,w=I.w/I.h*h;
+  const img=`<image href="${I.src}" x="${f(-w/2)}" y="${f(65-h)}" width="${f(w)}" height="${f(h)}" preserveAspectRatio="none"${opt.fade?' opacity=".5"':""}/>`;
+  return`<svg class="body${opt.crop?" crop":""}" viewBox="${opt.crop?"-62 -90 124 100":"-62 -90 124 160"}" role="img" aria-label="${T[m.tech][2]}">`+
+    (opt.crop?"":`<ellipse class="glow" cx="0" cy="64.5" rx="50" ry="5.5" fill="none" stroke="var(--fire)" stroke-width="2"/>`+
+    `<ellipse cx="0" cy="64" rx="40" ry="4" fill="var(--ink)" opacity=".09"/>`)+img+`</svg>`;
+}
 function figure(m,opt={}){
+  if(typeof FIGIMG!=="undefined"&&FIGIMG[m.id])return figImage(m,opt);
   const sk=skel(m,PR),{out}=draw(sk,STY,{fadeLegs:opt.fade,only:opt.crop?"upper":null});
   let under="",over="",marks="";
   if(opt.from){const pk=skel(opt.from,PR);

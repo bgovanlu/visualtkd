@@ -1,0 +1,538 @@
+{
+ "form": "Taegeuk Chil Jang",
+ "slug": "taegeuk/7",
+ "moves": [
+  {
+   "id": "J",
+   "file": "J.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "junbi",
+    "R": "junbi"
+   },
+   "tech": "junbi",
+   "name": "Junbi · Ready",
+   "desc": "Stand at na facing ga, feet parallel and one foot-width apart, fists in front of the belt.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: fist in front of the belt, a fist-width from the body, both fists at the same height. LEFT hand: fist in front of the belt, a fist-width from the body, both fists at the same height. This is the ready posture of Taegeuk Chil Jang: Stand at na facing ga, feet parallel and one foot-width apart, fists in front of the belt."
+  },
+  {
+   "id": "1",
+   "file": "1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "tiger",
+   "lead": "L",
+   "arms": {
+    "R": "palm"
+   },
+   "tech": "palm",
+   "name": "Batangson momtong an makki · Palm inside block",
+   "desc": "Turn 90° left toward da¹, left tiger stance. Right palm inside block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. LEFT foot forward. RIGHT hand (near arm): palm inside block (batangson an makki): open hand, heel of the palm sweeping in front of the chest to the centre line. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 1 of Taegeuk Chil Jang: Turn 90° left toward da¹, left tiger stance. Right palm inside block."
+  },
+  {
+   "id": "2-1",
+   "file": "2-1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Right front kick.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 2-1 of Taegeuk Chil Jang: Right front kick."
+  },
+  {
+   "id": "2-2",
+   "file": "2-2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "tiger",
+   "lead": "L",
+   "arms": {
+    "L": "inside"
+   },
+   "tech": "inside",
+   "name": "Momtong an makki · Inside middle block",
+   "desc": "Bring the right foot back: left tiger stance. Left inside middle block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. LEFT foot forward. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): inside middle block (momtong an makki): forearm upright in front of the chest, elbow bent about 90 degrees, fist at shoulder height on the centre line, palm toward the body. This is count 2-2 of Taegeuk Chil Jang: Bring the right foot back: left tiger stance. Left inside middle block."
+  },
+  {
+   "id": "3",
+   "file": "3.png",
+   "view": "side",
+   "face": "L",
+   "stance": "tiger",
+   "lead": "R",
+   "arms": {
+    "L": "palm"
+   },
+   "tech": "palm",
+   "name": "Batangson momtong an makki · Palm inside block",
+   "desc": "Turn 180° to the right toward ra¹, right tiger stance. Left palm inside block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. RIGHT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): palm inside block (batangson an makki): open hand, heel of the palm sweeping in front of the chest to the centre line. This is count 3 of Taegeuk Chil Jang: Turn 180° to the right toward ra¹, right tiger stance. Left palm inside block."
+  },
+  {
+   "id": "4-1",
+   "file": "4-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Left front kick.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 4-1 of Taegeuk Chil Jang: Left front kick."
+  },
+  {
+   "id": "4-2",
+   "file": "4-2.png",
+   "view": "side",
+   "face": "L",
+   "stance": "tiger",
+   "lead": "R",
+   "arms": {
+    "R": "inside"
+   },
+   "tech": "inside",
+   "name": "Momtong an makki · Inside middle block",
+   "desc": "Bring the left foot back: right tiger stance. Right inside middle block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. RIGHT foot forward. RIGHT hand (far arm): inside middle block (momtong an makki): forearm upright in front of the chest, elbow bent about 90 degrees, fist at shoulder height on the centre line, palm toward the body. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 4-2 of Taegeuk Chil Jang: Bring the left foot back: right tiger stance. Right inside middle block."
+  },
+  {
+   "id": "5",
+   "file": "5.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "ksguard"
+   },
+   "tech": "kslow",
+   "name": "Sonnal arae makki · Low knife-hand block",
+   "desc": "Turn 90° left toward ga, back stance with the left foot forward. Low knife-hand guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 5 of Taegeuk Chil Jang: Turn 90° left toward ga, back stance with the left foot forward. Low knife-hand guarding block."
+  },
+  {
+   "id": "6",
+   "file": "6.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "kslow",
+    "L": "ksguard"
+   },
+   "tech": "kslow",
+   "name": "Sonnal arae makki · Low knife-hand block",
+   "desc": "Step forward: back stance with the right foot forward. Low knife-hand guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. LEFT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 6 of Taegeuk Chil Jang: Step forward: back stance with the right foot forward. Low knife-hand guarding block."
+  },
+  {
+   "id": "7",
+   "file": "7.png",
+   "view": "side",
+   "face": "R",
+   "stance": "tiger",
+   "lead": "L",
+   "arms": {
+    "R": "palm",
+    "L": "assist"
+   },
+   "tech": "apalm",
+   "name": "Geodeureo batangson momtong an makki · Augmented palm block",
+   "desc": "Turn 90° left toward da², left tiger stance. Right palm inside block, left fist under the right elbow.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. LEFT foot forward. RIGHT hand (near arm): palm inside block (batangson an makki): open hand, heel of the palm sweeping in front of the chest to the centre line. LEFT hand (far arm): supporting fist placed under the elbow of the blocking arm. This is count 7 of Taegeuk Chil Jang: Turn 90° left toward da², left tiger stance. Right palm inside block, left fist under the right elbow."
+  },
+  {
+   "id": "8",
+   "file": "8.png",
+   "view": "side",
+   "face": "R",
+   "stance": "tiger",
+   "lead": "L",
+   "arms": {
+    "R": "backfist"
+   },
+   "tech": "backfist",
+   "name": "Deung jumeok ap chigi · Back-fist strike",
+   "desc": "Feet in place. Right back-fist strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. LEFT foot forward. RIGHT hand (near arm): back-fist strike (deungjumeok ap chigi): arm arcs up and forward, back of the fist striking at face height, elbow slightly bent. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 8 of Taegeuk Chil Jang: Feet in place. Right back-fist strike."
+  },
+  {
+   "id": "9",
+   "file": "9.png",
+   "view": "side",
+   "face": "L",
+   "stance": "tiger",
+   "lead": "R",
+   "arms": {
+    "L": "palm",
+    "R": "assist"
+   },
+   "tech": "apalm",
+   "name": "Geodeureo batangson momtong an makki · Augmented palm block",
+   "desc": "Turn 180° to the right toward ra², right tiger stance. Left palm inside block, right fist under the left elbow.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. RIGHT foot forward. RIGHT hand (far arm): supporting fist placed under the elbow of the blocking arm. LEFT hand (near arm): palm inside block (batangson an makki): open hand, heel of the palm sweeping in front of the chest to the centre line. This is count 9 of Taegeuk Chil Jang: Turn 180° to the right toward ra², right tiger stance. Left palm inside block, right fist under the left elbow."
+  },
+  {
+   "id": "10",
+   "file": "10.png",
+   "view": "side",
+   "face": "L",
+   "stance": "tiger",
+   "lead": "R",
+   "arms": {
+    "L": "backfist"
+   },
+   "tech": "backfist",
+   "name": "Deung jumeok ap chigi · Back-fist strike",
+   "desc": "Feet in place. Left back-fist strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. RIGHT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): back-fist strike (deungjumeok ap chigi): arm arcs up and forward, back of the fist striking at face height, elbow slightly bent. This is count 10 of Taegeuk Chil Jang: Feet in place. Left back-fist strike."
+  },
+  {
+   "id": "11",
+   "file": "11.png",
+   "view": "front",
+   "face": null,
+   "stance": "close",
+   "lead": null,
+   "arms": {
+    "L": "cover",
+    "R": "cover"
+   },
+   "tech": "cover",
+   "name": "Bojumeok · Covered fist",
+   "desc": "Turn 90° left toward ga, feet together. Covered fist: the right fist wrapped in the left hand, raised slowly in front of the chest.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: moa seogi (closed stance): feet together, inside edges touching, legs straight. RIGHT hand: covering palm wrapped over the other fist in front of the chest. LEFT hand: covering palm wrapped over the other fist in front of the chest. This is count 11 of Taegeuk Chil Jang: Turn 90° left toward ga, feet together. Covered fist: the right fist wrapped in the left hand, raised slowly in front of the chest."
+  },
+  {
+   "id": "12-1",
+   "file": "12-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "outer",
+    "R": "low"
+   },
+   "tech": "scissors",
+   "name": "Gawi makki · Scissors block",
+   "desc": "Step forward into a left front stance. Scissors block: left outer middle block, right low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. LEFT hand: outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. This is count 12-1 of Taegeuk Chil Jang: Step forward into a left front stance. Scissors block: left outer middle block, right low block."
+  },
+  {
+   "id": "12-2",
+   "file": "12-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "outer",
+    "L": "low"
+   },
+   "tech": "scissors",
+   "name": "Gawi makki · Scissors block",
+   "desc": "Scissors block reversed: right outer middle block, left low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 12-2 of Taegeuk Chil Jang: Scissors block reversed: right outer middle block, left low block."
+  },
+  {
+   "id": "13-1",
+   "file": "13-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "outer",
+    "L": "low"
+   },
+   "tech": "scissors",
+   "name": "Gawi makki · Scissors block",
+   "desc": "Step forward into a right front stance. Scissors block: right outer middle block, left low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 13-1 of Taegeuk Chil Jang: Step forward into a right front stance. Scissors block: right outer middle block, left low block."
+  },
+  {
+   "id": "13-2",
+   "file": "13-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "outer",
+    "R": "low"
+   },
+   "tech": "scissors",
+   "name": "Gawi makki · Scissors block",
+   "desc": "Scissors block reversed: left outer middle block, right low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. LEFT hand: outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. This is count 13-2 of Taegeuk Chil Jang: Scissors block reversed: left outer middle block, right low block."
+  },
+  {
+   "id": "14",
+   "file": "14.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "tech": "wedge",
+   "name": "Momtong hecho makki · Middle wedge block",
+   "desc": "Turn 270° to the left toward ra³, left front stance. Middle wedge block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (far arm): wedge block (hecheo makki): forearm upright at the side, both arms spreading outward at shoulder height. LEFT hand (near arm): wedge block (hecheo makki): forearm upright at the side, both arms spreading outward at shoulder height. This is count 14 of Taegeuk Chil Jang: Turn 270° to the left toward ra³, left front stance. Middle wedge block."
+  },
+  {
+   "id": "15-1",
+   "file": "15-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "knee",
+   "lead": "R",
+   "arms": {
+    "L": "grab",
+    "R": "grab"
+   },
+   "tech": "knee",
+   "name": "Mureup chigi · Knee strike",
+   "desc": "Pull down with both hands and drive the right knee up.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: mureup chigi (knee strike): standing leg straight, the other knee driven sharply up to chest height. Kicking leg: RIGHT. RIGHT hand (far arm): open hand reaching forward to grab at face height, then pulling back. LEFT hand (near arm): open hand reaching forward to grab at face height, then pulling back. This is count 15-1 of Taegeuk Chil Jang: Pull down with both hands and drive the right knee up."
+  },
+  {
+   "id": "15-2",
+   "file": "15-2.png",
+   "view": "side",
+   "face": "L",
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "L": "uppercut",
+    "R": "uppercut"
+   },
+   "tech": "duppercut",
+   "name": "Dujumeok jeocho jireugi · Double uppercut",
+   "desc": "Jump forward into a cross stance, left foot tucked behind the right. Double uppercut.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. RIGHT foot forward. RIGHT hand (far arm): uppercut (chi jireugi): fist driven upward in front of the chin, palm toward the body. LEFT hand (near arm): uppercut (chi jireugi): fist driven upward in front of the chin, palm toward the body. This is count 15-2 of Taegeuk Chil Jang: Jump forward into a cross stance, left foot tucked behind the right. Double uppercut."
+  },
+  {
+   "id": "16",
+   "file": "16.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "xlow",
+    "R": "xlow"
+   },
+   "tech": "xlow",
+   "name": "Eotgeoreo arae makki · Low X block",
+   "desc": "Step back with the left foot into a right front stance. Low X block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): low X block (otgeoreo arae makki): both wrists crossed in an X in front of the lower belly, arms angled down. LEFT hand (near arm): low X block (otgeoreo arae makki): both wrists crossed in an X in front of the lower belly, arms angled down. This is count 16 of Taegeuk Chil Jang: Step back with the left foot into a right front stance. Low X block."
+  },
+  {
+   "id": "17",
+   "file": "17.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "tech": "wedge",
+   "name": "Momtong hecho makki · Middle wedge block",
+   "desc": "Turn 180° to the right toward da³, right front stance. Middle wedge block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (near arm): wedge block (hecheo makki): forearm upright at the side, both arms spreading outward at shoulder height. LEFT hand (far arm): wedge block (hecheo makki): forearm upright at the side, both arms spreading outward at shoulder height. This is count 17 of Taegeuk Chil Jang: Turn 180° to the right toward da³, right front stance. Middle wedge block."
+  },
+  {
+   "id": "18-1",
+   "file": "18-1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "knee",
+   "lead": "L",
+   "arms": {
+    "L": "grab",
+    "R": "grab"
+   },
+   "tech": "knee",
+   "name": "Mureup chigi · Knee strike",
+   "desc": "Pull down with both hands and drive the left knee up.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: mureup chigi (knee strike): standing leg straight, the other knee driven sharply up to chest height. Kicking leg: LEFT. RIGHT hand (near arm): open hand reaching forward to grab at face height, then pulling back. LEFT hand (far arm): open hand reaching forward to grab at face height, then pulling back. This is count 18-1 of Taegeuk Chil Jang: Pull down with both hands and drive the left knee up."
+  },
+  {
+   "id": "18-2",
+   "file": "18-2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "cross",
+   "lead": "L",
+   "arms": {
+    "L": "uppercut",
+    "R": "uppercut"
+   },
+   "tech": "duppercut",
+   "name": "Dujumeok jeocho jireugi · Double uppercut",
+   "desc": "Jump forward into a cross stance, right foot tucked behind the left. Double uppercut.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. LEFT foot forward. RIGHT hand (near arm): uppercut (chi jireugi): fist driven upward in front of the chin, palm toward the body. LEFT hand (far arm): uppercut (chi jireugi): fist driven upward in front of the chin, palm toward the body. This is count 18-2 of Taegeuk Chil Jang: Jump forward into a cross stance, right foot tucked behind the left. Double uppercut."
+  },
+  {
+   "id": "19",
+   "file": "19.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "xlow",
+    "R": "xlow"
+   },
+   "tech": "xlow",
+   "name": "Eotgeoreo arae makki · Low X block",
+   "desc": "Step back with the right foot into a left front stance. Low X block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): low X block (otgeoreo arae makki): both wrists crossed in an X in front of the lower belly, arms angled down. LEFT hand (far arm): low X block (otgeoreo arae makki): both wrists crossed in an X in front of the lower belly, arms angled down. This is count 19 of Taegeuk Chil Jang: Step back with the right foot into a left front stance. Low X block."
+  },
+  {
+   "id": "20",
+   "file": "20.png",
+   "view": "back",
+   "face": null,
+   "stance": "walk",
+   "lead": "L",
+   "arms": {
+    "L": "backfist"
+   },
+   "tech": "obackfist",
+   "name": "Deung jumeok bakkat chigi · Outward back-fist",
+   "desc": "Turn 90° left toward na, left walking stance. Left outward back-fist strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap seogi (walking stance): one natural walking step, both legs straight, front foot pointing forward, rear foot turned out slightly, hips square. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: back-fist strike (deungjumeok ap chigi): arm arcs up and forward, back of the fist striking at face height, elbow slightly bent. This is count 20 of Taegeuk Chil Jang: Turn 90° left toward na, left walking stance. Left outward back-fist strike."
+  },
+  {
+   "id": "21-1",
+   "file": "21-1.png",
+   "view": "back",
+   "face": null,
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "eltarget"
+   },
+   "tech": "tkick",
+   "name": "Pyojeok chagi · Target kick",
+   "desc": "Right target kick into the left palm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: open hand held as a target in front of the chest, palm toward the striking elbow. This is count 21-1 of Taegeuk Chil Jang: Right target kick into the left palm."
+  },
+  {
+   "id": "21-2",
+   "file": "21-2.png",
+   "view": "back",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "elbow",
+    "L": "eltarget"
+   },
+   "tech": "eltarget",
+   "name": "Palkup pyojeok chigi · Elbow target strike",
+   "desc": "Land in a horse stance. Right elbow strike into the left palm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: elbow strike (palkup dollyeo chigi): arm folded, elbow swung forward horizontally at chin height. LEFT hand: open hand held as a target in front of the chest, palm toward the striking elbow. This is count 21-2 of Taegeuk Chil Jang: Land in a horse stance. Right elbow strike into the left palm."
+  },
+  {
+   "id": "22",
+   "file": "22.png",
+   "view": "back",
+   "face": null,
+   "stance": "walk",
+   "lead": "R",
+   "arms": {
+    "R": "backfist"
+   },
+   "tech": "obackfist",
+   "name": "Deung jumeok bakkat chigi · Outward back-fist",
+   "desc": "Step into a right walking stance. Right outward back-fist strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap seogi (walking stance): one natural walking step, both legs straight, front foot pointing forward, rear foot turned out slightly, hips square. RIGHT foot forward. RIGHT hand: back-fist strike (deungjumeok ap chigi): arm arcs up and forward, back of the fist striking at face height, elbow slightly bent. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 22 of Taegeuk Chil Jang: Step into a right walking stance. Right outward back-fist strike."
+  },
+  {
+   "id": "23-1",
+   "file": "23-1.png",
+   "view": "back",
+   "face": null,
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "R": "eltarget"
+   },
+   "tech": "tkick",
+   "name": "Pyojeok chagi · Target kick",
+   "desc": "Left target kick into the right palm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand: open hand held as a target in front of the chest, palm toward the striking elbow. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 23-1 of Taegeuk Chil Jang: Left target kick into the right palm."
+  },
+  {
+   "id": "23-2",
+   "file": "23-2.png",
+   "view": "back",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "elbow",
+    "R": "eltarget"
+   },
+   "tech": "eltarget",
+   "name": "Palkup pyojeok chigi · Elbow target strike",
+   "desc": "Land in a horse stance. Left elbow strike into the right palm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: open hand held as a target in front of the chest, palm toward the striking elbow. LEFT hand: elbow strike (palkup dollyeo chigi): arm folded, elbow swung forward horizontally at chin height. This is count 23-2 of Taegeuk Chil Jang: Land in a horse stance. Left elbow strike into the right palm."
+  },
+  {
+   "id": "24",
+   "file": "24.png",
+   "view": "back",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "ksside"
+   },
+   "tech": "ksside",
+   "name": "Hansonnal yeop makki · Knife-hand side block",
+   "desc": "Feet in place. Left knife-hand side block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: knife-hand side block (sonnal yeop makki): open hand extended straight out to the side at shoulder height. This is count 24 of Taegeuk Chil Jang: Feet in place. Left knife-hand side block."
+  },
+  {
+   "id": "25",
+   "file": "25.png",
+   "view": "back",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "sidepunch"
+   },
+   "tech": "sidepunch",
+   "name": "Yeop jireugi · Side punch",
+   "desc": "Step the right foot forward into a horse stance. Right side punch with a kihap.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: side punch (yeop jireugi): arm fully extended straight out to the side at shoulder height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 25 of Taegeuk Chil Jang: Step the right foot forward into a horse stance. Right side punch with a kihap."
+  }
+ ]
+}

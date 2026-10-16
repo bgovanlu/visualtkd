@@ -1,4 +1,4 @@
-# Review list — Taegeuk 1–8 and the first three black-belt forms
+# Review list — Taegeuk 1–8 and the first four black-belt forms
 
 Everything below is either a place where sources disagree or a choice no source settled. Each item says what the site shows now. Tick an item when you've checked it against your school's practice or the Kukkiwon video; if the site needs to change, note the fix and the move id (e.g. `T5 5-1`).
 
@@ -201,6 +201,21 @@ Sources: [Blue Dragon TKD](https://www.bluedragontkd.net/taekwondo/poomse/black-
 - [ ] **Move 21, the wrist release.** The release (japhin sonmok ppaegi) and the turning back-fist are one count in all sources. **Drawn as one figure (the back-fist),** with the release in the instruction.
 - [ ] **Moves 23–26 repeat the first line.** namu.wiki notes the first bar is walked twice. Both passes sit on the top bar; 23–26 are placed nearest the centre and at the ends.
 - [ ] **Kihaps** at 8-2 and 22 (NBTKDA: third reverse punch and third forward punch; Blue Dragon agrees).
+
+## Pyongwon · 평원
+
+Sources: [NBTKDA chart](https://images.squarespace-cdn.com/content/v1/58b45cec6b8f5bc3d705a16e/8db77a22-7733-4089-9e70-e7058773b54d/12+Pyeongwon+Poomsae+Chart+-+NBTKDA+Poomsae+Chart.png) (14 steps with sub-counts, front leg, hands, kihaps, timings; from [nbtkda.com/pyeongwon](https://www.nbtkda.com/pyeongwon)), [Phoenix Taekwondo step chart](https://www.phoenixtaekwondo.net/images/poomsae/Poomsae_pyongwon.pdf) (21 movements / 29 techniques, same order), Taekwondo fandom wiki (cross-check only: steps 1–4 with turn directions, from search snippets; the page itself wouldn't load), [Kukkiwon](https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1359&page=1&menuLevel=3&menuNo=72) (meaning only). NBTKDA and Phoenix agree on every stance and technique in order. **No source gives a direction for every move, so check this form against the video before teaching from it.**
+
+- [ ] **Directions.** Only the first steps are stated (fandom: turn right into back stance for the low knife-hand block, then the horse stance "looking right, pivot counterclockwise"). The rest follow from the order of the techniques and the mirror symmetry of the two halves: 1-3 faces ra; 2-1 to 3-2 travel toward da; 3-3 to 9-2 face and travel toward ra; 9-3 to 14-2 face and travel toward da. Horse, cross and crane stances face ga.
+- [ ] **Move 2-1, knife-hand block.** NBTKDA has a left-arm "sonnal makgi" and Phoenix a "knife hand block" (the photo shows one hand). **Drawn as a single knife-hand block (hansonnal bakkat makki), the other hand at the hip.**
+- [ ] **Moves 3-3 and 9-3.** NBTKDA calls them "sonnal geodeureo makgi" (assisted knife-hand block); Phoenix calls them a double knife-hand block. **Drawn as the double knife-hand block** (sonnal momtong makki) already in the library.
+- [ ] **Moves 5-2 and 11-2, the second back-fist.** NBTKDA: "left fist strike + right arm assist" after the right back-fist. The direction isn't stated. **Drawn striking across the body to the same side (ra in 5-2, da in 11-2)**, the other arm across the chest.
+- [ ] **Moves 5-1 and 11-1, stamp.** The stamping foot (right, then left) comes down in horse stance; the figure doesn't show the stamp itself, only the instruction does.
+- [ ] **Moves 7 and 13, crane stance.** NBTKDA's "front leg" column says Right at 7 and Left at 13, which we read as the **lifted** leg, because the side kick that follows is made with that leg (8-1 right, 14-1 left). **Drawn standing on the left leg at 7 and the right leg at 13.**
+- [ ] **Side-kick hands (3-2, 8-1, 9-2).** No source says; drawn with both fists in guard as in Koryo. 14-1 has the hammer-fist strike (NBTKDA).
+- [ ] **Floor plan.** The floor line is one straight line (一). The board shows it as three passes along that line (out and toward da, back toward ra, toward da again), so the three bars are the same line, not three lines. Positions on the minimap are approximate.
+- [ ] **Numbering.** Follows NBTKDA's 14 steps with sub-numbers (34 figures); Kukkiwon counts 21 movements.
+- [ ] **Kihaps** at 5-1 and 11-1 (NBTKDA and Phoenix agree).
 
 ---
 

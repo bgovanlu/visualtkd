@@ -1,0 +1,750 @@
+{
+ "slug": "pyongwon",
+ "pdf": "pyongwon-print.pdf",
+ "title": "Pyongwon",
+ "ko": "평원",
+ "symbol": {
+  "name": "Pyongwon",
+  "hanja": "平原",
+  "meaning": "The wide plain"
+ },
+ "movements": 21,
+ "note": {
+  "h": "一 · Il · the plain",
+  "p": "Pyongwon is the wide plain: open ground that feeds every living thing and stretches as far as you can see. The floor line is one straight line, 一, walked back and forth. The plan shows it as three passes along that one line: out and toward da, then back toward ra, then toward da again."
+ },
+ "footer": "Move numbers follow the 14 steps of the NBTKDA chart; techniques in the same step share a number (3-1 kick, 3-2 kick, 3-3 and 3-4 blocks). Kukkiwon counts 21 movements. Finish with <b>Baro</b>: bring the left foot back beside the right into closed stance, hands overlapped, at the starting point.",
+ "boardMin": 1760,
+ "cardW": 94,
+ "figH": 114,
+ "floor": {
+  "glyph": "一",
+  "rail": [
+   "r1",
+   "r1"
+  ],
+  "notesBelow": true,
+  "map": "M4 30H96"
+ },
+ "layout": {
+  "r1": [
+   [
+    "1-3"
+   ],
+   [
+    "J",
+    "1-1",
+    "1-2"
+   ],
+   [
+    "2-1",
+    "2-2"
+   ],
+   [
+    "3-1",
+    "3-2"
+   ],
+   [
+    "3-3",
+    "3-4"
+   ]
+  ],
+  "r3": [
+   [
+    "9-2",
+    "9-1"
+   ],
+   [
+    "8-2",
+    "8-1"
+   ],
+   [
+    "7-2",
+    "7-1"
+   ],
+   [
+    "6-2",
+    "6-1"
+   ],
+   [
+    "5-2",
+    "5-1"
+   ],
+   [
+    "4-2",
+    "4-1"
+   ]
+  ],
+  "r5": [
+   [
+    "9-3",
+    "9-4"
+   ],
+   [
+    "10-1",
+    "10-2"
+   ],
+   [
+    "11-1",
+    "11-2"
+   ],
+   [
+    "12-1",
+    "12-2"
+   ],
+   [
+    "13-1",
+    "13-2"
+   ],
+   [
+    "14-1",
+    "14-2"
+   ]
+  ]
+ },
+ "pos": {
+  "J": [
+   50,
+   30
+  ],
+  "1-1": [
+   50,
+   30
+  ],
+  "1-2": [
+   50,
+   30
+  ],
+  "1-3": [
+   45,
+   30
+  ],
+  "2-1": [
+   48,
+   30
+  ],
+  "2-2": [
+   53,
+   30
+  ],
+  "3-1": [
+   57,
+   30
+  ],
+  "3-2": [
+   62,
+   30
+  ],
+  "3-3": [
+   66,
+   30
+  ],
+  "3-4": [
+   66,
+   30
+  ],
+  "4-1": [
+   64,
+   30
+  ],
+  "4-2": [
+   64,
+   30
+  ],
+  "5-1": [
+   64,
+   30
+  ],
+  "5-2": [
+   64,
+   30
+  ],
+  "6-1": [
+   59,
+   30
+  ],
+  "6-2": [
+   55,
+   30
+  ],
+  "7-1": [
+   55,
+   30
+  ],
+  "7-2": [
+   55,
+   30
+  ],
+  "8-1": [
+   49,
+   30
+  ],
+  "8-2": [
+   44,
+   30
+  ],
+  "9-1": [
+   40,
+   30
+  ],
+  "9-2": [
+   35,
+   30
+  ],
+  "9-3": [
+   31,
+   30
+  ],
+  "9-4": [
+   31,
+   30
+  ],
+  "10-1": [
+   33,
+   30
+  ],
+  "10-2": [
+   33,
+   30
+  ],
+  "11-1": [
+   33,
+   30
+  ],
+  "11-2": [
+   33,
+   30
+  ],
+  "12-1": [
+   38,
+   30
+  ],
+  "12-2": [
+   42,
+   30
+  ],
+  "13-1": [
+   42,
+   30
+  ],
+  "13-2": [
+   42,
+   30
+  ],
+  "14-1": [
+   48,
+   30
+  ],
+  "14-2": [
+   53,
+   30
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "na",
+   "view": "front",
+   "stance": "close",
+   "arms": {
+    "L": "gyeopson",
+    "R": "gyeopson"
+   },
+   "tech": "gyeopson",
+   "desc": "Stand at the centre of the line facing ga, feet together, open hands overlapped in front of the lower belly, left over right (about 5 seconds)."
+  },
+  {
+   "id": "1-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "ready",
+   "arms": {
+    "L": "kspread",
+    "R": "kspread"
+   },
+   "tech": "kspread",
+   "step": {
+    "plant": "R",
+    "move": [
+     0,
+     -1
+    ]
+   },
+   "desc": "Step the left foot out to the left into parallel stance. Knife-hand low spread block, slowly (about 5 seconds)."
+  },
+  {
+   "id": "1-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "ready",
+   "arms": {
+    "L": "tongmil",
+    "R": "tongmil"
+   },
+   "tech": "tongmil",
+   "desc": "Without moving the feet, raise both open hands slowly into pushing-hands ready (about 5 seconds)."
+  },
+  {
+   "id": "1-3",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "kslow"
+   },
+   "tech": "kslow",
+   "desc": "Look right and step the right foot to the right (toward ra) into a back stance with the right foot forward. Right low knife-hand block."
+  },
+  {
+   "id": "2-1",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksout"
+   },
+   "tech": "ksout",
+   "desc": "Turn to face da, into a back stance with the left foot forward. Left knife-hand block."
+  },
+  {
+   "id": "2-2",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "upelbow"
+   },
+   "tech": "upelbow",
+   "desc": "Slide the left foot forward into a left front stance. Right rising elbow strike."
+  },
+  {
+   "id": "3-1",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "desc": "Right front kick toward da."
+  },
+  {
+   "id": "3-2",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "bskick",
+   "desc": "Set the right foot down, spin backwards and kick with the left leg: back-turning side kick toward da."
+  },
+  {
+   "id": "3-3",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "ksblock",
+   "desc": "Land the left foot toward da, facing ra in a back stance with the right foot forward. Right double knife-hand block."
+  },
+  {
+   "id": "3-4",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "kslow",
+    "L": "ksguard"
+   },
+   "tech": "kslowa",
+   "desc": "In the same stance, augmented low knife-hand block with the right hand."
+  },
+  {
+   "id": "4-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "hingepunch",
+    "L": "sideelbow"
+   },
+   "tech": "khinge",
+   "step": {
+    "horse": "along"
+   },
+   "desc": "Looking right, pivot to face ga in horse stance. Large hinge, right arm over left."
+  },
+  {
+   "id": "4-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "houter",
+    "L": "assist"
+   },
+   "tech": "ahside",
+   "desc": "Still in horse stance, augmented high side block to the right (ra), the left fist across the chest."
+  },
+  {
+   "id": "5-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "sidebf"
+   },
+   "tech": "stompbf",
+   "kihap": true,
+   "carry": false,
+   "desc": "Stamp the right foot in horse stance and strike to the right with a right back-fist, the left hand grabbing and pulling back."
+  },
+  {
+   "id": "5-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "crossbf",
+    "R": "assist"
+   },
+   "tech": "abackfist",
+   "desc": "Left back-fist strike to the right, the right arm supporting it."
+  },
+  {
+   "id": "6-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "cross",
+   "lead": "L",
+   "arms": {
+    "L": "sideelbow",
+    "R": "sideelbow"
+   },
+   "tech": "yoke",
+   "desc": "Step the left foot across in front toward ra into a front cross stance. Yoke strike, both elbows out, looking right."
+  },
+  {
+   "id": "6-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "hsanteul",
+   "step": {
+    "plant": "L"
+   },
+   "desc": "Step the right foot out to the right (toward ra) into horse stance. Opening mountain block."
+  },
+  {
+   "id": "7-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "crane",
+   "lead": "L",
+   "arms": {
+    "R": "low",
+    "L": "high"
+   },
+   "tech": "keumgang",
+   "desc": "Lift the right foot into crane stance on the left leg. Diamond block, looking right."
+  },
+  {
+   "id": "7-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "crane",
+   "lead": "L",
+   "arms": {
+    "R": "hingetop"
+   },
+   "tech": "shinge",
+   "desc": "In the same crane stance, small hinge with both fists at the left hip."
+  },
+  {
+   "id": "8-1",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "desc": "Right side kick toward ra."
+  },
+  {
+   "id": "8-2",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "upelbow"
+   },
+   "tech": "upelbow",
+   "desc": "Land in a right front stance toward ra. Left rising elbow strike."
+  },
+  {
+   "id": "9-1",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "desc": "Left front kick toward ra."
+  },
+  {
+   "id": "9-2",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "bskick",
+   "desc": "Set the left foot down, spin backwards and kick with the right leg: back-turning side kick toward ra."
+  },
+  {
+   "id": "9-3",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "desc": "Land the right foot toward ra, facing da in a back stance with the left foot forward. Left double knife-hand block."
+  },
+  {
+   "id": "9-4",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "ksguard"
+   },
+   "tech": "kslowa",
+   "desc": "In the same stance, augmented low knife-hand block with the left hand."
+  },
+  {
+   "id": "10-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "hingepunch",
+    "R": "sideelbow"
+   },
+   "tech": "khinge",
+   "step": {
+    "horse": "along"
+   },
+   "desc": "Looking left, pivot to face ga in horse stance. Large hinge, left arm over right."
+  },
+  {
+   "id": "10-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "houter",
+    "R": "assist"
+   },
+   "tech": "ahside",
+   "desc": "Still in horse stance, augmented high side block to the left (da), the right fist across the chest."
+  },
+  {
+   "id": "11-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "sidebf"
+   },
+   "tech": "stompbf",
+   "kihap": true,
+   "carry": false,
+   "desc": "Stamp the left foot in horse stance and strike to the left with a left back-fist, the right hand grabbing and pulling back."
+  },
+  {
+   "id": "11-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "crossbf",
+    "L": "assist"
+   },
+   "tech": "abackfist",
+   "desc": "Right back-fist strike to the left, the left arm supporting it."
+  },
+  {
+   "id": "12-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "L": "sideelbow",
+    "R": "sideelbow"
+   },
+   "tech": "yoke",
+   "desc": "Step the right foot across in front toward da into a front cross stance. Yoke strike, both elbows out, looking left."
+  },
+  {
+   "id": "12-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "hsanteul",
+   "step": {
+    "plant": "R"
+   },
+   "desc": "Step the left foot out to the left (toward da) into horse stance. Opening mountain block."
+  },
+  {
+   "id": "13-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "low",
+    "R": "high"
+   },
+   "tech": "keumgang",
+   "desc": "Lift the left foot into crane stance on the right leg. Diamond block, looking left."
+  },
+  {
+   "id": "13-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "hingetop"
+   },
+   "tech": "shinge",
+   "desc": "In the same crane stance, small hinge with both fists at the right hip."
+  },
+  {
+   "id": "14-1",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "hammerout"
+   },
+   "tech": "hskick",
+   "desc": "Left side kick toward da with a left hammer-fist strike out the same side."
+  },
+  {
+   "id": "14-2",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "elbow",
+    "L": "eltarget"
+   },
+   "tech": "eltarget",
+   "desc": "Land in a left front stance toward da. Right elbow strike into the left palm."
+  }
+ ],
+ "refs": [
+  {
+   "go": "kukkiwon-pyongwon",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Pyongwon",
+   "desc": "The form’s official description and meaning.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1359&page=1&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "kukkiwon-poomsae",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Poomsae index",
+   "desc": "Every official poomsae, Taegeuk 1–8 and the black-belt forms.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/list?boardManagementNo=55&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "video-pyongwon",
+   "kind": "yt",
+   "icon": "channel",
+   "src": "YouTube · Playlist",
+   "title": "Kukkiwon Digital Encyclopedia series",
+   "desc": "Mookas TV playlist of the full series, including Pyongwon.",
+   "url": "https://www.youtube.com/playlist?list=PL4lzP9nwMEv2A-vF-GaNNn2OdjXjZfA6k"
+  },
+  {
+   "go": "kukkiwon-youtube",
+   "kind": "yt",
+   "icon": "channel",
+   "src": "YouTube · Channel",
+   "title": "Kukkiwon World Taekwondo Headquarters",
+   "desc": "The official Kukkiwon channel.",
+   "url": "https://www.youtube.com/channel/UCaQb3jutLu15oSfhPh8FACQ"
+  },
+  {
+   "go": "wt-poomsae-rules",
+   "kind": "wt",
+   "icon": "pdf",
+   "src": "World Taekwondo · PDF",
+   "title": "Poomsae Competition Rules and Interpretation",
+   "desc": "In force from 30 September 2024; how poomsae are judged.",
+   "url": "https://www.worldtaekwondo.org/att_file/documents/Poomsae%20Competition%20Rules%20and%20Interpretation%20(In%20force%20as%20of%20September%2030%202024).pdf"
+  }
+ ]
+}

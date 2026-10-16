@@ -1,6 +1,6 @@
 # Status — 14 October 2026
 
-## Forms: 11 of 17 built
+## Forms: 12 of 17 built
 | Form | Path | Figures | Review |
 |---|---|---|---|
 | Taegeuk Il Jang | /taegeuk/1 | 21 | Published |
@@ -9,14 +9,15 @@
 | Koryo 高麗 (士) | /koryo | 47 | Open items in REVIEW.md |
 | Keumgang 金剛 (山) | /keumgang | 28 | Open items; mountain-block facing is the biggest question |
 | Taebaek 太白 (工) | /taebaek | 40 | Open items in REVIEW.md |
+| Pyongwon 平原 (一) | /pyongwon | 34 | Open items in REVIEW.md; directions inferred, check against the video first |
 
-Planned: Pyongwon, Sipjin, Jitae, Cheonkwon, Hansu, Ilyeo.
+Planned: Sipjin, Jitae, Cheonkwon, Hansu, Ilyeo.
 
 Every print sheet is exactly 2 pages and every QR code decodes to its expected link.
 
 ## Short links (`/go/`, generated into `site/_redirects`)
-- Kukkiwon form pages: `kukkiwon-t1` … `t8` (boardNo 1347, 1349–1355), `kukkiwon-koryo` / `keumgang` / `taebaek` (1356–1358), `kukkiwon-poomsae`
-- Videos (Kukkiwon Digital Encyclopedia, Mookas TV): `video-t1` … `t6`, `video-koryo`; `video-t7`, `t8`, `keumgang`, `taebaek` point to the series playlist until individual videos are found
+- Kukkiwon form pages: `kukkiwon-t1` … `t8` (boardNo 1347, 1349–1355), `kukkiwon-koryo` / `keumgang` / `taebaek` / `pyongwon` (1356–1359), `kukkiwon-poomsae`
+- Videos (Kukkiwon Digital Encyclopedia, Mookas TV): `video-t1` … `t6`, `video-koryo`; `video-t7`, `t8`, `keumgang`, `taebaek`, `pyongwon` point to the series playlist until individual videos are found
 - `kukkiwon-youtube`, `wt-poomsae-rules`
 
 ## Deployment — live on AWS since 14 October 2026

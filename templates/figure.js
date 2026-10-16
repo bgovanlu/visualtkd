@@ -69,7 +69,7 @@ const FIST=[[-.4,-3.8],[3,-4.6],[7.6,-4.5],[9.8,-2.8],[10.3,.4],[9.4,3.6],[6,4.8
 const HAND_FLAT=[[-.4,-3],[3,-3.4],[9,-3.2],[13.2,-2],[14,0],[13.2,2],[9,3.1],[3,3.3],[-.4,2.8]];
 // open-hand techniques draw a flat hand instead of a fist
 const OPEN=new Set(["ksout","ksblock","ksguard","spear","press","neck","khigh","eltarget","twist","palm","grab","ksside","kslow",
-  "tongmil","ksstrike","arc","kneebreak","hold","target","lspear","pressdown","elbowpush","palmlow","palmjaw","ksin","kspread","tgrab"]);
+  "tongmil","gyeopson","ksstrike","arc","kneebreak","hold","target","lspear","pressdown","elbowpush","palmlow","palmjaw","ksin","kspread","tgrab"]);
 // seen from the front, these come straight at the viewer: drawn foreshortened (fist face or hand edge), never across the face
 const TOWARD={punch:k=>[1.5,20],neck:k=>[-3,5],arc:k=>[-1,5],palmjaw:k=>[-1,9],tgrab:k=>[-2,16]};
 const KNIFE_FACE=[[-6.8,-2.4],[6.8,-2.4],[7.6,0],[6.8,2.4],[-6.8,2.4],[-7.6,0]];
@@ -163,6 +163,10 @@ function skel(m,pr){
       else if(act==="hammerout")h=add(sh,mul([44,-2],ak));
       else if(act==="kspread")h=[22*ak,hipY+2];
       else if(act==="tgrab")h=add(sh,mul([36,4],ak));
+      else if(act==="gyeopson"){h=[7*ak,hipY-4];p=[1,.3]}                   // overlapped hands in front of the lower belly
+      else if(act==="upelbow"){h=add(sh,mul([5,-9],ak));p=[1,-.15]}         // palkup ollyeo chigi: elbow driven up and forward, fist by the ear
+      else if(act==="sidebf")h=add(sh,mul([36,-12],ak));
+      else if(act==="crossbf")h=add(sh,mul([30,-10],ak));
       else h=dp==="near"?add(sh,mul([24,14],ak)):add(sh,mul([17,7],ak));
       addArm(dp==="near"?Lay.nearArm:Lay.farArm,sh,h,p,false,OPEN.has(act));
     });
@@ -281,6 +285,10 @@ function skel(m,pr){
       else if(act==="hingetop"){h=[x*-(pr.hipW+6),hipY-18*tk];p=[x,.3]}
       else if(act==="hammerout"){h=[x*(pr.shW+40),T+6*tk];p=[x*.2,1]}
       else if(act==="kspread"){h=[x*(pr.shW+12),hipY+12*k];p=[x,.2]}
+      else if(act==="gyeopson"){h=[x*-1.5,hipY+3];p=[x,.2]}       // gyeopson junbi: open hands overlapped in front of the lower belly
+      else if(act==="upelbow"){h=[x*-6,T+4*tk];p=[x,.2]}
+      else if(act==="sidebf"){h=[x*(pr.shW+26),T-6*tk];p=[x,-.3]}   // back-fist out to the side at head height
+      else if(act==="crossbf"){h=[x*-(pr.shW+6),T-6*tk];p=[x,.3]}   // back-fist across the body to the other side
       else h=[x*6.5,hipY-12*tk];                                 // junbi
       addArm(Lay.arms,sh,h,p,false,OPEN.has(act));
     }
@@ -416,7 +424,19 @@ function motionArc(p,q){
   return`<path d="M${f(p[0])} ${f(p[1])}Q${f(c[0])} ${f(c[1])} ${f(a[0])} ${f(a[1])}" fill="none" stroke="var(--fire)" stroke-width="1.5" stroke-dasharray="3 2.2" stroke-linecap="round"/>`+
     `<path d="M${f(q[0]+t[0]*1.5)} ${f(q[1]+t[1]*1.5)}L${f(a[0]-t[0]*3+w[0]*3)} ${f(a[1]-t[1]*3+w[1]*3)}L${f(a[0]-t[0]*3-w[0]*3)} ${f(a[1]-t[1]*3-w[1]*3)}Z" fill="var(--fire)"/>`;
 }
+/* Per-move images (#7): when the page defines FIGIMG (build_form.py --images, from design/moves/<form>/),
+   a count with an image is drawn from it instead of the vector figure, on the same ground line and scale
+   (142 units = standing height; r = the image's share of it). Ghost arms and motion arcs need the vector
+   skeleton, so they are left out on image figures. */
+function figImage(m,opt){
+  const I=FIGIMG[m.id],h=142*I.r,w=I.w/I.h*h;
+  const img=`<image href="${I.src}" x="${f(-w/2)}" y="${f(65-h)}" width="${f(w)}" height="${f(h)}" preserveAspectRatio="none"${opt.fade?' opacity=".5"':""}/>`;
+  return`<svg class="body${opt.crop?" crop":""}" viewBox="${opt.crop?"-62 -90 124 100":"-62 -90 124 160"}" role="img" aria-label="${T[m.tech][2]}">`+
+    (opt.crop?"":`<ellipse class="glow" cx="0" cy="64.5" rx="50" ry="5.5" fill="none" stroke="var(--fire)" stroke-width="2"/>`+
+    `<ellipse cx="0" cy="64" rx="40" ry="4" fill="var(--ink)" opacity=".09"/>`)+img+`</svg>`;
+}
 function figure(m,opt={}){
+  if(typeof FIGIMG!=="undefined"&&FIGIMG[m.id])return figImage(m,opt);
   const sk=skel(m,PR),{out}=draw(sk,STY,{fadeLegs:opt.fade,only:opt.crop?"upper":null});
   let under="",over="",marks="";
   if(opt.from){const pk=skel(opt.from,PR);

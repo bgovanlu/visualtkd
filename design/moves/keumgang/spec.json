@@ -1,0 +1,448 @@
+{
+ "form": "Keumgang",
+ "slug": "keumgang",
+ "moves": [
+  {
+   "id": "J",
+   "file": "J.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "junbi",
+    "R": "junbi"
+   },
+   "tech": "junbi",
+   "name": "Junbi · Ready",
+   "desc": "Stand at na facing ga, feet parallel and one foot-width apart, fists in front of the belt (gibon junbi).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: fist in front of the belt, a fist-width from the body, both fists at the same height. LEFT hand: fist in front of the belt, a fist-width from the body, both fists at the same height. This is the ready posture of Keumgang: Stand at na facing ga, feet parallel and one foot-width apart, fists in front of the belt (gibon junbi)."
+  },
+  {
+   "id": "1",
+   "file": "1.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "tech": "wedge",
+   "name": "Momtong hecho makki · Middle wedge block",
+   "desc": "Step forward toward ga into a left front stance. Inner-forearm opening block (an palmok momtong hecho makki).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: wedge block (hecheo makki): forearm upright at the side, both arms spreading outward at shoulder height. LEFT hand: wedge block (hecheo makki): forearm upright at the side, both arms spreading outward at shoulder height. This is count 1 of Keumgang: Step forward toward ga into a left front stance. Inner-forearm opening block (an palmok momtong hecho makki)."
+  },
+  {
+   "id": "2",
+   "file": "2.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "palmjaw"
+   },
+   "tech": "palmjaw",
+   "name": "Batangson teok chigi · Palm-heel jaw strike",
+   "desc": "Step forward into a right front stance. Right palm-heel jaw strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: palm-heel strike up and forward at jaw height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 2 of Keumgang: Step forward into a right front stance. Right palm-heel jaw strike."
+  },
+  {
+   "id": "3",
+   "file": "3.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "palmjaw"
+   },
+   "tech": "palmjaw",
+   "name": "Batangson teok chigi · Palm-heel jaw strike",
+   "desc": "Step forward into a left front stance. Left palm-heel jaw strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: palm-heel strike up and forward at jaw height. This is count 3 of Keumgang: Step forward into a left front stance. Left palm-heel jaw strike."
+  },
+  {
+   "id": "4",
+   "file": "4.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "palmjaw"
+   },
+   "tech": "palmjaw",
+   "name": "Batangson teok chigi · Palm-heel jaw strike",
+   "desc": "Step forward into a right front stance. Right palm-heel jaw strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: palm-heel strike up and forward at jaw height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 4 of Keumgang: Step forward into a right front stance. Right palm-heel jaw strike."
+  },
+  {
+   "id": "5",
+   "file": "5.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksin"
+   },
+   "tech": "ksin",
+   "name": "Hansonnal momtong an makki · Knife-hand inside block",
+   "desc": "Step back with the right foot into a back stance with the left foot forward. Left knife-hand inside block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: knife-hand inside block (sonnal an makki): open hand sweeping in front of the chest to the centre line. This is count 5 of Keumgang: Step back with the right foot into a back stance with the left foot forward. Left knife-hand inside block."
+  },
+  {
+   "id": "6",
+   "file": "6.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksin"
+   },
+   "tech": "ksin",
+   "name": "Hansonnal momtong an makki · Knife-hand inside block",
+   "desc": "Step back with the left foot into a back stance with the right foot forward. Right knife-hand inside block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: knife-hand inside block (sonnal an makki): open hand sweeping in front of the chest to the centre line. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 6 of Keumgang: Step back with the left foot into a back stance with the right foot forward. Right knife-hand inside block."
+  },
+  {
+   "id": "7",
+   "file": "7.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksin"
+   },
+   "tech": "ksin",
+   "name": "Hansonnal momtong an makki · Knife-hand inside block",
+   "desc": "Step back with the right foot into a back stance with the left foot forward. Left knife-hand inside block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: knife-hand inside block (sonnal an makki): open hand sweeping in front of the chest to the centre line. This is count 7 of Keumgang: Step back with the right foot into a back stance with the left foot forward. Left knife-hand inside block."
+  },
+  {
+   "id": "8",
+   "file": "8.png",
+   "view": "front",
+   "face": null,
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "low",
+    "R": "high"
+   },
+   "tech": "keumgang",
+   "name": "Keumgang makki · Diamond block",
+   "desc": "Lift the left foot to the right knee: crane stance on the right leg, looking left toward da. Diamond block, slowly: left low block, right high block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: RIGHT. RIGHT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 8 of Keumgang: Lift the left foot to the right knee: crane stance on the right leg, looking left toward da. Diamond block, slowly: left low block, right high block."
+  },
+  {
+   "id": "9",
+   "file": "9.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "sideelbow",
+    "R": "hingepunch"
+   },
+   "tech": "khinge",
+   "name": "Keun doljjeogwi · Large hinge",
+   "desc": "Step the left foot down toward da into a horse stance. Large hinge: left elbow out toward da, right fist across the chest.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: large hinge (keun dolcheogi): forearm level across the chest at shoulder height, fist at the other shoulder. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is count 9 of Keumgang: Step the left foot down toward da into a horse stance. Large hinge: left elbow out toward da, right fist across the chest."
+  },
+  {
+   "id": "10",
+   "file": "10.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "sideelbow",
+    "R": "hingepunch"
+   },
+   "tech": "khinge",
+   "name": "Keun doljjeogwi · Large hinge",
+   "desc": "Turn 360° to the left, travelling toward da, and land in a horse stance. Large hinge again.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: large hinge (keun dolcheogi): forearm level across the chest at shoulder height, fist at the other shoulder. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is count 10 of Keumgang: Turn 360° to the left, travelling toward da, and land in a horse stance. Large hinge again."
+  },
+  {
+   "id": "11",
+   "file": "11.png",
+   "view": "side",
+   "face": "R",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "name": "Santeul makki · Mountain block",
+   "desc": "Turn 90° left to face da and stamp into a horse stance. Mountain block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (near arm): high outer block: forearm upright at the side of the head, fist at head height. LEFT hand (far arm): high outer block: forearm upright at the side of the head, fist at head height. This is count 11 of Keumgang: Turn 90° left to face da and stamp into a horse stance. Mountain block."
+  },
+  {
+   "id": "12",
+   "file": "12.png",
+   "view": "side",
+   "face": "L",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "tech": "wedge",
+   "name": "Momtong hecho makki · Middle wedge block",
+   "desc": "Turn 180° to the right, stepping round to face ra, horse stance. Inner-forearm opening block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (far arm): wedge block (hecheo makki): forearm upright at the side, both arms spreading outward at shoulder height. LEFT hand (near arm): wedge block (hecheo makki): forearm upright at the side, both arms spreading outward at shoulder height. This is count 12 of Keumgang: Turn 180° to the right, stepping round to face ra, horse stance. Inner-forearm opening block."
+  },
+  {
+   "id": "13",
+   "file": "13.png",
+   "view": "side",
+   "face": "L",
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "spread",
+    "R": "spread"
+   },
+   "tech": "spread",
+   "name": "Arae hecho makki · Low spread block",
+   "desc": "Draw the left foot in to a parallel stance. Low spread block, slowly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand (far arm): low spreading block (arae hecheo makki): arm extended down and out to the side of the hip. LEFT hand (near arm): low spreading block (arae hecheo makki): arm extended down and out to the side of the hip. This is count 13 of Keumgang: Draw the left foot in to a parallel stance. Low spread block, slowly."
+  },
+  {
+   "id": "14",
+   "file": "14.png",
+   "view": "side",
+   "face": "R",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "name": "Santeul makki · Mountain block",
+   "desc": "Turn 180° to the right to face da and stamp into a horse stance. Mountain block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (near arm): high outer block: forearm upright at the side of the head, fist at head height. LEFT hand (far arm): high outer block: forearm upright at the side of the head, fist at head height. This is count 14 of Keumgang: Turn 180° to the right to face da and stamp into a horse stance. Mountain block."
+  },
+  {
+   "id": "15",
+   "file": "15.png",
+   "view": "front",
+   "face": null,
+   "stance": "crane",
+   "lead": "L",
+   "arms": {
+    "R": "low",
+    "L": "high"
+   },
+   "tech": "keumgang",
+   "name": "Keumgang makki · Diamond block",
+   "desc": "Turn to face ga and lift the right foot to the left knee: crane stance on the left leg, looking right toward ra. Diamond block, slowly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: LEFT. RIGHT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. LEFT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. This is count 15 of Keumgang: Turn to face ga and lift the right foot to the left knee: crane stance on the left leg, looking right toward ra. Diamond block, slowly."
+  },
+  {
+   "id": "16",
+   "file": "16.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "sideelbow",
+    "L": "hingepunch"
+   },
+   "tech": "khinge",
+   "name": "Keun doljjeogwi · Large hinge",
+   "desc": "Step the right foot down toward ra into a horse stance. Large hinge: right elbow out toward ra, left fist across the chest.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: large hinge (keun dolcheogi): forearm level across the chest at shoulder height, fist at the other shoulder. This is count 16 of Keumgang: Step the right foot down toward ra into a horse stance. Large hinge: right elbow out toward ra, left fist across the chest."
+  },
+  {
+   "id": "17",
+   "file": "17.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "sideelbow",
+    "L": "hingepunch"
+   },
+   "tech": "khinge",
+   "name": "Keun doljjeogwi · Large hinge",
+   "desc": "Turn 360° to the right, travelling toward ra, and land in a horse stance. Large hinge again.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: large hinge (keun dolcheogi): forearm level across the chest at shoulder height, fist at the other shoulder. This is count 17 of Keumgang: Turn 360° to the right, travelling toward ra, and land in a horse stance. Large hinge again."
+  },
+  {
+   "id": "18",
+   "file": "18.png",
+   "view": "front",
+   "face": null,
+   "stance": "crane",
+   "lead": "L",
+   "arms": {
+    "R": "low",
+    "L": "high"
+   },
+   "tech": "keumgang",
+   "name": "Keumgang makki · Diamond block",
+   "desc": "Lift the right foot to the left knee: crane stance on the left leg, looking toward ra. Diamond block, slowly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: LEFT. RIGHT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. LEFT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. This is count 18 of Keumgang: Lift the right foot to the left knee: crane stance on the left leg, looking toward ra. Diamond block, slowly."
+  },
+  {
+   "id": "19",
+   "file": "19.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "sideelbow",
+    "L": "hingepunch"
+   },
+   "tech": "khinge",
+   "name": "Keun doljjeogwi · Large hinge",
+   "desc": "Step the right foot down toward ra into a horse stance. Large hinge.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: large hinge (keun dolcheogi): forearm level across the chest at shoulder height, fist at the other shoulder. This is count 19 of Keumgang: Step the right foot down toward ra into a horse stance. Large hinge."
+  },
+  {
+   "id": "20",
+   "file": "20.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "sideelbow",
+    "L": "hingepunch"
+   },
+   "tech": "khinge",
+   "name": "Keun doljjeogwi · Large hinge",
+   "desc": "Turn 360° to the right, travelling toward ra, and land in a horse stance. Large hinge again.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: large hinge (keun dolcheogi): forearm level across the chest at shoulder height, fist at the other shoulder. This is count 20 of Keumgang: Turn 360° to the right, travelling toward ra, and land in a horse stance. Large hinge again."
+  },
+  {
+   "id": "21",
+   "file": "21.png",
+   "view": "side",
+   "face": "L",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "name": "Santeul makki · Mountain block",
+   "desc": "Turn 90° right to face ra and stamp into a horse stance. Mountain block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (far arm): high outer block: forearm upright at the side of the head, fist at head height. LEFT hand (near arm): high outer block: forearm upright at the side of the head, fist at head height. This is count 21 of Keumgang: Turn 90° right to face ra and stamp into a horse stance. Mountain block."
+  },
+  {
+   "id": "22",
+   "file": "22.png",
+   "view": "side",
+   "face": "R",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "tech": "wedge",
+   "name": "Momtong hecho makki · Middle wedge block",
+   "desc": "Turn 180° to the left, stepping round to face da, horse stance. Inner-forearm opening block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (near arm): wedge block (hecheo makki): forearm upright at the side, both arms spreading outward at shoulder height. LEFT hand (far arm): wedge block (hecheo makki): forearm upright at the side, both arms spreading outward at shoulder height. This is count 22 of Keumgang: Turn 180° to the left, stepping round to face da, horse stance. Inner-forearm opening block."
+  },
+  {
+   "id": "23",
+   "file": "23.png",
+   "view": "side",
+   "face": "R",
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "spread",
+    "R": "spread"
+   },
+   "tech": "spread",
+   "name": "Arae hecho makki · Low spread block",
+   "desc": "Draw the right foot in to a parallel stance. Low spread block, slowly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand (near arm): low spreading block (arae hecheo makki): arm extended down and out to the side of the hip. LEFT hand (far arm): low spreading block (arae hecheo makki): arm extended down and out to the side of the hip. This is count 23 of Keumgang: Draw the right foot in to a parallel stance. Low spread block, slowly."
+  },
+  {
+   "id": "24",
+   "file": "24.png",
+   "view": "side",
+   "face": "L",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "name": "Santeul makki · Mountain block",
+   "desc": "Turn 180° to the left to face ra and stamp into a horse stance. Mountain block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (far arm): high outer block: forearm upright at the side of the head, fist at head height. LEFT hand (near arm): high outer block: forearm upright at the side of the head, fist at head height. This is count 24 of Keumgang: Turn 180° to the left to face ra and stamp into a horse stance. Mountain block."
+  },
+  {
+   "id": "25",
+   "file": "25.png",
+   "view": "front",
+   "face": null,
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "low",
+    "R": "high"
+   },
+   "tech": "keumgang",
+   "name": "Keumgang makki · Diamond block",
+   "desc": "Turn to face ga and lift the left foot to the right knee: crane stance on the right leg, looking left toward da. Diamond block, slowly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: RIGHT. RIGHT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 25 of Keumgang: Turn to face ga and lift the left foot to the right knee: crane stance on the right leg, looking left toward da. Diamond block, slowly."
+  },
+  {
+   "id": "26",
+   "file": "26.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "sideelbow",
+    "R": "hingepunch"
+   },
+   "tech": "khinge",
+   "name": "Keun doljjeogwi · Large hinge",
+   "desc": "Step the left foot down toward da into a horse stance. Large hinge.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: large hinge (keun dolcheogi): forearm level across the chest at shoulder height, fist at the other shoulder. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is count 26 of Keumgang: Step the left foot down toward da into a horse stance. Large hinge."
+  },
+  {
+   "id": "27",
+   "file": "27.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "sideelbow",
+    "R": "hingepunch"
+   },
+   "tech": "khinge",
+   "name": "Keun doljjeogwi · Large hinge",
+   "desc": "Turn 360° to the left, travelling toward da, and land in a horse stance. Large hinge again.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: large hinge (keun dolcheogi): forearm level across the chest at shoulder height, fist at the other shoulder. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is count 27 of Keumgang: Turn 360° to the left, travelling toward da, and land in a horse stance. Large hinge again."
+  }
+ ]
+}

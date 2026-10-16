@@ -1,0 +1,733 @@
+{
+ "form": "Koryo",
+ "slug": "koryo",
+ "moves": [
+  {
+   "id": "J",
+   "file": "J.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "tongmil",
+    "R": "tongmil"
+   },
+   "tech": "tongmil",
+   "name": "Tongmilgi junbi · Pushing-hands ready",
+   "desc": "Stand at na facing ga. Raise both open hands slowly from the belt to the chest, then push them forward to face height, fingertips angled toward each other (tongmilgi junbi).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: pushing-hands ready (tongmilgi junbi): both open hands raised in front of the face, fingertips angled toward each other, as if pushing a rock. LEFT hand: pushing-hands ready (tongmilgi junbi): both open hands raised in front of the face, fingertips angled toward each other, as if pushing a rock. This is the ready posture of Koryo: Stand at na facing ga. Raise both open hands slowly from the belt to the chest, then push them forward to face height, fingertips angled toward each other (tongmilgi junbi)."
+  },
+  {
+   "id": "1",
+   "file": "1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Turn 90° left toward da¹, back stance with the left foot forward. Double knife-hand middle block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand (far arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. This is count 1 of Koryo: Turn 90° left toward da¹, back stance with the left foot forward. Double knife-hand middle block."
+  },
+  {
+   "id": "2-1",
+   "file": "2-1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "dskick",
+   "name": "Geodeup yeop chagi · Double side kick",
+   "desc": "Right double side kick: low to the knee, then high, without setting the foot down.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 2-1 of Koryo: Right double side kick: low to the knee, then high, without setting the foot down."
+  },
+  {
+   "id": "2-2",
+   "file": "2-2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "ksstrike"
+   },
+   "tech": "ksstrike",
+   "name": "Hansonnal bakkat chigi · Knife-hand outer strike",
+   "desc": "Land forward in a right front stance. Right knife-hand outer strike to the neck.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (near arm): knife-hand outer strike (sonnal bakkat chigi): open hand swung outward horizontally at neck height, palm down. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 2-2 of Koryo: Land forward in a right front stance. Right knife-hand outer strike to the neck."
+  },
+  {
+   "id": "3",
+   "file": "3.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Left middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 3 of Koryo: Left middle punch."
+  },
+  {
+   "id": "4",
+   "file": "4.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "inside"
+   },
+   "tech": "inside",
+   "name": "Momtong an makki · Inside middle block",
+   "desc": "Shift the weight back into a back stance with the right foot forward. Right inside middle block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (near arm): inside middle block (momtong an makki): forearm upright in front of the chest, elbow bent about 90 degrees, fist at shoulder height on the centre line, palm toward the body. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 4 of Koryo: Shift the weight back into a back stance with the right foot forward. Right inside middle block."
+  },
+  {
+   "id": "5",
+   "file": "5.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Turn 180° right toward ra¹, back stance with the right foot forward. Double knife-hand middle block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. LEFT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 5 of Koryo: Turn 180° right toward ra¹, back stance with the right foot forward. Double knife-hand middle block."
+  },
+  {
+   "id": "6-1",
+   "file": "6-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "dskick",
+   "name": "Geodeup yeop chagi · Double side kick",
+   "desc": "Left double side kick: low to the knee, then high, without setting the foot down.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: LEFT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 6-1 of Koryo: Left double side kick: low to the knee, then high, without setting the foot down."
+  },
+  {
+   "id": "6-2",
+   "file": "6-2.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "ksstrike"
+   },
+   "tech": "ksstrike",
+   "name": "Hansonnal bakkat chigi · Knife-hand outer strike",
+   "desc": "Land forward in a left front stance. Left knife-hand outer strike to the neck.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): knife-hand outer strike (sonnal bakkat chigi): open hand swung outward horizontally at neck height, palm down. This is count 6-2 of Koryo: Land forward in a left front stance. Left knife-hand outer strike to the neck."
+  },
+  {
+   "id": "7",
+   "file": "7.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (far arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 7 of Koryo: Right middle punch."
+  },
+  {
+   "id": "8",
+   "file": "8.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "inside"
+   },
+   "tech": "inside",
+   "name": "Momtong an makki · Inside middle block",
+   "desc": "Shift the weight back into a back stance with the left foot forward. Left inside middle block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): inside middle block (momtong an makki): forearm upright in front of the chest, elbow bent about 90 degrees, fist at shoulder height on the centre line, palm toward the body. This is count 8 of Koryo: Shift the weight back into a back stance with the left foot forward. Left inside middle block."
+  },
+  {
+   "id": "9-1",
+   "file": "9-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "kslow"
+   },
+   "tech": "kslow",
+   "name": "Sonnal arae makki · Low knife-hand block",
+   "desc": "Turn 90° left toward ga, left front stance. Left knife-hand low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 9-1 of Koryo: Turn 90° left toward ga, left front stance. Left knife-hand low block."
+  },
+  {
+   "id": "9-2",
+   "file": "9-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "arc"
+   },
+   "tech": "arc",
+   "name": "Kaljaebi · Arc-hand throat strike",
+   "desc": "Right arc-hand strike to the throat (kaljaebi).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: arc-hand strike (kaljaebi): hand open in a C between thumb and fingers, thrust forward at throat height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 9-2 of Koryo: Right arc-hand strike to the throat (kaljaebi)."
+  },
+  {
+   "id": "10-1",
+   "file": "10-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Right front kick.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand: fist raised in front of the chest in a guard (kick guard). LEFT hand: fist raised in front of the chest in a guard (kick guard). This is count 10-1 of Koryo: Right front kick."
+  },
+  {
+   "id": "10-2",
+   "file": "10-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "kslow"
+   },
+   "tech": "kslow",
+   "name": "Sonnal arae makki · Low knife-hand block",
+   "desc": "Land forward in a right front stance. Right knife-hand low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 10-2 of Koryo: Land forward in a right front stance. Right knife-hand low block."
+  },
+  {
+   "id": "10-3",
+   "file": "10-3.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "arc"
+   },
+   "tech": "arc",
+   "name": "Kaljaebi · Arc-hand throat strike",
+   "desc": "Left arc-hand strike to the throat (kaljaebi).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: arc-hand strike (kaljaebi): hand open in a C between thumb and fingers, thrust forward at throat height. This is count 10-3 of Koryo: Left arc-hand strike to the throat (kaljaebi)."
+  },
+  {
+   "id": "11-1",
+   "file": "11-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Left front kick.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand: fist raised in front of the chest in a guard (kick guard). LEFT hand: fist raised in front of the chest in a guard (kick guard). This is count 11-1 of Koryo: Left front kick."
+  },
+  {
+   "id": "11-2",
+   "file": "11-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "kslow"
+   },
+   "tech": "kslow",
+   "name": "Sonnal arae makki · Low knife-hand block",
+   "desc": "Land forward in a left front stance. Left knife-hand low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 11-2 of Koryo: Land forward in a left front stance. Left knife-hand low block."
+  },
+  {
+   "id": "11-3",
+   "file": "11-3.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "arc"
+   },
+   "tech": "arc",
+   "name": "Kaljaebi · Arc-hand throat strike",
+   "desc": "Right arc-hand strike to the throat (kaljaebi).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: arc-hand strike (kaljaebi): hand open in a C between thumb and fingers, thrust forward at throat height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 11-3 of Koryo: Right arc-hand strike to the throat (kaljaebi)."
+  },
+  {
+   "id": "12-1",
+   "file": "12-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Right front kick.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand: fist raised in front of the chest in a guard (kick guard). LEFT hand: fist raised in front of the chest in a guard (kick guard). This is count 12-1 of Koryo: Right front kick."
+  },
+  {
+   "id": "12-2",
+   "file": "12-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "kneebreak",
+    "R": "hold"
+   },
+   "tech": "kneebreak",
+   "name": "Mureup kkeokgi · Knee break",
+   "desc": "Land in a right front stance. Knee break: the right hand holds the kicked foot at the waist while the left arc hand presses the knee down.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: open hand holding at the side of the hip, palm up. LEFT hand: open hand pulling down at knee height (knee break). This is count 12-2 of Koryo: Land in a right front stance. Knee break: the right hand holds the kicked foot at the waist while the left arc hand presses the knee down."
+  },
+  {
+   "id": "13",
+   "file": "13.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "tech": "wedge",
+   "name": "Momtong hecho makki · Middle wedge block",
+   "desc": "Turn 180° toward na into a right front stance. Inner-forearm opening block (an palmok momtong hecho makki).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: wedge block (hecheo makki): forearm upright at the side, both arms spreading outward at shoulder height. LEFT hand: wedge block (hecheo makki): forearm upright at the side, both arms spreading outward at shoulder height. This is count 13 of Koryo: Turn 180° toward na into a right front stance. Inner-forearm opening block (an palmok momtong hecho makki)."
+  },
+  {
+   "id": "14-1",
+   "file": "14-1.png",
+   "view": "back",
+   "face": null,
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Left front kick.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand: fist raised in front of the chest in a guard (kick guard). LEFT hand: fist raised in front of the chest in a guard (kick guard). This is count 14-1 of Koryo: Left front kick."
+  },
+  {
+   "id": "14-2",
+   "file": "14-2.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "kneebreak",
+    "L": "hold"
+   },
+   "tech": "kneebreak",
+   "name": "Mureup kkeokgi · Knee break",
+   "desc": "Land in a left front stance. Knee break: the left hand holds the foot, the right arc hand presses the knee down.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: open hand pulling down at knee height (knee break). LEFT hand: open hand holding at the side of the hip, palm up. This is count 14-2 of Koryo: Land in a left front stance. Knee break: the left hand holds the foot, the right arc hand presses the knee down."
+  },
+  {
+   "id": "15",
+   "file": "15.png",
+   "view": "back",
+   "face": null,
+   "stance": "walk",
+   "lead": "L",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "tech": "wedge",
+   "name": "Momtong hecho makki · Middle wedge block",
+   "desc": "Draw the left foot back into a left walking stance. Inner-forearm opening block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap seogi (walking stance): one natural walking step, both legs straight, front foot pointing forward, rear foot turned out slightly, hips square. LEFT foot forward. RIGHT hand: wedge block (hecheo makki): forearm upright at the side, both arms spreading outward at shoulder height. LEFT hand: wedge block (hecheo makki): forearm upright at the side, both arms spreading outward at shoulder height. This is count 15 of Koryo: Draw the left foot back into a left walking stance. Inner-forearm opening block."
+  },
+  {
+   "id": "16",
+   "file": "16.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "ksside"
+   },
+   "tech": "ksside",
+   "name": "Hansonnal yeop makki · Knife-hand side block",
+   "desc": "Turn toward ga, stepping the right foot out into a horse stance. Left knife-hand side block toward da.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: knife-hand side block (sonnal yeop makki): open hand extended straight out to the side at shoulder height. This is count 16 of Koryo: Turn toward ga, stepping the right foot out into a horse stance. Left knife-hand side block toward da."
+  },
+  {
+   "id": "17",
+   "file": "17.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "target",
+    "R": "crosspunch"
+   },
+   "tech": "tpunch",
+   "name": "Pyojeok jireugi · Target punch",
+   "desc": "Right target punch across into the open left hand.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: punch across the body into the target hand at chest height. LEFT hand: open hand held as a target in front of the chest, palm forward. This is count 17 of Koryo: Right target punch across into the open left hand."
+  },
+  {
+   "id": "18-1",
+   "file": "18-1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Cross the right foot in front of the left (ap kkoa seogi), then left side kick toward da.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: LEFT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 18-1 of Koryo: Cross the right foot in front of the left (ap kkoa seogi), then left side kick toward da."
+  },
+  {
+   "id": "18-2",
+   "file": "18-2.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "lspear",
+    "R": "shoulder"
+   },
+   "tech": "lspear",
+   "name": "Pyeonsonkkeut jeocho jjireugi · Low spear hand, palm up",
+   "desc": "Set the left foot down and turn back to face ra, right front stance. Left low spear hand, palm up; the right fist pulls to the left shoulder.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): fist resting on the front of the opposite shoulder, elbow down. LEFT hand (near arm): low spear hand: open hand thrust down and forward at groin height, palm up. This is count 18-2 of Koryo: Set the left foot down and turn back to face ra, right front stance. Left low spear hand, palm up; the right fist pulls to the left shoulder."
+  },
+  {
+   "id": "19",
+   "file": "19.png",
+   "view": "side",
+   "face": "L",
+   "stance": "walk",
+   "lead": "R",
+   "arms": {
+    "R": "low"
+   },
+   "tech": "low",
+   "name": "Arae makki · Low block",
+   "desc": "Draw the right foot back into a right walking stance. Right low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap seogi (walking stance): one natural walking step, both legs straight, front foot pointing forward, rear foot turned out slightly, hips square. RIGHT foot forward. RIGHT hand (far arm): low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 19 of Koryo: Draw the right foot back into a right walking stance. Right low block."
+  },
+  {
+   "id": "20-1",
+   "file": "20-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "walk",
+   "lead": "L",
+   "arms": {
+    "L": "pressdown"
+   },
+   "tech": "pressdown",
+   "name": "Batangson nulleo makki · Palm pressing block",
+   "desc": "Step forward into a left walking stance. Left palm pressing block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap seogi (walking stance): one natural walking step, both legs straight, front foot pointing forward, rear foot turned out slightly, hips square. LEFT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): palm pressing block (batangson nulleo makki): open hand pushing straight down in front of the belly, palm down. This is count 20-1 of Koryo: Step forward into a left walking stance. Left palm pressing block."
+  },
+  {
+   "id": "20-2",
+   "file": "20-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "sideelbow",
+    "L": "elbowpush"
+   },
+   "tech": "sideelbow",
+   "name": "Palkup yeop chigi · Side elbow strike",
+   "desc": "Step the right foot forward and turn into a horse stance facing ga. Right side elbow strike toward ra, the left palm pushing the right fist.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: open palm pushing against the fist of the striking arm. This is count 20-2 of Koryo: Step the right foot forward and turn into a horse stance facing ga. Right side elbow strike toward ra, the left palm pushing the right fist."
+  },
+  {
+   "id": "21",
+   "file": "21.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "ksside"
+   },
+   "tech": "ksside",
+   "name": "Hansonnal yeop makki · Knife-hand side block",
+   "desc": "Right knife-hand side block toward ra.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: knife-hand side block (sonnal yeop makki): open hand extended straight out to the side at shoulder height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 21 of Koryo: Right knife-hand side block toward ra."
+  },
+  {
+   "id": "22",
+   "file": "22.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "target",
+    "L": "crosspunch"
+   },
+   "tech": "tpunch",
+   "name": "Pyojeok jireugi · Target punch",
+   "desc": "Left target punch across into the open right hand.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: open hand held as a target in front of the chest, palm forward. LEFT hand: punch across the body into the target hand at chest height. This is count 22 of Koryo: Left target punch across into the open right hand."
+  },
+  {
+   "id": "23-1",
+   "file": "23-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Cross the left foot in front of the right (ap kkoa seogi), then right side kick toward ra.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 23-1 of Koryo: Cross the left foot in front of the right (ap kkoa seogi), then right side kick toward ra."
+  },
+  {
+   "id": "23-2",
+   "file": "23-2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "lspear",
+    "L": "shoulder"
+   },
+   "tech": "lspear",
+   "name": "Pyeonsonkkeut jeocho jjireugi · Low spear hand, palm up",
+   "desc": "Set the right foot down and turn back to face da, left front stance. Right low spear hand, palm up; the left fist pulls to the right shoulder.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): low spear hand: open hand thrust down and forward at groin height, palm up. LEFT hand (far arm): fist resting on the front of the opposite shoulder, elbow down. This is count 23-2 of Koryo: Set the right foot down and turn back to face da, left front stance. Right low spear hand, palm up; the left fist pulls to the right shoulder."
+  },
+  {
+   "id": "24",
+   "file": "24.png",
+   "view": "side",
+   "face": "R",
+   "stance": "walk",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "name": "Arae makki · Low block",
+   "desc": "Draw the left foot back into a left walking stance. Left low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap seogi (walking stance): one natural walking step, both legs straight, front foot pointing forward, rear foot turned out slightly, hips square. LEFT foot forward. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 24 of Koryo: Draw the left foot back into a left walking stance. Left low block."
+  },
+  {
+   "id": "25-1",
+   "file": "25-1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "walk",
+   "lead": "R",
+   "arms": {
+    "R": "pressdown"
+   },
+   "tech": "pressdown",
+   "name": "Batangson nulleo makki · Palm pressing block",
+   "desc": "Step forward into a right walking stance. Right palm pressing block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap seogi (walking stance): one natural walking step, both legs straight, front foot pointing forward, rear foot turned out slightly, hips square. RIGHT foot forward. RIGHT hand (near arm): palm pressing block (batangson nulleo makki): open hand pushing straight down in front of the belly, palm down. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 25-1 of Koryo: Step forward into a right walking stance. Right palm pressing block."
+  },
+  {
+   "id": "25-2",
+   "file": "25-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "sideelbow",
+    "R": "elbowpush"
+   },
+   "tech": "sideelbow",
+   "name": "Palkup yeop chigi · Side elbow strike",
+   "desc": "Step the left foot forward and turn into a horse stance facing ga. Left side elbow strike toward da, the right palm pushing the left fist.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: open palm pushing against the fist of the striking arm. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is count 25-2 of Koryo: Step the left foot forward and turn into a horse stance facing ga. Left side elbow strike toward da, the right palm pushing the left fist."
+  },
+  {
+   "id": "26",
+   "file": "26.png",
+   "view": "front",
+   "face": null,
+   "stance": "close",
+   "lead": null,
+   "arms": {
+    "L": "hammerlow",
+    "R": "palmlow"
+   },
+   "tech": "hammerlow",
+   "name": "Mejumeok arae pyojeok chigi · Low hammer-fist target strike",
+   "desc": "Draw the right foot to the left into a closed stance facing ga. Raise both hands overhead, circle them out and down slowly, and strike the left hammer fist into the right palm in front of the belly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: moa seogi (closed stance): feet together, inside edges touching, legs straight. RIGHT hand: open palm held low in front of the belly as a target for the hammer-fist. LEFT hand: hammer-fist striking down in front of the belly. This is count 26 of Koryo: Draw the right foot to the left into a closed stance facing ga. Raise both hands overhead, circle them out and down slowly, and strike the left hammer fist into the right palm in front of the belly."
+  },
+  {
+   "id": "27-1",
+   "file": "27-1.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "ksstrike"
+   },
+   "tech": "ksstrike",
+   "name": "Hansonnal bakkat chigi · Knife-hand outer strike",
+   "desc": "Turn 180° left toward na, left front stance. Left knife-hand outer strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: knife-hand outer strike (sonnal bakkat chigi): open hand swung outward horizontally at neck height, palm down. This is count 27-1 of Koryo: Turn 180° left toward na, left front stance. Left knife-hand outer strike."
+  },
+  {
+   "id": "27-2",
+   "file": "27-2.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "kslow"
+   },
+   "tech": "kslow",
+   "name": "Sonnal arae makki · Low knife-hand block",
+   "desc": "Left knife-hand low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 27-2 of Koryo: Left knife-hand low block."
+  },
+  {
+   "id": "28-1",
+   "file": "28-1.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "neck"
+   },
+   "tech": "neck",
+   "name": "Sonnal mok chigi · Knife-hand neck strike",
+   "desc": "Step forward into a right front stance. Right knife-hand inward strike to the neck.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: knife-hand neck strike (sonnal mok chigi): open hand swung horizontally inward, palm up, knife edge at neck height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 28-1 of Koryo: Step forward into a right front stance. Right knife-hand inward strike to the neck."
+  },
+  {
+   "id": "28-2",
+   "file": "28-2.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "kslow"
+   },
+   "tech": "kslow",
+   "name": "Sonnal arae makki · Low knife-hand block",
+   "desc": "Right knife-hand low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 28-2 of Koryo: Right knife-hand low block."
+  },
+  {
+   "id": "29-1",
+   "file": "29-1.png",
+   "view": "back",
+   "face": null,
+   "stance": "walk",
+   "lead": "L",
+   "arms": {
+    "L": "neck"
+   },
+   "tech": "neck",
+   "name": "Sonnal mok chigi · Knife-hand neck strike",
+   "desc": "Step forward into a left walking stance. Left knife-hand inward strike to the neck.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap seogi (walking stance): one natural walking step, both legs straight, front foot pointing forward, rear foot turned out slightly, hips square. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: knife-hand neck strike (sonnal mok chigi): open hand swung horizontally inward, palm up, knife edge at neck height. This is count 29-1 of Koryo: Step forward into a left walking stance. Left knife-hand inward strike to the neck."
+  },
+  {
+   "id": "29-2",
+   "file": "29-2.png",
+   "view": "back",
+   "face": null,
+   "stance": "walk",
+   "lead": "L",
+   "arms": {
+    "L": "kslow"
+   },
+   "tech": "kslow",
+   "name": "Sonnal arae makki · Low knife-hand block",
+   "desc": "Left knife-hand low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap seogi (walking stance): one natural walking step, both legs straight, front foot pointing forward, rear foot turned out slightly, hips square. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 29-2 of Koryo: Left knife-hand low block."
+  },
+  {
+   "id": "30",
+   "file": "30.png",
+   "view": "back",
+   "face": null,
+   "stance": "walk",
+   "lead": "R",
+   "arms": {
+    "R": "arc"
+   },
+   "tech": "arc",
+   "name": "Kaljaebi · Arc-hand throat strike",
+   "desc": "Step forward into a right walking stance. Right arc-hand strike to the throat (kaljaebi).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap seogi (walking stance): one natural walking step, both legs straight, front foot pointing forward, rear foot turned out slightly, hips square. RIGHT foot forward. RIGHT hand: arc-hand strike (kaljaebi): hand open in a C between thumb and fingers, thrust forward at throat height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 30 of Koryo: Step forward into a right walking stance. Right arc-hand strike to the throat (kaljaebi)."
+  }
+ ]
+}

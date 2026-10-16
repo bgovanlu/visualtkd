@@ -4,6 +4,7 @@ usage:
   python3 tools/build_form.py forms/taegeuk-2.json            # page only
   python3 tools/build_form.py forms/taegeuk-2.json --print    # page + print PDF + QR check
   python3 tools/build_form.py --all --print                   # every form
+  python3 tools/build_form.py forms/taegeuk-1.json --images   # per-move images from design/moves/ -> preview/ (never deployed)
 
 Also regenerates site/_redirects from the refs of every form, so the /go/
 short links used by printed QR codes always cover every published sheet.
@@ -51,7 +52,7 @@ def check(F):
         assert m["dir"] in ("na","ga","da1","da2","da3","ra1","ra2","ra3"), m
         if m["view"] == "side": assert m.get("face") in ("L","R"), m
 
-def build(path, do_print):
+def build(path, do_print, images=False):
     F = json.load(open(path))
     check(F)
     t = open(os.path.join(ROOT, "templates/form.html")).read()
@@ -71,9 +72,15 @@ def build(path, do_print):
         "FOOTWORK_JS": S.read("templates/footwork.js").replace("if(typeof module", "if(false&&typeof module"),
         "NOTE_H": F["note"]["h"], "NOTE_P": F["note"]["p"], "REFS": refs(F), "FOOTER": F["footer"], "FORM_JSON": data,
     }
+    # --images: figures from design/moves/<form>/ (tools/figures.py), built into preview/ until they are approved
+    out_dir = os.path.join(ROOT, "preview" if images else "site", F["slug"]); os.makedirs(out_dir, exist_ok=True)
+    if images:
+        import figures
+        stem = os.path.splitext(os.path.basename(path))[0]
+        rep["FIGURE_JS"] = "const FIGIMG=" + json.dumps(figures.build(stem, F, out_dir)) + ";\n" + rep["FIGURE_JS"]
     for k, v in rep.items(): t = t.replace("{{" + k + "}}", v)
     assert "{{" not in t, "unfilled placeholder"
-    out_dir = os.path.join(ROOT, "site", F["slug"]); os.makedirs(out_dir, exist_ok=True)
+
     page = os.path.join(out_dir, "index.html"); open(page, "w").write(t)
     print("page ->", os.path.relpath(page, ROOT))
     if do_print:
@@ -110,7 +117,8 @@ def redirects():
 if __name__ == "__main__":
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     files = S.form_files() if "--all" in sys.argv else args
-    for f in files: build(f, "--print" in sys.argv)
+    for f in files: build(f, "--print" in sys.argv, "--images" in sys.argv)
+    if "--images" in sys.argv: sys.exit()     # a preview: leave site/ alone
     redirects()
     # landing, forms index, how-to-read and the library list every form and move: keep them in step
     subprocess.check_call([sys.executable, os.path.join(ROOT, "tools/build_site.py")])
