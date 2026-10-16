@@ -136,3 +136,6 @@ Each sheet has a GitHub review issue (#9–#16, sub-issues of #7); comment there
 
 ### Still to draw after these are approved
 Arm techniques on the corrected stances (blocks, punches, strikes; one sheet per family), back-view kicks (issue #1), and 3/4 views if the side bars need them.
+
+## v4 · one generation per pose (16 Oct)
+Model sheets can't hold the geometry: every model failed MS-1 v3. The new plan is one image per distinct pose, made from a posed 3D mannequin (pose guide) plus the closest drawn character. There are 129 poses through Taebaek (mirrors reused; 230 exact, 363 figures). The kit, counts and workflow are in `design/models/v4/README.md`; the tools are `tools/poses/` (inventory → render → cutouts → pair). Stance geometry follows Brian's measurements (ap kubi, dwit kubi, beom seogi, juchum seogi, kkoa seogi, hakdari seogi, chamber) in `tools/poses/mannequin.js`.

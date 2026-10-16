@@ -1,0 +1,3042 @@
+{
+ "note": "Generation kit, one entry per distinct pose (mirrors reused). Feed image 1 = mannequin, image 2 = character, plus the prompt. Made by tools/poses/pair.py.",
+ "count": 129,
+ "poses": [
+  {
+   "id": "back-leadL-back-Lbackfist-Rchamber",
+   "stance": "back",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "backfist",
+    "R": "chamber"
+   },
+   "mannequin": "back-leadL-back-Lbackfist-Rchamber/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "closest",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the left foot forward, Deung jumeok bakkat chigi (outward back-fist); left hand: back-fist strike at face height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#21"
+   ],
+   "mirror_of_uses": [],
+   "figures": 1
+  },
+  {
+   "id": "back-leadL-back-Lksblock-Rksguard",
+   "stance": "back",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "mannequin": "back-leadL-back-Lksblock-Rksguard/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "closest",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the left foot forward, Sonnal momtong makki (double knife-hand block); left hand: knife-hand block in front, open hand edge forward; right hand: open hand palm-up across the solar plexus (guarding hand).\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#19"
+   ],
+   "mirror_of_uses": [],
+   "figures": 1
+  },
+  {
+   "id": "back-leadL-back-Llow-Rassist",
+   "stance": "back",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "assist"
+   },
+   "mannequin": "back-leadL-back-Llow-Rassist/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "closest",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the left foot forward, Geodeureo arae makki (augmented low block); left hand: low block: forearm sweeping down, fist above the front knee; right hand: supporting fist under the blocking arm.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/8#18"
+   ],
+   "mirror_of_uses": [
+    "back-leadR-back-Lassist-Rlow"
+   ],
+   "figures": 1
+  },
+  {
+   "id": "back-leadL-front-Lksblock-Rksguard",
+   "stance": "back",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "mannequin": "back-leadL-front-Lksblock-Rksguard/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "closest",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the left foot forward, Sonnal momtong makki (double knife-hand block); left hand: knife-hand block in front, open hand edge forward; right hand: open hand palm-up across the solar plexus (guarding hand).\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/4#8-2",
+    "taegeuk/6#16",
+    "taegeuk/6#17",
+    "taegeuk/8#9"
+   ],
+   "mirror_of_uses": [
+    "back-leadR-front-Lksguard-Rksblock"
+   ],
+   "figures": 4
+  },
+  {
+   "id": "back-leadL-front-Lksin-Rchamber",
+   "stance": "back",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "ksin",
+    "R": "chamber"
+   },
+   "mannequin": "back-leadL-front-Lksin-Rchamber/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "closest",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the left foot forward, Hansonnal momtong an makki (knife-hand inside block); left hand: knife-hand inside block, open hand; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "keumgang#5",
+    "keumgang#6",
+    "keumgang#7"
+   ],
+   "mirror_of_uses": [
+    "back-leadR-front-Lchamber-Rksin"
+   ],
+   "figures": 3
+  },
+  {
+   "id": "back-leadL-front-Lkslow-Rksguard",
+   "stance": "back",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "ksguard"
+   },
+   "mannequin": "back-leadL-front-Lkslow-Rksguard/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "closest",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the left foot forward, Sonnal arae makki (low knife-hand block); left hand: low knife-hand block, open hand; right hand: open hand palm-up across the solar plexus (guarding hand).\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#5",
+    "taegeuk/7#6"
+   ],
+   "mirror_of_uses": [
+    "back-leadR-front-Lksguard-Rkslow"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "back-leadL-front-Louter-Rassist",
+   "stance": "back",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "outer",
+    "R": "assist"
+   },
+   "mannequin": "back-leadL-front-Louter-Rassist/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "closest",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the left foot forward, Geodeureo momtong bakkat makki (augmented outer block); left hand: outside block: forearm vertical at the outer edge of the body, fist at shoulder height; right hand: supporting fist under the blocking arm.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/8#1"
+   ],
+   "mirror_of_uses": [],
+   "figures": 1
+  },
+  {
+   "id": "back-leadL-side-faceL-Lchamber-Rinside",
+   "stance": "back",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "inside"
+   },
+   "mannequin": "back-leadL-side-faceL-Lchamber-Rinside/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the left foot forward, Momtong an makki (inside middle block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: inside block: forearm vertical in front of the chest, fist at shoulder height.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/4#10-2",
+    "taegeuk/4#12-2"
+   ],
+   "mirror_of_uses": [
+    "back-leadR-side-faceR-Linside-Rchamber"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "back-leadL-side-faceL-Lchamber-Router",
+   "stance": "back",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "outer"
+   },
+   "mannequin": "back-leadL-side-faceL-Lchamber-Router/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the left foot forward, Momtong bakkat makki (outer middle block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: outside block: forearm vertical at the outer edge of the body, fist at shoulder height.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/6#13-2",
+    "taegeuk/6#15-2"
+   ],
+   "mirror_of_uses": [
+    "back-leadR-side-faceR-Louter-Rchamber"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "back-leadL-side-faceL-Lgrab-Ruppercut",
+   "stance": "back",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "grab",
+    "R": "uppercut"
+   },
+   "mannequin": "back-leadL-side-faceL-Lgrab-Ruppercut/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the left foot forward, Dangkyeo teok jireugi (pulling uppercut); left hand: open hand reaching forward to grab; right hand: uppercut: forearm rising, fist at chin height.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#10",
+    "taebaek#15"
+   ],
+   "mirror_of_uses": [
+    "back-leadR-side-faceR-Luppercut-Rgrab"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "back-leadL-side-faceL-Linside-Rchamber",
+   "stance": "back",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "inside",
+    "R": "chamber"
+   },
+   "mannequin": "back-leadL-side-faceL-Linside-Rchamber/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the left foot forward, Momtong an makki (inside middle block); left hand: inside block: forearm vertical in front of the chest, fist at shoulder height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#4",
+    "koryo#8"
+   ],
+   "mirror_of_uses": [
+    "back-leadR-side-faceR-Lchamber-Rinside"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "back-leadL-side-faceL-Lksout-Rchamber",
+   "stance": "back",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "ksout",
+    "R": "chamber"
+   },
+   "mannequin": "back-leadL-side-faceL-Lksout-Rchamber/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the left foot forward, Hansonnal bakkat makki (knife-hand outer block); left hand: single knife-hand outside block, open hand; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/5#11",
+    "taegeuk/5#9"
+   ],
+   "mirror_of_uses": [
+    "back-leadR-side-faceR-Lchamber-Rksout"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "back-leadL-side-faceL-Louter-Rchamber",
+   "stance": "back",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "outer",
+    "R": "chamber"
+   },
+   "mannequin": "back-leadL-side-faceL-Louter-Rchamber/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the left foot forward, Momtong bakkat makki (outer middle block); left hand: outside block: forearm vertical at the outer edge of the body, fist at shoulder height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/4#11",
+    "taegeuk/4#9"
+   ],
+   "mirror_of_uses": [
+    "back-leadR-side-faceR-Lchamber-Router"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "back-leadL-side-faceL-Louter-Rhigh",
+   "stance": "back",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "outer",
+    "R": "high"
+   },
+   "mannequin": "back-leadL-side-faceL-Louter-Rhigh/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the left foot forward, Keumgang momtong makki (diamond middle block); left hand: outside block: forearm vertical at the outer edge of the body, fist at shoulder height; right hand: high block: forearm above the forehead, angled up.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#14",
+    "taebaek#9"
+   ],
+   "mirror_of_uses": [
+    "back-leadR-side-faceR-Lhigh-Router"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "back-leadL-side-faceL-Lpunch-Rchamber",
+   "stance": "back",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "punch",
+    "R": "chamber"
+   },
+   "mannequin": "back-leadL-side-faceL-Lpunch-Rchamber/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the left foot forward, Momtong jireugi (middle punch); left hand: middle punch: arm straight forward, fist at solar-plexus height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#11",
+    "taebaek#16"
+   ],
+   "mirror_of_uses": [
+    "back-leadR-side-faceR-Lchamber-Rpunch"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "back-leadR-side-faceL-Lchamber-Rksout",
+   "stance": "back",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "chamber",
+    "R": "ksout"
+   },
+   "mannequin": "back-leadR-side-faceL-Lchamber-Rksout/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the right foot forward, Hansonnal bakkat makki (knife-hand outer block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: single knife-hand outside block, open hand.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/3#7",
+    "taegeuk/3#9",
+    "taegeuk/8#20",
+    "taegeuk/8#24"
+   ],
+   "mirror_of_uses": [
+    "back-leadL-side-faceR-Lksout-Rchamber"
+   ],
+   "figures": 4
+  },
+  {
+   "id": "back-leadR-side-faceL-Lchamber-Router",
+   "stance": "back",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "chamber",
+    "R": "outer"
+   },
+   "mannequin": "back-leadR-side-faceL-Lchamber-Router/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the right foot forward, Momtong bakkat makki (outer middle block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: outside block: forearm vertical at the outer edge of the body, fist at shoulder height.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/6#2-2",
+    "taegeuk/6#4-2"
+   ],
+   "mirror_of_uses": [
+    "back-leadL-side-faceR-Louter-Rchamber"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "back-leadR-side-faceL-Lksguard-Rksblock",
+   "stance": "back",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "ksguard",
+    "R": "ksblock"
+   },
+   "mannequin": "back-leadR-side-faceL-Lksguard-Rksblock/mannequin.png",
+   "character": "characters/d10-05.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dwit kubi (back stance) with the right foot forward, Sonnal momtong makki (double knife-hand block); left hand: open hand palm-up across the solar plexus (guarding hand); right hand: knife-hand block in front, open hand edge forward.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#1",
+    "koryo#5",
+    "taegeuk/4#1",
+    "taegeuk/4#3"
+   ],
+   "mirror_of_uses": [
+    "back-leadL-side-faceR-Lksblock-Rksguard"
+   ],
+   "figures": 4
+  },
+  {
+   "id": "close-front-Lcover-Rcover",
+   "stance": "close",
+   "view": "front",
+   "face": null,
+   "lead": null,
+   "arms": {
+    "L": "cover",
+    "R": "cover"
+   },
+   "mannequin": "close-front-Lcover-Rcover/mannequin.png",
+   "character": "characters/ms1v2-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Moa seogi (closed stance), Bojumeok (covered fist); left hand: covered fist: one fist wrapped in the other hand in front of the face; right hand: covered fist: one fist wrapped in the other hand in front of the face.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#11"
+   ],
+   "mirror_of_uses": [],
+   "figures": 1
+  },
+  {
+   "id": "close-front-Lhammerlow-Rpalmlow",
+   "stance": "close",
+   "view": "front",
+   "face": null,
+   "lead": null,
+   "arms": {
+    "L": "hammerlow",
+    "R": "palmlow"
+   },
+   "mannequin": "close-front-Lhammerlow-Rpalmlow/mannequin.png",
+   "character": "characters/ms1v2-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Moa seogi (closed stance), Mejumeok arae pyojeok chigi (low hammer-fist target strike); left hand: low hammer-fist strike; right hand: open palm low, supporting.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#26"
+   ],
+   "mirror_of_uses": [],
+   "figures": 1
+  },
+  {
+   "id": "crane-leadL-front-Lhigh-Rlow",
+   "stance": "crane",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "high",
+    "R": "low"
+   },
+   "mannequin": "crane-leadL-front-Lhigh-Rlow/mannequin.png",
+   "character": "characters/ms6v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Hakdari seogi (crane stance) standing on the left leg, Keumgang makki (diamond block); left hand: high block: forearm above the forehead, angled up; right hand: low block: forearm sweeping down, fist above the front knee.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "keumgang#15",
+    "keumgang#18",
+    "keumgang#25",
+    "keumgang#8"
+   ],
+   "mirror_of_uses": [
+    "crane-leadR-front-Llow-Rhigh"
+   ],
+   "figures": 4
+  },
+  {
+   "id": "crane-leadR-side-faceL-Lhingetop-Rchamber",
+   "stance": "crane",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "hingetop",
+    "R": "chamber"
+   },
+   "mannequin": "crane-leadR-side-faceL-Lhingetop-Rchamber/mannequin.png",
+   "character": "characters/ms6v2-02.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Hakdari seogi (crane stance) standing on the right leg, Jageun doljjeogwi (small hinge); left hand: fist above, braced (small hinge); right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#12",
+    "taebaek#17"
+   ],
+   "mirror_of_uses": [
+    "crane-leadL-side-faceR-Lchamber-Rhingetop"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "cross-leadL-back-Lbackfist-Rchamber",
+   "stance": "cross",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "backfist",
+    "R": "chamber"
+   },
+   "mannequin": "cross-leadL-back-Lbackfist-Rchamber/mannequin.png",
+   "character": "characters/ms5v2-06.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Kkoa seogi (cross stance) with the left foot forward, Deung jumeok ap chigi (back-fist strike); left hand: back-fist strike at face height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/5#20-2"
+   ],
+   "mirror_of_uses": [
+    "cross-leadR-back-Lchamber-Rbackfist"
+   ],
+   "figures": 1
+  },
+  {
+   "id": "cross-leadR-side-faceL-Luppercut-Ruppercut",
+   "stance": "cross",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "uppercut",
+    "R": "uppercut"
+   },
+   "mannequin": "cross-leadR-side-faceL-Luppercut-Ruppercut/mannequin.png",
+   "character": "characters/ms5v2-05.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Kkoa seogi (cross stance) with the right foot forward, Dujumeok jeocho jireugi (double uppercut); left hand: uppercut: forearm rising, fist at chin height; right hand: uppercut: forearm rising, fist at chin height.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#15-2",
+    "taegeuk/7#18-2"
+   ],
+   "mirror_of_uses": [
+    "cross-leadL-side-faceR-Luppercut-Ruppercut"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-back-Lbackfist-Rchamber",
+   "stance": "front",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "backfist",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-back-Lbackfist-Rchamber/mannequin.png",
+   "character": "characters/ms2v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Deung jumeok ap chigi (back-fist strike); left hand: back-fist strike at face height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/4#14-2"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-back-Lchamber-Rbackfist"
+   ],
+   "figures": 1
+  },
+  {
+   "id": "front-leadL-back-Lchamber-Rinside",
+   "stance": "front",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "inside"
+   },
+   "mannequin": "front-leadL-back-Lchamber-Rinside/mannequin.png",
+   "character": "characters/ms2v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Momtong an makki (inside middle block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: inside block: forearm vertical in front of the chest, fist at shoulder height.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/5#13-2",
+    "taegeuk/5#14-3",
+    "taegeuk/5#19-2"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-back-Linside-Rchamber"
+   ],
+   "figures": 3
+  },
+  {
+   "id": "front-leadL-back-Lchamber-Rpunch",
+   "stance": "front",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "punch"
+   },
+   "mannequin": "front-leadL-back-Lchamber-Rpunch/mannequin.png",
+   "character": "characters/ms2v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Momtong jireugi (middle punch); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: middle punch: arm straight forward, fist at solar-plexus height.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/4#17-2",
+    "taegeuk/4#18-2",
+    "taegeuk/8#19-4"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-back-Lpunch-Rchamber"
+   ],
+   "figures": 3
+  },
+  {
+   "id": "front-leadL-back-Lhold-Rkneebreak",
+   "stance": "front",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "hold",
+    "R": "kneebreak"
+   },
+   "mannequin": "front-leadL-back-Lhold-Rkneebreak/mannequin.png",
+   "character": "characters/ms2v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Mureup kkeokgi (knee break); left hand: hand holding, pulling back; right hand: pulling hand down for a knee break.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#14-2"
+   ],
+   "mirror_of_uses": [],
+   "figures": 1
+  },
+  {
+   "id": "front-leadL-back-Linside-Rchamber",
+   "stance": "front",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "inside",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-back-Linside-Rchamber/mannequin.png",
+   "character": "characters/ms2v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Momtong an makki (inside middle block); left hand: inside block: forearm vertical in front of the chest, fist at shoulder height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/4#17-1",
+    "taegeuk/4#18-1",
+    "taegeuk/8#19-3"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-back-Lchamber-Rinside"
+   ],
+   "figures": 3
+  },
+  {
+   "id": "front-leadL-back-Lkhigh-Rneck",
+   "stance": "front",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "khigh",
+    "R": "neck"
+   },
+   "mannequin": "front-leadL-back-Lkhigh-Rneck/mannequin.png",
+   "character": "characters/ms2v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Jebipoom mok chigi (swallow-form neck strike); left hand: knife-hand high block above the forehead; right hand: knife-hand strike to neck height, palm up.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/4#13"
+   ],
+   "mirror_of_uses": [],
+   "figures": 1
+  },
+  {
+   "id": "front-leadL-back-Lkslow-Rchamber",
+   "stance": "front",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-back-Lkslow-Rchamber/mannequin.png",
+   "character": "characters/ms2v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Sonnal arae makki (low knife-hand block); left hand: low knife-hand block, open hand; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#27-2",
+    "koryo#28-2"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-back-Lchamber-Rkslow"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-back-Lksstrike-Rchamber",
+   "stance": "front",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "ksstrike",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-back-Lksstrike-Rchamber/mannequin.png",
+   "character": "characters/ms2v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Hansonnal bakkat chigi (knife-hand outer strike); left hand: knife-hand outside strike; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#27-1"
+   ],
+   "mirror_of_uses": [],
+   "figures": 1
+  },
+  {
+   "id": "front-leadL-back-Llow-Rchamber",
+   "stance": "front",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-back-Llow-Rchamber/mannequin.png",
+   "character": "characters/ms2v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Arae makki (low block); left hand: low block: forearm sweeping down, fist above the front knee; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/1#17",
+    "taegeuk/5#13-1",
+    "taegeuk/5#14-2",
+    "taegeuk/5#19-1"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-back-Lchamber-Rlow"
+   ],
+   "figures": 4
+  },
+  {
+   "id": "front-leadL-back-Lneck-Rchamber",
+   "stance": "front",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "neck",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-back-Lneck-Rchamber/mannequin.png",
+   "character": "characters/ms2v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Sonnal mok chigi (knife-hand neck strike); left hand: knife-hand strike to neck height, palm up; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#28-1"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-back-Lchamber-Rneck"
+   ],
+   "figures": 1
+  },
+  {
+   "id": "front-leadL-back-Lpunch-Rchamber",
+   "stance": "front",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "punch",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-back-Lpunch-Rchamber/mannequin.png",
+   "character": "characters/ms2v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Momtong jireugi (middle punch); left hand: middle punch: arm straight forward, fist at solar-plexus height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#22",
+    "taegeuk/1#18",
+    "taegeuk/4#17-3",
+    "taegeuk/4#18-3",
+    "taegeuk/8#19-5"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-back-Lchamber-Rpunch"
+   ],
+   "figures": 5
+  },
+  {
+   "id": "front-leadL-back-Lspear-Rpress",
+   "stance": "front",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "spear",
+    "R": "press"
+   },
+   "mannequin": "front-leadL-back-Lspear-Rpress/mannequin.png",
+   "character": "characters/ms2v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Pyeonsonkkeut sewo jjireugi (spear-hand thrust); left hand: spear-hand thrust forward, fingertips first; right hand: open hand palm-down under the other elbow.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#20"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-back-Lpress-Rspear"
+   ],
+   "figures": 1
+  },
+  {
+   "id": "front-leadL-back-Lwedge-Rwedge",
+   "stance": "front",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "mannequin": "front-leadL-back-Lwedge-Rwedge/mannequin.png",
+   "character": "characters/ms2v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Momtong hecho makki (middle wedge block); left hand: wedge block: forearm up and out, fist at head height; right hand: wedge block: forearm up and out, fist at head height.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#13"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-back-Lwedge-Rwedge"
+   ],
+   "figures": 1
+  },
+  {
+   "id": "front-leadL-front-Lbackfist-Rchamber",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "backfist",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-front-Lbackfist-Rchamber/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Deung jumeok ap chigi (back-fist strike); left hand: back-fist strike at face height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/5#6-2",
+    "taegeuk/5#7-2",
+    "taegeuk/5#8"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-front-Lchamber-Rbackfist"
+   ],
+   "figures": 3
+  },
+  {
+   "id": "front-leadL-front-Lchamber-Rarc",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "arc"
+   },
+   "mannequin": "front-leadL-front-Lchamber-Rarc/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Kaljaebi (arc-hand throat strike); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: arc hand (thumb and fingers spread) at throat height.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#10-3",
+    "koryo#11-3",
+    "koryo#9-2"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-front-Larc-Rchamber"
+   ],
+   "figures": 3
+  },
+  {
+   "id": "front-leadL-front-Lchamber-Rinside",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "inside"
+   },
+   "mannequin": "front-leadL-front-Lchamber-Rinside/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Momtong an makki (inside middle block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: inside block: forearm vertical in front of the chest, fist at shoulder height.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/5#5-2",
+    "taegeuk/5#6-3",
+    "taegeuk/5#7-3"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-front-Linside-Rchamber"
+   ],
+   "figures": 3
+  },
+  {
+   "id": "front-leadL-front-Lchamber-Rpunch",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "punch"
+   },
+   "mannequin": "front-leadL-front-Lchamber-Rpunch/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Momtong jireugi (middle punch); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: middle punch: arm straight forward, fist at solar-plexus height.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#6-2",
+    "taebaek#7-2",
+    "taebaek#8-2",
+    "taegeuk/1#12",
+    "taegeuk/1#6",
+    "taegeuk/4#6-2",
+    "taegeuk/6#18-2",
+    "taegeuk/6#19-2",
+    "taegeuk/8#10",
+    "taegeuk/8#2",
+    "taegeuk/8#3-4"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-front-Lpunch-Rchamber"
+   ],
+   "figures": 11
+  },
+  {
+   "id": "front-leadL-front-Lchamber-Rtgrab",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "tgrab"
+   },
+   "mannequin": "front-leadL-front-Lchamber-Rtgrab/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Sonnal eopeo japgi (twisting knife-hand grab); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: twisting grab, hand turned over.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#6-1",
+    "taebaek#7-1",
+    "taebaek#8-1"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-front-Ltgrab-Rchamber"
+   ],
+   "figures": 3
+  },
+  {
+   "id": "front-leadL-front-Lchamber-Rtwist",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "twist"
+   },
+   "mannequin": "front-leadL-front-Lchamber-Rtwist/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Hansonnal eolgul bitureo makki (twisted knife-hand high block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: twisted knife-hand high block.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/6#11",
+    "taegeuk/6#5"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-front-Ltwist-Rchamber"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-front-Lhold-Rkneebreak",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "hold",
+    "R": "kneebreak"
+   },
+   "mannequin": "front-leadL-front-Lhold-Rkneebreak/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Mureup kkeokgi (knee break); left hand: hand holding, pulling back; right hand: pulling hand down for a knee break.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#12-2"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-front-Lkneebreak-Rhold"
+   ],
+   "figures": 1
+  },
+  {
+   "id": "front-leadL-front-Linside-Rchamber",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "inside",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-front-Linside-Rchamber/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Momtong an makki (inside middle block); left hand: inside block: forearm vertical in front of the chest, fist at shoulder height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/5#5-1",
+    "taegeuk/8#3-3"
+   ],
+   "mirror_of_uses": [],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-front-Lkhigh-Rneck",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "khigh",
+    "R": "neck"
+   },
+   "mannequin": "front-leadL-front-Lkhigh-Rneck/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Jebipoom mok chigi (swallow-form neck strike); left hand: knife-hand high block above the forehead; right hand: knife-hand strike to neck height, palm up.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#5",
+    "taegeuk/4#5"
+   ],
+   "mirror_of_uses": [],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-front-Lkslow-Rchamber",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-front-Lkslow-Rchamber/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Sonnal arae makki (low knife-hand block); left hand: low knife-hand block, open hand; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#10-2",
+    "koryo#11-2",
+    "koryo#9-1"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-front-Lchamber-Rkslow"
+   ],
+   "figures": 3
+  },
+  {
+   "id": "front-leadL-front-Llow-Rchamber",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-front-Llow-Rchamber/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Arae makki (low block); left hand: low block: forearm sweeping down, fist above the front knee; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/1#11",
+    "taegeuk/1#5"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-front-Lchamber-Rlow"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-front-Llow-Router",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "outer"
+   },
+   "mannequin": "front-leadL-front-Llow-Router/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Gawi makki (scissors block); left hand: low block: forearm sweeping down, fist above the front knee; right hand: outside block: forearm vertical at the outer edge of the body, fist at shoulder height.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#12-2",
+    "taegeuk/7#13-2"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-front-Louter-Rlow"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-front-Louter-Rlow",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "outer",
+    "R": "low"
+   },
+   "mannequin": "front-leadL-front-Louter-Rlow/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Gawi makki (scissors block); left hand: outside block: forearm vertical at the outer edge of the body, fist at shoulder height; right hand: low block: forearm sweeping down, fist above the front knee.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#12-1",
+    "taegeuk/7#13-1"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-front-Llow-Router"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-front-Lpalm-Rchamber",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "palm",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-front-Lpalm-Rchamber/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Batangson momtong an makki (palm inside block); left hand: palm inside block, open hand; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/6#18-1",
+    "taegeuk/6#19-1"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-front-Lchamber-Rpalm"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-front-Lpalmjaw-Rchamber",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "palmjaw",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-front-Lpalmjaw-Rchamber/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Batangson teok chigi (palm-heel jaw strike); left hand: palm-heel strike up at jaw height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "keumgang#2",
+    "keumgang#3",
+    "keumgang#4"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-front-Lchamber-Rpalmjaw"
+   ],
+   "figures": 3
+  },
+  {
+   "id": "front-leadL-front-Lpunch-Rchamber",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "punch",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-front-Lpunch-Rchamber/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Momtong jireugi (middle punch); left hand: middle punch: arm straight forward, fist at solar-plexus height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/8#3-5",
+    "taegeuk/8#4"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-front-Lchamber-Rpunch"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-front-Lwedge-Rwedge",
+   "stance": "front",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "mannequin": "front-leadL-front-Lwedge-Rwedge/mannequin.png",
+   "character": "characters/ms2v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Momtong hecho makki (middle wedge block); left hand: wedge block: forearm up and out, fist at head height; right hand: wedge block: forearm up and out, fist at head height.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "keumgang#1"
+   ],
+   "mirror_of_uses": [],
+   "figures": 1
+  },
+  {
+   "id": "front-leadL-side-faceL-Lchamber-Rpunch",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "punch"
+   },
+   "mannequin": "front-leadL-side-faceL-Lchamber-Rpunch/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Momtong jireugi (middle punch); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: middle punch: arm straight forward, fist at solar-plexus height.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#3",
+    "koryo#7",
+    "taebaek#2-3",
+    "taebaek#4-3",
+    "taegeuk/3#2-3",
+    "taegeuk/3#4-3",
+    "taegeuk/6#7-2",
+    "taegeuk/6#9-2"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-side-faceR-Lpunch-Rchamber"
+   ],
+   "figures": 8
+  },
+  {
+   "id": "front-leadL-side-faceL-Leltarget-Relbow",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "eltarget",
+    "R": "elbow"
+   },
+   "mannequin": "front-leadL-side-faceL-Leltarget-Relbow/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Palkup pyojeok chigi (elbow target strike); left hand: open hand held as a target in front of the face; right hand: elbow strike forward at face height.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#13-2",
+    "taebaek#18-2"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-side-faceR-Lelbow-Reltarget"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-side-faceL-Lhigh-Rchamber",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "high",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-side-faceL-Lhigh-Rchamber/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Eolgul makki (high block); left hand: high block: forearm above the forehead, angled up; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/5#15",
+    "taegeuk/5#17"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-side-faceR-Lchamber-Rhigh"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-side-faceL-Lhpunch-Rchamber",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "hpunch",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-side-faceL-Lhpunch-Rchamber/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Eolgul jireugi (high punch); left hand: high punch: arm straight forward, fist at face height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/2#10-2",
+    "taegeuk/2#8-2"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-side-faceR-Lchamber-Rhpunch"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-side-faceL-Lksstrike-Rchamber",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "ksstrike",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-side-faceL-Lksstrike-Rchamber/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Hansonnal bakkat chigi (knife-hand outer strike); left hand: knife-hand outside strike; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#2-2",
+    "koryo#6-2"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-side-faceR-Lchamber-Rksstrike"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-side-faceL-Llow-Rchamber",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-side-faceL-Llow-Rchamber/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Arae makki (low block); left hand: low block: forearm sweeping down, fist above the front knee; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/6#12-2",
+    "taegeuk/6#14"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-side-faceR-Lchamber-Rlow"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-side-faceL-Llow-Router",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "outer"
+   },
+   "mannequin": "front-leadL-side-faceL-Llow-Router/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Gawi makki (scissors block); left hand: low block: forearm sweeping down, fist above the front knee; right hand: outside block: forearm vertical at the outer edge of the body, fist at shoulder height.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#23",
+    "taebaek#25"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-side-faceR-Louter-Rlow"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-side-faceL-Lpunch-Rchamber",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "punch",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadL-side-faceL-Lpunch-Rchamber/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Momtong jireugi (middle punch); left hand: middle punch: arm straight forward, fist at solar-plexus height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#2-2",
+    "taebaek#4-2",
+    "taegeuk/2#2",
+    "taegeuk/2#4",
+    "taegeuk/3#2-2",
+    "taegeuk/3#4-2"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-side-faceR-Lchamber-Rpunch"
+   ],
+   "figures": 6
+  },
+  {
+   "id": "front-leadL-side-faceL-Lspear-Rpress",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "spear",
+    "R": "press"
+   },
+   "mannequin": "front-leadL-side-faceL-Lspear-Rpress/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Pyeonsonkkeut sewo jjireugi (spear-hand thrust); left hand: spear-hand thrust forward, fingertips first; right hand: open hand palm-down under the other elbow.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/4#2",
+    "taegeuk/4#4"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-side-faceR-Lpress-Rspear"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadL-side-faceL-Lwedge-Rwedge",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "mannequin": "front-leadL-side-faceL-Lwedge-Rwedge/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the left foot forward, Momtong hecho makki (middle wedge block); left hand: wedge block: forearm up and out, fist at head height; right hand: wedge block: forearm up and out, fist at head height.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#14",
+    "taegeuk/7#17"
+   ],
+   "mirror_of_uses": [
+    "front-leadR-side-faceR-Lwedge-Rwedge"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadR-side-faceL-Lbackfist-Rchamber",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "backfist",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadR-side-faceL-Lbackfist-Rchamber/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the right foot forward, Deung jumeok ap chigi (back-fist strike); left hand: back-fist strike at face height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/8#22",
+    "taegeuk/8#26"
+   ],
+   "mirror_of_uses": [
+    "front-leadL-side-faceR-Lchamber-Rbackfist"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadR-side-faceL-Lchamber-Rhouter",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "chamber",
+    "R": "houter"
+   },
+   "mannequin": "front-leadR-side-faceL-Lchamber-Rhouter/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the right foot forward, Eolgul bakkat makki (high outer block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: high outside block: forearm vertical beside the head.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/6#6-2",
+    "taegeuk/6#8-1"
+   ],
+   "mirror_of_uses": [
+    "front-leadL-side-faceR-Lhouter-Rchamber"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadR-side-faceL-Lchamber-Rlow",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "chamber",
+    "R": "low"
+   },
+   "mannequin": "front-leadR-side-faceL-Lchamber-Rlow/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the right foot forward, Arae makki (low block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: low block: forearm sweeping down, fist above the front knee.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/5#1",
+    "taegeuk/5#3",
+    "taegeuk/6#1",
+    "taegeuk/6#3"
+   ],
+   "mirror_of_uses": [
+    "front-leadL-side-faceR-Llow-Rchamber"
+   ],
+   "figures": 4
+  },
+  {
+   "id": "front-leadR-side-faceL-Lchamber-Rpunch",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "chamber",
+    "R": "punch"
+   },
+   "mannequin": "front-leadR-side-faceL-Lchamber-Rpunch/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the right foot forward, Momtong jireugi (middle punch); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: middle punch: arm straight forward, fist at solar-plexus height.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#24-2",
+    "taebaek#26-2",
+    "taegeuk/3#14-2",
+    "taegeuk/3#16-2",
+    "taegeuk/8#23",
+    "taegeuk/8#27"
+   ],
+   "mirror_of_uses": [
+    "front-leadL-side-faceR-Lpunch-Rchamber"
+   ],
+   "figures": 6
+  },
+  {
+   "id": "front-leadR-side-faceL-Lelbow-Rchamber",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "elbow",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadR-side-faceL-Lelbow-Rchamber/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the right foot forward, Palkup dollyeo chigi (elbow strike); left hand: elbow strike forward at face height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/8#21",
+    "taegeuk/8#25"
+   ],
+   "mirror_of_uses": [
+    "front-leadL-side-faceR-Lchamber-Relbow"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadR-side-faceL-Lelbow-Reltarget",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "elbow",
+    "R": "eltarget"
+   },
+   "mannequin": "front-leadR-side-faceL-Lelbow-Reltarget/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the right foot forward, Palkup pyojeok chigi (elbow target strike); left hand: elbow strike forward at face height; right hand: open hand held as a target in front of the face.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/5#16-2",
+    "taegeuk/5#18-2"
+   ],
+   "mirror_of_uses": [
+    "front-leadL-side-faceR-Leltarget-Relbow"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadR-side-faceL-Leltarget-Relbow",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "eltarget",
+    "R": "elbow"
+   },
+   "mannequin": "front-leadR-side-faceL-Leltarget-Relbow/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the right foot forward, Palkup dollyeo chigi (elbow strike); left hand: open hand held as a target in front of the face; right hand: elbow strike forward at face height.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/5#10",
+    "taegeuk/5#12"
+   ],
+   "mirror_of_uses": [
+    "front-leadL-side-faceR-Lelbow-Reltarget"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadR-side-faceL-Llow-Rhouter",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "low",
+    "R": "houter"
+   },
+   "mannequin": "front-leadR-side-faceL-Llow-Rhouter/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the right foot forward, Oesanteul makki (single mountain block); left hand: low block: forearm sweeping down, fist above the front knee; right hand: high outside block: forearm vertical beside the head.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/8#5",
+    "taegeuk/8#7"
+   ],
+   "mirror_of_uses": [
+    "front-leadL-side-faceR-Lhouter-Rlow"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadR-side-faceL-Llspear-Rshoulder",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "lspear",
+    "R": "shoulder"
+   },
+   "mannequin": "front-leadR-side-faceL-Llspear-Rshoulder/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the right foot forward, Pyeonsonkkeut jeocho jjireugi (low spear hand, palm up); left hand: low spear hand, palm up; right hand: fist pulled back to the shoulder.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#18-2",
+    "koryo#23-2"
+   ],
+   "mirror_of_uses": [
+    "front-leadL-side-faceR-Lshoulder-Rlspear"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadR-side-faceL-Lpunch-Rchamber",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "punch",
+    "R": "chamber"
+   },
+   "mannequin": "front-leadR-side-faceL-Lpunch-Rchamber/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the right foot forward, Momtong jireugi (middle punch); left hand: middle punch: arm straight forward, fist at solar-plexus height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#24-3",
+    "taebaek#26-3",
+    "taegeuk/3#10",
+    "taegeuk/3#14-3",
+    "taegeuk/3#16-3",
+    "taegeuk/3#8",
+    "taegeuk/6#6-3",
+    "taegeuk/6#8-2",
+    "taegeuk/8#13-2",
+    "taegeuk/8#16-2"
+   ],
+   "mirror_of_uses": [
+    "front-leadL-side-faceR-Lchamber-Rpunch"
+   ],
+   "figures": 10
+  },
+  {
+   "id": "front-leadR-side-faceL-Luppercut-Rgrab",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "uppercut",
+    "R": "grab"
+   },
+   "mannequin": "front-leadR-side-faceL-Luppercut-Rgrab/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the right foot forward, Dangkyeo teok jireugi (pulling uppercut); left hand: uppercut: forearm rising, fist at chin height; right hand: open hand reaching forward to grab.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/8#6",
+    "taegeuk/8#8"
+   ],
+   "mirror_of_uses": [
+    "front-leadL-side-faceR-Lgrab-Ruppercut"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "front-leadR-side-faceL-Lxlow-Rxlow",
+   "stance": "front",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "xlow",
+    "R": "xlow"
+   },
+   "mannequin": "front-leadR-side-faceL-Lxlow-Rxlow/mannequin.png",
+   "character": "characters/d10-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap kubi (front stance) with the right foot forward, Eotgeoreo arae makki (low x block); left hand: low X block: wrists crossed low in front; right hand: low X block: wrists crossed low in front.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#16",
+    "taegeuk/7#19"
+   ],
+   "mirror_of_uses": [
+    "front-leadL-side-faceR-Lxlow-Rxlow"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "horse-back-Lchamber-Rksside",
+   "stance": "horse",
+   "view": "back",
+   "face": null,
+   "lead": null,
+   "arms": {
+    "L": "chamber",
+    "R": "ksside"
+   },
+   "mannequin": "horse-back-Lchamber-Rksside/mannequin.png",
+   "character": "characters/ms5v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Juchum seogi (horse stance) with the  foot forward, Hansonnal yeop makki (knife-hand side block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: knife-hand side block, arm out to the side.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#24"
+   ],
+   "mirror_of_uses": [
+    "horse-back-Lksside-Rchamber"
+   ],
+   "figures": 1
+  },
+  {
+   "id": "horse-back-Lchamber-Rsidepunch",
+   "stance": "horse",
+   "view": "back",
+   "face": null,
+   "lead": null,
+   "arms": {
+    "L": "chamber",
+    "R": "sidepunch"
+   },
+   "mannequin": "horse-back-Lchamber-Rsidepunch/mannequin.png",
+   "character": "characters/ms5v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Juchum seogi (horse stance) with the  foot forward, Yeop jireugi (side punch); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: punch straight out to the side.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#25"
+   ],
+   "mirror_of_uses": [],
+   "figures": 1
+  },
+  {
+   "id": "horse-back-Lelbow-Reltarget",
+   "stance": "horse",
+   "view": "back",
+   "face": null,
+   "lead": null,
+   "arms": {
+    "L": "elbow",
+    "R": "eltarget"
+   },
+   "mannequin": "horse-back-Lelbow-Reltarget/mannequin.png",
+   "character": "characters/ms5v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Juchum seogi (horse stance) with the  foot forward, Palkup pyojeok chigi (elbow target strike); left hand: elbow strike forward at face height; right hand: open hand held as a target in front of the face.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#21-2",
+    "taegeuk/7#23-2"
+   ],
+   "mirror_of_uses": [
+    "horse-back-Leltarget-Relbow"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "horse-front-Lchamber-Rksside",
+   "stance": "horse",
+   "view": "front",
+   "face": null,
+   "lead": null,
+   "arms": {
+    "L": "chamber",
+    "R": "ksside"
+   },
+   "mannequin": "horse-front-Lchamber-Rksside/mannequin.png",
+   "character": "characters/d10-06.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Juchum seogi (horse stance) with the  foot forward, Hansonnal yeop makki (knife-hand side block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: knife-hand side block, arm out to the side.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#16",
+    "koryo#21"
+   ],
+   "mirror_of_uses": [
+    "horse-front-Lksside-Rchamber"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "horse-front-Lcrosspunch-Rtarget",
+   "stance": "horse",
+   "view": "front",
+   "face": null,
+   "lead": null,
+   "arms": {
+    "L": "crosspunch",
+    "R": "target"
+   },
+   "mannequin": "horse-front-Lcrosspunch-Rtarget/mannequin.png",
+   "character": "characters/d10-06.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Juchum seogi (horse stance) with the  foot forward, Pyojeok jireugi (target punch); left hand: punch across the body into the open target hand; right hand: open hand held out as a target.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#17",
+    "koryo#22"
+   ],
+   "mirror_of_uses": [
+    "horse-front-Ltarget-Rcrosspunch"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "horse-front-Lelbowpush-Rsideelbow",
+   "stance": "horse",
+   "view": "front",
+   "face": null,
+   "lead": null,
+   "arms": {
+    "L": "elbowpush",
+    "R": "sideelbow"
+   },
+   "mannequin": "horse-front-Lelbowpush-Rsideelbow/mannequin.png",
+   "character": "characters/d10-06.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Juchum seogi (horse stance) with the  foot forward, Palkup yeop chigi (side elbow strike); left hand: fist pushing the other fist to drive the elbow; right hand: elbow strike out to the side.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#20-2",
+    "koryo#25-2"
+   ],
+   "mirror_of_uses": [
+    "horse-front-Lsideelbow-Relbowpush"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "horse-front-Lhingepunch-Rsideelbow",
+   "stance": "horse",
+   "view": "front",
+   "face": null,
+   "lead": null,
+   "arms": {
+    "L": "hingepunch",
+    "R": "sideelbow"
+   },
+   "mannequin": "horse-front-Lhingepunch-Rsideelbow/mannequin.png",
+   "character": "characters/d10-06.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Juchum seogi (horse stance) with the  foot forward, Keun doljjeogwi (large hinge); left hand: punch with the other fist braced under the elbow (hinge); right hand: elbow strike out to the side.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "keumgang#10",
+    "keumgang#16",
+    "keumgang#17",
+    "keumgang#19",
+    "keumgang#20",
+    "keumgang#26",
+    "keumgang#27",
+    "keumgang#9"
+   ],
+   "mirror_of_uses": [
+    "horse-front-Lsideelbow-Rhingepunch"
+   ],
+   "figures": 8
+  },
+  {
+   "id": "horse-side-faceL-Lhouter-Rhouter",
+   "stance": "horse",
+   "view": "side",
+   "face": "L",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "mannequin": "horse-side-faceL-Lhouter-Rhouter/mannequin.png",
+   "character": "characters/ms5v2-02.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Juchum seogi (horse stance) with the  foot forward, Santeul makki (mountain block); left hand: high outside block: forearm vertical beside the head; right hand: high outside block: forearm vertical beside the head.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "keumgang#11",
+    "keumgang#14",
+    "keumgang#21",
+    "keumgang#24"
+   ],
+   "mirror_of_uses": [
+    "horse-side-faceR-Lhouter-Rhouter"
+   ],
+   "figures": 4
+  },
+  {
+   "id": "horse-side-faceL-Lwedge-Rwedge",
+   "stance": "horse",
+   "view": "side",
+   "face": "L",
+   "lead": null,
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "mannequin": "horse-side-faceL-Lwedge-Rwedge/mannequin.png",
+   "character": "characters/ms5v2-02.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Juchum seogi (horse stance) with the  foot forward, Momtong hecho makki (middle wedge block); left hand: wedge block: forearm up and out, fist at head height; right hand: wedge block: forearm up and out, fist at head height.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "keumgang#12",
+    "keumgang#22"
+   ],
+   "mirror_of_uses": [
+    "horse-side-faceR-Lwedge-Rwedge"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "kick-leadL-back-Lchamber-Reltarget",
+   "stance": "kick",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "eltarget"
+   },
+   "mannequin": "kick-leadL-back-Lchamber-Reltarget/mannequin.png",
+   "character": "characters/ms7v2-01.png",
+   "character_match": "closest",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap chagi (front kick) with the left leg, Pyojeok chagi (target kick); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: open hand held as a target in front of the face.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#21-1",
+    "taegeuk/7#23-1"
+   ],
+   "mirror_of_uses": [
+    "kick-leadR-back-Leltarget-Rchamber"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "kick-leadL-back-Lguard-Rguard",
+   "stance": "kick",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "mannequin": "kick-leadL-back-Lguard-Rguard/mannequin.png",
+   "character": "characters/ms7v2-01.png",
+   "character_match": "closest",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap chagi (front kick) with the left leg, Ap chagi (front kick); left hand: fist held up in front of the chest as a guard; right hand: fist held up in front of the chest as a guard.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#14-1",
+    "taegeuk/2#16-1",
+    "taegeuk/2#17-1",
+    "taegeuk/2#18-1",
+    "taegeuk/3#19-1",
+    "taegeuk/3#20-1",
+    "taegeuk/4#14-1",
+    "taegeuk/5#14-1",
+    "taegeuk/5#20-1",
+    "taegeuk/8#19-1",
+    "taegeuk/8#19-2"
+   ],
+   "mirror_of_uses": [
+    "kick-leadR-back-Lguard-Rguard"
+   ],
+   "figures": 11
+  },
+  {
+   "id": "kick-leadL-front-Lguard-Rguard",
+   "stance": "kick",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "mannequin": "kick-leadL-front-Lguard-Rguard/mannequin.png",
+   "character": "characters/ms7v2-05.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap chagi (front kick) with the left leg, Ap chagi (front kick); left hand: fist held up in front of the chest as a guard; right hand: fist held up in front of the chest as a guard.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#10-1",
+    "koryo#11-1",
+    "koryo#12-1",
+    "taegeuk/4#6-1",
+    "taegeuk/5#6-1",
+    "taegeuk/5#7-1",
+    "taegeuk/8#11-1",
+    "taegeuk/8#3-1",
+    "taegeuk/8#3-2"
+   ],
+   "mirror_of_uses": [
+    "kick-leadR-front-Lguard-Rguard"
+   ],
+   "figures": 9
+  },
+  {
+   "id": "kick-leadL-side-faceL-Lguard-Rguard",
+   "stance": "kick",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "mannequin": "kick-leadL-side-faceL-Lguard-Rguard/mannequin.png",
+   "character": "characters/ms7v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap chagi (front kick) with the left leg, Ap chagi (front kick); left hand: fist held up in front of the chest as a guard; right hand: fist held up in front of the chest as a guard.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#2-1",
+    "taebaek#4-1",
+    "taegeuk/1#14-1",
+    "taegeuk/1#16-1",
+    "taegeuk/2#10-1",
+    "taegeuk/2#8-1",
+    "taegeuk/3#2-1",
+    "taegeuk/3#4-1",
+    "taegeuk/6#2-1",
+    "taegeuk/6#4-1",
+    "taegeuk/6#7-1",
+    "taegeuk/6#9-1",
+    "taegeuk/7#2-1",
+    "taegeuk/7#4-1"
+   ],
+   "mirror_of_uses": [
+    "kick-leadR-side-faceR-Lguard-Rguard"
+   ],
+   "figures": 14
+  },
+  {
+   "id": "kick-leadR-side-faceL-Lguard-Rguard",
+   "stance": "kick",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "mannequin": "kick-leadR-side-faceL-Lguard-Rguard/mannequin.png",
+   "character": "characters/ms7v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap chagi (front kick) with the right leg, Ap chagi (front kick); left hand: fist held up in front of the chest as a guard; right hand: fist held up in front of the chest as a guard.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#24-1",
+    "taebaek#26-1",
+    "taegeuk/3#14-1",
+    "taegeuk/3#16-1",
+    "taegeuk/4#10-1",
+    "taegeuk/4#12-1",
+    "taegeuk/6#13-1",
+    "taegeuk/6#15-1",
+    "taegeuk/8#13-1",
+    "taegeuk/8#16-1"
+   ],
+   "mirror_of_uses": [
+    "kick-leadL-side-faceR-Lguard-Rguard"
+   ],
+   "figures": 10
+  },
+  {
+   "id": "knee-leadR-side-faceL-Lgrab-Rgrab",
+   "stance": "knee",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "grab",
+    "R": "grab"
+   },
+   "mannequin": "knee-leadR-side-faceL-Lgrab-Rgrab/mannequin.png",
+   "character": "characters/ms7v2-04.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Mureup chigi (knee strike) with the right leg, Mureup chigi (knee strike); left hand: open hand reaching forward to grab; right hand: open hand reaching forward to grab.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#15-1",
+    "taegeuk/7#18-1"
+   ],
+   "mirror_of_uses": [
+    "knee-leadL-side-faceR-Lgrab-Rgrab"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "ready-front-Ljunbi-Rjunbi",
+   "stance": "ready",
+   "view": "front",
+   "face": null,
+   "lead": null,
+   "arms": {
+    "L": "junbi",
+    "R": "junbi"
+   },
+   "mannequin": "ready-front-Ljunbi-Rjunbi/mannequin.png",
+   "character": "characters/d10-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Naranhi seogi (parallel stance), Junbi (ready); left hand: fist in front of the lower belly (ready position); right hand: fist in front of the lower belly (ready position).\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "keumgang#J",
+    "taebaek#J",
+    "taegeuk/1#J",
+    "taegeuk/2#J",
+    "taegeuk/3#J",
+    "taegeuk/4#J",
+    "taegeuk/5#J",
+    "taegeuk/6#J",
+    "taegeuk/7#J",
+    "taegeuk/8#J"
+   ],
+   "mirror_of_uses": [],
+   "figures": 10
+  },
+  {
+   "id": "ready-front-Lspread-Rspread",
+   "stance": "ready",
+   "view": "front",
+   "face": null,
+   "lead": null,
+   "arms": {
+    "L": "spread",
+    "R": "spread"
+   },
+   "mannequin": "ready-front-Lspread-Rspread/mannequin.png",
+   "character": "characters/d10-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Naranhi seogi (parallel stance), Arae hecho makki (low spread block); left hand: fist out to the side and down (low spread); right hand: fist out to the side and down (low spread).\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/6#10"
+   ],
+   "mirror_of_uses": [],
+   "figures": 1
+  },
+  {
+   "id": "ready-front-Ltongmil-Rtongmil",
+   "stance": "ready",
+   "view": "front",
+   "face": null,
+   "lead": null,
+   "arms": {
+    "L": "tongmil",
+    "R": "tongmil"
+   },
+   "mannequin": "ready-front-Ltongmil-Rtongmil/mannequin.png",
+   "character": "characters/d10-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Naranhi seogi (parallel stance), Tongmilgi junbi (pushing-hands ready); left hand: both palms pushing slowly forward at chest height, fingertips up (pushing-hands ready); right hand: both palms pushing slowly forward at chest height, fingertips up (pushing-hands ready).\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#J"
+   ],
+   "mirror_of_uses": [],
+   "figures": 1
+  },
+  {
+   "id": "ready-side-faceL-Lspread-Rspread",
+   "stance": "ready",
+   "view": "side",
+   "face": "L",
+   "lead": null,
+   "arms": {
+    "L": "spread",
+    "R": "spread"
+   },
+   "mannequin": "ready-side-faceL-Lspread-Rspread/mannequin.png",
+   "character": "characters/d10-02.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Naranhi seogi (parallel stance), Arae hecho makki (low spread block); left hand: fist out to the side and down (low spread); right hand: fist out to the side and down (low spread).\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "keumgang#13",
+    "keumgang#23"
+   ],
+   "mirror_of_uses": [
+    "ready-side-faceR-Lspread-Rspread"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "rkick-leadL-side-faceL-Lguard-Rguard",
+   "stance": "rkick",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "mannequin": "rkick-leadL-side-faceL-Lguard-Rguard/mannequin.png",
+   "character": "characters/ms7v2-03.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Dollyeo chagi (roundhouse kick) with the left leg, Dollyeo chagi (roundhouse kick); left hand: fist held up in front of the chest as a guard; right hand: fist held up in front of the chest as a guard.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/6#12-1",
+    "taegeuk/6#6-1"
+   ],
+   "mirror_of_uses": [
+    "rkick-leadR-side-faceR-Lguard-Rguard"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "skick-leadL-side-faceL-Lguard-Rguard",
+   "stance": "skick",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "mannequin": "skick-leadL-side-faceL-Lguard-Rguard/mannequin.png",
+   "character": "characters/ms7v2-02.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Yeop chagi (side kick) with the left leg, Geodeup yeop chagi (double side kick); left hand: fist held up in front of the chest as a guard; right hand: fist held up in front of the chest as a guard.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#2-1",
+    "koryo#6-1",
+    "taegeuk/4#7",
+    "taegeuk/4#8-1"
+   ],
+   "mirror_of_uses": [
+    "skick-leadR-side-faceR-Lguard-Rguard"
+   ],
+   "figures": 4
+  },
+  {
+   "id": "skick-leadL-side-faceL-Lhammerout-Rchamber",
+   "stance": "skick",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "hammerout",
+    "R": "chamber"
+   },
+   "mannequin": "skick-leadL-side-faceL-Lhammerout-Rchamber/mannequin.png",
+   "character": "characters/ms7v2-02.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Yeop chagi (side kick) with the left leg, Yeop chagi · mejumeok bakkat chigi (side kick with hammer-fist strike); left hand: hammer-fist strike out to the side; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#13-1",
+    "taebaek#18-1"
+   ],
+   "mirror_of_uses": [
+    "skick-leadR-side-faceR-Lchamber-Rhammerout"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "skick-leadR-side-faceL-Lchamber-Rsidepunch",
+   "stance": "skick",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "chamber",
+    "R": "sidepunch"
+   },
+   "mannequin": "skick-leadR-side-faceL-Lchamber-Rsidepunch/mannequin.png",
+   "character": "characters/ms7v2-02.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Yeop chagi (side kick) with the right leg, Yeop chagi (side kick); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: punch straight out to the side.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/5#16-1",
+    "taegeuk/5#18-1"
+   ],
+   "mirror_of_uses": [
+    "skick-leadL-side-faceR-Lsidepunch-Rchamber"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "skick-leadR-side-faceL-Lguard-Rguard",
+   "stance": "skick",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "mannequin": "skick-leadR-side-faceL-Lguard-Rguard/mannequin.png",
+   "character": "characters/ms7v2-02.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Yeop chagi (side kick) with the right leg, Yeop chagi (side kick); left hand: fist held up in front of the chest as a guard; right hand: fist held up in front of the chest as a guard.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#18-1",
+    "koryo#23-1"
+   ],
+   "mirror_of_uses": [
+    "skick-leadL-side-faceR-Lguard-Rguard"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "tiger-leadL-front-Lpalm-Rchamber",
+   "stance": "tiger",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "palm",
+    "R": "chamber"
+   },
+   "mannequin": "tiger-leadL-front-Lpalm-Rchamber/mannequin.png",
+   "character": "characters/ms4v2-01.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Beom seogi (tiger stance) with the left foot forward, Batangson momtong an makki (palm inside block); left hand: palm inside block, open hand; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/8#11-2"
+   ],
+   "mirror_of_uses": [
+    "tiger-leadR-front-Lchamber-Rpalm"
+   ],
+   "figures": 1
+  },
+  {
+   "id": "tiger-leadR-side-faceL-Lbackfist-Rchamber",
+   "stance": "tiger",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "backfist",
+    "R": "chamber"
+   },
+   "mannequin": "tiger-leadR-side-faceL-Lbackfist-Rchamber/mannequin.png",
+   "character": "characters/ms4v2-02.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Beom seogi (tiger stance) with the right foot forward, Deung jumeok ap chigi (back-fist strike); left hand: back-fist strike at face height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#10",
+    "taegeuk/7#8"
+   ],
+   "mirror_of_uses": [
+    "tiger-leadL-side-faceR-Lchamber-Rbackfist"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "tiger-leadR-side-faceL-Lchamber-Rinside",
+   "stance": "tiger",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "chamber",
+    "R": "inside"
+   },
+   "mannequin": "tiger-leadR-side-faceL-Lchamber-Rinside/mannequin.png",
+   "character": "characters/ms4v2-02.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Beom seogi (tiger stance) with the right foot forward, Momtong an makki (inside middle block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: inside block: forearm vertical in front of the chest, fist at shoulder height.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#2-2",
+    "taegeuk/7#4-2"
+   ],
+   "mirror_of_uses": [
+    "tiger-leadL-side-faceR-Linside-Rchamber"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "tiger-leadR-side-faceL-Lchamber-Rpalm",
+   "stance": "tiger",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "chamber",
+    "R": "palm"
+   },
+   "mannequin": "tiger-leadR-side-faceL-Lchamber-Rpalm/mannequin.png",
+   "character": "characters/ms4v2-02.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Beom seogi (tiger stance) with the right foot forward, Batangson momtong an makki (palm inside block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: palm inside block, open hand.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/8#14",
+    "taegeuk/8#17"
+   ],
+   "mirror_of_uses": [
+    "tiger-leadL-side-faceR-Lpalm-Rchamber"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "tiger-leadR-side-faceL-Lksguard-Rksblock",
+   "stance": "tiger",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "ksguard",
+    "R": "ksblock"
+   },
+   "mannequin": "tiger-leadR-side-faceL-Lksguard-Rksblock/mannequin.png",
+   "character": "characters/ms4v2-02.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Beom seogi (tiger stance) with the right foot forward, Sonnal momtong makki (double knife-hand block); left hand: open hand palm-up across the solar plexus (guarding hand); right hand: knife-hand block in front, open hand edge forward.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/8#12",
+    "taegeuk/8#15"
+   ],
+   "mirror_of_uses": [
+    "tiger-leadL-side-faceR-Lksblock-Rksguard"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "tiger-leadR-side-faceL-Lkspread-Rkspread",
+   "stance": "tiger",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "kspread",
+    "R": "kspread"
+   },
+   "mannequin": "tiger-leadR-side-faceL-Lkspread-Rkspread/mannequin.png",
+   "character": "characters/ms4v2-02.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Beom seogi (tiger stance) with the right foot forward, Sonnal arae hecho makki (knife-hand low spread block); left hand: open hand out to the side (knife-hand spread); right hand: open hand out to the side (knife-hand spread).\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taebaek#1",
+    "taebaek#3"
+   ],
+   "mirror_of_uses": [
+    "tiger-leadL-side-faceR-Lkspread-Rkspread"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "tiger-leadR-side-faceL-Lpalm-Rassist",
+   "stance": "tiger",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "palm",
+    "R": "assist"
+   },
+   "mannequin": "tiger-leadR-side-faceL-Lpalm-Rassist/mannequin.png",
+   "character": "characters/ms4v2-02.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Beom seogi (tiger stance) with the right foot forward, Geodeureo batangson momtong an makki (augmented palm block); left hand: palm inside block, open hand; right hand: supporting fist under the blocking arm.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#7",
+    "taegeuk/7#9"
+   ],
+   "mirror_of_uses": [
+    "tiger-leadL-side-faceR-Lassist-Rpalm"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "tiger-leadR-side-faceL-Lpalm-Rchamber",
+   "stance": "tiger",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "palm",
+    "R": "chamber"
+   },
+   "mannequin": "tiger-leadR-side-faceL-Lpalm-Rchamber/mannequin.png",
+   "character": "characters/ms4v2-02.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Beom seogi (tiger stance) with the right foot forward, Batangson momtong an makki (palm inside block); left hand: palm inside block, open hand; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#1",
+    "taegeuk/7#3"
+   ],
+   "mirror_of_uses": [
+    "tiger-leadL-side-faceR-Lchamber-Rpalm"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "walk-leadL-back-Larc-Rchamber",
+   "stance": "walk",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "arc",
+    "R": "chamber"
+   },
+   "mannequin": "walk-leadL-back-Larc-Rchamber/mannequin.png",
+   "character": "characters/ms1v2-09.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Kaljaebi (arc-hand throat strike); left hand: arc hand (thumb and fingers spread) at throat height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#30"
+   ],
+   "mirror_of_uses": [
+    "walk-leadR-back-Lchamber-Rarc"
+   ],
+   "figures": 1
+  },
+  {
+   "id": "walk-leadL-back-Lbackfist-Rchamber",
+   "stance": "walk",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "backfist",
+    "R": "chamber"
+   },
+   "mannequin": "walk-leadL-back-Lbackfist-Rchamber/mannequin.png",
+   "character": "characters/ms1v2-09.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Deung jumeok bakkat chigi (outward back-fist); left hand: back-fist strike at face height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/7#20",
+    "taegeuk/7#22"
+   ],
+   "mirror_of_uses": [
+    "walk-leadR-back-Lchamber-Rbackfist"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "walk-leadL-back-Lchamber-Rpunch",
+   "stance": "walk",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "punch"
+   },
+   "mannequin": "walk-leadL-back-Lchamber-Rpunch/mannequin.png",
+   "character": "characters/ms1v2-09.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Momtong jireugi (middle punch); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: middle punch: arm straight forward, fist at solar-plexus height.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/3#17-2",
+    "taegeuk/3#18-2",
+    "taegeuk/3#19-3",
+    "taegeuk/3#20-3"
+   ],
+   "mirror_of_uses": [
+    "walk-leadR-back-Lpunch-Rchamber"
+   ],
+   "figures": 4
+  },
+  {
+   "id": "walk-leadL-back-Lkslow-Rchamber",
+   "stance": "walk",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "chamber"
+   },
+   "mannequin": "walk-leadL-back-Lkslow-Rchamber/mannequin.png",
+   "character": "characters/ms1v2-09.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Sonnal arae makki (low knife-hand block); left hand: low knife-hand block, open hand; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#29-2"
+   ],
+   "mirror_of_uses": [],
+   "figures": 1
+  },
+  {
+   "id": "walk-leadL-back-Llow-Rchamber",
+   "stance": "walk",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "chamber"
+   },
+   "mannequin": "walk-leadL-back-Llow-Rchamber/mannequin.png",
+   "character": "characters/ms1v2-09.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Arae makki (low block); left hand: low block: forearm sweeping down, fist above the front knee; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/2#15",
+    "taegeuk/3#17-1",
+    "taegeuk/3#18-1",
+    "taegeuk/3#19-2",
+    "taegeuk/3#20-2"
+   ],
+   "mirror_of_uses": [
+    "walk-leadR-back-Lchamber-Rlow"
+   ],
+   "figures": 5
+  },
+  {
+   "id": "walk-leadL-back-Lneck-Rchamber",
+   "stance": "walk",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "neck",
+    "R": "chamber"
+   },
+   "mannequin": "walk-leadL-back-Lneck-Rchamber/mannequin.png",
+   "character": "characters/ms1v2-09.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Sonnal mok chigi (knife-hand neck strike); left hand: knife-hand strike to neck height, palm up; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#29-1"
+   ],
+   "mirror_of_uses": [],
+   "figures": 1
+  },
+  {
+   "id": "walk-leadL-back-Lpunch-Rchamber",
+   "stance": "walk",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "punch",
+    "R": "chamber"
+   },
+   "mannequin": "walk-leadL-back-Lpunch-Rchamber/mannequin.png",
+   "character": "characters/ms1v2-09.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Momtong jireugi (middle punch); left hand: middle punch: arm straight forward, fist at solar-plexus height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/2#16-2",
+    "taegeuk/2#17-2",
+    "taegeuk/2#18-2"
+   ],
+   "mirror_of_uses": [
+    "walk-leadR-back-Lchamber-Rpunch"
+   ],
+   "figures": 3
+  },
+  {
+   "id": "walk-leadL-back-Lwedge-Rwedge",
+   "stance": "walk",
+   "view": "back",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "mannequin": "walk-leadL-back-Lwedge-Rwedge/mannequin.png",
+   "character": "characters/ms1v2-09.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Momtong hecho makki (middle wedge block); left hand: wedge block: forearm up and out, fist at head height; right hand: wedge block: forearm up and out, fist at head height.\nView: seen from behind (back of the head and back of the dobok; the belt knot is hidden in front).\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#15"
+   ],
+   "mirror_of_uses": [],
+   "figures": 1
+  },
+  {
+   "id": "walk-leadL-front-Lchamber-Rinside",
+   "stance": "walk",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "inside"
+   },
+   "mannequin": "walk-leadL-front-Lchamber-Rinside/mannequin.png",
+   "character": "characters/ms1v2-07.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Momtong an makki (inside middle block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: inside block: forearm vertical in front of the chest, fist at shoulder height.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/2#5",
+    "taegeuk/2#6",
+    "taegeuk/3#11",
+    "taegeuk/3#12"
+   ],
+   "mirror_of_uses": [
+    "walk-leadR-front-Linside-Rchamber"
+   ],
+   "figures": 4
+  },
+  {
+   "id": "walk-leadL-front-Lchamber-Rneck",
+   "stance": "walk",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "neck"
+   },
+   "mannequin": "walk-leadL-front-Lchamber-Rneck/mannequin.png",
+   "character": "characters/ms1v2-07.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Sonnal mok chigi (knife-hand neck strike); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: knife-hand strike to neck height, palm up.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/3#5",
+    "taegeuk/3#6"
+   ],
+   "mirror_of_uses": [
+    "walk-leadR-front-Lneck-Rchamber"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "walk-leadL-front-Lhigh-Rchamber",
+   "stance": "walk",
+   "view": "front",
+   "face": null,
+   "lead": "L",
+   "arms": {
+    "L": "high",
+    "R": "chamber"
+   },
+   "mannequin": "walk-leadL-front-Lhigh-Rchamber/mannequin.png",
+   "character": "characters/ms1v2-07.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Eolgul makki (high block); left hand: high block: forearm above the forehead, angled up; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen from the front, facing the viewer.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/2#11",
+    "taegeuk/2#12"
+   ],
+   "mirror_of_uses": [
+    "walk-leadR-front-Lchamber-Rhigh"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "walk-leadL-side-faceL-Lchamber-Rinside",
+   "stance": "walk",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "inside"
+   },
+   "mannequin": "walk-leadL-side-faceL-Lchamber-Rinside/mannequin.png",
+   "character": "characters/ms1v2-08.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Momtong an makki (inside middle block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: inside block: forearm vertical in front of the chest, fist at shoulder height.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/2#13",
+    "taegeuk/2#14"
+   ],
+   "mirror_of_uses": [
+    "walk-leadR-side-faceR-Linside-Rchamber"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "walk-leadL-side-faceL-Lchamber-Rpunch",
+   "stance": "walk",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "chamber",
+    "R": "punch"
+   },
+   "mannequin": "walk-leadL-side-faceL-Lchamber-Rpunch/mannequin.png",
+   "character": "characters/ms1v2-08.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Momtong jireugi (middle punch); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: middle punch: arm straight forward, fist at solar-plexus height.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/1#10",
+    "taegeuk/1#8",
+    "taegeuk/4#15-2",
+    "taegeuk/4#16-2"
+   ],
+   "mirror_of_uses": [
+    "walk-leadR-side-faceR-Lpunch-Rchamber"
+   ],
+   "figures": 4
+  },
+  {
+   "id": "walk-leadL-side-faceL-Linside-Rchamber",
+   "stance": "walk",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "inside",
+    "R": "chamber"
+   },
+   "mannequin": "walk-leadL-side-faceL-Linside-Rchamber/mannequin.png",
+   "character": "characters/ms1v2-08.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Momtong an makki (inside middle block); left hand: inside block: forearm vertical in front of the chest, fist at shoulder height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/4#15-1",
+    "taegeuk/4#16-1"
+   ],
+   "mirror_of_uses": [
+    "walk-leadR-side-faceR-Lchamber-Rinside"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "walk-leadL-side-faceL-Llow-Rchamber",
+   "stance": "walk",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "chamber"
+   },
+   "mannequin": "walk-leadL-side-faceL-Llow-Rchamber/mannequin.png",
+   "character": "characters/ms1v2-08.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Arae makki (low block); left hand: low block: forearm sweeping down, fist above the front knee; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/3#13",
+    "taegeuk/3#15"
+   ],
+   "mirror_of_uses": [
+    "walk-leadR-side-faceR-Lchamber-Rlow"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "walk-leadL-side-faceL-Lpressdown-Rchamber",
+   "stance": "walk",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "pressdown",
+    "R": "chamber"
+   },
+   "mannequin": "walk-leadL-side-faceL-Lpressdown-Rchamber/mannequin.png",
+   "character": "characters/ms1v2-08.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Batangson nulleo makki (palm pressing block); left hand: palm pressing down in front of the belly; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#20-1",
+    "koryo#25-1"
+   ],
+   "mirror_of_uses": [
+    "walk-leadR-side-faceR-Lchamber-Rpressdown"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "walk-leadL-side-faceL-Lpunch-Rchamber",
+   "stance": "walk",
+   "view": "side",
+   "face": "L",
+   "lead": "L",
+   "arms": {
+    "L": "punch",
+    "R": "chamber"
+   },
+   "mannequin": "walk-leadL-side-faceL-Lpunch-Rchamber/mannequin.png",
+   "character": "characters/ms1v2-08.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the left foot forward, Momtong jireugi (middle punch); left hand: middle punch: arm straight forward, fist at solar-plexus height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/1#14-2",
+    "taegeuk/1#16-2",
+    "taegeuk/1#2",
+    "taegeuk/1#4"
+   ],
+   "mirror_of_uses": [
+    "walk-leadR-side-faceR-Lchamber-Rpunch"
+   ],
+   "figures": 4
+  },
+  {
+   "id": "walk-leadR-side-faceL-Lchamber-Rhammer",
+   "stance": "walk",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "chamber",
+    "R": "hammer"
+   },
+   "mannequin": "walk-leadR-side-faceL-Lchamber-Rhammer/mannequin.png",
+   "character": "characters/ms1v2-08.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the right foot forward, Mejumeok naeryeo chigi (hammer-fist strike); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: hammer-fist strike.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/5#2",
+    "taegeuk/5#4"
+   ],
+   "mirror_of_uses": [
+    "walk-leadL-side-faceR-Lhammer-Rchamber"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "walk-leadR-side-faceL-Lchamber-Rhigh",
+   "stance": "walk",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "chamber",
+    "R": "high"
+   },
+   "mannequin": "walk-leadR-side-faceL-Lchamber-Rhigh/mannequin.png",
+   "character": "characters/ms1v2-08.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the right foot forward, Eolgul makki (high block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: high block: forearm above the forehead, angled up.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/1#13",
+    "taegeuk/1#15"
+   ],
+   "mirror_of_uses": [
+    "walk-leadL-side-faceR-Lhigh-Rchamber"
+   ],
+   "figures": 2
+  },
+  {
+   "id": "walk-leadR-side-faceL-Lchamber-Rlow",
+   "stance": "walk",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "chamber",
+    "R": "low"
+   },
+   "mannequin": "walk-leadR-side-faceL-Lchamber-Rlow/mannequin.png",
+   "character": "characters/ms1v2-08.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the right foot forward, Arae makki (low block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: low block: forearm sweeping down, fist above the front knee.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "koryo#19",
+    "koryo#24",
+    "taegeuk/1#1",
+    "taegeuk/1#3",
+    "taegeuk/2#1",
+    "taegeuk/2#3",
+    "taegeuk/2#7",
+    "taegeuk/2#9",
+    "taegeuk/3#1",
+    "taegeuk/3#3"
+   ],
+   "mirror_of_uses": [
+    "walk-leadL-side-faceR-Llow-Rchamber"
+   ],
+   "figures": 10
+  },
+  {
+   "id": "walk-leadR-side-faceL-Linside-Rchamber",
+   "stance": "walk",
+   "view": "side",
+   "face": "L",
+   "lead": "R",
+   "arms": {
+    "L": "inside",
+    "R": "chamber"
+   },
+   "mannequin": "walk-leadR-side-faceL-Linside-Rchamber/mannequin.png",
+   "character": "characters/ms1v2-08.png",
+   "character_match": "exact",
+   "prompt": "Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.\nDraw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.\nPose: Ap seogi (walking stance) with the right foot forward, Momtong an makki (inside middle block); left hand: inside block: forearm vertical in front of the chest, fist at shoulder height; right hand: fist chambered palm-up on the belt at the hip, elbow back.\nView: seen exactly side-on (profile), facing the left edge of the image.\nStyle: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.",
+   "uses": [
+    "taegeuk/1#7",
+    "taegeuk/1#9"
+   ],
+   "mirror_of_uses": [
+    "walk-leadL-side-faceR-Lchamber-Rinside"
+   ],
+   "figures": 2
+  }
+ ]
+}

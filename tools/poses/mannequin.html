@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pose mannequin</title>
+<style>
+:root{--ink:#141a2b;--muted:#5a6377;--line:#c3cbd8;--bg:#edf0f5;--surface:#fff;--accent:#2456c8}
+body{margin:0;font:14px/1.4 "IBM Plex Sans Condensed",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+.app{display:grid;grid-template-columns:340px 1fr;height:100vh}
+aside{overflow:auto;padding:14px 16px;background:var(--surface);border-right:1px solid var(--line)}
+h1{font-size:17px;margin:0 0 4px}
+p.hint{color:var(--muted);margin:0 0 12px;font-size:12.5px}
+select,button{font:inherit;padding:5px 8px;border:1px solid var(--line);border-radius:7px;background:#fff}
+button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.row{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+fieldset{border:1px solid var(--line);border-radius:9px;margin:10px 0;padding:6px 10px}
+legend{font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+label{display:grid;grid-template-columns:96px 1fr 44px;align-items:center;gap:6px;font-size:12.5px}
+label output{font-family:ui-monospace,monospace;font-size:11.5px;text-align:right}
+textarea{width:100%;height:120px;font:11px ui-monospace,monospace}
+#uses{font-size:12px;color:var(--muted)}
+main{position:relative}
+canvas{width:100%;height:100%;display:block}
+body.render aside{display:none}
+body.render .app{display:block;height:auto}
+</style></head>
+<body>
+<div class="app">
+<aside>
+  <h1>Pose mannequin</h1>
+  <p class="hint">One entry per distinct pose (<code>data/poses.json</code>). Adjust the sliders, then copy the JSON into <code>data/pose-overrides.json</code> under the pose id and rebuild the guides with <code>tools/poses/render.py</code>.</p>
+  <select id="pick" style="width:100%"></select>
+  <div id="uses"></div>
+  <div class="row" id="views"><button data-v="pose">Pose view</button><button data-v="front">Front</button><button data-v="side">Side</button><button data-v="back">Back</button><button data-v="top">Top</button><button data-v="orbit">Orbit</button></div>
+  <div id="ctl"></div>
+  <fieldset><legend>Override JSON for this pose</legend><textarea id="json" readonly></textarea>
+  <div class="row"><button id="copy">Copy</button><button id="reset">Reset pose</button></div></fieldset>
+</aside>
+<main><canvas id="c"></canvas></main>
+</div>
+<script type="importmap">{"imports":{"three":"../node_modules/three/build/three.module.js","three/addons/":"../node_modules/three/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from "three";
+import {OrbitControls} from "three/addons/controls/OrbitControls.js";
+import {build, meshes, makeScene, camera, STANCES, ARMS} from "./mannequin.js";
+
+const RENDER = new URLSearchParams(location.search).has("render");
+if(RENDER) document.body.classList.add("render");
+const W = RENDER ? 768 : innerWidth-340, H = RENDER ? 1152 : innerHeight;
+const canvas = document.getElementById("c");
+if(RENDER){ canvas.style.width=W+"px"; canvas.style.height=H+"px"; }
+const {renderer, scene} = makeScene(canvas, W, H);
+let fig = null;
+
+function place(spec, ovr){
+  if(fig) scene.remove(fig);
+  fig = meshes(build(spec, ovr)); scene.add(fig);
+  return new THREE.Box3().setFromObject(fig);
+}
+// headless entry point used by render.py
+window.renderPose = (spec, ovr, view, face) => {
+  const box = place(spec, ovr), cam = camera(view, face, box, W/H);
+  renderer.render(scene, cam); return true;
+};
+window.ready = true;
+
+if(!RENDER){
+  const POSES = (await (await fetch("../../data/poses.json")).json()).poses;
+  let OVR = {}; try { OVR = await (await fetch("../../data/pose-overrides.json")).json(); } catch(e){}
+  const pick = document.getElementById("pick");
+  pick.innerHTML = POSES.map((p,i)=>`<option value="${i}">${p.id}</option>`).join("");
+  let cur, ovr, view="pose", controls=null, cam=null;
+  const persp = new THREE.PerspectiveCamera(30, W/H, .1, 50); persp.position.set(3.2,1.8,4.2);
+  controls = new OrbitControls(persp, canvas); controls.target.set(0,.9,0); controls.update();
+  const ctl = document.getElementById("ctl");
+  const slider = (label, get, set, min, max, step) => {
+    const id = Math.random().toString(36).slice(2), v = get();
+    return {html:`<label>${label}<input id="${id}" type="range" min="${min}" max="${max}" step="${step}" value="${v}"><output>${(+v).toFixed(2)}</output></label>`, id, set};
+  };
+  function draw(){
+    const p = POSES[cur], box = place(p, ovr);
+    if(view==="orbit"){ cam = persp; }
+    else if(view==="top"){ const c=box.getCenter(new THREE.Vector3()); cam=new THREE.OrthographicCamera(-1.2,1.2,1.2*H/W,-1.2*H/W,.1,20); cam.position.set(c.x,8,c.z); cam.up.set(0,0,1); cam.lookAt(c.x,0,c.z); }
+    else { const v = view==="pose" ? p.view : view, f = view==="pose" ? p.face : (p.face||"R"); cam = camera(v, f||"R", box, W/H); }
+    renderer.render(scene, cam);
+    document.getElementById("json").value = JSON.stringify({[p.id]: ovr}, null, 1);
+  }
+  function controlsFor(){
+    const p = POSES[cur], base = STANCES[p.stance]((p.lead||"L")==="L"?1:-1);
+    ovr.stance ??= {}; ovr.arms ??= {};
+    const S = ovr.stance, parts = [];
+    const num = (path, dflt) => { let o=S; for(const k of path.slice(0,-1)) o=o?.[k]; const v=o?.[path.at(-1)]; return v ?? dflt; };
+    const setp = (path, val) => { let o=S; for(const k of path.slice(0,-1)){ o[k] ??= (typeof k==="number"?[]:{}); o=o[k]; } o[path.at(-1)]=val; };
+    const group = (title, items) => parts.push({title, items});
+    const pel = Array.isArray(base.pelvis) ? base.pelvis : [0,.85,0];
+    group("Body", [
+      ["pelvis x", ["pelvis",0], (S.pelvis?.[0]) ?? (typeof pel[0]==="number"?pel[0]:0), -.6,.6,.01],
+      ["pelvis height", ["pelvis",1], (S.pelvis?.[1]) ?? (typeof pel[1]==="number"?pel[1]:.85), .55,1.0,.005],
+      ["pelvis z", ["pelvis",2], (S.pelvis?.[2]) ?? (typeof pel[2]==="number"?pel[2]:0), -.6,.6,.01],
+      ["hip yaw °", ["hipYaw"], num(["hipYaw"], base.hipYaw||0), -180,180,1],
+      ["chest yaw °", ["chestYaw"], num(["chestYaw"], base.chestYaw??base.hipYaw??0), -180,180,1],
+      ["lean °", ["lean"], num(["lean"], base.lean||0), -40,40,1],
+      ["side lean °", ["sideLean"], num(["sideLean"], base.sideLean||0), -45,45,1],
+      ["head yaw °", ["headYaw"], num(["headYaw"], base.headYaw||0), -180,180,1]]);
+    for(const role of ["lead","rear"]){
+      const f = base.feet[role]; if(!f.at) continue;
+      group(`${role} foot (${role==="lead"?p.lead||"L":(p.lead==="R"?"L":"R")})`, [
+        ["x", ["feet",role,"at",0], S.feet?.[role]?.at?.[0] ?? f.at[0], -.8,.8,.005],
+        ["z", ["feet",role,"at",1], S.feet?.[role]?.at?.[1] ?? f.at[1], -.8,.8,.005],
+        ["toe yaw °", ["feet",role,"yaw"], S.feet?.[role]?.yaw ?? f.yaw ?? 0, -180,180,1],
+        ["knee pole x", ["knee",role,0], S.knee?.[role]?.[0] ?? base.knee?.[role]?.[0] ?? 0, -1.5,1.5,.05],
+        ["knee pole y", ["knee",role,1], S.knee?.[role]?.[1] ?? base.knee?.[role]?.[1] ?? .25, -1.5,1.5,.05],
+        ["knee pole z", ["knee",role,2], S.knee?.[role]?.[2] ?? base.knee?.[role]?.[2] ?? 1, -1.5,1.5,.05]]);
+    }
+    let html = "", binds = [];
+    for(const g of parts){
+      html += `<fieldset><legend>${g.title}</legend>`;
+      for(const [label, path, v, mn, mx, st] of g.items){ const sl = slider(label, ()=>v, val=>setp(path,val), mn, mx, st); html += sl.html; binds.push(sl); }
+      html += `</fieldset>`;
+    }
+    for(const sd of ["L","R"]){
+      const key = p.arms[sd], a = ARMS[key] || ARMS.chamber, o = ovr.arms[sd] ??= {};
+      html += `<fieldset><legend>${sd==="L"?"Left":"Right"} arm · ${key}</legend>`;
+      ["out","up","forward"].forEach((nm,i)=>{ const sl=slider(`hand ${nm}`, ()=>o.t?.[i] ?? a.t[i], val=>{o.t ??= [...a.t]; o.t[i]=val}, -.8,.8,.005); html+=sl.html; binds.push(sl); });
+      ["out","up","forward"].forEach((nm,i)=>{ const sl=slider(`elbow ${nm}`, ()=>o.pole?.[i] ?? a.pole[i], val=>{o.pole ??= [...a.pole]; o.pole[i]=val}, -1.5,1.5,.05); html+=sl.html; binds.push(sl); });
+      html += `</fieldset>`;
+    }
+    ctl.innerHTML = html;
+    for(const b of binds){ const el=document.getElementById(b.id); el.addEventListener("input",()=>{ b.set(+el.value); el.nextElementSibling.value=(+el.value).toFixed(2); draw(); }); }
+  }
+  function select(i){
+    cur = +i; const p = POSES[cur];
+    ovr = JSON.parse(JSON.stringify(OVR[p.id] || {}));
+    document.getElementById("uses").textContent = `${p.uses.length} move(s): ${p.uses.slice(0,8).join(", ")}${p.uses.length>8?" …":""}`;
+    controlsFor(); draw();
+  }
+  pick.addEventListener("change", e=>{ history.replaceState(null,"","#"+POSES[+e.target.value].id); select(e.target.value); });
+  document.getElementById("views").addEventListener("click", e=>{ const b=e.target.closest("button"); if(!b) return; view=b.dataset.v;
+    document.querySelectorAll("#views button").forEach(x=>x.classList.toggle("on",x===b)); draw(); });
+  document.getElementById("copy").onclick = ()=>navigator.clipboard.writeText(document.getElementById("json").value);
+  document.getElementById("reset").onclick = ()=>{ ovr={}; controlsFor(); draw(); };
+  controls.addEventListener("change", ()=>{ if(view==="orbit") renderer.render(scene, persp); });
+  const start = POSES.findIndex(p=>"#"+p.id===location.hash); pick.value = Math.max(start,0); select(pick.value);
+  document.querySelector('#views [data-v="pose"]').classList.add("on");
+}
+</script>
+</body></html>

@@ -70,6 +70,8 @@ A new form is picked up automatically: once `forms/<form>.json` exists for a slu
 
 ## Figure
 
+- Character v2 (#7) is generated one image per distinct pose from a 3D pose guide: `tools/poses/` (`inventory.py` → `render.py` → `cutouts.py` → `pair.py`), kit in `design/models/v4/` (see its README). A new form adds poses: rerun the four steps.
+
 - Design **Textbook line A1 "Natural"**: realistic adult proportions, single-contour limbs, sloped shoulders, faceless head (profile shape only on side views), short hair cap above the hairline, black-collar dobok, belt in the selected colour.
 - **Near limbs white, far limbs grey** — this is how left/right is read; keep it for every pose.
 - Seen from behind, a kicking leg is raised in front of the body: draw it over the torso in the far-side grey. (Brian finds this weak; redesign tracked in GitHub issue #1.)

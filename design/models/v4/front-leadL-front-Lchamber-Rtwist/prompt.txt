@@ -1,0 +1,5 @@
+Image 1 is a pose guide (a coloured 3D mannequin); image 2 is the character and drawing style.
+Draw the character from image 2 in exactly the pose, camera angle and foot placement of image 1: same joint angles, same feet, same view. Ignore the mannequin's colours and shapes; on the mannequin the LEFT limbs are blue and the RIGHT limbs are orange, the small cone on the head is the nose.
+Pose: Ap kubi (front stance) with the left foot forward, Hansonnal eolgul bitureo makki (twisted knife-hand high block); left hand: fist chambered palm-up on the belt at the hip, elbow back; right hand: twisted knife-hand high block.
+View: seen from the front, facing the viewer.
+Style: realistic adult taekwondo practitioner in a white dobok with black collar and black belt, faceless head, fine black ink line drawing with light cross-contour shading, bare feet with the toes visible. Single figure, full body, plain white background, no ground shadow, no text, no labels.

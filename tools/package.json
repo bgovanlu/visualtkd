@@ -4,6 +4,7 @@
   "description": "Fonts embedded in the printable PDF sheets",
   "dependencies": {
     "@fontsource/ibm-plex-mono": "5.0.13",
-    "@fontsource/ibm-plex-sans-condensed": "5.0.13"
+    "@fontsource/ibm-plex-sans-condensed": "5.0.13",
+    "three": "^0.169.0"
   }
 }
