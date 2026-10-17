@@ -1,0 +1,533 @@
+{
+ "form": "Hansu",
+ "slug": "hansu",
+ "moves": [
+  {
+   "id": "J",
+   "file": "J.png",
+   "view": "front",
+   "face": null,
+   "stance": "close",
+   "lead": null,
+   "arms": {
+    "L": "gyeopson",
+    "R": "gyeopson"
+   },
+   "tech": "gyeopson",
+   "name": "Gyeopson junbi · Overlapped-hands ready",
+   "desc": "Stand at the centre facing ga, feet together, open hands overlapped in front of the lower belly, left over right (gyeopson junbi).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: moa seogi (closed stance): feet together, inside edges touching, legs straight. RIGHT hand: open hand resting over the other in front of the lower belly, left over right (overlapped-hands ready). LEFT hand: open hand resting over the other in front of the lower belly, left over right (overlapped-hands ready). This is the ready posture of Hansu: Stand at the centre facing ga, feet together, open hands overlapped in front of the lower belly, left over right (gyeopson junbi)."
+  },
+  {
+   "id": "1",
+   "file": "1.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "rwedge",
+    "R": "rwedge"
+   },
+   "tech": "rdwedge",
+   "name": "Sonnal deung momtong hecho makki · Ridge-hand wedge block",
+   "desc": "Step the left foot forward into a left front stance. Ridge-hand opening block, the wrists crossing left over right.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: open hand blocking outward at chest height with the ridge (thumb side), forearms having crossed and opened. LEFT hand: open hand blocking outward at chest height with the ridge (thumb side), forearms having crossed and opened. This is count 1 of Hansu: Step the left foot forward into a left front stance. Ridge-hand opening block, the wrists crossing left over right."
+  },
+  {
+   "id": "2",
+   "file": "2.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "hammerin2",
+    "R": "hammerin2"
+   },
+   "tech": "dhammerin",
+   "name": "Du mejumeok an chigi · Double hammer-fist inward strike",
+   "desc": "Step the right foot forward into a right front stance. Double hammer-fist inward strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: hammer fist swung in toward the centre, ending level with the edge of the body at chest height. LEFT hand: hammer fist swung in toward the centre, ending level with the edge of the body at chest height. This is count 2 of Hansu: Step the right foot forward into a right front stance. Double hammer-fist inward strike."
+  },
+  {
+   "id": "3",
+   "file": "3.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "houter",
+    "L": "low"
+   },
+   "tech": "mountain",
+   "name": "Oesanteul makki · Single mountain block",
+   "desc": "Step the right foot back into a left angled front stance (mo ap kubi). Single mountain block, the rear (right) arm high.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 3 of Hansu: Step the right foot back into a left angled front stance (mo ap kubi). Single mountain block, the rear (right) arm high."
+  },
+  {
+   "id": "4",
+   "file": "4.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Turn the hips square into a left front stance. Right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 4 of Hansu: Turn the hips square into a left front stance. Right middle punch."
+  },
+  {
+   "id": "5",
+   "file": "5.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "houter",
+    "R": "low"
+   },
+   "tech": "mountain",
+   "name": "Oesanteul makki · Single mountain block",
+   "desc": "Step the left foot back into a right angled front stance. Single mountain block, the rear (left) arm high.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 5 of Hansu: Step the left foot back into a right angled front stance. Single mountain block, the rear (left) arm high."
+  },
+  {
+   "id": "6",
+   "file": "6.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Turn the hips square into a right front stance. Left middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 6 of Hansu: Turn the hips square into a right front stance. Left middle punch."
+  },
+  {
+   "id": "7",
+   "file": "7.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "houter",
+    "L": "low"
+   },
+   "tech": "mountain",
+   "name": "Oesanteul makki · Single mountain block",
+   "desc": "Step the right foot back into a left angled front stance. Single mountain block, the rear (right) arm high.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 7 of Hansu: Step the right foot back into a left angled front stance. Single mountain block, the rear (right) arm high."
+  },
+  {
+   "id": "8",
+   "file": "8.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Turn the hips square into a left front stance. Right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 8 of Hansu: Turn the hips square into a left front stance. Right middle punch."
+  },
+  {
+   "id": "9",
+   "file": "9.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "rwedge",
+    "R": "rwedge"
+   },
+   "tech": "rdwedge",
+   "name": "Sonnal deung momtong hecho makki · Ridge-hand wedge block",
+   "desc": "Step the right foot forward into a right front stance. Ridge-hand opening block, right over left.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: open hand blocking outward at chest height with the ridge (thumb side), forearms having crossed and opened. LEFT hand: open hand blocking outward at chest height with the ridge (thumb side), forearms having crossed and opened. This is count 9 of Hansu: Step the right foot forward into a right front stance. Ridge-hand opening block, right over left."
+  },
+  {
+   "id": "10",
+   "file": "10.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "arc",
+    "R": "pressdown"
+   },
+   "tech": "presarc",
+   "name": "Nulleo makki · ageumson geodeureo ap chigi · Pressing block with arc-hand strike",
+   "desc": "Step the left foot out and turn 45° left to face ga-da in a left front stance. Right palm pressing block with a left arc-hand strike to the throat.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): palm pressing block (batangson nulleo makki): open hand pushing straight down in front of the belly, palm down. LEFT hand (far arm): arc-hand strike (kaljaebi): hand open in a C between thumb and fingers, thrust forward at throat height. This is count 10 of Hansu: Step the left foot out and turn 45° left to face ga-da in a left front stance. Right palm pressing block with a left arc-hand strike to the throat."
+  },
+  {
+   "id": "11",
+   "file": "11.png",
+   "view": "side",
+   "face": "R",
+   "stance": "gyeot",
+   "lead": "R",
+   "arms": {
+    "L": "uppercut",
+    "R": "uppercut"
+   },
+   "tech": "duppercut",
+   "name": "Dujumeok jeocho jireugi · Double uppercut",
+   "desc": "Step the right foot forward toward ga-da and bring the left foot in behind into an assisting stance with the right foot forward. Double uppercut.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: gyeotdari seogi (assisting stance): front knee bent, the rear foot close behind the front heel with only its ball down, rear knee bent in behind the front knee. RIGHT foot forward. RIGHT hand (near arm): uppercut (chi jireugi): fist driven upward in front of the chin, palm toward the body. LEFT hand (far arm): uppercut (chi jireugi): fist driven upward in front of the chin, palm toward the body. This is count 11 of Hansu: Step the right foot forward toward ga-da and bring the left foot in behind into an assisting stance with the right foot forward. Double uppercut."
+  },
+  {
+   "id": "12",
+   "file": "12.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "hammerlow",
+    "L": "palmlow"
+   },
+   "tech": "lowtgt",
+   "name": "An palmok pyojeok arae makki · Inner-forearm low target block",
+   "desc": "Slide the left foot back toward the centre and turn 90° left into a horse stance facing na-da. Right inner-forearm low target block into the left palm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: hammer-fist striking down in front of the belly. LEFT hand: open palm held low in front of the belly as a target for the hammer-fist. This is count 12 of Hansu: Slide the left foot back toward the centre and turn 90° left into a horse stance facing na-da. Right inner-forearm low target block into the left palm."
+  },
+  {
+   "id": "13",
+   "file": "13.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "khigh"
+   },
+   "tech": "kskeumgang",
+   "name": "Sonnal keumgang makki · Knife-hand diamond block",
+   "desc": "Step the right foot back toward the centre and turn to face ga-da in a back stance with the left foot forward. Knife-hand diamond block, right hand high.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): knife-hand high block (sonnal eolgul makki): open hand held across and above the forehead, knife edge up. LEFT hand (far arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 13 of Hansu: Step the right foot back toward the centre and turn to face ga-da in a back stance with the left foot forward. Knife-hand diamond block, right hand high."
+  },
+  {
+   "id": "14",
+   "file": "14.png",
+   "view": "side",
+   "face": "R",
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "hingetop"
+   },
+   "tech": "shinge",
+   "name": "Jageun doljjeogwi · Small hinge",
+   "desc": "Lift the left foot to the right knee: crane stance on the right leg, still facing ga-da and looking left toward na-da. Small hinge: both fists at the right hip, left over right.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: RIGHT. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): small hinge: fist held above the other fist in front of the chest. This is count 14 of Hansu: Lift the left foot to the right knee: crane stance on the right leg, still facing ga-da and looking left toward na-da. Small hinge: both fists at the right hip, left over right."
+  },
+  {
+   "id": "15-1",
+   "file": "15-1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Left side kick toward na-da.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: LEFT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 15-1 of Hansu: Left side kick toward na-da."
+  },
+  {
+   "id": "15-2",
+   "file": "15-2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "khigh",
+    "R": "neck"
+   },
+   "tech": "jebi",
+   "name": "Jebipoom mok chigi · Swallow-form neck strike",
+   "desc": "Set the left foot down toward na-da in a left front stance. Swallow-form strike: left knife hand high, right knife hand to the neck.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): knife-hand neck strike (sonnal mok chigi): open hand swung horizontally inward, palm up, knife edge at neck height. LEFT hand (far arm): knife-hand high block (sonnal eolgul makki): open hand held across and above the forehead, knife edge up. This is count 15-2 of Hansu: Set the left foot down toward na-da in a left front stance. Swallow-form strike: left knife hand high, right knife hand to the neck."
+  },
+  {
+   "id": "16-1",
+   "file": "16-1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {},
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Right front kick toward na-da.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 16-1 of Hansu: Right front kick toward na-da."
+  },
+  {
+   "id": "16-2",
+   "file": "16-2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "R": "backfist"
+   },
+   "tech": "stompbf2",
+   "name": "Jitjjigi · deung jumeok ap chigi · Stamp with back-fist strike",
+   "desc": "Stamp the right foot down in front, the left foot crossing in behind: back cross stance. Right back-fist strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. RIGHT foot forward. RIGHT hand (near arm): back-fist strike (deungjumeok ap chigi): arm arcs up and forward, back of the fist striking at face height, elbow slightly bent. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 16-2 of Hansu: Stamp the right foot down in front, the left foot crossing in behind: back cross stance. Right back-fist strike."
+  },
+  {
+   "id": "17",
+   "file": "17.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "ksstrike"
+   },
+   "tech": "ksstrike",
+   "name": "Hansonnal bakkat chigi · Knife-hand outer strike",
+   "desc": "Slide the left foot out toward ga-ra into a horse stance, looking left. Left knife-hand outer strike toward ga-ra.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: knife-hand outer strike (sonnal bakkat chigi): open hand swung outward horizontally at neck height, palm down. This is count 17 of Hansu: Slide the left foot out toward ga-ra into a horse stance, looking left. Left knife-hand outer strike toward ga-ra."
+  },
+  {
+   "id": "18-1",
+   "file": "18-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "eltarget"
+   },
+   "tech": "tkick",
+   "name": "Pyojeok chagi · Target kick",
+   "desc": "Pivot anticlockwise on the left foot: right target kick into the left palm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): open hand held as a target in front of the chest, palm toward the striking elbow. This is count 18-1 of Hansu: Pivot anticlockwise on the left foot: right target kick into the left palm."
+  },
+  {
+   "id": "18-2",
+   "file": "18-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "elbow",
+    "L": "eltarget"
+   },
+   "tech": "eltarget",
+   "name": "Palkup pyojeok chigi · Elbow target strike",
+   "desc": "Set the right foot down toward ga-ra in a horse stance, body turned to face ga-da. Right elbow target strike toward ga-ra.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: elbow strike (palkup dollyeo chigi): arm folded, elbow swung forward horizontally at chin height. LEFT hand: open hand held as a target in front of the chest, palm toward the striking elbow. This is count 18-2 of Hansu: Set the right foot down toward ga-ra in a horse stance, body turned to face ga-da. Right elbow target strike toward ga-ra."
+  },
+  {
+   "id": "19",
+   "file": "19.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "arc",
+    "L": "pressdown"
+   },
+   "tech": "presarc",
+   "name": "Nulleo makki · ageumson geodeureo ap chigi · Pressing block with arc-hand strike",
+   "desc": "Draw the left foot to the right foot facing ga-ra, then step the right foot forward into a right front stance. Left palm pressing block with a right arc-hand strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): arc-hand strike (kaljaebi): hand open in a C between thumb and fingers, thrust forward at throat height. LEFT hand (near arm): palm pressing block (batangson nulleo makki): open hand pushing straight down in front of the belly, palm down. This is count 19 of Hansu: Draw the left foot to the right foot facing ga-ra, then step the right foot forward into a right front stance. Left palm pressing block with a right arc-hand strike."
+  },
+  {
+   "id": "20",
+   "file": "20.png",
+   "view": "side",
+   "face": "L",
+   "stance": "gyeot",
+   "lead": "L",
+   "arms": {
+    "L": "uppercut",
+    "R": "uppercut"
+   },
+   "tech": "duppercut",
+   "name": "Dujumeok jeocho jireugi · Double uppercut",
+   "desc": "Step the left foot forward toward ga-ra and bring the right foot in behind into an assisting stance with the left foot forward. Double uppercut.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: gyeotdari seogi (assisting stance): front knee bent, the rear foot close behind the front heel with only its ball down, rear knee bent in behind the front knee. LEFT foot forward. RIGHT hand (far arm): uppercut (chi jireugi): fist driven upward in front of the chin, palm toward the body. LEFT hand (near arm): uppercut (chi jireugi): fist driven upward in front of the chin, palm toward the body. This is count 20 of Hansu: Step the left foot forward toward ga-ra and bring the right foot in behind into an assisting stance with the left foot forward. Double uppercut."
+  },
+  {
+   "id": "21",
+   "file": "21.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "hammerlow",
+    "R": "palmlow"
+   },
+   "tech": "lowtgt",
+   "name": "An palmok pyojeok arae makki · Inner-forearm low target block",
+   "desc": "Slide the right foot back toward the centre and turn 90° right into a horse stance facing na-ra. Left inner-forearm low target block into the right palm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: open palm held low in front of the belly as a target for the hammer-fist. LEFT hand: hammer-fist striking down in front of the belly. This is count 21 of Hansu: Slide the right foot back toward the centre and turn 90° right into a horse stance facing na-ra. Left inner-forearm low target block into the right palm."
+  },
+  {
+   "id": "22",
+   "file": "22.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "kslow",
+    "L": "khigh"
+   },
+   "tech": "kskeumgang",
+   "name": "Sonnal keumgang makki · Knife-hand diamond block",
+   "desc": "Step the left foot back toward the centre and turn to face ga-ra in a back stance with the right foot forward. Knife-hand diamond block, left hand high.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. LEFT hand (near arm): knife-hand high block (sonnal eolgul makki): open hand held across and above the forehead, knife edge up. This is count 22 of Hansu: Step the left foot back toward the centre and turn to face ga-ra in a back stance with the right foot forward. Knife-hand diamond block, left hand high."
+  },
+  {
+   "id": "23",
+   "file": "23.png",
+   "view": "side",
+   "face": "L",
+   "stance": "crane",
+   "lead": "L",
+   "arms": {
+    "R": "hingetop"
+   },
+   "tech": "shinge",
+   "name": "Jageun doljjeogwi · Small hinge",
+   "desc": "Lift the right foot to the left knee: crane stance on the left leg, still facing ga-ra and looking right toward na-ra. Small hinge: both fists at the left hip, right over left.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: LEFT. RIGHT hand (far arm): small hinge: fist held above the other fist in front of the chest. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 23 of Hansu: Lift the right foot to the left knee: crane stance on the left leg, still facing ga-ra and looking right toward na-ra. Small hinge: both fists at the left hip, right over left."
+  },
+  {
+   "id": "24-1",
+   "file": "24-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Right side kick toward na-ra.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 24-1 of Hansu: Right side kick toward na-ra."
+  },
+  {
+   "id": "24-2",
+   "file": "24-2.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "khigh",
+    "L": "neck"
+   },
+   "tech": "jebi",
+   "name": "Jebipoom mok chigi · Swallow-form neck strike",
+   "desc": "Set the right foot down toward na-ra in a right front stance. Swallow-form strike: right knife hand high, left knife hand to the neck.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): knife-hand high block (sonnal eolgul makki): open hand held across and above the forehead, knife edge up. LEFT hand (near arm): knife-hand neck strike (sonnal mok chigi): open hand swung horizontally inward, palm up, knife edge at neck height. This is count 24-2 of Hansu: Set the right foot down toward na-ra in a right front stance. Swallow-form strike: right knife hand high, left knife hand to the neck."
+  },
+  {
+   "id": "25-1",
+   "file": "25-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {},
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Left front kick toward na-ra.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 25-1 of Hansu: Left front kick toward na-ra."
+  },
+  {
+   "id": "25-2",
+   "file": "25-2.png",
+   "view": "side",
+   "face": "L",
+   "stance": "cross",
+   "lead": "L",
+   "arms": {
+    "L": "backfist"
+   },
+   "tech": "stompbf2",
+   "name": "Jitjjigi · deung jumeok ap chigi · Stamp with back-fist strike",
+   "desc": "Stamp the left foot down in front, the right foot crossing in behind: back cross stance. Left back-fist strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. LEFT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): back-fist strike (deungjumeok ap chigi): arm arcs up and forward, back of the fist striking at face height, elbow slightly bent. This is count 25-2 of Hansu: Stamp the left foot down in front, the right foot crossing in behind: back cross stance. Left back-fist strike."
+  },
+  {
+   "id": "26",
+   "file": "26.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "ksstrike"
+   },
+   "tech": "ksstrike",
+   "name": "Hansonnal bakkat chigi · Knife-hand outer strike",
+   "desc": "Slide the right foot out toward ga-da into a horse stance, looking right. Right knife-hand outer strike toward ga-da.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: knife-hand outer strike (sonnal bakkat chigi): open hand swung outward horizontally at neck height, palm down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 26 of Hansu: Slide the right foot out toward ga-da into a horse stance, looking right. Right knife-hand outer strike toward ga-da."
+  },
+  {
+   "id": "27-1",
+   "file": "27-1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "R": "eltarget"
+   },
+   "tech": "tkick",
+   "name": "Pyojeok chagi · Target kick",
+   "desc": "Pivot clockwise on the right foot: left target kick into the right palm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand (near arm): open hand held as a target in front of the chest, palm toward the striking elbow. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 27-1 of Hansu: Pivot clockwise on the right foot: left target kick into the right palm."
+  },
+  {
+   "id": "27-2",
+   "file": "27-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "elbow",
+    "R": "eltarget"
+   },
+   "tech": "eltarget",
+   "name": "Palkup pyojeok chigi · Elbow target strike",
+   "desc": "Set the left foot down toward ga-da in a horse stance, body turned to face ga-ra. Left elbow target strike toward ga-da.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: open hand held as a target in front of the chest, palm toward the striking elbow. LEFT hand: elbow strike (palkup dollyeo chigi): arm folded, elbow swung forward horizontally at chin height. This is count 27-2 of Hansu: Set the left foot down toward ga-da in a horse stance, body turned to face ga-ra. Left elbow target strike toward ga-da."
+  }
+ ]
+}

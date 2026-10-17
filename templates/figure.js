@@ -8,7 +8,7 @@ const T=Object.fromEntries(Object.entries(LIB.t).map(([k,v])=>[k,v.slice(0,3)]))
 const STANCE=Object.fromEntries(Object.entries(LIB.s).map(([k,v])=>[k,v.slice(0,3)]));
 // library links: /library/<family>/#<slug>
 const techHref=k=>LIB.t[k][3],stanceHref=k=>LIB.s[k][3];
-const DIRN={na:"na",ga:"ga",da1:"da¹",da2:"da²",da3:"da³",ra1:"ra¹",ra2:"ra²",ra3:"ra³"};
+const DIRN={na:"na",ga:"ga",da1:"da¹",da2:"da²",da3:"da³",ra1:"ra¹",ra2:"ra²",ra3:"ra³",gada:"ga-da",nada:"na-da",gara:"ga-ra",nara:"na-ra"};
 
 let gid=0;
 /* ---------- vector helpers ---------- */
@@ -87,7 +87,7 @@ function skel(m,pr){
   }
   if(m.view==="side"){
     const near=m.face==="R"?"R":"L",st=m.stance;
-    const hipY={walk:0,front:14,kick:-2,back:8,skick:-4,rkick:-4,knee:-2,tiger:10,horse:12,cross:6,close:-1,ready:-1,crane:0,nieun:6}[st]*k,lean={walk:2,front:5,kick:-8,back:-3,nieun:-2,skick:-13,rkick:-12,knee:-4,tiger:-1,horse:0,cross:3,close:0,ready:0,crane:0}[st]*tk;
+    const hipY={walk:0,front:14,kick:-2,back:8,skick:-4,rkick:-4,knee:-2,tiger:10,horse:12,cross:6,close:-1,ready:-1,crane:0,nieun:6,gyeot:8}[st]*k,lean={gyeot:2,walk:2,front:5,kick:-8,back:-3,nieun:-2,skick:-13,rkick:-12,knee:-4,tiger:-1,horse:0,cross:3,close:0,ready:0,crane:0}[st]*tk;
     const H=[0,hipY],S=[lean,hipY-pr.torso],u=norm(sub(S,H)),r=[-u[1],u[0]],Lt=pr.torso;
     const P=(x,y)=>add(add(H,mul(r,x)),mul(u,y));
     const Lay={farArm:mk(1),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0),nearArm:mk(0)};
@@ -107,6 +107,7 @@ function skel(m,pr){
       else if(st==="horse"){t=dp==="near"?[19,56]:[11,56];pref=[1,-.1]}             // juchum seogi in profile: legs side by side, knees forward
       else if(st==="crane"){t=lead?[1,56]:[4,25];if(!lead)pref=[1,-.35]}  // hakdari seogi: lifted foot against the standing knee
       else if(st==="cross")t=lead?[8,56]:[-6,56];                        // kkoa seogi: rear foot tucked behind
+      else if(st==="gyeot")t=lead?[10,56]:[-4,56];                       // gyeotdari seogi: rear knee bent in behind the front knee
       else if(st==="close"||st==="ready")t=lead?[3,56]:[-1,56];
       else{t=lead?[58,-16]:[-5,56];if(lead)pref=[.4,-1];}
       t=mul(t,k);
@@ -190,6 +191,7 @@ function skel(m,pr){
       else if(act==="pushlo"){h=add(sh,mul([32,24],ak));p=[1,.3]}          // taesan milgi: lower hand at belt height
       else if(act==="pushhi"){h=add(sh,mul([34,-8],ak));p=[1,.3]}          // taesan milgi: upper hand at lip height
       else if(act==="bamup")h=add(sh,mul([26,-6],ak));
+      else if(act==="hammerin2")h=add(sh,mul([30,4],ak));                 // du mejumeok an chigi: both hammer fists in at chest height
       else h=dp==="near"?add(sh,mul([24,14],ak)):add(sh,mul([17,7],ak));
       addArm(dp==="near"?Lay.nearArm:Lay.farArm,sh,h,p,false,OPEN.has(act));
     });
@@ -210,7 +212,7 @@ function skel(m,pr){
     return{k,hands:HANDS,mirror:m.face==="L",layers:["farArm","farLeg","nearLeg","head","torso","nearArm"].map(q=>Lay[q])};
   }
   const back=m.view==="back",sx=s=>(s==="L"?1:-1)*(back?-1:1),st=m.stance;
-  const hipY=(st==="front"||st==="back"||st==="tiger"||st==="nieun")?6*k:st==="horse"?10*k:st==="cross"?4*k:st==="crane"?-1*k:-3*k,T=hipY-pr.torso;
+  const hipY=(st==="front"||st==="back"||st==="tiger"||st==="nieun")?6*k:st==="horse"?10*k:st==="cross"||st==="gyeot"?4*k:st==="crane"?-1*k:-3*k,T=hipY-pr.torso;
   const Lay={arms:mk(0),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0),kick:mk(1)};
   Lay.arms.part="arm";Lay.farLeg.part=Lay.nearLeg.part=Lay.kick.part="leg";
   ["L","R"].forEach(s=>{side=s;
@@ -222,7 +224,7 @@ function skel(m,pr){
       const lead=s===m.lead;nearer=back?!lead:lead;
       if(lead){an=[x*6*hw,(back?55:60)*k];kn=add(lerp(hp,an,.5),[x*2,0]);sc=back?.9:1}
       else{an=[x*10*hw,(back?60:55)*k];kn=add(lerp(hp,an,.5),[x*4,0]);sc=back?1:.9}
-    }else if(st==="cross"){ // kkoa seogi after a jump: rear foot crossed behind the front one
+    }else if(st==="cross"||st==="gyeot"){ // kkoa seogi after a jump (gyeotdari seogi drawn the same way): rear foot crossed behind the front one
       const lead=s===m.lead;nearer=back?!lead:lead;
       if(lead){an=[x*5*hw,(back?55:60)*k];kn=lerp(hp,an,.5);sc=back?.9:1}
       else{an=[x*-1*hw,(back?60:54)*k];kn=add(lerp(hp,an,.5),[x*2,0]);sc=back?1:.86}
@@ -331,6 +333,7 @@ function skel(m,pr){
       else if(act==="pushlo"){h=[x*-1,hipY-7*k];p=[x,.3]}
       else if(act==="pushhi"){h=[x*-3,T+7*tk];p=[x,.3]}            // drawn at the chest so it never crosses the face
       else if(act==="bamup"){h=[x*-3,T+7*tk];p=[x*.3,1]}           // double knuckle uppercut, kept below the face
+      else if(act==="hammerin2"){h=[x*(pr.shW-3),T+11*tk];p=[x*.3,1]}  // fists level with the edges of the body
       else h=[x*6.5,hipY-12*tk];                                 // junbi
       addArm(Lay.arms,sh,h,p,false,OPEN.has(act));
     }
@@ -504,7 +507,7 @@ function figure(m,opt={}){
    Ap kubi: about 1½ steps long and one fist wide, rear foot turned out. */
 const FT=[[0,-7.4],[3,-5.6],[3.5,1.5],[2.4,6.3],[0,7.4],[-2.4,6.3],[-3.5,1.5],[-3,-5.6]];
 function feet(m){
-  const rot={na:0,ga:180,da1:90,da2:90,da3:90,ra1:-90,ra2:-90,ra3:-90}[m.dir]*Math.PI/180;
+  const rot={na:0,ga:180,da1:90,da2:90,da3:90,ra1:-90,ra2:-90,ra3:-90,gada:135,nada:45,gara:-135,nara:-45}[m.dir]*Math.PI/180;
   const sgn=s=>s==="L"?-1:1,other=s=>s==="L"?"R":"L";
   const foot=(x,y,a,on)=>`<path d="${spline(xf(FT,[x,y],a))}" fill="${on?"var(--fire)":"var(--muted)"}"/>`;
   let s="";
@@ -521,6 +524,8 @@ function feet(m){
     s=foot(l*3,1,0,1)+`<circle cx="${o*5}" cy="1" r="4.6" fill="none" stroke="var(--muted)" stroke-width="1.4" stroke-dasharray="2 1.6"/>`;}
   else if(m.stance==="cross"){const l=sgn(m.lead),o=sgn(other(m.lead));
     s=foot(l*1.5,-3,0,1)+foot(o*-2,7,o*.4,0);}
+  else if(m.stance==="gyeot"){const l=sgn(m.lead),o=sgn(other(m.lead));   // gyeotdari seogi: rear foot close behind and beside the front heel
+    s=foot(l*2,-4,0,1)+foot(o*2.5,6,o*.35,0);}
   else if(m.stance==="back"){const l=sgn(m.lead),o=sgn(other(m.lead));   // dwit kubi: an L shape, rear foot turned 90° out
     s=`<path d="M0 -14V13" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 2"/>`+foot(0,-8,0,1)+foot(o*3,9,o*Math.PI/2,0);}
   else if(m.stance==="nieun"){const o=sgn(other(m.lead));   // nieunja seogi: a short L, heels about one foot apart
@@ -540,6 +545,7 @@ function chip(m){
   if(m.stance==="tiger")return`<span class="chip tiger">${m.lead} · Beom seogi</span>`;
   if(m.stance==="horse")return`<span class="chip horse">Juchum seogi</span>`;
   if(m.stance==="cross")return`<span class="chip">${m.lead} · Kkoa seogi</span>`;
+  if(m.stance==="gyeot")return`<span class="chip">${m.lead} · Gyeotdari seogi</span>`;
   if(m.stance==="close")return`<span class="chip ready">Moa seogi</span>`;
   if(m.stance==="crane")return`<span class="chip crane">${m.lead} · Hakdari</span>`;
   if(m.stance==="back")return`<span class="chip back">${m.lead} · Dwit kubi</span>`;
@@ -550,5 +556,5 @@ function stanceLabel(m){
   if(m.stance==="ready")return"parallel";
   if(["kick","skick","rkick","knee"].includes(m.stance))return sideWord(m.lead)+" kick";
   if(m.stance==="horse"||m.stance==="close")return m.stance;
-  return sideWord(m.lead)+({walk:" walking",front:" front",back:" back",tiger:" tiger",cross:" cross",crane:" crane",nieun:" ㄴ-shape"})[m.stance];
+  return sideWord(m.lead)+({walk:" walking",front:" front",back:" back",tiger:" tiger",cross:" cross",crane:" crane",nieun:" ㄴ-shape",gyeot:" assisting"})[m.stance];
 }

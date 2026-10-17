@@ -13,14 +13,15 @@
 | Sipjin 十進 (十) | /sipjin | 43 | Open items in REVIEW.md; directions checked against the Kukkiwon textbook video |
 | Jitae 地跆 (ㅗ) | /jitae | 39 | Open items in REVIEW.md; directions checked against the Kukkiwon textbook video |
 | Cheonkwon 天拳 (ㅜ) | /cheonkwon | 41 | Open items in REVIEW.md; directions checked against the Kukkiwon textbook video |
+| Hansu 漢水 (水) | /hansu | 34 | Open items in REVIEW.md; first form with diagonal directions |
 
-Planned: Hansu, Ilyeo.
+Planned: Ilyeo.
 
 Every print sheet is exactly 2 pages and every QR code decodes to its expected link.
 
 ## Short links (`/go/`, generated into `site/_redirects`)
-- Kukkiwon form pages: `kukkiwon-t1` … `t8` (boardNo 1347, 1349–1355), `kukkiwon-koryo` / `keumgang` / `taebaek` / `pyongwon` / `sipjin` / `jitae` / `cheonkwon` (1356–1362), `kukkiwon-poomsae`
-- Videos (Kukkiwon Digital Encyclopedia, Mookas TV): `video-t1` … `t6`, `video-koryo`; `video-t7`, `t8`, `keumgang`, `taebaek`, `pyongwon` point to the series playlist until individual videos are found; `video-sipjin`, `video-jitae` and `video-cheonkwon` are the Kukkiwon textbook (vol. 3) videos linked from the Kukkiwon pages
+- Kukkiwon form pages: `kukkiwon-t1` … `t8` (boardNo 1347, 1349–1355), `kukkiwon-koryo` / `keumgang` / `taebaek` / `pyongwon` / `sipjin` / `jitae` / `cheonkwon` / `hansu` (1356–1363), `kukkiwon-poomsae`
+- Videos (Kukkiwon Digital Encyclopedia, Mookas TV): `video-t1` … `t6`, `video-koryo`; `video-t7`, `t8`, `keumgang`, `taebaek`, `pyongwon` point to the series playlist until individual videos are found; `video-sipjin`, `video-jitae`, `video-cheonkwon` and `video-hansu` are the Kukkiwon textbook (vol. 3) videos linked from the Kukkiwon pages
 - `kukkiwon-youtube`, `wt-poomsae-rules`
 
 ## Deployment — live on AWS since 14 October 2026

@@ -1,0 +1,677 @@
+{
+ "form": "Sipjin",
+ "slug": "sipjin",
+ "moves": [
+  {
+   "id": "J",
+   "file": "J.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "junbi",
+    "R": "junbi"
+   },
+   "tech": "junbi",
+   "name": "Junbi · Ready",
+   "desc": "Stand at the centre of the cross facing ga, feet parallel, fists in front of the belt (gibon junbi).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: fist in front of the belt, a fist-width from the body, both fists at the same height. LEFT hand: fist in front of the belt, a fist-width from the body, both fists at the same height. This is the ready posture of Sipjin: Stand at the centre of the cross facing ga, feet parallel, fists in front of the belt (gibon junbi)."
+  },
+  {
+   "id": "1",
+   "file": "1.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "bull",
+    "R": "bull"
+   },
+   "tech": "hwangso",
+   "name": "Hwangso makki · Bull block",
+   "desc": "Without moving the feet, raise both fists slowly past the chest to above the forehead: bull block (about 5 seconds).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: fist raised above the forehead, forearm angled up like an ox horn, the two fists a little apart (bull block). LEFT hand: fist raised above the forehead, forearm angled up like an ox horn, the two fists a little apart (bull block). This is count 1 of Sipjin: Without moving the feet, raise both fists slowly past the chest to above the forehead: bull block (about 5 seconds)."
+  },
+  {
+   "id": "2",
+   "file": "2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "outer",
+    "R": "passist"
+   },
+   "tech": "pouter",
+   "name": "Sonbadak geodeureo momtong bakkat makki · Palm-augmented outer block",
+   "desc": "Turn left to face da, moving the left foot into a back stance with the left foot forward. Left palm-augmented outer block, the right palm bracing the left wrist.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): open palm resting on the other arm's wrist, bracing the block. LEFT hand (far arm): outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. This is count 2 of Sipjin: Turn left to face da, moving the left foot into a back stance with the left foot forward. Left palm-augmented outer block, the right palm bracing the left wrist."
+  },
+  {
+   "id": "3-1",
+   "file": "3-1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksout",
+    "R": "passist"
+   },
+   "tech": "wristturn",
+   "name": "Palmok dollyeo · Wrist turn",
+   "desc": "In the same stance, open the left hand slowly and turn the wrist over, the right palm still on it (about 5 seconds).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): open palm resting on the other arm's wrist, bracing the block. LEFT hand (far arm): single knife-hand outer block (hansonnal bakkat makki): open hand, forearm upright at the side at shoulder height, knife edge outward. This is count 3-1 of Sipjin: In the same stance, open the left hand slowly and turn the wrist over, the right palm still on it (about 5 seconds)."
+  },
+  {
+   "id": "3-2",
+   "file": "3-2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "spear"
+   },
+   "tech": "hspear",
+   "name": "Pyeonsonkkeut eopeo jjireugi · Flat spear-hand thrust",
+   "desc": "Slide the left foot forward into a left front stance. Right flat spear-hand thrust, palm down.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): spear-hand thrust (pyeonsonkkeut sewo tzireugi): open hand, fingers straight, thrust forward at solar-plexus height with the palm facing sideways. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 3-2 of Sipjin: Slide the left foot forward into a left front stance. Right flat spear-hand thrust, palm down."
+  },
+  {
+   "id": "3-3",
+   "file": "3-3.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, left middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 3-3 of Sipjin: In the same stance, left middle punch."
+  },
+  {
+   "id": "3-4",
+   "file": "3-4.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 3-4 of Sipjin: In the same stance, right middle punch."
+  },
+  {
+   "id": "4",
+   "file": "4.png",
+   "view": "back",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "hsanteul",
+   "name": "Hecho taesan makki · Opening mountain block",
+   "desc": "Step the right foot forward toward da and turn to face na in a horse stance, looking right toward da. Opening mountain block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 4 of Sipjin: Step the right foot forward toward da and turn to face na in a horse stance, looking right toward da. Opening mountain block."
+  },
+  {
+   "id": "5-1",
+   "file": "5-1.png",
+   "view": "back",
+   "face": null,
+   "stance": "cross",
+   "lead": "L",
+   "arms": {
+    "L": "grab"
+   },
+   "tech": "pgrab",
+   "name": "Pyojeok japgi · Target grab",
+   "desc": "Cross the left foot in front of the right toward da into a front cross stance. Left target grab, reaching across toward da.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: open hand reaching forward to grab at face height, then pulling back. This is count 5-1 of Sipjin: Cross the left foot in front of the right toward da into a front cross stance. Left target grab, reaching across toward da."
+  },
+  {
+   "id": "5-2",
+   "file": "5-2.png",
+   "view": "back",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "sidepunch"
+   },
+   "tech": "dsidepunch",
+   "name": "Danggyeo yeop jireugi · Pulling side punch",
+   "desc": "Step the right foot on toward da into a horse stance, still facing na. Right pulling side punch toward da, the left hand pulling back to the hip.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: side punch (yeop jireugi): arm fully extended straight out to the side at shoulder height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 5-2 of Sipjin: Step the right foot on toward da into a horse stance, still facing na. Right pulling side punch toward da, the left hand pulling back to the hip."
+  },
+  {
+   "id": "6",
+   "file": "6.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "sideelbow",
+    "R": "sideelbow"
+   },
+   "tech": "yoke",
+   "name": "Meongye chigi · Yoke strike",
+   "desc": "Step the right foot round behind and turn 180° to face ga in a horse stance. Yoke strike, both elbows out to the sides.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is count 6 of Sipjin: Step the right foot round behind and turn 180° to face ga in a horse stance. Yoke strike, both elbows out to the sides."
+  },
+  {
+   "id": "7",
+   "file": "7.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "outer",
+    "L": "passist"
+   },
+   "tech": "pouter",
+   "name": "Sonbadak geodeureo momtong bakkat makki · Palm-augmented outer block",
+   "desc": "Draw the left foot to the right foot, then step the right foot toward ra into a back stance with the right foot forward. Right palm-augmented outer block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. LEFT hand (near arm): open palm resting on the other arm's wrist, bracing the block. This is count 7 of Sipjin: Draw the left foot to the right foot, then step the right foot toward ra into a back stance with the right foot forward. Right palm-augmented outer block."
+  },
+  {
+   "id": "8-1",
+   "file": "8-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksout",
+    "L": "passist"
+   },
+   "tech": "wristturn",
+   "name": "Palmok dollyeo · Wrist turn",
+   "desc": "In the same stance, open the right hand slowly and turn the wrist over, the left palm still on it (about 5 seconds).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): single knife-hand outer block (hansonnal bakkat makki): open hand, forearm upright at the side at shoulder height, knife edge outward. LEFT hand (near arm): open palm resting on the other arm's wrist, bracing the block. This is count 8-1 of Sipjin: In the same stance, open the right hand slowly and turn the wrist over, the left palm still on it (about 5 seconds)."
+  },
+  {
+   "id": "8-2",
+   "file": "8-2.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "spear"
+   },
+   "tech": "hspear",
+   "name": "Pyeonsonkkeut eopeo jjireugi · Flat spear-hand thrust",
+   "desc": "Slide the right foot forward into a right front stance. Left flat spear-hand thrust, palm down.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): spear-hand thrust (pyeonsonkkeut sewo tzireugi): open hand, fingers straight, thrust forward at solar-plexus height with the palm facing sideways. This is count 8-2 of Sipjin: Slide the right foot forward into a right front stance. Left flat spear-hand thrust, palm down."
+  },
+  {
+   "id": "8-3",
+   "file": "8-3.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 8-3 of Sipjin: In the same stance, right middle punch."
+  },
+  {
+   "id": "8-4",
+   "file": "8-4.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, left middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 8-4 of Sipjin: In the same stance, left middle punch."
+  },
+  {
+   "id": "9",
+   "file": "9.png",
+   "view": "back",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "hsanteul",
+   "name": "Hecho taesan makki · Opening mountain block",
+   "desc": "Step the left foot forward toward ra and turn to face na in a horse stance, looking left toward ra. Opening mountain block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 9 of Sipjin: Step the left foot forward toward ra and turn to face na in a horse stance, looking left toward ra. Opening mountain block."
+  },
+  {
+   "id": "10-1",
+   "file": "10-1.png",
+   "view": "back",
+   "face": null,
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "R": "grab"
+   },
+   "tech": "pgrab",
+   "name": "Pyojeok japgi · Target grab",
+   "desc": "Cross the right foot in front of the left toward ra into a front cross stance. Right target grab, reaching across toward ra.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. RIGHT foot forward. RIGHT hand: open hand reaching forward to grab at face height, then pulling back. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 10-1 of Sipjin: Cross the right foot in front of the left toward ra into a front cross stance. Right target grab, reaching across toward ra."
+  },
+  {
+   "id": "10-2",
+   "file": "10-2.png",
+   "view": "back",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "sidepunch"
+   },
+   "tech": "dsidepunch",
+   "name": "Danggyeo yeop jireugi · Pulling side punch",
+   "desc": "Step the left foot on toward ra into a horse stance, still facing na. Left pulling side punch toward ra, the right hand pulling back to the hip.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: side punch (yeop jireugi): arm fully extended straight out to the side at shoulder height. This is count 10-2 of Sipjin: Step the left foot on toward ra into a horse stance, still facing na. Left pulling side punch toward ra, the right hand pulling back to the hip."
+  },
+  {
+   "id": "11",
+   "file": "11.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "sideelbow",
+    "R": "sideelbow"
+   },
+   "tech": "yoke",
+   "name": "Meongye chigi · Yoke strike",
+   "desc": "Step the left foot round behind and turn 180° to face ga in a horse stance. Yoke strike, both elbows out to the sides.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is count 11 of Sipjin: Step the left foot round behind and turn 180° to face ga in a horse stance. Yoke strike, both elbows out to the sides."
+  },
+  {
+   "id": "12",
+   "file": "12.png",
+   "view": "back",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "outer",
+    "L": "passist"
+   },
+   "tech": "pouter",
+   "name": "Sonbadak geodeureo momtong bakkat makki · Palm-augmented outer block",
+   "desc": "Step the right foot back and turn 180° to face na in a back stance with the right foot forward. Right palm-augmented outer block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. LEFT hand: open palm resting on the other arm's wrist, bracing the block. This is count 12 of Sipjin: Step the right foot back and turn 180° to face na in a back stance with the right foot forward. Right palm-augmented outer block."
+  },
+  {
+   "id": "13-1",
+   "file": "13-1.png",
+   "view": "back",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksout",
+    "L": "passist"
+   },
+   "tech": "wristturn",
+   "name": "Palmok dollyeo · Wrist turn",
+   "desc": "In the same stance, open the right hand slowly and turn the wrist over, the left palm still on it (about 5 seconds).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: single knife-hand outer block (hansonnal bakkat makki): open hand, forearm upright at the side at shoulder height, knife edge outward. LEFT hand: open palm resting on the other arm's wrist, bracing the block. This is count 13-1 of Sipjin: In the same stance, open the right hand slowly and turn the wrist over, the left palm still on it (about 5 seconds)."
+  },
+  {
+   "id": "13-2",
+   "file": "13-2.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "spear"
+   },
+   "tech": "hspear",
+   "name": "Pyeonsonkkeut eopeo jjireugi · Flat spear-hand thrust",
+   "desc": "Slide the right foot forward into a right front stance. Left flat spear-hand thrust, palm down.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: spear-hand thrust (pyeonsonkkeut sewo tzireugi): open hand, fingers straight, thrust forward at solar-plexus height with the palm facing sideways. This is count 13-2 of Sipjin: Slide the right foot forward into a right front stance. Left flat spear-hand thrust, palm down."
+  },
+  {
+   "id": "13-3",
+   "file": "13-3.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 13-3 of Sipjin: In the same stance, right middle punch."
+  },
+  {
+   "id": "13-4",
+   "file": "13-4.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, left middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 13-4 of Sipjin: In the same stance, left middle punch."
+  },
+  {
+   "id": "14",
+   "file": "14.png",
+   "view": "back",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "ksguard"
+   },
+   "tech": "kslowa",
+   "name": "Sonnal geodeureo naeryeo makki · Augmented low knife-hand block",
+   "desc": "Step the left foot forward toward na into a back stance with the left foot forward. Augmented low knife-hand block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 14 of Sipjin: Step the left foot forward toward na into a back stance with the left foot forward. Augmented low knife-hand block."
+  },
+  {
+   "id": "15",
+   "file": "15.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "rockhi",
+    "L": "rocklo"
+   },
+   "tech": "rockpush",
+   "name": "Bawi milgi · Rock push",
+   "desc": "Step the right foot forward into a right front stance. Gather both open hands at the hip and push them forward and up: rock push (about 5 seconds).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: open hand pushed forward at head height, palm out (upper hand of the rock push). LEFT hand: open hand pushed forward in front of the face, palm out (lower hand of the rock push). This is count 15 of Sipjin: Step the right foot forward into a right front stance. Gather both open hands at the hip and push them forward and up: rock push (about 5 seconds)."
+  },
+  {
+   "id": "16",
+   "file": "16.png",
+   "view": "side",
+   "face": "L",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "rwedge",
+    "R": "rwedge"
+   },
+   "tech": "rdwedge",
+   "name": "Sonnal deung momtong hecho makki · Ridge-hand wedge block",
+   "desc": "Pivot 90° left to face ra, sliding the right foot back into a horse stance across the line. Ridge-hand wedge block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (far arm): open hand blocking outward at chest height with the ridge (thumb side), forearms having crossed and opened. LEFT hand (near arm): open hand blocking outward at chest height with the ridge (thumb side), forearms having crossed and opened. This is count 16 of Sipjin: Pivot 90° left to face ra, sliding the right foot back into a horse stance across the line. Ridge-hand wedge block."
+  },
+  {
+   "id": "17",
+   "file": "17.png",
+   "view": "side",
+   "face": "L",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "kspread",
+    "R": "kspread"
+   },
+   "tech": "kspread",
+   "name": "Sonnal arae hecho makki · Knife-hand low spread block",
+   "desc": "In the same stance, knife-hand low spread block, slowly (about 5 seconds).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (far arm): knife-hand spreading block: open hand extended down and out to the side. LEFT hand (near arm): knife-hand spreading block: open hand extended down and out to the side. This is count 17 of Sipjin: In the same stance, knife-hand low spread block, slowly (about 5 seconds)."
+  },
+  {
+   "id": "18",
+   "file": "18.png",
+   "view": "side",
+   "face": "L",
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "spread",
+    "R": "spread"
+   },
+   "tech": "spread",
+   "name": "Arae hecho makki · Low spread block",
+   "desc": "Straighten the legs into a wide parallel stance while slowly closing both hands into fists, arms still spread low (about 5 seconds).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand (far arm): low spreading block (arae hecheo makki): arm extended down and out to the side of the hip. LEFT hand (near arm): low spreading block (arae hecheo makki): arm extended down and out to the side of the hip. This is count 18 of Sipjin: Straighten the legs into a wide parallel stance while slowly closing both hands into fists, arms still spread low (about 5 seconds)."
+  },
+  {
+   "id": "19",
+   "file": "19.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "lift"
+   },
+   "tech": "lift",
+   "name": "Geodeo olligi · Scooping lift",
+   "desc": "Pivot 90° left to face ga in a left front stance. Scooping lift with the left arm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: forearm lifting upward in front of the body, hand open, as if scooping up a kick. This is count 19 of Sipjin: Pivot 90° left to face ga in a left front stance. Scooping lift with the left arm."
+  },
+  {
+   "id": "20",
+   "file": "20.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "rockhi",
+    "L": "rocklo"
+   },
+   "tech": "rockpush",
+   "name": "Bawi milgi · Rock push",
+   "desc": "In the same stance, gather both open hands at the right hip and push them forward and up: rock push (about 5 seconds).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: open hand pushed forward at head height, palm out (upper hand of the rock push). LEFT hand: open hand pushed forward in front of the face, palm out (lower hand of the rock push). This is count 20 of Sipjin: In the same stance, gather both open hands at the right hip and push them forward and up: rock push (about 5 seconds)."
+  },
+  {
+   "id": "21-1",
+   "file": "21-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "R": "hingetop"
+   },
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Right front kick toward ga, both fists drawn to the left hip.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand: small hinge: fist held above the other fist in front of the chest. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 21-1 of Sipjin: Right front kick toward ga, both fists drawn to the left hip."
+  },
+  {
+   "id": "21-2",
+   "file": "21-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "chet",
+    "R": "chet"
+   },
+   "tech": "chetdari",
+   "name": "Chetdari jireugi · Fork punch",
+   "desc": "Land the right foot forward in a right front stance. Fork punch, both fists together.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: fist punching forward at chest height alongside the other fist, both together (fork punch). LEFT hand: fist punching forward at chest height alongside the other fist, both together (fork punch). This is count 21-2 of Sipjin: Land the right foot forward in a right front stance. Fork punch, both fists together."
+  },
+  {
+   "id": "22-1",
+   "file": "22-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "hingetop"
+   },
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Left front kick, both fists drawn to the right hip.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: small hinge: fist held above the other fist in front of the chest. This is count 22-1 of Sipjin: Left front kick, both fists drawn to the right hip."
+  },
+  {
+   "id": "22-2",
+   "file": "22-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "chet",
+    "R": "chet"
+   },
+   "tech": "chetdari",
+   "name": "Chetdari jireugi · Fork punch",
+   "desc": "Land the left foot forward in a left front stance. Fork punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist punching forward at chest height alongside the other fist, both together (fork punch). LEFT hand: fist punching forward at chest height alongside the other fist, both together (fork punch). This is count 22-2 of Sipjin: Land the left foot forward in a left front stance. Fork punch."
+  },
+  {
+   "id": "23-1",
+   "file": "23-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "R": "hingetop"
+   },
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Right front kick, both fists drawn to the left hip.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand: small hinge: fist held above the other fist in front of the chest. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 23-1 of Sipjin: Right front kick, both fists drawn to the left hip."
+  },
+  {
+   "id": "23-2",
+   "file": "23-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "R": "backfist",
+    "L": "assist"
+   },
+   "tech": "abackfist",
+   "name": "Geodeureo deung jumeok ap chigi · Augmented back-fist strike",
+   "desc": "Stamp the right foot down in front and draw the left foot behind it into a back cross stance. Right augmented back-fist strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. RIGHT foot forward. RIGHT hand: back-fist strike (deungjumeok ap chigi): arm arcs up and forward, back of the fist striking at face height, elbow slightly bent. LEFT hand: supporting fist placed under the elbow of the blocking arm. This is count 23-2 of Sipjin: Stamp the right foot down in front and draw the left foot behind it into a back cross stance. Right augmented back-fist strike."
+  },
+  {
+   "id": "24",
+   "file": "24.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "rockhi",
+    "L": "rocklo"
+   },
+   "tech": "rockpush",
+   "name": "Bawi milgi · Rock push",
+   "desc": "Pivot on the left foot and step the right foot back toward ga, turning 180° to face na in a left front stance. Rock push (about 5 seconds).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: open hand pushed forward at head height, palm out (upper hand of the rock push). LEFT hand: open hand pushed forward in front of the face, palm out (lower hand of the rock push). This is count 24 of Sipjin: Pivot on the left foot and step the right foot back toward ga, turning 180° to face na in a left front stance. Rock push (about 5 seconds)."
+  },
+  {
+   "id": "25",
+   "file": "25.png",
+   "view": "back",
+   "face": null,
+   "stance": "tiger",
+   "lead": "L",
+   "arms": {
+    "L": "kxlow",
+    "R": "kxlow"
+   },
+   "tech": "ksxlow",
+   "name": "Sonnal eotgeoreo arae makki · Knife-hand low X block",
+   "desc": "Draw the left foot back into a tiger stance with the left foot forward. Knife-hand low X block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. LEFT foot forward. RIGHT hand: open hand crossed at the wrist with the other hand, low in front of the belly (knife-hand low X block). LEFT hand: open hand crossed at the wrist with the other hand, low in front of the belly (knife-hand low X block). This is count 25 of Sipjin: Draw the left foot back into a tiger stance with the left foot forward. Knife-hand low X block."
+  },
+  {
+   "id": "26",
+   "file": "26.png",
+   "view": "back",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "rdblock",
+   "name": "Sonnal deung momtong makki · Ridge-hand block",
+   "desc": "Step the right foot forward into a back stance with the right foot forward. Right ridge-hand block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. LEFT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 26 of Sipjin: Step the right foot forward into a back stance with the right foot forward. Right ridge-hand block."
+  },
+  {
+   "id": "27",
+   "file": "27.png",
+   "view": "back",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "chet",
+    "R": "chet"
+   },
+   "tech": "chetdari",
+   "name": "Chetdari jireugi · Fork punch",
+   "desc": "Step the left foot forward into a back stance with the left foot forward. Fork punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: fist punching forward at chest height alongside the other fist, both together (fork punch). LEFT hand: fist punching forward at chest height alongside the other fist, both together (fork punch). This is count 27 of Sipjin: Step the left foot forward into a back stance with the left foot forward. Fork punch."
+  },
+  {
+   "id": "28",
+   "file": "28.png",
+   "view": "back",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "L": "chet",
+    "R": "chet"
+   },
+   "tech": "chetdari",
+   "name": "Chetdari jireugi · Fork punch",
+   "desc": "Step the right foot forward into a back stance with the right foot forward. Fork punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: fist punching forward at chest height alongside the other fist, both together (fork punch). LEFT hand: fist punching forward at chest height alongside the other fist, both together (fork punch). This is count 28 of Sipjin: Step the right foot forward into a back stance with the right foot forward. Fork punch."
+  }
+ ]
+}

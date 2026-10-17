@@ -1,0 +1,596 @@
+{
+ "form": "Jitae",
+ "slug": "jitae",
+ "moves": [
+  {
+   "id": "J",
+   "file": "J.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "junbi",
+    "R": "junbi"
+   },
+   "tech": "junbi",
+   "name": "Junbi · Ready",
+   "desc": "Stand at the centre of the base line facing ga, feet parallel, fists in front of the belt (gibon junbi).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: fist in front of the belt, a fist-width from the body, both fists at the same height. LEFT hand: fist in front of the belt, a fist-width from the body, both fists at the same height. This is the ready posture of Jitae: Stand at the centre of the base line facing ga, feet parallel, fists in front of the belt (gibon junbi)."
+  },
+  {
+   "id": "1",
+   "file": "1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "outer"
+   },
+   "tech": "anouter",
+   "name": "An palmok momtong bakkat makki · Inner-forearm outer block",
+   "desc": "Turn left to face da, stepping the left foot into a back stance with the left foot forward. Left inner-forearm outer block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. This is count 1 of Jitae: Turn left to face da, stepping the left foot into a back stance with the left foot forward. Left inner-forearm outer block."
+  },
+  {
+   "id": "2-1",
+   "file": "2-1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "high"
+   },
+   "tech": "high",
+   "name": "Eolgul makki · High block",
+   "desc": "Step the right foot forward into a right front stance. Right upward block, slowly (about 4 seconds).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (near arm): high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 2-1 of Jitae: Step the right foot forward into a right front stance. Right upward block, slowly (about 4 seconds)."
+  },
+  {
+   "id": "2-2",
+   "file": "2-2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, left middle punch, slowly (about 4 seconds), the right hand pulling back to the hip.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 2-2 of Jitae: In the same stance, left middle punch, slowly (about 4 seconds), the right hand pulling back to the hip."
+  },
+  {
+   "id": "3",
+   "file": "3.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "outer"
+   },
+   "tech": "anouter",
+   "name": "An palmok momtong bakkat makki · Inner-forearm outer block",
+   "desc": "Step the right foot round and turn 180° to face ra in a back stance with the right foot forward. Right inner-forearm outer block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 3 of Jitae: Step the right foot round and turn 180° to face ra in a back stance with the right foot forward. Right inner-forearm outer block."
+  },
+  {
+   "id": "4-1",
+   "file": "4-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "high"
+   },
+   "tech": "high",
+   "name": "Eolgul makki · High block",
+   "desc": "Step the left foot forward into a left front stance. Left upward block, slowly (about 4 seconds).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. This is count 4-1 of Jitae: Step the left foot forward into a left front stance. Left upward block, slowly (about 4 seconds)."
+  },
+  {
+   "id": "4-2",
+   "file": "4-2.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, right middle punch, slowly (about 4 seconds).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (far arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 4-2 of Jitae: In the same stance, right middle punch, slowly (about 4 seconds)."
+  },
+  {
+   "id": "5",
+   "file": "5.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "name": "Arae makki · Low block",
+   "desc": "Move the left foot and turn 90° left to face ga in a left front stance. Left low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 5 of Jitae: Move the left foot and turn 90° left to face ga in a left front stance. Left low block."
+  },
+  {
+   "id": "6",
+   "file": "6.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "khigh"
+   },
+   "tech": "ksrise",
+   "name": "Sonnal ollyeo makki · Knife-hand rising block",
+   "desc": "Slide the left foot back into a back stance with the left foot forward. Left knife-hand rising block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: knife-hand high block (sonnal eolgul makki): open hand held across and above the forehead, knife edge up. This is count 6 of Jitae: Slide the left foot back into a back stance with the left foot forward. Left knife-hand rising block."
+  },
+  {
+   "id": "7-1",
+   "file": "7-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "kick",
+   "lead": "R",
+   "arms": {},
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Right front kick.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 7-1 of Jitae: Right front kick."
+  },
+  {
+   "id": "7-2",
+   "file": "7-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "kslow",
+    "L": "ksguard"
+   },
+   "tech": "kslowa",
+   "name": "Sonnal geodeureo naeryeo makki · Augmented low knife-hand block",
+   "desc": "Set the right foot down forward in a back stance with the right foot forward. Augmented low knife-hand block with the right hand.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. LEFT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 7-2 of Jitae: Set the right foot down forward in a back stance with the right foot forward. Augmented low knife-hand block with the right hand."
+  },
+  {
+   "id": "8",
+   "file": "8.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "outer"
+   },
+   "tech": "outer",
+   "name": "Momtong bakkat makki · Outer middle block",
+   "desc": "In the same stance, right outer middle block, slowly (about 5 seconds).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 8 of Jitae: In the same stance, right outer middle block, slowly (about 5 seconds)."
+  },
+  {
+   "id": "9-1",
+   "file": "9-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "kick",
+   "lead": "L",
+   "arms": {},
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Left front kick.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 9-1 of Jitae: Left front kick."
+  },
+  {
+   "id": "9-2",
+   "file": "9-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "ksguard"
+   },
+   "tech": "kslowa",
+   "name": "Sonnal geodeureo naeryeo makki · Augmented low knife-hand block",
+   "desc": "Set the left foot down forward in a back stance with the left foot forward. Augmented low knife-hand block with the left hand.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 9-2 of Jitae: Set the left foot down forward in a back stance with the left foot forward. Augmented low knife-hand block with the left hand."
+  },
+  {
+   "id": "10",
+   "file": "10.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "high"
+   },
+   "tech": "high",
+   "name": "Eolgul makki · High block",
+   "desc": "Slide the left foot forward into a left front stance. Left upward block, slowly (about 5 seconds).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. This is count 10 of Jitae: Slide the left foot forward into a left front stance. Left upward block, slowly (about 5 seconds)."
+  },
+  {
+   "id": "11-1",
+   "file": "11-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "hingetop"
+   },
+   "tech": "shinge",
+   "name": "Jageun doljjeogwi · Small hinge",
+   "desc": "Small hinge: draw both fists to the right hip, left over right, as the right foot starts its step.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: small hinge: fist held above the other fist in front of the chest. This is count 11-1 of Jitae: Small hinge: draw both fists to the right hip, left over right, as the right foot starts its step."
+  },
+  {
+   "id": "11-2",
+   "file": "11-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "high",
+    "R": "punch"
+   },
+   "tech": "kpunch",
+   "name": "Keumgang ap jireugi · Diamond punch",
+   "desc": "Step the right foot forward into a right front stance. Diamond punch: left upward block and right middle punch together.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. This is count 11-2 of Jitae: Step the right foot forward into a right front stance. Diamond punch: left upward block and right middle punch together."
+  },
+  {
+   "id": "12-1",
+   "file": "12-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "inside"
+   },
+   "tech": "inside",
+   "name": "Momtong an makki · Inside middle block",
+   "desc": "In the same stance, left inside middle block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: inside middle block (momtong an makki): forearm upright in front of the chest, elbow bent about 90 degrees, fist at shoulder height on the centre line, palm toward the body. This is count 12-1 of Jitae: In the same stance, left inside middle block."
+  },
+  {
+   "id": "12-2",
+   "file": "12-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "inside",
+    "L": "assist"
+   },
+   "tech": "ainside",
+   "name": "Geodeureo momtong an makki · Augmented inside block",
+   "desc": "In the same stance, right augmented inside block, the left fist brought under the right elbow.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: inside middle block (momtong an makki): forearm upright in front of the chest, elbow bent about 90 degrees, fist at shoulder height on the centre line, palm toward the body. LEFT hand: supporting fist placed under the elbow of the blocking arm. This is count 12-2 of Jitae: In the same stance, right augmented inside block, the left fist brought under the right elbow."
+  },
+  {
+   "id": "13",
+   "file": "13.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kslow"
+   },
+   "tech": "kslow",
+   "name": "Sonnal arae makki · Low knife-hand block",
+   "desc": "Step the right foot back into a back stance with the left foot forward. Left low knife-hand block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 13 of Jitae: Step the right foot back into a back stance with the left foot forward. Left low knife-hand block."
+  },
+  {
+   "id": "14-1",
+   "file": "14-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "kick",
+   "lead": "R",
+   "arms": {},
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Right front kick.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 14-1 of Jitae: Right front kick."
+  },
+  {
+   "id": "14-2",
+   "file": "14-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Set the right foot back down behind, in a left front stance. Right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 14-2 of Jitae: Set the right foot back down behind, in a left front stance. Right middle punch."
+  },
+  {
+   "id": "14-3",
+   "file": "14-3.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, left middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 14-3 of Jitae: In the same stance, left middle punch."
+  },
+  {
+   "id": "15",
+   "file": "15.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "bull",
+    "R": "bull"
+   },
+   "tech": "hwangso",
+   "name": "Hwangso makki · Bull block",
+   "desc": "Move the left foot back and turn left to face da in a horse stance across the stem. Bull block, slowly (about 5 seconds).",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: fist raised above the forehead, forearm angled up like an ox horn, the two fists a little apart (bull block). LEFT hand: fist raised above the forehead, forearm angled up like an ox horn, the two fists a little apart (bull block). This is count 15 of Jitae: Move the left foot back and turn left to face da in a horse stance across the stem. Bull block, slowly (about 5 seconds)."
+  },
+  {
+   "id": "16",
+   "file": "16.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "lowside"
+   },
+   "tech": "lowside",
+   "name": "Naeryeo yeop makki · Low side block",
+   "desc": "In the same stance, left low side block toward na.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: forearm swept down and out to the side, fist beside and below the hip (low side block). This is count 16 of Jitae: In the same stance, left low side block toward na."
+  },
+  {
+   "id": "17",
+   "file": "17.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "ksside"
+   },
+   "tech": "ksside",
+   "name": "Hansonnal yeop makki · Knife-hand side block",
+   "desc": "In the same stance, turning the head toward ga, right knife-hand side block toward ga.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: knife-hand side block (sonnal yeop makki): open hand extended straight out to the side at shoulder height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 17 of Jitae: In the same stance, turning the head toward ga, right knife-hand side block toward ga."
+  },
+  {
+   "id": "18",
+   "file": "18.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "hammerin",
+    "R": "htarget"
+   },
+   "tech": "hammertgt",
+   "name": "Mejumeok pyojeok an chigi · Hammer-fist target strike",
+   "desc": "In the same stance, left hammer-fist strike inward into the open right hand.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: open hand held out to the side at face height as a target. LEFT hand: hammer fist swung across the body into the other open hand at the side. This is count 18 of Jitae: In the same stance, left hammer-fist strike inward into the open right hand."
+  },
+  {
+   "id": "19",
+   "file": "19.png",
+   "view": "front",
+   "face": null,
+   "stance": "crane",
+   "lead": "L",
+   "arms": {
+    "R": "lowside"
+   },
+   "tech": "lowside",
+   "name": "Naeryeo yeop makki · Low side block",
+   "desc": "Lift the right foot to the left knee: crane stance on the left leg. Right low side block toward ga.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: LEFT. RIGHT hand: forearm swept down and out to the side, fist beside and below the hip (low side block). LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 19 of Jitae: Lift the right foot to the left knee: crane stance on the left leg. Right low side block toward ga."
+  },
+  {
+   "id": "20-1",
+   "file": "20-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "crane",
+   "lead": "L",
+   "arms": {
+    "R": "hingetop"
+   },
+   "tech": "shinge",
+   "name": "Jageun doljjeogwi · Small hinge",
+   "desc": "In the same stance, small hinge: both fists at the left hip, right over left.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: LEFT. RIGHT hand: small hinge: fist held above the other fist in front of the chest. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 20-1 of Jitae: In the same stance, small hinge: both fists at the left hip, right over left."
+  },
+  {
+   "id": "20-2",
+   "file": "20-2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "R": "hingetop"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Pivot on the left foot and right side kick toward ga.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (near arm): small hinge: fist held above the other fist in front of the chest. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 20-2 of Jitae: Pivot on the left foot and right side kick toward ga."
+  },
+  {
+   "id": "21",
+   "file": "21.png",
+   "view": "front",
+   "face": null,
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "lowside"
+   },
+   "tech": "lowside",
+   "name": "Naeryeo yeop makki · Low side block",
+   "desc": "Set the right foot down beside the left, then lift the left foot to the right knee: crane stance on the right leg. Left low side block toward na.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: RIGHT. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: forearm swept down and out to the side, fist beside and below the hip (low side block). This is count 21 of Jitae: Set the right foot down beside the left, then lift the left foot to the right knee: crane stance on the right leg. Left low side block toward na."
+  },
+  {
+   "id": "22",
+   "file": "22.png",
+   "view": "front",
+   "face": null,
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "hingetop"
+   },
+   "tech": "shinge",
+   "name": "Jageun doljjeogwi · Small hinge",
+   "desc": "In the same stance, small hinge: both fists at the right hip, left over right.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: RIGHT. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: small hinge: fist held above the other fist in front of the chest. This is count 22 of Jitae: In the same stance, small hinge: both fists at the right hip, left over right."
+  },
+  {
+   "id": "23-1",
+   "file": "23-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "hingetop"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Pivot on the right foot and left side kick toward na.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: LEFT. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): small hinge: fist held above the other fist in front of the chest. This is count 23-1 of Jitae: Pivot on the right foot and left side kick toward na."
+  },
+  {
+   "id": "23-2",
+   "file": "23-2.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Set the left foot down forward toward na in a left front stance. Right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 23-2 of Jitae: Set the left foot down forward toward na in a left front stance. Right middle punch."
+  },
+  {
+   "id": "24",
+   "file": "24.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Step the right foot forward into a right front stance. Right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 24 of Jitae: Step the right foot forward into a right front stance. Right middle punch."
+  },
+  {
+   "id": "25",
+   "file": "25.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "ksguard"
+   },
+   "tech": "kslowa",
+   "name": "Sonnal geodeureo naeryeo makki · Augmented low knife-hand block",
+   "desc": "Move the left foot and turn 270° left to face da in a back stance with the left foot forward. Augmented low knife-hand block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand (far arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 25 of Jitae: Move the left foot and turn 270° left to face da in a back stance with the left foot forward. Augmented low knife-hand block."
+  },
+  {
+   "id": "26",
+   "file": "26.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Step the right foot forward into a back stance with the right foot forward. Right double knife-hand block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (near arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. LEFT hand (far arm): guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 26 of Jitae: Step the right foot forward into a back stance with the right foot forward. Right double knife-hand block."
+  },
+  {
+   "id": "27",
+   "file": "27.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "kslow",
+    "L": "ksguard"
+   },
+   "tech": "kslowa",
+   "name": "Sonnal geodeureo naeryeo makki · Augmented low knife-hand block",
+   "desc": "Move the right foot and turn 180° to face ra in a back stance with the right foot forward. Augmented low knife-hand block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. LEFT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 27 of Jitae: Move the right foot and turn 180° to face ra in a back stance with the right foot forward. Augmented low knife-hand block."
+  },
+  {
+   "id": "28",
+   "file": "28.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Step the left foot forward into a back stance with the left foot forward. Left double knife-hand block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (far arm): guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand (near arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. This is count 28 of Jitae: Step the left foot forward into a back stance with the left foot forward. Left double knife-hand block."
+  }
+ ]
+}

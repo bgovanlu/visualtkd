@@ -278,6 +278,25 @@ Sources: [Kukkiwon textbook video](https://www.youtube.com/watch?v=bGr5_MblBp8) 
 - [ ] **Uppercut (2-2)** drawn at chest height in front view (ends at lip height per NBTKDA), so it does not cover the face.
 - [ ] **Kihap** at the side kick 8-1 (NBTKDA, fandom). Only one.
 
+## Hansu · 한수
+
+Sources: [Kukkiwon textbook video](https://www.youtube.com/watch?v=dUHTrwkoYw8) (QR on the [Kukkiwon page](https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1363&page=1&menuLevel=3&menuNo=72); confirms the centre-line moves and the diagonal work, though its camera cuts make exact diagonals hard to read), [NBTKDA chart](https://images.squarespace-cdn.com/content/v1/58b45cec6b8f5bc3d705a16e/6c17d898-5159-4952-83a9-7cc315d03561/16+Hansu+Poomsae+Chart+-+NBTKDA+Poomsae+Chart.png) (21 counts: front leg, Korean names, kihaps; notes on [nbtkda.com/hansu](https://www.nbtkda.com/hansu)), Taekwondo fandom wiki (cross-check only: 27 counts with the corner for every move), Kukkiwon (meaning, floor line 水).
+
+- [ ] **Movement count.** Not stated on Kukkiwon's pages. Fandom numbers 27 and matches NBTKDA's 21 technique for technique. **Page says 27 movements**; sub-numbers only for kick + technique pairs (15, 16, 18, 24, 25, 27).
+- [ ] **Diagonal directions (new on the site).** 10–27 face the four diagonals, named by the two edges they point between: ga-da (forward-left of the start), na-da, ga-ra, na-ra. **Directions follow fandom's corner for each move**; NBTKDA confirms the diagonal step at 10. The video agrees in general but its camera cuts don't let me check each corner. Diagonal moves are drawn as side views (facing right for da diagonals, left for ra), horse stances as front views.
+- [ ] **Floor line 水 on the board.** The centre line holds 1–9; four spokes run from it to the corner groups (na-ra top left, na-da top right, ga-ra bottom left, ga-da bottom right); the moves that come back toward the centre (12–13, 17–18, 21–22, 26–27) sit beside the spokes. Schematic: the minimap uses the simulated positions.
+- [ ] **End position.** The simulator ends 3.4 foot lengths toward na of the start. The centre-line part alone (two steps forward, three back, one forward) leaves you about one foot length behind the start before the diagonals begin.
+- [ ] **Angled front stance (mo ap kubi) at 3, 5, 7** drawn with the front stance chip; descriptions say "angled front stance". Mountain block with the **rear arm high** (NBTKDA: from the front the rear arm should be hidden); fandom gives no arms.
+- [ ] **4, 6, 8 punches.** Fandom: turn the torso square, punch; NBTKDA: "forward stance, reverse punch". Drawn so.
+- [ ] **10 and 19 (pressing block + arc-hand strike).** NBTKDA 7: left hand strike, right hand block (and mirrored at 15b). Fandom 19a/19b splits a closed-stance chamber from the strike; **drawn as one figure**, with the feet coming together then stepping out (footwork hint).
+- [ ] **Assisting stance (gyeotdari seogi), new on the site** for 11 and 20: library entry, footprint, chip, simulator; the figure reuses the cross-stance body. NBTKDA: the double punch lands with the front foot, as in Taegeuk 7.
+- [ ] **12 and 21, low target block.** Horse stance facing na-da (na-ra), the blocking forearm meeting the other palm at the belt (NBTKDA: right arm at 12, left at 21). Which way the body faces in these horse stances is from fandom only: check.
+- [ ] **13 and 22, knife-hand diamond block.** NBTKDA 10: left arm low, right arm high (mirrored at 18). Drawn so.
+- [ ] **14 and 23 small hinge in crane stance, still facing the ga diagonal and looking toward the na diagonal** (fandom). The side kicks 15-1 and 24-1 go toward the na diagonal.
+- [ ] **16-2 and 25-2, stamp + back fist.** NBTKDA: "forward" back-fist strike; fandom: back fist "to the right side of the body". **New library entry (stamp with back-fist strike), drawn forward.** Back cross stance. Kihap on both (NBTKDA, fandom).
+- [ ] **17–18 and 26–27 travel across the centre** from one na diagonal toward the opposite ga diagonal (fandom: "you continue that northeastward movement"). Horse at 17 facing na-ra, 18-2 turned to face ga-da (mirrored at 26/27-2), the knife-hand strike and the elbow both toward the ga diagonal ahead. Check against the textbook.
+- [ ] **Overlapped-hands start and finish** (gyeopson junbi), as Cheonkwon. Baro: the right foot steps in (fandom; NBTKDA "right steps").
+
 ---
 
 _Taegeuk items generated while building Taegeuk 5–8, and black-belt items while building Koryo, Keumgang and Taebaek, both on 13 October 2026. Add new items under the form they belong to._

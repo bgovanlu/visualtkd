@@ -38,6 +38,7 @@ h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6v
 /* Board */
 .scroller{overflow-x:auto;border-radius:14px;background:var(--surface);border:1px solid var(--line)}
 .board{position:relative;min-width:{{BOARD_MIN}}px;padding:44px 64px 52px;display:flex;flex-direction:column;gap:6px}
+.spoke{position:absolute;height:3px;margin-top:-1.5px;background:var(--line);transform-origin:0 50%;z-index:0}
 .rail{position:absolute;left:50%;width:3px;margin-left:-1.5px;background:var(--line);z-index:0}
 .bar{position:relative;display:flex;justify-content:space-between;align-items:flex-start}
 .bar::before{content:"";position:absolute;left:var(--bl,-34px);right:var(--br,-34px);top:calc(20px + var(--fig-h)*var(--gf));height:3px;background:var(--line);z-index:0}
@@ -51,6 +52,7 @@ h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6v
 .bar.fit{justify-content:center;gap:56px}
 .bar.noline::before{display:none}
 .bar.noline{justify-content:center}.bar.noline .dl{display:none}   /* a stem end (十): figures on the centre line only */
+.bar.ends::before,.bar.ends .dl{display:none}   /* 水: groups at both ends of the row, no bar; spokes join them to the centre */
 .bar.gone,.mid.gone{display:none}
 .prong{position:absolute;width:3px;margin-left:-1.5px;background:var(--line);z-index:0}
 /* one-line floors (Pyongwon 一): each spot on the line is a column of the counts made there, in order */
@@ -469,9 +471,10 @@ function card(id){
 const pair=ids=>`<div class="pair">${ids.map(card).join("")}</div>`;
 /* Floor shape. Default is the Taegeuk 王: three full bars joined by the centre line.
    FORM.floor can change it for other forms (士 山 工 十):
-     bars:  {r1|r3|r5: "full" | "fit" (line only under its figures) | "noline" | "gone" (row removed)}
+     bars:  {r1|r3|r5: "full" | "fit" (line only under its figures) | "noline" | "ends" (no line, groups at both ends) | "gone" (row removed)}
      rail:  [from, to] rows joined by the centre line (default ["r1","r5"])
      prongs:[{at:"c2l", from:"r1"}]  extra vertical lines down to side groups c2l/c2r/c4l/c4r
+     spokes:[{from:"r3", to:"r1", g:0}]  diagonal lines (水) from the centre of row `from` (its top or bottom edge) to the g-th group of row `to`
      notesBelow: move the four side notes under the board so the middle rows can hold figures
      spots: one-line floors (一): layout.r1 lists the spots on the line from ra to da; each spot is a column
             of the counts made there, the first on the line, the rest below it, all other rows removed
@@ -515,7 +518,15 @@ function placeRail(){
     bar.style.setProperty("--bl",l+"px");bar.style.setProperty("--br",r+"px");
     bar.querySelector(".dl.l").style.left=(l-16)+"px";bar.querySelector(".dl.r").style.right=(r-16)+"px";
   });
-  board.querySelectorAll(".prong").forEach(n=>n.remove());
+  board.querySelectorAll(".prong,.spoke").forEach(n=>n.remove());
+  (FL.spokes||[]).forEach(sp=>{
+    const el=document.getElementById(sp.to).querySelectorAll(".pair")[sp.g];if(!el)return;
+    // start at the edge of the centre row (above its heads or below its labels) so the spoke never crosses its figures
+    const F=document.getElementById(sp.from).getBoundingClientRect(),up=lineY(sp.to)<lineY(sp.from);
+    const R=el.getBoundingClientRect(),x0=B.width/2,y0=(up?F.top:F.bottom)-B.top,x1=R.left+R.width/2-B.left,y1=(up?R.bottom:R.top)-B.top;
+    const len=Math.hypot(x1-x0,y1-y0),ang=Math.atan2(y1-y0,x1-x0)*180/Math.PI;
+    board.insertAdjacentHTML("beforeend",`<div class="spoke" style="left:${x0}px;top:${y0}px;width:${len}px;transform:rotate(${ang}deg)"></div>`);
+  });
   (FL.prongs||[]).forEach(pg=>{
     const el=document.getElementById(pg.at);if(!el||!el.children.length)return;
     const R=el.getBoundingClientRect(),x=R.left+R.width/2-B.left,y0=lineY(pg.from),y1=lineY(pg.at);
@@ -557,6 +568,7 @@ document.getElementById("legend").innerHTML=
   (M.some(x=>x.stance==="back")?feet({dir:"na",stance:"back",lead:"L"})+`<p><b>Dwit kubi</b> · back stance. Heels in line, rear foot turned out, weight on the bent rear leg.</p>`:"")+
   (M.some(x=>x.stance==="tiger")?feet({dir:"na",stance:"tiger",lead:"L"})+`<p><b>Beom seogi</b> · tiger stance. Short, front foot on the ball, weight on the bent rear leg.</p>`:"")+
   (M.some(x=>x.stance==="nieun")?feet({dir:"na",stance:"nieun",lead:"L"})+`<p><b>Nieunja seogi</b> · ㄴ-shaped stance. Feet at right angles, about one foot apart, knees slightly bent.</p>`:"")+
+  (M.some(x=>x.stance==="gyeot")?feet({dir:"na",stance:"gyeot",lead:"L"})+`<p><b>Gyeotdari seogi</b> · assisting stance. Rear foot close behind the front heel, rear knee bent in behind the front knee.</p>`:"")+
   (M.some(x=>x.stance==="horse")?feet({dir:"na",stance:"horse"})+`<p><b>Juchum seogi</b> · horse stance. Feet wide and parallel, knees bent and pushed out.</p>`:"")+
   (M.some(x=>x.stance==="crane")?feet({dir:"na",stance:"crane",lead:"R"})+`<p><b>Hakdari seogi</b> · crane stance. Stand on the red foot; the other foot rests against the standing knee. Named for the standing leg.</p>`:"")+
   feet({dir:"na",stance:"kick",lead:"R"})+`<p><b>Ap chagi</b> · front kick from the rear leg.</p>`+
@@ -580,7 +592,7 @@ rows.addEventListener("click",e=>{const r=e.target.closest("tr");if(r&&!e.target
 
 /* mini floor map for the carousel: the 王 line with every position on it */
 const POS=FORM.pos;
-const ROT={na:-90,ga:90,da1:0,da2:0,da3:0,ra1:180,ra2:180,ra3:180};
+const ROT={na:-90,ga:90,da1:0,da2:0,da3:0,ra1:180,ra2:180,ra3:180,gada:45,nada:-45,gara:135,nara:-135};
 function minimap(i){
   const m=M[i],[x,y]=POS[m.id];
   let trail="";for(let k=0;k<i;k++){const p=POS[M[k].id];trail+=`<circle cx="${p[0]}" cy="${p[1]}" r="2" fill="var(--heaven)" opacity=".45"/>`}

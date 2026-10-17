@@ -1,0 +1,752 @@
+{
+ "slug": "hansu",
+ "pdf": "hansu-print.pdf",
+ "title": "Hansu",
+ "ko": "한수",
+ "symbol": {
+  "name": "Hansu",
+  "hanja": "漢水",
+  "meaning": "Great water · the source of life"
+ },
+ "movements": 27,
+ "note": {
+  "h": "水 · Su · water",
+  "p": "Hansu is great water, the source that feeds every living thing: soft yet unbreakable, patient, adaptable, never cut. The floor line is 水. You start at its centre, work forward and back along the centre line, then out along each of the four diagonals and back, and every move is meant to gather energy rather than spend it."
+ },
+ "footer": "Move numbers follow the Kukkiwon count (27 movements); a kick and the technique after it share a number (15-1 side kick, 15-2 swallow-form strike). The diagonals are named by the two edges they point between: ga-da is forward and left of the start. Finish with <b>Baro</b>: step the right foot in, face ga and return to gyeopson junbi.",
+ "boardMin": 1500,
+ "cardW": 96,
+ "figH": 116,
+ "floor": {
+  "glyph": "水",
+  "bars": {
+   "r1": "ends",
+   "r3": "noline",
+   "r5": "ends"
+  },
+  "notesBelow": true,
+  "spokes": [
+   {
+    "from": "r3",
+    "to": "r1",
+    "g": 0
+   },
+   {
+    "from": "r3",
+    "to": "r1",
+    "g": 1
+   },
+   {
+    "from": "r3",
+    "to": "r5",
+    "g": 0
+   },
+   {
+    "from": "r3",
+    "to": "r5",
+    "g": 1
+   }
+  ],
+  "map": "M50 6V54M50 30L14 8M50 30L86 8M50 30L14 52M50 30L86 52"
+ },
+ "layout": {
+  "r1": [
+   [
+    "25-2",
+    "25-1",
+    "24-2",
+    "24-1",
+    "23"
+   ],
+   [
+    "14",
+    "15-1",
+    "15-2",
+    "16-1",
+    "16-2"
+   ]
+  ],
+  "c2l": [
+   "26",
+   "27-1",
+   "27-2"
+  ],
+  "c2r": [
+   "18-2",
+   "18-1",
+   "17"
+  ],
+  "r3": [
+   [
+    "J",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ]
+  ],
+  "c4l": [
+   "21",
+   "22"
+  ],
+  "c4r": [
+   "13",
+   "12"
+  ],
+  "r5": [
+   [
+    "20",
+    "19"
+   ],
+   [
+    "10",
+    "11"
+   ]
+  ]
+ },
+ "pos": {
+  "J": [
+   50.0,
+   32.0
+  ],
+  "1": [
+   50.2,
+   37.9
+  ],
+  "2": [
+   50.2,
+   49.8
+  ],
+  "3": [
+   50.2,
+   37.9
+  ],
+  "4": [
+   50.2,
+   37.9
+  ],
+  "5": [
+   50.2,
+   26.1
+  ],
+  "6": [
+   50.2,
+   26.1
+  ],
+  "7": [
+   50.2,
+   14.2
+  ],
+  "8": [
+   50.2,
+   14.2
+  ],
+  "9": [
+   50.2,
+   26.1
+  ],
+  "10": [
+   56.8,
+   34.9
+  ],
+  "11": [
+   68.2,
+   38.9
+  ],
+  "12": [
+   62.6,
+   36.4
+  ],
+  "13": [
+   49.9,
+   29.4
+  ],
+  "14": [
+   44.9,
+   25.6
+  ],
+  "15-1": [
+   47.8,
+   22.9
+  ],
+  "15-2": [
+   49.2,
+   20.6
+  ],
+  "16-1": [
+   60.2,
+   12.9
+  ],
+  "16-2": [
+   55.6,
+   13.8
+  ],
+  "17": [
+   49.9,
+   16.3
+  ],
+  "18-1": [
+   37.3,
+   22.1
+  ],
+  "18-2": [
+   36.3,
+   23.8
+  ],
+  "19": [
+   28.4,
+   28.1
+  ],
+  "20": [
+   17.1,
+   32.2
+  ],
+  "21": [
+   22.6,
+   29.6
+  ],
+  "22": [
+   35.3,
+   22.6
+  ],
+  "23": [
+   40.4,
+   18.8
+  ],
+  "24-1": [
+   37.5,
+   16.1
+  ],
+  "24-2": [
+   36.1,
+   13.8
+  ],
+  "25-1": [
+   25.0,
+   6.2
+  ],
+  "25-2": [
+   29.7,
+   7.0
+  ],
+  "26": [
+   35.3,
+   9.5
+  ],
+  "27-1": [
+   47.9,
+   15.4
+  ],
+  "27-2": [
+   48.9,
+   17.0
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "na",
+   "view": "front",
+   "stance": "close",
+   "arms": {
+    "L": "gyeopson",
+    "R": "gyeopson"
+   },
+   "tech": "gyeopson",
+   "desc": "Stand at the centre facing ga, feet together, open hands overlapped in front of the lower belly, left over right (gyeopson junbi)."
+  },
+  {
+   "id": "1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "rwedge",
+    "R": "rwedge"
+   },
+   "tech": "rdwedge",
+   "desc": "Step the left foot forward into a left front stance. Ridge-hand opening block, the wrists crossing left over right."
+  },
+  {
+   "id": "2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "hammerin2",
+    "R": "hammerin2"
+   },
+   "tech": "dhammerin",
+   "desc": "Step the right foot forward into a right front stance. Double hammer-fist inward strike."
+  },
+  {
+   "id": "3",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "houter",
+    "L": "low"
+   },
+   "tech": "mountain",
+   "desc": "Step the right foot back into a left angled front stance (mo ap kubi). Single mountain block, the rear (right) arm high."
+  },
+  {
+   "id": "4",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "baro",
+   "desc": "Turn the hips square into a left front stance. Right middle punch."
+  },
+  {
+   "id": "5",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "houter",
+    "R": "low"
+   },
+   "tech": "mountain",
+   "desc": "Step the left foot back into a right angled front stance. Single mountain block, the rear (left) arm high."
+  },
+  {
+   "id": "6",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "note": "baro",
+   "desc": "Turn the hips square into a right front stance. Left middle punch."
+  },
+  {
+   "id": "7",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "houter",
+    "L": "low"
+   },
+   "tech": "mountain",
+   "desc": "Step the right foot back into a left angled front stance. Single mountain block, the rear (right) arm high."
+  },
+  {
+   "id": "8",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "baro",
+   "desc": "Turn the hips square into a left front stance. Right middle punch."
+  },
+  {
+   "id": "9",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "rwedge",
+    "R": "rwedge"
+   },
+   "tech": "rdwedge",
+   "desc": "Step the right foot forward into a right front stance. Ridge-hand opening block, right over left."
+  },
+  {
+   "id": "10",
+   "dir": "gada",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "arc",
+    "R": "pressdown"
+   },
+   "tech": "presarc",
+   "desc": "Step the left foot out and turn 45° left to face ga-da in a left front stance. Right palm pressing block with a left arc-hand strike to the throat."
+  },
+  {
+   "id": "11",
+   "dir": "gada",
+   "view": "side",
+   "face": "R",
+   "stance": "gyeot",
+   "lead": "R",
+   "arms": {
+    "L": "uppercut",
+    "R": "uppercut"
+   },
+   "tech": "duppercut",
+   "desc": "Step the right foot forward toward ga-da and bring the left foot in behind into an assisting stance with the right foot forward. Double uppercut."
+  },
+  {
+   "id": "12",
+   "dir": "nada",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "hammerlow",
+    "L": "palmlow"
+   },
+   "tech": "lowtgt",
+   "desc": "Slide the left foot back toward the centre and turn 90° left into a horse stance facing na-da. Right inner-forearm low target block into the left palm."
+  },
+  {
+   "id": "13",
+   "dir": "gada",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "khigh"
+   },
+   "tech": "kskeumgang",
+   "desc": "Step the right foot back toward the centre and turn to face ga-da in a back stance with the left foot forward. Knife-hand diamond block, right hand high."
+  },
+  {
+   "id": "14",
+   "dir": "gada",
+   "view": "side",
+   "face": "R",
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "hingetop"
+   },
+   "tech": "shinge",
+   "desc": "Lift the left foot to the right knee: crane stance on the right leg, still facing ga-da and looking left toward na-da. Small hinge: both fists at the right hip, left over right."
+  },
+  {
+   "id": "15-1",
+   "dir": "nada",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "desc": "Left side kick toward na-da."
+  },
+  {
+   "id": "15-2",
+   "dir": "nada",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "khigh",
+    "R": "neck"
+   },
+   "tech": "jebi",
+   "desc": "Set the left foot down toward na-da in a left front stance. Swallow-form strike: left knife hand high, right knife hand to the neck."
+  },
+  {
+   "id": "16-1",
+   "dir": "nada",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {},
+   "tech": "kick",
+   "desc": "Right front kick toward na-da."
+  },
+  {
+   "id": "16-2",
+   "dir": "nada",
+   "view": "side",
+   "face": "R",
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "R": "backfist"
+   },
+   "tech": "stompbf2",
+   "kihap": true,
+   "desc": "Stamp the right foot down in front, the left foot crossing in behind: back cross stance. Right back-fist strike."
+  },
+  {
+   "id": "17",
+   "dir": "nara",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "ksstrike"
+   },
+   "tech": "ksstrike",
+   "desc": "Slide the left foot out toward ga-ra into a horse stance, looking left. Left knife-hand outer strike toward ga-ra."
+  },
+  {
+   "id": "18-1",
+   "dir": "gara",
+   "view": "side",
+   "face": "L",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "eltarget"
+   },
+   "tech": "tkick",
+   "desc": "Pivot anticlockwise on the left foot: right target kick into the left palm."
+  },
+  {
+   "id": "18-2",
+   "dir": "gada",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "elbow",
+    "L": "eltarget"
+   },
+   "tech": "eltarget",
+   "step": {
+    "plant": "L"
+   },
+   "desc": "Set the right foot down toward ga-ra in a horse stance, body turned to face ga-da. Right elbow target strike toward ga-ra."
+  },
+  {
+   "id": "19",
+   "dir": "gara",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "arc",
+    "L": "pressdown"
+   },
+   "tech": "presarc",
+   "step": {
+    "move": [
+     1.4,
+     0
+    ]
+   },
+   "desc": "Draw the left foot to the right foot facing ga-ra, then step the right foot forward into a right front stance. Left palm pressing block with a right arc-hand strike."
+  },
+  {
+   "id": "20",
+   "dir": "gara",
+   "view": "side",
+   "face": "L",
+   "stance": "gyeot",
+   "lead": "L",
+   "arms": {
+    "L": "uppercut",
+    "R": "uppercut"
+   },
+   "tech": "duppercut",
+   "desc": "Step the left foot forward toward ga-ra and bring the right foot in behind into an assisting stance with the left foot forward. Double uppercut."
+  },
+  {
+   "id": "21",
+   "dir": "nara",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "hammerlow",
+    "R": "palmlow"
+   },
+   "tech": "lowtgt",
+   "desc": "Slide the right foot back toward the centre and turn 90° right into a horse stance facing na-ra. Left inner-forearm low target block into the right palm."
+  },
+  {
+   "id": "22",
+   "dir": "gara",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "kslow",
+    "L": "khigh"
+   },
+   "tech": "kskeumgang",
+   "desc": "Step the left foot back toward the centre and turn to face ga-ra in a back stance with the right foot forward. Knife-hand diamond block, left hand high."
+  },
+  {
+   "id": "23",
+   "dir": "gara",
+   "view": "side",
+   "face": "L",
+   "stance": "crane",
+   "lead": "L",
+   "arms": {
+    "R": "hingetop"
+   },
+   "tech": "shinge",
+   "desc": "Lift the right foot to the left knee: crane stance on the left leg, still facing ga-ra and looking right toward na-ra. Small hinge: both fists at the left hip, right over left."
+  },
+  {
+   "id": "24-1",
+   "dir": "nara",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "desc": "Right side kick toward na-ra."
+  },
+  {
+   "id": "24-2",
+   "dir": "nara",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "khigh",
+    "L": "neck"
+   },
+   "tech": "jebi",
+   "desc": "Set the right foot down toward na-ra in a right front stance. Swallow-form strike: right knife hand high, left knife hand to the neck."
+  },
+  {
+   "id": "25-1",
+   "dir": "nara",
+   "view": "side",
+   "face": "L",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {},
+   "tech": "kick",
+   "desc": "Left front kick toward na-ra."
+  },
+  {
+   "id": "25-2",
+   "dir": "nara",
+   "view": "side",
+   "face": "L",
+   "stance": "cross",
+   "lead": "L",
+   "arms": {
+    "L": "backfist"
+   },
+   "tech": "stompbf2",
+   "kihap": true,
+   "desc": "Stamp the left foot down in front, the right foot crossing in behind: back cross stance. Left back-fist strike."
+  },
+  {
+   "id": "26",
+   "dir": "nada",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "ksstrike"
+   },
+   "tech": "ksstrike",
+   "desc": "Slide the right foot out toward ga-da into a horse stance, looking right. Right knife-hand outer strike toward ga-da."
+  },
+  {
+   "id": "27-1",
+   "dir": "gada",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "R": "eltarget"
+   },
+   "tech": "tkick",
+   "desc": "Pivot clockwise on the right foot: left target kick into the right palm."
+  },
+  {
+   "id": "27-2",
+   "dir": "gara",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "elbow",
+    "R": "eltarget"
+   },
+   "tech": "eltarget",
+   "step": {
+    "plant": "R"
+   },
+   "desc": "Set the left foot down toward ga-da in a horse stance, body turned to face ga-ra. Left elbow target strike toward ga-da."
+  }
+ ],
+ "refs": [
+  {
+   "go": "kukkiwon-hansu",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Hansu",
+   "desc": "The form’s official description and meaning.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1363&page=1&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "kukkiwon-poomsae",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Poomsae index",
+   "desc": "Every official poomsae, Taegeuk 1–8 and the black-belt forms.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/list?boardManagementNo=55&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "video-hansu",
+   "kind": "yt",
+   "icon": "play",
+   "src": "YouTube · Kukkiwon textbook",
+   "title": "Hansu demonstration",
+   "desc": "The Taekwondo Textbook (vol. 3) video, linked from the Kukkiwon page for the form.",
+   "url": "https://www.youtube.com/watch?v=dUHTrwkoYw8"
+  },
+  {
+   "go": "kukkiwon-youtube",
+   "kind": "yt",
+   "icon": "channel",
+   "src": "YouTube · Channel",
+   "title": "Kukkiwon World Taekwondo Headquarters",
+   "desc": "The official Kukkiwon channel.",
+   "url": "https://www.youtube.com/channel/UCaQb3jutLu15oSfhPh8FACQ"
+  },
+  {
+   "go": "wt-poomsae-rules",
+   "kind": "wt",
+   "icon": "pdf",
+   "src": "World Taekwondo · PDF",
+   "title": "Poomsae Competition Rules and Interpretation",
+   "desc": "In force from 30 September 2024; how poomsae are judged.",
+   "url": "https://www.worldtaekwondo.org/att_file/documents/Poomsae%20Competition%20Rules%20and%20Interpretation%20(In%20force%20as%20of%20September%2030%202024).pdf"
+  }
+ ]
+}
