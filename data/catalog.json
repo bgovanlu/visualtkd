@@ -15,7 +15,7 @@
     {"slug": "keumgang", "rom": "Keumgang", "ko": "금강", "hanja": "金剛", "floor": "山", "moves": 27},
     {"slug": "taebaek",  "rom": "Taebaek",  "ko": "태백", "hanja": "太白", "floor": "工", "moves": 26},
     {"slug": "pyongwon", "rom": "Pyongwon", "ko": "평원", "hanja": "平原", "floor": "一", "moves": 21},
-    {"slug": "sipjin",   "rom": "Sipjin",   "ko": "십진"},
+    {"slug": "sipjin",   "rom": "Sipjin",   "ko": "십진", "hanja": "十進", "floor": "十", "moves": 28},
     {"slug": "jitae",    "rom": "Jitae",    "ko": "지태"},
     {"slug": "cheonkwon","rom": "Cheonkwon","ko": "천권"},
     {"slug": "hansu",    "rom": "Hansu",    "ko": "한수"},

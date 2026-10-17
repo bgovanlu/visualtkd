@@ -50,6 +50,7 @@ h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6v
 /* other floor shapes (士 山 工): short bars, bars without a line, side prongs */
 .bar.fit{justify-content:center;gap:56px}
 .bar.noline::before{display:none}
+.bar.noline{justify-content:center}.bar.noline .dl{display:none}   /* a stem end (十): figures on the centre line only */
 .bar.gone,.mid.gone{display:none}
 .prong{position:absolute;width:3px;margin-left:-1.5px;background:var(--line);z-index:0}
 /* one-line floors (Pyongwon 一): each spot on the line is a column of the counts made there, in order */
@@ -467,7 +468,7 @@ function card(id){
 }
 const pair=ids=>`<div class="pair">${ids.map(card).join("")}</div>`;
 /* Floor shape. Default is the Taegeuk 王: three full bars joined by the centre line.
-   FORM.floor can change it for other forms (士 山 工):
+   FORM.floor can change it for other forms (士 山 工 十):
      bars:  {r1|r3|r5: "full" | "fit" (line only under its figures) | "noline" | "gone" (row removed)}
      rail:  [from, to] rows joined by the centre line (default ["r1","r5"])
      prongs:[{at:"c2l", from:"r1"}]  extra vertical lines down to side groups c2l/c2r/c4l/c4r

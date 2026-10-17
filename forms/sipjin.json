@@ -1,0 +1,879 @@
+{
+ "slug": "sipjin",
+ "pdf": "sipjin-print.pdf",
+ "title": "Sipjin",
+ "ko": "십진",
+ "symbol": {
+  "name": "Sipjin",
+  "hanja": "十進",
+  "meaning": "Ten · endless progress"
+ },
+ "movements": 28,
+ "note": {
+  "h": "十 · Sip · ten",
+  "p": "Sipjin takes the ten symbols of long life (sun, moon, mountain, water, stone, pine, the herb of youth, tortoise, deer and crane) and the decimal idea of counting on without end. The floor line is 十, a cross. You start where its lines meet: first out along the bar to da and to ra, then up the stem toward na, down past the start toward ga, and back up to finish where you began, always keeping the body on the centre line."
+ },
+ "footer": "Move numbers follow the Kukkiwon count (28 movements); techniques in one movement share a number (3-1 wrist turn, 3-2 spear hand, 3-3 and 3-4 punches; 21-1 kick, 21-2 fork punch). Finish with <b>Baro</b>: step the right foot round, turn to face ga and return to gibon junbi at the centre of the cross.",
+ "boardMin": 2060,
+ "cardW": 86,
+ "figH": 106,
+ "floor": {
+  "glyph": "十",
+  "bars": {
+   "r1": "noline",
+   "r5": "gone"
+  },
+  "rail": [
+   "r1",
+   "c4"
+  ],
+  "notesBelow": true,
+  "map": "M8 30H92M50 8V44"
+ },
+ "layout": {
+  "r1": [
+   [
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21-1"
+   ]
+  ],
+  "c2": [
+   "12",
+   "13-1",
+   "13-2",
+   "13-3",
+   "13-4",
+   "14",
+   "21-2",
+   "22-1",
+   "22-2",
+   "23-1",
+   "27",
+   "28"
+  ],
+  "r3": [
+   [
+    "11",
+    "10-2",
+    "10-1",
+    "9"
+   ],
+   [
+    "8-4",
+    "8-3",
+    "8-2",
+    "8-1",
+    "7"
+   ],
+   [
+    "J",
+    "1",
+    "26"
+   ],
+   [
+    "2",
+    "3-1",
+    "3-2",
+    "3-3",
+    "3-4"
+   ],
+   [
+    "4",
+    "5-1",
+    "5-2",
+    "6"
+   ]
+  ],
+  "c4": [
+   "23-2",
+   "24",
+   "25"
+  ]
+ },
+ "pos": {
+  "J": [
+   50,
+   30
+  ],
+  "1": [
+   50,
+   30
+  ],
+  "2": [
+   58.0,
+   30
+  ],
+  "3-1": [
+   59.5,
+   30
+  ],
+  "3-2": [
+   61.0,
+   30
+  ],
+  "3-3": [
+   62.5,
+   30
+  ],
+  "3-4": [
+   64.0,
+   30
+  ],
+  "4": [
+   76,
+   30
+  ],
+  "5-1": [
+   82,
+   30
+  ],
+  "5-2": [
+   88,
+   30
+  ],
+  "6": [
+   84,
+   30
+  ],
+  "7": [
+   42.0,
+   30
+  ],
+  "8-1": [
+   40.5,
+   30
+  ],
+  "8-2": [
+   39.0,
+   30
+  ],
+  "8-3": [
+   37.5,
+   30
+  ],
+  "8-4": [
+   36.0,
+   30
+  ],
+  "9": [
+   24,
+   30
+  ],
+  "10-1": [
+   18,
+   30
+  ],
+  "10-2": [
+   12,
+   30
+  ],
+  "11": [
+   16,
+   30
+  ],
+  "12": [
+   50,
+   29
+  ],
+  "13-1": [
+   50,
+   27
+  ],
+  "13-2": [
+   50,
+   26
+  ],
+  "13-3": [
+   50,
+   26
+  ],
+  "13-4": [
+   50,
+   26
+  ],
+  "14": [
+   50,
+   19
+  ],
+  "15": [
+   50,
+   10
+  ],
+  "16": [
+   50,
+   10
+  ],
+  "17": [
+   50,
+   10
+  ],
+  "18": [
+   50,
+   10
+  ],
+  "19": [
+   50,
+   10
+  ],
+  "20": [
+   50,
+   10
+  ],
+  "21-1": [
+   50,
+   10
+  ],
+  "21-2": [
+   50,
+   18
+  ],
+  "22-1": [
+   50,
+   18
+  ],
+  "22-2": [
+   50,
+   27
+  ],
+  "23-1": [
+   50,
+   27
+  ],
+  "23-2": [
+   50,
+   38
+  ],
+  "24": [
+   50,
+   40
+  ],
+  "25": [
+   50,
+   42
+  ],
+  "26": [
+   50,
+   32
+  ],
+  "27": [
+   50,
+   23
+  ],
+  "28": [
+   50,
+   15
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "na",
+   "view": "front",
+   "stance": "ready",
+   "arms": {
+    "L": "junbi",
+    "R": "junbi"
+   },
+   "tech": "junbi",
+   "desc": "Stand at the centre of the cross facing ga, feet parallel, fists in front of the belt (gibon junbi)."
+  },
+  {
+   "id": "1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "ready",
+   "arms": {
+    "L": "bull",
+    "R": "bull"
+   },
+   "tech": "hwangso",
+   "desc": "Without moving the feet, raise both fists slowly past the chest to above the forehead: bull block (about 5 seconds)."
+  },
+  {
+   "id": "2",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "outer",
+    "R": "passist"
+   },
+   "tech": "pouter",
+   "desc": "Turn left to face da, moving the left foot into a back stance with the left foot forward. Left palm-augmented outer block, the right palm bracing the left wrist."
+  },
+  {
+   "id": "3-1",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksout",
+    "R": "passist"
+   },
+   "tech": "wristturn",
+   "desc": "In the same stance, open the left hand slowly and turn the wrist over, the right palm still on it (about 5 seconds)."
+  },
+  {
+   "id": "3-2",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "spear"
+   },
+   "tech": "hspear",
+   "desc": "Slide the left foot forward into a left front stance. Right flat spear-hand thrust, palm down."
+  },
+  {
+   "id": "3-3",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "note": "bandae",
+   "desc": "In the same stance, left middle punch."
+  },
+  {
+   "id": "3-4",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "baro",
+   "desc": "In the same stance, right middle punch."
+  },
+  {
+   "id": "4",
+   "dir": "na",
+   "view": "back",
+   "stance": "horse",
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "hsanteul",
+   "desc": "Step the right foot forward toward da and turn to face na in a horse stance, looking right toward da. Opening mountain block."
+  },
+  {
+   "id": "5-1",
+   "dir": "na",
+   "view": "back",
+   "stance": "cross",
+   "lead": "L",
+   "arms": {
+    "L": "grab"
+   },
+   "tech": "pgrab",
+   "desc": "Cross the left foot in front of the right toward da into a front cross stance. Left target grab, reaching across toward da."
+  },
+  {
+   "id": "5-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "horse",
+   "arms": {
+    "R": "sidepunch"
+   },
+   "tech": "dsidepunch",
+   "kihap": true,
+   "carry": false,
+   "desc": "Step the right foot on toward da into a horse stance, still facing na. Right pulling side punch toward da, the left hand pulling back to the hip."
+  },
+  {
+   "id": "6",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "sideelbow",
+    "R": "sideelbow"
+   },
+   "tech": "yoke",
+   "desc": "Step the right foot round behind and turn 180° to face ga in a horse stance. Yoke strike, both elbows out to the sides."
+  },
+  {
+   "id": "7",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "outer",
+    "L": "passist"
+   },
+   "tech": "pouter",
+   "desc": "Draw the left foot to the right foot, then step the right foot toward ra into a back stance with the right foot forward. Right palm-augmented outer block."
+  },
+  {
+   "id": "8-1",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksout",
+    "L": "passist"
+   },
+   "tech": "wristturn",
+   "desc": "In the same stance, open the right hand slowly and turn the wrist over, the left palm still on it (about 5 seconds)."
+  },
+  {
+   "id": "8-2",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "spear"
+   },
+   "tech": "hspear",
+   "desc": "Slide the right foot forward into a right front stance. Left flat spear-hand thrust, palm down."
+  },
+  {
+   "id": "8-3",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "bandae",
+   "desc": "In the same stance, right middle punch."
+  },
+  {
+   "id": "8-4",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "note": "baro",
+   "desc": "In the same stance, left middle punch."
+  },
+  {
+   "id": "9",
+   "dir": "na",
+   "view": "back",
+   "stance": "horse",
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "hsanteul",
+   "desc": "Step the left foot forward toward ra and turn to face na in a horse stance, looking left toward ra. Opening mountain block."
+  },
+  {
+   "id": "10-1",
+   "dir": "na",
+   "view": "back",
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "R": "grab"
+   },
+   "tech": "pgrab",
+   "desc": "Cross the right foot in front of the left toward ra into a front cross stance. Right target grab, reaching across toward ra."
+  },
+  {
+   "id": "10-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "horse",
+   "arms": {
+    "L": "sidepunch"
+   },
+   "tech": "dsidepunch",
+   "kihap": true,
+   "carry": false,
+   "desc": "Step the left foot on toward ra into a horse stance, still facing na. Left pulling side punch toward ra, the right hand pulling back to the hip."
+  },
+  {
+   "id": "11",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "sideelbow",
+    "R": "sideelbow"
+   },
+   "tech": "yoke",
+   "desc": "Step the left foot round behind and turn 180° to face ga in a horse stance. Yoke strike, both elbows out to the sides."
+  },
+  {
+   "id": "12",
+   "dir": "na",
+   "view": "back",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "outer",
+    "L": "passist"
+   },
+   "tech": "pouter",
+   "desc": "Step the right foot back and turn 180° to face na in a back stance with the right foot forward. Right palm-augmented outer block."
+  },
+  {
+   "id": "13-1",
+   "dir": "na",
+   "view": "back",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksout",
+    "L": "passist"
+   },
+   "tech": "wristturn",
+   "desc": "In the same stance, open the right hand slowly and turn the wrist over, the left palm still on it (about 5 seconds)."
+  },
+  {
+   "id": "13-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "spear"
+   },
+   "tech": "hspear",
+   "desc": "Slide the right foot forward into a right front stance. Left flat spear-hand thrust, palm down."
+  },
+  {
+   "id": "13-3",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "bandae",
+   "desc": "In the same stance, right middle punch."
+  },
+  {
+   "id": "13-4",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "note": "baro",
+   "desc": "In the same stance, left middle punch."
+  },
+  {
+   "id": "14",
+   "dir": "na",
+   "view": "back",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "ksguard"
+   },
+   "tech": "kslowa",
+   "desc": "Step the left foot forward toward na into a back stance with the left foot forward. Augmented low knife-hand block."
+  },
+  {
+   "id": "15",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "rockhi",
+    "L": "rocklo"
+   },
+   "tech": "rockpush",
+   "desc": "Step the right foot forward into a right front stance. Gather both open hands at the hip and push them forward and up: rock push (about 5 seconds)."
+  },
+  {
+   "id": "16",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "horse",
+   "arms": {
+    "L": "rwedge",
+    "R": "rwedge"
+   },
+   "tech": "rdwedge",
+   "desc": "Pivot 90° left to face ra, sliding the right foot back into a horse stance across the line. Ridge-hand wedge block."
+  },
+  {
+   "id": "17",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "horse",
+   "arms": {
+    "L": "kspread",
+    "R": "kspread"
+   },
+   "tech": "kspread",
+   "desc": "In the same stance, knife-hand low spread block, slowly (about 5 seconds)."
+  },
+  {
+   "id": "18",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "ready",
+   "arms": {
+    "L": "spread",
+    "R": "spread"
+   },
+   "tech": "spread",
+   "desc": "Straighten the legs into a wide parallel stance while slowly closing both hands into fists, arms still spread low (about 5 seconds)."
+  },
+  {
+   "id": "19",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "lift"
+   },
+   "tech": "lift",
+   "desc": "Pivot 90° left to face ga in a left front stance. Scooping lift with the left arm."
+  },
+  {
+   "id": "20",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "rockhi",
+    "L": "rocklo"
+   },
+   "tech": "rockpush",
+   "desc": "In the same stance, gather both open hands at the right hip and push them forward and up: rock push (about 5 seconds)."
+  },
+  {
+   "id": "21-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "R": "hingetop"
+   },
+   "tech": "kick",
+   "desc": "Right front kick toward ga, both fists drawn to the left hip."
+  },
+  {
+   "id": "21-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "chet",
+    "R": "chet"
+   },
+   "tech": "chetdari",
+   "desc": "Land the right foot forward in a right front stance. Fork punch, both fists together."
+  },
+  {
+   "id": "22-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "hingetop"
+   },
+   "tech": "kick",
+   "desc": "Left front kick, both fists drawn to the right hip."
+  },
+  {
+   "id": "22-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "chet",
+    "R": "chet"
+   },
+   "tech": "chetdari",
+   "desc": "Land the left foot forward in a left front stance. Fork punch."
+  },
+  {
+   "id": "23-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "R": "hingetop"
+   },
+   "tech": "kick",
+   "desc": "Right front kick, both fists drawn to the left hip."
+  },
+  {
+   "id": "23-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "R": "backfist",
+    "L": "assist"
+   },
+   "tech": "abackfist",
+   "kihap": true,
+   "desc": "Stamp the right foot down in front and draw the left foot behind it into a back cross stance. Right augmented back-fist strike."
+  },
+  {
+   "id": "24",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "rockhi",
+    "L": "rocklo"
+   },
+   "tech": "rockpush",
+   "step": {
+    "plant": "L"
+   },
+   "desc": "Pivot on the left foot and step the right foot back toward ga, turning 180° to face na in a left front stance. Rock push (about 5 seconds)."
+  },
+  {
+   "id": "25",
+   "dir": "na",
+   "view": "back",
+   "stance": "tiger",
+   "lead": "L",
+   "arms": {
+    "L": "kxlow",
+    "R": "kxlow"
+   },
+   "tech": "ksxlow",
+   "desc": "Draw the left foot back into a tiger stance with the left foot forward. Knife-hand low X block."
+  },
+  {
+   "id": "26",
+   "dir": "na",
+   "view": "back",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "rdblock",
+   "desc": "Step the right foot forward into a back stance with the right foot forward. Right ridge-hand block."
+  },
+  {
+   "id": "27",
+   "dir": "na",
+   "view": "back",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "chet",
+    "R": "chet"
+   },
+   "tech": "chetdari",
+   "desc": "Step the left foot forward into a back stance with the left foot forward. Fork punch."
+  },
+  {
+   "id": "28",
+   "dir": "na",
+   "view": "back",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "L": "chet",
+    "R": "chet"
+   },
+   "tech": "chetdari",
+   "desc": "Step the right foot forward into a back stance with the right foot forward. Fork punch."
+  }
+ ],
+ "refs": [
+  {
+   "go": "kukkiwon-sipjin",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Sipjin",
+   "desc": "The form’s official description and meaning.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1360&page=1&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "kukkiwon-poomsae",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Poomsae index",
+   "desc": "Every official poomsae, Taegeuk 1–8 and the black-belt forms.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/list?boardManagementNo=55&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "video-sipjin",
+   "kind": "yt",
+   "icon": "play",
+   "src": "YouTube · Kukkiwon textbook",
+   "title": "Sipjin demonstration",
+   "desc": "The Taekwondo Textbook (vol. 3) video, linked from the Kukkiwon page for the form.",
+   "url": "https://www.youtube.com/watch?v=mcExAWuoj7o"
+  },
+  {
+   "go": "kukkiwon-youtube",
+   "kind": "yt",
+   "icon": "channel",
+   "src": "YouTube · Channel",
+   "title": "Kukkiwon World Taekwondo Headquarters",
+   "desc": "The official Kukkiwon channel.",
+   "url": "https://www.youtube.com/channel/UCaQb3jutLu15oSfhPh8FACQ"
+  },
+  {
+   "go": "wt-poomsae-rules",
+   "kind": "wt",
+   "icon": "pdf",
+   "src": "World Taekwondo · PDF",
+   "title": "Poomsae Competition Rules and Interpretation",
+   "desc": "In force from 30 September 2024; how poomsae are judged.",
+   "url": "https://www.worldtaekwondo.org/att_file/documents/Poomsae%20Competition%20Rules%20and%20Interpretation%20(In%20force%20as%20of%20September%2030%202024).pdf"
+  }
+ ]
+}

@@ -10,14 +10,15 @@
 | Keumgang 金剛 (山) | /keumgang | 28 | Open items; mountain-block facing is the biggest question |
 | Taebaek 太白 (工) | /taebaek | 40 | Open items in REVIEW.md |
 | Pyongwon 平原 (一) | /pyongwon | 34 | Open items in REVIEW.md; directions inferred, check against the video first |
+| Sipjin 十進 (十) | /sipjin | 43 | Open items in REVIEW.md; directions checked against the Kukkiwon textbook video |
 
-Planned: Sipjin, Jitae, Cheonkwon, Hansu, Ilyeo.
+Planned: Jitae, Cheonkwon, Hansu, Ilyeo.
 
 Every print sheet is exactly 2 pages and every QR code decodes to its expected link.
 
 ## Short links (`/go/`, generated into `site/_redirects`)
-- Kukkiwon form pages: `kukkiwon-t1` … `t8` (boardNo 1347, 1349–1355), `kukkiwon-koryo` / `keumgang` / `taebaek` / `pyongwon` (1356–1359), `kukkiwon-poomsae`
-- Videos (Kukkiwon Digital Encyclopedia, Mookas TV): `video-t1` … `t6`, `video-koryo`; `video-t7`, `t8`, `keumgang`, `taebaek`, `pyongwon` point to the series playlist until individual videos are found
+- Kukkiwon form pages: `kukkiwon-t1` … `t8` (boardNo 1347, 1349–1355), `kukkiwon-koryo` / `keumgang` / `taebaek` / `pyongwon` / `sipjin` (1356–1360), `kukkiwon-poomsae`
+- Videos (Kukkiwon Digital Encyclopedia, Mookas TV): `video-t1` … `t6`, `video-koryo`; `video-t7`, `t8`, `keumgang`, `taebaek`, `pyongwon` point to the series playlist until individual videos are found; `video-sipjin` is the Kukkiwon textbook (vol. 3) video linked from the Kukkiwon page
 - `kukkiwon-youtube`, `wt-poomsae-rules`
 
 ## Deployment — live on AWS since 14 October 2026

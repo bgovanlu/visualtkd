@@ -69,9 +69,10 @@ const FIST=[[-.4,-3.8],[3,-4.6],[7.6,-4.5],[9.8,-2.8],[10.3,.4],[9.4,3.6],[6,4.8
 const HAND_FLAT=[[-.4,-3],[3,-3.4],[9,-3.2],[13.2,-2],[14,0],[13.2,2],[9,3.1],[3,3.3],[-.4,2.8]];
 // open-hand techniques draw a flat hand instead of a fist
 const OPEN=new Set(["ksout","ksblock","ksguard","spear","press","neck","khigh","eltarget","twist","palm","grab","ksside","kslow",
-  "tongmil","gyeopson","ksstrike","arc","kneebreak","hold","target","lspear","pressdown","elbowpush","palmlow","palmjaw","ksin","kspread","tgrab"]);
+  "tongmil","gyeopson","ksstrike","arc","kneebreak","hold","target","lspear","pressdown","elbowpush","palmlow","palmjaw","ksin","kspread","tgrab",
+  "passist","rockhi","rocklo","rwedge","lift","kxlow"]);
 // seen from the front, these come straight at the viewer: drawn foreshortened (fist face or hand edge), never across the face
-const TOWARD={punch:k=>[1.5,20],neck:k=>[-3,5],arc:k=>[-1,5],palmjaw:k=>[-1,9],tgrab:k=>[-2,16]};
+const TOWARD={punch:k=>[1.5,20],neck:k=>[-3,5],arc:k=>[-1,5],palmjaw:k=>[-1,9],tgrab:k=>[-2,16],chet:k=>[7,20]};
 const KNIFE_FACE=[[-6.8,-2.4],[6.8,-2.4],[7.6,0],[6.8,2.4],[-6.8,2.4],[-7.6,0]];
 const FIST_FACE=[[-5.4,-4.3],[5.4,-4.3],[6.3,0],[5.6,4.5],[-5.6,4.5],[-6.3,0]];
 const mk=far=>({far,legs:[],arms:[],feet:[],fists:[],torso:null,head:null,neck:null});
@@ -167,6 +168,14 @@ function skel(m,pr){
       else if(act==="upelbow"){h=add(sh,mul([5,-9],ak));p=[1,-.15]}         // palkup ollyeo chigi: elbow driven up and forward, fist by the ear
       else if(act==="sidebf")h=add(sh,mul([36,-12],ak));
       else if(act==="crossbf")h=add(sh,mul([30,-10],ak));
+      else if(act==="bull"){h=add(sh,mul([6,-30],ak));p=[1,.4]}             // hwangso makki: fists above the forehead
+      else if(act==="passist"){h=add(sh,mul([16,0],ak));p=[1,.4]}           // open palm bracing the blocking wrist
+      else if(act==="rockhi"){h=add(sh,mul([30,-24],ak));p=[1,.3]}          // bawi milgi: upper hand at head height
+      else if(act==="rocklo"){h=add(sh,mul([32,-6],ak));p=[1,.3]}           // bawi milgi: lower hand in front of the face
+      else if(act==="rwedge")h=add(sh,mul([18,-8],ak));
+      else if(act==="lift"){h=add(sh,mul([26,0],ak));p=[1,.5]}             // geodeo olligi: forearm lifting in front, hand open
+      else if(act==="chet")h=add(sh,mul([46,8],ak));                       // chetdari jireugi: both fists forward
+      else if(act==="kxlow")h=[24*ak,hipY+2];
       else h=dp==="near"?add(sh,mul([24,14],ak)):add(sh,mul([17,7],ak));
       addArm(dp==="near"?Lay.nearArm:Lay.farArm,sh,h,p,false,OPEN.has(act));
     });
@@ -233,7 +242,8 @@ function skel(m,pr){
     if(st==="crane"&&s!==m.lead)Lg.feet.push({pts:xf(FOOT_SIDE,an,Math.PI/2,.8*pr.foot,-.8*x*pr.foot)});
     else Lg.feet.push({pts:xf(back?FOOT_HEEL:FOOT_FRONT,add(an,[x*.8,0]),0,sc*x*pr.foot,sc*pr.foot)});
     const act=(m.arms&&m.arms[s])||"chamber",sh=[x*pr.shW,T+8*tk];
-    if(act==="punch"&&back)addArm(Lay.arms,sh,[x*-3,T+20*tk],[x,.2]);
+    if((act==="punch"||act==="spear")&&back)addArm(Lay.arms,sh,[x*-3,T+20*tk],[x,.2],false,OPEN.has(act));
+    else if(act==="chet"&&back)addArm(Lay.arms,sh,[x*7,T+20*tk],[x,.2]);
     else if(act==="lspear"&&!back)addArm(Lay.arms,sh,[x*-2,hipY+1],null,true,true);
     else if(TOWARD[act]&&!back){   // strikes toward the viewer: fist face or knife-hand edge, foreshortened
       const q=TOWARD[act]();addArm(Lay.arms,sh,[x*q[0],T+q[1]*tk],null,true,OPEN.has(act));
@@ -289,6 +299,13 @@ function skel(m,pr){
       else if(act==="upelbow"){h=[x*-6,T+4*tk];p=[x,.2]}
       else if(act==="sidebf"){h=[x*(pr.shW+26),T-6*tk];p=[x,-.3]}   // back-fist out to the side at head height
       else if(act==="crossbf"){h=[x*-(pr.shW+6),T-6*tk];p=[x,.3]}   // back-fist across the body to the other side
+      else if(act==="bull"){h=[x*11,T-19*tk];p=[x,.5]}                // hwangso makki: fists above the forehead, elbows out
+      else if(act==="passist"){h=[x*-(pr.shW-2),T+8*tk];p=[x,.4]}   // open palm at the other arm's wrist
+      else if(act==="rockhi"){h=[x*5,T-20*tk];p=[x,.2]}
+      else if(act==="rocklo"){h=[x*-2,T+2*tk];p=[x,.4]}
+      else if(act==="rwedge"){h=[x*(pr.shW+6),T+2*tk];p=[x*.4,1]}
+      else if(act==="lift"){h=[x*-1,T+14*tk];p=[x,.6]}
+      else if(act==="kxlow"){h=[x*-3,hipY+4*k];p=[x,.4]}
       else h=[x*6.5,hipY-12*tk];                                 // junbi
       addArm(Lay.arms,sh,h,p,false,OPEN.has(act));
     }
