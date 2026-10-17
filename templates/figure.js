@@ -70,7 +70,7 @@ const HAND_FLAT=[[-.4,-3],[3,-3.4],[9,-3.2],[13.2,-2],[14,0],[13.2,2],[9,3.1],[3
 // open-hand techniques draw a flat hand instead of a fist
 const OPEN=new Set(["ksout","ksblock","ksguard","spear","press","neck","khigh","eltarget","twist","palm","grab","ksside","kslow",
   "tongmil","gyeopson","ksstrike","arc","kneebreak","hold","target","lspear","pressdown","elbowpush","palmlow","palmjaw","ksin","kspread","tgrab",
-  "passist","rockhi","rocklo","rwedge","lift","kxlow"]);
+  "passist","rockhi","rocklo","rwedge","lift","kxlow","htarget"]);
 // seen from the front, these come straight at the viewer: drawn foreshortened (fist face or hand edge), never across the face
 const TOWARD={punch:k=>[1.5,20],neck:k=>[-3,5],arc:k=>[-1,5],palmjaw:k=>[-1,9],tgrab:k=>[-2,16],chet:k=>[7,20]};
 const KNIFE_FACE=[[-6.8,-2.4],[6.8,-2.4],[7.6,0],[6.8,2.4],[-6.8,2.4],[-7.6,0]];
@@ -176,6 +176,9 @@ function skel(m,pr){
       else if(act==="lift"){h=add(sh,mul([26,0],ak));p=[1,.5]}             // geodeo olligi: forearm lifting in front, hand open
       else if(act==="chet")h=add(sh,mul([46,8],ak));                       // chetdari jireugi: both fists forward
       else if(act==="kxlow")h=[24*ak,hipY+2];
+      else if(act==="htarget")h=add(sh,mul([34,-6],ak));                  // mejumeok pyojeok an chigi: open target hand at face height
+      else if(act==="hammerin")h=add(sh,mul([38,-4],ak));                  // hammer fist swung in to the target
+      else if(act==="lowside")h=[22*ak,hipY-4];
       else h=dp==="near"?add(sh,mul([24,14],ak)):add(sh,mul([17,7],ak));
       addArm(dp==="near"?Lay.nearArm:Lay.farArm,sh,h,p,false,OPEN.has(act));
     });
@@ -306,6 +309,9 @@ function skel(m,pr){
       else if(act==="rwedge"){h=[x*(pr.shW+6),T+2*tk];p=[x*.4,1]}
       else if(act==="lift"){h=[x*-1,T+14*tk];p=[x,.6]}
       else if(act==="kxlow"){h=[x*-3,hipY+4*k];p=[x,.4]}
+      else if(act==="htarget"){h=[x*(pr.shW+26),T+3*tk];p=[x*.2,1]}  // target hand out to the side, kept below the face
+      else if(act==="hammerin"){h=[x*-(pr.shW+17),T+4*tk];p=[x*.2,1]}
+      else if(act==="lowside"){h=[x*(pr.shW+24),hipY-2*k];p=[x,.1]}   // naeryeo yeop makki: forearm swept down and out to the side
       else h=[x*6.5,hipY-12*tk];                                 // junbi
       addArm(Lay.arms,sh,h,p,false,OPEN.has(act));
     }

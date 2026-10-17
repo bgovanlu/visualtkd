@@ -238,6 +238,26 @@ Sources: [Kukkiwon textbook video, 품새_십진](https://www.youtube.com/watch?
 - [ ] **Kicks 21-1–23-1 hands.** NBTKDA: small hinge (fists at the hip) during each kick. **Drawn with the fists at the opposite hip.**
 - [ ] **Kihaps** at 5-2, 10-2 and 23-2 (NBTKDA, Phoenix). All agree.
 
+## Jitae · 지태
+
+Sources: [Kukkiwon textbook video](https://www.youtube.com/watch?v=_BHoCPC_a18) (QR on the [Kukkiwon page](https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1361&page=1&menuLevel=3&menuNo=72); used for facing and travel), [NBTKDA chart](https://images.squarespace-cdn.com/content/v1/58b45cec6b8f5bc3d705a16e/07d74705-4b31-41d0-a21b-eb3a76e267ac/14+Jitae+Poomsae+Chart-+NBTKDA+Poomsae+Chart.png) (22 counts: front leg, technique names in Korean, timings, kihaps; notes on [nbtkda.com/jitae](https://www.nbtkda.com/jitae)), [NBTKDA performance guide](https://www.nbtkda.com/p58sec) (June 2024 timing changes), Taekwondo fandom wiki (cross-check only: a 28-movement list with directions), Kukkiwon (meaning, floor line ㅗ). The Phoenix Jitae page no longer exists (404); no Korean move table was found.
+
+- [ ] **Floor line and start.** ㅗ: the base line (earth) at na, a short stem toward ga. You start at the centre of the base line; 1–4 go along it (da, then ra), 5–14 up the stem facing ga, 15–22 at the stem in horse and crane stance, 23-2–24 punch back toward na, 25–28 on the base line again (da, then ra). **On the board 15–23-1 are drawn at the end of the stem.** The footwork simulator puts them only about halfway up it: the horse stance at 15 is formed by moving the left foot back past the right, so the farthest point of the form is 11–12.
+- [ ] **End position.** NBTKDA: Jitae finishes about one front stance behind (na of) its start. The simulator agrees (1.9 foot lengths toward na). 25–28 are drawn on the same base line as 1–4.
+- [ ] **Numbering.** Kukkiwon says 28 movements. Fandom numbers 28 and matches NBTKDA's 22 counts technique for technique; used with sub-numbers: 2-1 upward block / 2-2 punch (and 4); 7-1 kick / 7-2 block (and 9); 11-1 small hinge / 11-2 diamond punch; 12-1 / 12-2 inside blocks; 14-1 kick / 14-2, 14-3 punches; 20-1 small hinge / 20-2 side kick; 23-1 side kick / 23-2 punch. Note the asymmetry fandom gives: 20 = hinge + kick, but 22 = hinge alone and 23 = kick + punch. **Followed as given.**
+- [ ] **11-1, small hinge before the diamond punch.** NBTKDA lists it as its own row (both fists at the right hip, left over right); fandom calls it "lower the left arm to prepare". **Drawn as its own figure, still in the left front stance before the step.**
+- [ ] **Facing at 15–22.** Fandom: pivot counter-clockwise, left foot into horse stance; the video (main camera at ga) shows a profile facing da, left side toward na. **Drawn facing da (front-view figures, techniques to the sides): 16 and 21 block toward na, 17, 18, 19 and the 20-2 kick toward ga, the 23-1 kick toward na.** If the body faced ra instead, every side would swap and the punches 23-2, 24 would go toward ga: check.
+- [ ] **Hammer-fist target strike (18).** At philtrum height in the sources; **drawn at shoulder height** so the arm does not cross the face (figure rule).
+- [ ] **Timings.** NBTKDA chart: 2 and 4 are 4 + 4 s, 8 and 10 are 8 s. NBTKDA's June 2024 update: 8 and 10 changed to 5 s (and the upward block → punch pairs to 4 + 4 s). **Pages say about 4 s for 2/4 and about 5 s for 8 and 10.** Bull block (15) drawn as slow (about 5 s); not stated by the chart.
+- [ ] **Move 1 and 3: an palmok (inner-forearm) outer block** per NBTKDA; fandom just "outward block". 8 is the bakkat palmok outer block. **Added "An palmok momtong bakkat makki" to the library.**
+- [ ] **6, knife-hand block.** NBTKDA 손날 올려막기 (knife-hand rising block); fandom "single knifehand high block". **Named sonnal ollyeo makki, drawn as the knife-hand high block.**
+- [ ] **13, single low knife-hand block** (NBTKDA 손날 내려막기, "step back"); **listed under the existing sonnal arae makki entry.** Fandom says the right foot steps back; drawn so.
+- [ ] **10, front stance.** NBTKDA "left shifts"; fandom "slide the left foot back". **Drawn as the left foot sliding forward**, which keeps the footwork in line with the video's travel up the stem.
+- [ ] **14-2, 14-3 double punch.** Both sources: land the right foot back behind in a left front stance, right punch first, then left (NBTKDA: the only double punch that starts with the rear hand). Agreed.
+- [ ] **Bull block (15).** NBTKDA: different from Sipjin, fists rising straight up hip-width apart, ending between the hands. **Drawn with the Sipjin bull-block pose**; the library text notes the difference.
+- [ ] **Side kicks (20-2, 23-1) arms.** NBTKDA: "side kick + small hinge". **Drawn with the fists stacked at the hip during the kick.** 21 sets the right foot down beside the left (closed stance) before lifting the left: not given its own figure.
+- [ ] **Kihaps** at 18 (hammer-fist target strike) and 24 (punch), NBTKDA. Fandom agrees.
+
 ---
 
 _Taegeuk items generated while building Taegeuk 5–8, and black-belt items while building Koryo, Keumgang and Taebaek, both on 13 October 2026. Add new items under the form they belong to._

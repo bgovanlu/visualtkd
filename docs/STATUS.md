@@ -11,14 +11,15 @@
 | Taebaek 太白 (工) | /taebaek | 40 | Open items in REVIEW.md |
 | Pyongwon 平原 (一) | /pyongwon | 34 | Open items in REVIEW.md; directions inferred, check against the video first |
 | Sipjin 十進 (十) | /sipjin | 43 | Open items in REVIEW.md; directions checked against the Kukkiwon textbook video |
+| Jitae 地跆 (ㅗ) | /jitae | 39 | Open items in REVIEW.md; directions checked against the Kukkiwon textbook video |
 
-Planned: Jitae, Cheonkwon, Hansu, Ilyeo.
+Planned: Cheonkwon, Hansu, Ilyeo.
 
 Every print sheet is exactly 2 pages and every QR code decodes to its expected link.
 
 ## Short links (`/go/`, generated into `site/_redirects`)
-- Kukkiwon form pages: `kukkiwon-t1` … `t8` (boardNo 1347, 1349–1355), `kukkiwon-koryo` / `keumgang` / `taebaek` / `pyongwon` / `sipjin` (1356–1360), `kukkiwon-poomsae`
-- Videos (Kukkiwon Digital Encyclopedia, Mookas TV): `video-t1` … `t6`, `video-koryo`; `video-t7`, `t8`, `keumgang`, `taebaek`, `pyongwon` point to the series playlist until individual videos are found; `video-sipjin` is the Kukkiwon textbook (vol. 3) video linked from the Kukkiwon page
+- Kukkiwon form pages: `kukkiwon-t1` … `t8` (boardNo 1347, 1349–1355), `kukkiwon-koryo` / `keumgang` / `taebaek` / `pyongwon` / `sipjin` / `jitae` (1356–1361), `kukkiwon-poomsae`
+- Videos (Kukkiwon Digital Encyclopedia, Mookas TV): `video-t1` … `t6`, `video-koryo`; `video-t7`, `t8`, `keumgang`, `taebaek`, `pyongwon` point to the series playlist until individual videos are found; `video-sipjin` and `video-jitae` are the Kukkiwon textbook (vol. 3) videos linked from the Kukkiwon pages
 - `kukkiwon-youtube`, `wt-poomsae-rules`
 
 ## Deployment — live on AWS since 14 October 2026

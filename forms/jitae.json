@@ -1,0 +1,789 @@
+{
+ "slug": "jitae",
+ "pdf": "jitae-print.pdf",
+ "title": "Jitae",
+ "ko": "지태",
+ "symbol": {
+  "name": "Jitae",
+  "hanja": "地跆",
+  "meaning": "Earth · standing on the ground"
+ },
+ "movements": 28,
+ "note": {
+  "h": "ㅗ · Ji · earth",
+  "p": "Jitae is a person with both feet on the ground, kicking, walking and jumping: the struggle of a life lived on the earth. The floor line is ㅗ, a base line for the earth with a short stem rising from it toward the sky. You start on the base line, work out along it to da and to ra, go up the stem toward ga, fight at its far end in horse and crane stance, punch your way back toward na and finish on the base line again."
+ },
+ "footer": "Move numbers follow the Kukkiwon count (28 movements); techniques in one movement share a number (2-1 upward block, 2-2 punch; 7-1 kick, 7-2 block). Finish with <b>Baro</b>: draw the left foot in, turn to face ga and return to gibon junbi.",
+ "boardMin": 1500,
+ "cardW": 96,
+ "figH": 116,
+ "floor": {
+  "glyph": "ㅗ",
+  "bars": {
+   "r3": "noline",
+   "r5": "gone"
+  },
+  "rail": [
+   "r1",
+   "c4"
+  ],
+  "notesBelow": true,
+  "map": "M8 10H92M50 10V44"
+ },
+ "layout": {
+  "r1": [
+   [
+    "28",
+    "27"
+   ],
+   [
+    "4-2",
+    "4-1",
+    "3"
+   ],
+   [
+    "J"
+   ],
+   [
+    "1",
+    "2-1",
+    "2-2"
+   ],
+   [
+    "25",
+    "26"
+   ]
+  ],
+  "c2": [
+   "5",
+   "6",
+   "7-1",
+   "7-2",
+   "8",
+   "9-1",
+   "9-2",
+   "10",
+   "23-2",
+   "24"
+  ],
+  "r3": [
+   [
+    "11-1",
+    "11-2",
+    "12-1",
+    "12-2",
+    "13",
+    "14-1",
+    "14-2",
+    "14-3"
+   ]
+  ],
+  "c4": [
+   "15",
+   "16",
+   "17",
+   "18",
+   "19",
+   "20-1",
+   "20-2",
+   "21",
+   "22",
+   "23-1"
+  ]
+ },
+ "pos": {
+  "J": [
+   50.0,
+   10
+  ],
+  "1": [
+   54.5,
+   10
+  ],
+  "2-1": [
+   71.3,
+   10
+  ],
+  "2-2": [
+   71.3,
+   10
+  ],
+  "3": [
+   54.5,
+   10
+  ],
+  "4-1": [
+   37.8,
+   10
+  ],
+  "4-2": [
+   37.8,
+   10
+  ],
+  "5": [
+   50,
+   14.9
+  ],
+  "6": [
+   50,
+   13.8
+  ],
+  "7-1": [
+   50,
+   20.6
+  ],
+  "7-2": [
+   50,
+   21.3
+  ],
+  "8": [
+   50,
+   21.3
+  ],
+  "9-1": [
+   50,
+   28.2
+  ],
+  "9-2": [
+   50,
+   28.9
+  ],
+  "10": [
+   50,
+   30.0
+  ],
+  "11-1": [
+   50,
+   30.0
+  ],
+  "11-2": [
+   50,
+   39.7
+  ],
+  "12-1": [
+   50,
+   39.7
+  ],
+  "12-2": [
+   50,
+   39.7
+  ],
+  "13": [
+   50,
+   31.1
+  ],
+  "14-1": [
+   50,
+   37.9
+  ],
+  "14-2": [
+   50,
+   30.0
+  ],
+  "14-3": [
+   50,
+   30.0
+  ],
+  "15": [
+   50,
+   20.8
+  ],
+  "16": [
+   50,
+   20.8
+  ],
+  "17": [
+   50,
+   20.8
+  ],
+  "18": [
+   50,
+   20.8
+  ],
+  "19": [
+   50,
+   17.1
+  ],
+  "20-1": [
+   50,
+   17.1
+  ],
+  "20-2": [
+   50,
+   19.5
+  ],
+  "21": [
+   50,
+   22.0
+  ],
+  "22": [
+   50,
+   22.0
+  ],
+  "23-1": [
+   50,
+   19.5
+  ],
+  "23-2": [
+   50,
+   17.7
+  ],
+  "24": [
+   50,
+   8.0
+  ],
+  "25": [
+   52.1,
+   10
+  ],
+  "26": [
+   66.8,
+   10
+  ],
+  "27": [
+   52.1,
+   10
+  ],
+  "28": [
+   37.4,
+   10
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "na",
+   "view": "front",
+   "stance": "ready",
+   "arms": {
+    "L": "junbi",
+    "R": "junbi"
+   },
+   "tech": "junbi",
+   "desc": "Stand at the centre of the base line facing ga, feet parallel, fists in front of the belt (gibon junbi)."
+  },
+  {
+   "id": "1",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "outer"
+   },
+   "tech": "anouter",
+   "desc": "Turn left to face da, stepping the left foot into a back stance with the left foot forward. Left inner-forearm outer block."
+  },
+  {
+   "id": "2-1",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "high"
+   },
+   "tech": "high",
+   "desc": "Step the right foot forward into a right front stance. Right upward block, slowly (about 4 seconds)."
+  },
+  {
+   "id": "2-2",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "note": "baro",
+   "desc": "In the same stance, left middle punch, slowly (about 4 seconds), the right hand pulling back to the hip."
+  },
+  {
+   "id": "3",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "outer"
+   },
+   "tech": "anouter",
+   "desc": "Step the right foot round and turn 180° to face ra in a back stance with the right foot forward. Right inner-forearm outer block."
+  },
+  {
+   "id": "4-1",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "high"
+   },
+   "tech": "high",
+   "desc": "Step the left foot forward into a left front stance. Left upward block, slowly (about 4 seconds)."
+  },
+  {
+   "id": "4-2",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "baro",
+   "desc": "In the same stance, right middle punch, slowly (about 4 seconds)."
+  },
+  {
+   "id": "5",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "desc": "Move the left foot and turn 90° left to face ga in a left front stance. Left low block."
+  },
+  {
+   "id": "6",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "khigh"
+   },
+   "tech": "ksrise",
+   "desc": "Slide the left foot back into a back stance with the left foot forward. Left knife-hand rising block."
+  },
+  {
+   "id": "7-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {},
+   "tech": "kick",
+   "desc": "Right front kick."
+  },
+  {
+   "id": "7-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "kslow",
+    "L": "ksguard"
+   },
+   "tech": "kslowa",
+   "desc": "Set the right foot down forward in a back stance with the right foot forward. Augmented low knife-hand block with the right hand."
+  },
+  {
+   "id": "8",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "outer"
+   },
+   "tech": "outer",
+   "desc": "In the same stance, right outer middle block, slowly (about 5 seconds)."
+  },
+  {
+   "id": "9-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {},
+   "tech": "kick",
+   "desc": "Left front kick."
+  },
+  {
+   "id": "9-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "ksguard"
+   },
+   "tech": "kslowa",
+   "desc": "Set the left foot down forward in a back stance with the left foot forward. Augmented low knife-hand block with the left hand."
+  },
+  {
+   "id": "10",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "high"
+   },
+   "tech": "high",
+   "desc": "Slide the left foot forward into a left front stance. Left upward block, slowly (about 5 seconds)."
+  },
+  {
+   "id": "11-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "hingetop"
+   },
+   "tech": "shinge",
+   "desc": "Small hinge: draw both fists to the right hip, left over right, as the right foot starts its step."
+  },
+  {
+   "id": "11-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "high",
+    "R": "punch"
+   },
+   "tech": "kpunch",
+   "desc": "Step the right foot forward into a right front stance. Diamond punch: left upward block and right middle punch together."
+  },
+  {
+   "id": "12-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "inside"
+   },
+   "tech": "inside",
+   "desc": "In the same stance, left inside middle block."
+  },
+  {
+   "id": "12-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "inside",
+    "L": "assist"
+   },
+   "tech": "ainside",
+   "desc": "In the same stance, right augmented inside block, the left fist brought under the right elbow."
+  },
+  {
+   "id": "13",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kslow"
+   },
+   "tech": "kslow",
+   "desc": "Step the right foot back into a back stance with the left foot forward. Left low knife-hand block."
+  },
+  {
+   "id": "14-1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {},
+   "tech": "kick",
+   "desc": "Right front kick."
+  },
+  {
+   "id": "14-2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "baro",
+   "desc": "Set the right foot back down behind, in a left front stance. Right middle punch."
+  },
+  {
+   "id": "14-3",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "note": "bandae",
+   "desc": "In the same stance, left middle punch."
+  },
+  {
+   "id": "15",
+   "dir": "da3",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "bull",
+    "R": "bull"
+   },
+   "tech": "hwangso",
+   "desc": "Move the left foot back and turn left to face da in a horse stance across the stem. Bull block, slowly (about 5 seconds)."
+  },
+  {
+   "id": "16",
+   "dir": "da3",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "lowside"
+   },
+   "tech": "lowside",
+   "desc": "In the same stance, left low side block toward na."
+  },
+  {
+   "id": "17",
+   "dir": "da3",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "ksside"
+   },
+   "tech": "ksside",
+   "desc": "In the same stance, turning the head toward ga, right knife-hand side block toward ga."
+  },
+  {
+   "id": "18",
+   "dir": "da3",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "hammerin",
+    "R": "htarget"
+   },
+   "tech": "hammertgt",
+   "kihap": true,
+   "desc": "In the same stance, left hammer-fist strike inward into the open right hand."
+  },
+  {
+   "id": "19",
+   "dir": "da3",
+   "view": "front",
+   "stance": "crane",
+   "lead": "L",
+   "arms": {
+    "R": "lowside"
+   },
+   "tech": "lowside",
+   "desc": "Lift the right foot to the left knee: crane stance on the left leg. Right low side block toward ga."
+  },
+  {
+   "id": "20-1",
+   "dir": "da3",
+   "view": "front",
+   "stance": "crane",
+   "lead": "L",
+   "arms": {
+    "R": "hingetop"
+   },
+   "tech": "shinge",
+   "desc": "In the same stance, small hinge: both fists at the left hip, right over left."
+  },
+  {
+   "id": "20-2",
+   "dir": "ga",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "R": "hingetop"
+   },
+   "tech": "skick",
+   "desc": "Pivot on the left foot and right side kick toward ga."
+  },
+  {
+   "id": "21",
+   "dir": "da3",
+   "view": "front",
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "lowside"
+   },
+   "tech": "lowside",
+   "desc": "Set the right foot down beside the left, then lift the left foot to the right knee: crane stance on the right leg. Left low side block toward na."
+  },
+  {
+   "id": "22",
+   "dir": "da3",
+   "view": "front",
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "hingetop"
+   },
+   "tech": "shinge",
+   "desc": "In the same stance, small hinge: both fists at the right hip, left over right."
+  },
+  {
+   "id": "23-1",
+   "dir": "na",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "hingetop"
+   },
+   "tech": "skick",
+   "desc": "Pivot on the right foot and left side kick toward na."
+  },
+  {
+   "id": "23-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "baro",
+   "desc": "Set the left foot down forward toward na in a left front stance. Right middle punch."
+  },
+  {
+   "id": "24",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "bandae",
+   "kihap": true,
+   "desc": "Step the right foot forward into a right front stance. Right middle punch."
+  },
+  {
+   "id": "25",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "ksguard"
+   },
+   "tech": "kslowa",
+   "desc": "Move the left foot and turn 270° left to face da in a back stance with the left foot forward. Augmented low knife-hand block."
+  },
+  {
+   "id": "26",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "ksblock",
+   "desc": "Step the right foot forward into a back stance with the right foot forward. Right double knife-hand block."
+  },
+  {
+   "id": "27",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "kslow",
+    "L": "ksguard"
+   },
+   "tech": "kslowa",
+   "desc": "Move the right foot and turn 180° to face ra in a back stance with the right foot forward. Augmented low knife-hand block."
+  },
+  {
+   "id": "28",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "desc": "Step the left foot forward into a back stance with the left foot forward. Left double knife-hand block."
+  }
+ ],
+ "refs": [
+  {
+   "go": "kukkiwon-jitae",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Jitae",
+   "desc": "The form’s official description and meaning.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1361&page=1&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "kukkiwon-poomsae",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Poomsae index",
+   "desc": "Every official poomsae, Taegeuk 1–8 and the black-belt forms.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/list?boardManagementNo=55&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "video-jitae",
+   "kind": "yt",
+   "icon": "play",
+   "src": "YouTube · Kukkiwon textbook",
+   "title": "Jitae demonstration",
+   "desc": "The Taekwondo Textbook (vol. 3) video, linked from the Kukkiwon page for the form.",
+   "url": "https://www.youtube.com/watch?v=_BHoCPC_a18"
+  },
+  {
+   "go": "kukkiwon-youtube",
+   "kind": "yt",
+   "icon": "channel",
+   "src": "YouTube · Channel",
+   "title": "Kukkiwon World Taekwondo Headquarters",
+   "desc": "The official Kukkiwon channel.",
+   "url": "https://www.youtube.com/channel/UCaQb3jutLu15oSfhPh8FACQ"
+  },
+  {
+   "go": "wt-poomsae-rules",
+   "kind": "wt",
+   "icon": "pdf",
+   "src": "World Taekwondo · PDF",
+   "title": "Poomsae Competition Rules and Interpretation",
+   "desc": "In force from 30 September 2024; how poomsae are judged.",
+   "url": "https://www.worldtaekwondo.org/att_file/documents/Poomsae%20Competition%20Rules%20and%20Interpretation%20(In%20force%20as%20of%20September%2030%202024).pdf"
+  }
+ ]
+}
