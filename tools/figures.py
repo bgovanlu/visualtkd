@@ -14,7 +14,7 @@ import json, os
 from PIL import Image, ImageChops, ImageDraw
 from sitekit import ROOT
 
-H = {"ready": 1, "close": 1, "walk": .99, "front": .9, "back": .88, "tiger": .9, "horse": .84, "cross": .92,
+H = {"ready": 1, "close": 1, "walk": .99, "front": .9, "back": .88, "tiger": .9, "nieun": .9, "horse": .84, "cross": .92,
      "crane": 1, "kick": 1, "skick": .96, "rkick": 1.02, "knee": 1}
 PX = 640          # stored height of a figure that fills its share (2x the largest on-screen figure)
 EXT = (".png", ".jpg", ".jpeg", ".webp")

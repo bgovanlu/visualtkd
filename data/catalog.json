@@ -17,7 +17,7 @@
     {"slug": "pyongwon", "rom": "Pyongwon", "ko": "평원", "hanja": "平原", "floor": "一", "moves": 21},
     {"slug": "sipjin",   "rom": "Sipjin",   "ko": "십진", "hanja": "十進", "floor": "十", "moves": 28},
     {"slug": "jitae",    "rom": "Jitae",    "ko": "지태", "hanja": "地跆", "floor": "ㅗ", "moves": 28},
-    {"slug": "cheonkwon","rom": "Cheonkwon","ko": "천권"},
+    {"slug": "cheonkwon","rom": "Cheonkwon","ko": "천권", "hanja": "天拳", "floor": "ㅜ", "moves": 26},
     {"slug": "hansu",    "rom": "Hansu",    "ko": "한수"},
     {"slug": "ilyeo",    "rom": "Ilyeo",    "ko": "일여"}
   ]

@@ -26,6 +26,7 @@ STANCE = {
     "front": "ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright",
     "back": "dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways",
     "tiger": "beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent",
+    "nieun": "nieunja seogi (ㄴ-shaped stance): feet at right angles like a short back stance, heels about one foot-length apart, knees slightly bent, weight even",
     "horse": "juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight",
     "cross": "kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot",
     "crane": "hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee",
