@@ -297,6 +297,22 @@ Sources: [Kukkiwon textbook video](https://www.youtube.com/watch?v=dUHTrwkoYw8) 
 - [ ] **17–18 and 26–27 travel across the centre** from one na diagonal toward the opposite ga diagonal (fandom: "you continue that northeastward movement"). Horse at 17 facing na-ra, 18-2 turned to face ga-da (mirrored at 26/27-2), the knife-hand strike and the elbow both toward the ga diagonal ahead. Check against the textbook.
 - [ ] **Overlapped-hands start and finish** (gyeopson junbi), as Cheonkwon. Baro: the right foot steps in (fandom; NBTKDA "right steps").
 
+## Ilyeo · 일여
+
+Sources: [Kukkiwon textbook video](https://www.youtube.com/watch?v=GV0TwhH5Hkk) (QR on the [Kukkiwon page](https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1364&page=1&menuLevel=3&menuNo=72); **the directions are taken from it**), [NBTKDA chart](https://images.squarespace-cdn.com/content/v1/58b45cec6b8f5bc3d705a16e/3af5ed7c-4182-41bb-92e3-a070c1c87428/17+Ilyeo+Poomsae+Chart+-+NBTKDA+Poomsae+Chart.png) (12 counts: front leg, Korean names, timings, kihaps; notes on [nbtkda.com/ilyeo](https://www.nbtkda.com/ilyeo)), Taekwondo fandom wiki (cross-check only: 23 counts), Kukkiwon (meaning, floor line 卍).
+
+- [ ] **The 卍 glyph.** Kukkiwon's floor line for Ilyeo is 卍, the Buddhist manji (Wonhyo, oneness). The page shows it in the header and the note explains it as the Buddhist symbol. Brian: confirm you are happy to show the glyph, or swap it for a text label.
+- [ ] **Movement count.** Not stated on Kukkiwon's pages. Fandom numbers 23 and matches NBTKDA's 12 technique for technique. **Page says 23 movements**; sub-numbers: 9-1 / 9-2 (and 16, 20) twist-and-pull then punch, 19-1 front kick / 19-2 jumping side kick / 19-3 high X block (and 23).
+- [ ] **Directions: fandom disagrees with the video; the video is followed.** Fandom turns 90° left at every diamond and knife-hand block and keeps each side kick going straight on; that puts 11 facing da, but the video shows 11–13 facing ga, the side kick 14 going out to da with 15–16 following it, 17 facing na, 18 facing ra (fandom: 180°), 21 facing ga and 22 facing da (fandom: 180°). Read with 卍's four-fold symmetry, each arm is: diamond block facing one way, turn 90° left for the knife-hand block, punch and jump, the side kick 90° further left, then the X block and punch along the kick. Drawn so: 3 ga; 4–6 da; 7–9 na; 10 ra; 11–13 ga; 14–16 da; 17 na; 18–20 ra; 21 ga; 22–23 da. NBTKDA's note that every turn is to the left except the last agrees, and the simulator then ends 0.7 foot lengths from the start.
+- [ ] **3, the first diamond block, faces ga** (the video shows the front); drawn as the left foot stepping forward into back stance. Fandom: turn 90° left.
+- [ ] **6 and 13, pressing block + spear-hand thrust.** NBTKDA: first time right hand presses, left hand thrusts; second time the other way round. Fandom: right spear hand both times. **Drawn per NBTKDA.** Kihap on both (both sources).
+- [ ] **Reverse crane stance (ogeum seogi), new on the site** for 6 and 13: standing on the right leg, the left instep behind the right knee. Library entry, chip and simulator; the figure reuses crane stance with the lifted foot drawn behind. The jumps forward are not given extra travel in the simulator.
+- [ ] **7 and 14, side kick with single mountain block** (5 s), drawn with the left arm low over the kicking leg and the right arm high; neither source says which arm is high.
+- [ ] **High X block (8, 15, 19-3, 23-3)**: left over right, except 23-3 right over left (NBTKDA: the landing leg decides).
+- [ ] **9-1 / 16-1 / 20-1, two-hand twist and pull** drawn as its own figure in back stance (NBTKDA counts it separately; fandom folds it into the step).
+- [ ] **18 and 22, fists-at-waist ready** in closed stance, drawn as its own figure (NBTKDA "slowly", not 5 s).
+- [ ] **Board.** 卍 drawn with the centre line, the middle bar, a short bar from the centre out to the left at the top (10–13) and to the right at the bottom (3–6), and prongs for the right arm's hook up (17) and the left arm's hook down (21–23). Schematic: groups follow the arms in order, not the exact spots.
+
 ---
 
 _Taegeuk items generated while building Taegeuk 5–8, and black-belt items while building Koryo, Keumgang and Taebaek, both on 13 October 2026. Add new items under the form they belong to._

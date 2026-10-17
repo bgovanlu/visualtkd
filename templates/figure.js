@@ -71,7 +71,7 @@ const HAND_FLAT=[[-.4,-3],[3,-3.4],[9,-3.2],[13.2,-2],[14,0],[13.2,2],[9,3.1],[3
 const OPEN=new Set(["ksout","ksblock","ksguard","spear","press","neck","khigh","eltarget","twist","palm","grab","ksside","kslow",
   "tongmil","gyeopson","ksstrike","arc","kneebreak","hold","target","lspear","pressdown","elbowpush","palmlow","palmjaw","ksin","kspread","tgrab",
   "passist","rockhi","rocklo","rwedge","lift","kxlow","htarget",
-  "wing","khopen","twistm","swingo","ohouter","pushlo","pushhi"]);
+  "wing","khopen","twistm","swingo","ohouter","pushlo","pushhi","grabtw"]);
 // seen from the front, these come straight at the viewer: drawn foreshortened (fist face or hand edge), never across the face
 const TOWARD={punch:k=>[1.5,20],neck:k=>[-3,5],arc:k=>[-1,5],palmjaw:k=>[-1,9],tgrab:k=>[-2,16],chet:k=>[7,20]};
 const KNIFE_FACE=[[-6.8,-2.4],[6.8,-2.4],[7.6,0],[6.8,2.4],[-6.8,2.4],[-7.6,0]];
@@ -79,6 +79,7 @@ const FIST_FACE=[[-5.4,-4.3],[5.4,-4.3],[6.3,0],[5.6,4.5],[-5.6,4.5],[-6.3,0]];
 const mk=far=>({far,legs:[],arms:[],feet:[],fists:[],torso:null,head:null,neck:null});
 
 function skel(m,pr){
+  if(m.stance==="ogeum")m={...m,stance:"crane",ogeum:true};   // ogeum seogi: drawn as crane stance, lifted foot behind the knee
   const HANDS={};let side;   // where each hand ends up (for the same-stance motion arcs and count badges)
   const k=(pr.thigh+pr.shin)/65,tk=pr.torso/55,ak=(pr.upper+pr.fore)/47,sw=pr.shW/18.5,hw=pr.hipW/9;
   function addArm(L,sh,h,pref,pf,flat){
@@ -105,7 +106,7 @@ function skel(m,pr){
       else if(st==="tiger")t=lead?[12,56]:[-14,56];                      // beom seogi: short, weight on the bent rear leg
       else if(st==="nieun")t=lead?[15,56]:[-11,56];                      // nieunja seogi: feet at right angles, about one foot apart
       else if(st==="horse"){t=dp==="near"?[19,56]:[11,56];pref=[1,-.1]}             // juchum seogi in profile: legs side by side, knees forward
-      else if(st==="crane"){t=lead?[1,56]:[4,25];if(!lead)pref=[1,-.35]}  // hakdari seogi: lifted foot against the standing knee
+      else if(st==="crane"){t=lead?[1,56]:m.ogeum?[-8,30]:[4,25];if(!lead)pref=m.ogeum?[-1,.4]:[1,-.35]}  // hakdari seogi: lifted foot against the standing knee (ogeum: behind it)
       else if(st==="cross")t=lead?[8,56]:[-6,56];                        // kkoa seogi: rear foot tucked behind
       else if(st==="gyeot")t=lead?[10,56]:[-4,56];                       // gyeotdari seogi: rear knee bent in behind the front knee
       else if(st==="close"||st==="ready")t=lead?[3,56]:[-1,56];
@@ -192,6 +193,8 @@ function skel(m,pr){
       else if(act==="pushhi"){h=add(sh,mul([34,-8],ak));p=[1,.3]}          // taesan milgi: upper hand at lip height
       else if(act==="bamup")h=add(sh,mul([26,-6],ak));
       else if(act==="hammerin2")h=add(sh,mul([30,4],ak));                 // du mejumeok an chigi: both hammer fists in at chest height
+      else if(act==="xhigh"){h=add(sh,mul([20,-28],ak));p=[1,-.1]}       // eotgeoreo eolgul makki: wrists crossed above the forehead
+      else if(act==="grabtw"){h=add(sh,mul([30,-2],ak));p=[1,.3]}         // hands turned over, taking hold in front of the chest
       else h=dp==="near"?add(sh,mul([24,14],ak)):add(sh,mul([17,7],ak));
       addArm(dp==="near"?Lay.nearArm:Lay.farArm,sh,h,p,false,OPEN.has(act));
     });
@@ -334,6 +337,8 @@ function skel(m,pr){
       else if(act==="pushhi"){h=[x*-3,T+7*tk];p=[x,.3]}            // drawn at the chest so it never crosses the face
       else if(act==="bamup"){h=[x*-3,T+7*tk];p=[x*.3,1]}           // double knuckle uppercut, kept below the face
       else if(act==="hammerin2"){h=[x*(pr.shW-3),T+11*tk];p=[x*.3,1]}  // fists level with the edges of the body
+      else if(act==="xhigh"){h=[x*-3,T-23*tk];p=[x,-.3]}            // wrists crossed above the forehead
+      else if(act==="grabtw"){h=[x*-2,T+8*tk];p=[x,.3]}
       else h=[x*6.5,hipY-12*tk];                                 // junbi
       addArm(Lay.arms,sh,h,p,false,OPEN.has(act));
     }
@@ -507,6 +512,7 @@ function figure(m,opt={}){
    Ap kubi: about 1½ steps long and one fist wide, rear foot turned out. */
 const FT=[[0,-7.4],[3,-5.6],[3.5,1.5],[2.4,6.3],[0,7.4],[-2.4,6.3],[-3.5,1.5],[-3,-5.6]];
 function feet(m){
+  if(m.stance==="ogeum")m={...m,stance:"crane"};
   const rot={na:0,ga:180,da1:90,da2:90,da3:90,ra1:-90,ra2:-90,ra3:-90,gada:135,nada:45,gara:-135,nara:-45}[m.dir]*Math.PI/180;
   const sgn=s=>s==="L"?-1:1,other=s=>s==="L"?"R":"L";
   const foot=(x,y,a,on)=>`<path d="${spline(xf(FT,[x,y],a))}" fill="${on?"var(--fire)":"var(--muted)"}"/>`;
@@ -548,6 +554,7 @@ function chip(m){
   if(m.stance==="gyeot")return`<span class="chip">${m.lead} · Gyeotdari seogi</span>`;
   if(m.stance==="close")return`<span class="chip ready">Moa seogi</span>`;
   if(m.stance==="crane")return`<span class="chip crane">${m.lead} · Hakdari</span>`;
+  if(m.stance==="ogeum")return`<span class="chip crane">${m.lead} · Ogeum seogi</span>`;
   if(m.stance==="back")return`<span class="chip back">${m.lead} · Dwit kubi</span>`;
   if(m.stance==="nieun")return`<span class="chip back">${m.lead} · Nieunja seogi</span>`;
   return`<span class="chip ${m.stance}">${m.lead} · ${m.stance==="walk"?"Ap seogi":"Ap kubi"}</span>`;
@@ -556,5 +563,5 @@ function stanceLabel(m){
   if(m.stance==="ready")return"parallel";
   if(["kick","skick","rkick","knee"].includes(m.stance))return sideWord(m.lead)+" kick";
   if(m.stance==="horse"||m.stance==="close")return m.stance;
-  return sideWord(m.lead)+({walk:" walking",front:" front",back:" back",tiger:" tiger",cross:" cross",crane:" crane",nieun:" ㄴ-shape",gyeot:" assisting"})[m.stance];
+  return sideWord(m.lead)+({walk:" walking",front:" front",back:" back",tiger:" tiger",cross:" cross",crane:" crane",nieun:" ㄴ-shape",gyeot:" assisting",ogeum:" reverse crane"})[m.stance];
 }

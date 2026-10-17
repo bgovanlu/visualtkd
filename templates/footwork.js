@@ -75,6 +75,7 @@ function place(m,plant,P,face){
 function simulate(M){
   const out=[];let cur=null,air=null;
   M.forEach((m,i)=>{
+    if(m.stance==="ogeum")m={...m,stance:"crane"};   // ogeum seogi stands like crane stance
     const face=DIRV[m.dir],S=said(m),st=m.stance,step=m.step||{};
     let feet,moved=[],how="";
     if(i===0||!cur){

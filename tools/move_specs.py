@@ -28,6 +28,7 @@ STANCE = {
     "tiger": "beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent",
     "nieun": "nieunja seogi (ㄴ-shaped stance): feet at right angles like a short back stance, heels about one foot-length apart, knees slightly bent, weight even",
     "gyeot": "gyeotdari seogi (assisting stance): front knee bent, the rear foot close behind the front heel with only its ball down, rear knee bent in behind the front knee",
+    "ogeum": "ogeum seogi (reverse crane stance): standing on one bent leg, the instep of the other foot pressed into the back of the standing knee",
     "horse": "juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight",
     "cross": "kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot",
     "crane": "hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee",
@@ -117,6 +118,8 @@ ARM = {
     "pushlo": "open hand pushing forward, fingertips at belt height, palm forward",
     "pushhi": "open hand pushing forward, fingertips at lip height, palm forward, directly above the lower hand",
     "bamup": "extended-knuckle fist driven upward from the waist, ending at about lip height (double knuckle uppercut)",
+    "xhigh": "forearm raised above the forehead, crossed at the wrist with the other forearm (high X block)",
+    "grabtw": "open hand turned over in front of the chest, taking hold of a wrist together with the other hand",
     "hammerin2": "hammer fist swung in toward the centre, ending level with the edge of the body at chest height",
 }
 SIDE = {"L": "left", "R": "right"}
@@ -132,7 +135,7 @@ def stance_words(m):
     st, lead = m["stance"], m.get("lead")
     w = STANCE[st]
     if st in ("kick", "skick", "rkick", "knee"): return f'{w}. Kicking leg: {SIDE[lead].upper()}.'
-    if st == "crane": return f'{w}. Standing leg: {SIDE[lead].upper()}.'
+    if st in ("crane", "ogeum"): return f'{w}. Standing leg: {SIDE[lead].upper()}.'
     if st in ("ready", "close", "horse"): return w + "."
     return f'{w}. {SIDE[lead].upper()} foot forward.'
 

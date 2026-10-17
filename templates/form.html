@@ -52,6 +52,7 @@ h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6v
 .bar.fit{justify-content:center;gap:56px}
 .bar.noline::before{display:none}
 .bar.noline{justify-content:center}.bar.noline .dl{display:none}   /* a stem end (十): figures on the centre line only */
+.bar.fit.hookl{justify-content:flex-end;padding-right:50%}.bar.fit.hookr{justify-content:flex-start;padding-left:50%}   /* 卍: a short bar on one side of the centre line */
 .bar.ends::before,.bar.ends .dl{display:none}   /* 水: groups at both ends of the row, no bar; spokes join them to the centre */
 .bar.gone,.mid.gone{display:none}
 .prong{position:absolute;width:3px;margin-left:-1.5px;background:var(--line);z-index:0}
@@ -471,7 +472,7 @@ function card(id){
 const pair=ids=>`<div class="pair">${ids.map(card).join("")}</div>`;
 /* Floor shape. Default is the Taegeuk 王: three full bars joined by the centre line.
    FORM.floor can change it for other forms (士 山 工 十):
-     bars:  {r1|r3|r5: "full" | "fit" (line only under its figures) | "noline" | "ends" (no line, groups at both ends) | "gone" (row removed)}
+     bars:  {r1|r3|r5: "full" | "fit" (line only under its figures) | "noline" | "ends" (no line, groups at both ends) | "fit hookl" / "fit hookr" (short bar from the centre line out to one side) | "gone" (row removed)}
      rail:  [from, to] rows joined by the centre line (default ["r1","r5"])
      prongs:[{at:"c2l", from:"r1"}]  extra vertical lines down to side groups c2l/c2r/c4l/c4r
      spokes:[{from:"r3", to:"r1", g:0}]  diagonal lines (水) from the centre of row `from` (its top or bottom edge) to the g-th group of row `to`
@@ -481,7 +482,7 @@ const pair=ids=>`<div class="pair">${ids.map(card).join("")}</div>`;
      map:   minimap path on the 100×60 grid */
 const FL=FORM.floor||{};
 const LAYOUT={};["r1","r3","r5"].forEach(r=>{if(FORM.layout[r])LAYOUT[r]=FORM.layout[r]});
-["r1","r3","r5"].forEach(r=>{const b=(FL.bars||{})[r];if(b&&b!=="full")document.getElementById(r).classList.add(b)});
+["r1","r3","r5"].forEach(r=>{const b=(FL.bars||{})[r];if(b&&b!=="full")document.getElementById(r).classList.add(...b.split(" "))});
 if(FL.notesBelow){
   const box=document.getElementById("notes");["nForm","nLegend","nBelt","nRead"].forEach(id=>box.appendChild(document.getElementById(id)));box.hidden=false;
   [["r2","c2"],["r4","c4"]].forEach(([r,c])=>{const el=document.getElementById(r);
@@ -530,7 +531,7 @@ function placeRail(){
   (FL.prongs||[]).forEach(pg=>{
     const el=document.getElementById(pg.at);if(!el||!el.children.length)return;
     const R=el.getBoundingClientRect(),x=R.left+R.width/2-B.left,y0=lineY(pg.from),y1=lineY(pg.at);
-    board.insertAdjacentHTML("beforeend",`<div class="prong" style="left:${x}px;top:${y0}px;height:${y1-y0}px"></div>`);
+    board.insertAdjacentHTML("beforeend",`<div class="prong" style="left:${x}px;top:${Math.min(y0,y1)}px;height:${Math.abs(y1-y0)}px"></div>`);   // up or down
   });
 }
 
@@ -569,6 +570,7 @@ document.getElementById("legend").innerHTML=
   (M.some(x=>x.stance==="tiger")?feet({dir:"na",stance:"tiger",lead:"L"})+`<p><b>Beom seogi</b> · tiger stance. Short, front foot on the ball, weight on the bent rear leg.</p>`:"")+
   (M.some(x=>x.stance==="nieun")?feet({dir:"na",stance:"nieun",lead:"L"})+`<p><b>Nieunja seogi</b> · ㄴ-shaped stance. Feet at right angles, about one foot apart, knees slightly bent.</p>`:"")+
   (M.some(x=>x.stance==="gyeot")?feet({dir:"na",stance:"gyeot",lead:"L"})+`<p><b>Gyeotdari seogi</b> · assisting stance. Rear foot close behind the front heel, rear knee bent in behind the front knee.</p>`:"")+
+  (M.some(x=>x.stance==="ogeum")?feet({dir:"na",stance:"ogeum",lead:"R"})+`<p><b>Ogeum seogi</b> · reverse crane stance. Stand on the red foot; the other instep presses into the back of the standing knee.</p>`:"")+
   (M.some(x=>x.stance==="horse")?feet({dir:"na",stance:"horse"})+`<p><b>Juchum seogi</b> · horse stance. Feet wide and parallel, knees bent and pushed out.</p>`:"")+
   (M.some(x=>x.stance==="crane")?feet({dir:"na",stance:"crane",lead:"R"})+`<p><b>Hakdari seogi</b> · crane stance. Stand on the red foot; the other foot rests against the standing knee. Named for the standing leg.</p>`:"")+
   feet({dir:"na",stance:"kick",lead:"R"})+`<p><b>Ap chagi</b> · front kick from the rear leg.</p>`+

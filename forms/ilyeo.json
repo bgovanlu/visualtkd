@@ -1,0 +1,694 @@
+{
+ "slug": "ilyeo",
+ "pdf": "ilyeo-print.pdf",
+ "title": "Ilyeo",
+ "ko": "일여",
+ "symbol": {
+  "name": "Ilyeo",
+  "hanja": "一如",
+  "meaning": "Oneness · mind and body as one"
+ },
+ "movements": 23,
+ "note": {
+  "h": "卍 · Il · one",
+  "p": "Ilyeo is oneness, the heart of the Silla monk Wonhyo's teaching: mind and body, point, line and circle, all become one, and movement starts and ends without deliberate thought. The floor line is 卍, the Buddhist manji. You start at its centre and trace its four hooked arms, every turn to the left: a diamond block, a turn, a jump into reverse crane stance, a slow side kick and a high X block, then on to the next arm."
+ },
+ "footer": "Move numbers follow the Kukkiwon count (23 movements); techniques in one movement share a number (9-1 twist and pull, 9-2 punch; 19-1 front kick, 19-2 jumping side kick, 19-3 high X block). Finish with <b>Baro</b>: move the right foot, turn to face ga and return to bojumeok junbi.",
+ "boardMin": 1500,
+ "cardW": 96,
+ "figH": 116,
+ "floor": {
+  "glyph": "卍",
+  "bars": {
+   "r1": "fit hookl",
+   "r5": "fit hookr"
+  },
+  "notesBelow": true,
+  "prongs": [
+   {
+    "at": "c2r",
+    "from": "r3"
+   },
+   {
+    "at": "c4l",
+    "from": "r3"
+   }
+  ],
+  "map": "M50 30V8H28M50 30H90V8M50 30V52H72M50 30H10V52"
+ },
+ "layout": {
+  "r1": [
+   [
+    "13",
+    "12",
+    "11",
+    "10"
+   ]
+  ],
+  "c2": [
+   "7",
+   "8",
+   "9-1",
+   "9-2"
+  ],
+  "c2r": [
+   "17"
+  ],
+  "r3": [
+   [
+    "20-2",
+    "20-1",
+    "19-3",
+    "19-2",
+    "19-1",
+    "18"
+   ],
+   [
+    "J"
+   ],
+   [
+    "14",
+    "15",
+    "16-1",
+    "16-2"
+   ]
+  ],
+  "c4": [
+   "1",
+   "2"
+  ],
+  "c4l": [
+   "21",
+   "22",
+   "23-1",
+   "23-2",
+   "23-3"
+  ],
+  "r5": [
+   [
+    "3",
+    "4",
+    "5",
+    "6"
+   ]
+  ]
+ },
+ "pos": {
+  "J": [
+   42.0,
+   16.2
+  ],
+  "1": [
+   38.8,
+   22.0
+  ],
+  "2": [
+   35.4,
+   35.2
+  ],
+  "3": [
+   32.0,
+   48.4
+  ],
+  "4": [
+   40.4,
+   42.7
+  ],
+  "5": [
+   40.4,
+   42.7
+  ],
+  "6": [
+   32.0,
+   41.8
+  ],
+  "7": [
+   30.6,
+   38.0
+  ],
+  "8": [
+   32.0,
+   36.9
+  ],
+  "9-1": [
+   32.0,
+   36.9
+  ],
+  "9-2": [
+   35.4,
+   23.7
+  ],
+  "10": [
+   30.4,
+   16.2
+  ],
+  "11": [
+   38.8,
+   22.0
+  ],
+  "12": [
+   38.8,
+   22.0
+  ],
+  "13": [
+   40.1,
+   16.2
+  ],
+  "14": [
+   45.6,
+   15.3
+  ],
+  "15": [
+   47.2,
+   16.2
+  ],
+  "16-1": [
+   47.2,
+   16.2
+  ],
+  "16-2": [
+   66.4,
+   18.6
+  ],
+  "17": [
+   77.2,
+   15.2
+  ],
+  "18": [
+   77.2,
+   22.1
+  ],
+  "19-1": [
+   70.4,
+   22.3
+  ],
+  "19-2": [
+   56.8,
+   22.3
+  ],
+  "19-3": [
+   55.2,
+   21.3
+  ],
+  "20-1": [
+   55.2,
+   21.3
+  ],
+  "20-2": [
+   36.0,
+   19.0
+  ],
+  "21": [
+   25.2,
+   22.4
+  ],
+  "22": [
+   25.2,
+   15.5
+  ],
+  "23-1": [
+   32.0,
+   15.7
+  ],
+  "23-2": [
+   45.6,
+   15.7
+  ],
+  "23-3": [
+   47.2,
+   14.7
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "na",
+   "view": "front",
+   "stance": "close",
+   "arms": {
+    "L": "cover",
+    "R": "cover"
+   },
+   "tech": "cover",
+   "desc": "Stand at the centre facing ga, feet together, the right fist wrapped in the left hand in front of the chest (bojumeok junbi, about 5 seconds)."
+  },
+  {
+   "id": "1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "desc": "Step the left foot forward into a back stance with the left foot forward. Double knife-hand block."
+  },
+  {
+   "id": "2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "bandae",
+   "desc": "Step the right foot forward into a right front stance. Right middle punch."
+  },
+  {
+   "id": "3",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "high"
+   },
+   "tech": "keumgang",
+   "desc": "Step the left foot forward into a back stance with the left foot forward. Diamond block, slowly (about 5 seconds)."
+  },
+  {
+   "id": "4",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "desc": "Move the left foot and turn 90° left to face da in a back stance with the left foot forward. Double knife-hand block."
+  },
+  {
+   "id": "5",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "baro",
+   "desc": "In the same stance, right middle punch."
+  },
+  {
+   "id": "6",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "ogeum",
+   "lead": "R",
+   "arms": {
+    "R": "pressdown",
+    "L": "spear"
+   },
+   "tech": "presspear",
+   "kihap": true,
+   "step": {
+    "move": [
+     1.4,
+     0
+    ]
+   },
+   "desc": "Jump forward toward da, landing on the right foot with the left instep behind the right knee: reverse crane stance. Right palm pressing block with a left spear-hand thrust."
+  },
+  {
+   "id": "7",
+   "dir": "na",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "houter"
+   },
+   "tech": "oesanskick",
+   "desc": "Pivot on the right foot to face ga and slowly left side kick toward na with a single mountain block (about 5 seconds)."
+  },
+  {
+   "id": "8",
+   "dir": "na",
+   "view": "back",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "xhigh",
+    "R": "xhigh"
+   },
+   "tech": "xhigh",
+   "desc": "Set the left foot down toward na in a back stance with the left foot forward. High X block, left over right."
+  },
+  {
+   "id": "9-1",
+   "dir": "na",
+   "view": "back",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "grabtw",
+    "R": "grabtw"
+   },
+   "tech": "twgrab",
+   "desc": "In the same stance, open both hands, turn them over and take hold."
+  },
+  {
+   "id": "9-2",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "bandae",
+   "desc": "Pull, and step the right foot forward into a right front stance. Right middle punch."
+  },
+  {
+   "id": "10",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "high"
+   },
+   "tech": "keumgang",
+   "desc": "Move the left foot and turn 90° left to face ra in a back stance with the left foot forward. Diamond block, slowly (about 5 seconds)."
+  },
+  {
+   "id": "11",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "desc": "Move the left foot and turn 90° left to face ga in a back stance with the left foot forward. Double knife-hand block."
+  },
+  {
+   "id": "12",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "baro",
+   "desc": "In the same stance, right middle punch."
+  },
+  {
+   "id": "13",
+   "dir": "ga",
+   "view": "front",
+   "stance": "ogeum",
+   "lead": "R",
+   "arms": {
+    "L": "pressdown",
+    "R": "spear"
+   },
+   "tech": "presspear",
+   "kihap": true,
+   "step": {
+    "move": [
+     1.4,
+     0
+    ]
+   },
+   "desc": "Jump forward toward ga, landing on the right foot with the left instep behind the right knee: reverse crane stance. Left palm pressing block with a right spear-hand thrust."
+  },
+  {
+   "id": "14",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "houter"
+   },
+   "tech": "oesanskick",
+   "desc": "Pivot on the right foot and slowly left side kick toward da with a single mountain block (about 5 seconds)."
+  },
+  {
+   "id": "15",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "xhigh",
+    "R": "xhigh"
+   },
+   "tech": "xhigh",
+   "desc": "Set the left foot down toward da in a back stance with the left foot forward. High X block, left over right."
+  },
+  {
+   "id": "16-1",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "grabtw",
+    "R": "grabtw"
+   },
+   "tech": "twgrab",
+   "desc": "In the same stance, open both hands, turn them over and take hold."
+  },
+  {
+   "id": "16-2",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "bandae",
+   "desc": "Pull, and step the right foot forward into a right front stance. Right middle punch."
+  },
+  {
+   "id": "17",
+   "dir": "na",
+   "view": "back",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "high"
+   },
+   "tech": "keumgang",
+   "desc": "Move the left foot and turn 90° left to face na in a back stance with the left foot forward. Diamond block, slowly (about 5 seconds)."
+  },
+  {
+   "id": "18",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "close",
+   "lead": "R",
+   "arms": {},
+   "tech": "hipready",
+   "desc": "Draw the left foot in and turn 90° left to face ra, feet together. Draw both fists to the waist, a little slowly."
+  },
+  {
+   "id": "19-1",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {},
+   "tech": "kick",
+   "desc": "Right front kick toward ra."
+  },
+  {
+   "id": "19-2",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "jskick",
+   "desc": "Set the right foot down and jump: left jumping side kick toward ra."
+  },
+  {
+   "id": "19-3",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "xhigh",
+    "R": "xhigh"
+   },
+   "tech": "xhigh",
+   "desc": "Land the left foot forward in a back stance with the left foot forward. High X block, left over right."
+  },
+  {
+   "id": "20-1",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "grabtw",
+    "R": "grabtw"
+   },
+   "tech": "twgrab",
+   "desc": "In the same stance, open both hands, turn them over and take hold."
+  },
+  {
+   "id": "20-2",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "bandae",
+   "desc": "Pull, and step the right foot forward into a right front stance. Right middle punch."
+  },
+  {
+   "id": "21",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "high"
+   },
+   "tech": "keumgang",
+   "desc": "Move the left foot and turn 90° left to face ga in a back stance with the left foot forward. Diamond block, slowly (about 5 seconds)."
+  },
+  {
+   "id": "22",
+   "dir": "da3",
+   "view": "side",
+   "face": "R",
+   "stance": "close",
+   "lead": "R",
+   "arms": {},
+   "tech": "hipready",
+   "desc": "Draw the left foot in and turn 90° left to face da, feet together. Draw both fists to the waist, a little slowly."
+  },
+  {
+   "id": "23-1",
+   "dir": "da3",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {},
+   "tech": "kick",
+   "desc": "Left front kick toward da."
+  },
+  {
+   "id": "23-2",
+   "dir": "da3",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "jskick",
+   "desc": "Set the left foot down and jump: right jumping side kick toward da."
+  },
+  {
+   "id": "23-3",
+   "dir": "da3",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "L": "xhigh",
+    "R": "xhigh"
+   },
+   "tech": "xhigh",
+   "desc": "Land the right foot forward in a back stance with the right foot forward. High X block, right over left."
+  }
+ ],
+ "refs": [
+  {
+   "go": "kukkiwon-ilyeo",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Ilyeo",
+   "desc": "The form’s official description and meaning.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/read?boardManagementNo=55&boardNo=1364&page=1&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "kukkiwon-poomsae",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Poomsae index",
+   "desc": "Every official poomsae, Taegeuk 1–8 and the black-belt forms.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/list?boardManagementNo=55&menuLevel=3&menuNo=72"
+  },
+  {
+   "go": "video-ilyeo",
+   "kind": "yt",
+   "icon": "play",
+   "src": "YouTube · Kukkiwon textbook",
+   "title": "Ilyeo demonstration",
+   "desc": "The Taekwondo Textbook (vol. 3) video, linked from the Kukkiwon page for the form.",
+   "url": "https://www.youtube.com/watch?v=GV0TwhH5Hkk"
+  },
+  {
+   "go": "kukkiwon-youtube",
+   "kind": "yt",
+   "icon": "channel",
+   "src": "YouTube · Channel",
+   "title": "Kukkiwon World Taekwondo Headquarters",
+   "desc": "The official Kukkiwon channel.",
+   "url": "https://www.youtube.com/channel/UCaQb3jutLu15oSfhPh8FACQ"
+  },
+  {
+   "go": "wt-poomsae-rules",
+   "kind": "wt",
+   "icon": "pdf",
+   "src": "World Taekwondo · PDF",
+   "title": "Poomsae Competition Rules and Interpretation",
+   "desc": "In force from 30 September 2024; how poomsae are judged.",
+   "url": "https://www.worldtaekwondo.org/att_file/documents/Poomsae%20Competition%20Rules%20and%20Interpretation%20(In%20force%20as%20of%20September%2030%202024).pdf"
+  }
+ ]
+}

@@ -19,6 +19,6 @@
     {"slug": "jitae",    "rom": "Jitae",    "ko": "지태", "hanja": "地跆", "floor": "ㅗ", "moves": 28},
     {"slug": "cheonkwon","rom": "Cheonkwon","ko": "천권", "hanja": "天拳", "floor": "ㅜ", "moves": 26},
     {"slug": "hansu",    "rom": "Hansu",    "ko": "한수", "hanja": "漢水", "floor": "水", "moves": 27},
-    {"slug": "ilyeo",    "rom": "Ilyeo",    "ko": "일여"}
+    {"slug": "ilyeo",    "rom": "Ilyeo",    "ko": "일여", "hanja": "一如", "floor": "卍", "moves": 23}
   ]
 }
