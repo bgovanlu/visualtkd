@@ -425,7 +425,7 @@ const ITF=FORM.family==="itf";
 /* rows r1/r3 are the A–B line and r5 the far E–F bar (Dan-Gun's I); floor.letters overrides per row: {"r5":["E","F"]} */
 const LET=Object.assign({r1:["A","B"],r3:["A","B"],r5:["E","F"]},(FORM.floor||{}).letters||{});
 if(ITF){itfNames();Object.assign(DIRN,{na:"C",ga:"D",da1:LET.r1[1],da2:LET.r3[1],da3:LET.r5[1],ra1:LET.r1[0],ra2:LET.r3[0],ra3:LET.r5[0],
-    nara:"C"+LET.r5[0],nada:"C"+LET.r5[1],gara:"D"+LET.r5[0],gada:"D"+LET.r5[1]});   // diagonals named as the ITF does: CE, CF …
+    nara:"C"+LET.r5[0],nada:"C"+LET.r5[1],gara:"D"+LET.r5[0],gada:"D"+LET.r5[1]},(FORM.floor||{}).diag||{});   // diagonals named as the ITF does: CE, CF …; floor.diag overrides ({"gara":"AD"})
   document.querySelector(".compass.n").textContent="C";document.querySelector(".compass.s").textContent="D";
   ["r1","r3","r5"].forEach(r=>{const b=document.getElementById(r);b.querySelector(".dl.l").textContent=LET[r][0];b.querySelector(".dl.r").textContent=LET[r][1]});
   document.getElementById("readP").innerHTML="You start at the centre facing <b>D</b>, the bottom of the page, so <b>B</b> (your left) is on the right of the page and <b>A</b> on the left. The ITF books draw the same diagram from behind you, with D at the top. Figures on the left and right are seen from the side; centre figures face you going toward D and show their back going toward C."}
@@ -579,6 +579,8 @@ document.getElementById("legend").innerHTML=ITF?
   (M.some(x=>x.stance==="front")?feet({dir:"na",stance:"front",lead:"L"})+`<p><b>Gunnun sogi</b> · walking stance. About 1½ shoulder widths long and one wide, front knee bent over the heel, rear leg straight. Named by the front foot.</p>`:"")+
   (M.some(x=>x.stance==="back")?feet({dir:"na",stance:"back",lead:"L"})+`<p><b>Niunja sogi</b> · L-stance. Feet at right angles, about 1½ shoulder widths apart, most of the weight on the bent rear leg. Named by the rear foot: this one, left foot forward, is a right L-stance.</p>`:"")+
   (M.some(x=>x.stance==="fixed")?feet({dir:"na",stance:"fixed",lead:"L"})+`<p><b>Gojung sogi</b> · fixed stance. Like the L-stance but a little longer, weight even on both legs. Named by the front foot.</p>`:"")+
+  (M.some(x=>x.stance==="horse")?feet({dir:"na",stance:"horse"})+`<p><b>Annun sogi</b> · sitting stance. Feet parallel, about 1½ shoulder widths apart, knees bent and pushed out, weight even.</p>`:"")+
+  (M.some(x=>x.stance==="cross")?feet({dir:"na",stance:"cross",lead:"L"})+`<p><b>Kyocha sogi</b> · X-stance. One foot crossed behind the other, resting on its ball; usually after a jump.</p>`:"")+
   (M.some(x=>x.stance==="crane")?feet({dir:"na",stance:"crane",lead:"R"})+`<p><b>Guburyo sogi</b> · bending stance. Stand on the bent red leg, the other foot lifted beside its knee, ready to kick. Named by the standing leg.</p>`:"")+
   `<span></span><p style="font-size:12px">Red foot leads; the blue tick is the direction you face. Walking-stance chips are filled; L-stance chips have a double outline. Directions are the ITF letters: you start facing D, with B on your left and A on your right.</p>`:
   feet({dir:"na",stance:"walk",lead:"L"})+`<p><b>Ap seogi</b> · walking stance. One natural step, feet almost in line.</p>`+

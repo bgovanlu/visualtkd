@@ -426,6 +426,28 @@ This is the first ITF page: `/itf/chon-ji`, with a 2-page print sheet.
   - the crane-stance simulator now honours a `plant` hint, so 7 brings the right foot to the left;
   - move 27 is worded "Land the right foot … then turn".
 
+## Yul-Gok · 율곡 (ITF) — 18 October 2026
+
+`/itf/yul-gok`, with a 2-page print sheet, on a 士 board:
+- the short A–B line with the start at the top;
+- the diagonals AD and BD beside the stem below it;
+- the stem down to D;
+- the long E–F line at the bottom.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 38 movements. The ITF Korean names come from the chart. Fandom was not used. There is no official video.
+
+- [ ] **Kihaps at 24, 27 and 36.** These follow the official ITF page; the chart has none.
+- [ ] **The 士 diagram's short diagonals** (AD, BD) are drawn as side groups below the A–B line, without lines. Their footprints show the diagonal facing. The page names them AD and BD (`floor.diag`).
+- [ ] **Move 1 and move 4: the extended fist** ("extending the left fist to D horizontally"). This is a measuring posture, not a strike. It's a new library entry, `sitext`, named "Annun sogi" as the chart does. Both are drawn with the fist straight out, in front view.
+- [ ] **Palm hooking block (15, 16, 18, 19)** is drawn with the Kukkiwon palm inside block arm (new library entry `golcho`). The hooking pull isn't shown.
+- [ ] **Front elbow strike into the palm (24, 27)** uses the Kukkiwon target elbow strike figure. In front view (24), the arms read a little like an X in front of the chin. A side view might read better.
+- [ ] **Twin knife-hand block (28, 30):** the front knife-hand blocks to the side and the rear knife-hand guards above the forehead (new library entry `sangsonkal`, new arm `kstwinhigh`). Check which hand rises.
+- [ ] **Jump into X-stance (36):** the text has the body turned to face B while the back fist strikes to C. The figure is drawn from behind, facing C, so the strike direction reads. The body turn toward B isn't shown.
+- [ ] **Double forearm high block (37, 38):** a rising block with the other fist bracing the arm (Kukkiwon `assist` arm; new library entry `doopalmok`).
+- [ ] **E–F placement.** 28–31 are drawn on the long E–F line at the D end of the stem, following the book's 士 (long bar near D). In the simulated floor, they happen just after the elbow strike at 27, part-way back up the stem.
+- [ ] **Footwork.** The simulator ends 4.6 foot-lengths toward D from the start. That is within the range of the Kukkiwon forms (Sipjin 5.7), and comes from the long walk down the stem and the short way back.
+- [ ] **ITF legend.** The legend now also explains sitting stance and X-stance when a pattern uses them; Do-San's sheet was reprinted with it.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:

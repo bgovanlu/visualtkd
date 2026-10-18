@@ -68,7 +68,7 @@ const FOOT_HEEL=[[-3.7,-1],[3.7,-1],[4.4,3.8],[3.2,6.5],[-3.2,6.5],[-4.4,3.8]];
 const FIST=[[-.4,-3.8],[3,-4.6],[7.6,-4.5],[9.8,-2.8],[10.3,.4],[9.4,3.6],[6,4.8],[1.6,4.3],[-.4,3.6]];
 const HAND_FLAT=[[-.4,-3],[3,-3.4],[9,-3.2],[13.2,-2],[14,0],[13.2,2],[9,3.1],[3,3.3],[-.4,2.8]];
 // open-hand techniques draw a flat hand instead of a fist
-const OPEN=new Set(["ksout","ksblock","ksguard","spear","press","neck","khigh","eltarget","twist","palm","grab","ksside","kslow",
+const OPEN=new Set(["kstwinhigh","ksout","ksblock","ksguard","spear","press","neck","khigh","eltarget","twist","palm","grab","ksside","kslow",
   "tongmil","gyeopson","ksstrike","arc","kneebreak","hold","target","lspear","pressdown","elbowpush","palmlow","palmjaw","ksin","kspread","tgrab",
   "passist","rockhi","rocklo","rwedge","lift","kxlow","htarget",
   "wing","khopen","twistm","swingo","ohouter","pushlo","pushhi","grabtw"]);
@@ -128,7 +128,7 @@ function skel(m,pr){
       else if(act==="outer")h=add(sh,mul([19,-7],ak));
       else if(act==="sideblk")h=add(sh,mul([27,-2],ak));
       else if(act==="xshoulder")h=add(sh,mul([14,4],ak));   // fist drawn back in front of the other shoulder   // ITF side block: forearm upright out in front of the shoulder, clear of the face
-      else if(act==="twinhigh"){h=add(sh,mul([5,-36],ak));p=[1,-.15]}   // ITF twin forearm block, rear arm: guarding above the forehead
+      else if(act==="twinhigh"||act==="kstwinhigh"){h=add(sh,mul([5,-36],ak));p=[1,-.15]}   // ITF twin forearm (or knife-hand) block, rear arm: guarding above the forehead
       else if(act==="ksout")h=add(sh,mul([22,-5],ak));
       else if(act==="ksblock")h=add(sh,mul([25,-3],ak));
       else if(act==="ksguard")h=add(sh,mul([13,15],ak));
@@ -280,11 +280,11 @@ function skel(m,pr){
       else if(act==="outer"){h=[x*(pr.shW+4),T+6*tk];p=[x*.4,1]}
       else if(act==="sideblk"){h=[x*(pr.shW+4),T+6*tk];p=[x*.4,1]}
       else if(act==="xshoulder"){h=[x*-15,T+8*tk];p=[x*.6,.6]}
-      else if(act==="twinhigh"){h=[x*-4,T-24*tk];p=[x,-.4]}
+      else if(act==="twinhigh"||act==="kstwinhigh"){h=[x*-4,T-24*tk];p=[x,-.4]}
       else if(act==="ksout"||act==="ksblock"){h=[x*(pr.shW+2),T+4*tk];p=[x*.4,1]}
       else if(act==="ksguard"){h=[x*-2,T+22*tk];p=[x,.3]}
       else if(act==="neck"){h=[x*-7,T-2*tk];p=[x,.6]}          // knife hand ends at neck height, palm up
-      else if(act==="backfist"){h=[x*3,T-14*tk];p=[x,.2]}
+      else if(act==="backfist"||act==="bfside"){h=[x*3,T-14*tk];p=[x,.2]}
       else if(act==="hammer")h=[x*(pr.shW+30),T+16*tk];
       else if(act==="elbow"){h=[x*-6,T+4*tk];p=[x,.2]}
       else if(act==="eltarget"||act==="grab"){h=[x*-8,T+6*tk];p=[x,.4]}
@@ -558,7 +558,7 @@ const CHIPN={ready:"Naranhi",kick:"Ap chagi",skick:"Yeop chagi",rkick:"Dollyeo c
 const CHIPCLS={ready:"ready",close:"ready",kick:"kick",skick:"kick",rkick:"kick",knee:"kick",tiger:"tiger",horse:"horse",
   crane:"crane",ogeum:"crane",back:"back",nieun:"back",fixed:"back",walk:"walk",front:"front"};
 let ITFNAMES=false;
-function itfNames(){ITFNAMES=true;Object.assign(CHIPN,{ready:"Narani",front:"Gunnun sogi",back:"Niunja sogi",horse:"Annun sogi",kick:"Apcha busigi",skick:"Yopcha jirugi",crane:"Guburyo sogi",close:"Moa sogi"})}
+function itfNames(){ITFNAMES=true;Object.assign(CHIPN,{ready:"Narani",front:"Gunnun sogi",back:"Niunja sogi",horse:"Annun sogi",kick:"Apcha busigi",skick:"Yopcha jirugi",crane:"Guburyo sogi",close:"Moa sogi",cross:"Kyocha sogi"})}
 const flipLR=s=>s==="L"?"R":"L";
 const chipSide=m=>ITFNAMES&&m.stance==="back"?flipLR(m.lead):m.lead;
 function chip(m){
