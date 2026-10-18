@@ -62,7 +62,8 @@ A new form is picked up automatically: once `forms/<form>.json` exists for a slu
 ## ITF forms (`"family": "itf"`)
 
 - Set `"family": "itf"` in the form JSON. The page then uses the ITF names (`itf` in `data/techniques.json` entries, via `sitekit.lib_js(itf=True)`), the ITF direction letters and the ITF legend and reading note.
-- **Directions:** the site keeps its own orientation: you start facing down the page. So `ga` = **D**, `na` = **C**, `da1–3` = **B** (the student's left, right of the page) and `ra1–3` = **A**. The ITF books draw D at the top, seen from behind; the reading note says so.
+- **Directions:** the site keeps its own orientation: you start facing down the page. So `ga` = **D**, `na` = **C**, `da1`/`da2` = **B** (the student's left, right of the page), `ra1`/`ra2` = **A**, and on the far bar `ra3` = **E** and `da3` = **F** (Dan-Gun's I). `floor.letters` overrides the letters per row, e.g. `{"r5": ["E", "F"]}` (left, right of the page).
+- **ITF arm poses:** `sideblk` (inner forearm side block, forearm out in front of the shoulder, clear of the face in profile) and `twinhigh` (the rising arm of the twin forearm block). Twin forearm block = `sideblk` + `twinhigh`. The ITF books draw D at the top, seen from behind; the reading note says so.
 - **Stances:** walking stance (gunnun sogi) uses `front`; L-stance (niunja sogi) uses `back`. Chips and instructions name the L-stance by the **rear** foot, as the ITF does (`lead` stays the front foot in the data).
 - **Notes:** punches use `note: "obverse"` / `"reverse"` (the English words, because ITF baro/bandae run the other way from Kukkiwon).
 - **Counting and references:** move ids follow the ITF Encyclopedia count. `refs` use kind `itf` (red gate icon); short links `itf-<name>` and `itf-encyclopedia`.

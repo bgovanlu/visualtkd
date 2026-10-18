@@ -366,6 +366,22 @@ This is the first ITF page: `/itf/chon-ji`, with a 2-page print sheet.
 - [ ] **Image briefs** (`design/moves/itf-chon-ji/SPEC.md`) still describe the stances in Kukkiwon terms (ap kubi, dwit kubi). Adjust them before generating ITF figure images.
 - [ ] **Print seal.** The 天地 seal in the print header renders badly (an empty box, with the characters spilling below). The Koryo sheet does the same, so it's an older print-CSS issue on every black-belt sheet, not new with Chon-Ji.
 
+## Dan-Gun · 단군 (ITF) — 18 October 2026
+
+`/itf/dan-gun`, with a 2-page print sheet, on the I board: the A–B bar through the start at the top, the stem down to D, and the far E–F bar at the bottom.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 21 movements. The ITF Korean names come from the chart. Fandom was not used. There is no official video.
+
+- [ ] **Kihaps at 8 and 17.** These follow the official ITF page; the chart has none.
+- [ ] **270° turns at 9 and 18.** The text says "turning counter-clockwise" toward a side that is on the student's right, so both are drawn as 270° turns to the left with the rear (left) foot swinging round. The instructions say "Turn 270° to the left".
+- [ ] **E and F.** E is drawn on the student's right (page left, below A) and F on the left (page right, below B), following the chart's diagram, which has F left and E right with D at the top.
+- [ ] **Twin forearm block (9, 11)** is drawn with the front arm upright out in front of the shoulder and the rear arm guarding above the forehead (new library entry `sangpalmok`). Neither source says which arm rises. The front-arm-middle / rear-arm-high version is the common one; check it.
+- [ ] **New arm poses for side views:** `sideblk` and `twinhigh`. These keep the forearms clear of the face. Chon-Ji's inner forearm side blocks now use `sideblk` too.
+- [ ] **Knife-hand middle outward strike (18, 20)** uses the Kukkiwon knife-hand outer strike (hansonnal bakkat chigi), which is drawn at neck height. ITF says middle (shoulder height).
+- [ ] **Knife-hand guarding block (1, 3)** uses the Kukkiwon double knife-hand block figure.
+- [ ] **13 and 14** are separate counts in the same stance (low block, then rising block "in a continuous motion"). On the board they are two figures, not one combined card.
+- [ ] **Footwork.** The simulator ends 1.8 foot-lengths from the start.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:

@@ -125,6 +125,8 @@ function skel(m,pr){
       else if(act==="inside")h=add(sh,mul([22,-1],ak));
       else if(act==="high"||act==="khigh"){h=add(sh,mul([17,-30],ak));p=[1,-.15]}
       else if(act==="outer")h=add(sh,mul([19,-7],ak));
+      else if(act==="sideblk")h=add(sh,mul([27,-2],ak));   // ITF side block: forearm upright out in front of the shoulder, clear of the face
+      else if(act==="twinhigh"){h=add(sh,mul([5,-36],ak));p=[1,-.15]}   // ITF twin forearm block, rear arm: guarding above the forehead
       else if(act==="ksout")h=add(sh,mul([22,-5],ak));
       else if(act==="ksblock")h=add(sh,mul([25,-3],ak));
       else if(act==="ksguard")h=add(sh,mul([13,15],ak));
@@ -274,6 +276,8 @@ function skel(m,pr){
       else if(act==="high"){h=[x*-4,T-24*tk];p=[x,-.4]}        // forearm across, above the forehead
       else if(act==="khigh"){h=[x*-4,T-24*tk];p=[x,-.4]}
       else if(act==="outer"){h=[x*(pr.shW+4),T+6*tk];p=[x*.4,1]}
+      else if(act==="sideblk"){h=[x*(pr.shW+4),T+6*tk];p=[x*.4,1]}
+      else if(act==="twinhigh"){h=[x*-4,T-24*tk];p=[x,-.4]}
       else if(act==="ksout"||act==="ksblock"){h=[x*(pr.shW+2),T+4*tk];p=[x*.4,1]}
       else if(act==="ksguard"){h=[x*-2,T+22*tk];p=[x,.3]}
       else if(act==="neck"){h=[x*-7,T-2*tk];p=[x,.6]}          // knife hand ends at neck height, palm up

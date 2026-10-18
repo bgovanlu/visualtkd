@@ -274,7 +274,7 @@
    "stance": "back",
    "lead": "L",
    "arms": {
-    "L": "outer"
+    "L": "sideblk"
    },
    "tech": "anpalmok",
    "desc": "Turn left: move the left foot to A into a right L-stance facing A (left foot forward, weight on the right leg). Left inner forearm middle side block."
@@ -301,7 +301,7 @@
    "stance": "back",
    "lead": "R",
    "arms": {
-    "R": "outer"
+    "R": "sideblk"
    },
    "tech": "anpalmok",
    "desc": "Turn clockwise: move the right foot to B into a left L-stance facing B (right foot forward, weight on the left leg). Right inner forearm middle side block."
@@ -327,7 +327,7 @@
    "stance": "back",
    "lead": "L",
    "arms": {
-    "L": "outer"
+    "L": "sideblk"
    },
    "tech": "anpalmok",
    "desc": "Turn left: move the left foot to C into a right L-stance facing C (left foot forward, weight on the right leg). Left inner forearm middle side block."
@@ -352,7 +352,7 @@
    "stance": "back",
    "lead": "R",
    "arms": {
-    "R": "outer"
+    "R": "sideblk"
    },
    "tech": "anpalmok",
    "desc": "Turn clockwise: move the right foot to D into a left L-stance facing D (right foot forward, weight on the left leg). Right inner forearm middle side block."

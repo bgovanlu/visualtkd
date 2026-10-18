@@ -1,0 +1,341 @@
+{
+ "form": "Dan-Gun",
+ "slug": "itf/dan-gun",
+ "moves": [
+  {
+   "id": "J",
+   "file": "J.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "junbi",
+    "R": "junbi"
+   },
+   "tech": "junbi",
+   "name": "Junbi · Ready",
+   "desc": "Stand at the centre of the A–B line facing D in parallel ready stance: feet parallel and one shoulder-width apart, fists in front of the belt.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: fist in front of the belt, a fist-width from the body, both fists at the same height. LEFT hand: fist in front of the belt, a fist-width from the body, both fists at the same height. This is the ready posture of Dan-Gun: Stand at the centre of the A–B line facing D in parallel ready stance: feet parallel and one shoulder-width apart, fists in front of the belt."
+  },
+  {
+   "id": "1",
+   "file": "1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Turn left: move the left foot to B into a right L-stance facing B (left foot forward, weight on the right leg). Knife-hand middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand (far arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. This is count 1 of Dan-Gun: Turn left: move the left foot to B into a right L-stance facing B (left foot forward, weight on the right leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "2",
+   "file": "2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "hpunch"
+   },
+   "tech": "hpunch",
+   "name": "Eolgul jireugi · High punch",
+   "desc": "Step the right foot forward toward B into a right walking stance. Right high punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (near arm): high punch (eolgul jireugi): arm fully extended straight forward at face height, fist palm-down. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 2 of Dan-Gun: Step the right foot forward toward B into a right walking stance. Right high punch."
+  },
+  {
+   "id": "3",
+   "file": "3.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Turn clockwise: move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Knife-hand middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. LEFT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 3 of Dan-Gun: Turn clockwise: move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "4",
+   "file": "4.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "hpunch"
+   },
+   "tech": "hpunch",
+   "name": "Eolgul jireugi · High punch",
+   "desc": "Step the left foot forward toward A into a left walking stance. Left high punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): high punch (eolgul jireugi): arm fully extended straight forward at face height, fist palm-down. This is count 4 of Dan-Gun: Step the left foot forward toward A into a left walking stance. Left high punch."
+  },
+  {
+   "id": "5",
+   "file": "5.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "name": "Arae makki · Low block",
+   "desc": "Turn left: move the left foot to D into a left walking stance facing D. Left forearm low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 5 of Dan-Gun: Turn left: move the left foot to D into a left walking stance facing D. Left forearm low block."
+  },
+  {
+   "id": "6",
+   "file": "6.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "hpunch"
+   },
+   "tech": "hpunch",
+   "name": "Eolgul jireugi · High punch",
+   "desc": "Step the right foot forward toward D into a right walking stance. Right high punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: high punch (eolgul jireugi): arm fully extended straight forward at face height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 6 of Dan-Gun: Step the right foot forward toward D into a right walking stance. Right high punch."
+  },
+  {
+   "id": "7",
+   "file": "7.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "hpunch"
+   },
+   "tech": "hpunch",
+   "name": "Eolgul jireugi · High punch",
+   "desc": "Step the left foot forward toward D into a left walking stance. Left high punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: high punch (eolgul jireugi): arm fully extended straight forward at face height, fist palm-down. This is count 7 of Dan-Gun: Step the left foot forward toward D into a left walking stance. Left high punch."
+  },
+  {
+   "id": "8",
+   "file": "8.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "hpunch"
+   },
+   "tech": "hpunch",
+   "name": "Eolgul jireugi · High punch",
+   "desc": "Step the right foot forward toward D into a right walking stance. Right high punch, with a kihap.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: high punch (eolgul jireugi): arm fully extended straight forward at face height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 8 of Dan-Gun: Step the right foot forward toward D into a right walking stance. Right high punch, with a kihap."
+  },
+  {
+   "id": "9",
+   "file": "9.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk",
+    "R": "twinhigh"
+   },
+   "tech": "sangpalmok",
+   "name": "Sang palmok makgi · Twin forearm block",
+   "desc": "Turn 270° to the left: move the left foot round to E into a right L-stance facing E (left foot forward, weight on the right leg). Twin forearm block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (far arm): rising guard of the ITF twin forearm block: forearm held across, a fist-width above the forehead. LEFT hand (near arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 9 of Dan-Gun: Turn 270° to the left: move the left foot round to E into a right L-stance facing E (left foot forward, weight on the right leg). Twin forearm block."
+  },
+  {
+   "id": "10",
+   "file": "10.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "hpunch"
+   },
+   "tech": "hpunch",
+   "name": "Eolgul jireugi · High punch",
+   "desc": "Step the right foot forward toward E into a right walking stance. Right high punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): high punch (eolgul jireugi): arm fully extended straight forward at face height, fist palm-down. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 10 of Dan-Gun: Step the right foot forward toward E into a right walking stance. Right high punch."
+  },
+  {
+   "id": "11",
+   "file": "11.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk",
+    "L": "twinhigh"
+   },
+   "tech": "sangpalmok",
+   "name": "Sang palmok makgi · Twin forearm block",
+   "desc": "Turn clockwise: move the right foot to F into a left L-stance facing F (right foot forward, weight on the left leg). Twin forearm block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (near arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand (far arm): rising guard of the ITF twin forearm block: forearm held across, a fist-width above the forehead. This is count 11 of Dan-Gun: Turn clockwise: move the right foot to F into a left L-stance facing F (right foot forward, weight on the left leg). Twin forearm block."
+  },
+  {
+   "id": "12",
+   "file": "12.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "hpunch"
+   },
+   "tech": "hpunch",
+   "name": "Eolgul jireugi · High punch",
+   "desc": "Step the left foot forward toward F into a left walking stance. Left high punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): high punch (eolgul jireugi): arm fully extended straight forward at face height, fist palm-down. This is count 12 of Dan-Gun: Step the left foot forward toward F into a left walking stance. Left high punch."
+  },
+  {
+   "id": "13",
+   "file": "13.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "name": "Arae makki · Low block",
+   "desc": "Turn left: move the left foot to C into a left walking stance facing C. Left forearm low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 13 of Dan-Gun: Turn left: move the left foot to C into a left walking stance facing C. Left forearm low block."
+  },
+  {
+   "id": "14",
+   "file": "14.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "high"
+   },
+   "tech": "high",
+   "name": "Eolgul makki · High block",
+   "desc": "In the same stance, left forearm rising block, flowing straight on from the low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. This is count 14 of Dan-Gun: In the same stance, left forearm rising block, flowing straight on from the low block."
+  },
+  {
+   "id": "15",
+   "file": "15.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "high"
+   },
+   "tech": "high",
+   "name": "Eolgul makki · High block",
+   "desc": "Step the right foot forward toward C into a right walking stance with a right forearm rising block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 15 of Dan-Gun: Step the right foot forward toward C into a right walking stance with a right forearm rising block."
+  },
+  {
+   "id": "16",
+   "file": "16.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "high"
+   },
+   "tech": "high",
+   "name": "Eolgul makki · High block",
+   "desc": "Step the left foot forward toward C into a left walking stance with a left forearm rising block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. This is count 16 of Dan-Gun: Step the left foot forward toward C into a left walking stance with a left forearm rising block."
+  },
+  {
+   "id": "17",
+   "file": "17.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "high"
+   },
+   "tech": "high",
+   "name": "Eolgul makki · High block",
+   "desc": "Step the right foot forward toward C into a right walking stance with a right forearm rising block, with a kihap.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 17 of Dan-Gun: Step the right foot forward toward C into a right walking stance with a right forearm rising block, with a kihap."
+  },
+  {
+   "id": "18",
+   "file": "18.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksstrike"
+   },
+   "tech": "ksstrike",
+   "name": "Hansonnal bakkat chigi · Knife-hand outer strike",
+   "desc": "Turn 270° to the left: move the left foot round to B into a right L-stance facing B (left foot forward, weight on the right leg). Left knife-hand middle outward strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): knife-hand outer strike (sonnal bakkat chigi): open hand swung outward horizontally at neck height, palm down. This is count 18 of Dan-Gun: Turn 270° to the left: move the left foot round to B into a right L-stance facing B (left foot forward, weight on the right leg). Left knife-hand middle outward strike."
+  },
+  {
+   "id": "19",
+   "file": "19.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "hpunch"
+   },
+   "tech": "hpunch",
+   "name": "Eolgul jireugi · High punch",
+   "desc": "Step the right foot forward toward B into a right walking stance. Right high punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (near arm): high punch (eolgul jireugi): arm fully extended straight forward at face height, fist palm-down. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 19 of Dan-Gun: Step the right foot forward toward B into a right walking stance. Right high punch."
+  },
+  {
+   "id": "20",
+   "file": "20.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksstrike"
+   },
+   "tech": "ksstrike",
+   "name": "Hansonnal bakkat chigi · Knife-hand outer strike",
+   "desc": "Turn clockwise: move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Right knife-hand middle outward strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): knife-hand outer strike (sonnal bakkat chigi): open hand swung outward horizontally at neck height, palm down. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 20 of Dan-Gun: Turn clockwise: move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Right knife-hand middle outward strike."
+  },
+  {
+   "id": "21",
+   "file": "21.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "hpunch"
+   },
+   "tech": "hpunch",
+   "name": "Eolgul jireugi · High punch",
+   "desc": "Step the left foot forward toward A into a left walking stance. Left high punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): high punch (eolgul jireugi): arm fully extended straight forward at face height, fist palm-down. This is count 21 of Dan-Gun: Step the left foot forward toward A into a left walking stance. Left high punch."
+  }
+ ]
+}

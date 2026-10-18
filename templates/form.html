@@ -422,9 +422,11 @@ const M=FORM.moves;
 /* ITF forms (FORM.family "itf"): ITF names, and the ITF direction letters. You start facing D (down the page,
    like na → ga on the Kukkiwon pages), so C is up, B (your left) is on the right of the page and A on the left. */
 const ITF=FORM.family==="itf";
-if(ITF){itfNames();Object.assign(DIRN,{na:"C",ga:"D",da1:"B",da2:"B",da3:"B",ra1:"A",ra2:"A",ra3:"A"});
+/* rows r1/r3 are the A–B line and r5 the far E–F bar (Dan-Gun's I); floor.letters overrides per row: {"r5":["E","F"]} */
+const LET=Object.assign({r1:["A","B"],r3:["A","B"],r5:["E","F"]},(FORM.floor||{}).letters||{});
+if(ITF){itfNames();Object.assign(DIRN,{na:"C",ga:"D",da1:LET.r1[1],da2:LET.r3[1],da3:LET.r5[1],ra1:LET.r1[0],ra2:LET.r3[0],ra3:LET.r5[0]});
   document.querySelector(".compass.n").textContent="C";document.querySelector(".compass.s").textContent="D";
-  document.querySelectorAll(".dl.l").forEach(e=>e.textContent="A");document.querySelectorAll(".dl.r").forEach(e=>e.textContent="B");
+  ["r1","r3","r5"].forEach(r=>{const b=document.getElementById(r);b.querySelector(".dl.l").textContent=LET[r][0];b.querySelector(".dl.r").textContent=LET[r][1]});
   document.getElementById("readP").innerHTML="You start at the centre facing <b>D</b>, the bottom of the page, so <b>B</b> (your left) is on the right of the page and <b>A</b> on the left. The ITF books draw the same diagram from behind you, with D at the top. Figures on the left and right are seen from the side; centre figures face you going toward D and show their back going toward C."}
 const CMP=ITF?["C","D"]:["NA · 나","GA · 가"];
 const SIDES=ITF?`<text x="-4" y="31.5">A</text><text x="104" y="31.5">B</text>`:"";
