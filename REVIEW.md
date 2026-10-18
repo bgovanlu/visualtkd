@@ -448,6 +448,26 @@ This is the first ITF page: `/itf/chon-ji`, with a 2-page print sheet.
 - [ ] **Footwork.** The simulator ends 4.6 foot-lengths toward D from the start. That is within the range of the Kukkiwon forms (Sipjin 5.7), and comes from the long walk down the stem and the short way back.
 - [ ] **ITF legend.** The legend now also explains sitting stance and X-stance when a pattern uses them; Do-San's sheet was reprinted with it.
 
+## Joong-Gun · 중근 (ITF) — 18 October 2026
+
+`/itf/joong-gun`, with a 2-page print sheet, on the I board. Moves 26–30 sit in the middle row of the stem, nearer the start, because that's where they happen.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 32 movements. The ITF Korean names come from the chart. Fandom was not used. There is no official video.
+
+- [ ] **Kihap at 12.** This follows the official ITF page; the chart has none.
+- [ ] **Close ready stance B** is drawn with the same covered-fist figure as stance A. The ITF stance B holds the hands lower, in front of the abdomen; the figure doesn't show the difference.
+- [ ] **Rear foot stance (3, 6)** uses the tiger-stance (beom seogi) figure. Its chips name the **rear** foot, as the ITF does: "L · Dwitbal sogi" = the left foot back.
+- [ ] **Low stance (27, 29)** is a new library stance (`lowst`). It is drawn with the walking-stance figure.
+- [ ] **Reverse knife-hand middle block (1, 4)** uses the Kukkiwon ridge-hand block entry and the knife-hand arm. The other hand is drawn chambered.
+- [ ] **Low side front snap kick (2, 5)** with the front foot is drawn as a front kick in profile (new library entry `yobapcha`).
+- [ ] **Upward palm block (3, 6)** uses a new arm, `palmup` (new library entry `ollyo`).
+- [ ] **Twin fist punches (11, 12):** the high vertical punch puts both fists foreshortened beside the head (`twinv`); the upset punch puts both fists palm-up at the solar plexus (`upset`). The upset punch uses the Kukkiwon double uppercut entry with an ITF name.
+- [ ] **Release from a grab (15, 18)** is a new library entry, `jappyosul`. It is drawn as the arm extended forward. The twist isn't shown.
+- [ ] **Angle punch (30)** uses the Kukkiwon target-punch arm in profile (new library entry `giokja`). The ㄱ-bent arm isn't really visible from the side.
+- [ ] **U-shape block (31, 32):** the front arm is drawn high and the rear arm middle (new arms `uhigh` / `ulow`, library entry `digutja`). Neither source says which hand is on top; check it.
+- [ ] **High punch in front view.** Front-view high punches now have their own foreshortened pose, with the fist at chin height and the face clear. Dan-Gun 6–8 used to fall back to a default pose; they were redrawn and that sheet reprinted.
+- [ ] **Footwork.** The simulator ends 4.2 foot-lengths toward D from the start, from the long walk down the stem. Moves 3 and 6 are worded "Land …, then step …" so the kicking foot lands first.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:
