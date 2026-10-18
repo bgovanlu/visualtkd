@@ -490,6 +490,29 @@ This is the first ITF page: `/itf/chon-ji`, with a 2-page print sheet.
 - [ ] **Library.** Low X block, mountain block, the low and flat spear hands and the knee strike now carry ITF names. New entries: `anpalmokm`, `yopdwi`, `twinelbow`, `doolowpush`, `grabhead`, `yopdwilow`, `kslowguard`.
 - [ ] **Footwork.** The simulator ends 3.7 foot-lengths from the start. The front-foot low kicks at 23 and 26 needed landing hints on 24 and 27.
 
+## Hwa-Rang · 화랑 (ITF) — 18 October 2026
+
+`/itf/hwa-rang`, with a 2-page print sheet, on an I board:
+- the A–B line with the start at the top: the opening moves at the start and toward A (1–8), the closing blocks to B and A (26–29) just below it;
+- the stem down to D (9–14), with the climb back toward C (20–25) in the row above the far line;
+- the guarding blocks, fingertip thrust and turning kicks on the E–F line (15–19).
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 29 movements; the chart copies the official text. The ITF Korean names come from the chart. Fandom was not used. There is no official video.
+
+- [ ] **Kihap at 14 and 25.** These follow the official ITF page; the chart marks none.
+- [ ] **Close ready stance C (J).** Neither text describes the hands. The page says "left hand over the right fist, held low in front of the abdomen" and draws the same covered-fist arms as ready stances A and B. Please check against the Encyclopedia.
+- [ ] **Vertical stance (7)** is new (`vertical`, soojik sogi). It's drawn and simulated with the L-stance figure, so the straight legs and shorter length don't show. Named by the rear foot ("left vertical stance" = left foot back), which is how the text reads: the right foot is pulled back from a right fixed stance.
+- [ ] **Fixed stance at 6** is named by the front foot, as in Won-Hyo: "right fixed stance" keeps the right foot forward after the slide from the left L-stance.
+- [ ] **Move 11** (pull the left foot to the right foot, left palm on the right fist, right elbow bent out) has no Korean name in either text. The library entry `sideprep` is called "Yopcha jirugi junbi" (our name). It's drawn as a closed stance in profile with the covered-fist arms; the bent elbow doesn't show.
+- [ ] **Side kick then knife-hand strike (12)** is split into 12-1 and 12-2. The same goes for **19** (turning kick, then the guarding block on landing: 19-1, 19-2). The Encyclopedia counts each as one movement.
+- [ ] **Turning 270° at 15.** "Move the left foot to E turning counter-clockwise" from facing D: with E on the A side, as on the Dan-Gun page, that is a 270° turn, and the instruction says so.
+- [ ] **Turning kicks (18, 19-1)** toward DF and CF are drawn in profile facing F, each with the knife-hand guard held. The text doesn't say where the hands are during the kicks.
+- [ ] **Upward punch (5)** uses the Kukkiwon uppercut arm with the other fist in front of the opposite shoulder (`xshoulder`).
+- [ ] **Side elbow thrust (25)** goes back toward C while the body faces D in L-stance. It's drawn in front view with the elbow out to the side; the other hand is chambered, which the text doesn't specify.
+- [ ] **Obverse punches.** The L-stance punches at 21–23 are marked "obverse" because the Korean names say *baro*; the walking-stance punches at 8, 10, 13 and 14 are obverse too.
+- [ ] **Library.** The roundhouse kick now carries its ITF name (Dollyo chagi, turning kick). New entries: `vertical` (stance), `moajunbic`, `yobapmiro`, `ollyojirugi`, `ksdown`, `sideprep`, `yopelbow`, `anyobap`. New arm `ksdown`.
+- [ ] **Footwork.** The simulator ends 5.9 foot-lengths from the start, about one stride short toward D. The way down has five full steps; the way back has a pull-back (21), shorter L-stance steps, a slip and a slide. Move 25's slide is set to two foot-lengths.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:

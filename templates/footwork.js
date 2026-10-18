@@ -76,7 +76,7 @@ function simulate(M){
   const out=[];let cur=null,air=null;
   M.forEach((m,i)=>{
     if(m.stance==="ogeum")m={...m,stance:"crane"};   // ogeum seogi stands like crane stance
-    if(m.stance==="fixed")m={...m,stance:"back"};    // ITF gojung sogi (fixed stance): an L-stance with the weight even
+    if(m.stance==="fixed"||m.stance==="vertical")m={...m,stance:"back"};    // ITF gojung sogi (fixed stance): an L-stance with the weight even
     if(m.stance==="lowst")m={...m,stance:"front"};   // ITF nachuo sogi (low stance): a long walking stance
     const face=DIRV[m.dir],S=said(m),st=m.stance,step=m.step||{};
     let feet,moved=[],how="";
