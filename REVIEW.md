@@ -513,6 +513,30 @@ This is the first ITF page: `/itf/chon-ji`, with a 2-page print sheet.
 - [ ] **Library.** The roundhouse kick now carries its ITF name (Dollyo chagi, turning kick). New entries: `vertical` (stance), `moajunbic`, `yobapmiro`, `ollyojirugi`, `ksdown`, `sideprep`, `yopelbow`, `anyobap`. New arm `ksdown`.
 - [ ] **Footwork.** The simulator ends 5.9 foot-lengths from the start, about one stride short toward D. The way down has five full steps; the way back has a pull-back (21), shorter L-stance steps, a slip and a slide. Move 25's slide is set to two foot-lengths.
 
+## Choong-Moo · 충무 (ITF) — 18 October 2026
+
+`/itf/choong-moo`, with a 2-page print sheet, on an I board:
+- the A–B line with the start at the top: the opening moves to B and A (1–4);
+- the closing moves to B and A (23–30) just below it, either side of the stem;
+- the stem down to D (5–9) in the middle row, and the climb back toward C (18–22) in the row above the far line;
+- the grab, knee kick, reverse knife-hand strike and the turning and back kicks on the E–F line (10–17).
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 30 movements; the chart copies the official text. The ITF Korean names come from the chart. Fandom was not used. There is no official video.
+
+- [ ] **Kihap at 9 and 19.** These follow the official ITF page; the chart marks none. At 9 the page puts it on the flying side kick (9-1), not on the guarding block after landing (9-2); the text only says "Ki-Hap" after the whole movement.
+- [ ] **9 and 24 are split** into -1 and -2 (flying side kick, then the guarding block on landing; front block, then the back fist strike). The Encyclopedia counts each as one movement.
+- [ ] **Turning 270° at 10 and 23.** Both say "turning counter-clockwise": from facing D to E (10) and from facing C to B (23). With E on the A side, as on the Dan-Gun page, both are 270° turns, and the instructions say so.
+- [ ] **Knife-hand high front strike (2)** uses the Kukkiwon swallow-form neck strike figure and library entry (jebipoom mok chigi), which now carries the ITF name. The motion and the hand at the forehead match; please confirm you're happy to treat them as the same technique.
+- [ ] **Reverse knife-hand high front strike (13)** is new (`rdfront`); drawn with the knife-hand neck strike arm, the left hand under the elbow.
+- [ ] **Back piercing kick (15)** is new (`bkick`) but drawn with the side kick figure facing F, so the chip reads "Yopcha jirugi". In the pattern the back is toward F.
+- [ ] **Turning kicks (14, 17)** and the **side kicks (7, 9-1, 25, 26)** are drawn with the hands guarding; the text doesn't say where the hands are.
+- [ ] **Bending ready stance A (6)** is drawn as in Won-Hyo and Yul-Gok, the body side-on to C.
+- [ ] **U-shape block (18)** in fixed stance facing C is drawn from behind.
+- [ ] **Back fist side strike (24-2)** to B from sitting stance facing C is drawn from behind with the fist beside the head, as in Yul-Gok 36.
+- [ ] **X-knife-hand checking block (27)** is a new arm (`kxcheck`): both hands crossed in front of the chest.
+- [ ] **Library.** The swallow-form neck strike now carries its ITF name (Sonkal nopunde ap taerigi). New entries: `rdfront`, `flyskick`, `bkick`, `apmakgi`, `ksxcheck`, `sangollyo`; new surface `dwitkumchi` (heel).
+- [ ] **Footwork.** The simulator ends 2.5 foot-lengths from the start. The flying side kick (9-1) has a 1.5 foot-length travel hint and the reverse knife-hand strike (13) a one foot-length hint.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:

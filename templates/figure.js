@@ -71,7 +71,7 @@ const HAND_FLAT=[[-.4,-3],[3,-3.4],[9,-3.2],[13.2,-2],[14,0],[13.2,2],[9,3.1],[3
 const OPEN=new Set(["palmup","kstwinhigh","ksout","ksblock","ksguard","spear","press","neck","khigh","eltarget","twist","palm","grab","ksside","kslow",
   "tongmil","gyeopson","ksstrike","arc","kneebreak","hold","target","lspear","pressdown","elbowpush","palmlow","palmjaw","ksin","kspread","tgrab",
   "passist","rockhi","rocklo","rwedge","lift","kxlow","htarget",
-  "ksdown","wing","khopen","twistm","swingo","ohouter","pushlo","pushhi","grabtw"]);
+  "ksdown","kxcheck","wing","khopen","twistm","swingo","ohouter","pushlo","pushhi","grabtw"]);
 // seen from the front, these come straight at the viewer: drawn foreshortened (fist face or hand edge), never across the face
 const TOWARD={bfside:k=>[12,-7],hpunch:k=>[3,9],twinv:k=>[12,-2],upset:k=>[7,18],punch:k=>[1.5,20],neck:k=>[-3,5],arc:k=>[-1,5],palmjaw:k=>[-1,9],tgrab:k=>[-2,16],chet:k=>[7,20]};
 const KNIFE_FACE=[[-6.8,-2.4],[6.8,-2.4],[7.6,0],[6.8,2.4],[-6.8,2.4],[-7.6,0]];
@@ -161,7 +161,8 @@ function skel(m,pr){
       else if(act==="assist")h=add(sh,mul([14,14],ak));
       else if(act==="tongmil")h=add(sh,mul([24,-8],ak));
       else if(act==="ksstrike")h=add(sh,mul([40,-6],ak));
-      else if(act==="ksdown")h=add(sh,mul([38,8],ak));                // ITF knife-hand downward strike: edge brought down to chest height in front
+      else if(act==="ksdown")h=add(sh,mul([38,8],ak));
+      else if(act==="kxcheck")h=add(sh,mul([30,2],ak));               // ITF X-knife-hand checking block: both hands crossed at the wrists in front of the chest                // ITF knife-hand downward strike: edge brought down to chest height in front
       else if(act==="arc")h=add(sh,mul([44,-8],ak));
       else if(act==="kneebreak")h=[30*ak,hipY+4];
       else if(act==="hold"){h=[5,hipY-17*tk];p=[-1,.2]}
@@ -316,6 +317,7 @@ function skel(m,pr){
       else if(act==="tongmil"){h=[x*-1.5,T+15*tk];p=[x,.15]}   // hands meet below the chin, elbows out
       else if(act==="ksstrike"){h=[x*(pr.shW+30),T+2*tk];p=[x*.3,1]}
       else if(act==="ksdown"){h=[x*(pr.shW+6),T+14*tk];p=[x*.4,1]}
+      else if(act==="kxcheck"){h=[x*-4,T+10*tk];p=[x,.4]}
       else if(act==="arc"||act==="palmjaw"){h=[x*-3,T+5*tk];p=[x,.3]}
       else if(act==="tgrab"){h=[x*-3,T+14*tk];p=[x,.3]}
       else if(act==="lspear"){h=[x*-3,hipY-1];p=[x,.2]}
