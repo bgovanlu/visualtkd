@@ -424,7 +424,8 @@ const M=FORM.moves;
 const ITF=FORM.family==="itf";
 /* rows r1/r3 are the A–B line and r5 the far E–F bar (Dan-Gun's I); floor.letters overrides per row: {"r5":["E","F"]} */
 const LET=Object.assign({r1:["A","B"],r3:["A","B"],r5:["E","F"]},(FORM.floor||{}).letters||{});
-if(ITF){itfNames();Object.assign(DIRN,{na:"C",ga:"D",da1:LET.r1[1],da2:LET.r3[1],da3:LET.r5[1],ra1:LET.r1[0],ra2:LET.r3[0],ra3:LET.r5[0]});
+if(ITF){itfNames();Object.assign(DIRN,{na:"C",ga:"D",da1:LET.r1[1],da2:LET.r3[1],da3:LET.r5[1],ra1:LET.r1[0],ra2:LET.r3[0],ra3:LET.r5[0],
+    nara:"C"+LET.r5[0],nada:"C"+LET.r5[1],gara:"D"+LET.r5[0],gada:"D"+LET.r5[1]});   // diagonals named as the ITF does: CE, CF …
   document.querySelector(".compass.n").textContent="C";document.querySelector(".compass.s").textContent="D";
   ["r1","r3","r5"].forEach(r=>{const b=document.getElementById(r);b.querySelector(".dl.l").textContent=LET[r][0];b.querySelector(".dl.r").textContent=LET[r][1]});
   document.getElementById("readP").innerHTML="You start at the centre facing <b>D</b>, the bottom of the page, so <b>B</b> (your left) is on the right of the page and <b>A</b> on the left. The ITF books draw the same diagram from behind you, with D at the top. Figures on the left and right are seen from the side; centre figures face you going toward D and show their back going toward C."}
@@ -486,7 +487,7 @@ const pair=ids=>`<div class="pair">${ids.map(card).join("")}</div>`;
      bars:  {r1|r3|r5: "full" | "fit" (line only under its figures) | "noline" | "ends" (no line, groups at both ends) | "fit hookl" / "fit hookr" (short bar from the centre line out to one side) | "gone" (row removed)}
      rail:  [from, to] rows joined by the centre line (default ["r1","r5"])
      prongs:[{at:"c2l", from:"r1"}]  extra vertical lines down to side groups c2l/c2r/c4l/c4r
-     spokes:[{from:"r3", to:"r1", g:0}]  diagonal lines (水) from the centre of row `from` (its top or bottom edge) to the g-th group of row `to`
+     spokes:[{from:"r3", to:"r1", g:0}]  diagonal lines (水) from the centre of row `from` (its top or bottom edge) to the g-th group of row `to`, or to a side group ({from:"r5", to:"c4l"})
      notesBelow: move the four side notes under the board so the middle rows can hold figures
      spots: one-line floors (一): layout.r1 lists the spots on the line from ra to da; each spot is a column
             of the counts made there, the first on the line, the rest below it, all other rows removed
@@ -532,7 +533,7 @@ function placeRail(){
   });
   board.querySelectorAll(".prong,.spoke").forEach(n=>n.remove());
   (FL.spokes||[]).forEach(sp=>{
-    const el=document.getElementById(sp.to).querySelectorAll(".pair")[sp.g];if(!el)return;
+    const T=document.getElementById(sp.to),el=T&&(T.classList.contains("side")?T:T.querySelectorAll(".pair")[sp.g]);if(!el||!el.children.length)return;   // a row's g-th group, or a side group (c4l …)
     // start at the edge of the centre row (above its heads or below its labels) so the spoke never crosses its figures
     const F=document.getElementById(sp.from).getBoundingClientRect(),up=lineY(sp.to)<lineY(sp.from);
     const R=el.getBoundingClientRect(),x0=B.width/2,y0=(up?F.top:F.bottom)-B.top,x1=R.left+R.width/2-B.left,y1=(up?R.bottom:R.top)-B.top;

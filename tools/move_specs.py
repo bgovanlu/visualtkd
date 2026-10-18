@@ -45,6 +45,7 @@ ARM = {
     "punch": "middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down",
     "hpunch": "high punch (eolgul jireugi): arm fully extended straight forward at face height, fist palm-down",
     "inside": "inside middle block (momtong an makki): forearm upright in front of the chest, elbow bent about 90 degrees, fist at shoulder height on the centre line, palm toward the body",
+    "bfside": "ITF back fist high side strike: elbow bent, back of the fist striking forward at temple height, the fist beside the head, never across the face",
     "sideblk": "ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned",
     "twinhigh": "rising guard of the ITF twin forearm block: forearm held across, a fist-width above the forehead",
     "outer": "outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward",

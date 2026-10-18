@@ -382,6 +382,30 @@ This is the first ITF page: `/itf/chon-ji`, with a 2-page print sheet.
 - [ ] **13 and 14** are separate counts in the same stance (low block, then rising block "in a continuous motion"). On the board they are two figures, not one combined card.
 - [ ] **Footwork.** The simulator ends 1.8 foot-lengths from the start.
 
+## Do-San · 도산 (ITF) — 18 October 2026
+
+`/itf/do-san`, with a 2-page print sheet.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 24 movements. The chart's Korean labels for 18 and 19 are shifted by one; that's a typo in the chart. Fandom was not used. There is no official video.
+
+- [ ] **Floor line.** The book draws Do-San as a stepped half-卍: half a bar to B, the stem to D, half a bar to E. But the moves go to both ends of both bars and also run along two diagonals. So the board is drawn as Dan-Gun's I:
+  - the A–B bar with the start at the top;
+  - the stem down to D;
+  - the E–F bar at the bottom;
+  - the diagonal moves (13–16 toward CE, 17–20 toward CF) beside the stem just above the far bar, without lines (lines there came out almost flat). Their footprints show the diagonal facing.
+
+  The header shows the floor line as "I". The forms-page card still shows the book's stepped shape.
+- [ ] **Kihaps at 6 and 22.** These follow the official ITF page; the chart has none.
+- [ ] **Moves 3 and 11** ("move the left foot on line AB, then turn clockwise"). Drawn as: the left foot shifts back onto the line and you pivot to face the other way. So 3–4 happen about where 1–2 did, not out at the A end.
+- [ ] **Move 9** is a 270° turn to the left, as in Dan-Gun.
+- [ ] **Move 7.** Twist the right hand free, then turn a full circle counter-clockwise and step forward. It's drawn as one figure (the back fist).
+- [ ] **Fingertip thrust (6).** The left hand is drawn under the right elbow, as in the Kukkiwon spear-hand thrust. The texts don't say where the other hand goes.
+- [ ] **High wedging block (13, 17)** uses the Kukkiwon middle wedge figure; the ITF block is high.
+- [ ] **Back fist high side strike (7, 8)** uses a new ITF-only arm, `bfside`. In front view the fist is foreshortened beside the head, clear of the face. The Kukkiwon front-view back fists (T5 6-2, 7-2, 8; Sipjin 23-2) still cross the face; that's a separate question.
+- [ ] **Sitting-stance knife-hand strikes (23, 24)** are drawn in front view facing D, with the strike to the side, as Koryo does. The table's direction column shows D.
+- [ ] **Front snap kicks (14, 18)** keep both arms in the wedging block, as the text says.
+- [ ] **Footwork.** The simulator ends 2.2 foot-lengths from the start.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:

@@ -73,7 +73,7 @@ const OPEN=new Set(["ksout","ksblock","ksguard","spear","press","neck","khigh","
   "passist","rockhi","rocklo","rwedge","lift","kxlow","htarget",
   "wing","khopen","twistm","swingo","ohouter","pushlo","pushhi","grabtw"]);
 // seen from the front, these come straight at the viewer: drawn foreshortened (fist face or hand edge), never across the face
-const TOWARD={punch:k=>[1.5,20],neck:k=>[-3,5],arc:k=>[-1,5],palmjaw:k=>[-1,9],tgrab:k=>[-2,16],chet:k=>[7,20]};
+const TOWARD={bfside:k=>[12,-7],punch:k=>[1.5,20],neck:k=>[-3,5],arc:k=>[-1,5],palmjaw:k=>[-1,9],tgrab:k=>[-2,16],chet:k=>[7,20]};
 const KNIFE_FACE=[[-6.8,-2.4],[6.8,-2.4],[7.6,0],[6.8,2.4],[-6.8,2.4],[-7.6,0]];
 const FIST_FACE=[[-5.4,-4.3],[5.4,-4.3],[6.3,0],[5.6,4.5],[-5.6,4.5],[-6.3,0]];
 const mk=far=>({far,legs:[],arms:[],feet:[],fists:[],torso:null,head:null,neck:null});
@@ -133,7 +133,7 @@ function skel(m,pr){
       else if(act==="spear")h=add(sh,mul([48,4],ak));
       else if(act==="press")h=add(sh,mul([24,20],ak));
       else if(act==="neck")h=add(sh,mul([40,-4],ak));
-      else if(act==="backfist")h=add(sh,mul([36,-12],ak));
+      else if(act==="backfist"||act==="bfside")h=add(sh,mul([36,-12],ak));
       else if(act==="hammer")h=add(sh,mul([38,10],ak));
       else if(act==="elbow"){h=add(sh,mul([10,2],ak));p=[1,.3]}
       else if(act==="eltarget")h=add(sh,mul([24,2],ak));
@@ -554,7 +554,7 @@ const CHIPN={ready:"Naranhi",kick:"Ap chagi",skick:"Yeop chagi",rkick:"Dollyeo c
 const CHIPCLS={ready:"ready",close:"ready",kick:"kick",skick:"kick",rkick:"kick",knee:"kick",tiger:"tiger",horse:"horse",
   crane:"crane",ogeum:"crane",back:"back",nieun:"back",walk:"walk",front:"front"};
 let ITFNAMES=false;
-function itfNames(){ITFNAMES=true;Object.assign(CHIPN,{ready:"Narani",front:"Gunnun sogi",back:"Niunja sogi",horse:"Annun sogi"})}
+function itfNames(){ITFNAMES=true;Object.assign(CHIPN,{ready:"Narani",front:"Gunnun sogi",back:"Niunja sogi",horse:"Annun sogi",kick:"Apcha busigi"})}
 const flipLR=s=>s==="L"?"R":"L";
 const chipSide=m=>ITFNAMES&&m.stance==="back"?flipLR(m.lead):m.lead;
 function chip(m){
