@@ -313,6 +313,30 @@ Sources: [Kukkiwon textbook video](https://www.youtube.com/watch?v=GV0TwhH5Hkk) 
 - [ ] **18 and 22, fists-at-waist ready** in closed stance, drawn as its own figure (NBTKDA "slowly", not 5 s).
 - [ ] **Board.** 卍 drawn with the centre line, the middle bar, a short bar from the centre out to the left at the top (10–13) and to the right at the bottom (3–6), and prongs for the right arm's hook up (17) and the left arm's hook down (21–23). Schematic: groups follow the arms in order, not the exact spots.
 
+## ITF forms (Chang Hon tul) — skeleton only, 18 October 2026
+
+The forms index now has two sections: **World Taekwondo forms** (the Kukkiwon poomsae: Taegeuk and black-belt) and **ITF forms**. The ITF section lists the 24 patterns as planned cards. Each card shows the pattern's floor diagram (its skeleton layout), rank and move count. No ITF pages or print sheets exist yet. The data is `itf` in `data/catalog.json`.
+
+**Sources so far.**
+- **Diagrams, counts and ready postures:** a club chart that reproduces the Encyclopedia ("ITF Patterns on Mobile", Taekwon-Do Kildare, 2019).
+- **Cross-checks:** the per-pattern pages of the ITF led by Choi Jung Hwa (itf-administration.com), and Kidokwan's article on the diagram origins.
+- **Fandom:** not used.
+- **Still to do:** check every diagram against a scan of the Encyclopedia / Condensed Encyclopedia before building the first ITF page.
+
+- [ ] **URLs.** The planned paths are `/itf/<name>`, e.g. `/itf/chon-ji` and `/itf/se-jong`. Nothing is printed yet, so these can still change. Once the first sheet ships they are fixed. Confirm the `/itf/` prefix and the hyphenated names.
+- [ ] **Diagram orientation.** The cards draw each diagram as the Encyclopedia does: **D at the top** (the way the student faces at the start), C at the bottom, B left, A right, with the ready position as a red dot. The Kukkiwon pages put **na at the top with the student facing down the page**, so the two families face opposite ways. Keep the book orientation for ITF, or flip it to match the Kukkiwon pages?
+- [ ] **Which ITF.** There are several ITF federations: ITF-HQ in Vienna, the ITF led by Choi Jung Hwa, and others. Neither main body publishes a free per-pattern page or video I could confirm, so the cards carry no reference links yet. Pick the federation whose version the sheets should follow, and its references.
+- [ ] **Juche or Ko-Dang (no. 15).** The card shows Juche (45 moves, ITF-HQ). Choi Jung Hwa's ITF uses the name "Kodang" for the same 45 moves. Some schools still teach the original 39-move Ko-Dang, whose diagram I couldn't confirm. Decide the name, and whether to add the 39-move Ko-Dang as an extra card.
+- [ ] **Saju Jirugi and Saju Makgi.** These are the 10th-gup fundamental exercises. They aren't among the 24 patterns, so they aren't listed. Add them as a "Fundamental exercises" row?
+- [ ] **Ranks.** Each card shows the rank where a pattern is usually learned (Chon-Ji at 9th gup … Tong-Il at 6th dan). Some syllabi list the grade a pattern is tested for instead, which shifts each colour-belt pattern by one. Use your school's syllabus.
+- [ ] **Do-San diagram.** The chart draws a stepped half-卍: half a bar from the start to B, the stem to D, then half a bar to E. Yet Do-San's opening moves go to both B and A, so the real floor line probably has a full bottom bar. The card follows the chart for now. It shows no glyph name because the Encyclopedia gives no meaning for this diagram.
+- [ ] **Ul-Ji diagram.** Some texts print "⊥". The drawn diagram is a 乙-like zig-zag: start at the D end, half a bar to F, the stem to C, then half a bar to A. That fits "his surname" (乙). The card shows 乙.
+- [ ] **Yul-Gok diagram.** The card draws 士 with the two short diagonals from the start shown in the chart. Check against the book.
+- [ ] **Yoo-Sin diagram.** The chart shows I with diagonals at both ends. The card draws a plain I until the diagonal directions are confirmed.
+- [ ] **Choong-Jang diagram.** Drawn as ⊥ (bar B–A through the start, stem to D, short tail toward C). The Encyclopedia gives no meaning for it.
+- [ ] **Juche diagram.** 山 drawn upside down (bar at the D end with the start on it, legs down to F and E, long stem to C). This matches D at the top, the same way the Kukkiwon 王 glyphs read upside down.
+- [ ] **Move counts.** The cards follow the Encyclopedia counts. Choi-Yong is listed as 45 on some sites and Tong-Il as 42; I used 46 and 56. Recount each pattern when its page is built.
+
 ---
 
 _Taegeuk items generated while building Taegeuk 5–8, and black-belt items while building Koryo, Keumgang and Taebaek, both on 13 October 2026. Add new items under the form they belong to._

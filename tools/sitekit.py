@@ -38,8 +38,8 @@ def lib_js():
     return json.dumps({"t": t, "s": s}, ensure_ascii=False).replace("</", "<\\/")
 
 def form_files():
-    """forms/*.json in teaching order: Taegeuk 1-8, then the black-belt forms in catalogue order."""
-    order = [f["slug"] for f in CATALOG["taegeuk"] + CATALOG["blackbelt"]]
+    """forms/*.json in teaching order: Taegeuk 1-8, the black-belt forms, then the ITF patterns, in catalogue order."""
+    order = [f["slug"] for f in CATALOG["taegeuk"] + CATALOG["blackbelt"] + CATALOG.get("itf", [])]
     files = {}
     for name in os.listdir(os.path.join(ROOT, "forms")):
         if name.endswith(".json"):
@@ -61,7 +61,7 @@ def nav(active=None):
             f'<ul>{items}</ul></nav>')
 
 def footer(extra=""):
-    return ('<footer class="sitefoot"><p>Form names, sequences and counts follow Kukkiwon. '
+    return ('<footer class="sitefoot"><p>World Taekwondo form names, sequences and counts follow Kukkiwon; ITF patterns follow the ITF Encyclopedia of Taekwon-Do. '
             'Descriptions are our own words; see each form&rsquo;s official references for the source text.'
             f'{(" " + extra) if extra else ""}</p><p><a href="/">visualtkd.com</a></p></footer>')
 

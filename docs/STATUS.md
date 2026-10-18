@@ -1,6 +1,6 @@
 # Status — 14 October 2026
 
-## Forms: 12 of 17 built
+## World Taekwondo forms: 17 of 17 built
 | Form | Path | Figures | Review |
 |---|---|---|---|
 | Taegeuk Il Jang | /taegeuk/1 | 21 | Published |
@@ -17,6 +17,9 @@
 | Ilyeo 一如 (卍) | /ilyeo | 31 | Open items in REVIEW.md; directions from the Kukkiwon textbook video (fandom differs) |
 
 Planned: none; all 17 Kukkiwon forms are published.
+
+## ITF forms: 0 of 24 built
+The forms index has an **ITF forms** section, next to **World Taekwondo forms**, with a planned card for each of the 24 Chang Hon patterns. Each card has the pattern's floor diagram (skeleton layout), rank and move count from `itf` in `data/catalog.json`. There are no pages or print sheets yet. Open questions (URLs, orientation, federation, Juche/Ko-Dang, diagrams) are in REVIEW.md.
 
 Every print sheet is exactly 2 pages and every QR code decodes to its expected link.
 

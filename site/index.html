@@ -100,7 +100,7 @@ section > p.intro{margin:0 0 16px;color:var(--muted);max-width:68ch}
 .progress{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 24px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
 .progress b{font-family:var(--f-mono);font-weight:500;font-size:26px;font-variant-numeric:tabular-nums}
 .progress small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.meter{display:grid;grid-template-columns:repeat(17,1fr);gap:4px}
+.meter{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:4px}
 .meter i{height:8px;border-radius:3px;background:var(--line)}
 .meter i.done{background:var(--fire)}
 .progress p{grid-column:1/-1;margin:0;font-size:14px;color:var(--muted)}
@@ -133,28 +133,29 @@ section > p.intro{margin:0 0 16px;color:var(--muted);max-width:68ch}
 
 <section aria-labelledby="start"><h2 id="start">Start here</h2>
 <ul class="start3">
-  <li><a href="/forms/"><span class="k">17 of 17 forms</span><h3>Forms <span>품새</span></h3><p>Taegeuk Il Jang to Pal Jang and the black-belt forms, each with its floor plan, move-by-move cards, full sequence and print sheet.</p><span class="go">All forms →</span></a></li>
+  <li><a href="/forms/"><span class="k">17 of 41 forms</span><h3>Forms <span>품새 · 틀</span></h3><p>The World Taekwondo forms, Taegeuk Il Jang to Pal Jang and the black-belt poomsae, each with its floor plan, move-by-move cards, full sequence and print sheet. The ITF patterns are next.</p><span class="go">All forms →</span></a></li>
   <li><a href="/library/"><span class="k">12 stances · 112 techniques</span><h3>Technique library <span>기술</span></h3><p>Every stance, block, strike and kick used in the forms: how it is done, the hand or foot surface it uses, and every move where it appears.</p><span class="go">Open the library →</span></a></li>
   <li><a href="/how-to-read/"><span class="k">Two-minute read</span><h3>How to read a diagram</h3><p>The floor line, which way the figures face, the footprints and stance chips, move numbers like 8-1 and 8-2, and how the print sheets work.</p><span class="go">Read the guide →</span></a></li>
 </ul></section>
 
 <section class="progress" aria-label="Progress">
-  <div><small>Forms published</small><b>17 / 17</b></div><div class="meter"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i></div>
-  <p>All eight Taegeuk forms and the first three black-belt forms are up. Pyongwon, Sipjin, Jitae, Cheonkwon, Hansu and Ilyeo follow.</p>
+  <div><small>World Taekwondo forms</small><b>17 / 17</b></div><div class="meter" style="--n:17"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i></div>
+  <div><small>ITF forms</small><b>0 / 24</b></div><div class="meter" style="--n:24"><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+  <p>All 17 World Taekwondo forms are up: the eight Taegeuk and the nine black-belt poomsae. The 24 ITF patterns are planned; their diagrams are on the <a class="lib" href="/forms/#itf">forms page</a>.</p>
 </section>
 
 <section id="about" aria-labelledby="about-h"><h2 id="about-h">About</h2>
 <div class="about">
   <div><h3>What this is</h3>
-    <p>visualtkd is a study aid for the official Kukkiwon poomsae. The old book diagrams are hard to read on a phone and harder to teach from; these keep the original floor lines but redraw every move with a consistent figure, footprints and plain instructions.</p>
+    <p>visualtkd is a study aid for the official taekwondo forms: the Kukkiwon poomsae of World Taekwondo now, and the ITF patterns next. The old book diagrams are hard to read on a phone and harder to teach from; these keep the original floor lines but redraw every move with a consistent figure, footprints and plain instructions.</p>
     <p>It is for students learning a form, and for instructors who want a clean sheet to hand out.</p></div>
   <div><h3>Sources</h3>
     <p>Sequences are checked against the <b>Kukkiwon</b> page for each form and at least one published move chart. Where sources disagree, or no source settles a detail, the choice is written down for review rather than decided silently.</p>
-    <p>Every form page links to its official references. visualtkd is independent and is not affiliated with Kukkiwon or World Taekwondo.</p></div>
+    <p>Every form page links to its official references. visualtkd is independent and is not affiliated with Kukkiwon, World Taekwondo or any ITF federation.</p></div>
   <div><h3>Print sheets and QR codes</h3>
     <p>Each form prints as two US Letter pages: the floor plan, then the full sequence and references. A QR code on each page opens the form on your phone, and every reference has its own short <b>visualtkd.com/go/</b> link, so printed sheets keep working even when a video or page moves.</p></div>
 </div></section>
-<footer class="sitefoot"><p>Form names, sequences and counts follow Kukkiwon. Descriptions are our own words; see each form&rsquo;s official references for the source text.</p><p><a href="/">visualtkd.com</a></p></footer>
+<footer class="sitefoot"><p>World Taekwondo form names, sequences and counts follow Kukkiwon; ITF patterns follow the ITF Encyclopedia of Taekwon-Do. Descriptions are our own words; see each form&rsquo;s official references for the source text.</p><p><a href="/">visualtkd.com</a></p></footer>
 </div>
 
 </body>

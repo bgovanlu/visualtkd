@@ -107,10 +107,10 @@ def form_title(c):
 # ---------------------------------------------------------------- forms index (/forms/)
 FORMS_CSS = """
 header.top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px 32px;align-items:end}
-.status{display:flex;flex-direction:column;gap:8px;min-width:220px}
+.status{display:flex;flex-direction:column;gap:16px;min-width:220px}
 .status b{font-family:var(--f-mono);font-weight:500;font-size:26px;font-variant-numeric:tabular-nums}
 .status small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.meter{display:grid;grid-template-columns:repeat(17,1fr);gap:4px}
+.meter{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:4px}
 .meter i{height:6px;border-radius:3px;background:var(--line)}
 .meter i.done{background:var(--fire)}
 .grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
@@ -142,14 +142,29 @@ a.card:focus-visible{outline:2px solid var(--heaven);outline-offset:3px}
 .bb .hj{font-family:var(--f-display);font-weight:900;color:var(--heaven);font-size:15px}
 .bb .row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:4px}
 .bb .ko{font-family:var(--f-display);font-weight:700}
+.status > div{display:flex;flex-direction:column;gap:6px}
+.jump{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 0}
+.jump a{font-weight:600;font-size:14px;text-decoration:none;color:var(--ink);padding:6px 14px;border-radius:99px;border:1px solid var(--line);background:var(--surface)}
+.jump a:hover{border-color:var(--ink)}
+.family{display:flex;flex-direction:column;gap:0;scroll-margin-top:16px}
+.family > h2{font-size:30px;padding-top:14px;border-top:2px solid var(--ink)}
+.family > .intro{margin:0 0 6px}
+h3.sub{margin:22px 0 12px;font-family:var(--f-display);font-weight:700;font-size:21px}
+h3.sub span{font-weight:700;color:var(--muted);font-size:.72em;margin-left:.3em}
+.dia{width:58px;height:58px;flex:none}
+.dia path{fill:none;stroke:var(--heaven);stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}
+.dia circle{fill:var(--fire)}
+.card.soon .dia path{stroke:var(--muted);opacity:.7}
 @media (max-width:640px){header.top{grid-template-columns:1fr}.card{min-height:0}}
 """
 
-def meter():
-    allf = CAT["taegeuk"] + CAT["blackbelt"]
+WT = CAT["taegeuk"] + CAT["blackbelt"]     # World Taekwondo (Kukkiwon) poomsae
+ITF = CAT["itf"]                            # ITF (Chang Hon) tul
+
+def meter(allf=WT):
     live = sum(c["slug"] in LIVE for c in allf)
     bars = "".join(f'<i class="{"done" if c["slug"] in LIVE else ""}"></i>' for c in allf)
-    return live, len(allf), f'<div class="meter">{bars}</div>'
+    return live, len(allf), f'<div class="meter" style="--n:{len(allf)}">{bars}</div>'
 
 def taegeuk_cards():
     out = []
@@ -173,22 +188,57 @@ def bb_cards():
             out.append(f'<li><b>{c["rom"]}</b><span><span class="ko">{c["ko"]}</span> · planned</span></li>')
     return "".join(out)
 
+def diagram(c, cls="dia"):
+    """An ITF pattern's floor line (its skeleton layout) from catalog `diagram`: `d` is an SVG path on a
+    40x40 grid with A at the top, `start` the ready position."""
+    D = c.get("diagram")
+    if not D: return f'<div class="{cls}" aria-hidden="true"></div>'
+    x, y = D["start"]
+    return (f'<svg class="{cls}" viewBox="-4 -4 48 48" aria-hidden="true"><path d="{D["d"]}"/>'
+            f'<circle cx="{x}" cy="{y}" r="3.4"/></svg>')
+
+def itf_cards(group):
+    out = []
+    for c in ITF:
+        if c["group"] != group: continue
+        live = c["slug"] in LIVE
+        pill = '<span class="pill live">Open</span>' if live else '<span class="pill plan">Planned</span>'
+        glyph = f' · diagram <span lang="zh-Hant">{c["diagram"]["glyph"]}</span>' if c.get("diagram", {}).get("glyph") else ""
+        glyph = f' · {c["rank"]}{glyph}'
+        inner = (f'<div class="top"><span class="num">{c["n"]}</span>{diagram(c)}</div>'
+                 f'<div class="name"><h3>{c["rom"]}</h3><span class="ko">{c["ko"]}{glyph}</span></div>'
+                 f'<p class="mean">{c["mean"]}</p><div class="foot"><span class="mv">{c["moves"]} movements</span>{pill}</div>')
+        out.append(f'<li><a class="card" href="/{c["slug"]}/" aria-label="Open {c["rom"]}">{inner}</a></li>' if live
+                   else f'<li><div class="card soon">{inner}</div></li>')
+    return "".join(out)
+
 def forms_index():
-    live, total, bar = meter()
+    wl, wt, wbar = meter(WT)
+    il, it, ibar = meter(ITF)
     body = f"""<header class="top">
   <div>
-    <div class="eyebrow">Kukkiwon poomsae · gup and dan forms</div>
-    <h1>Forms <span>품새</span></h1>
-    <p class="lede">The eight Taegeuk forms, each named for one of the eight trigrams, and the black-belt forms. Every form gets the same treatment: the floor plan on its line, move-by-move cards on phones, the full sequence, and a two-page print sheet.</p>
+    <div class="eyebrow">Taekwondo forms · poomsae and tul</div>
+    <h1>Forms <span>품새 · 틀</span></h1>
+    <p class="lede">Two families of forms: the World Taekwondo forms set by the Kukkiwon (the eight Taegeuk and the black-belt poomsae), and the ITF patterns (Chang Hon tul). Every form gets the same treatment: the floor plan on its line, move-by-move cards on phones, the full sequence, and a two-page print sheet.</p>
+    <p class="jump"><a href="#wt">World Taekwondo forms</a><a href="#itf">ITF forms</a></p>
   </div>
-  <div class="status" aria-label="Progress"><small>Forms published</small><b>{live} / {total}</b>{bar}</div>
+  <div class="status" aria-label="Progress">
+    <div><small>World Taekwondo · published</small><b>{wl} / {wt}</b>{wbar}</div>
+    <div><small>ITF · published</small><b>{il} / {it}</b>{ibar}</div>
+  </div>
 </header>
-<section aria-label="Taegeuk forms"><h2>Taegeuk <span>태극</span></h2><ul class="grid">{taegeuk_cards()}</ul></section>
-<section><h2>Black-belt forms <span>유단자 품새</span></h2>
+<section id="wt" class="family" aria-labelledby="wt-h"><h2 id="wt-h">World Taekwondo forms <span>Kukkiwon poomsae · 품새</span></h2>
+  <p class="intro">The forms of World Taekwondo, as set and published by the Kukkiwon. Sequences and counts follow the Kukkiwon.</p>
+  <h3 class="sub">Taegeuk <span>태극</span></h3><ul class="grid">{taegeuk_cards()}</ul>
+  <h3 class="sub">Black-belt forms <span>유단자 품새</span></h3>
   <p class="intro">Yudanja poomsae, drawn the same way, each on its own floor line.</p>
   <ul class="bb">{bb_cards()}</ul></section>
+<section id="itf" class="family" aria-labelledby="itf-h"><h2 id="itf-h">ITF forms <span>Chang Hon tul · 틀</span></h2>
+  <p class="intro">The 24 patterns of the International Taekwon-Do Federation, devised by General Choi Hong Hi. Each pattern is performed on its own diagram, shown on each card from above with the ready position marked. Sequences and counts will follow the ITF Encyclopedia.</p>
+  <h3 class="sub">Colour-belt patterns <span>gup</span></h3><ul class="grid">{itf_cards("gup")}</ul>
+  <h3 class="sub">Black-belt patterns <span>dan</span></h3><ul class="grid">{itf_cards("dan")}</ul></section>
 <section><p class="intro">New to the diagrams? <a class="lib" href="/how-to-read/">How to read a diagram</a> explains the floor line, the figures and the footprints. Every technique links to the <a class="lib" href="/library/">technique library</a>.</p></section>"""
-    page("forms", "Forms · visualtkd", "Every Kukkiwon poomsae on visualtkd: Taegeuk 1–8 and the black-belt forms, with floor plans, move-by-move cards and print sheets.",
+    page("forms", "Forms · visualtkd", "Every taekwondo form on visualtkd: the World Taekwondo (Kukkiwon) poomsae, Taegeuk 1–8 and the black-belt forms, and the ITF patterns, with floor plans, move-by-move cards and print sheets.",
          body, FORMS_CSS, active="forms")
 
 # ---------------------------------------------------------------- landing (/)
@@ -236,7 +286,7 @@ LANDING_CSS = """
 .progress{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 24px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
 .progress b{font-family:var(--f-mono);font-weight:500;font-size:26px;font-variant-numeric:tabular-nums}
 .progress small{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.meter{display:grid;grid-template-columns:repeat(17,1fr);gap:4px}
+.meter{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:4px}
 .meter i{height:8px;border-radius:3px;background:var(--line)}
 .meter i.done{background:var(--fire)}
 .progress p{grid-column:1/-1;margin:0;font-size:14px;color:var(--muted)}
@@ -248,7 +298,8 @@ LANDING_CSS = """
 """
 
 def landing():
-    live, total, bar = meter()
+    live, total, bar = meter(WT)
+    il, it, ibar = meter(ITF)
     ntech = sum(1 for k in LIB["techniques"] if appears("tech", k))
     nst = sum(1 for k, s in LIB["stances"].items() if "see" not in s)
     body = f"""<section class="hero">
@@ -263,24 +314,25 @@ def landing():
 
 <section aria-labelledby="start"><h2 id="start">Start here</h2>
 <ul class="start3">
-  <li><a href="/forms/"><span class="k">{live} of {total} forms</span><h3>Forms <span>품새</span></h3><p>Taegeuk Il Jang to Pal Jang and the black-belt forms, each with its floor plan, move-by-move cards, full sequence and print sheet.</p><span class="go">All forms →</span></a></li>
+  <li><a href="/forms/"><span class="k">{live + il} of {total + it} forms</span><h3>Forms <span>품새 · 틀</span></h3><p>The World Taekwondo forms, Taegeuk Il Jang to Pal Jang and the black-belt poomsae, each with its floor plan, move-by-move cards, full sequence and print sheet. The ITF patterns are next.</p><span class="go">All forms →</span></a></li>
   <li><a href="/library/"><span class="k">{nst} stances · {ntech} techniques</span><h3>Technique library <span>기술</span></h3><p>Every stance, block, strike and kick used in the forms: how it is done, the hand or foot surface it uses, and every move where it appears.</p><span class="go">Open the library →</span></a></li>
   <li><a href="/how-to-read/"><span class="k">Two-minute read</span><h3>How to read a diagram</h3><p>The floor line, which way the figures face, the footprints and stance chips, move numbers like 8-1 and 8-2, and how the print sheets work.</p><span class="go">Read the guide →</span></a></li>
 </ul></section>
 
 <section class="progress" aria-label="Progress">
-  <div><small>Forms published</small><b>{live} / {total}</b></div>{bar}
-  <p>All eight Taegeuk forms and the first three black-belt forms are up. Pyongwon, Sipjin, Jitae, Cheonkwon, Hansu and Ilyeo follow.</p>
+  <div><small>World Taekwondo forms</small><b>{live} / {total}</b></div>{bar}
+  <div><small>ITF forms</small><b>{il} / {it}</b></div>{ibar}
+  <p>All {total} World Taekwondo forms are up: the eight Taegeuk and the nine black-belt poomsae. The {it} ITF patterns are planned; their diagrams are on the <a class="lib" href="/forms/#itf">forms page</a>.</p>
 </section>
 
 <section id="about" aria-labelledby="about-h"><h2 id="about-h">About</h2>
 <div class="about">
   <div><h3>What this is</h3>
-    <p>visualtkd is a study aid for the official Kukkiwon poomsae. The old book diagrams are hard to read on a phone and harder to teach from; these keep the original floor lines but redraw every move with a consistent figure, footprints and plain instructions.</p>
+    <p>visualtkd is a study aid for the official taekwondo forms: the Kukkiwon poomsae of World Taekwondo now, and the ITF patterns next. The old book diagrams are hard to read on a phone and harder to teach from; these keep the original floor lines but redraw every move with a consistent figure, footprints and plain instructions.</p>
     <p>It is for students learning a form, and for instructors who want a clean sheet to hand out.</p></div>
   <div><h3>Sources</h3>
     <p>Sequences are checked against the <b>Kukkiwon</b> page for each form and at least one published move chart. Where sources disagree, or no source settles a detail, the choice is written down for review rather than decided silently.</p>
-    <p>Every form page links to its official references. visualtkd is independent and is not affiliated with Kukkiwon or World Taekwondo.</p></div>
+    <p>Every form page links to its official references. visualtkd is independent and is not affiliated with Kukkiwon, World Taekwondo or any ITF federation.</p></div>
   <div><h3>Print sheets and QR codes</h3>
     <p>Each form prints as two US Letter pages: the floor plan, then the full sequence and references. A QR code on each page opens the form on your phone, and every reference has its own short <b>visualtkd.com/go/</b> link, so printed sheets keep working even when a video or page moves.</p></div>
 </div></section>"""
