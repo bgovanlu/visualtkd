@@ -335,7 +335,20 @@ The forms index now has two sections: **World Taekwondo forms** (the Kukkiwon po
 - [ ] **Yoo-Sin diagram.** The chart shows I with diagonals at both ends. The card draws a plain I until the diagonal directions are confirmed.
 - [ ] **Choong-Jang diagram.** Drawn as ⊥ (bar B–A through the start, stem to D, short tail toward C). The Encyclopedia gives no meaning for it.
 - [ ] **Juche diagram.** 山 drawn upside down (bar at the D end with the start on it, legs down to F and E, long stem to C). This matches D at the top, the same way the Kukkiwon 王 glyphs read upside down.
+- [ ] **Card links.** Each ITF card links to that pattern's page on itf-administration.com (the ITF led by Choi Jung Hwa). I checked all 24 numbers on 18 Oct 2026; that site names pattern 15 "Kodang". The section's references also include the Encyclopedia page of the Vienna ITF. Swap them if you choose the other federation.
 - [ ] **Move counts.** The cards follow the Encyclopedia counts. Choi-Yong is listed as 45 on some sites and Tong-Il as 42; I used 46 and 56. Recount each pattern when its page is built.
+
+## History page (/history/) — 18 October 2026
+
+This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:
+
+- [ ] **The five kwans** are named as Chung Do Kwan, Moo Duk Kwan, Song Moo Kwan, Chang Moo Kwan and Ji Do Kwan (first called Yun Moo Kwan). Oh Do Kwan (1954, Choi Hong Hi and Nam Tae Hi) is mentioned separately. Accounts differ on which schools count as the "original five".
+- [ ] **KTA "after a few years under another name"**: this refers to the Korea Taesoodo Association period (about 1962–65). It's deliberately vague; confirm or drop it.
+- [ ] **Taegeuk and the black-belt poomsae replaced the Palgwe forms.** The page gives no year for this, because sources give 1967 for Palgwe and 1971–72 for Taegeuk.
+- [ ] **ITF dates:** headquarters to Toronto in 1972 and later to Vienna, work with North Korea from 1980, the Encyclopedia in 1983, the 2001–2002 split, and the 2014 WT–ITF agreement.
+- [ ] **Olympics:** demonstration sport in 1988 and 1992, medal sport from 2000. The Kukkiwon page calls 1988 an "official event"; the page says demonstration.
+- [ ] **ATA (1969) and GTF (1990)** each get one line. Add or remove branches as you like.
+- [ ] **The family-tree diagram** at the top simplifies a lot: it shows the ITF and the Kukkiwon/WTF as two branches of the KTA. Say if it is too simple for your students.
 
 ---
 

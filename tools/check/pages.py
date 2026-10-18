@@ -8,7 +8,7 @@ import functools, http.server, os, sys, threading
 from playwright.sync_api import sync_playwright
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OUT = os.path.join(ROOT, "shots"); os.makedirs(OUT, exist_ok=True)
-paths = sys.argv[1:] or ["/", "/forms/", "/how-to-read/", "/library/", "/library/stances/", "/library/blocks/",
+paths = sys.argv[1:] or ["/", "/forms/", "/history/", "/how-to-read/", "/library/", "/library/stances/", "/library/blocks/",
                          "/library/strikes/", "/library/kicks/", "/library/hands-feet/"]
 class Quiet(http.server.SimpleHTTPRequestHandler):
     def log_message(self, *a): pass

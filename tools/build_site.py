@@ -155,6 +155,9 @@ h3.sub span{font-weight:700;color:var(--muted);font-size:.72em;margin-left:.3em}
 .dia path{fill:none;stroke:var(--heaven);stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}
 .dia circle{fill:var(--fire)}
 .card.soon .dia path{stroke:var(--muted);opacity:.7}
+.card a.off{font-size:13px;align-self:flex-start;margin-top:-4px}
+.family .refs{margin-top:8px}
+.family .note{margin:12px 0 0;font-size:14px;max-width:80ch}
 @media (max-width:640px){header.top{grid-template-columns:1fr}.card{min-height:0}}
 """
 
@@ -208,9 +211,14 @@ def itf_cards(group):
         inner = (f'<div class="top"><span class="num">{c["n"]}</span>{diagram(c)}</div>'
                  f'<div class="name"><h3>{c["rom"]}</h3><span class="ko">{c["ko"]}{glyph}</span></div>'
                  f'<p class="mean">{c["mean"]}</p><div class="foot"><span class="mv">{c["moves"]} movements</span>{pill}</div>')
+        if not live and c.get("url"):
+            inner += f'<a class="lib off" href="{esc(c["url"])}" target="_blank" rel="noopener">Official ITF page ↗</a>'
         out.append(f'<li><a class="card" href="/{c["slug"]}/" aria-label="Open {c["rom"]}">{inner}</a></li>' if live
                    else f'<li><div class="card soon">{inner}</div></li>')
     return "".join(out)
+
+def refs(rows):
+    return "".join(S.ref_card(r["kind"], r["icon"], r["src"], r["title"], r["desc"], r["url"]) for r in rows)
 
 def forms_index():
     wl, wt, wbar = meter(WT)
@@ -232,14 +240,17 @@ def forms_index():
   <h3 class="sub">Taegeuk <span>태극</span></h3><ul class="grid">{taegeuk_cards()}</ul>
   <h3 class="sub">Black-belt forms <span>유단자 품새</span></h3>
   <p class="intro">Yudanja poomsae, drawn the same way, each on its own floor line.</p>
-  <ul class="bb">{bb_cards()}</ul></section>
+  <ul class="bb">{bb_cards()}</ul>
+  <div class="refs"><h3 class="sub">Official references</h3><ul>{refs(CAT["wtRefs"])}</ul></div></section>
 <section id="itf" class="family" aria-labelledby="itf-h"><h2 id="itf-h">ITF forms <span>Chang Hon tul · 틀</span></h2>
   <p class="intro">The 24 patterns of the International Taekwon-Do Federation, devised by General Choi Hong Hi. Each pattern is performed on its own diagram, shown on each card from above with the ready position marked. Sequences and counts will follow the ITF Encyclopedia.</p>
   <h3 class="sub">Colour-belt patterns <span>gup</span></h3><ul class="grid">{itf_cards("gup")}</ul>
-  <h3 class="sub">Black-belt patterns <span>dan</span></h3><ul class="grid">{itf_cards("dan")}</ul></section>
+  <h3 class="sub">Black-belt patterns <span>dan</span></h3><ul class="grid">{itf_cards("dan")}</ul>
+  <div class="refs"><h3 class="sub">Official references</h3><ul>{refs(CAT["itfRefs"])}</ul>
+  <p class="intro note">There is more than one ITF. The card links go to the ITF led by Choi Jung Hwa, which publishes a page for every pattern (it calls pattern 15 Kodang). The Encyclopedia is published by the ITF in Vienna. See <a class="lib" href="/history/#itf-after">History</a> for how the federations came about.</p></div></section>
 <section><p class="intro">New to the diagrams? <a class="lib" href="/how-to-read/">How to read a diagram</a> explains the floor line, the figures and the footprints. Every technique links to the <a class="lib" href="/library/">technique library</a>.</p></section>"""
     page("forms", "Forms · visualtkd", "Every taekwondo form on visualtkd: the World Taekwondo (Kukkiwon) poomsae, Taegeuk 1–8 and the black-belt forms, and the ITF patterns, with floor plans, move-by-move cards and print sheets.",
-         body, FORMS_CSS, active="forms")
+         body, FORMS_CSS + S.REF_CSS, active="forms")
 
 # ---------------------------------------------------------------- landing (/)
 def floor_svg():
@@ -643,5 +654,140 @@ q.addEventListener("input",()=>{const v=q.value.trim().toLowerCase();items.forEa
          "Stances, blocks, strikes, kicks and the hand and foot surfaces used in the Kukkiwon poomsae, each linked to every move where it appears.",
          body, LIB_CSS, js, active="library")
 
+# ---------------------------------------------------------------- history (/history/)
+HIST_CSS = """
+.hist{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px 48px;align-items:start}
+.hist article{display:flex;flex-direction:column;gap:30px;min-width:0}
+.hist article section h2{scroll-margin-top:16px}
+.hist article p{margin:0 0 12px;max-width:68ch;font-size:16px;line-height:1.6}
+.hist article p b{font-weight:600}
+.hist .yr{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;color:var(--fire);text-transform:uppercase;display:block;margin-bottom:4px}
+.toc{position:sticky;top:16px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.toc h2{font-size:13px;font-family:var(--f-body);letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin:0 0 10px}
+.toc ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:14.5px}
+.tree{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;align-items:center;gap:0}
+.tree .node{border:1.5px solid var(--line);border-radius:10px;padding:8px 14px;text-align:center;background:var(--bg,transparent);max-width:100%;box-sizing:border-box}
+.tree .node b{display:block;font-size:15px}
+.tree .node span{display:block;font-size:12.5px;color:var(--muted)}
+.tree .node.wt{border-color:var(--heaven)}.tree .node.wt b{color:var(--heaven)}
+.tree .node.itf{border-color:var(--fire)}.tree .node.itf b{color:var(--fire)}
+.tree .v{width:2px;height:18px;background:var(--line)}
+.tree .split{display:grid;grid-template-columns:1fr 1fr;gap:0 18px;width:100%;position:relative;padding-top:18px}
+.tree .split::before{content:"";position:absolute;top:0;left:25%;right:25%;height:2px;background:var(--line)}
+.tree .lane{display:flex;flex-direction:column;align-items:center;position:relative}
+.tree .lane::before{content:"";position:absolute;top:-18px;left:50%;width:2px;height:18px;background:var(--line)}
+.tree .side{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px;padding-top:12px;border-top:1px dashed var(--line);width:100%}
+.tree .side .node{border-style:dashed}
+.tree figcaption{font-size:12.5px;color:var(--muted);margin-top:12px;text-align:center}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.two div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
+.two h3{margin:0 0 6px;font-size:16px}
+.two .wt h3{color:var(--heaven)}.two .itf h3{color:var(--fire)}
+.two ul{margin:0;padding-left:18px;color:var(--muted);font-size:14.5px;display:flex;flex-direction:column;gap:4px}
+.refs h2{margin-bottom:12px}
+@media (max-width:900px){.hist{grid-template-columns:1fr}.toc{position:static;order:-1}}
+@media (max-width:560px){.two{grid-template-columns:1fr}.tree{padding:14px 10px}.tree .split{gap:0 8px}.tree .node{padding:7px 8px}.tree .node b{font-size:13.5px}.tree .node span{font-size:11.5px}}
+"""
+
+HIST_REFS = [
+    ("kuk", "gate", "Kukkiwon · Official site", "History of Taekwondo", "From subak and taekkyeon to the five kwans, the association and the Olympics.",
+     "https://www.kukkiwon.or.kr/eng/contents/view?contentsNo=93&menuLevel=2&menuNo=94"),
+    ("kuk", "gate", "Kukkiwon · Official site", "Kukkiwon chronology, 1970s", "The Central Dojang opening in 1972, the Kukkiwon name in 1973, the first dan certificates.",
+     "https://www.kukkiwon.or.kr/eng/contents/view?contentsNo=101&menuLevel=3&menuNo=79"),
+    ("kuk", "gate", "Kukkiwon · Official site", "Kukkiwon introduction", "What the Kukkiwon is: the World Taekwondo Headquarters, founded 30 November 1972.",
+     "https://www.kukkiwon.or.kr/eng/contents/view?contentsNo=78&menuLevel=2&menuNo=80"),
+    ("wt", "gate", "World Taekwondo · News", "WTF rebrands to World Taekwondo", "The new name and logo, announced in Muju on 23 June 2017.",
+     "https://www.worldtaekwondo.org/news/NS/view?nid=29223"),
+    ("itf", "gate", "ITF · Vienna · Official site", "History of Taekwon-Do", "The ITF's account: the 1955 name, the 1959 tour, the founding of the ITF in 1966.",
+     "https://itf-tkd.org/history-of-taekwon%E2%80%91do/"),
+    ("itf", "gate", "ITF · Choi Jung Hwa · Official site", "The 24 patterns", "One page per Chang Hon pattern.",
+     "https://www.itf-administration.com/articles/?arturn=834"),
+]
+
+def history():
+    toc = [("roots", "Roots, before 1945"), ("kwans", "The kwans, 1945–1955"), ("name", "One name: taekwondo"),
+           ("itf", "The ITF and the Chang Hon patterns"), ("kukkiwon", "The Kukkiwon and the WTF"),
+           ("wt", "From WTF to World Taekwondo"), ("itf-after", "The ITF after General Choi"),
+           ("others", "Other branches"), ("forms", "Two families of forms")]
+    body = f"""<header><div class="eyebrow">Background</div><h1>History <span>역사</span></h1>
+<p class="lede">How a handful of schools opened in Seoul after 1945 became one martial art with two main branches, and why the forms on this site come in two sets: the World Taekwondo poomsae and the ITF patterns.</p></header>
+
+<figure class="tree" style="margin:0" aria-label="Family tree of taekwondo">
+  <div class="node"><b>Subak · taekkyeon · karate</b><span>older Korean traditions and arts learned under the occupation</span></div><div class="v"></div>
+  <div class="node"><b>The five kwans</b><span>Seoul schools, from 1944–46</span></div><div class="v"></div>
+  <div class="node"><b>Taekwondo</b><span>name chosen 1955 · Korea Taekwondo Association 1959</span></div>
+  <div class="split">
+    <div class="lane"><div class="node wt"><b>Kukkiwon</b><span>1972 · Seoul · curriculum and dan</span></div><div class="v"></div>
+      <div class="node wt"><b>WTF</b><span>1973 · sport and competition</span></div><div class="v"></div>
+      <div class="node wt"><b>World Taekwondo</b><span>renamed 2017 · Olympic sport</span></div></div>
+    <div class="lane"><div class="node itf"><b>ITF</b><span>1966 · General Choi Hong Hi</span></div><div class="v"></div>
+      <div class="node itf"><b>Toronto, then Vienna</b><span>headquarters from 1972</span></div><div class="v"></div>
+      <div class="node itf"><b>Several ITFs</b><span>split 2001–2002</span></div></div>
+  </div>
+  <div class="side"><div class="node"><b>ATA</b><span>1969 · USA</span></div><div class="node"><b>GTF</b><span>1990</span></div><div class="node"><b>Independent kwans</b><span>tang soo do and others</span></div></div>
+  <figcaption>Blue: the World Taekwondo branch, whose poomsae are on this site now. Red: the ITF branch, whose patterns are planned.</figcaption>
+</figure>
+
+<div class="hist">
+<article>
+<section id="roots"><h2>Roots, before 1945</h2>
+  <p>Korea has a long record of fighting without weapons. Medieval chronicles describe <b>subak</b>, a bare-hand combat art practised by soldiers and ordinary people alike. Later came <b>kwonbeop</b>, a military fist art written into army manuals after the invasions of the late 1500s, and <b>taekkyeon</b>, a folk game of kicks and sweeps.</p>
+  <p>During the Japanese occupation (1910–1945), judo and kendo were taught in Korea, and Koreans who studied in Japan or lived in Manchuria learned karate and Chinese boxing. Those arts shaped the first post-war schools far more directly than the older traditions did; the Korean kicking style came back into them over the following decades.</p></section>
+
+<section id="kwans"><h2>The kwans, 1945–1955</h2>
+  <p>After liberation, a handful of schools (<b>kwan</b>, 관) opened in and around Seoul. The five usually counted as the originals are <b>Chung Do Kwan</b>, <b>Moo Duk Kwan</b>, <b>Song Moo Kwan</b>, <b>Chang Moo Kwan</b> and <b>Ji Do Kwan</b> (first called Yun Moo Kwan). In the army, General <b>Choi Hong Hi</b> and Nam Tae Hi founded <b>Oh Do Kwan</b> in 1954.</p>
+  <p>Each kwan taught under its own name (tang soo do, kong soo do, kwon bup) and mostly used karate kata as its forms. Over the years they added the higher, faster kicks that came to set the Korean art apart.</p></section>
+
+<section id="name"><h2>One name: taekwondo</h2>
+  <p><span class="yr">11 April 1955</span>A naming board of masters, historians and public figures chose <b>taekwondo</b> (태권도), the name General Choi submitted: <i>tae</i> foot, <i>kwon</i> fist, <i>do</i> way. Not every kwan used it at once.</p>
+  <p><span class="yr">1959 – 1965</span>The <b>Korea Taekwondo Association</b> (KTA) was formed in 1959 with Choi as its first president. After a few years under another name, it settled as the single national body in the mid-1960s. Promotion tests were unified under it, and sparring became an event at the National Sports Festival in 1963.</p></section>
+
+<section id="itf"><h2>The ITF and the Chang Hon patterns</h2>
+  <p><span class="yr">22 March 1966</span>General Choi founded the <b>International Taekwon-Do Federation</b> (ITF) in Seoul, with member associations in nine countries, to spread the art abroad.</p>
+  <p>He also built his own syllabus: the <b>Chang Hon</b> patterns (tul, 틀), named after his pen name. Each pattern is named after a person or event from Korean history, and its move count or diagram often carries a meaning (Yul-Gok has 38 moves for the 38th parallel, where the scholar Yi I was born). The set grew to <b>24 patterns</b>, one for each hour of the day, and was fixed in his 15-volume <i>Encyclopedia of Taekwon-Do</i> (1983). In the same years ITF technique settled on the rising-and-falling “sine wave” motion that marks the style today.</p>
+  <p><span class="yr">1972</span>After falling out with the South Korean government, Choi moved to Canada and took the ITF headquarters to Toronto; it later moved to Vienna. His work with North Korea from 1980 onward widened the gap with Seoul.</p></section>
+
+<section id="kukkiwon"><h2>The Kukkiwon and the WTF</h2>
+  <p><span class="yr">1971 – 1973</span>In Seoul, the KTA under <b>Kim Un-yong</b> built a central training hall. It opened on <b>30 November 1972</b> and was named the <b>Kukkiwon</b> (국기원, “house of the national martial art”) in February 1973. From December 1973, dan certificates were issued in the Kukkiwon president's name.</p>
+  <p>The association also set new forms for the whole country: the eight <b>Taegeuk</b> poomsae for coloured belts and the black-belt poomsae from Koryo to Ilyeo. These replaced the earlier Palgwe forms and the karate kata the kwans had used. The kwans themselves were formally merged in 1978.</p>
+  <p><span class="yr">28 May 1973</span>Three days after the first World Taekwondo Championships opened at the Kukkiwon, delegates founded the <b>World Taekwondo Federation</b> (WTF) there, with Kim Un-yong as president.</p>
+  <p>The two bodies split the work. The <b>Kukkiwon</b> is the World Taekwondo Headquarters: it keeps the curriculum and the poomsae, trains instructors and issues dan and poom certificates worldwide. The <b>WTF</b> is the sport's international federation: competition rules, championships and the Olympics. That is why the same style is called “Kukkiwon taekwondo”, “WT style” or “Olympic style”: the poomsae come from the Kukkiwon, the competition from the WTF.</p></section>
+
+<section id="wt"><h2>From WTF to World Taekwondo</h2>
+  <p><span class="yr">1988 – 2000</span>Taekwondo was a demonstration sport at the Seoul 1988 and Barcelona 1992 Olympics and became a full medal sport at Sydney 2000, under WTF rules. Poomsae has its own world championships, judged under World Taekwondo's poomsae rules.</p>
+  <p><span class="yr">23 June 2017</span>At its General Assembly in Muju, the WTF renamed itself <b>World Taekwondo</b> (WT), mainly because “WTF” had taken on an unwanted meaning online. It is the same body; only the name changed. The Kukkiwon is still the headquarters for the art, and its poomsae are the forms on this site's World Taekwondo section.</p></section>
+
+<section id="itf-after"><h2>The ITF after General Choi</h2>
+  <p>General Choi died in Pyongyang in 2002. A dispute over his succession, which had begun the year before, left several federations each calling itself the ITF. The two largest today are the ITF based in <b>Vienna</b>, which publishes the Encyclopedia, and the ITF led by his son <b>Choi Jung Hwa</b>.</p>
+  <p>All of them teach the Chang Hon patterns, with small differences. The best known is pattern 15: the original <b>Ko-Dang</b> was replaced by <b>Juche</b> in the 1980s, and federations still differ on which name, and which sequence, they use.</p>
+  <p>Since 2014 the Vienna ITF and World Taekwondo have signed an agreement to cooperate and have given joint demonstrations.</p></section>
+
+<section id="others"><h2>Other branches</h2>
+  <p>Some masters went their own way. The <b>American Taekwondo Association</b> (ATA), founded in the United States in 1969, teaches its own Songahm forms. The <b>Global Taekwondo Federation</b> (GTF), founded in 1990 by a former ITF master, keeps Ko-Dang and adds patterns of its own. Many independent schools still teach the kwan-era forms under names such as tang soo do.</p></section>
+
+<section id="forms"><h2>Two families of forms</h2>
+  <p>So a student today usually learns one of two sets of forms. This site covers both.</p>
+  <div class="two">
+    <div class="wt"><h3>World Taekwondo · poomsae 품새</h3><ul>
+      <li>Set by the Kukkiwon; used by World Taekwondo schools and in Olympic-style clubs</li>
+      <li>8 Taegeuk forms for coloured belts, 9 black-belt forms</li>
+      <li>Front stance is <i>ap kubi</i>; counted by Kukkiwon move numbers</li>
+      <li><a class="lib" href="/forms/#wt">All 17 on this site</a></li></ul></div>
+    <div class="itf"><h3>ITF · tul 틀</h3><ul>
+      <li>Devised by General Choi; used by ITF schools</li>
+      <li>24 patterns from Chon-Ji to Tong-Il, each on its own diagram</li>
+      <li>Front stance is <i>gunnun sogi</i>; sine-wave motion</li>
+      <li><a class="lib" href="/forms/#itf">Planned on this site</a></li></ul></div>
+  </div></section>
+
+<section class="refs" aria-labelledby="src-h"><h2 id="src-h">Official references</h2><ul>{"".join(S.ref_card(*r) for r in HIST_REFS)}</ul>
+  <p class="intro" style="margin-top:12px">Accounts of the early kwan years differ between sources, and each federation tells its own history. This page keeps to dates the official sources agree on and describes the rest in our own words.</p></section>
+</article>
+<nav class="toc" aria-label="On this page"><h2>On this page</h2><ol>{"".join(f'<li><a class="lib" href="#{k}">{t}</a></li>' for k, t in toc)}</ol></nav>
+</div>"""
+    page("history", "History of taekwondo · visualtkd",
+         "A short history of taekwondo: the kwans, the name in 1955, the ITF and its Chang Hon patterns, the Kukkiwon and the WTF, and how the WTF became World Taekwondo.",
+         body, HIST_CSS + S.REF_CSS, active="history")
+
 if __name__ == "__main__":
-    landing(); forms_index(); how_to_read(); library()
+    landing(); forms_index(); history(); how_to_read(); library()
