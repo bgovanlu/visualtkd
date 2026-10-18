@@ -323,7 +323,7 @@ The forms index now has two sections: **World Taekwondo forms** (the Kukkiwon po
 - **Fandom:** not used.
 - **Still to do:** check every diagram against a scan of the Encyclopedia / Condensed Encyclopedia before building the first ITF page.
 
-- [ ] **URLs.** The planned paths are `/itf/<name>`, e.g. `/itf/chon-ji` and `/itf/se-jong`. Nothing is printed yet, so these can still change. Once the first sheet ships they are fixed. Confirm the `/itf/` prefix and the hyphenated names.
+- [x] **URLs.** The paths are `/itf/<name>`. Chon-Ji shipped at `/itf/chon-ji` on 18 Oct 2026, so the scheme is now printed and fixed.
 - [ ] **Diagram orientation.** The cards draw each diagram as the Encyclopedia does: **D at the top** (the way the student faces at the start), C at the bottom, B left, A right, with the ready position as a red dot. The Kukkiwon pages put **na at the top with the student facing down the page**, so the two families face opposite ways. Keep the book orientation for ITF, or flip it to match the Kukkiwon pages?
 - [ ] **Which ITF.** There are several ITF federations: ITF-HQ in Vienna, the ITF led by Choi Jung Hwa, and others. Neither main body publishes a free per-pattern page or video I could confirm, so the cards carry no reference links yet. Pick the federation whose version the sheets should follow, and its references.
 - [ ] **Juche or Ko-Dang (no. 15).** The card shows Juche (45 moves, ITF-HQ). Choi Jung Hwa's ITF uses the name "Kodang" for the same 45 moves. Some schools still teach the original 39-move Ko-Dang, whose diagram I couldn't confirm. Decide the name, and whether to add the 39-move Ko-Dang as an extra card.
@@ -337,6 +337,34 @@ The forms index now has two sections: **World Taekwondo forms** (the Kukkiwon po
 - [ ] **Juche diagram.** 山 drawn upside down (bar at the D end with the start on it, legs down to F and E, long stem to C). This matches D at the top, the same way the Kukkiwon 王 glyphs read upside down.
 - [ ] **Card links.** Each ITF card links to that pattern's page on itf-administration.com (the ITF led by Choi Jung Hwa). I checked all 24 numbers on 18 Oct 2026; that site names pattern 15 "Kodang". The section's references also include the Encyclopedia page of the Vienna ITF. Swap them if you choose the other federation.
 - [ ] **Move counts.** The cards follow the Encyclopedia counts. Choi-Yong is listed as 45 on some sites and Tong-Il as 42; I used 46 and 56. Recount each pattern when its page is built.
+
+## Chon-Ji · 천지 (ITF) — 18 October 2026
+
+This is the first ITF page: `/itf/chon-ji`, with a 2-page print sheet.
+
+**Sources.**
+- **Sequence:** the official pattern text on the ITF (Choi Jung Hwa) site. It matches, move for move, a club chart that reproduces the Encyclopedia text and diagram (Taekwon-Do Kildare). The ITF Korean technique names come from that chart.
+- **Fandom:** not used.
+- **Video:** I found no official ITF video. The only YouTube copies are club uploads, so the page cites the two official ITF sites only.
+
+- [ ] **Orientation (the big one).** The board shows the student **facing D, down the page**, the same way the Kukkiwon pages face ga. C is at the top, **B (the student's left) on the right of the page and A on the left**. The ITF books draw the same cross from behind the student, with D at the top, B on the left and A on the right. The page's "How the diagram reads" note says so. Alternatively, flip the ITF boards to the book view, which would put most figures in back view.
+- [ ] **Kihap at 17.** The official ITF page marks a kihap after move 17. The Encyclopedia-based chart has none. The page shows it at 17.
+- [ ] **Inner forearm middle side block (9, 11, 13, 15)** is drawn with the Kukkiwon outer-block arm, square to the front. In ITF the L-stance body is half-facing. This is a new library entry (`anpalmok`); check its description, especially where the block starts.
+- [ ] **Stance drawing.** Walking stance uses the ap kubi figure and footprint; the ITF version has the rear foot turned out about 25° and the front kneecap over the heel. L-stance uses the dwit kubi figure; the ITF niunja sogi has both feet turned in about 15°. The sine-wave motion isn't shown.
+- [ ] **L-stance chips name the rear foot**, as the ITF does: "R · Niunja sogi" means the right foot is back. The Kukkiwon back-stance chips name the front foot. Instructions say both ("right L-stance … left foot forward, weight on the right leg").
+- [ ] **Names.** Stances and techniques show their ITF names, from a new `itf` field in `data/techniques.json`:
+  - Gunnun sogi
+  - Niunja sogi
+  - Narani junbi sogi
+  - Palmok najunde makgi
+  - Kaunde jirugi
+  - Anpalmok kaunde yop makgi
+
+  The Hangul spellings are mine. Library entries now show an "ITF" line under the Kukkiwon name.
+- [ ] **Punches are marked "obverse"** (punching hand on the same side as the front foot). ITF calls this baro, which is the opposite of the Kukkiwon use of baro, so the page uses the English word.
+- [ ] **Footwork.** The simulator ends 3.5 foot-lengths behind the start (Kukkiwon forms: 0.6–5.7). The phone minimap snaps each count onto its arm of the cross.
+- [ ] **Image briefs** (`design/moves/itf-chon-ji/SPEC.md`) still describe the stances in Kukkiwon terms (ap kubi, dwit kubi). Adjust them before generating ITF figure images.
+- [ ] **Print seal.** The 天地 seal in the print header renders badly (an empty box, with the characters spilling below). The Koryo sheet does the same, so it's an older print-CSS issue on every black-belt sheet, not new with Chon-Ji.
 
 ## History page (/history/) — 18 October 2026
 

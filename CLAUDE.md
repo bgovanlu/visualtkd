@@ -59,6 +59,14 @@ A new form is picked up automatically: once `forms/<form>.json` exists for a slu
 - `step` — footwork simulator hint (#3), only where the instruction text isn't enough: `{"plant": "L"|"R"|"both"|"none", "move": [forward, right], "horse": "along"}`. Check with `tools/check/footwork.py` (every form should end within a stride or two of where it started).
 - `desc`: one plain instruction sentence: turn and direction, stance, technique.
 
+## ITF forms (`"family": "itf"`)
+
+- Set `"family": "itf"` in the form JSON. The page then uses the ITF names (`itf` in `data/techniques.json` entries, via `sitekit.lib_js(itf=True)`), the ITF direction letters and the ITF legend and reading note.
+- **Directions:** the site keeps its own orientation: you start facing down the page. So `ga` = **D**, `na` = **C**, `da1–3` = **B** (the student's left, right of the page) and `ra1–3` = **A**. The ITF books draw D at the top, seen from behind; the reading note says so.
+- **Stances:** walking stance (gunnun sogi) uses `front`; L-stance (niunja sogi) uses `back`. Chips and instructions name the L-stance by the **rear** foot, as the ITF does (`lead` stays the front foot in the data).
+- **Notes:** punches use `note: "obverse"` / `"reverse"` (the English words, because ITF baro/bandae run the other way from Kukkiwon).
+- **Counting and references:** move ids follow the ITF Encyclopedia count. `refs` use kind `itf` (red gate icon); short links `itf-<name>` and `itf-encyclopedia`.
+
 ## Floor plan (`layout`, `pos`, `boardMin`)
 
 - Keep the original book layout: the 王 shape. `r1`, `r3`, `r5` are the three bars (left → right on the page); `c2`, `c4` are the centre column between bars. Group a kick with its strike, and figures that share a spot, in a nested list: `["16-2","16-1"]`.
@@ -87,7 +95,7 @@ A new form is picked up automatically: once `forms/<form>.json` exists for a slu
 
 ## URLs — stable, because they are printed
 
-- ITF patterns (planned, not yet printed, so still changeable): `/itf/<name>`, e.g. `/itf/chon-ji`, `/itf/se-jong`.
+- ITF patterns: `/itf/<name>`, e.g. `/itf/chon-ji` (published, printed), `/itf/se-jong`. Form files are `forms/itf-<name>.json`.
 - Form pages: `visualtkd.com/taegeuk/1` … `/taegeuk/8`; black-belt forms by name: `/koryo`, `/keumgang`, `/taebaek` `/pyongwon`, `/sipjin`, `/jitae`, `/cheonkwon`, `/hansu`, `/ilyeo`. **Never rename a published path**; printed QR codes point there.
 - References never link out directly from paper. Each has a short link `visualtkd.com/go/<name>` (e.g. `kukkiwon-t2`, `video-t2`) defined by the form's `refs[].go`; `site/_redirects` is generated from all forms as 302 redirects. If a destination moves, fix the JSON `url` and rebuild — never reprint.
 - One `go` name must always mean one URL (the build fails on conflicts).

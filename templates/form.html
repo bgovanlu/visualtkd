@@ -219,7 +219,7 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
 .ref{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;color:inherit;text-decoration:none;height:100%;transition:border-color .2s}
 .ref:hover{border-color:var(--ico)}
 .ref:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
-.ref.kuk{--ico:var(--heaven)}.ref.yt{--ico:var(--fire)}.ref.wt{--ico:var(--ink)}
+.ref.kuk{--ico:var(--heaven)}.ref.yt{--ico:var(--fire)}.ref.wt{--ico:var(--ink)}.ref.itf{--ico:var(--fire)}
 .ico{flex:none;width:46px;height:46px;border-radius:12px;display:grid;place-items:center;color:var(--ico);background:color-mix(in srgb,var(--ico) 11%,transparent)}
 .ico svg{width:28px;height:28px}
 .rt{display:flex;flex-direction:column;gap:2px;min-width:0}
@@ -351,7 +351,7 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
         <div class="pair" id="c4"></div>
         <div class="note right" id="nRead">
           <h3>How the diagram reads</h3>
-          <p>You start at <b>na</b> facing <b>ga</b> (the bottom of the page). Figures on the left and right are seen from the side; centre figures face you going toward ga and show their back returning toward na. Horse- and crane-stance figures face the way the body faces.</p>
+          <p id="readP">You start at <b>na</b> facing <b>ga</b> (the bottom of the page). Figures on the left and right are seen from the side; centre figures face you going toward ga and show their back returning toward na. Horse- and crane-stance figures face the way the body faces.</p>
         </div>
       </div>
       <div class="bar" id="r5"><span class="dl l">ra<sup>3</sup></span><span class="dl r">da<sup>3</sup></span></div>
@@ -419,6 +419,15 @@ const LIB={{LIB_JSON}};
 
 // m: id, dir (line), face (side view R/L), view, stance, lead, arms, tech, side ("bandae"/"baro"), desc
 const M=FORM.moves;
+/* ITF forms (FORM.family "itf"): ITF names, and the ITF direction letters. You start facing D (down the page,
+   like na → ga on the Kukkiwon pages), so C is up, B (your left) is on the right of the page and A on the left. */
+const ITF=FORM.family==="itf";
+if(ITF){itfNames();Object.assign(DIRN,{na:"C",ga:"D",da1:"B",da2:"B",da3:"B",ra1:"A",ra2:"A",ra3:"A"});
+  document.querySelector(".compass.n").textContent="C";document.querySelector(".compass.s").textContent="D";
+  document.querySelectorAll(".dl.l").forEach(e=>e.textContent="A");document.querySelectorAll(".dl.r").forEach(e=>e.textContent="B");
+  document.getElementById("readP").innerHTML="You start at the centre facing <b>D</b>, the bottom of the page, so <b>B</b> (your left) is on the right of the page and <b>A</b> on the left. The ITF books draw the same diagram from behind you, with D at the top. Figures on the left and right are seen from the side; centre figures face you going toward D and show their back going toward C."}
+const CMP=ITF?["C","D"]:["NA · 나","GA · 가"];
+const SIDES=ITF?`<text x="-4" y="31.5">A</text><text x="104" y="31.5">B</text>`:"";
 
 /* ---------- build board ---------- */
 const byId=Object.fromEntries(M.map((m,i)=>[m.id,i]));
@@ -563,7 +572,10 @@ document.getElementById("flplay").addEventListener("click",togglePlay);
 document.getElementById("flsec").addEventListener("click",e=>{const t=e.target.closest("[data-i]");if(t&&t.closest("svg")){stop();show(+t.dataset.i)}});
 paintView();
 /* legend + belts + style */
-document.getElementById("legend").innerHTML=
+document.getElementById("legend").innerHTML=ITF?
+  (M.some(x=>x.stance==="front")?feet({dir:"na",stance:"front",lead:"L"})+`<p><b>Gunnun sogi</b> · walking stance. About 1½ shoulder widths long and one wide, front knee bent over the heel, rear leg straight. Named by the front foot.</p>`:"")+
+  (M.some(x=>x.stance==="back")?feet({dir:"na",stance:"back",lead:"L"})+`<p><b>Niunja sogi</b> · L-stance. Feet at right angles, about 1½ shoulder widths apart, most of the weight on the bent rear leg. Named by the rear foot: this one, left foot forward, is a right L-stance.</p>`:"")+
+  `<span></span><p style="font-size:12px">Red foot leads; the blue tick is the direction you face. Walking-stance chips are filled; L-stance chips have a double outline. Directions are the ITF letters: you start facing D, with B on your left and A on your right.</p>`:
   feet({dir:"na",stance:"walk",lead:"L"})+`<p><b>Ap seogi</b> · walking stance. One natural step, feet almost in line.</p>`+
   feet({dir:"na",stance:"front",lead:"L"})+`<p><b>Ap kubi</b> · front stance. About 1½ steps long, one fist wide, front knee bent.</p>`+
   (M.some(x=>x.stance==="back")?feet({dir:"na",stance:"back",lead:"L"})+`<p><b>Dwit kubi</b> · back stance. Heels in line, rear foot turned out, weight on the bent rear leg.</p>`:"")+
@@ -588,7 +600,7 @@ rows.innerHTML=M.map((m,i)=>{
   const st=STANCE[m.stance],te=T[m.tech];
   const stTxt=["ready","horse","close"].includes(m.stance)?`${st[0]} <span class="ko">${st[1]}</span>`:
     ["kick","skick","rkick","knee"].includes(m.stance)?`${sideWord(m.lead)} leg <span class="ko">${st[1]}</span>`:
-    `${sideWord(m.lead)} ${st[0].toLowerCase()} <span class="ko">${st[1]}</span>`;
+    `${sideWord(chipSide(m))} ${st[0].toLowerCase()} <span class="ko">${st[1]}</span>`;
   return `<tr data-i="${i}"><td class="n">${m.id==="J"?"—":m.id}</td><td>${DIRN[m.dir]}</td><td><a class="lib" href="${stanceHref(m.stance)}">${stTxt}</a></td><td><a class="lib" href="${techHref(m.tech)}">${te[0]}</a>${m.note?` (${m.note})`:""} <span class="ko">${te[1]}</span></td><td>${m.desc}</td></tr>`}).join("");
 rows.addEventListener("click",e=>{const r=e.target.closest("tr");if(r&&!e.target.closest("a")){stop();show(+r.dataset.i);(carouselOn()?track:document.getElementById("stage")).scrollIntoView({behavior:"smooth",block:"center"})}});
 
@@ -600,7 +612,7 @@ function minimap(i){
   let trail="";for(let k=0;k<i;k++){const p=POS[M[k].id];trail+=`<circle cx="${p[0]}" cy="${p[1]}" r="2" fill="var(--heaven)" opacity=".45"/>`}
   return`<svg class="minimap" viewBox="0 0 100 60" aria-hidden="true">
     <path d="${FL.map||"M4 8H96M4 30H96M4 52H96M50 8V52"}" stroke="var(--line)" stroke-width="2.4" stroke-linecap="round" fill="none"/>
-    <text x="50" y="4" font-size="5.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono,monospace">na</text>
+    <text x="50" y="4" font-size="5.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono,monospace">${ITF?"C":"na"}</text>
     ${trail}<circle cx="${x}" cy="${y}" r="6" fill="var(--fire)" opacity=".18"/><circle cx="${x}" cy="${y}" r="3.4" fill="var(--fire)"/>
     <path d="M${x} ${y} l9 0" transform="rotate(${ROT[m.dir]} ${x} ${y})" stroke="var(--fire)" stroke-width="1.6" stroke-linecap="round"/>
   </svg>`;
@@ -613,7 +625,7 @@ function floorline(i){
   const prev=i>0?POS[M[i-1].id]:null,last=prev&&(prev[0]!==x||prev[1]!==y)?`<path class="leg" pathLength="1" d="M${prev.join(" ")} L${x} ${y}"/>`:"";
   return`<svg class="flplan" viewBox="-8 -8 116 76" role="img" aria-label="Floor line, move ${m.id} of the form">
     <path class="floor" d="${FL.map||"M4 8H96M4 30H96M4 52H96M50 8V52"}"/>
-    <text x="50" y="-2.5">NA · 나</text><text x="50" y="64.5">GA · 가</text>
+    <text x="50" y="-2.5">${CMP[0]}</text><text x="50" y="64.5">${CMP[1]}</text>${SIDES}
     ${done}${last}<g class="dots">${dots}</g>
     <circle cx="${x}" cy="${y}" r="5.2" class="halo"/><circle cx="${x}" cy="${y}" r="3.1" class="you"/>
     <path d="M${x} ${y} l7.5 0" transform="rotate(${ROT[m.dir]} ${x} ${y})" class="face"/>
@@ -668,7 +680,7 @@ function show(i,src){
   const te=T[m.tech],st=STANCE[m.stance];
   document.getElementById("name").innerHTML=`<a class="lib" href="${techHref(m.tech)}">${te[0]}</a> <span style="font-weight:400;color:var(--muted)">${te[1]}</span><small>${te[2]}${m.note?" · "+m.note:""}</small>`;
   document.getElementById("facts").innerHTML=
-    `<div><small>Stance</small><b><a class="lib" href="${stanceHref(m.stance)}">${["ready","kick","skick","rkick","knee","horse","close"].includes(m.stance)?st[0]:sideWord(m.lead)+" "+st[0].toLowerCase()}</a> · ${st[1]}</b></div>`+
+    `<div><small>Stance</small><b><a class="lib" href="${stanceHref(m.stance)}">${["ready","kick","skick","rkick","knee","horse","close"].includes(m.stance)?st[0]:sideWord(chipSide(m))+" "+st[0].toLowerCase()}</a> · ${st[1]}</b></div>`+
     (m.hand?`<div><small>${m.foot?"Kicking leg":"Hand"}</small><b>${sideWord(m.hand)}</b></div>`:"")+
     `<div><small>Line</small><b>${DIRN[m.dir]}</b></div>`+(m.kihap?`<div><small>Shout</small><b style="color:var(--fire)">Kihap 기합</b></div>`:"");
   document.getElementById("desc").textContent=m.desc;

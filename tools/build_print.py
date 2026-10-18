@@ -51,9 +51,9 @@ body.dense th,body.dense td{{padding:2px 10px;line-height:1.3}} body.dense .ref 
 /* form QR block, top right of both pages */
 .scan{{display:flex;align-items:center;gap:12px}}
 .scan .qr{{width:112px;height:112px}}
-.scan p{{margin:0;font-size:13px;color:var(--muted);line-height:1.35;max-width:150px}}
+.scan p{{margin:0;font-size:13px;color:var(--muted);line-height:1.35;max-width:190px}}
 .scan b{{display:block;color:var(--ink);font-size:14px}}
-.scan code{{font-family:var(--f-mono);font-size:11.5px;color:var(--ink)}}
+.scan code{{font-family:var(--f-mono);font-size:11.5px;color:var(--ink);white-space:nowrap}}
 .p2head{{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:12px}}
 .p2head h2{{margin:0;font-family:var(--f-display);font-weight:700;font-size:26px;line-height:1.15}}
 .p2head h2 small{{display:block;font-family:var(--f-body);font-weight:400;font-size:14px;color:var(--muted)}}

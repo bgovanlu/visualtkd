@@ -51,7 +51,7 @@ def build(path, do_print, images=False):
     F = json.load(open(path))
     check(F)
     t = open(os.path.join(ROOT, "templates/form.html")).read()
-    data = json.dumps({k: F[k] for k in ("moves","layout","pos","floor") if k in F}, ensure_ascii=False).replace("</", "<\\/")
+    data = json.dumps({k: F[k] for k in ("moves","layout","pos","floor","family") if k in F}, ensure_ascii=False).replace("</", "<\\/")
     if "trigram" in F:      # Taegeuk: trigram bars + "Geon ☰ · Heaven"
         tg = F["trigram"]; mark, line = tri(tg), f'{tg["name"]} {tg["sym"]} · {tg["meaning"]}'
     else:                   # black-belt forms: Hanja seal + "高麗 · Goryeo, the scholar-warrior"
@@ -63,7 +63,7 @@ def build(path, do_print, images=False):
         # big forms shrink the cards so every bar fits: optional cardW / figH in the JSON
         "SIZE_CSS": f':root{{--card-w:{F["cardW"]}px;--fig-h:{F["figH"]}px}}' if "cardW" in F else "",
         "BASE_CSS": S.read("templates/base.css"), "NAV": S.nav("forms"), "SITEFOOT": S.footer(),
-        "FIGURE_JS": S.read("templates/figure.js"), "LIB_JSON": S.lib_js(),
+        "FIGURE_JS": S.read("templates/figure.js"), "LIB_JSON": S.lib_js(F.get("family") == "itf"),
         "FOOTWORK_JS": S.read("templates/footwork.js").replace("if(typeof module", "if(false&&typeof module"),
         "NOTE_H": F["note"]["h"], "NOTE_P": F["note"]["p"], "REFS": refs(F), "FOOTER": F["footer"], "FORM_JSON": data,
     }

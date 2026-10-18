@@ -325,7 +325,7 @@ def landing():
 
 <section aria-labelledby="start"><h2 id="start">Start here</h2>
 <ul class="start3">
-  <li><a href="/forms/"><span class="k">{live + il} of {total + it} forms</span><h3>Forms <span>품새 · 틀</span></h3><p>The World Taekwondo forms, Taegeuk Il Jang to Pal Jang and the black-belt poomsae, each with its floor plan, move-by-move cards, full sequence and print sheet. The ITF patterns are next.</p><span class="go">All forms →</span></a></li>
+  <li><a href="/forms/"><span class="k">{live + il} of {total + it} forms</span><h3>Forms <span>품새 · 틀</span></h3><p>The World Taekwondo forms, Taegeuk Il Jang to Pal Jang and the black-belt poomsae, each with its floor plan, move-by-move cards, full sequence and print sheet. The ITF patterns have started with Chon-Ji.</p><span class="go">All forms →</span></a></li>
   <li><a href="/library/"><span class="k">{nst} stances · {ntech} techniques</span><h3>Technique library <span>기술</span></h3><p>Every stance, block, strike and kick used in the forms: how it is done, the hand or foot surface it uses, and every move where it appears.</p><span class="go">Open the library →</span></a></li>
   <li><a href="/how-to-read/"><span class="k">Two-minute read</span><h3>How to read a diagram</h3><p>The floor line, which way the figures face, the footprints and stance chips, move numbers like 8-1 and 8-2, and how the print sheets work.</p><span class="go">Read the guide →</span></a></li>
 </ul></section>
@@ -333,7 +333,7 @@ def landing():
 <section class="progress" aria-label="Progress">
   <div><small>World Taekwondo forms</small><b>{live} / {total}</b></div>{bar}
   <div><small>ITF forms</small><b>{il} / {it}</b></div>{ibar}
-  <p>All {total} World Taekwondo forms are up: the eight Taegeuk and the nine black-belt poomsae. The {it} ITF patterns are planned; their diagrams are on the <a class="lib" href="/forms/#itf">forms page</a>.</p>
+  <p>All {total} World Taekwondo forms are up: the eight Taegeuk and the nine black-belt poomsae. {il} of the {it} ITF patterns {'is' if il == 1 else 'are'} up, starting with <a class="lib" href="/itf/chon-ji/">Chon-Ji</a>; every pattern's diagram is on the <a class="lib" href="/forms/#itf">forms page</a>.</p>
 </section>
 
 <section id="about" aria-labelledby="about-h"><h2 id="about-h">About</h2>
@@ -476,6 +476,10 @@ LIB_CSS = """
 .points{margin:0 0 12px;padding-left:18px;color:var(--ink);font-size:14.5px}
 .points li{margin:2px 0}
 .where{font-size:14px;color:var(--muted)}
+.itfname{margin:2px 0 0;font-size:14px;color:var(--muted)}
+.itfname small{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;color:var(--fire);border:1px solid currentColor;border-radius:4px;padding:0 4px;margin-right:2px}
+.itfname b{color:var(--ink);font-weight:600}
+.where li b small{font-family:var(--f-mono);font-size:10px;color:var(--fire);margin-left:4px}
 .where summary{cursor:pointer;font-weight:600;color:var(--ink);margin-bottom:6px}
 .where summary:focus-visible{outline:2px solid var(--heaven);outline-offset:2px;border-radius:3px}
 .where ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
@@ -509,7 +513,7 @@ def where_html(hits):
         return '<p class="where">Not used in the forms built so far.</p>'
     n = sum(len(ids) for _, ids in hits)
     rows = "".join(
-        f'<li><b>{esc(F["title"])}</b>' + " ".join(
+        f'<li><b>{esc(F["title"])}{" <small>ITF</small>" if F.get("family") == "itf" else ""}</b>' + " ".join(
             f'<a href="/{F["slug"]}/#move-{esc(i)}" aria-label="{esc(F["title"])} move {esc(i)}">{"준비" if i == "J" else esc(i)}</a>' for i in ids) + "</li>"
         for F, ids in hits)
     label = f'Appears in {len(hits)} form{"s" * (len(hits) != 1)} · {n} move{"s" * (n != 1)}'
@@ -543,6 +547,12 @@ def surface_link(key):
     s = LIB["surfaces"][key]
     return f'<div><small>Surface</small><b><a class="lib" href="/library/hands-feet/#{s["slug"]}">{esc(s["en"])}</a> · {esc(s["ko"])}</b></div>'
 
+def itf_name(e):
+    """The ITF name of a library entry, when the ITF patterns call it something else."""
+    i = e.get("itf")
+    if not i or i["name"] == e["name"]: return ""
+    return f'<p class="itfname"><small>ITF</small> <b>{esc(i["name"])}</b> <span class="ko">{i["ko"]}</span> · {esc(i["en"])}</p>'
+
 def tech_entry(key):
     t = LIB["techniques"][key]
     m = demo("tech", key)
@@ -550,7 +560,7 @@ def tech_entry(key):
     fig = art([m], f'{BY_FORM_MOVE[id(m)]} · move {m["id"]}') if m else ""
     if m: fig = fig.replace('class="art"', 'class="art" data-fp="1"', 1)
     return (f'<article class="entry" id="{t["slug"]}">{fig}<div>'
-            f'<h2>{esc(t["name"])} <span class="ko">{t["ko"]}</span></h2><p class="en">{esc(t["en"])}</p>'
+            f'<h2>{esc(t["name"])} <span class="ko">{t["ko"]}</span></h2><p class="en">{esc(t["en"])}</p>{itf_name(t)}'
             f'<p class="desc">{esc(t["desc"])}</p>' + (f'<div class="facts">{facts}</div>' if facts else "")
             + where_html(appears("tech", key)) + "</div></article>")
 
@@ -563,7 +573,7 @@ def stance_entry(key):
     chip = esc(json.dumps({"stance": key, "lead": "R" if key == "crane" else "L"}))
     pts = "".join(f"<li>{esc(p)}</li>" for p in s.get("points", []))
     return (f'<article class="entry" id="{s["slug"]}">{fig}<div>'
-            f'<h2>{esc(s["name"])} <span class="ko">{s["ko"]}</span></h2><p class="en">{esc(s["en"])}</p>'
+            f'<h2>{esc(s["name"])} <span class="ko">{s["ko"]}</span></h2><p class="en">{esc(s["en"])}</p>{itf_name(s)}'
             f'<p class="desc">{esc(s["desc"])}</p>' + (f'<ul class="points">{pts}</ul>' if pts else "")
             + f'<div class="facts"><div><small>Chip on the diagrams</small><b data-chip="{chip}"></b></div></div>'
             + where_html(appears("stance", key)) + "</div></article>")
@@ -593,7 +603,7 @@ def family_page(fam):
     body += '<p class="note">Figures are drawn with the current renderer from the first move in the forms that uses each technique. They will be redrawn with the new figure (character v2).</p>'
     F = LIB["families"][fam]
     page(f"library/{fam}", f'{F["title"]} · Technique library · visualtkd',
-         f'{F["title"]} ({F["rom"]}) used in the Kukkiwon poomsae: how each is done and every move where it appears.',
+         f'{F["title"]} ({F["rom"]}) used in the forms: how each is done and every move where it appears.',
          body, LIB_CSS, FILL_JS, active="library", figures=True)
     return count
 
@@ -618,7 +628,7 @@ def hands_feet_page():
              'Until then each entry shows a technique that uses it.</p>')
     F = LIB["families"][fam]
     page(f"library/{fam}", f'{F["title"]} · Technique library · visualtkd',
-         "The striking and blocking surfaces of the hand, arm and foot used in the Kukkiwon poomsae.",
+         "The striking and blocking surfaces of the hand, arm and foot used in the forms.",
          body, LIB_CSS, FILL_JS, active="library", figures=True)
     return len(keys)
 
@@ -651,7 +661,7 @@ const q=document.getElementById("q"),items=[...document.querySelectorAll("#az li
 q.addEventListener("input",()=>{const v=q.value.trim().toLowerCase();items.forEach(li=>li.hidden=v&&!li.dataset.q.includes(v))});
 """
     page("library", "Technique library · visualtkd",
-         "Stances, blocks, strikes, kicks and the hand and foot surfaces used in the Kukkiwon poomsae, each linked to every move where it appears.",
+         "Stances, blocks, strikes, kicks and the hand and foot surfaces used in the forms, each linked to every move where it appears.",
          body, LIB_CSS, js, active="library")
 
 # ---------------------------------------------------------------- history (/history/)

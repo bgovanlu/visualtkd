@@ -542,26 +542,27 @@ function feet(m){
 }
 
 const sideWord=s=>s==="L"?"Left":"Right";
+/* chip names per stance. ITF forms (FORM.family "itf") swap in the ITF names, and name the L-stance
+   (niunja sogi) by the rear foot as the ITF does: "R · Niunja sogi" = right foot back, left foot forward. */
+const CHIPN={ready:"Naranhi",kick:"Ap chagi",skick:"Yeop chagi",rkick:"Dollyeo chagi",knee:"Mureup",tiger:"Beom seogi",
+  horse:"Juchum seogi",cross:"Kkoa seogi",gyeot:"Gyeotdari seogi",close:"Moa seogi",crane:"Hakdari",ogeum:"Ogeum seogi",
+  back:"Dwit kubi",nieun:"Nieunja seogi",walk:"Ap seogi",front:"Ap kubi"};
+const CHIPCLS={ready:"ready",close:"ready",kick:"kick",skick:"kick",rkick:"kick",knee:"kick",tiger:"tiger",horse:"horse",
+  crane:"crane",ogeum:"crane",back:"back",nieun:"back",walk:"walk",front:"front"};
+let ITFNAMES=false;
+function itfNames(){ITFNAMES=true;Object.assign(CHIPN,{ready:"Narani",front:"Gunnun sogi",back:"Niunja sogi",horse:"Annun sogi"})}
+const flipLR=s=>s==="L"?"R":"L";
+const chipSide=m=>ITFNAMES&&m.stance==="back"?flipLR(m.lead):m.lead;
 function chip(m){
-  if(m.stance==="ready")return`<span class="chip ready">Naranhi</span>`;
-  if(m.stance==="kick")return`<span class="chip kick">${m.lead} · Ap chagi</span>`;
-  if(m.stance==="skick")return`<span class="chip kick">${m.lead} · Yeop chagi</span>`;
-  if(m.stance==="rkick")return`<span class="chip kick">${m.lead} · Dollyeo chagi</span>`;
-  if(m.stance==="knee")return`<span class="chip kick">${m.lead} · Mureup</span>`;
-  if(m.stance==="tiger")return`<span class="chip tiger">${m.lead} · Beom seogi</span>`;
-  if(m.stance==="horse")return`<span class="chip horse">Juchum seogi</span>`;
-  if(m.stance==="cross")return`<span class="chip">${m.lead} · Kkoa seogi</span>`;
-  if(m.stance==="gyeot")return`<span class="chip">${m.lead} · Gyeotdari seogi</span>`;
-  if(m.stance==="close")return`<span class="chip ready">Moa seogi</span>`;
-  if(m.stance==="crane")return`<span class="chip crane">${m.lead} · Hakdari</span>`;
-  if(m.stance==="ogeum")return`<span class="chip crane">${m.lead} · Ogeum seogi</span>`;
-  if(m.stance==="back")return`<span class="chip back">${m.lead} · Dwit kubi</span>`;
-  if(m.stance==="nieun")return`<span class="chip back">${m.lead} · Nieunja seogi</span>`;
-  return`<span class="chip ${m.stance}">${m.lead} · ${m.stance==="walk"?"Ap seogi":"Ap kubi"}</span>`;
+  const cls=CHIPCLS[m.stance]||"",nm=CHIPN[m.stance];
+  if(["ready","horse","close"].includes(m.stance))return`<span class="chip ${cls}">${nm}</span>`;
+  return`<span class="chip ${cls}">${chipSide(m)} · ${nm}</span>`;
 }
 function stanceLabel(m){
   if(m.stance==="ready")return"parallel";
   if(["kick","skick","rkick","knee"].includes(m.stance))return sideWord(m.lead)+" kick";
   if(m.stance==="horse"||m.stance==="close")return m.stance;
+  if(ITFNAMES&&m.stance==="front")return sideWord(m.lead)+" walking";
+  if(ITFNAMES&&m.stance==="back")return sideWord(flipLR(m.lead))+" L";
   return sideWord(m.lead)+({walk:" walking",front:" front",back:" back",tiger:" tiger",cross:" cross",crane:" crane",nieun:" ㄴ-shape",gyeot:" assisting",ogeum:" reverse crane"})[m.stance];
 }

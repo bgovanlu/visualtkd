@@ -31,10 +31,13 @@ def stance_names(key):
         return [t["name"], t["ko"], "Knee strike" if key == "knee" else "Kicking"]
     return [s["name"], s["ko"], s["en"]]
 
-def lib_js():
-    """What the figure renderer needs in the browser: names and library links, nothing else."""
-    t = {k: [v["name"], v["ko"], v["en"], tech_href(k)] for k, v in LIB["techniques"].items()}
-    s = {k: stance_names(k) + [stance_href(k)] for k in LIB["stances"]}
+def lib_js(itf=False):
+    """What the figure renderer needs in the browser: names and library links, nothing else.
+    itf: ITF forms use each entry's ITF names (`itf` in data/techniques.json) where it has them."""
+    nm = lambda v: v.get("itf", v) if itf else v
+    t = {k: [nm(v)["name"], nm(v)["ko"], nm(v)["en"], tech_href(k)] for k, v in LIB["techniques"].items()}
+    s = {k: ([nm(LIB["stances"][k])[f] for f in ("name", "ko", "en")] if itf and "itf" in LIB["stances"][k] else stance_names(k))
+            + [stance_href(k)] for k in LIB["stances"]}
     return json.dumps({"t": t, "s": s}, ensure_ascii=False).replace("</", "<\\/")
 
 def form_files():
