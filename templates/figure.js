@@ -127,6 +127,7 @@ function skel(m,pr){
       else if(act==="uhigh")h=add(sh,mul([34,-12],ak));                // ITF U-shape block, upper arm: forearm level at head height
       else if(act==="ulow")h=add(sh,mul([34,14],ak));                  // … lower arm at middle height
       else if(act==="palmup"){h=add(sh,mul([26,-4],ak));p=[1,.2]}      // ITF upward palm block: palm rising in front of the chest
+      else if(act==="bfback"){h=add(sh,mul([-16,-14],ak));p=[-1,-.2]}  // ITF back fist side back strike: fist driven back past the shoulder at head height
       else if(act==="low")h=[26*ak,hipY-2];
       else if(act==="inside")h=add(sh,mul([22,-1],ak));
       else if(act==="high"||act==="khigh"){h=add(sh,mul([17,-30],ak));p=[1,-.15]}
@@ -287,6 +288,7 @@ function skel(m,pr){
       else if(act==="uhigh"){h=[x*(pr.shW+6),T-10*tk];p=[x*.4,1]}
       else if(act==="ulow"){h=[x*(pr.shW+6),T+18*tk];p=[x*.4,1]}
       else if(act==="palmup"){h=[x*-2,T+12*tk];p=[x*.5,1]}
+      else if(act==="bfback"){h=[x*(pr.shW+4),T-16*tk];p=[x,.2]}
       else if(act==="xshoulder"){h=[x*-15,T+8*tk];p=[x*.6,.6]}
       else if(act==="twinhigh"||act==="kstwinhigh"){h=[x*-4,T-24*tk];p=[x,-.4]}
       else if(act==="ksout"||act==="ksblock"){h=[x*(pr.shW+2),T+4*tk];p=[x*.4,1]}

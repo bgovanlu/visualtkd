@@ -468,6 +468,28 @@ This is the first ITF page: `/itf/chon-ji`, with a 2-page print sheet.
 - [ ] **High punch in front view.** Front-view high punches now have their own foreshortened pose, with the fist at chin height and the face clear. Dan-Gun 6–8 used to fall back to a default pose; they were redrawn and that sheet reprinted.
 - [ ] **Footwork.** The simulator ends 4.2 foot-lengths toward D from the start, from the long walk down the stem. Moves 3 and 6 are worded "Land …, then step …" so the kicking foot lands first.
 
+## Toi-Gye · 퇴계 (ITF) — 18 October 2026
+
+`/itf/toi-gye`, with a 2-page print sheet, on a 士 board:
+- the short A–B line with the start at the top;
+- the closing guarding and circular blocks (31–36) beside the stem just below it;
+- the stem down to D, with the climb back toward C (22–30) in the middle row;
+- the D-end moves (12, 19–21) above the long E–F line;
+- the six W-shape blocks on the long E–F line.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 37 movements; the chart copies the official text. The ITF Korean names come from the chart. Fandom was not used. There is no official video.
+
+- [ ] **Move 35 (please check first).** Both texts say "circular block to **CE** … left walking stance toward **CE**". Moves 32, 34 and 36 alternate between B/BD and A/AD, and a turn toward CE there makes no sense on the floor. So the page draws 35 as a right circular block toward **BD** in a left walking stance facing **B**, pivoting in place, with 36 pivoting back to face A. If your book really says CE, tell me and I'll change it.
+- [ ] **Kihap at 29.** This follows the official ITF page; the chart has none.
+- [ ] **Back fist side back strike (3, 6)** in closed stance facing D: the striking fist is drawn beside the head (new arm `bfback`), the other arm extended down to the side (`spread`). The strike goes behind, toward C, which a front view can't really show.
+- [ ] **Twin side elbow thrust (12).** The body faces F, but it is drawn in front view so both elbows show. The footprint shows the facing.
+- [ ] **W-shape blocks (13–18)** use the Kukkiwon santeul (mountain block) figure in sitting stance: back view facing C, front view facing D. The stamping steps aren't shown, and neither is which forearm leads; the instruction says which.
+- [ ] **Grab and knee kick (20, 21):** the hands reach up and pull down using the Kukkiwon grab arms (Taegeuk 7's knee strike). The new library entry `grabhead` is named "Japgi"; the chart gives no Korean name for 20.
+- [ ] **Move 28** combines a back fist strike behind (toward D) with a low block toward C. It's drawn from behind facing C, with the strike arm beside the head.
+- [ ] **Jump into X-stance (29)** is drawn in profile, the body facing A, X-fist pressing block. The jump goes toward C.
+- [ ] **Library.** Low X block, mountain block, the low and flat spear hands and the knee strike now carry ITF names. New entries: `anpalmokm`, `yopdwi`, `twinelbow`, `doolowpush`, `grabhead`, `yopdwilow`, `kslowguard`.
+- [ ] **Footwork.** The simulator ends 3.7 foot-lengths from the start. The front-foot low kicks at 23 and 26 needed landing hints on 24 and 27.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:

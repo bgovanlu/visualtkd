@@ -1,0 +1,603 @@
+{
+ "form": "Toi-Gye",
+ "slug": "itf/toi-gye",
+ "moves": [
+  {
+   "id": "J",
+   "file": "J.png",
+   "view": "front",
+   "face": null,
+   "stance": "close",
+   "lead": null,
+   "arms": {
+    "L": "cover",
+    "R": "cover"
+   },
+   "tech": "moajunbib",
+   "name": "Moa junbi sogi B · Close ready stance B",
+   "desc": "Stand at the centre of the A–B line facing D in close ready stance B: feet together, the left hand wrapped over the right fist in front of the abdomen.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: moa seogi (closed stance): feet together, inside edges touching, legs straight. RIGHT hand: covering palm wrapped over the other fist in front of the chest. LEFT hand: covering palm wrapped over the other fist in front of the chest. This is the ready posture of Toi-Gye: Stand at the centre of the A–B line facing D in close ready stance B: feet together, the left hand wrapped over the right fist in front of the abdomen."
+  },
+  {
+   "id": "1",
+   "file": "1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk"
+   },
+   "tech": "anpalmokm",
+   "name": "Anpalmok kaunde makgi · Inner forearm middle block",
+   "desc": "Turn left: move the left foot to B into a right L-stance facing B (left foot forward, weight on the right leg). Left inner forearm middle block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 1 of Toi-Gye: Turn left: move the left foot to B into a right L-stance facing B (left foot forward, weight on the right leg). Left inner forearm middle block."
+  },
+  {
+   "id": "2",
+   "file": "2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "lspear",
+    "L": "shoulder"
+   },
+   "tech": "lspear",
+   "name": "Pyeonsonkkeut jeocho jjireugi · Low spear hand, palm up",
+   "desc": "Slip the left foot forward toward B into a left walking stance. Right upset fingertip low thrust.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): low spear hand: open hand thrust down and forward at groin height, palm up. LEFT hand (far arm): fist resting on the front of the opposite shoulder, elbow down. This is count 2 of Toi-Gye: Slip the left foot forward toward B into a left walking stance. Right upset fingertip low thrust."
+  },
+  {
+   "id": "3",
+   "file": "3.png",
+   "view": "front",
+   "face": null,
+   "stance": "close",
+   "lead": null,
+   "arms": {
+    "R": "bfback",
+    "L": "spread"
+   },
+   "tech": "yopdwi",
+   "name": "Dung joomuk yopdwi taerigi · Back fist side back strike",
+   "desc": "Bring the left foot to the right foot into a closed stance facing D. Right back fist side back strike toward C, the left arm extended down to the side, slowly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: moa seogi (closed stance): feet together, inside edges touching, legs straight. RIGHT hand: ITF back fist side back strike: fist driven back past the shoulder at head height, back of the fist toward the target behind. LEFT hand: low spreading block (arae hecheo makki): arm extended down and out to the side of the hip. This is count 3 of Toi-Gye: Bring the left foot to the right foot into a closed stance facing D. Right back fist side back strike toward C, the left arm extended down to the side, slowly."
+  },
+  {
+   "id": "4",
+   "file": "4.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk"
+   },
+   "tech": "anpalmokm",
+   "name": "Anpalmok kaunde makgi · Inner forearm middle block",
+   "desc": "Move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Right inner forearm middle block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 4 of Toi-Gye: Move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Right inner forearm middle block."
+  },
+  {
+   "id": "5",
+   "file": "5.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "lspear",
+    "R": "shoulder"
+   },
+   "tech": "lspear",
+   "name": "Pyeonsonkkeut jeocho jjireugi · Low spear hand, palm up",
+   "desc": "Slip the right foot forward toward A into a right walking stance. Left upset fingertip low thrust.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): fist resting on the front of the opposite shoulder, elbow down. LEFT hand (near arm): low spear hand: open hand thrust down and forward at groin height, palm up. This is count 5 of Toi-Gye: Slip the right foot forward toward A into a right walking stance. Left upset fingertip low thrust."
+  },
+  {
+   "id": "6",
+   "file": "6.png",
+   "view": "front",
+   "face": null,
+   "stance": "close",
+   "lead": null,
+   "arms": {
+    "L": "bfback",
+    "R": "spread"
+   },
+   "tech": "yopdwi",
+   "name": "Dung joomuk yopdwi taerigi · Back fist side back strike",
+   "desc": "Bring the right foot to the left foot into a closed stance facing D. Left back fist side back strike toward C, the right arm extended down to the side, slowly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: moa seogi (closed stance): feet together, inside edges touching, legs straight. RIGHT hand: low spreading block (arae hecheo makki): arm extended down and out to the side of the hip. LEFT hand: ITF back fist side back strike: fist driven back past the shoulder at head height, back of the fist toward the target behind. This is count 6 of Toi-Gye: Bring the right foot to the left foot into a closed stance facing D. Left back fist side back strike toward C, the right arm extended down to the side, slowly."
+  },
+  {
+   "id": "7",
+   "file": "7.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "xlow",
+    "R": "xlow"
+   },
+   "tech": "xlow",
+   "name": "Eotgeoreo arae makki · Low X block",
+   "desc": "Move the left foot to D into a left walking stance. X-fist pressing block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: low X block (otgeoreo arae makki): both wrists crossed in an X in front of the lower belly, arms angled down. LEFT hand: low X block (otgeoreo arae makki): both wrists crossed in an X in front of the lower belly, arms angled down. This is count 7 of Toi-Gye: Move the left foot to D into a left walking stance. X-fist pressing block."
+  },
+  {
+   "id": "8",
+   "file": "8.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "twinv",
+    "R": "twinv"
+   },
+   "tech": "twinvert",
+   "name": "Sang joomuk nopunde sewo jirugi · Twin fist high vertical punch",
+   "desc": "In the same stance, twin fist high vertical punch, flowing on from the pressing block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: ITF twin fist high vertical punch: both arms extended forward at eye level, fists vertical (thumbs up), shoulder-width apart. LEFT hand: ITF twin fist high vertical punch: both arms extended forward at eye level, fists vertical (thumbs up), shoulder-width apart. This is count 8 of Toi-Gye: In the same stance, twin fist high vertical punch, flowing on from the pressing block."
+  },
+  {
+   "id": "9",
+   "file": "9.png",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "twinv",
+    "R": "twinv"
+   },
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Right middle front snap kick toward D, the hands held where they were.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand (near arm): ITF twin fist high vertical punch: both arms extended forward at eye level, fists vertical (thumbs up), shoulder-width apart. LEFT hand (far arm): ITF twin fist high vertical punch: both arms extended forward at eye level, fists vertical (thumbs up), shoulder-width apart. This is count 9 of Toi-Gye: Right middle front snap kick toward D, the hands held where they were."
+  },
+  {
+   "id": "10",
+   "file": "10.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Set the right foot down toward D into a right walking stance. Right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 10 of Toi-Gye: Set the right foot down toward D into a right walking stance. Right middle punch."
+  },
+  {
+   "id": "11",
+   "file": "11.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, left middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 11 of Toi-Gye: In the same stance, left middle punch."
+  },
+  {
+   "id": "12",
+   "file": "12.png",
+   "view": "front",
+   "face": null,
+   "stance": "close",
+   "lead": null,
+   "arms": {
+    "L": "sideelbow",
+    "R": "sideelbow"
+   },
+   "tech": "twinelbow",
+   "name": "Sang yop palkup tulgi · Twin side elbow thrust",
+   "desc": "Bring the left foot to the right foot into a closed stance, turning to face F. Twin side elbow thrust, slowly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: moa seogi (closed stance): feet together, inside edges touching, legs straight. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is count 12 of Toi-Gye: Bring the left foot to the right foot into a closed stance, turning to face F. Twin side elbow thrust, slowly."
+  },
+  {
+   "id": "13",
+   "file": "13.png",
+   "view": "back",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "name": "Santeul makki · Mountain block",
+   "desc": "Stamp the right foot toward F into a sitting stance facing C. W-shape block, the right outer forearm leading.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 13 of Toi-Gye: Stamp the right foot toward F into a sitting stance facing C. W-shape block, the right outer forearm leading."
+  },
+  {
+   "id": "14",
+   "file": "14.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "name": "Santeul makki · Mountain block",
+   "desc": "Stamp the left foot toward F, turning clockwise into a sitting stance facing D. W-shape block, the left outer forearm leading.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 14 of Toi-Gye: Stamp the left foot toward F, turning clockwise into a sitting stance facing D. W-shape block, the left outer forearm leading."
+  },
+  {
+   "id": "15",
+   "file": "15.png",
+   "view": "back",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "name": "Santeul makki · Mountain block",
+   "desc": "Stamp the left foot toward E, turning clockwise into a sitting stance facing C. W-shape block, the left outer forearm leading.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 15 of Toi-Gye: Stamp the left foot toward E, turning clockwise into a sitting stance facing C. W-shape block, the left outer forearm leading."
+  },
+  {
+   "id": "16",
+   "file": "16.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "name": "Santeul makki · Mountain block",
+   "desc": "Stamp the right foot toward E, turning counter-clockwise into a sitting stance facing D. W-shape block, the right outer forearm leading.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 16 of Toi-Gye: Stamp the right foot toward E, turning counter-clockwise into a sitting stance facing D. W-shape block, the right outer forearm leading."
+  },
+  {
+   "id": "17",
+   "file": "17.png",
+   "view": "back",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "name": "Santeul makki · Mountain block",
+   "desc": "Stamp the left foot toward E, turning clockwise into a sitting stance facing C. W-shape block, the left outer forearm leading.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 17 of Toi-Gye: Stamp the left foot toward E, turning clockwise into a sitting stance facing C. W-shape block, the left outer forearm leading."
+  },
+  {
+   "id": "18",
+   "file": "18.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "name": "Santeul makki · Mountain block",
+   "desc": "Stamp the left foot toward F, turning clockwise into a sitting stance facing D. W-shape block, the left outer forearm leading.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 18 of Toi-Gye: Stamp the left foot toward F, turning clockwise into a sitting stance facing D. W-shape block, the left outer forearm leading."
+  },
+  {
+   "id": "19",
+   "file": "19.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "assist"
+   },
+   "tech": "doolowpush",
+   "name": "Doo palmok najunde miro makgi · Double forearm low pushing block",
+   "desc": "Bring the right foot to the left foot, then move the left foot toward D into a right L-stance facing D (left foot forward, weight on the right leg). Left double forearm low pushing block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: supporting fist placed under the elbow of the blocking arm. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 19 of Toi-Gye: Bring the right foot to the left foot, then move the left foot toward D into a right L-stance facing D (left foot forward, weight on the right leg). Left double forearm low pushing block."
+  },
+  {
+   "id": "20",
+   "file": "20.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "grab",
+    "R": "grab"
+   },
+   "tech": "grabhead",
+   "name": "Japgi · Two-hand grab to the head",
+   "desc": "Slip the left foot forward toward D into a left walking stance, reaching both hands up as if to take hold of the opponent's head.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: open hand reaching forward to grab at face height, then pulling back. LEFT hand: open hand reaching forward to grab at face height, then pulling back. This is count 20 of Toi-Gye: Slip the left foot forward toward D into a left walking stance, reaching both hands up as if to take hold of the opponent's head."
+  },
+  {
+   "id": "21",
+   "file": "21.png",
+   "view": "side",
+   "face": "R",
+   "stance": "knee",
+   "lead": "R",
+   "arms": {
+    "L": "grab",
+    "R": "grab"
+   },
+   "tech": "knee",
+   "name": "Mureup chigi · Knee strike",
+   "desc": "Right upward knee kick, pulling both hands down to meet it.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: mureup chigi (knee strike): standing leg straight, the other knee driven sharply up to chest height. Kicking leg: RIGHT. RIGHT hand (near arm): open hand reaching forward to grab at face height, then pulling back. LEFT hand (far arm): open hand reaching forward to grab at face height, then pulling back. This is count 21 of Toi-Gye: Right upward knee kick, pulling both hands down to meet it."
+  },
+  {
+   "id": "22",
+   "file": "22.png",
+   "view": "back",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Lower the right foot beside the left foot, then move the left foot toward C into a right L-stance facing C (left foot forward, weight on the right leg). Knife-hand middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand: knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. This is count 22 of Toi-Gye: Lower the right foot beside the left foot, then move the left foot toward C into a right L-stance facing C (left foot forward, weight on the right leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "23",
+   "file": "23.png",
+   "view": "side",
+   "face": "L",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "yobapcha",
+   "name": "Najunde yobap cha busigi · Low side front snap kick",
+   "desc": "Left low side front snap kick toward C, the hands held where they were.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand (far arm): guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand (near arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. This is count 23 of Toi-Gye: Left low side front snap kick toward C, the hands held where they were."
+  },
+  {
+   "id": "24",
+   "file": "24.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "spear"
+   },
+   "tech": "hspear",
+   "name": "Pyeonsonkkeut eopeo jjireugi · Flat spear-hand thrust",
+   "desc": "Set the left foot down toward C into a left walking stance. Left flat fingertip high thrust.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: spear-hand thrust (pyeonsonkkeut sewo tzireugi): open hand, fingers straight, thrust forward at solar-plexus height with the palm facing sideways. This is count 24 of Toi-Gye: Set the left foot down toward C into a left walking stance. Left flat fingertip high thrust."
+  },
+  {
+   "id": "25",
+   "file": "25.png",
+   "view": "back",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Step the right foot toward C into a left L-stance (right foot forward, weight on the left leg). Knife-hand middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. LEFT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 25 of Toi-Gye: Step the right foot toward C into a left L-stance (right foot forward, weight on the left leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "26",
+   "file": "26.png",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "yobapcha",
+   "name": "Najunde yobap cha busigi · Low side front snap kick",
+   "desc": "Right low side front snap kick toward C, the hands held where they were.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand (near arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. LEFT hand (far arm): guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 26 of Toi-Gye: Right low side front snap kick toward C, the hands held where they were."
+  },
+  {
+   "id": "27",
+   "file": "27.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "spear"
+   },
+   "tech": "hspear",
+   "name": "Pyeonsonkkeut eopeo jjireugi · Flat spear-hand thrust",
+   "desc": "Set the right foot down toward C into a right walking stance. Right flat fingertip high thrust.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: spear-hand thrust (pyeonsonkkeut sewo tzireugi): open hand, fingers straight, thrust forward at solar-plexus height with the palm facing sideways. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 27 of Toi-Gye: Set the right foot down toward C into a right walking stance. Right flat fingertip high thrust."
+  },
+  {
+   "id": "28",
+   "file": "28.png",
+   "view": "back",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "R": "bfback",
+    "L": "low"
+   },
+   "tech": "yopdwilow",
+   "name": "Dung joomuk yopdwi taerigi · palmok najunde makgi · Back fist side back strike with low block",
+   "desc": "Move the right foot back toward D into a right L-stance facing C (left foot forward). Right back fist side back strike toward D and left forearm low block toward C, together.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: ITF back fist side back strike: fist driven back past the shoulder at head height, back of the fist toward the target behind. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 28 of Toi-Gye: Move the right foot back toward D into a right L-stance facing C (left foot forward). Right back fist side back strike toward D and left forearm low block toward C, together."
+  },
+  {
+   "id": "29",
+   "file": "29.png",
+   "view": "side",
+   "face": "L",
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "L": "xlow",
+    "R": "xlow"
+   },
+   "tech": "xlow",
+   "name": "Eotgeoreo arae makki · Low X block",
+   "desc": "Jump toward C, landing in a right X-stance with the body turned to face A. X-fist pressing block, with a kihap.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. RIGHT foot forward. RIGHT hand (far arm): low X block (otgeoreo arae makki): both wrists crossed in an X in front of the lower belly, arms angled down. LEFT hand (near arm): low X block (otgeoreo arae makki): both wrists crossed in an X in front of the lower belly, arms angled down. This is count 29 of Toi-Gye: Jump toward C, landing in a right X-stance with the body turned to face A. X-fist pressing block, with a kihap."
+  },
+  {
+   "id": "30",
+   "file": "30.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "high",
+    "L": "assist"
+   },
+   "tech": "doopalmok",
+   "name": "Doo palmok nopunde makgi · Double forearm high block",
+   "desc": "Move the right foot toward C into a right walking stance facing C. Right double forearm high block, the left fist bracing the right arm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. LEFT hand: supporting fist placed under the elbow of the blocking arm. This is count 30 of Toi-Gye: Move the right foot toward C into a right walking stance facing C. Right double forearm high block, the left fist bracing the right arm."
+  },
+  {
+   "id": "31",
+   "file": "31.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "ksguard"
+   },
+   "tech": "kslowguard",
+   "name": "Sonkal najunde daebi makgi · Knife-hand low guarding block",
+   "desc": "Move the left foot to B into a right L-stance facing B (left foot forward, weight on the right leg). Knife-hand low guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand (far arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 31 of Toi-Gye: Move the left foot to B into a right L-stance facing B (left foot forward, weight on the right leg). Knife-hand low guarding block."
+  },
+  {
+   "id": "32",
+   "file": "32.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "sideblk"
+   },
+   "tech": "circular",
+   "name": "Anpalmok dollimyo makgi · Inner forearm circular block",
+   "desc": "Slip the left foot forward toward B into a left walking stance. Right inner forearm circular block toward BD.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 32 of Toi-Gye: Slip the left foot forward toward B into a left walking stance. Right inner forearm circular block toward BD."
+  },
+  {
+   "id": "33",
+   "file": "33.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "kslow",
+    "L": "ksguard"
+   },
+   "tech": "kslowguard",
+   "name": "Sonkal najunde daebi makgi · Knife-hand low guarding block",
+   "desc": "Bring the left foot to the right foot, then move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Knife-hand low guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. LEFT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 33 of Toi-Gye: Bring the left foot to the right foot, then move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Knife-hand low guarding block."
+  },
+  {
+   "id": "34",
+   "file": "34.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "sideblk"
+   },
+   "tech": "circular",
+   "name": "Anpalmok dollimyo makgi · Inner forearm circular block",
+   "desc": "Slip the right foot forward toward A into a right walking stance. Left inner forearm circular block toward AD.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 34 of Toi-Gye: Slip the right foot forward toward A into a right walking stance. Left inner forearm circular block toward AD."
+  },
+  {
+   "id": "35",
+   "file": "35.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "sideblk"
+   },
+   "tech": "circular",
+   "name": "Anpalmok dollimyo makgi · Inner forearm circular block",
+   "desc": "Pivoting in place, turn into a left walking stance facing B. Right inner forearm circular block toward BD.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 35 of Toi-Gye: Pivoting in place, turn into a left walking stance facing B. Right inner forearm circular block toward BD."
+  },
+  {
+   "id": "36",
+   "file": "36.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "sideblk"
+   },
+   "tech": "circular",
+   "name": "Anpalmok dollimyo makgi · Inner forearm circular block",
+   "desc": "Pivoting in place, turn into a right walking stance facing A. Left inner forearm circular block toward AD.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 36 of Toi-Gye: Pivoting in place, turn into a right walking stance facing A. Left inner forearm circular block toward AD."
+  },
+  {
+   "id": "37",
+   "file": "37.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Move the right foot onto the A–B line into a sitting stance facing D. Right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 37 of Toi-Gye: Move the right foot onto the A–B line into a sitting stance facing D. Right middle punch."
+  }
+ ]
+}
