@@ -578,6 +578,8 @@ paintView();
 document.getElementById("legend").innerHTML=ITF?
   (M.some(x=>x.stance==="front")?feet({dir:"na",stance:"front",lead:"L"})+`<p><b>Gunnun sogi</b> · walking stance. About 1½ shoulder widths long and one wide, front knee bent over the heel, rear leg straight. Named by the front foot.</p>`:"")+
   (M.some(x=>x.stance==="back")?feet({dir:"na",stance:"back",lead:"L"})+`<p><b>Niunja sogi</b> · L-stance. Feet at right angles, about 1½ shoulder widths apart, most of the weight on the bent rear leg. Named by the rear foot: this one, left foot forward, is a right L-stance.</p>`:"")+
+  (M.some(x=>x.stance==="fixed")?feet({dir:"na",stance:"fixed",lead:"L"})+`<p><b>Gojung sogi</b> · fixed stance. Like the L-stance but a little longer, weight even on both legs. Named by the front foot.</p>`:"")+
+  (M.some(x=>x.stance==="crane")?feet({dir:"na",stance:"crane",lead:"R"})+`<p><b>Guburyo sogi</b> · bending stance. Stand on the bent red leg, the other foot lifted beside its knee, ready to kick. Named by the standing leg.</p>`:"")+
   `<span></span><p style="font-size:12px">Red foot leads; the blue tick is the direction you face. Walking-stance chips are filled; L-stance chips have a double outline. Directions are the ITF letters: you start facing D, with B on your left and A on your right.</p>`:
   feet({dir:"na",stance:"walk",lead:"L"})+`<p><b>Ap seogi</b> · walking stance. One natural step, feet almost in line.</p>`+
   feet({dir:"na",stance:"front",lead:"L"})+`<p><b>Ap kubi</b> · front stance. About 1½ steps long, one fist wide, front knee bent.</p>`+

@@ -406,6 +406,26 @@ This is the first ITF page: `/itf/chon-ji`, with a 2-page print sheet.
 - [ ] **Front snap kicks (14, 18)** keep both arms in the wedging block, as the text says.
 - [ ] **Footwork.** The simulator ends 2.2 foot-lengths from the start.
 
+## Won-Hyo · 원효 (ITF) — 18 October 2026
+
+`/itf/won-hyo`, with a 2-page print sheet, on the I board.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 28 movements. The ITF Korean names come from the chart. Fandom was not used. There is no official video.
+
+- [ ] **Kihap at 12.** This follows the official ITF page; the chart has none.
+- [ ] **Close ready stance A** (moa junbi sogi A) is drawn as feet together, the left hand wrapped over the right fist in front of the chest, using the Kukkiwon bojumeok figure. Check the hand height for the ITF version.
+- [ ] **Fixed stance** (gojung sogi, 3, 6, 15, 18) is a new library stance. It is drawn with the L-stance figure and footprint, but the ITF fixed stance is a little longer with the weight even. Its chips name the **front** foot, as the ITF text does ("left fixed stance … slipping the left foot to B"), unlike the L-stance chips.
+- [ ] **Bending ready stance A (7, 25)** is drawn as the crane (hakdari) figure in profile, standing on the named leg. The ITF version has the lifted foot beside the standing knee and the arms in a forearm guarding position.
+- [ ] **Side piercing kicks (8, 26) toward D and C** are drawn in profile, the kicking leg nearest, as on the Kukkiwon pages.
+- [ ] **Knife-hand high inward strike (2, 5, 14, 17)** uses the Kukkiwon knife-hand neck strike. The other fist is in front of the opposite shoulder, using a new arm pose, `xshoulder`.
+- [ ] **Inner forearm circular block (19, 22)** is drawn at its end position (forearm upright in front of the shoulder). The circular path isn't shown. The block goes toward CF and CE while the stance faces C.
+- [ ] **Low front snap kicks (20, 23) toward C** are drawn in profile rather than from behind, so the kick reads (issue #1).
+- [ ] **270° turn at 13**, as in Dan-Gun.
+- [ ] **Footwork.** The simulator ends 2.7 foot-lengths from the start. To get there:
+  - step hints on the "bring one foot to the other, then step" moves (4, 16, 19, 28);
+  - the crane-stance simulator now honours a `plant` hint, so 7 brings the right foot to the left;
+  - move 27 is worded "Land the right foot … then turn".
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:

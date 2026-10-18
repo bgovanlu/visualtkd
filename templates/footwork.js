@@ -76,6 +76,7 @@ function simulate(M){
   const out=[];let cur=null,air=null;
   M.forEach((m,i)=>{
     if(m.stance==="ogeum")m={...m,stance:"crane"};   // ogeum seogi stands like crane stance
+    if(m.stance==="fixed")m={...m,stance:"back"};    // ITF gojung sogi (fixed stance): an L-stance with the weight even
     const face=DIRV[m.dir],S=said(m),st=m.stance,step=m.step||{};
     let feet,moved=[],how="";
     if(i===0||!cur){
@@ -94,8 +95,10 @@ function simulate(M){
       if(S.jump){moved=["L","R"]}
     }else if(st==="crane"){
       const s=m.lead||"R",k=other(s);
-      feet={[s]:{p:prev[s].p,a:ang(face)},[k]:{p:add(prev[s].p,mul(rightOf(face),k==="R"?.32:-.32)),a:ang(face),air:true}};
-      moved=[k];how="lift";
+      // step.plant naming the lifted foot: the standing foot is brought to it ("bring the right foot to the left foot")
+      const at=m.step&&m.step.plant===k?add(prev[k].p,mul(rightOf(face),k==="R"?-.32:.32)):prev[s].p;
+      feet={[s]:{p:at,a:ang(face)},[k]:{p:add(at,mul(rightOf(face),k==="R"?.32:-.32)),a:ang(face),air:true}};
+      moved=m.step&&m.step.plant===k?[s,k]:[k];how="lift";
     }else{
       // candidates: plant either foot where it is, or keep the centre (pivot / jump / travel)
       const cand=["L","R"].map(pl=>{const fe=place(m,pl,prev[pl].p,face),mv=other(pl);

@@ -80,6 +80,7 @@ const mk=far=>({far,legs:[],arms:[],feet:[],fists:[],torso:null,head:null,neck:n
 
 function skel(m,pr){
   if(m.stance==="ogeum")m={...m,stance:"crane",ogeum:true};   // ogeum seogi: drawn as crane stance, lifted foot behind the knee
+  if(m.stance==="fixed")m={...m,stance:"back"};   // ITF gojung sogi (fixed stance): drawn with L-stance geometry
   const HANDS={};let side;   // where each hand ends up (for the same-stance motion arcs and count badges)
   const k=(pr.thigh+pr.shin)/65,tk=pr.torso/55,ak=(pr.upper+pr.fore)/47,sw=pr.shW/18.5,hw=pr.hipW/9;
   function addArm(L,sh,h,pref,pf,flat){
@@ -125,7 +126,8 @@ function skel(m,pr){
       else if(act==="inside")h=add(sh,mul([22,-1],ak));
       else if(act==="high"||act==="khigh"){h=add(sh,mul([17,-30],ak));p=[1,-.15]}
       else if(act==="outer")h=add(sh,mul([19,-7],ak));
-      else if(act==="sideblk")h=add(sh,mul([27,-2],ak));   // ITF side block: forearm upright out in front of the shoulder, clear of the face
+      else if(act==="sideblk")h=add(sh,mul([27,-2],ak));
+      else if(act==="xshoulder")h=add(sh,mul([14,4],ak));   // fist drawn back in front of the other shoulder   // ITF side block: forearm upright out in front of the shoulder, clear of the face
       else if(act==="twinhigh"){h=add(sh,mul([5,-36],ak));p=[1,-.15]}   // ITF twin forearm block, rear arm: guarding above the forehead
       else if(act==="ksout")h=add(sh,mul([22,-5],ak));
       else if(act==="ksblock")h=add(sh,mul([25,-3],ak));
@@ -277,6 +279,7 @@ function skel(m,pr){
       else if(act==="khigh"){h=[x*-4,T-24*tk];p=[x,-.4]}
       else if(act==="outer"){h=[x*(pr.shW+4),T+6*tk];p=[x*.4,1]}
       else if(act==="sideblk"){h=[x*(pr.shW+4),T+6*tk];p=[x*.4,1]}
+      else if(act==="xshoulder"){h=[x*-15,T+8*tk];p=[x*.6,.6]}
       else if(act==="twinhigh"){h=[x*-4,T-24*tk];p=[x,-.4]}
       else if(act==="ksout"||act==="ksblock"){h=[x*(pr.shW+2),T+4*tk];p=[x*.4,1]}
       else if(act==="ksguard"){h=[x*-2,T+22*tk];p=[x,.3]}
@@ -517,6 +520,7 @@ function figure(m,opt={}){
 const FT=[[0,-7.4],[3,-5.6],[3.5,1.5],[2.4,6.3],[0,7.4],[-2.4,6.3],[-3.5,1.5],[-3,-5.6]];
 function feet(m){
   if(m.stance==="ogeum")m={...m,stance:"crane"};
+  if(m.stance==="fixed")m={...m,stance:"back"};
   const rot={na:0,ga:180,da1:90,da2:90,da3:90,ra1:-90,ra2:-90,ra3:-90,gada:135,nada:45,gara:-135,nara:-45}[m.dir]*Math.PI/180;
   const sgn=s=>s==="L"?-1:1,other=s=>s==="L"?"R":"L";
   const foot=(x,y,a,on)=>`<path d="${spline(xf(FT,[x,y],a))}" fill="${on?"var(--fire)":"var(--muted)"}"/>`;
@@ -549,12 +553,12 @@ const sideWord=s=>s==="L"?"Left":"Right";
 /* chip names per stance. ITF forms (FORM.family "itf") swap in the ITF names, and name the L-stance
    (niunja sogi) by the rear foot as the ITF does: "R · Niunja sogi" = right foot back, left foot forward. */
 const CHIPN={ready:"Naranhi",kick:"Ap chagi",skick:"Yeop chagi",rkick:"Dollyeo chagi",knee:"Mureup",tiger:"Beom seogi",
-  horse:"Juchum seogi",cross:"Kkoa seogi",gyeot:"Gyeotdari seogi",close:"Moa seogi",crane:"Hakdari",ogeum:"Ogeum seogi",
+  horse:"Juchum seogi",cross:"Kkoa seogi",gyeot:"Gyeotdari seogi",close:"Moa seogi",crane:"Hakdari",ogeum:"Ogeum seogi",fixed:"Gojung sogi",
   back:"Dwit kubi",nieun:"Nieunja seogi",walk:"Ap seogi",front:"Ap kubi"};
 const CHIPCLS={ready:"ready",close:"ready",kick:"kick",skick:"kick",rkick:"kick",knee:"kick",tiger:"tiger",horse:"horse",
-  crane:"crane",ogeum:"crane",back:"back",nieun:"back",walk:"walk",front:"front"};
+  crane:"crane",ogeum:"crane",back:"back",nieun:"back",fixed:"back",walk:"walk",front:"front"};
 let ITFNAMES=false;
-function itfNames(){ITFNAMES=true;Object.assign(CHIPN,{ready:"Narani",front:"Gunnun sogi",back:"Niunja sogi",horse:"Annun sogi",kick:"Apcha busigi"})}
+function itfNames(){ITFNAMES=true;Object.assign(CHIPN,{ready:"Narani",front:"Gunnun sogi",back:"Niunja sogi",horse:"Annun sogi",kick:"Apcha busigi",skick:"Yopcha jirugi",crane:"Guburyo sogi",close:"Moa sogi"})}
 const flipLR=s=>s==="L"?"R":"L";
 const chipSide=m=>ITFNAMES&&m.stance==="back"?flipLR(m.lead):m.lead;
 function chip(m){
@@ -568,5 +572,6 @@ function stanceLabel(m){
   if(m.stance==="horse"||m.stance==="close")return m.stance;
   if(ITFNAMES&&m.stance==="front")return sideWord(m.lead)+" walking";
   if(ITFNAMES&&m.stance==="back")return sideWord(flipLR(m.lead))+" L";
-  return sideWord(m.lead)+({walk:" walking",front:" front",back:" back",tiger:" tiger",cross:" cross",crane:" crane",nieun:" ㄴ-shape",gyeot:" assisting",ogeum:" reverse crane"})[m.stance];
+  if(ITFNAMES&&m.stance==="crane")return sideWord(m.lead)+" bending";
+  return sideWord(m.lead)+({walk:" walking",front:" front",back:" back",tiger:" tiger",cross:" cross",crane:" crane",nieun:" ㄴ-shape",gyeot:" assisting",ogeum:" reverse crane",fixed:" fixed"})[m.stance];
 }

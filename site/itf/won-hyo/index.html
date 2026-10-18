@@ -1,0 +1,1594 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 rx=%223%22 fill=%22%231f3a8a%22/%3E%3Cpath d=%22M3 4h10M3 8h10M3 12h10%22 stroke=%22white%22 stroke-width=%221.6%22/%3E%3C/svg%3E">
+<style>body{margin:0}[hidden]{display:none!important}img{max-width:100%}
+</style>
+</head>
+<body>
+<title>Won-Hyo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700;900&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: the original 王-shaped floor plan kept intact — three bars (ra/da lines) joined by the centre na–ga line — with figures standing on the floor lines; a study panel and full sequence table follow. */
+/* Shared by every page (form pages, landing, forms index, library, how-to-read): colour tokens, type, site nav and footer.
+   Inlined by tools/build_form.py and tools/build_site.py. */
+:root{
+  --bg:#edf0f5; --surface:#ffffff; --mat:#e2e7ef; --ink:#141a2b; --muted:#5a6377; --line:#c3cbd8;
+  --heaven:#1f3a8a; --fire:#c8102e;
+  --f-display:"Noto Serif KR","Noto Serif CJK KR","Nanum Myeongjo",Georgia,serif;
+  --f-body:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0d1220; --surface:#151c2d; --mat:#1b2437; --ink:#e7ebf3; --muted:#97a1b6; --line:#2c3650;
+  --heaven:#87a3ff; --fire:#ff5a6e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1220; --surface:#151c2d; --mat:#1b2437; --ink:#e7ebf3; --muted:#97a1b6; --line:#2c3650;
+  --heaven:#87a3ff; --fire:#ff5a6e; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
+
+/* Site nav: the same bar on every page */
+.sitenav{display:flex;align-items:center;justify-content:space-between;gap:8px 20px;flex-wrap:wrap;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.sitenav .brand{display:inline-flex;align-items:center;gap:9px;font-family:var(--f-mono);font-size:14px;font-weight:500;letter-spacing:.04em;color:var(--ink);text-decoration:none}
+.sitenav .brand svg{width:22px;height:22px;flex:none}
+.sitenav ul{list-style:none;margin:0;padding:0;display:flex;gap:2px 4px;flex-wrap:wrap}
+.sitenav ul a{display:block;font-size:14px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 10px;border-radius:99px}
+.sitenav ul a:hover{color:var(--ink);background:var(--mat)}
+.sitenav ul a[aria-current="page"]{color:var(--ink);background:var(--mat)}
+.sitenav a:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+@media (max-width:480px){.sitenav ul a{padding:4px 7px;font-size:13.5px}}
+
+/* Site footer */
+.sitefoot{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.sitefoot a{color:var(--heaven)}
+.sitefoot p{margin:0;max-width:72ch}
+
+/* Stance chips (form pages, library, how-to-read): walking outlined, front filled, back double, kick dashed, crane dotted blue */
+.chip{font-size:11.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:2px 9px;border-radius:99px;border:1.5px solid var(--muted);color:var(--muted);white-space:nowrap;display:inline-flex;gap:5px;align-items:center}
+.chip.front{background:var(--ink);border-color:var(--ink);color:var(--surface)}
+.chip.kick{border-style:dashed}
+.chip.back{border:3px double var(--ink);color:var(--ink)}
+.chip.tiger{border-style:dotted;border-width:2px;color:var(--ink)}
+.chip.horse{background:var(--mat);border-color:var(--ink);color:var(--ink)}
+.chip.ready{border-color:var(--line)}
+.chip.crane{border-style:dotted;border-width:2px;border-color:var(--heaven);color:var(--heaven)}
+
+/* library links inside form pages and the library itself: quiet until hovered */
+a.lib{color:inherit;text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent);text-decoration-thickness:1px;text-underline-offset:3px}
+a.lib:hover{color:var(--heaven);text-decoration-color:currentColor}
+a.lib:focus-visible{outline:2px solid var(--heaven);outline-offset:2px;border-radius:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+:root{--figbg:var(--surface); --gf:.956; --fig-h:150px}
+.wrap{max-width:max(1240px, calc(1340px + 40px));margin:0 auto;padding-inline:20px;padding-block:28px 56px;display:flex;flex-direction:column;gap:28px}
+
+/* Header */
+header{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.title{display:flex;align-items:center;gap:22px}
+.tri{display:flex;flex-direction:column;gap:7px}
+.tri i{display:block;width:54px;height:9px;background:var(--heaven);border-radius:2px}
+.tri i.brk{background:none;display:flex;gap:10px}
+.tri i.brk s{flex:1;background:var(--heaven);border-radius:2px}
+/* black-belt forms carry their name in Hanja instead of a trigram */
+.seal{font-family:var(--f-display);font-weight:900;font-size:27px;line-height:1.05;color:var(--heaven);border:2.5px solid var(--heaven);border-radius:8px;padding:9px 7px;writing-mode:vertical-rl;letter-spacing:.06em}
+h1{margin:0;font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6vw,64px);line-height:1;letter-spacing:-.01em}
+.sub{margin:6px 0 0;font-size:clamp(17px,2vw,21px);font-weight:600;letter-spacing:.02em}
+.sub span{color:var(--muted);font-weight:400}
+.meta{display:flex;gap:22px;flex-wrap:wrap}
+.meta div{display:flex;flex-direction:column}
+.meta b{font-family:var(--f-mono);font-size:22px;font-weight:500;font-variant-numeric:tabular-nums}
+.meta small{text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:var(--muted)}
+
+/* Board */
+.scroller{overflow-x:auto;border-radius:14px;background:var(--surface);border:1px solid var(--line)}
+.board{position:relative;min-width:1340px;padding:44px 64px 52px;display:flex;flex-direction:column;gap:6px}
+.spoke{position:absolute;height:3px;margin-top:-1.5px;background:var(--line);transform-origin:0 50%;z-index:0}
+.rail{position:absolute;left:50%;width:3px;margin-left:-1.5px;background:var(--line);z-index:0}
+.bar{position:relative;display:flex;justify-content:space-between;align-items:flex-start}
+.bar::before{content:"";position:absolute;left:var(--bl,-34px);right:var(--br,-34px);top:calc(20px + var(--fig-h)*var(--gf));height:3px;background:var(--line);z-index:0}
+.pair{display:flex;gap:2px}
+.mid{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;position:relative}
+.mid .pair{gap:10px}
+.dl{position:absolute;font-family:var(--f-mono);font-size:13px;color:var(--heaven);top:calc(20px + var(--fig-h)*var(--gf) - 26px)}
+.dl.l{left:-50px}.dl.r{right:-50px}
+.dl sup{font-size:9px}
+/* other floor shapes (士 山 工): short bars, bars without a line, side prongs */
+.bar.fit{justify-content:center;gap:56px}
+.bar.noline::before{display:none}
+.bar.noline{justify-content:center}.bar.noline .dl{display:none}   /* a stem end (十): figures on the centre line only */
+.bar.fit.hookl{justify-content:flex-end;padding-right:50%}.bar.fit.hookr{justify-content:flex-start;padding-left:50%}   /* 卍: a short bar on one side of the centre line */
+.bar.ends::before,.bar.ends .dl{display:none}   /* 水: groups at both ends of the row, no bar; spokes join them to the centre */
+.bar.gone,.mid.gone{display:none}
+.prong{position:absolute;width:3px;margin-left:-1.5px;background:var(--line);z-index:0}
+/* one-line floors (Pyongwon 一): each spot on the line is a column of the counts made there, in order */
+.spot{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(2,var(--card-w,128px));align-content:start;justify-content:center;column-gap:2px;padding-bottom:8px}
+.spot.one{grid-template-columns:var(--card-w,128px)}
+.spot::after{content:"";position:absolute;left:0;right:0;top:calc(20px + var(--fig-h)*var(--gf) + 12px);bottom:0;background:var(--bg);border-radius:0 0 14px 14px;z-index:-1}
+.mid .side.r{justify-self:end}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px 30px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 24px}
+.notes[hidden]{display:none}
+.notes .note{max-width:none}
+.notes .note.right{justify-self:stretch}
+.compass{position:absolute;left:50%;transform:translateX(-50%);font-family:var(--f-mono);font-size:13px;color:var(--heaven);letter-spacing:.1em}
+.compass.n{top:14px}.compass.s{bottom:18px}
+
+.fig{position:relative;z-index:1;width:var(--card-w,128px);display:flex;flex-direction:column;align-items:center;padding:20px 0 6px;background:none;border:0;color:inherit;font:inherit;cursor:pointer;border-radius:12px;transition:background .2s}
+.fig:hover{background:var(--mat);--figbg:var(--mat)}
+.fig:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+.fig .no{position:absolute;top:4px;left:8px;font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.fig .fp{position:absolute;top:0;right:0;width:44px;height:44px}
+.fig svg.body{height:var(--fig-h);width:auto;overflow:visible}
+.fig .glow{opacity:0;transition:opacity .25s}
+.fig.on .glow{opacity:1}
+.fig.on .no{color:var(--fire);font-weight:700}
+.fig .tech{margin-top:4px;font-weight:600;font-size:13.5px;line-height:1.2;text-align:center}
+.fig .en{font-size:12px;color:var(--muted);line-height:1.2}
+.fig .chip{margin-top:5px}
+.fig.on .chip{outline:2px solid var(--fire);outline-offset:2px}
+.kh{font-family:var(--f-mono);font-size:10px;color:var(--fire);letter-spacing:.06em;margin-top:3px}
+.seg{display:inline-flex;align-self:flex-start;border:1px solid var(--line);border-radius:99px;padding:2px;gap:2px}
+.seg button{font:inherit;font-size:13px;font-weight:600;border:0;background:none;color:var(--muted);padding:4px 12px;border-radius:99px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
+.seg button:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+.legend .chip{margin:0;justify-self:start}
+
+.note{max-width:290px;font-size:13.5px;color:var(--muted);display:flex;flex-direction:column;gap:8px}
+.note h3{margin:0;color:var(--ink);font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:600}
+.note.right{justify-self:end}
+.note p{margin:0}
+.legend{display:grid;grid-template-columns:40px 1fr;gap:8px 10px;align-items:center}
+.legend svg{width:40px;height:40px}
+.legend p{margin:0;line-height:1.35}
+.legend p b{color:var(--ink);font-weight:600}
+.belts{display:flex;gap:6px;flex-wrap:wrap}
+.belts button{width:28px;height:28px;border-radius:50%;border:2px solid var(--line);cursor:pointer;padding:0}
+.belts button[aria-pressed="true"]{border-color:var(--ink);box-shadow:0 0 0 2px var(--surface) inset}
+.belts button:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+
+/* Study panel */
+.study{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:28px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+.stage{--figbg:var(--mat);background:var(--mat);border-radius:12px;display:flex;justify-content:center;align-items:center;padding:14px;position:relative;aspect-ratio:1/1.15;max-width:100%}
+.stage svg.body{height:100%;max-height:300px;width:auto;overflow:visible}
+.stage .fp{position:absolute;right:10px;top:10px;width:56px;height:56px}
+.info{min-width:0;display:flex;flex-direction:column;gap:12px}
+.info .kicker{font-family:var(--f-mono);font-size:12.5px;color:var(--fire);letter-spacing:.06em}
+.info h2{margin:0;font-family:var(--f-display);font-weight:700;font-size:clamp(26px,3.4vw,36px);line-height:1.1;text-wrap:balance}
+.info h2 small{display:block;font-family:var(--f-body);font-weight:400;font-size:16px;color:var(--muted);margin-top:4px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 26px}
+.facts div{display:flex;flex-direction:column}
+.facts small{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+.facts b{font-weight:600;font-size:15px}
+.info p{margin:0;max-width:62ch;font-size:16px}
+.ctrl{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.ctrl button{font:inherit;font-weight:600;font-size:14px;padding:9px 16px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.ctrl button.primary{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.ctrl button:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+/* footwork glyph and plan (#3) */
+svg.fw .rim{fill:var(--surface);stroke:var(--line)}
+svg.fw .was{fill:none;stroke:var(--muted);stroke-width:1.2;stroke-dasharray:1.6 1.2}
+svg.fw .lead,.fwplan .on .print,.fwplan .on.print{fill:var(--fire)}
+svg.fw .other{fill:var(--muted)}
+svg.fw .air,.fwplan .air{fill:none;stroke:var(--fire);stroke-width:1;stroke-dasharray:2 1.4}
+svg.fw .step,.fwplan .step{fill:none;stroke:var(--fire);stroke-width:1.3;stroke-dasharray:2.4 1.6;stroke-linecap:round}
+svg.fw .step.head,.fwplan .step.head{fill:var(--fire);stroke:none}
+svg.fw .pivot,.fwplan .pivot{fill:none;stroke:var(--heaven);stroke-width:1.1;stroke-dasharray:2 1.5}
+svg.fw .tick{fill:var(--heaven)}
+.fwsec h2{font-family:var(--f-display);font-weight:700;font-size:24px;margin:0 0 6px}
+.fwsec > p{margin:0 0 12px;color:var(--muted);max-width:76ch;font-size:14px}
+.fwbox{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;align-items:center;gap:12px}
+#fwbox{width:100%;display:flex;justify-content:center}
+.fwctrl{width:100%;max-width:760px;display:flex;flex-direction:column;gap:10px}
+.fwcap{margin:0;font-size:15px;min-height:1.5em}.fwcap b{font-family:var(--f-mono);font-weight:500;color:var(--fire)}
+/* floor line section */
+.flplan{width:100%;max-width:860px;height:auto}
+.flplan .floor{stroke:var(--line);stroke-width:2.4;stroke-linecap:round;fill:none}
+.flplan .trail{fill:none;stroke:var(--fire);stroke-width:.9;stroke-linejoin:round;opacity:.45}
+.flplan .leg{fill:none;stroke:var(--fire);stroke-width:1.5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:fldraw .6s ease-out forwards}
+@keyframes fldraw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.flplan .leg{animation:none;stroke-dashoffset:0}}
+.flplan .dots circle{cursor:pointer}.flplan .been{fill:var(--heaven)}.flplan .todo{fill:var(--heaven);opacity:.25}
+.flplan .halo{fill:var(--fire);opacity:.18}.flplan .you{fill:var(--fire)}
+.flplan .face{stroke:var(--fire);stroke-width:1.6;stroke-linecap:round}
+.flplan text{font-family:var(--f-mono);font-size:3.6px;fill:var(--heaven);text-anchor:middle;letter-spacing:.1em}
+.flplan text.id{fill:var(--fire);font-size:4px;letter-spacing:0}
+/* View bar */
+.viewbar{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;margin-bottom:-10px}
+.vgroup{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.vlabel{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600}
+.viewbar .seg button{padding:4px 11px}
+@media (max-width:760px){.viewbar{gap:8px 14px;margin-bottom:-4px}.viewbar .seg button{padding:3px 9px;font-size:13px}.vgroup{gap:6px}.vlabel{font-size:10px}}
+.fwplan{width:100%;max-width:760px;height:auto;max-height:80vh}
+.fwplan .print{fill:var(--muted);opacity:.28;cursor:pointer}
+.fwplan .start{fill:var(--line);stroke:none}
+.fwplan .step{stroke:var(--muted);opacity:.28}
+.fwplan .step.head{fill:var(--muted)}
+.fwplan .on .step{stroke:var(--fire);opacity:1}.fwplan .on .step.head{fill:var(--fire)}
+.fwplan .on .print{opacity:1}
+.fwplan .pivot{opacity:.25}.fwplan .on .pivot{opacity:1}
+.fwplan .labels text{opacity:.55}.fwplan .labels text.on,.fwplan .labels text.stand{opacity:1}
+.fwplan .labels text{font-family:var(--f-mono);font-size:3.4px;fill:var(--muted);text-anchor:middle;cursor:pointer}
+.fwplan .labels text.on,.fwplan .labels text.stand{font-size:4.6px}
+.fwplan .labels text.on{fill:var(--fire);font-weight:500;font-size:4.6px}
+.fwplan .nesw{font-family:var(--f-mono);font-size:3.6px;fill:var(--heaven);text-anchor:middle;letter-spacing:.1em}
+.fwplan .now{fill:none;stroke:var(--ink);stroke-width:.7}
+.fwplan .stand .print,.fwplan .stand .start{opacity:1;fill:var(--fire)}
+.fwplan text.stand,.fwplan text.on{fill:var(--fire)}
+.fwplan .on .print{fill:var(--fire)}
+svg.fw .still{font-family:var(--f-mono);font-size:6px;fill:var(--muted);text-anchor:middle;letter-spacing:.06em}
+.fwplan .step{stroke-width:.7}.fwplan .pivot{stroke-width:.6}
+.fig svg.fw{width:56px;height:56px;top:-4px;right:-4px}.stage svg.fw{width:96px;height:96px}.sc-fig svg.fw{width:76px;height:76px}
+/* same-stance treatments (#4) */
+.fig .same{font-family:var(--f-mono);font-size:10px;color:var(--muted);letter-spacing:.04em;margin-top:3px}
+.fig.mini{width:calc(var(--card-w,128px)*.8);padding-top:20px}
+.fig.mini svg.body{height:calc(var(--fig-h)*.625);margin-bottom:calc(var(--fig-h)*.375)}
+.fig.combo{width:calc(var(--card-w,128px)*1.25)}
+.fig.combo .no{white-space:nowrap}
+svg.body .badge text{font-weight:500}
+.info .more{font-size:14px;font-weight:600;align-self:flex-start}
+.chiplink{text-decoration:none;color:inherit;border-radius:99px}
+.chiplink:hover .chip{border-color:var(--heaven);color:var(--heaven)}
+.chiplink:hover .chip.front{background:var(--heaven);color:var(--surface)}
+.chiplink:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+.sitenav{margin-bottom:-10px}
+.progress{flex:1;min-width:120px;height:4px;background:var(--line);border-radius:4px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--fire);width:0;transition:width .3s}
+
+/* Table */
+section.seq h2{font-family:var(--f-display);font-weight:700;font-size:24px;margin:0 0 12px}
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:14px}
+th,td{text-align:left;padding:9px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600}
+td.n{font-family:var(--f-mono);font-variant-numeric:tabular-nums;color:var(--muted);white-space:nowrap}
+td .ko{color:var(--muted);font-size:13px}
+tr{cursor:pointer}
+tr:hover td{background:var(--mat)}
+tr.on td{background:color-mix(in srgb,var(--fire) 10%,transparent)}
+tr:last-child td{border-bottom:0}
+footer{font-size:13px;color:var(--muted);max-width:72ch}
+
+/* Top actions */
+.actions{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:-8px}
+.actions a{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;text-decoration:none;color:var(--ink);padding:8px 14px;border-radius:99px;border:1px solid var(--line);background:var(--surface)}
+.actions a:hover{border-color:var(--ink)}
+.actions a:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+.actions .back{border-color:transparent;background:none;padding-inline:4px;color:var(--heaven)}
+.actions .print{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.actions .print span{font-weight:400;opacity:.75;font-size:12.5px}
+.actions svg{width:18px;height:18px}
+
+/* References */
+.refs h2{font-family:var(--f-display);font-weight:700;font-size:24px;margin:0 0 12px}
+.refs ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.ref{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;color:inherit;text-decoration:none;height:100%;transition:border-color .2s}
+.ref:hover{border-color:var(--ico)}
+.ref:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+.ref.kuk{--ico:var(--heaven)}.ref.yt{--ico:var(--fire)}.ref.wt{--ico:var(--ink)}.ref.itf{--ico:var(--fire)}
+.ico{flex:none;width:46px;height:46px;border-radius:12px;display:grid;place-items:center;color:var(--ico);background:color-mix(in srgb,var(--ico) 11%,transparent)}
+.ico svg{width:28px;height:28px}
+.rt{display:flex;flex-direction:column;gap:2px;min-width:0}
+.rt small{font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ico)}
+.rt b{font-size:15.5px;line-height:1.25}
+.rt b::after{content:" ↗";font-size:12px;color:var(--muted)}
+.rt span{font-size:13px;color:var(--muted)}
+.rt em{display:none;font-style:normal;font-family:var(--f-mono);font-size:10px;color:var(--muted);word-break:break-all}
+
+/* Mobile carousel (hidden on desktop) */
+.mtoggle,.carousel{display:none}
+.carousel{flex-direction:column;gap:12px}
+.ctop{display:flex;align-items:center;gap:12px;font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
+.cbar{flex:1;height:4px;background:var(--line);border-radius:4px;overflow:hidden}
+.cbar i{display:block;height:100%;width:0;background:var(--fire);transition:width .3s}
+.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;gap:0;border-radius:16px;overscroll-behavior-x:contain}
+.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;padding-inline:2px}
+.sc{--figbg:var(--surface);background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 16px 18px;display:flex;flex-direction:column;gap:10px;height:100%}
+.sc-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.sc-no{font-family:var(--f-mono);font-size:13px;color:var(--fire);letter-spacing:.06em}
+.sc-no b{display:block;font-family:var(--f-display);font-size:30px;line-height:1;color:var(--ink);font-weight:900;letter-spacing:0}
+.minimap{width:112px;height:auto;flex:none}
+.sc-fig{position:relative;display:flex;justify-content:center;background:var(--mat);--figbg:var(--mat);border-radius:12px;padding:10px 0 4px}
+.sc-fig svg.body{height:min(42vh,300px);width:auto;overflow:visible}
+.sc-fig .glow{display:none}
+.sc-fig .fp{position:absolute;right:8px;top:8px;width:48px;height:48px}
+.sc h3{margin:0;font-family:var(--f-display);font-weight:700;font-size:24px;line-height:1.15}
+.sc h3 span{font-weight:400;color:var(--muted);font-size:18px}
+.sc .en{color:var(--muted);font-size:15px;margin-top:-6px}
+.sc .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.sc .chip{margin:0}
+.sc p{margin:0;font-size:15.5px}
+.cctrl{display:grid;grid-template-columns:52px 1fr 52px;gap:10px}
+.cctrl button{font:inherit;font-weight:600;font-size:15px;min-height:48px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.cctrl button[aria-label]{font-size:26px;line-height:1}
+.cctrl button.primary{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.cctrl button:focus-visible,.mtoggle button:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+.mbelt{display:flex;align-items:center;gap:10px}
+.mbelt small{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+
+@media (max-width:760px){
+  .wrap{gap:18px;padding-block:18px 40px}
+  .meta{display:none}
+  .title{gap:14px}
+  .tri{gap:4px}.tri i{width:30px;height:5px}
+  .seal{writing-mode:horizontal-tb;font-size:17px;padding:5px 7px;border-width:2px;white-space:nowrap}
+  body[data-mview="swipe"] .notes{display:none}
+  .mtoggle{display:inline-flex}
+  .mtoggle button{padding:7px 14px;font-size:14px}
+  body[data-mview="swipe"] .carousel{display:flex}
+  body[data-mview="swipe"] .scroller,body[data-mview="swipe"] .study{display:none}
+  .study{grid-template-columns:1fr;padding:16px}
+  .stage{max-width:300px;margin-inline:auto;width:100%}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <nav class="sitenav" aria-label="Site"><a class="brand" href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="var(--heaven)"/><path d="M5 6h14M6.5 12h11M5 18h14M12 6v12" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>visualtkd</a><ul><li><a href="/forms/" aria-current="page">Forms</a></li><li><a href="/library/">Library</a></li><li><a href="/history/">History</a></li><li><a href="/how-to-read/">How to read</a></li><li><a href="/#about">About</a></li></ul></nav>
+  <nav class="actions" aria-label="Page actions">
+    <a class="back" href="/forms/">← All forms</a>
+    <a class="print" href="won-hyo-print.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4.5V9.5A1.5 1.5 0 0 1 6 8h12a1.5 1.5 0 0 1 1.5 1.5V17H17M7 13.5h10V21H7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>Print sheet <span>PDF · 2 pages</span></a>
+  </nav>
+  <header>
+    <div class="title">
+      <div class="seal" lang="zh-Hant" aria-label="Won-Hyo 元曉">元曉</div>
+      <div>
+        <h1>원효</h1>
+        <p class="sub">Won-Hyo <span>· 元曉 · The monk Wonhyo · ITF pattern 4 of 24</span></p>
+      </div>
+    </div>
+    <div class="meta">
+      <div><b>28</b><small>Movements</small></div>
+      <div><b>28</b><small>Counts</small></div>
+      <div><b>I</b><small>Floor line</small></div>
+    </div>
+  </header>
+
+  <div class="viewbar" id="viewbar" role="group" aria-label="View options">
+    <div class="vgroup"><span class="vlabel" id="vl-same">Same-stance moves</span>
+      <div class="seg" role="group" aria-labelledby="vl-same"><button type="button" data-same="">Full figures</button><button type="button" data-same="a" title="Legs light, an arc shows the moving hand">Carry-over</button><button type="button" data-same="b" title="One figure per stance, counts numbered">Combined</button><button type="button" data-same="c" title="Small arm-only figures for the later counts">Inset</button></div></div>
+    <div class="vgroup"><span class="vlabel" id="vl-fw">Footwork</span>
+      <div class="seg" role="group" aria-labelledby="vl-fw"><button type="button" data-fw="off">Hide</button><button type="button" data-fw="on">Show</button></div></div>
+    <div class="vgroup"><span class="vlabel" id="vl-fl">Floor line</span>
+      <div class="seg" role="group" aria-labelledby="vl-fl"><button type="button" data-fl="off">Hide</button><button type="button" data-fl="on">Show</button></div></div>
+  </div>
+
+  <div class="mtoggle seg" role="group" aria-label="View">
+    <button type="button" data-v="swipe" aria-pressed="true">Move by move</button><button type="button" data-v="plan" aria-pressed="false">Floor plan</button>
+  </div>
+
+  <section class="carousel" aria-label="Moves, one at a time" aria-roledescription="carousel">
+    <div class="ctop"><span id="cpos"></span><span class="cbar"><i id="cbar"></i></span></div>
+    <div class="track" id="track"></div>
+    <div class="cctrl">
+      <button id="mprev" type="button" aria-label="Previous move">‹</button>
+      <button id="mplay" type="button" class="primary">Play the form</button>
+      <button id="mnext" type="button" aria-label="Next move">›</button>
+    </div>
+    <div class="mbelt"><small>Belt</small><div class="belts" id="mbelts"></div></div>
+  </section>
+
+  <div class="scroller">
+    <div class="board" id="board">
+      <span class="compass n">NA · 나</span>
+      <span class="compass s">GA · 가</span>
+      <div class="rail" id="rail"></div>
+
+      <div class="bar" id="r1"><span class="dl l">ra<sup>1</sup></span><span class="dl r">da<sup>1</sup></span></div>
+      <div class="mid" id="r2">
+        <div class="note" id="nForm">
+          <h3>I · Won-Hyo · the monk</h3>
+          <p>Won-Hyo was the monk who brought Buddhism to the Silla court in 686. The diagram is I. You start feet together in the middle of the A–B line facing D: twin forearm blocks, inward knife-hand strikes and side punches to B and A; a bending ready stance and side kick down the stem, three knife-hand guarding blocks and a fingertip thrust; the same block, strike and punch to E and F; then back up toward C with circular blocks, low kicks and punches, a second side kick, and two forearm guarding blocks where you began.</p>
+        </div>
+        <div class="pair" id="c2"></div>
+        <div class="note right" id="nLegend">
+          <h3>Reading the footprints</h3>
+          <div class="legend" id="legend"></div>
+        </div>
+      </div>
+      <div class="bar" id="r3"><span class="dl l">ra<sup>2</sup></span><span class="dl r">da<sup>2</sup></span></div>
+      <div class="mid" id="r4">
+        <div class="note" id="nBelt">
+          <h3>Belt</h3>
+          <div class="belts" id="belts"></div>
+          <p>Choose the rank you are teaching; every figure updates.</p>
+        </div>
+        <div class="pair" id="c4"></div>
+        <div class="note right" id="nRead">
+          <h3>How the diagram reads</h3>
+          <p id="readP">You start at <b>na</b> facing <b>ga</b> (the bottom of the page). Figures on the left and right are seen from the side; centre figures face you going toward ga and show their back returning toward na. Horse- and crane-stance figures face the way the body faces.</p>
+        </div>
+      </div>
+      <div class="bar" id="r5"><span class="dl l">ra<sup>3</sup></span><span class="dl r">da<sup>3</sup></span></div>
+    </div>
+  </div>
+  <div class="notes" id="notes" hidden></div>
+
+  <section class="study" aria-live="polite">
+    <div class="stage" id="stage"></div>
+    <div class="info">
+      <div class="kicker" id="kicker"></div>
+      <h2 id="name"></h2>
+      <div class="facts" id="facts"></div>
+      <p id="desc"></p>
+      <a class="lib more" id="more" href="/library/">Technique details →</a>
+      <div class="ctrl">
+        <button id="prev" type="button">Previous</button>
+        <button id="play" type="button" class="primary">Play the form</button>
+        <button id="next" type="button">Next</button>
+        <div class="progress"><i id="bar"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fwsec flsec" id="flsec" hidden>
+    <h2>Floor line</h2>
+    <p>The path of the form on its I line, one count at a time: the red line is where you have been, the large dot is where you stand now and its tick points the way you face.</p>
+    <div class="fwbox"><div id="flbox"></div>
+      <div class="fwctrl"><p class="fwcap" id="flcap" aria-live="polite"></p>
+        <div class="ctrl"><button id="flprev" type="button">Previous</button><button id="flplay" type="button" class="primary">Play the form</button><button id="flnext" type="button">Next</button><div class="progress"><i id="flbar"></i></div></div></div></div>
+  </section>
+
+  <section class="fwsec" id="fwsec" hidden>
+    <h2>Footwork</h2>
+    <p>Every footprint, labelled with the count that puts the foot there. Counts made without a step (a block then a punch) are added to the label of the feet you stand on, e.g. “5 6”. Dashed arrows are steps; a ring marks a foot that pivots in place. The selected count is red and the outlined pair is where you stand after it. Positions are worked out from the stances and turns, so distances are approximate.</p>
+    <div class="fwbox"><div id="fwbox"></div>
+      <div class="fwctrl"><p class="fwcap" id="fwcap" aria-live="polite"></p>
+        <div class="ctrl"><button id="fwprev" type="button">Previous</button><button id="fwplay" type="button" class="primary">Play the form</button><button id="fwnext" type="button">Next</button><div class="progress"><i id="fwbar"></i></div></div></div></div>
+  </section>
+
+  <section class="seq">
+    <h2>Full sequence</h2>
+    <div class="tbl"><table>
+      <thead><tr><th>#</th><th>Direction</th><th>Stance</th><th>Technique</th><th>Instruction</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table></div>
+  </section>
+
+  <section class="refs">
+    <h2>Official references</h2>
+    <ul>
+      <li><a data-go="itf-won-hyo" class="ref itf" href="https://www.itf-administration.com/articles/?arturn=837" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 7.5c3 .9 6 1.3 9.5 1.3s6.5-.4 9.5-1.3M4 10.5h16M6 10.5V20M18 10.5V20M10 10.5V20M14 10.5V20M4.5 20h15M7.5 8.6 6.4 5.8M16.5 8.6l1.1-2.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="rt"><small>ITF · Official site</small><b>Won-Hyo</b><span>The pattern's official text: meaning, ready posture and all 28 movements (ITF, Choi Jung Hwa).</span><em>visualtkd.com/go/itf-won-hyo</em></span></a></li>
+      <li><a data-go="itf-encyclopedia" class="ref itf" href="https://itf-tkd.org/encyclopedia-of-taekwon%E2%80%91do/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 7.5c3 .9 6 1.3 9.5 1.3s6.5-.4 9.5-1.3M4 10.5h16M6 10.5V20M18 10.5V20M10 10.5V20M14 10.5V20M4.5 20h15M7.5 8.6 6.4 5.8M16.5 8.6l1.1-2.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="rt"><small>ITF · Vienna · Official site</small><b>Encyclopedia of Taekwon-Do</b><span>General Choi's reference work, the source of the patterns; selected chapters online.</span><em>visualtkd.com/go/itf-encyclopedia</em></span></a></li>
+    </ul>
+  </section>
+
+  <footer>Move numbers follow the ITF Encyclopedia count (28 movements, one technique each). Directions use the ITF letters: you start facing D, with B on your left and A on your right; E and F are the ends of the far line. Finish by bringing the right foot back to close ready stance A.</footer>
+  <footer class="sitefoot"><p>World Taekwondo form names, sequences and counts follow Kukkiwon; ITF patterns follow the ITF Encyclopedia of Taekwon-Do. Descriptions are our own words; see each form&rsquo;s official references for the source text.</p><p><a href="/">visualtkd.com</a></p></footer>
+</div>
+
+<script>
+(function(){
+const FORM={"moves": [{"id": "J", "dir": "ga", "view": "front", "stance": "close", "arms": {"L": "cover", "R": "cover"}, "tech": "moajunbia", "desc": "Stand at the centre of the A–B line facing D in close ready stance A: feet together, the left hand wrapped over the right fist in front of the body."}, {"id": "1", "dir": "da1", "view": "side", "face": "R", "stance": "back", "lead": "L", "arms": {"L": "sideblk", "R": "twinhigh"}, "tech": "sangpalmok", "desc": "Turn left: move the left foot to B into a right L-stance facing B (left foot forward, weight on the right leg). Twin forearm block."}, {"id": "2", "dir": "da1", "view": "side", "face": "R", "stance": "back", "lead": "L", "arms": {"R": "neck", "L": "xshoulder"}, "tech": "neck", "desc": "In the same stance, right knife-hand high inward strike, the left fist drawn back in front of the right shoulder."}, {"id": "3", "dir": "da1", "view": "side", "face": "R", "stance": "fixed", "lead": "L", "arms": {"L": "punch"}, "tech": "sidepunch", "carry": false, "step": {"move": [0.6, 0]}, "desc": "Slip the left foot forward toward B into a left fixed stance. Left middle side punch."}, {"id": "4", "dir": "ra1", "view": "side", "face": "L", "stance": "back", "lead": "R", "arms": {"R": "sideblk", "L": "twinhigh"}, "tech": "sangpalmok", "step": {"move": [2.0, 0]}, "desc": "Bring the left foot to the right foot, then move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Twin forearm block."}, {"id": "5", "dir": "ra1", "view": "side", "face": "L", "stance": "back", "lead": "R", "arms": {"L": "neck", "R": "xshoulder"}, "tech": "neck", "desc": "In the same stance, left knife-hand high inward strike, the right fist drawn back in front of the left shoulder."}, {"id": "6", "dir": "ra1", "view": "side", "face": "L", "stance": "fixed", "lead": "R", "arms": {"R": "punch"}, "tech": "sidepunch", "carry": false, "step": {"move": [0.6, 0]}, "desc": "Slip the right foot forward toward A into a right fixed stance. Right middle side punch."}, {"id": "7", "dir": "ga", "view": "side", "face": "L", "stance": "crane", "lead": "R", "arms": {"L": "sideblk", "R": "guard"}, "tech": "guburyoa", "step": {"plant": "L"}, "desc": "Bring the right foot to the left foot and turn the head to face D, standing on the bent right leg with the left foot lifted beside the knee, side-on to D: right bending ready stance A, arms in the forearm guarding position."}, {"id": "8", "dir": "ga", "view": "side", "face": "L", "stance": "skick", "lead": "L", "arms": {"L": "guard", "R": "guard"}, "tech": "skick", "desc": "Left middle side piercing kick toward D."}, {"id": "9", "dir": "ga", "view": "front", "stance": "back", "lead": "L", "arms": {"L": "ksblock", "R": "ksguard"}, "tech": "ksblock", "desc": "Set the left foot down toward D into a right L-stance facing D (left foot forward, weight on the right leg). Knife-hand middle guarding block."}, {"id": "10", "dir": "ga", "view": "front", "stance": "back", "lead": "R", "arms": {"R": "ksblock", "L": "ksguard"}, "tech": "ksblock", "desc": "Step the right foot forward toward D into a left L-stance (right foot forward, weight on the left leg). Knife-hand middle guarding block."}, {"id": "11", "dir": "ga", "view": "front", "stance": "back", "lead": "L", "arms": {"L": "ksblock", "R": "ksguard"}, "tech": "ksblock", "desc": "Step the left foot forward toward D into a right L-stance (left foot forward). Knife-hand middle guarding block."}, {"id": "12", "dir": "ga", "view": "front", "stance": "front", "lead": "R", "arms": {"R": "spear", "L": "press"}, "tech": "spear", "kihap": true, "desc": "Step the right foot forward toward D into a right walking stance. Right straight fingertip middle thrust, the left hand under the right elbow, with a kihap."}, {"id": "13", "dir": "ra3", "view": "side", "face": "L", "stance": "back", "lead": "L", "arms": {"L": "sideblk", "R": "twinhigh"}, "tech": "sangpalmok", "desc": "Turn 270° to the left: move the left foot round to E into a right L-stance facing E (left foot forward, weight on the right leg). Twin forearm block."}, {"id": "14", "dir": "ra3", "view": "side", "face": "L", "stance": "back", "lead": "L", "arms": {"R": "neck", "L": "xshoulder"}, "tech": "neck", "desc": "In the same stance, right knife-hand high inward strike, the left fist drawn back in front of the right shoulder."}, {"id": "15", "dir": "ra3", "view": "side", "face": "L", "stance": "fixed", "lead": "L", "arms": {"L": "punch"}, "tech": "sidepunch", "carry": false, "step": {"move": [0.6, 0]}, "desc": "Slip the left foot forward toward E into a left fixed stance. Left middle side punch."}, {"id": "16", "dir": "da3", "view": "side", "face": "R", "stance": "back", "lead": "R", "arms": {"R": "sideblk", "L": "twinhigh"}, "tech": "sangpalmok", "step": {"move": [2.0, 0]}, "desc": "Bring the left foot to the right foot, then move the right foot to F into a left L-stance facing F (right foot forward, weight on the left leg). Twin forearm block."}, {"id": "17", "dir": "da3", "view": "side", "face": "R", "stance": "back", "lead": "R", "arms": {"L": "neck", "R": "xshoulder"}, "tech": "neck", "desc": "In the same stance, left knife-hand high inward strike, the right fist drawn back in front of the left shoulder."}, {"id": "18", "dir": "da3", "view": "side", "face": "R", "stance": "fixed", "lead": "R", "arms": {"R": "punch"}, "tech": "sidepunch", "carry": false, "step": {"move": [0.6, 0]}, "desc": "Slip the right foot forward toward F into a right fixed stance. Right middle side punch."}, {"id": "19", "dir": "na", "view": "back", "stance": "front", "lead": "L", "arms": {"R": "sideblk"}, "tech": "circular", "step": {"move": [1.4, -1.0]}, "desc": "Bring the right foot to the left foot, then move the left foot toward C into a left walking stance facing C. Right inner forearm circular block toward CF."}, {"id": "20", "dir": "na", "view": "side", "face": "R", "stance": "kick", "lead": "R", "arms": {"R": "sideblk"}, "tech": "lowkick", "desc": "Right low front snap kick toward C, the hands held where they were."}, {"id": "21", "dir": "na", "view": "back", "stance": "front", "lead": "R", "arms": {"L": "punch"}, "tech": "punch", "note": "reverse", "desc": "Set the right foot down toward C into a right walking stance. Left middle punch."}, {"id": "22", "dir": "na", "view": "back", "stance": "front", "lead": "R", "arms": {"L": "sideblk"}, "tech": "circular", "desc": "In the same stance, left inner forearm circular block toward CE."}, {"id": "23", "dir": "na", "view": "side", "face": "L", "stance": "kick", "lead": "L", "arms": {"L": "sideblk"}, "tech": "lowkick", "desc": "Left low front snap kick toward C, the hands held where they were."}, {"id": "24", "dir": "na", "view": "back", "stance": "front", "lead": "L", "arms": {"R": "punch"}, "tech": "punch", "note": "reverse", "desc": "Set the left foot down toward C into a left walking stance. Right middle punch."}, {"id": "25", "dir": "na", "view": "side", "face": "R", "stance": "crane", "lead": "L", "arms": {"R": "sideblk", "L": "guard"}, "tech": "guburyoa", "desc": "Turn the head to face C and draw up into a left bending ready stance A, side-on to C: standing on the bent left leg, the right foot lifted beside the knee, arms in the forearm guarding position."}, {"id": "26", "dir": "na", "view": "side", "face": "R", "stance": "skick", "lead": "R", "arms": {"L": "guard", "R": "guard"}, "tech": "skick", "desc": "Right middle side piercing kick toward C."}, {"id": "27", "dir": "da1", "view": "side", "face": "R", "stance": "back", "lead": "L", "arms": {"L": "sideblk", "R": "guard"}, "tech": "fguard", "desc": "Land the right foot on the C–D line, then turn counter-clockwise and move the left foot to B into a right L-stance facing B (left foot forward, weight on the right leg). Forearm middle guarding block."}, {"id": "28", "dir": "ra1", "view": "side", "face": "L", "stance": "back", "lead": "R", "arms": {"R": "sideblk", "L": "guard"}, "tech": "fguard", "step": {"move": [2.0, 0]}, "desc": "Bring the left foot to the right foot, then move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Forearm middle guarding block."}], "layout": {"r1": [["28"], ["6", "5", "4"], ["J"], ["1", "2", "3"], ["27"]], "c2": ["7", "8", "9", "10", "11", "12"], "c4": ["19", "20", "21", "22", "23", "24", "25", "26"], "r5": [["15", "14", "13"], ["16", "17", "18"]]}, "pos": {"J": [50, 8], "1": [55.9, 8], "2": [55.9, 8], "3": [61.2, 8], "4": [43.2, 8], "5": [43.2, 8], "6": [37.9, 8], "7": [50, 8], "8": [50, 11.4], "9": [50, 12.2], "10": [50, 20.6], "11": [50, 29.0], "12": [50, 38.6], "13": [27.3, 52], "14": [27.3, 52], "15": [21.9, 52], "16": [39.9, 52], "17": [39.9, 52], "18": [45.3, 52], "19": [50, 38.4], "20": [50, 29.6], "21": [50, 27.6], "22": [50, 27.6], "23": [50, 18.8], "24": [50, 16.8], "25": [50, 11.4], "26": [50, 8], "27": [45.1, 8], "28": [27.1, 8]}, "floor": {"glyph": "I", "bars": {"r3": "gone"}, "notesBelow": true, "map": "M8 8H92M50 8V52M8 52H92"}, "family": "itf"};
+const LIB={"t": {"junbi": ["Junbi", "준비", "Ready", "/library/stances/#gibon-junbi"], "tongmil": ["Tongmilgi junbi", "통밀기 준비", "Pushing-hands ready", "/library/stances/#tongmilgi-junbi"], "cover": ["Bojumeok", "보주먹", "Covered fist", "/library/stances/#bojumeok"], "gyeopson": ["Gyeopson junbi", "겹손 준비", "Overlapped-hands ready", "/library/stances/#gyeopson-junbi"], "low": ["Palmok najunde makgi", "팔목 낮은데 막기", "Forearm low block", "/library/blocks/#arae-makki"], "alow": ["Geodeureo arae makki", "거들어아래막기", "Augmented low block", "/library/blocks/#geodeureo-arae-makki"], "inside": ["Momtong an makki", "몸통안막기", "Inside middle block", "/library/blocks/#momtong-an-makki"], "outer": ["Momtong bakkat makki", "몸통바깥막기", "Outer middle block", "/library/blocks/#momtong-bakkat-makki"], "aouter": ["Geodeureo momtong bakkat makki", "거들어몸통바깥막기", "Augmented outer block", "/library/blocks/#geodeureo-momtong-bakkat-makki"], "high": ["Palmok chookyo makgi", "팔목 추켜막기", "Forearm rising block", "/library/blocks/#eolgul-makki"], "houter": ["Bakat palmok nopunde yop makgi", "바깥팔목 높은데 옆막기", "Outer forearm high side block", "/library/blocks/#eolgul-bakkat-makki"], "ahside": ["Eolgul geodeureo yeop makki", "얼굴거들어옆막기", "Augmented high side block", "/library/blocks/#eolgul-geodeureo-yeop-makki"], "wedge": ["Bakat palmok nopunde hechyo makgi", "바깥팔목 높은데 헤쳐막기", "Outer forearm high wedging block", "/library/blocks/#momtong-hecho-makki"], "spread": ["Arae hecho makki", "아래헤쳐막기", "Low spread block", "/library/blocks/#arae-hecho-makki"], "xlow": ["Eotgeoreo arae makki", "엇걸어아래막기", "Low X block", "/library/blocks/#eotgeoreo-arae-makki"], "scissors": ["Gawi makki", "가위막기", "Scissors block", "/library/blocks/#gawi-makki"], "mountain": ["Oesanteul makki", "외산틀막기", "Single mountain block", "/library/blocks/#oesanteul-makki"], "santeul": ["Santeul makki", "산틀막기", "Mountain block", "/library/blocks/#santeul-makki"], "hsanteul": ["Hecho taesan makki", "헤쳐태산막기", "Opening mountain block", "/library/blocks/#hecho-taesan-makki"], "keumgang": ["Keumgang makki", "금강막기", "Diamond block", "/library/blocks/#keumgang-makki"], "kmomtong": ["Keumgang momtong makki", "금강몸통막기", "Diamond middle block", "/library/blocks/#keumgang-momtong-makki"], "ksout": ["Hansonnal bakkat makki", "한손날바깥막기", "Knife-hand outer block", "/library/blocks/#hansonnal-bakkat-makki"], "ksblock": ["Sonkal kaunde daebi makgi", "손칼 가운데 대비막기", "Knife-hand middle guarding block", "/library/blocks/#sonnal-momtong-makki"], "ksin": ["Hansonnal momtong an makki", "한손날몸통안막기", "Knife-hand inside block", "/library/blocks/#hansonnal-momtong-an-makki"], "kslow": ["Sonnal arae makki", "손날아래막기", "Low knife-hand block", "/library/blocks/#sonnal-arae-makki"], "kslowa": ["Sonnal geodeureo naeryeo makki", "손날거들어내려막기", "Augmented low knife-hand block", "/library/blocks/#sonnal-geodeureo-naeryeo-makki"], "ksside": ["Hansonnal yeop makki", "한손날옆막기", "Knife-hand side block", "/library/blocks/#hansonnal-yeop-makki"], "kspread": ["Sonnal arae hecho makki", "손날아래헤쳐막기", "Knife-hand low spread block", "/library/blocks/#sonnal-arae-hecho-makki"], "twist": ["Hansonnal eolgul bitureo makki", "한손날얼굴비틀어막기", "Twisted knife-hand high block", "/library/blocks/#hansonnal-eolgul-bitureo-makki"], "palm": ["Batangson momtong an makki", "바탕손몸통안막기", "Palm inside block", "/library/blocks/#batangson-momtong-an-makki"], "apalm": ["Geodeureo batangson momtong an makki", "거들어바탕손몸통안막기", "Augmented palm block", "/library/blocks/#geodeureo-batangson-momtong-an-makki"], "pressdown": ["Batangson nulleo makki", "바탕손눌러막기", "Palm pressing block", "/library/blocks/#batangson-nulleo-makki"], "khinge": ["Keun doljjeogwi", "큰돌쩌귀", "Large hinge", "/library/blocks/#keun-doljjeogwi"], "shinge": ["Jageun doljjeogwi", "작은돌쩌귀", "Small hinge", "/library/blocks/#jageun-doljjeogwi"], "punch": ["Kaunde jirugi", "가운데 지르기", "Middle punch", "/library/strikes/#momtong-jireugi"], "hpunch": ["Nopunde jirugi", "높은데 지르기", "High punch", "/library/strikes/#eolgul-jireugi"], "sidepunch": ["Kaunde yop jirugi", "가운데 옆지르기", "Middle side punch", "/library/strikes/#yeop-jireugi"], "tpunch": ["Pyojeok jireugi", "표적지르기", "Target punch", "/library/strikes/#pyojeok-jireugi"], "uppercut": ["Dangkyeo teok jireugi", "당겨턱지르기", "Pulling uppercut", "/library/strikes/#dangkyeo-teok-jireugi"], "duppercut": ["Dujumeok jeocho jireugi", "두주먹젖혀지르기", "Double uppercut", "/library/strikes/#dujumeok-jeocho-jireugi"], "backfist": ["Dung joomuk nopunde yop taerigi", "등주먹 높은데 옆때리기", "Back fist high side strike", "/library/strikes/#deung-jumeok-ap-chigi"], "stompbf": ["Jitjjigi · danggyeo deung jumeok ap chigi", "짓찧기 · 당겨 등주먹앞치기", "Stamp with pulling back-fist strike", "/library/strikes/#jitjjigi-danggyeo-deung-jumeok-ap-chigi"], "abackfist": ["Geodeureo deung jumeok ap chigi", "거들어 등주먹앞치기", "Augmented back-fist strike", "/library/strikes/#geodeureo-deung-jumeok-ap-chigi"], "obackfist": ["Deung jumeok bakkat chigi", "등주먹바깥치기", "Outward back-fist", "/library/strikes/#deung-jumeok-bakkat-chigi"], "hammer": ["Mejumeok naeryeo chigi", "메주먹내려치기", "Hammer-fist strike", "/library/strikes/#mejumeok-naeryeo-chigi"], "hammerlow": ["Mejumeok arae pyojeok chigi", "메주먹아래표적치기", "Low hammer-fist target strike", "/library/strikes/#mejumeok-arae-pyojeok-chigi"], "neck": ["Sonkal nopunde anuro taerigi", "손칼 높은데 안으로 때리기", "Knife-hand high inward strike", "/library/strikes/#sonnal-mok-chigi"], "jebi": ["Jebipoom mok chigi", "제비품목치기", "Swallow-form neck strike", "/library/strikes/#jebipoom-mok-chigi"], "ksstrike": ["Sonkal kaunde bakuro taerigi", "손칼 가운데 바깥으로 때리기", "Knife-hand middle outward strike", "/library/strikes/#hansonnal-bakkat-chigi"], "spear": ["Sun sonkut kaunde tulgi", "선손끝 가운데 뚫기", "Straight fingertip middle thrust", "/library/strikes/#pyeonsonkkeut-sewo-jjireugi"], "lspear": ["Pyeonsonkkeut jeocho jjireugi", "편손끝젖혀찌르기", "Low spear hand, palm up", "/library/strikes/#pyeonsonkkeut-jeocho-jjireugi"], "palmjaw": ["Batangson teok chigi", "바탕손턱치기", "Palm-heel jaw strike", "/library/strikes/#batangson-teok-chigi"], "arc": ["Kaljaebi", "칼재비", "Arc-hand throat strike", "/library/strikes/#kaljaebi"], "elbow": ["Palkup dollyeo chigi", "팔굽돌려치기", "Elbow strike", "/library/strikes/#palkup-dollyeo-chigi"], "upelbow": ["Palkup ollyeo chigi", "팔굽올려치기", "Rising elbow strike", "/library/strikes/#palkup-ollyeo-chigi"], "eltarget": ["Palkup pyojeok chigi", "팔굽표적치기", "Elbow target strike", "/library/strikes/#palkup-pyojeok-chigi"], "sideelbow": ["Palkup yeop chigi", "팔굽옆치기", "Side elbow strike", "/library/strikes/#palkup-yeop-chigi"], "yoke": ["Meongye chigi", "멍에치기", "Yoke strike", "/library/strikes/#meongye-chigi"], "hwangso": ["Hwangso makki", "황소막기", "Bull block", "/library/blocks/#hwangso-makki"], "pouter": ["Sonbadak geodeureo momtong bakkat makki", "손바닥거들어몸통바깥막기", "Palm-augmented outer block", "/library/blocks/#sonbadak-geodeureo-momtong-bakkat-makki"], "wristturn": ["Palmok dollyeo", "팔목돌려", "Wrist turn", "/library/strikes/#palmok-dollyeo"], "hspear": ["Pyeonsonkkeut eopeo jjireugi", "편손끝엎어찌르기", "Flat spear-hand thrust", "/library/strikes/#pyeonsonkkeut-eopeo-jjireugi"], "pgrab": ["Pyojeok japgi", "표적잡기", "Target grab", "/library/strikes/#pyojeok-japgi"], "dsidepunch": ["Danggyeo yeop jireugi", "당겨옆지르기", "Pulling side punch", "/library/strikes/#danggyeo-yeop-jireugi"], "rockpush": ["Bawi milgi", "바위밀기", "Rock push", "/library/strikes/#bawi-milgi"], "rdwedge": ["Sonnal deung momtong hecho makki", "손날등몸통헤쳐막기", "Ridge-hand wedge block", "/library/blocks/#sonnal-deung-momtong-hecho-makki"], "lift": ["Geodeo olligi", "걷어올리기", "Scooping lift", "/library/blocks/#geodeo-olligi"], "chetdari": ["Chetdari jireugi", "쳇다리지르기", "Fork punch", "/library/strikes/#chetdari-jireugi"], "ksxlow": ["Sonnal eotgeoreo arae makki", "손날엇걸어아래막기", "Knife-hand low X block", "/library/blocks/#sonnal-eotgeoreo-arae-makki"], "rdblock": ["Sonnal deung momtong makki", "손날등몸통막기", "Ridge-hand block", "/library/blocks/#sonnal-deung-momtong-makki"], "anouter": ["An palmok momtong bakkat makki", "안팔목몸통바깥막기", "Inner-forearm outer block", "/library/blocks/#an-palmok-momtong-bakkat-makki"], "ksrise": ["Sonnal ollyeo makki", "손날올려막기", "Knife-hand rising block", "/library/blocks/#sonnal-ollyeo-makki"], "kpunch": ["Keumgang ap jireugi", "금강앞지르기", "Diamond punch", "/library/strikes/#keumgang-ap-jireugi"], "ainside": ["Geodeureo momtong an makki", "거들어몸통안막기", "Augmented inside block", "/library/blocks/#geodeureo-momtong-an-makki"], "lowside": ["Naeryeo yeop makki", "내려옆막기", "Low side block", "/library/blocks/#naeryeo-yeop-makki"], "hammertgt": ["Mejumeok pyojeok an chigi", "메주먹표적안치기", "Hammer-fist target strike", "/library/strikes/#mejumeok-pyojeok-an-chigi"], "nalgae": ["Nalgae pyeogi", "날개펴기", "Wing spreading", "/library/blocks/#nalgae-pyeogi"], "kshopen": ["Sonnal eolgul hecho makki", "손날얼굴헤쳐막기", "Knife-hand high opening block", "/library/blocks/#sonnal-eolgul-hecho-makki"], "bamupper": ["Bam jumeok ollyeo jireugi", "밤주먹올려지르기", "Double knuckle uppercut", "/library/strikes/#bam-jumeok-ollyeo-jireugi"], "kstwist": ["Sonnal biteureo makki", "손날비틀어막기", "Twisting knife-hand block", "/library/blocks/#sonnal-biteureo-makki"], "wristout": ["Bakkat teureo ppaegi", "바깥틀어빼기", "Outward wrist escape", "/library/strikes/#bakkat-teureo-ppaegi"], "aanouter": ["Geodeureo an palmok momtong bakkat makki", "거들어안팔목몸통바깥막기", "Augmented inner-forearm outer block", "/library/blocks/#geodeureo-an-palmok-momtong-bakkat-makki"], "hwidul": ["Hwidulleo makki", "휘둘러막기", "Swinging block", "/library/blocks/#hwidulleo-makki"], "swingpull": ["Hwidulleo jaba danggigi", "휘둘러잡아당기기", "Swing and pull", "/library/strikes/#hwidulleo-jaba-danggigi"], "twouter": ["An palmok biteureo bakkat makki", "안팔목비틀어바깥막기", "Twisting inner-forearm outer block", "/library/blocks/#an-palmok-biteureo-bakkat-makki"], "outpress": ["An palmok bakkat makki · batangson nulleo makki", "안팔목바깥막기 · 바탕손눌러막기", "Outer block with palm press", "/library/blocks/#an-palmok-bakkat-makki-batangson-nulleo-makki"], "kside": ["Keumgang yeop jireugi", "금강옆지르기", "Diamond side punch", "/library/strikes/#keumgang-yeop-jireugi"], "dtkick": ["Dolgae pyojeok an chagi", "돌개표적안차기", "Tornado target kick", "/library/kicks/#dolgae-pyojeok-an-chagi"], "pmountain": ["Pyeonson oesan makki", "편손외산막기", "Open-hand single mountain block", "/library/blocks/#pyeonson-oesan-makki"], "taesan": ["Taesan milgi", "태산밀기", "Mountain push", "/library/strikes/#taesan-milgi"], "dhammerin": ["Du mejumeok an chigi", "두메주먹안치기", "Double hammer-fist inward strike", "/library/strikes/#du-mejumeok-an-chigi"], "presarc": ["Nulleo makki · ageumson geodeureo ap chigi", "눌러막기 · 아금손거들어앞치기", "Pressing block with arc-hand strike", "/library/strikes/#nulleo-makki-ageumson-geodeureo-ap-chigi"], "lowtgt": ["An palmok pyojeok arae makki", "안팔목표적아래막기", "Inner-forearm low target block", "/library/blocks/#an-palmok-pyojeok-arae-makki"], "kskeumgang": ["Sonnal keumgang makki", "손날금강막기", "Knife-hand diamond block", "/library/blocks/#sonnal-keumgang-makki"], "stompbf2": ["Jitjjigi · deung jumeok ap chigi", "짓찧기 · 등주먹앞치기", "Stamp with back-fist strike", "/library/strikes/#jitjjigi-deung-jumeok-ap-chigi"], "presspear": ["Nulleo makki · pyeonsonkkeut sewo jjireugi", "눌러막기 · 편손끝세워찌르기", "Pressing block with spear-hand thrust", "/library/strikes/#nulleo-makki-pyeonsonkkeut-sewo-jjireugi"], "oesanskick": ["Oesan yeop chagi", "외산옆차기", "Side kick with single mountain block", "/library/kicks/#oesan-yeop-chagi"], "xhigh": ["Eotgeoreo eolgul makki", "엇걸어얼굴막기", "High X block", "/library/blocks/#eotgeoreo-eolgul-makki"], "twgrab": ["Du son pyeo biteureo jaba danggigi", "두손펴비틀어잡아당기기", "Two-hand twist and pull", "/library/strikes/#du-son-pyeo-biteureo-jaba-danggigi"], "hipready": ["Dujumeok heori junbi", "두주먹허리준비", "Fists-at-waist ready", "/library/blocks/#dujumeok-heori-junbi"], "jskick": ["Twimyeo yeop chagi", "뛰어옆차기", "Jumping side kick", "/library/kicks/#twimyeo-yeop-chagi"], "anpalmok": ["Anpalmok kaunde yop makgi", "안팔목 가운데 옆막기", "Inner forearm middle side block", "/library/blocks/#anpalmok-kaunde-yop-makgi"], "sangpalmok": ["Sang palmok makgi", "쌍팔목 막기", "Twin forearm block", "/library/blocks/#sang-palmok-makgi"], "kssidestrike": ["Sonkal kaunde yop taerigi", "손칼 가운데 옆때리기", "Knife-hand middle side strike", "/library/strikes/#sonkal-kaunde-yop-taerigi"], "moajunbia": ["Moa junbi sogi A", "모아 준비서기 A", "Close ready stance A", "/library/stances/#moa-junbi-sogi-a"], "guburyoa": ["Guburyo junbi sogi A", "구부려 준비서기 A", "Bending ready stance A", "/library/stances/#guburyo-junbi-sogi-a"], "lowkick": ["Najunde apcha busigi", "낮은데 앞차 부시기", "Low front snap kick", "/library/kicks/#najunde-apcha-busigi"], "circular": ["Anpalmok dollimyo makgi", "안팔목 돌리며 막기", "Inner forearm circular block", "/library/blocks/#anpalmok-dollimyo-makgi"], "fguard": ["Palmok kaunde daebi makgi", "팔목 가운데 대비막기", "Forearm middle guarding block", "/library/blocks/#palmok-kaunde-daebi-makgi"], "tgrab": ["Sonnal eopeo japgi", "손날엎어잡기", "Twisting knife-hand grab", "/library/strikes/#sonnal-eopeo-japgi"], "kneebreak": ["Mureup kkeokgi", "무릎꺾기", "Knee break", "/library/strikes/#mureup-kkeokgi"], "kick": ["Kaunde apcha busigi", "가운데 앞차 부시기", "Middle front snap kick", "/library/kicks/#ap-chagi"], "jkick": ["Twimyeo ap chagi", "뛰어앞차기", "Jumping front kick", "/library/kicks/#twimyeo-ap-chagi"], "dskick": ["Geodeup yeop chagi", "거듭옆차기", "Double side kick", "/library/kicks/#geodeup-yeop-chagi"], "skick": ["Kaunde yopcha jirugi", "가운데 옆차 지르기", "Middle side piercing kick", "/library/kicks/#yeop-chagi"], "bskick": ["Dwi dora yeop chagi", "뒤돌아옆차기", "Back-turning side kick", "/library/kicks/#dwi-dora-yeop-chagi"], "hskick": ["Yeop chagi · mejumeok bakkat chigi", "옆차기 · 메주먹바깥치기", "Side kick with hammer-fist strike", "/library/kicks/#yeop-chagi-mejumeok-bakkat-chigi"], "rkick": ["Dollyeo chagi", "돌려차기", "Roundhouse kick", "/library/kicks/#dollyeo-chagi"], "tkick": ["Pyojeok chagi", "표적차기", "Target kick", "/library/kicks/#pyojeok-chagi"], "knee": ["Mureup chigi", "무릎치기", "Knee strike", "/library/kicks/#mureup-chigi"]}, "s": {"ready": ["Narani junbi sogi", "나란히 준비서기", "Parallel ready stance", "/library/stances/#naranhi-seogi"], "close": ["Moa sogi", "모아서기", "Close stance", "/library/stances/#moa-seogi"], "walk": ["Ap seogi", "앞서기", "Walking stance", "/library/stances/#ap-seogi"], "front": ["Gunnun sogi", "걷는서기", "Walking stance", "/library/stances/#ap-kubi"], "back": ["Niunja sogi", "니은자서기", "L-stance", "/library/stances/#dwit-kubi"], "tiger": ["Beom seogi", "범서기", "Tiger stance", "/library/stances/#beom-seogi"], "nieun": ["Nieunja seogi", "ㄴ자서기", "ㄴ-shaped stance", "/library/stances/#nieunja-seogi"], "gyeot": ["Gyeotdari seogi", "곁다리서기", "Assisting stance", "/library/stances/#gyeotdari-seogi"], "ogeum": ["Ogeum seogi", "오금서기", "Reverse crane stance", "/library/stances/#ogeum-seogi"], "fixed": ["Gojung sogi", "고정서기", "Fixed stance", "/library/stances/#gojung-sogi"], "horse": ["Annun sogi", "앉은서기", "Sitting stance", "/library/stances/#juchum-seogi"], "cross": ["Kkoa seogi", "꼬아서기", "Cross stance", "/library/stances/#kkoa-seogi"], "crane": ["Guburyo sogi", "구부려서기", "Bending stance", "/library/stances/#hakdari-seogi"], "kick": ["Ap chagi", "앞차기", "Kicking", "/library/kicks/#ap-chagi"], "skick": ["Yeop chagi", "옆차기", "Kicking", "/library/kicks/#yeop-chagi"], "rkick": ["Dollyeo chagi", "돌려차기", "Kicking", "/library/kicks/#dollyeo-chagi"], "knee": ["Mureup chigi", "무릎치기", "Knee strike", "/library/kicks/#mureup-chigi"]}};
+/* Figure renderer, footprints and stance chips, shared by the form pages and the library.
+   Inlined by tools/build_form.py and tools/build_site.py; needs LIB (names and links from data/techniques.json). */
+const BELTS={white:"#f4f4f2",yellow:"#f2c230",green:"#2f8f4e",blue:"#2456c8",red:"#c8102e",black:"#17181c"};
+let belt="black";
+
+// labels from data/techniques.json: [romanised, Hangul, English]
+const T=Object.fromEntries(Object.entries(LIB.t).map(([k,v])=>[k,v.slice(0,3)]));
+const STANCE=Object.fromEntries(Object.entries(LIB.s).map(([k,v])=>[k,v.slice(0,3)]));
+// library links: /library/<family>/#<slug>
+const techHref=k=>LIB.t[k][3],stanceHref=k=>LIB.s[k][3];
+const DIRN={na:"na",ga:"ga",da1:"da¹",da2:"da²",da3:"da³",ra1:"ra¹",ra2:"ra²",ra3:"ra³",gada:"ga-da",nada:"na-da",gara:"ga-ra",nara:"na-ra"};
+
+let gid=0;
+/* ---------- vector helpers ---------- */
+const f=n=>(+n).toFixed(2);
+const add=(a,b)=>[a[0]+b[0],a[1]+b[1]],sub=(a,b)=>[a[0]-b[0],a[1]-b[1]],mul=(a,k)=>[a[0]*k,a[1]*k];
+const norm=a=>{const l=Math.hypot(a[0],a[1])||1;return[a[0]/l,a[1]/l]};
+const lerp=(a,b,t)=>[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t];
+const dist=(a,b)=>Math.hypot(a[0]-b[0],a[1]-b[1]);
+function ik(a,b,l1,l2,pref){
+  let dx=b[0]-a[0],dy=b[1]-a[1],d=Math.hypot(dx,dy);const mx=l1+l2-.6;
+  if(d>mx){b=[a[0]+dx/d*mx,a[1]+dy/d*mx];dx=b[0]-a[0];dy=b[1]-a[1];d=mx}
+  d=Math.max(d,1e-3);
+  const ang=Math.acos(Math.max(-1,Math.min(1,(l1*l1+d*d-l2*l2)/(2*l1*d)))),base=Math.atan2(dy,dx);
+  const c1=[a[0]+Math.cos(base+ang)*l1,a[1]+Math.sin(base+ang)*l1],c2=[a[0]+Math.cos(base-ang)*l1,a[1]+Math.sin(base-ang)*l1];
+  const mid=lerp(a,b,.5),s=p=>(p[0]-mid[0])*pref[0]+(p[1]-mid[1])*pref[1];
+  return[s(c1)>=s(c2)?c1:c2,b];
+}
+const area=P=>P.reduce((s,p,i)=>{const q=P[(i+1)%P.length];return s+p[0]*q[1]-q[0]*p[1]},0);
+const orient=P=>area(P)<0?P.slice().reverse():P;
+function spline(Q,tension=1){
+  const P=orient(Q),n=P.length,k=6/tension;let d=`M${f(P[0][0])} ${f(P[0][1])}`;
+  for(let i=0;i<n;i++){const p0=P[(i-1+n)%n],p1=P[i],p2=P[(i+1)%n],p3=P[(i+2)%n];
+    d+=`C${f(p1[0]+(p2[0]-p0[0])/k)} ${f(p1[1]+(p2[1]-p0[1])/k)} ${f(p2[0]-(p3[0]-p1[0])/k)} ${f(p2[1]-(p3[1]-p1[1])/k)} ${f(p2[0])} ${f(p2[1])}`}
+  return d+"Z";
+}
+function openCurve(P){ // smooth open stroke
+  let d=`M${f(P[0][0])} ${f(P[0][1])}`;const n=P.length;
+  for(let i=0;i<n-1;i++){const p0=P[Math.max(i-1,0)],p1=P[i],p2=P[i+1],p3=P[Math.min(i+2,n-1)];
+    d+=`C${f(p1[0]+(p2[0]-p0[0])/6)} ${f(p1[1]+(p2[1]-p0[1])/6)} ${f(p2[0]-(p3[0]-p1[0])/6)} ${f(p2[1]-(p3[1]-p1[1])/6)} ${f(p2[0])} ${f(p2[1])}`}
+  return d;
+}
+function xf(P,o,ang=0,sx=1,sy=1){const c=Math.cos(ang),s=Math.sin(ang);return P.map(([x,y])=>[o[0]+x*sx*c-y*sy*s,o[1]+x*sx*s+y*sy*c])}
+const ellPts=(c,rx,ry,ang=0)=>{const P=[];for(let i=0;i<14;i++){const t=i/14*Math.PI*2;P.push([Math.cos(t)*rx,Math.sin(t)*ry])}return xf(P,c,ang)};
+const ln=(a,b)=>`M${f(a[0])} ${f(a[1])}L${f(b[0])} ${f(b[1])}`;
+
+/* ---------- limb contour ----------
+   One closed outline around shoulder→elbow→wrist (or hip→knee→ankle),
+   offset by a width profile so cloth tapers and flares like a dobok. */
+const TS=[0,.14,.28,.42,.5,.58,.72,.86,1];
+function contour(ch,W,capTop){
+  const[a,j,b]=ch,d1=norm(sub(j,a)),d2=norm(sub(b,j)),dm=norm(add(d1,d2));
+  const Lp=[],Rp=[],mid=[];
+  TS.forEach((t,i)=>{
+    let p,d;
+    if(t<.5){p=lerp(a,j,t/.5);d=d1}else if(t>.5){p=lerp(j,b,(t-.5)/.5);d=d2}else{p=j;d=dm}
+    const n=[-d[1],d[0]],w=W[i];Lp.push(add(p,mul(n,w)));Rp.push(add(p,mul(n,-w)));mid.push({p,n,w,d});
+  });
+  const pts=[...Lp,...Rp.reverse()];
+  if(capTop)pts.push(add(a,mul(d1,-W[0]*.75)));
+  return{pts,mid,d1,d2};
+}
+
+/* ---------- skeleton ---------- */
+const FOOT_SIDE=[[-3.4,-1.6],[1.6,-1.8],[5,.8],[9.4,3],[12.8,4.4],[14,5.9],[11,6.5],[6,6.1],[2.6,5.7],[-1.8,6.4],[-5,6],[-5.9,2.8]];
+const FOOT_FRONT=[[-3.9,-1.4],[3.9,-1.4],[5.1,3.4],[5.6,6],[2,6.9],[-2,6.9],[-5.6,6],[-5.1,3.4]];
+const FOOT_HEEL=[[-3.7,-1],[3.7,-1],[4.4,3.8],[3.2,6.5],[-3.2,6.5],[-4.4,3.8]];
+const FIST=[[-.4,-3.8],[3,-4.6],[7.6,-4.5],[9.8,-2.8],[10.3,.4],[9.4,3.6],[6,4.8],[1.6,4.3],[-.4,3.6]];
+const HAND_FLAT=[[-.4,-3],[3,-3.4],[9,-3.2],[13.2,-2],[14,0],[13.2,2],[9,3.1],[3,3.3],[-.4,2.8]];
+// open-hand techniques draw a flat hand instead of a fist
+const OPEN=new Set(["ksout","ksblock","ksguard","spear","press","neck","khigh","eltarget","twist","palm","grab","ksside","kslow",
+  "tongmil","gyeopson","ksstrike","arc","kneebreak","hold","target","lspear","pressdown","elbowpush","palmlow","palmjaw","ksin","kspread","tgrab",
+  "passist","rockhi","rocklo","rwedge","lift","kxlow","htarget",
+  "wing","khopen","twistm","swingo","ohouter","pushlo","pushhi","grabtw"]);
+// seen from the front, these come straight at the viewer: drawn foreshortened (fist face or hand edge), never across the face
+const TOWARD={bfside:k=>[12,-7],punch:k=>[1.5,20],neck:k=>[-3,5],arc:k=>[-1,5],palmjaw:k=>[-1,9],tgrab:k=>[-2,16],chet:k=>[7,20]};
+const KNIFE_FACE=[[-6.8,-2.4],[6.8,-2.4],[7.6,0],[6.8,2.4],[-6.8,2.4],[-7.6,0]];
+const FIST_FACE=[[-5.4,-4.3],[5.4,-4.3],[6.3,0],[5.6,4.5],[-5.6,4.5],[-6.3,0]];
+const mk=far=>({far,legs:[],arms:[],feet:[],fists:[],torso:null,head:null,neck:null});
+
+function skel(m,pr){
+  if(m.stance==="ogeum")m={...m,stance:"crane",ogeum:true};   // ogeum seogi: drawn as crane stance, lifted foot behind the knee
+  if(m.stance==="fixed")m={...m,stance:"back"};   // ITF gojung sogi (fixed stance): drawn with L-stance geometry
+  const HANDS={};let side;   // where each hand ends up (for the same-stance motion arcs and count badges)
+  const k=(pr.thigh+pr.shin)/65,tk=pr.torso/55,ak=(pr.upper+pr.fore)/47,sw=pr.shW/18.5,hw=pr.hipW/9;
+  function addArm(L,sh,h,pref,pf,flat){
+    if(pf){L.arms.push({ch:[sh,lerp(sh,h,.5),h],front:true});L.fists.push({c:h,front:true,flat});HANDS[side]=h;return}
+    const[e,w]=ik(sh,h,pr.upper,pr.fore,pref);L.arms.push({ch:[sh,e,w]});L.fists.push({w,d:norm(sub(w,e)),flat});HANDS[side]=w;
+  }
+  if(m.view==="side"){
+    const near=m.face==="R"?"R":"L",st=m.stance;
+    const hipY={walk:0,front:14,kick:-2,back:8,skick:-4,rkick:-4,knee:-2,tiger:10,horse:12,cross:6,close:-1,ready:-1,crane:0,nieun:6,gyeot:8}[st]*k,lean={gyeot:2,walk:2,front:5,kick:-8,back:-3,nieun:-2,skick:-13,rkick:-12,knee:-4,tiger:-1,horse:0,cross:3,close:0,ready:0,crane:0}[st]*tk;
+    const H=[0,hipY],S=[lean,hipY-pr.torso],u=norm(sub(S,H)),r=[-u[1],u[0]],Lt=pr.torso;
+    const P=(x,y)=>add(add(H,mul(r,x)),mul(u,y));
+    const Lay={farArm:mk(1),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0),nearArm:mk(0)};
+    Lay.farArm.part=Lay.nearArm.part="arm";Lay.farLeg.part=Lay.nearLeg.part="leg";
+    const shN=P(0,Lt-5.5*tk),SH={near:shN,far:add(shN,[-3,-1.2])},hN=P(0,1),HP={near:hN,far:add(hN,[-3,0])};
+    ["L","R"].forEach(s=>{side=s;
+      const dp=s===near?"near":"far",lead=s===m.lead;
+      let t,pref=[1,-.25];
+      if(st==="walk")t=lead?[24,56]:[-22,56];
+      else if(st==="front")t=lead?[38,56]:[-44,56];
+      else if(st==="back")t=lead?[22,56]:[-17,56];                    // dwit kubi: weight on the bent rear leg
+      else if(st==="skick"){t=lead?[60,-6]:[-6,56];if(lead)pref=[.3,-1];} // yeop chagi: leg level, body leaning away
+      else if(st==="rkick"){t=lead?[54,-30]:[-6,56];if(lead)pref=[.6,-1];} // dollyeo chagi: kick at face height
+      else if(st==="knee"){t=lead?[18,22]:[-4,56];if(lead)pref=[1,-1];}    // mureup chigi: knee driven up
+      else if(st==="tiger")t=lead?[12,56]:[-14,56];                      // beom seogi: short, weight on the bent rear leg
+      else if(st==="nieun")t=lead?[15,56]:[-11,56];                      // nieunja seogi: feet at right angles, about one foot apart
+      else if(st==="horse"){t=dp==="near"?[19,56]:[11,56];pref=[1,-.1]}             // juchum seogi in profile: legs side by side, knees forward
+      else if(st==="crane"){t=lead?[1,56]:m.ogeum?[-8,30]:[4,25];if(!lead)pref=m.ogeum?[-1,.4]:[1,-.35]}  // hakdari seogi: lifted foot against the standing knee (ogeum: behind it)
+      else if(st==="cross")t=lead?[8,56]:[-6,56];                        // kkoa seogi: rear foot tucked behind
+      else if(st==="gyeot")t=lead?[10,56]:[-4,56];                       // gyeotdari seogi: rear knee bent in behind the front knee
+      else if(st==="close"||st==="ready")t=lead?[3,56]:[-1,56];
+      else{t=lead?[58,-16]:[-5,56];if(lead)pref=[.4,-1];}
+      t=mul(t,k);
+      const hp=HP[dp],[kn,an]=ik(hp,t,pr.thigh,pr.shin,pref),Lg=dp==="near"?Lay.nearLeg:Lay.farLeg;
+      Lg.legs.push({ch:[hp,kn,an]});
+      const kicking=["kick","skick","rkick","knee"].includes(st),kick=kicking&&lead;
+      const fs=lead||kicking?1:st==="back"||st==="nieun"?.6:st==="crane"?.9:.82;   // back-stance rear foot is turned out 90°, so it reads short
+      Lg.feet.push({pts:xf(FOOT_SIDE,an,kick?({skick:-.15,rkick:-.4,knee:.9}[st]??-1.25):(st==="tiger"&&lead?-.35:st==="crane"&&!lead?1.15:0),fs*pr.foot,pr.foot)});
+      const act=(m.arms&&m.arms[s])||"chamber",sh=SH[dp];let h,p=[0,1];
+      if(act==="chamber"){h=[-4,hipY-11*tk];p=[-1,.1]}
+      else if(act==="punch")h=add(sh,mul([46,6],ak));
+      else if(act==="hpunch")h=add(sh,mul([45,-9],ak));
+      else if(act==="low")h=[26*ak,hipY-2];
+      else if(act==="inside")h=add(sh,mul([22,-1],ak));
+      else if(act==="high"||act==="khigh"){h=add(sh,mul([17,-30],ak));p=[1,-.15]}
+      else if(act==="outer")h=add(sh,mul([19,-7],ak));
+      else if(act==="sideblk")h=add(sh,mul([27,-2],ak));
+      else if(act==="xshoulder")h=add(sh,mul([14,4],ak));   // fist drawn back in front of the other shoulder   // ITF side block: forearm upright out in front of the shoulder, clear of the face
+      else if(act==="twinhigh"){h=add(sh,mul([5,-36],ak));p=[1,-.15]}   // ITF twin forearm block, rear arm: guarding above the forehead
+      else if(act==="ksout")h=add(sh,mul([22,-5],ak));
+      else if(act==="ksblock")h=add(sh,mul([25,-3],ak));
+      else if(act==="ksguard")h=add(sh,mul([13,15],ak));
+      else if(act==="spear")h=add(sh,mul([48,4],ak));
+      else if(act==="press")h=add(sh,mul([24,20],ak));
+      else if(act==="neck")h=add(sh,mul([40,-4],ak));
+      else if(act==="backfist"||act==="bfside")h=add(sh,mul([36,-12],ak));
+      else if(act==="hammer")h=add(sh,mul([38,10],ak));
+      else if(act==="elbow"){h=add(sh,mul([10,2],ak));p=[1,.3]}
+      else if(act==="eltarget")h=add(sh,mul([24,2],ak));
+      else if(act==="houter"){h=add(sh,mul([14,-26],ak));p=[1,.5]}
+      else if(act==="twist")h=add(sh,mul([24,-14],ak));
+      else if(act==="spread")h=[8,hipY+10];
+      else if(act==="palm")h=add(sh,mul([22,-1],ak));
+      else if(act==="xlow")h=[24*ak,hipY+2];
+      else if(act==="wedge")h=add(sh,mul([18,-8],ak));
+      else if(act==="uppercut")h=add(sh,mul([26,-6],ak));
+      else if(act==="grab")h=add(sh,mul([30,-4],ak));
+      else if(act==="cover")h=add(sh,mul([16,14],ak));
+      else if(act==="sidepunch")h=add(sh,mul([46,4],ak));
+      else if(act==="ksside")h=add(sh,mul([24,-2],ak));
+      else if(act==="kslow")h=[26*ak,hipY-2];
+      else if(act==="assist")h=add(sh,mul([14,14],ak));
+      else if(act==="tongmil")h=add(sh,mul([24,-8],ak));
+      else if(act==="ksstrike")h=add(sh,mul([40,-6],ak));
+      else if(act==="arc")h=add(sh,mul([44,-8],ak));
+      else if(act==="kneebreak")h=[30*ak,hipY+4];
+      else if(act==="hold"){h=[5,hipY-17*tk];p=[-1,.2]}
+      else if(act==="target")h=add(sh,mul([36,2],ak));
+      else if(act==="crosspunch")h=add(sh,mul([44,4],ak));
+      else if(act==="lspear")h=[36*ak,hipY-1];
+      else if(act==="shoulder"){h=add(sh,mul([8,5],ak));p=[1,.7]}
+      else if(act==="pressdown")h=add(sh,mul([24,26],ak));
+      else if(act==="sideelbow"){h=add(sh,mul([2,10],ak));p=[-1,.2]}
+      else if(act==="elbowpush")h=add(sh,mul([14,8],ak));
+      else if(act==="hammerlow"||act==="palmlow")h=add(sh,mul([20,30],ak));
+      else if(act==="palmjaw")h=add(sh,mul([42,-10],ak));
+      else if(act==="ksin")h=add(sh,mul([22,-1],ak));
+      else if(act==="hingepunch")h=add(sh,mul([26,4],ak));
+      else if(act==="hingetop")h=add(sh,mul([10,16],ak));
+      else if(act==="hammerout")h=add(sh,mul([44,-2],ak));
+      else if(act==="kspread")h=[22*ak,hipY+2];
+      else if(act==="tgrab")h=add(sh,mul([36,4],ak));
+      else if(act==="gyeopson"){h=[7*ak,hipY-4];p=[1,.3]}                   // overlapped hands in front of the lower belly
+      else if(act==="upelbow"){h=add(sh,mul([5,-9],ak));p=[1,-.15]}         // palkup ollyeo chigi: elbow driven up and forward, fist by the ear
+      else if(act==="sidebf")h=add(sh,mul([36,-12],ak));
+      else if(act==="crossbf")h=add(sh,mul([30,-10],ak));
+      else if(act==="bull"){h=add(sh,mul([6,-30],ak));p=[1,.4]}             // hwangso makki: fists above the forehead
+      else if(act==="passist"){h=add(sh,mul([16,0],ak));p=[1,.4]}           // open palm bracing the blocking wrist
+      else if(act==="rockhi"){h=add(sh,mul([30,-24],ak));p=[1,.3]}          // bawi milgi: upper hand at head height
+      else if(act==="rocklo"){h=add(sh,mul([32,-6],ak));p=[1,.3]}           // bawi milgi: lower hand in front of the face
+      else if(act==="rwedge")h=add(sh,mul([18,-8],ak));
+      else if(act==="lift"){h=add(sh,mul([26,0],ak));p=[1,.5]}             // geodeo olligi: forearm lifting in front, hand open
+      else if(act==="chet")h=add(sh,mul([46,8],ak));                       // chetdari jireugi: both fists forward
+      else if(act==="kxlow")h=[24*ak,hipY+2];
+      else if(act==="htarget")h=add(sh,mul([34,-6],ak));                  // mejumeok pyojeok an chigi: open target hand at face height
+      else if(act==="hammerin")h=add(sh,mul([38,-4],ak));                  // hammer fist swung in to the target
+      else if(act==="lowside")h=[22*ak,hipY-4];
+      else if(act==="wing")h=add(sh,mul([6,-2],ak));                       // nalgae pyeogi: palms pushed out to the sides
+      else if(act==="khopen"){h=add(sh,mul([10,-26],ak));p=[1,.4]}         // sonnal eolgul hecho makki: open hands above the head
+      else if(act==="twistm")h=add(sh,mul([26,-2],ak));                    // sonnal biteureo makki at chest height
+      else if(act==="wesc"){h=add(sh,mul([14,10],ak));p=[1,.4]}           // bakkat teureo ppaegi: wrist twisted free, drawn back
+      else if(act==="swing"||act==="swingo"){h=add(sh,mul([14,-26],ak));p=[1,.5]}   // hwidulleo makki: arm circling up and out
+      else if(act==="ohouter"){h=add(sh,mul([14,-26],ak));p=[1,.5]}
+      else if(act==="pushlo"){h=add(sh,mul([32,24],ak));p=[1,.3]}          // taesan milgi: lower hand at belt height
+      else if(act==="pushhi"){h=add(sh,mul([34,-8],ak));p=[1,.3]}          // taesan milgi: upper hand at lip height
+      else if(act==="bamup")h=add(sh,mul([26,-6],ak));
+      else if(act==="hammerin2")h=add(sh,mul([30,4],ak));                 // du mejumeok an chigi: both hammer fists in at chest height
+      else if(act==="xhigh"){h=add(sh,mul([20,-28],ak));p=[1,-.1]}       // eotgeoreo eolgul makki: wrists crossed above the forehead
+      else if(act==="grabtw"){h=add(sh,mul([30,-2],ak));p=[1,.3]}         // hands turned over, taking hold in front of the chest
+      else h=dp==="near"?add(sh,mul([24,14],ak)):add(sh,mul([17,7],ak));
+      addArm(dp==="near"?Lay.nearArm:Lay.farArm,sh,h,p,false,OPEN.has(act));
+    });
+    const ang=Math.atan2(u[0],-u[1]),hs=pr.head,Hc=P(2.2,Lt+10.6*hs+3);
+    Lay.head.head={c:Hc,s:hs,ang,view:"side"};
+    Lay.head.neck={pts:[P(-3.2,Lt-3),P(5.2,Lt-3),add(Hc,xf([[5.2,7.5*hs]],[0,0],ang)[0]),add(Hc,xf([[-2.8,7.2*hs]],[0,0],ang)[0])]};
+    const ww=pr.waist;
+    Lay.torso.torso={
+      pts:[P(-4.8,Lt+1.8),P(-10.2,Lt-5),P(-11*ww,Lt-23*tk),P(-9.6*ww,9),P(-13,-11),P(0,-13),P(12.8,-11),P(10*ww,11),P(12.6,Lt-20*tk),P(10.6,Lt-6),P(4.6,Lt+1.2)],
+      collar:openCurve([P(3.8,Lt+.6),P(7.6,Lt-6),P(10.4,Lt-15*tk)]),
+      lapel:"",
+      under:openCurve([P(-13,-10.5),P(0,-12),P(12.8,-10.5)]),
+      gather:"",
+      band:[P(-10.4*ww,7),P(10.6*ww,7),P(10.6*ww,2.4),P(-10.4*ww,2.4)],
+      tails:[[P(9.6*ww,4.6),P(13.6,-13)],[P(9.2*ww,4.6),P(8.2,-14.2)]],knot:null,
+      shadeA:P(-12,Lt/2),shadeB:P(12,Lt/2)
+    };
+    return{k,hands:HANDS,mirror:m.face==="L",layers:["farArm","farLeg","nearLeg","head","torso","nearArm"].map(q=>Lay[q])};
+  }
+  const back=m.view==="back",sx=s=>(s==="L"?1:-1)*(back?-1:1),st=m.stance;
+  const hipY=(st==="front"||st==="back"||st==="tiger"||st==="nieun")?6*k:st==="horse"?10*k:st==="cross"||st==="gyeot"?4*k:st==="crane"?-1*k:-3*k,T=hipY-pr.torso;
+  const Lay={arms:mk(0),farLeg:mk(1),nearLeg:mk(0),head:mk(0),torso:mk(0),kick:mk(1)};
+  Lay.arms.part="arm";Lay.farLeg.part=Lay.nearLeg.part=Lay.kick.part="leg";
+  ["L","R"].forEach(s=>{side=s;
+    const x=sx(s),hp=[x*pr.hipW*.95,hipY];let an,kn,nearer=true,sc=1;
+    if(st==="ready"){an=[x*11*hw,58*k];kn=add(lerp(hp,an,.5),[x*.6,0])}
+    else if(st==="close"){an=[x*4.5*hw,58*k];kn=add(lerp(hp,an,.5),[x*.3,0])}
+    else if(st==="horse"){an=[x*24*hw,60*k];kn=add(lerp(hp,an,.5),[x*6,0])}  // juchum seogi: wide, knees pushed out
+    else if(st==="tiger"){ // beom seogi: front foot light and close, rear knee bent
+      const lead=s===m.lead;nearer=back?!lead:lead;
+      if(lead){an=[x*6*hw,(back?55:60)*k];kn=add(lerp(hp,an,.5),[x*2,0]);sc=back?.9:1}
+      else{an=[x*10*hw,(back?60:55)*k];kn=add(lerp(hp,an,.5),[x*4,0]);sc=back?1:.9}
+    }else if(st==="cross"||st==="gyeot"){ // kkoa seogi after a jump (gyeotdari seogi drawn the same way): rear foot crossed behind the front one
+      const lead=s===m.lead;nearer=back?!lead:lead;
+      if(lead){an=[x*5*hw,(back?55:60)*k];kn=lerp(hp,an,.5);sc=back?.9:1}
+      else{an=[x*-1*hw,(back?60:54)*k];kn=add(lerp(hp,an,.5),[x*2,0]);sc=back?1:.86}
+    }
+    else if(st==="crane"){ // hakdari seogi: lifted knee turned out, foot resting against the standing knee
+      const lead=s===m.lead;nearer=back?lead:!lead;
+      if(lead){an=[x*4*hw,58*k];kn=add(lerp(hp,an,.5),[x*.6,0])}
+      else{kn=[x*17*hw,hipY+21];an=[x*-2.5*hw,hipY+31];sc=.9}
+    }
+    else if(st==="walk"){ // ap seogi seen from front/back: both legs straight, lead foot nearer the viewer from the front
+      const lead=s===m.lead;nearer=back?!lead:lead;
+      if(nearer){an=[x*10.5*hw,62*k];sc=1.06}else{an=[x*9.5*hw,54*k];sc=.9}
+      kn=add(lerp(hp,an,.5),[x*.4,0]);
+    }else if(st==="back"||st==="nieun"){ // dwit kubi (and the shorter nieunja seogi) from front/back: front leg light and near the centre line, rear knee bent outward
+      const lead=s===m.lead;nearer=back?!lead:lead;
+      if(lead){an=[x*7*hw,(back?54:61)*k];kn=add(lerp(hp,an,.5),[x*1,0]);sc=back?.9:1.04}
+      else{an=[x*12*hw,(back?61:54)*k];kn=add(lerp(hp,an,.5),[x*5,0]);sc=back?1.04:.9}
+    }else if(st==="kick"){ // front kick seen from behind: kicking leg raised away from the viewer, foot just clear of the body
+      const kicker=s===m.lead;nearer=back?!kicker:kicker;
+      if(kicker){kn=back?[x*9*hw,hipY-4]:[x*11*hw,hipY+12];an=back?[x*8*hw,hipY-24]:[x*10*hw,hipY+4];sc=back?.78:1.25}
+      else{an=[x*10.5*hw,58*k];kn=add(lerp(hp,an,.5),[x*.4,0])}
+    }
+    else{
+      const lead=s===m.lead;nearer=back?!lead:lead;
+      if(nearer){an=[x*14*hw,63*k];kn=lead?[x*13.5*hw,hipY+pr.thigh*.7]:add(lerp(hp,an,.5),[x*.4,0]);sc=1.1}
+      else{an=[x*12.5*hw,52*k];kn=lead?[x*12.5*hw,hipY+pr.thigh*.62]:add(lerp(hp,an,.5),[x*.4,0]);sc=.86}
+    }
+    // seen from behind, the kicking leg is raised in front of the body: draw it over the torso in the far-side tone
+    const Lg=(st==="kick"&&back&&s===m.lead)?Lay.kick:(nearer?Lay.nearLeg:Lay.farLeg);
+    Lg.legs.push({ch:[hp,kn,an],front:true});
+    if(st==="crane"&&s!==m.lead)Lg.feet.push({pts:xf(FOOT_SIDE,an,Math.PI/2,.8*pr.foot,-.8*x*pr.foot)});
+    else Lg.feet.push({pts:xf(back?FOOT_HEEL:FOOT_FRONT,add(an,[x*.8,0]),0,sc*x*pr.foot,sc*pr.foot)});
+    const act=(m.arms&&m.arms[s])||"chamber",sh=[x*pr.shW,T+8*tk];
+    if((act==="punch"||act==="spear")&&back)addArm(Lay.arms,sh,[x*-3,T+20*tk],[x,.2],false,OPEN.has(act));
+    else if(act==="chet"&&back)addArm(Lay.arms,sh,[x*7,T+20*tk],[x,.2]);
+    else if(act==="lspear"&&!back)addArm(Lay.arms,sh,[x*-2,hipY+1],null,true,true);
+    else if(TOWARD[act]&&!back){   // strikes toward the viewer: fist face or knife-hand edge, foreshortened
+      const q=TOWARD[act]();addArm(Lay.arms,sh,[x*q[0],T+q[1]*tk],null,true,OPEN.has(act));
+    }else{
+      let h,p=[x,.15];
+      if(act==="chamber")h=[x*(pr.hipW+7),hipY-9*tk];
+      else if(act==="low")h=[x*(pr.hipW+15),hipY+4*k];
+      else if(act==="inside"){h=[x*-3,T+9*tk];p=[x*.5,1]}      // forearm upright, fist at the centre line
+      else if(act==="high"){h=[x*-4,T-24*tk];p=[x,-.4]}        // forearm across, above the forehead
+      else if(act==="khigh"){h=[x*-4,T-24*tk];p=[x,-.4]}
+      else if(act==="outer"){h=[x*(pr.shW+4),T+6*tk];p=[x*.4,1]}
+      else if(act==="sideblk"){h=[x*(pr.shW+4),T+6*tk];p=[x*.4,1]}
+      else if(act==="xshoulder"){h=[x*-15,T+8*tk];p=[x*.6,.6]}
+      else if(act==="twinhigh"){h=[x*-4,T-24*tk];p=[x,-.4]}
+      else if(act==="ksout"||act==="ksblock"){h=[x*(pr.shW+2),T+4*tk];p=[x*.4,1]}
+      else if(act==="ksguard"){h=[x*-2,T+22*tk];p=[x,.3]}
+      else if(act==="neck"){h=[x*-7,T-2*tk];p=[x,.6]}          // knife hand ends at neck height, palm up
+      else if(act==="backfist"){h=[x*3,T-14*tk];p=[x,.2]}
+      else if(act==="hammer")h=[x*(pr.shW+30),T+16*tk];
+      else if(act==="elbow"){h=[x*-6,T+4*tk];p=[x,.2]}
+      else if(act==="eltarget"||act==="grab"){h=[x*-8,T+6*tk];p=[x,.4]}
+      else if(act==="houter"){h=[x*(pr.shW+4),T-14*tk];p=[x*.4,1]}
+      else if(act==="twist"){h=[x*-2,T-4*tk];p=[x*.5,1]}
+      else if(act==="spread"){h=[x*(pr.shW+12),hipY+12*k];p=[x,.2]}
+      else if(act==="palm"){h=[x*-3,T+9*tk];p=[x*.5,1]}
+      else if(act==="xlow"){h=[x*-3,hipY+4*k];p=[x,.4]}
+      else if(act==="wedge"){h=[x*(pr.shW+6),T+2*tk];p=[x*.4,1]}
+      else if(act==="uppercut"){h=[x*-2,T-2*tk];p=[x*.3,1]}
+      else if(act==="cover"){h=[x*2,T+18*tk];p=[x,.3]}
+      else if(act==="sidepunch")h=[x*(pr.shW+46),T+10*tk];
+      else if(act==="ksside"){h=[x*(pr.shW+28),T+6*tk];p=[x*.3,1]}
+      else if(act==="kslow"){h=[x*(pr.shW+12),hipY+6*k];p=[x,.2]}
+      else if(act==="assist"){h=[x*-2,T+20*tk];p=[x,.3]}
+      else if(act==="guard")h=[x*8,T+28*tk];
+      else if(act==="tongmil"){h=[x*-1.5,T+15*tk];p=[x,.15]}   // hands meet below the chin, elbows out
+      else if(act==="ksstrike"){h=[x*(pr.shW+30),T+2*tk];p=[x*.3,1]}
+      else if(act==="arc"||act==="palmjaw"){h=[x*-3,T+5*tk];p=[x,.3]}
+      else if(act==="tgrab"){h=[x*-3,T+14*tk];p=[x,.3]}
+      else if(act==="lspear"){h=[x*-3,hipY-1];p=[x,.2]}
+      else if(act==="kneebreak"){h=[x*-2,hipY+12*k];p=[x,.2]}
+      else if(act==="hold"){h=[x*(pr.hipW+8),hipY-16*tk];p=[x,.2]}
+      else if(act==="target"){h=[x*(pr.shW+30),T+8*tk];p=[x*.2,1]}
+      else if(act==="crosspunch"){h=[x*-(pr.shW+14),T+8*tk];p=[x*.2,1]}
+      else if(act==="shoulder"){h=[x*-(pr.shW-5),T+5*tk];p=[x,.6]}
+      else if(act==="pressdown"){h=[x*-2,T+30*tk];p=[x,.3]}
+      else if(act==="sideelbow"){h=[x*(pr.shW+3),T+11*tk];p=[x,.05]}   // arm folded, elbow driven out to the side
+      else if(act==="elbowpush"){h=[x*-(pr.shW+1),T+12*tk];p=[x,.3]}
+      else if(act==="hammerlow"){h=[x*-1,hipY-5*k];p=[x,.2]}
+      else if(act==="palmlow"){h=[x*-1,hipY-8*k];p=[x,.2]}
+      else if(act==="ksin"){h=[x*-3,T+9*tk];p=[x*.5,1]}
+      else if(act==="hingepunch"){h=[x*-(pr.shW+4),T+11*tk];p=[x*.3,1]}
+      else if(act==="hingetop"){h=[x*-(pr.hipW+6),hipY-18*tk];p=[x,.3]}
+      else if(act==="hammerout"){h=[x*(pr.shW+40),T+6*tk];p=[x*.2,1]}
+      else if(act==="kspread"){h=[x*(pr.shW+12),hipY+12*k];p=[x,.2]}
+      else if(act==="gyeopson"){h=[x*-1.5,hipY+3];p=[x,.2]}       // gyeopson junbi: open hands overlapped in front of the lower belly
+      else if(act==="upelbow"){h=[x*-6,T+4*tk];p=[x,.2]}
+      else if(act==="sidebf"){h=[x*(pr.shW+26),T-6*tk];p=[x,-.3]}   // back-fist out to the side at head height
+      else if(act==="crossbf"){h=[x*-(pr.shW+6),T-6*tk];p=[x,.3]}   // back-fist across the body to the other side
+      else if(act==="bull"){h=[x*11,T-19*tk];p=[x,.5]}                // hwangso makki: fists above the forehead, elbows out
+      else if(act==="passist"){h=[x*-(pr.shW-2),T+8*tk];p=[x,.4]}   // open palm at the other arm's wrist
+      else if(act==="rockhi"){h=[x*5,T-20*tk];p=[x,.2]}
+      else if(act==="rocklo"){h=[x*-2,T+2*tk];p=[x,.4]}
+      else if(act==="rwedge"){h=[x*(pr.shW+6),T+2*tk];p=[x*.4,1]}
+      else if(act==="lift"){h=[x*-1,T+14*tk];p=[x,.6]}
+      else if(act==="kxlow"){h=[x*-3,hipY+4*k];p=[x,.4]}
+      else if(act==="htarget"){h=[x*(pr.shW+26),T+3*tk];p=[x*.2,1]}  // target hand out to the side, kept below the face
+      else if(act==="hammerin"){h=[x*-(pr.shW+17),T+4*tk];p=[x*.2,1]}
+      else if(act==="lowside"){h=[x*(pr.shW+24),hipY-2*k];p=[x,.1]}   // naeryeo yeop makki: forearm swept down and out to the side
+      else if(act==="wing"){h=[x*(pr.shW+22),T+2*tk];p=[x*.2,1]}        // nalgae pyeogi: palms pushed out to the sides at shoulder height
+      else if(act==="khopen"){h=[x*(pr.shW+9),T-15*tk];p=[x*.4,1]}      // knife hands spread above the shoulders
+      else if(act==="twistm"){h=[x*-2,T+5*tk];p=[x*.5,1]}
+      else if(act==="wesc"){h=[x*(pr.shW+4),T+16*tk];p=[x,.3]}
+      else if(act==="swing"||act==="swingo"||act==="ohouter"){h=[x*(pr.shW+4),T-14*tk];p=[x*.4,1]}
+      else if(act==="pushlo"){h=[x*-1,hipY-7*k];p=[x,.3]}
+      else if(act==="pushhi"){h=[x*-3,T+7*tk];p=[x,.3]}            // drawn at the chest so it never crosses the face
+      else if(act==="bamup"){h=[x*-3,T+7*tk];p=[x*.3,1]}           // double knuckle uppercut, kept below the face
+      else if(act==="hammerin2"){h=[x*(pr.shW-3),T+11*tk];p=[x*.3,1]}  // fists level with the edges of the body
+      else if(act==="xhigh"){h=[x*-3,T-23*tk];p=[x,-.3]}            // wrists crossed above the forehead
+      else if(act==="grabtw"){h=[x*-2,T+8*tk];p=[x,.3]}
+      else h=[x*6.5,hipY-12*tk];                                 // junbi
+      addArm(Lay.arms,sh,h,p,false,OPEN.has(act));
+    }
+  });
+  const hs=pr.head,Hc=[0,T-10.4*hs-2.6];
+  Lay.head.head={c:Hc,s:hs,ang:0,view:back?"back":"front"};
+  Lay.head.neck={pts:[[-4.3*hs,Hc[1]+6*hs],[4.3*hs,Hc[1]+6*hs],[5.4,T+2],[-5.4,T+2]]};
+  const ww=pr.waist;
+  Lay.torso.torso={
+    pts:[[-5.6,T-.6],[-13*sw,T+1.6],[-19.6*sw,T+4.8],[-21*sw,T+9],[-18.6*sw,T+24*tk],[-14.6*hw*ww,hipY-8],[-16.8*hw,hipY+12],[0,hipY+13.4],[16.8*hw,hipY+12],[14.6*hw*ww,hipY-8],[18.6*sw,T+24*tk],[21*sw,T+9],[19.6*sw,T+4.8],[13*sw,T+1.6],[5.6,T-.6]],
+    collar:back?openCurve([[-6.5,T+.4],[0,T+3.2],[6.5,T+.4]]):openCurve([[-6,T-.2],[-2,T+9*tk],[1.4,T+20*tk]])+openCurve([[6,T-.2],[2.4,T+8*tk],[-1.4,T+15*tk]]),
+    lapel:back?openCurve([[0,T+5],[0,hipY-8]]):openCurve([[1.4,T+20*tk],[3.6,T+34*tk],[5.6*hw,hipY-8]]),
+    under:back?"":ln([5.6*hw,hipY-1],[6.2*hw,hipY+12.8]),
+    gather:openCurve([[-8*hw,hipY-.2],[-9*hw,hipY+5]])+openCurve([[8*hw,hipY-.2],[9*hw,hipY+5]]),
+    band:[[-15*hw*ww,hipY-6.8],[15*hw*ww,hipY-6.8],[15.1*hw*ww,hipY-2],[-15.1*hw*ww,hipY-2]],
+    tails:back?[]:[[[0,hipY-3],[-4.6,hipY+14]],[[0,hipY-3],[4.6,hipY+14]]],
+    knot:back?null:[[-3.6,hipY-8.6],[3.6,hipY-8.6],[3.6,hipY+.2],[-3.6,hipY+.2]],
+    shadeA:[-20,T+20],shadeB:[20,T+20]
+  };
+  return{k,hands:HANDS,mirror:false,layers:back?[Lay.arms,Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso,Lay.kick]:[Lay.farLeg,Lay.nearLeg,Lay.head,Lay.torso,Lay.arms,Lay.kick]};
+}
+
+/* ---------- head shapes (local units, x forward / y down) ---------- */
+const HEAD_SIDE=[[-8.6,-1],[-7.6,-7.6],[-3,-11],[3,-10.8],[7.2,-7.4],[8.1,-3.4],[8.9,-1.2],[9.6,.4],[8.4,1.5],[8.6,3.4],[8.1,5.1],[7.4,7.3],[4.8,9.3],[.6,9],[-4.6,6.4],[-7.6,3.6]];
+const HEAD_FRONT=[[0,-11],[5.8,-9.6],[8,-4.4],[7.9,1],[6.6,6],[3.6,9.2],[0,10.2],[-3.6,9.2],[-6.6,6],[-7.9,1],[-8,-4.4],[-5.8,-9.6]];
+const HAIR={
+  short:{side:[[6.6,-7.6],[2.5,-11.5],[-3.8,-11.4],[-8.8,-6],[-9.2,0],[-8,4.2],[-6.2,4.6],[-5.4,.2],[-3.4,-3.6],[.6,-5.8],[5,-6]],
+         front:[[-8.3,-3],[-7,-9.2],[0,-11.8],[7,-9.2],[8.3,-3],[7.4,-3.6],[5.2,-7.2],[0,-7.8],[-5.2,-7.2],[-7.4,-3.6]]},
+  part:{side:[[7.4,-6.6],[3,-11.8],[-3.8,-11.9],[-9,-6.2],[-9.4,.6],[-8,4.8],[-6,5],[-5.4,0],[-3,-3.8],[1.6,-5.2],[6.4,-4.4]],
+         front:[[-8.5,-2.4],[-7.3,-9.5],[-1,-12.1],[7.2,-9.8],[8.5,-2.6],[7.4,-3.8],[4.6,-7],[-2.4,-7.4],[-4.6,-5.6],[-7.5,-3.4]]},
+  crop:{side:[[6,-8.2],[2.4,-11.2],[-3.6,-11.1],[-8.4,-6],[-8.8,-.6],[-7.6,2.8],[-6.2,3],[-5.4,-.8],[-3,-4.4],[.6,-6.6],[4.6,-6.9]],
+         front:[[-8.1,-4],[-6.8,-9.1],[0,-11.4],[6.8,-9.1],[8.1,-4],[7.2,-4.6],[5,-7.8],[0,-8.4],[-5,-7.8],[-7.2,-4.6]]},
+  bun:{side:[[7,-7],[2.6,-11.7],[-4,-11.5],[-8.9,-6],[-9.3,0],[-8,4.4],[-6,4.6],[-5.3,0],[-3.2,-4],[1.4,-6],[6,-5.6]],
+         front:[[-8.4,-2.4],[-7.1,-9.4],[0,-11.9],[7.1,-9.4],[8.4,-2.4],[7.5,-3.2],[6,-6.8],[0,-8.4],[-6,-6.8],[-7.5,-3.2]],
+         bun:{side:[-8.6,-8.4,4.6],front:[0,-12.6,4.4],back:[0,-7.4,5]}}
+};
+
+/* ---------- renderer ---------- */
+// opt.only: "arm" draws just the arms (ghost arms); "upper" leaves out the legs (arm-only thumbnails).
+// opt.fadeLegs: legs drawn light (same stance as the previous count).
+function draw(sk,D,opt={}){
+  const bc=BELTS[belt],O=D.ink,pr=D.pr;
+  let defs="";
+  const grad=(A,B,c1,c2)=>{const id="g"+(++gid);defs+=`<linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="${f(A[0])}" y1="${f(A[1])}" x2="${f(B[0])}" y2="${f(B[1])}"><stop offset="0" stop-color="${c1}"/><stop offset=".55" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient>`;return`url(#${id})`};
+  const out=sk.layers.filter(L=>!opt.only||(opt.only==="arm"?L.part==="arm":L.part!=="leg")).map(L=>{
+    const gi=L.far?D.giFar:D.gi,skin=L.far?D.skinFar:D.skin,hair=D.hair;
+    const shapes=[];let det="";
+    L.legs.forEach(l=>{
+      const W=pr.legW.map((w,i)=>w*(l.front?1.08:1)+(i===TS.length-1?pr.flare:0));
+      const c=contour(l.ch,W,true);shapes.push({d:spline(c.pts),c});
+      const e=c.mid[TS.length-1],a=add(e.p,mul(e.d,-.6));det+=ln(add(a,mul(e.n,e.w*.96)),add(a,mul(e.n,-e.w*.96)));
+      if(D.folds){const kk=c.mid[4];det+=openCurve([add(kk.p,mul(kk.n,-kk.w*.2)),add(add(kk.p,mul(kk.d,3)),mul(kk.n,-kk.w*.65))]);
+        const sh=c.mid[6];det+=ln(add(sh.p,mul(sh.n,sh.w*.3)),add(c.mid[7].p,mul(c.mid[7].n,c.mid[7].w*.35)))}
+    });
+    L.arms.forEach(a=>{
+      const W=pr.armW.map((w,i)=>w*(a.front?1.05:1)+(i===TS.length-1?pr.flare*.8:0));
+      const c=contour(a.ch,W,true);shapes.push({d:spline(c.pts),c});
+      if(!a.front){const e=c.mid[TS.length-1];det+=ln(add(e.p,mul(e.n,e.w*.96)),add(e.p,mul(e.n,-e.w*.96)))}
+      if(D.folds&&!a.front){const el=c.mid[4];det+=openCurve([add(el.p,mul(el.n,el.w*.15)),add(add(el.p,mul(el.d,-3.2)),mul(el.n,el.w*.75))])+openCurve([add(c.mid[6].p,mul(c.mid[6].n,-c.mid[6].w*.7)),add(c.mid[7].p,mul(c.mid[7].n,-c.mid[7].w*.1))])}
+    });
+    if(L.torso){shapes.push({d:spline(L.torso.pts,1.1),torso:true});det+=L.torso.lapel+L.torso.under+(D.folds?L.torso.gather:"")}
+    let g="";
+    if(shapes.length){
+      const all=shapes.map(s=>s.d).join("");
+      g+=`<path d="${all}" fill="none" stroke="${O}" stroke-width="${D.ow*2}" stroke-linejoin="round"/>`;
+      shapes.forEach(s=>{
+        let fill=gi;
+        if(D.shade){
+          if(s.c){const m=s.c.mid[4];fill=grad(add(m.p,mul(m.n,m.w)),add(m.p,mul(m.n,-m.w)),gi,L.far?D.shadeFar:D.shadeCol)}
+          else fill=grad(L.torso.shadeA,L.torso.shadeB,gi,D.shadeCol);
+        }
+        g+=`<path d="${s.d}" fill="${fill}"/>`;
+      });
+      if(det)g+=`<path d="${det}" fill="none" stroke="${O}" stroke-width="${D.dw}" stroke-linecap="round" stroke-linejoin="round"/>`;
+    }
+    const skinPath=d=>g+=`<path d="${d}" fill="${skin}" stroke="${O}" stroke-width="${D.sw}" stroke-linejoin="round"/>`;
+    L.feet.forEach(ft=>skinPath(spline(ft.pts)));
+    L.fists.forEach(q=>{
+      if(q.front&&q.flat){skinPath(spline(xf(KNIFE_FACE,q.c,0,1.05,1.05)))}
+      else if(q.front){skinPath(spline(xf(FIST_FACE,q.c,0,1.05,1.05)));g+=`<path d="${[-2.7,0,2.7].map(x=>ln([q.c[0]+x,q.c[1]-4],[q.c[0]+x,q.c[1]-.6])).join("")}" stroke="${O}" stroke-width="${D.dw}" stroke-linecap="round"/>`}
+      else if(q.flat){const ang=Math.atan2(q.d[1],q.d[0]);skinPath(spline(xf(HAND_FLAT,q.w,ang,pr.fist,pr.fist)));g+=`<path d="${openCurve(xf([[4,1.4],[8.6,1.6],[12,1.1]],q.w,ang,pr.fist,pr.fist))}" fill="none" stroke="${O}" stroke-width="${D.dw}" stroke-linecap="round"/>`}
+      else{const ang=Math.atan2(q.d[1],q.d[0]);skinPath(spline(xf(FIST,q.w,ang,pr.fist,pr.fist)));g+=`<path d="${openCurve(xf([[3.2,1.4],[6,1.9],[8.4,1.6]],q.w,ang,pr.fist,pr.fist))}" fill="none" stroke="${O}" stroke-width="${D.dw}" stroke-linecap="round"/>`}
+    });
+    if(L.neck)skinPath(spline(L.neck.pts,1.4));
+    if(L.head){
+      const h=L.head,Hd=HAIR[pr.hair],bun=Hd.bun;
+      const loc=P=>xf(P,h.c,h.ang,h.s,h.s);
+      const hairPath=d=>g+=`<path d="${d}" fill="${hair}" stroke="${O}" stroke-width="${D.sw}" stroke-linejoin="round"/>`;
+      if(bun&&h.view!=="back"){const b=bun[h.view];hairPath(spline(ellPts(loc([[b[0],b[1]]])[0],b[2]*h.s,b[2]*h.s*.9)))}
+      if(h.view==="side"){
+        skinPath(spline(loc(HEAD_SIDE)));
+        hairPath(spline(loc(Hd.side)));
+        skinPath(spline(ellPts(loc([[-2.2,.6]])[0],1.9*h.s,2.9*h.s,h.ang)));
+      }else if(h.view==="front"){
+        [-1,1].forEach(s=>skinPath(spline(ellPts(loc([[s*7.8,.6]])[0],1.7*h.s,2.8*h.s))));
+        skinPath(spline(loc(HEAD_FRONT)));
+        hairPath(spline(loc(Hd.front)));
+      }else{
+        [-1,1].forEach(s=>skinPath(spline(ellPts(loc([[s*7.8,.6]])[0],1.7*h.s,2.8*h.s))));
+        hairPath(spline(loc(HEAD_FRONT.map(([x,y])=>[x*1.02,y<6?y*1.02:y*.86]))));
+        if(bun){const b=bun.back;hairPath(spline(ellPts(loc([[b[0],b[1]]])[0],b[2]*h.s,b[2]*h.s*.92)))}
+      }
+    }
+    if(L.torso){
+      const t=L.torso;
+      g+=`<path d="${t.collar}" fill="none" stroke="${D.collarCol||O}" stroke-width="${D.collar}" stroke-linecap="round" stroke-linejoin="round"/>`;
+      let b=spline(t.band,2);t.tails.forEach(([a,c])=>{const d=norm(sub(c,a)),n=[-d[1],d[0]];b+=spline([add(a,mul(n,1.5)),add(c,mul(n,1.4)),add(c,mul(n,-1.4)),add(a,mul(n,-1.5))],3)});
+      if(t.knot)b+=spline(t.knot,2);
+      g+=`<path d="${b}" fill="${bc}" stroke="${O}" stroke-width="${D.dw}" stroke-linejoin="round"/>`;
+    }
+    return opt.fadeLegs&&L.part==="leg"&&g?`<g opacity=".3">${g}</g>`:g;
+  }).join("");
+  return{defs,out};
+}
+
+
+/* ---------- figure: Textbook line A1 "Natural" ---------- */
+const LEG=[9.8,9.5,8.7,7.7,7.4,7.3,7,7.2,7.9],ARM=[6.6,6.3,5.9,5.4,5.1,5,4.9,5.1,5.8];
+const PR={thigh:33,shin:32,upper:24,fore:23,torso:55,head:.95,shW:18.5,hipW:9,waist:1,legW:LEG,armW:ARM,flare:.6,fist:.95,foot:1,hair:"short"};
+const STY={ink:"#1b2030",gi:"#fdfdfb",giFar:"#dfe3ea",skin:"#ecd0b6",skinFar:"#cfb39b",hair:"#2a2f3a",ow:1.45,dw:1,sw:1.6,collar:3.2,pr:PR};
+/* opt (same-stance treatments, issue #4):
+     fade   legs drawn light: the stance is carried over from the previous count
+     from   the previous move: a dashed arc from where each changed hand was to where it ends
+     ghosts earlier counts on the same stance, drawn as light arms only
+     badges [{m,label,on}]: count numbers at the hand that acts in each count
+     crop   upper body only, cropped (arm-only thumbnail) */
+const actHand=m=>m.hand&&m.hand.length===1?m.hand:(["R","L"].find(s=>m.arms&&m.arms[s]&&m.arms[s]!=="chamber")||"R");
+function motionArc(p,q){
+  const d=dist(p,q);if(d<4)return"";
+  const mid=lerp(p,q,.5),n=norm([-(q[1]-p[1]),q[0]-p[0]]),c0=[0,-28];
+  const c=add(mid,mul(n,(dist(add(mid,n),c0)>dist(sub(mid,n),c0)?1:-1)*Math.min(d*.35,14)));
+  const t=norm(sub(q,c)),a=sub(q,mul(t,1.2)),w=[-t[1],t[0]];
+  return`<path d="M${f(p[0])} ${f(p[1])}Q${f(c[0])} ${f(c[1])} ${f(a[0])} ${f(a[1])}" fill="none" stroke="var(--fire)" stroke-width="1.5" stroke-dasharray="3 2.2" stroke-linecap="round"/>`+
+    `<path d="M${f(q[0]+t[0]*1.5)} ${f(q[1]+t[1]*1.5)}L${f(a[0]-t[0]*3+w[0]*3)} ${f(a[1]-t[1]*3+w[1]*3)}L${f(a[0]-t[0]*3-w[0]*3)} ${f(a[1]-t[1]*3-w[1]*3)}Z" fill="var(--fire)"/>`;
+}
+/* Per-move images (#7): when the page defines FIGIMG (build_form.py --images, from design/moves/<form>/),
+   a count with an image is drawn from it instead of the vector figure, on the same ground line and scale
+   (142 units = standing height; r = the image's share of it). Ghost arms and motion arcs need the vector
+   skeleton, so they are left out on image figures. */
+function figImage(m,opt){
+  const I=FIGIMG[m.id],h=142*I.r,w=I.w/I.h*h;
+  const img=`<image href="${I.src}" x="${f(-w/2)}" y="${f(65-h)}" width="${f(w)}" height="${f(h)}" preserveAspectRatio="none"${opt.fade?' opacity=".5"':""}/>`;
+  return`<svg class="body${opt.crop?" crop":""}" viewBox="${opt.crop?"-62 -90 124 100":"-62 -90 124 160"}" role="img" aria-label="${T[m.tech][2]}">`+
+    (opt.crop?"":`<ellipse class="glow" cx="0" cy="64.5" rx="50" ry="5.5" fill="none" stroke="var(--fire)" stroke-width="2"/>`+
+    `<ellipse cx="0" cy="64" rx="40" ry="4" fill="var(--ink)" opacity=".09"/>`)+img+`</svg>`;
+}
+function figure(m,opt={}){
+  if(typeof FIGIMG!=="undefined"&&FIGIMG[m.id])return figImage(m,opt);
+  const sk=skel(m,PR),{out}=draw(sk,STY,{fadeLegs:opt.fade,only:opt.crop?"upper":null});
+  let under="",over="",marks="";
+  if(opt.from){const pk=skel(opt.from,PR);
+    const s=actHand(m),a=(opt.from.arms||{})[s]||"chamber",b=(m.arms||{})[s]||"chamber";   // the acting hand only: two arcs read as noise
+    if(a!==b&&pk.hands[s]&&sk.hands[s])over+=motionArc(pk.hands[s],sk.hands[s])}
+  (opt.ghosts||[]).forEach(g=>{under+=`<g opacity=".32">${draw(skel(g,PR),STY,{only:"arm"}).out}</g>`});
+  const placed=[];
+  (opt.badges||[]).forEach(b=>{const h=skel(b.m,PR).hands[actHand(b.m)];if(!h)return;
+    let x=sk.mirror?-h[0]:h[0],y=h[1]-9;const w=b.label.length*3.6+5;
+    while(placed.some(([px,py])=>Math.abs(px-x)<w&&Math.abs(py-y)<10))y-=10.5;   // stack badges that would overlap
+    placed.push([x,y]);
+    marks+=`<g class="badge${b.on?" on":""}"><rect x="${f(x-w/2)}" y="${f(y-4.6)}" width="${f(w)}" height="9.2" rx="4.6" fill="${b.on?"var(--fire)":"var(--surface)"}" stroke="var(--fire)" stroke-width="1"/>`+
+      `<text x="${f(x)}" y="${f(y+2.1)}" text-anchor="middle" font-size="6.2" font-family="IBM Plex Mono,monospace" fill="${b.on?"#fff":"var(--fire)"}">${b.label}</text></g>`});
+  const inner=under+out+over;
+  return`<svg class="body${opt.crop?" crop":""}" viewBox="${opt.crop?"-62 -90 124 100":"-62 -90 124 160"}" role="img" aria-label="${T[m.tech][2]}">`+
+    (opt.crop?"":`<ellipse class="glow" cx="0" cy="64.5" rx="50" ry="5.5" fill="none" stroke="var(--fire)" stroke-width="2"/>`+
+    `<ellipse cx="0" cy="64" rx="40" ry="4" fill="var(--ink)" opacity=".09"/>`)+
+    (sk.mirror?`<g transform="scale(-1,1)">${inner}</g>`:inner)+marks+`</svg>`;
+}
+
+/* ---------- stance footprints (top view, na = up) ----------
+   Ap seogi: one natural step, feet nearly in line.
+   Ap kubi: about 1½ steps long and one fist wide, rear foot turned out. */
+const FT=[[0,-7.4],[3,-5.6],[3.5,1.5],[2.4,6.3],[0,7.4],[-2.4,6.3],[-3.5,1.5],[-3,-5.6]];
+function feet(m){
+  if(m.stance==="ogeum")m={...m,stance:"crane"};
+  if(m.stance==="fixed")m={...m,stance:"back"};
+  const rot={na:0,ga:180,da1:90,da2:90,da3:90,ra1:-90,ra2:-90,ra3:-90,gada:135,nada:45,gara:-135,nara:-45}[m.dir]*Math.PI/180;
+  const sgn=s=>s==="L"?-1:1,other=s=>s==="L"?"R":"L";
+  const foot=(x,y,a,on)=>`<path d="${spline(xf(FT,[x,y],a))}" fill="${on?"var(--fire)":"var(--muted)"}"/>`;
+  let s="";
+  if(m.stance==="ready")s=foot(-6.5,1,0,0)+foot(6.5,1,0,0);
+  else if(m.stance==="walk"){const l=sgn(m.lead),o=sgn(other(m.lead));
+    s=foot(l*2.6,-6,0,1)+foot(o*2.6,6.5,o*.5,0)+`<path d="M-11 -6H11M-11 6.5H11" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 2"/>`;}
+  else if(m.stance==="front"){const l=sgn(m.lead),o=sgn(other(m.lead));
+    s=`<path d="M${l*7} -12V12M${o*7} -12V12" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 2"/>`+foot(l*7,-11,0,1)+foot(o*7,11,o*.5,0);}
+  else if(m.stance==="tiger"){const l=sgn(m.lead),o=sgn(other(m.lead));  // beom seogi: short, front foot on the ball
+    s=foot(l*1.5,-6,0,1)+foot(o*3,6,o*.6,0);}
+  else if(m.stance==="horse")s=foot(-11,1,0,0)+foot(11,1,0,0)+`<path d="M-11 -9V11M11 -9V11" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 2"/>`;
+  else if(m.stance==="close")s=foot(-3.5,1,0,0)+foot(3.5,1,0,0);
+  else if(m.stance==="crane"){const l=sgn(m.lead),o=sgn(other(m.lead));  // hakdari seogi: one foot down, the other lifted to the knee
+    s=foot(l*3,1,0,1)+`<circle cx="${o*5}" cy="1" r="4.6" fill="none" stroke="var(--muted)" stroke-width="1.4" stroke-dasharray="2 1.6"/>`;}
+  else if(m.stance==="cross"){const l=sgn(m.lead),o=sgn(other(m.lead));
+    s=foot(l*1.5,-3,0,1)+foot(o*-2,7,o*.4,0);}
+  else if(m.stance==="gyeot"){const l=sgn(m.lead),o=sgn(other(m.lead));   // gyeotdari seogi: rear foot close behind and beside the front heel
+    s=foot(l*2,-4,0,1)+foot(o*2.5,6,o*.35,0);}
+  else if(m.stance==="back"){const l=sgn(m.lead),o=sgn(other(m.lead));   // dwit kubi: an L shape, rear foot turned 90° out
+    s=`<path d="M0 -14V13" stroke="var(--line)" stroke-width="1" stroke-dasharray="2 2"/>`+foot(0,-8,0,1)+foot(o*3,9,o*Math.PI/2,0);}
+  else if(m.stance==="nieun"){const o=sgn(other(m.lead));   // nieunja seogi: a short L, heels about one foot apart
+    s=foot(0,-4,0,1)+foot(o*3,6,o*Math.PI/2,0);}
+  else{const l=sgn(m.lead),o=sgn(other(m.lead));
+    s=foot(o*4,7,0,0)+`<path d="M${l*4} 9V-12M${l*4-3.8} -7.5L${l*4} -12.5L${l*4+3.8} -7.5" stroke="var(--fire)" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`;}
+  return`<svg class="fp" viewBox="-21 -21 42 42" aria-hidden="true"><circle r="20" fill="var(--surface)" stroke="var(--line)"/><g transform="rotate(${f(rot*180/Math.PI)})">${s}<path d="M0 -20 l-3.2 4.4 h6.4z" fill="var(--heaven)"/></g></svg>`;
+}
+
+const sideWord=s=>s==="L"?"Left":"Right";
+/* chip names per stance. ITF forms (FORM.family "itf") swap in the ITF names, and name the L-stance
+   (niunja sogi) by the rear foot as the ITF does: "R · Niunja sogi" = right foot back, left foot forward. */
+const CHIPN={ready:"Naranhi",kick:"Ap chagi",skick:"Yeop chagi",rkick:"Dollyeo chagi",knee:"Mureup",tiger:"Beom seogi",
+  horse:"Juchum seogi",cross:"Kkoa seogi",gyeot:"Gyeotdari seogi",close:"Moa seogi",crane:"Hakdari",ogeum:"Ogeum seogi",fixed:"Gojung sogi",
+  back:"Dwit kubi",nieun:"Nieunja seogi",walk:"Ap seogi",front:"Ap kubi"};
+const CHIPCLS={ready:"ready",close:"ready",kick:"kick",skick:"kick",rkick:"kick",knee:"kick",tiger:"tiger",horse:"horse",
+  crane:"crane",ogeum:"crane",back:"back",nieun:"back",fixed:"back",walk:"walk",front:"front"};
+let ITFNAMES=false;
+function itfNames(){ITFNAMES=true;Object.assign(CHIPN,{ready:"Narani",front:"Gunnun sogi",back:"Niunja sogi",horse:"Annun sogi",kick:"Apcha busigi",skick:"Yopcha jirugi",crane:"Guburyo sogi",close:"Moa sogi"})}
+const flipLR=s=>s==="L"?"R":"L";
+const chipSide=m=>ITFNAMES&&m.stance==="back"?flipLR(m.lead):m.lead;
+function chip(m){
+  const cls=CHIPCLS[m.stance]||"",nm=CHIPN[m.stance];
+  if(["ready","horse","close"].includes(m.stance))return`<span class="chip ${cls}">${nm}</span>`;
+  return`<span class="chip ${cls}">${chipSide(m)} · ${nm}</span>`;
+}
+function stanceLabel(m){
+  if(m.stance==="ready")return"parallel";
+  if(["kick","skick","rkick","knee"].includes(m.stance))return sideWord(m.lead)+" kick";
+  if(m.stance==="horse"||m.stance==="close")return m.stance;
+  if(ITFNAMES&&m.stance==="front")return sideWord(m.lead)+" walking";
+  if(ITFNAMES&&m.stance==="back")return sideWord(flipLR(m.lead))+" L";
+  if(ITFNAMES&&m.stance==="crane")return sideWord(m.lead)+" bending";
+  return sideWord(m.lead)+({walk:" walking",front:" front",back:" back",tiger:" tiger",cross:" cross",crane:" crane",nieun:" ㄴ-shape",gyeot:" assisting",ogeum:" reverse crane",fixed:" fixed"})[m.stance];
+}
+
+/* Floor simulator (issue #3): where both feet are after every count, worked out from the move data.
+
+   World frame, seen from above with na at the top of the page: x toward da (right), y toward ga (down).
+   Units are foot lengths. You start in naranhi seogi at the origin facing ga.
+
+   For each count the stance (with its lead foot) is placed against one planted foot:
+   - the instruction names the foot that moves ("step back with the right foot", "draw the left foot"),
+     so the other foot is planted; otherwise the planted foot is the one that keeps the step shortest,
+     preferring to move the lead foot;
+   - kicks leave the standing foot planted and put the kicking foot in the air, ahead;
+   - "feet in place", "without stepping" and carried stances move nothing; "pivot in place" turns both
+     feet about the centre; "jump" and "travelling toward …" move both feet;
+   - a move's optional `step` field overrides all of this: {"plant":"L"|"R"|"both"|"none", "move":[forward,right]
+     (both feet shift by this, in foot lengths relative to the facing; implies plant "none"), "horse":"along"
+     (horse stance straddling the line of travel instead of across it)}.
+   Returns one entry per move: {feet:{L,R} (each {p:[x,y], a:angle, air}), prev, moved:[sides], how, pivot}.
+   Usable in the browser (inlined) and in Node (module.exports) for the checks in tools/check/footwork.py. */
+const FW=(()=>{
+const DIRV={na:[0,-1],ga:[0,1],da1:[1,0],da2:[1,0],da3:[1,0],ra1:[-1,0],ra2:[-1,0],ra3:[-1,0],
+  gada:[Math.SQRT1_2,Math.SQRT1_2],nada:[Math.SQRT1_2,-Math.SQRT1_2],gara:[-Math.SQRT1_2,Math.SQRT1_2],nara:[-Math.SQRT1_2,-Math.SQRT1_2]};   // diagonals (Hansu)
+// stance shapes: lead foot relative to the other foot, in the body frame [forward, toward the lead foot's side]
+const SHAPE={ready:[0,.8],close:[0,.42],walk:[1.6,.42],front:[2.7,.85],back:[2.1,0],nieun:[1.1,0],gyeot:[.6,.15],tiger:[1.1,.3],
+  horse:[0,2.4],cross:[.6,-.2],crane:[0,.32]};
+// how far the rear foot turns out (degrees) and which way: outward = away from the lead foot's side
+const TURN={walk:15,front:30,back:90,nieun:90,tiger:30,cross:20,gyeot:20};
+const KICK=new Set(["kick","skick","rkick","knee"]);
+const other=s=>s==="L"?"R":"L";
+const ang=v=>Math.atan2(v[1],v[0]);
+const rot=(v,a)=>[v[0]*Math.cos(a)-v[1]*Math.sin(a),v[0]*Math.sin(a)+v[1]*Math.cos(a)];
+const add=(a,b)=>[a[0]+b[0],a[1]+b[1]],sub=(a,b)=>[a[0]-b[0],a[1]-b[1]],mul=(a,k)=>[a[0]*k,a[1]*k];
+const len=a=>Math.hypot(a[0],a[1]);
+// the person's right, for a facing vector in this frame (x right, y down): facing ga [0,1] -> right is ra [-1,0]
+const rightOf=f=>[-f[1],f[0]];
+
+function said(m){
+  const d=(m.desc||"").toLowerCase();
+  const mv=d.match(/\b(?:step|stepping|steps|slide|sliding|draw|drawing|bring|bringing|move|moving|cross|crossing|set|setting|pull|pulling|stamp|stamping|lift|lifting)\b[^.;:]*?\b(left|right) foot/);
+  const pv=d.match(/pivot(?:ing)? on the (left|right) foot|on the (left|right) foot/);
+  return{
+    moving:mv?(mv[1]==="left"?"L":"R"):null,
+    planted:pv?((pv[1]||pv[2])==="left"?"L":"R"):null,
+    still:/feet in place|without stepping|^hold|holding the stance/.test(d),
+    pivotInPlace:/pivot(?:ing)? in place/.test(d),
+    jump:/\bjump/.test(d),
+    landThen:/\bland(?:s|ing)?\b[^.]*?\bthen\b/.test(d),
+    travel:(d.match(/travell?ing toward (na|ga|da|ra)/)||[])[1]
+  };
+}
+
+// both feet for stance m with foot `plant` fixed at position P (its angle is recomputed)
+function place(m,plant,P,face){
+  const st=m.stance,lead=m.lead||"R",right=rightOf(face);
+  const side=s=>s==="L"?mul(right,-1):right;           // unit vector toward that foot's side of the body
+  const sh=SHAPE[st]||SHAPE.ready;
+  let rel;   // position of the lead foot relative to the other foot
+  const along=st==="horse"&&m.step&&m.step.horse==="along";   // horse stance straddling the line of travel
+  if(along){const Pos={},A={},mv=other(plant);Pos[plant]=P;Pos[mv]=add(P,mul(face,sh[1]));
+    A.L=A.R=ang(face)+Math.PI/2;return{L:{p:Pos.L,a:A.L},R:{p:Pos.R,a:A.R}}}
+  if(st==="ready"||st==="close"||st==="horse")rel=mul(right,sh[1]);           // side by side: R is to the right
+  else rel=add(mul(face,sh[0]),mul(side(lead),sh[1]));
+  const sym=st==="ready"||st==="close"||st==="horse";
+  const A={},Pos={};
+  if(sym){Pos[plant]=P;Pos[other(plant)]=plant==="L"?add(P,rel):sub(P,rel)}
+  else if(plant===lead){Pos[lead]=P;Pos[other(lead)]=sub(P,rel)}
+  else{Pos[other(lead)]=P;Pos[lead]=add(P,rel)}
+  const a0=ang(face);
+  ["L","R"].forEach(s=>{
+    let a=a0;
+    if(!sym&&s!==lead&&TURN[st]){const out=s==="L"?-1:1;a=a0+out*TURN[st]*Math.PI/180}  // rear foot turned out
+    A[s]=a;
+  });
+  return{L:{p:Pos.L,a:A.L},R:{p:Pos.R,a:A.R}};
+}
+
+function simulate(M){
+  const out=[];let cur=null,air=null;
+  M.forEach((m,i)=>{
+    if(m.stance==="ogeum")m={...m,stance:"crane"};   // ogeum seogi stands like crane stance
+    if(m.stance==="fixed")m={...m,stance:"back"};    // ITF gojung sogi (fixed stance): an L-stance with the weight even
+    const face=DIRV[m.dir],S=said(m),st=m.stance,step=m.step||{};
+    let feet,moved=[],how="";
+    if(i===0||!cur){
+      feet=place({stance:st==="ready"||st==="close"?st:"ready",lead:"R"},"L",[.4,0],face);
+      feet.L.p=[.4,0];feet.R.p=[-.4,0];     // facing ga: left foot toward da (+x)
+      cur=feet;out.push({feet,prev:null,moved,how:"start"});return;
+    }
+    const prev={L:{...cur.L},R:{...cur.R}};
+    const centre=mul(add(prev.L.p,prev.R.p),.5);
+    if(KICK.has(st)){
+      // standing foot stays (turning to the kick); the kicking foot is in the air, ahead
+      const k=m.lead||"R",s=other(k),right=rightOf(face);
+      feet={[s]:{p:prev[s].p,a:ang(face)+(st==="skick"||st==="rkick"?(s==="L"?-1:1)*Math.PI/2:0)},
+            [k]:{p:add(add(prev[s].p,mul(face,1.7)),mul(right,k==="R"?.35:-.35)),a:ang(face),air:true}};
+      moved=[k];how=S.jump?"jump kick":"kick";
+      if(S.jump){moved=["L","R"]}
+    }else if(st==="crane"){
+      const s=m.lead||"R",k=other(s);
+      // step.plant naming the lifted foot: the standing foot is brought to it ("bring the right foot to the left foot")
+      const at=m.step&&m.step.plant===k?add(prev[k].p,mul(rightOf(face),k==="R"?-.32:.32)):prev[s].p;
+      feet={[s]:{p:at,a:ang(face)},[k]:{p:add(at,mul(rightOf(face),k==="R"?.32:-.32)),a:ang(face),air:true}};
+      moved=m.step&&m.step.plant===k?[s,k]:[k];how="lift";
+    }else{
+      // candidates: plant either foot where it is, or keep the centre (pivot / jump / travel)
+      const cand=["L","R"].map(pl=>{const fe=place(m,pl,prev[pl].p,face),mv=other(pl);
+        return{fe,plant:pl,cost:len(sub(fe[mv].p,prev[mv].p)),mv}});
+      const inPlace=()=>{const fe=place(m,"L",[0,0],face),c=mul(add(fe.L.p,fe.R.p),.5),d=sub(centre,c);
+        fe.L.p=add(fe.L.p,d);fe.R.p=add(fe.R.p,d);return fe};
+      let pick=null;
+      const sameStance=prev&&out[i-1]&&!out[i-1].feet.L.air&&!out[i-1].feet.R.air&&M[i-1].stance===st&&M[i-1].lead===m.lead&&M[i-1].dir===m.dir;
+      if(step.plant==="both"||((S.still||(sameStance&&!S.moving))&&!S.jump&&!S.travel&&m.carry!==false)){feet=prev;how="hold"}
+      // horse stance turned to a new facing without naming a foot: the body turns about its centre
+      else if(step.plant==="none"||step.move||S.jump||S.travel||S.pivotInPlace||
+              (st==="horse"&&M[i-1].stance==="horse"&&M[i-1].dir!==m.dir&&!S.moving&&!(m.step&&m.step.horse))){
+        feet=inPlace();
+        const shift=step.move?add(mul(face,step.move[0]),mul(rightOf(face),step.move[1]||0)):(S.travel?mul(DIRV[S.travel+(S.travel==="na"||S.travel==="ga"?"":"1")],2.2):S.jump?mul(face,1.4):null);
+        if(shift){feet.L.p=add(feet.L.p,shift);feet.R.p=add(feet.R.p,shift)}
+        moved=["L","R"].filter(s=>len(sub(feet[s].p,prev[s].p))>.15);
+        how=S.jump?"jump":S.travel?"turn and travel":"pivot";
+      }else{
+        if(step.plant)pick=cand.find(c=>c.plant===step.plant);
+        else if(S.moving)pick=cand.find(c=>c.mv===S.moving);
+        else if(S.planted)pick=cand.find(c=>c.plant===S.planted);
+        else{
+          // after a kick the kicking foot lands: the standing foot is planted
+          const wasAir=["L","R"].find(s=>prev[s].air);
+          if(wasAir&&S.landThen){   // "land, then turn …": the kicking foot lands ahead and is the pivot
+            prev[wasAir]={...prev[wasAir],air:false};
+            const fe=place(m,wasAir,prev[wasAir].p,face),mv=other(wasAir);pick={fe,plant:wasAir,mv};
+          }
+          else if(wasAir)pick=cand.find(c=>c.mv===wasAir);
+          else{cand.sort((a,b)=>Math.abs(a.cost-b.cost)>.3?a.cost-b.cost:(a.mv===m.lead?0:1)-(b.mv===m.lead?0:1));pick=cand[0]}  // near-ties: the lead foot steps
+        }
+        feet=pick.fe;moved=[pick.mv].filter(s=>len(sub(feet[s].p,prev[s].p))>.15||prev[s].air);
+        how=moved.length?"step":"pivot";
+      }
+    }
+    const pivot=["L","R"].filter(s=>!moved.includes(s)&&!feet[s].air&&Math.abs(norma(feet[s].a-prev[s].a))>.2);
+    cur={L:{...feet.L},R:{...feet.R}};
+    out.push({feet:cur,prev,moved,how,pivot});
+  });
+  return out;
+}
+function norma(a){while(a>Math.PI)a-=2*Math.PI;while(a<-Math.PI)a+=2*Math.PI;return a}
+return{simulate,DIRV};
+})();
+if(false&&typeof module!=="undefined")module.exports=FW;
+
+/* ---------- drawing (browser only: needs spline/xf/FT/f from figure.js) ----------
+   Top view with na at the top of the page, like the floor plan. */
+const FWDRAW=(()=>{
+  // Z: scale set: u = svg units per foot length, k = footprint size, r = pivot ring, h = arrowhead
+  const GLYPH={u:8.5,k:.78,r:7.5,h:3.6},PLAN={u:12,k:.4,r:3.6,h:2.6};
+  let Z=GLYPH;
+  const foot=(p,a,cls,k=Z.k)=>`<path class="${cls}" d="${spline(xf(FT,[p[0]*Z.u,p[1]*Z.u],a+Math.PI/2,k,k))}"/>`;
+  function arrow(p,q,cls){
+    const A=[p[0]*Z.u,p[1]*Z.u],B=[q[0]*Z.u,q[1]*Z.u],dx=B[0]-A[0],dy=B[1]-A[1],d=Math.hypot(dx,dy),h=Z.h;
+    if(d<h*1.5)return"";
+    const ux=dx/d,uy=dy/d,e=[B[0]-ux*h*1.4,B[1]-uy*h*1.4],s=[A[0]+ux*h,A[1]+uy*h];
+    return`<path class="${cls}" d="M${f(s[0])} ${f(s[1])}L${f(e[0])} ${f(e[1])}"/>`+
+      `<path class="${cls} head" d="M${f(e[0]+ux*h)} ${f(e[1]+uy*h)}L${f(e[0]-uy*h*.7)} ${f(e[1]+ux*h*.7)}L${f(e[0]+uy*h*.7)} ${f(e[1]-ux*h*.7)}Z"/>`;
+  }
+  const ring=(p,cls)=>`<circle class="${cls}" cx="${f(p[0]*Z.u)}" cy="${f(p[1]*Z.u)}" r="${Z.r}"/>`;
+  // one count: previous feet outlined, new feet filled (red = lead / standing foot), the step as an arrow
+  function glyph(sim,i,M){
+    Z=GLYPH;const S=Z.u;
+    const r=sim[i],m=M[i],F=r.feet,P=r.prev||F;
+    const c=[(F.L.p[0]+F.R.p[0]+P.L.p[0]+P.R.p[0])/4,(F.L.p[1]+F.R.p[1]+P.L.p[1]+P.R.p[1])/4];
+    const lead=m.stance==="crane"?m.lead:(m.lead||null);
+    let g="";
+    r.moved.forEach(s=>{if(!P[s].air)g+=foot(P[s].p,P[s].a,"was")});
+    r.moved.forEach(s=>{g+=arrow(P[s].p,F[s].p,"step")});
+    (r.pivot||[]).forEach(s=>{g+=ring(F[s].p,"pivot")});
+    ["L","R"].forEach(s=>{g+=F[s].air?foot(F[s].p,F[s].a,"air"):foot(F[s].p,F[s].a,s===lead?"lead":"other")});
+    const still=i>0&&!r.moved.length&&!(r.pivot||[]).length;   // no step: say so, or the glyph looks like a missing arrow
+    const fv=FW.DIRV[m.dir],t=[fv[0]*27,fv[1]*27];
+    return`<svg class="fp fw" viewBox="-30 -30 60 60" aria-hidden="true"><circle r="29" class="rim"/>`+
+      `<g transform="translate(${f(-c[0]*S)} ${f(-c[1]*S)})">${g}</g>`+
+      (still?`<text class="still" x="0" y="22.5">NO STEP</text>`:"")+
+      `<path class="tick" transform="translate(${f(t[0])} ${f(t[1])}) rotate(${f(Math.atan2(fv[1],fv[0])*180/Math.PI+90)})" d="M0 -3.5L-3.2 2.2H3.2Z"/></svg>`;
+  }
+  // the whole form: every footprint labelled with the counts that stand on it, steps dashed.
+  // Counts with no step (a block then a punch, "feet in place") are added to the label of the feet they stand on.
+  function plan(sim,M){
+    Z=PLAN;const S=Z.u;
+    let xs=[],ys=[];sim.forEach(r=>["L","R"].forEach(s=>{xs.push(r.feet[s].p[0]);ys.push(r.feet[s].p[1])}));
+    const x0=Math.min(...xs)-1.2,x1=Math.max(...xs)+1.2,y0=Math.min(...ys)-1.4,y1=Math.max(...ys)+1.2;
+    let steps="";const spots=[];   // spots: {p,a,ids:[]} one per placed footprint
+    const last={L:null,R:null};
+    sim.forEach((r,i)=>{
+      const P=r.prev;
+      if(i===0){["L","R"].forEach(s=>{last[s]={p:r.feet[s].p,a:r.feet[s].a,ids:[0],start:true};spots.push(last[s])});return}
+      r.moved.forEach(s=>{
+        const q=r.feet[s];
+        if(P&&!P[s].air)steps+=`<g data-i="${i}">${arrow(P[s].p,q.p,"step")}</g>`;
+        if(!q.air){last[s]={p:q.p,a:q.a,ids:[i]};spots.push(last[s])}
+      });
+      (r.pivot||[]).forEach(s=>{steps+=`<g data-i="${i}">${ring(r.feet[s].p,"pivot")}</g>`});
+      // a count with no step (block then punch, "feet in place", a pivot on the spot) is added to the feet it stands on
+      ["L","R"].forEach(s=>{if(!r.moved.length&&!r.feet[s].air&&last[s]&&!last[s].ids.includes(i))last[s].ids.push(i)});
+    });
+    let prints="",labels="";
+    spots.forEach(sp=>{
+      const is=sp.ids.join(" ");
+      prints+=`<g data-is="${is}">${foot(sp.p,sp.a,sp.start?"start":"print")}</g>`;
+      // label: the count that put the foot here, then any no-step counts made on it
+      const names=sp.ids.map(i=>M[i].id==="J"?"준비":M[i].id);
+      const txt=names.length>3?names[0]+"…"+names[names.length-1]:names.join(" ");
+      labels+=`<text data-is="${is}" x="${f(sp.p[0]*S)}" y="${f(sp.p[1]*S-4.6)}">${txt}</text>`;
+    });
+    return`<svg class="fwplan" viewBox="${f(x0*S)} ${f(y0*S)} ${f((x1-x0)*S)} ${f((y1-y0)*S)}" role="img" aria-label="Footwork for the whole form: every footprint, labelled with the counts that stand on it">`+
+      `<text class="nesw" x="${f((x0+x1)/2*S)}" y="${f(y0*S+4)}">NA · 나</text>`+
+      `<g class="steps">${steps}</g><g class="prints">${prints}</g><g class="labels">${labels}</g>`+
+      `<g class="cur"></g></svg>`;
+  }
+  // highlight count i: its step and the footprints it uses in red, the feet you stand on outlined
+  function mark(svg,sim,i){
+    if(!svg)return;Z=PLAN;
+    svg.querySelectorAll("[data-i]").forEach(e=>e.classList.toggle("on",+e.dataset.i===i));
+    svg.querySelectorAll("[data-is]").forEach(e=>{const ids=e.dataset.is.split(" ").map(Number);
+      e.classList.toggle("on",ids[0]===i&&i>0);e.classList.toggle("stand",ids.includes(i)&&!(ids[0]===i&&i>0))});
+    const F=sim[i].feet;
+    svg.querySelector(".cur").innerHTML=["L","R"].filter(s=>!F[s].air).map(s=>foot(F[s].p,F[s].a,"now",.46)).join("");
+  }
+  // one line for the caption under the plan
+  const SIDE={L:"left",R:"right"};
+  function say(sim,i,M){
+    const r=sim[i],m=M[i];
+    if(i===0)return"Ready: feet parallel, one foot-width apart.";
+    if(r.how==="kick"||r.how==="jump kick")return`${r.how==="jump kick"?"Jumping kick":"Kick"} with the ${SIDE[m.lead||"R"]} leg; the ${SIDE[(m.lead||"R")==="L"?"R":"L"]} foot stays planted.`;
+    if(r.how==="lift")return`Stand on the ${SIDE[m.lead]} foot; the ${SIDE[m.lead==="L"?"R":"L"]} foot lifts to the knee.`;
+    if(!r.moved.length)return r.pivot&&r.pivot.length?`No step: pivot on the spot to face ${m.dir.replace(/\d/,"")}.`:"No step: the feet stay where they are; only the arms move.";
+    if(r.moved.length===2)return r.how==="jump"?"Jump: both feet leave the floor and land together.":r.how==="pivot"?"Both feet pivot to the new facing.":"Both feet move (turn and travel).";
+    const mv=r.moved[0],pl=mv==="L"?"R":"L";
+    return`The ${SIDE[mv]} foot ${r.prev[mv].air?"lands":"steps"}; the ${SIDE[pl]} foot stays planted${r.pivot&&r.pivot.includes(pl)?" and pivots":""}.`;
+  }
+  return{glyph,plan,mark,say};
+})();
+
+
+// m: id, dir (line), face (side view R/L), view, stance, lead, arms, tech, side ("bandae"/"baro"), desc
+const M=FORM.moves;
+/* ITF forms (FORM.family "itf"): ITF names, and the ITF direction letters. You start facing D (down the page,
+   like na → ga on the Kukkiwon pages), so C is up, B (your left) is on the right of the page and A on the left. */
+const ITF=FORM.family==="itf";
+/* rows r1/r3 are the A–B line and r5 the far E–F bar (Dan-Gun's I); floor.letters overrides per row: {"r5":["E","F"]} */
+const LET=Object.assign({r1:["A","B"],r3:["A","B"],r5:["E","F"]},(FORM.floor||{}).letters||{});
+if(ITF){itfNames();Object.assign(DIRN,{na:"C",ga:"D",da1:LET.r1[1],da2:LET.r3[1],da3:LET.r5[1],ra1:LET.r1[0],ra2:LET.r3[0],ra3:LET.r5[0],
+    nara:"C"+LET.r5[0],nada:"C"+LET.r5[1],gara:"D"+LET.r5[0],gada:"D"+LET.r5[1]});   // diagonals named as the ITF does: CE, CF …
+  document.querySelector(".compass.n").textContent="C";document.querySelector(".compass.s").textContent="D";
+  ["r1","r3","r5"].forEach(r=>{const b=document.getElementById(r);b.querySelector(".dl.l").textContent=LET[r][0];b.querySelector(".dl.r").textContent=LET[r][1]});
+  document.getElementById("readP").innerHTML="You start at the centre facing <b>D</b>, the bottom of the page, so <b>B</b> (your left) is on the right of the page and <b>A</b> on the left. The ITF books draw the same diagram from behind you, with D at the top. Figures on the left and right are seen from the side; centre figures face you going toward D and show their back going toward C."}
+const CMP=ITF?["C","D"]:["NA · 나","GA · 가"];
+const SIDES=ITF?`<text x="-4" y="31.5">A</text><text x="104" y="31.5">B</text>`:"";
+
+/* ---------- build board ---------- */
+const byId=Object.fromEntries(M.map((m,i)=>[m.id,i]));
+/* ---------- moves where the stance doesn't change (issue #4) ----------
+   A count "carries" its stance when stance, lead foot and facing match the count before it and
+   neither is a kick or the ready stance; "carry": false in the move data turns it off.
+   Three treatments are being compared (?same=a|b|c on the page; FORM.same sets the default):
+     a  carry-over: legs light, a dashed arc from where the moving hand was
+     b  combined card: one figure per stance, earlier counts as light arms, numbered at the hand
+     c  inset strip: the first count in full, later counts as small arm-only thumbnails */
+const KICKS=new Set(["kick","skick","rkick","knee"]);
+const carries=i=>{if(i<1)return false;const a=M[i-1],b=M[i];
+  return b.carry!==false&&!KICKS.has(a.stance)&&!KICKS.has(b.stance)&&a.stance!=="ready"&&a.stance===b.stance&&
+    a.lead===b.lead&&a.dir===b.dir&&a.view===b.view&&a.face===b.face};
+const CARRY=M.map((_,i)=>carries(i));
+const HEAD=M.map((_,i)=>{let h=i;while(CARRY[h])h--;return h});
+const GROUP=i=>M.map((_,j)=>j).filter(j=>HEAD[j]===HEAD[i]);
+/* view options (View bar): URL ?same= / ?footwork win, then the reader's last choice, then the form default */
+const QS=new URLSearchParams(location.search);
+const saved=k=>{try{return localStorage.getItem("vtkd."+k)}catch(e){return null}};
+const save=(k,v)=>{try{localStorage.setItem("vtkd."+k,v)}catch(e){}};
+let SAME=(()=>{const q=QS.get("same"),v=q!==null?q:saved("same");return["a","b","c"].includes(v)?v:(v==="off"?"":(FORM.same||""))})();
+const label=id=>id==="J"?"준비":id;
+/* footwork (issue #3): simulated foot positions; the new glyph and the whole-form plan show with ?footwork (FORM.footwork sets the default) */
+const SIM=FW.simulate(M);
+let FLON=QS.has("floorline")?QS.get("floorline")!=="off":saved("floorline")==="on";
+let FWON=QS.has("footwork")?QS.get("footwork")!=="off":saved("footwork")!==null?saved("footwork")==="on":!!FORM.footwork;
+const fp=i=>FWON?FWDRAW.glyph(SIM,i,M):feet(M[i]);
+// the figure for count i on a card, a slide or the study stage
+function fig(i,where){
+  const m=M[i];
+  if(SAME==="a"&&CARRY[i])return figure(m,{fade:true,from:M[i-1]});
+  if(SAME==="b"){const g=GROUP(i);if(g.length>1){const last=g[g.length-1];
+    return figure(M[last],{ghosts:g.slice(0,-1).map(j=>M[j]),badges:g.map(j=>({m:M[j],label:M[j].id,on:where!=="card"&&j===i}))})}}
+  if(SAME==="c"&&CARRY[i]&&where==="card")return figure(m,{crop:true});
+  return figure(m);
+}
+function card(id){
+  const i=byId[id],m=M[i];
+  if(SAME==="b"&&CARRY[i])return"";                    // drawn on its group's card
+  if(SAME==="c"&&CARRY[i])return`<button class="fig mini" data-i="${i}" type="button" aria-label="Move ${id}: ${T[m.tech][2]}, same stance">
+    <span class="no">${id}</span>${fig(i,"card")}<span class="tech">${T[m.tech][0]}</span><span class="en">${T[m.tech][2]}</span><span class="same">same stance</span></button>`;
+  if(SAME==="b"&&GROUP(i).length>1){const g=GROUP(i);
+    return`<button class="fig combo" data-i="${i}" data-g="${g.join(" ")}" type="button" aria-label="Moves ${g.map(j=>M[j].id).join(", ")}: ${g.map(j=>T[M[j].tech][2]).join(", then ")}, ${stanceLabel(m)} stance">
+    <span class="no">${g.map(j=>label(M[j].id)).join(" · ")}</span>${fp(i)}${fig(i,"card")}
+    <span class="tech">${g.map(j=>T[M[j].tech][0]).join(" · ")}</span><span class="en">${g.map(j=>T[M[j].tech][2]).join(" · ")}</span>${chip(m)}${g.some(j=>M[j].kihap)?'<span class="kh">기합 KIHAP</span>':""}</button>`}
+  return`<button class="fig" data-i="${i}" type="button" aria-label="Move ${id}: ${T[m.tech][2]}, ${stanceLabel(m)} stance">
+    <span class="no">${label(id)}</span>${fp(i)}${fig(i,"card")}
+    <span class="tech">${T[m.tech][0]}</span><span class="en">${T[m.tech][2]}</span>${chip(m)}${SAME==="a"&&CARRY[i]?'<span class="same">same stance</span>':""}${m.kihap?'<span class="kh">기합 KIHAP</span>':""}</button>`;
+}
+const pair=ids=>`<div class="pair">${ids.map(card).join("")}</div>`;
+/* Floor shape. Default is the Taegeuk 王: three full bars joined by the centre line.
+   FORM.floor can change it for other forms (士 山 工 十):
+     bars:  {r1|r3|r5: "full" | "fit" (line only under its figures) | "noline" | "ends" (no line, groups at both ends) | "fit hookl" / "fit hookr" (short bar from the centre line out to one side) | "gone" (row removed)}
+     rail:  [from, to] rows joined by the centre line (default ["r1","r5"])
+     prongs:[{at:"c2l", from:"r1"}]  extra vertical lines down to side groups c2l/c2r/c4l/c4r
+     spokes:[{from:"r3", to:"r1", g:0}]  diagonal lines (水) from the centre of row `from` (its top or bottom edge) to the g-th group of row `to`, or to a side group ({from:"r5", to:"c4l"})
+     notesBelow: move the four side notes under the board so the middle rows can hold figures
+     spots: one-line floors (一): layout.r1 lists the spots on the line from ra to da; each spot is a column
+            of the counts made there, the first on the line, the rest below it, all other rows removed
+     map:   minimap path on the 100×60 grid */
+const FL=FORM.floor||{};
+const LAYOUT={};["r1","r3","r5"].forEach(r=>{if(FORM.layout[r])LAYOUT[r]=FORM.layout[r]});
+["r1","r3","r5"].forEach(r=>{const b=(FL.bars||{})[r];if(b&&b!=="full")document.getElementById(r).classList.add(...b.split(" "))});
+if(FL.notesBelow){
+  const box=document.getElementById("notes");["nForm","nLegend","nBelt","nRead"].forEach(id=>box.appendChild(document.getElementById(id)));box.hidden=false;
+  [["r2","c2"],["r4","c4"]].forEach(([r,c])=>{const el=document.getElementById(r);
+    el.insertAdjacentHTML("afterbegin",`<div class="pair side l" id="${c}l"></div>`);el.insertAdjacentHTML("beforeend",`<div class="pair side r" id="${c}r"></div>`)});
+}
+if(FL.spots)["r2","r3","r4","r5"].forEach(r=>document.getElementById(r).classList.add("gone"));
+function build(){
+  if(FL.spots){const el=document.getElementById("r1");el.querySelectorAll(".fig,.pair,.spot").forEach(n=>n.remove());
+    el.insertAdjacentHTML("beforeend",LAYOUT.r1.map(g=>`<div class="spot${g.length<2?" one":""}">${g.map(card).join("")}</div>`).join(""))}
+  else for(const r in LAYOUT){
+    const el=document.getElementById(r);
+    el.querySelectorAll(".fig,.pair").forEach(n=>n.remove());
+    el.insertAdjacentHTML("beforeend",LAYOUT[r].map(x=>Array.isArray(x)?pair(x):card(x)).join(""));
+  }
+  ["c2","c4","c2l","c2r","c4l","c4r"].forEach(c=>{const el=document.getElementById(c);if(el)el.innerHTML=(FORM.layout[c]||[]).map(card).join("")});
+  document.querySelectorAll(".fig").forEach(b=>b.addEventListener("click",()=>{stop();show(+b.dataset.i)}));
+  buildSlides();
+  placeRail();
+  show(cur,"init");
+}
+function placeRail(){
+  const board=document.getElementById("board"),B=board.getBoundingClientRect();
+  if(!B.width)return;
+  const fh=parseFloat(getComputedStyle(board).getPropertyValue("--fig-h"))||150,off=20+fh*.956;
+  // the floor line through a row sits at the figures' feet
+  const lineY=id=>document.getElementById(id).getBoundingClientRect().top-B.top+off;
+  const[from,to]=FL.rail||["r1","r5"],rail=document.getElementById("rail");
+  rail.style.top=lineY(from)+"px";rail.style.height=(lineY(to)-lineY(from))+"px";
+  // short bars: the line spans only the figures on it
+  board.querySelectorAll(".bar.fit").forEach(bar=>{
+    const R=bar.getBoundingClientRect(),kids=[...bar.children].filter(n=>!n.classList.contains("dl"));
+    if(!kids.length)return;
+    const l=kids[0].getBoundingClientRect().left-R.left-34,r=R.right-kids[kids.length-1].getBoundingClientRect().right-34;
+    bar.style.setProperty("--bl",l+"px");bar.style.setProperty("--br",r+"px");
+    bar.querySelector(".dl.l").style.left=(l-16)+"px";bar.querySelector(".dl.r").style.right=(r-16)+"px";
+  });
+  board.querySelectorAll(".prong,.spoke").forEach(n=>n.remove());
+  (FL.spokes||[]).forEach(sp=>{
+    const T=document.getElementById(sp.to),el=T&&(T.classList.contains("side")?T:T.querySelectorAll(".pair")[sp.g]);if(!el||!el.children.length)return;   // a row's g-th group, or a side group (c4l …)
+    // start at the edge of the centre row (above its heads or below its labels) so the spoke never crosses its figures
+    const F=document.getElementById(sp.from).getBoundingClientRect(),up=lineY(sp.to)<lineY(sp.from);
+    const R=el.getBoundingClientRect(),x0=B.width/2,y0=(up?F.top:F.bottom)-B.top,x1=R.left+R.width/2-B.left,y1=(up?R.bottom:R.top)-B.top;
+    const len=Math.hypot(x1-x0,y1-y0),ang=Math.atan2(y1-y0,x1-x0)*180/Math.PI;
+    board.insertAdjacentHTML("beforeend",`<div class="spoke" style="left:${x0}px;top:${y0}px;width:${len}px;transform:rotate(${ang}deg)"></div>`);
+  });
+  (FL.prongs||[]).forEach(pg=>{
+    const el=document.getElementById(pg.at);if(!el||!el.children.length)return;
+    const R=el.getBoundingClientRect(),x=R.left+R.width/2-B.left,y0=lineY(pg.from),y1=lineY(pg.at);
+    board.insertAdjacentHTML("beforeend",`<div class="prong" style="left:${x}px;top:${Math.min(y0,y1)}px;height:${Math.abs(y1-y0)}px"></div>`);   // up or down
+  });
+}
+
+/* View bar: same-stance treatment and footwork, switched in place */
+const viewbar=document.getElementById("viewbar");
+function paintView(){
+  viewbar.querySelectorAll("[data-same]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.same===SAME));
+  viewbar.querySelectorAll("[data-fw]").forEach(b=>b.setAttribute("aria-pressed",(b.dataset.fw==="on")===FWON));
+  viewbar.querySelectorAll("[data-fl]").forEach(b=>b.setAttribute("aria-pressed",(b.dataset.fl==="on")===FLON));
+  document.getElementById("flsec").hidden=!FLON;
+  const sec=document.getElementById("fwsec");sec.hidden=!FWON;
+  if(FWON&&!sec.querySelector("svg.fwplan"))document.getElementById("fwbox").innerHTML=FWDRAW.plan(SIM,M);
+}
+viewbar.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.same!==undefined){SAME=b.dataset.same;save("same",SAME||"off")}
+  if(b.dataset.fw!==undefined){FWON=b.dataset.fw==="on";save("footwork",FWON?"on":"off")}
+  if(b.dataset.fl!==undefined){FLON=b.dataset.fl==="on";save("floorline",FLON?"on":"off")}
+  const q=new URLSearchParams(location.search);["same","footwork","floorline"].forEach(k=>q.delete(k));   // the bar now owns these
+  history.replaceState(null,"",location.pathname+(q.toString()?"?"+q:"")+location.hash);
+  paintView();build();});
+document.getElementById("fwsec").addEventListener("click",e=>{const t=e.target.closest("[data-i],[data-is]");
+  if(t&&t.closest("svg")){stop();show(+(t.dataset.i??t.dataset.is.split(" ").pop()))}});
+document.getElementById("fwprev").addEventListener("click",()=>{stop();show(cur-1)});
+document.getElementById("fwnext").addEventListener("click",()=>{stop();show(cur+1)});
+document.getElementById("fwplay").addEventListener("click",togglePlay);
+document.getElementById("flprev").addEventListener("click",()=>{stop();show(cur-1)});
+document.getElementById("flnext").addEventListener("click",()=>{stop();show(cur+1)});
+document.getElementById("flplay").addEventListener("click",togglePlay);
+document.getElementById("flsec").addEventListener("click",e=>{const t=e.target.closest("[data-i]");if(t&&t.closest("svg")){stop();show(+t.dataset.i)}});
+paintView();
+/* legend + belts + style */
+document.getElementById("legend").innerHTML=ITF?
+  (M.some(x=>x.stance==="front")?feet({dir:"na",stance:"front",lead:"L"})+`<p><b>Gunnun sogi</b> · walking stance. About 1½ shoulder widths long and one wide, front knee bent over the heel, rear leg straight. Named by the front foot.</p>`:"")+
+  (M.some(x=>x.stance==="back")?feet({dir:"na",stance:"back",lead:"L"})+`<p><b>Niunja sogi</b> · L-stance. Feet at right angles, about 1½ shoulder widths apart, most of the weight on the bent rear leg. Named by the rear foot: this one, left foot forward, is a right L-stance.</p>`:"")+
+  (M.some(x=>x.stance==="fixed")?feet({dir:"na",stance:"fixed",lead:"L"})+`<p><b>Gojung sogi</b> · fixed stance. Like the L-stance but a little longer, weight even on both legs. Named by the front foot.</p>`:"")+
+  (M.some(x=>x.stance==="crane")?feet({dir:"na",stance:"crane",lead:"R"})+`<p><b>Guburyo sogi</b> · bending stance. Stand on the bent red leg, the other foot lifted beside its knee, ready to kick. Named by the standing leg.</p>`:"")+
+  `<span></span><p style="font-size:12px">Red foot leads; the blue tick is the direction you face. Walking-stance chips are filled; L-stance chips have a double outline. Directions are the ITF letters: you start facing D, with B on your left and A on your right.</p>`:
+  feet({dir:"na",stance:"walk",lead:"L"})+`<p><b>Ap seogi</b> · walking stance. One natural step, feet almost in line.</p>`+
+  feet({dir:"na",stance:"front",lead:"L"})+`<p><b>Ap kubi</b> · front stance. About 1½ steps long, one fist wide, front knee bent.</p>`+
+  (M.some(x=>x.stance==="back")?feet({dir:"na",stance:"back",lead:"L"})+`<p><b>Dwit kubi</b> · back stance. Heels in line, rear foot turned out, weight on the bent rear leg.</p>`:"")+
+  (M.some(x=>x.stance==="tiger")?feet({dir:"na",stance:"tiger",lead:"L"})+`<p><b>Beom seogi</b> · tiger stance. Short, front foot on the ball, weight on the bent rear leg.</p>`:"")+
+  (M.some(x=>x.stance==="nieun")?feet({dir:"na",stance:"nieun",lead:"L"})+`<p><b>Nieunja seogi</b> · ㄴ-shaped stance. Feet at right angles, about one foot apart, knees slightly bent.</p>`:"")+
+  (M.some(x=>x.stance==="gyeot")?feet({dir:"na",stance:"gyeot",lead:"L"})+`<p><b>Gyeotdari seogi</b> · assisting stance. Rear foot close behind the front heel, rear knee bent in behind the front knee.</p>`:"")+
+  (M.some(x=>x.stance==="ogeum")?feet({dir:"na",stance:"ogeum",lead:"R"})+`<p><b>Ogeum seogi</b> · reverse crane stance. Stand on the red foot; the other instep presses into the back of the standing knee.</p>`:"")+
+  (M.some(x=>x.stance==="horse")?feet({dir:"na",stance:"horse"})+`<p><b>Juchum seogi</b> · horse stance. Feet wide and parallel, knees bent and pushed out.</p>`:"")+
+  (M.some(x=>x.stance==="crane")?feet({dir:"na",stance:"crane",lead:"R"})+`<p><b>Hakdari seogi</b> · crane stance. Stand on the red foot; the other foot rests against the standing knee. Named for the standing leg.</p>`:"")+
+  feet({dir:"na",stance:"kick",lead:"R"})+`<p><b>Ap chagi</b> · front kick from the rear leg.</p>`+
+  `<span></span><p style="font-size:12px">Red foot leads; the blue tick is the direction you face. Front-stance chips are filled.${M.some(x=>x.stance==="back")?" Back-stance chips have a double outline.":""}</p>`;
+const beltEls=[document.getElementById("belts"),document.getElementById("mbelts")];
+beltEls.forEach(el=>{
+  el.innerHTML=Object.entries(BELTS).map(([k,v])=>`<button type="button" style="background:${v}" aria-label="${k} belt" aria-pressed="${k===belt}" data-b="${k}"></button>`).join("");
+  el.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;belt=b.dataset.b;
+    beltEls.forEach(x=>x.querySelectorAll("button").forEach(y=>y.setAttribute("aria-pressed",y.dataset.b===belt)));build();});
+});
+
+/* table */
+const rows=document.getElementById("rows");
+rows.innerHTML=M.map((m,i)=>{
+  const st=STANCE[m.stance],te=T[m.tech];
+  const stTxt=["ready","horse","close"].includes(m.stance)?`${st[0]} <span class="ko">${st[1]}</span>`:
+    ["kick","skick","rkick","knee"].includes(m.stance)?`${sideWord(m.lead)} leg <span class="ko">${st[1]}</span>`:
+    `${sideWord(chipSide(m))} ${st[0].toLowerCase()} <span class="ko">${st[1]}</span>`;
+  return `<tr data-i="${i}"><td class="n">${m.id==="J"?"—":m.id}</td><td>${DIRN[m.dir]}</td><td><a class="lib" href="${stanceHref(m.stance)}">${stTxt}</a></td><td><a class="lib" href="${techHref(m.tech)}">${te[0]}</a>${m.note?` (${m.note})`:""} <span class="ko">${te[1]}</span></td><td>${m.desc}</td></tr>`}).join("");
+rows.addEventListener("click",e=>{const r=e.target.closest("tr");if(r&&!e.target.closest("a")){stop();show(+r.dataset.i);(carouselOn()?track:document.getElementById("stage")).scrollIntoView({behavior:"smooth",block:"center"})}});
+
+/* mini floor map for the carousel: the 王 line with every position on it */
+const POS=FORM.pos;
+const ROT={na:-90,ga:90,da1:0,da2:0,da3:0,ra1:180,ra2:180,ra3:180,gada:45,nada:-45,gara:135,nara:-135};
+function minimap(i){
+  const m=M[i],[x,y]=POS[m.id];
+  let trail="";for(let k=0;k<i;k++){const p=POS[M[k].id];trail+=`<circle cx="${p[0]}" cy="${p[1]}" r="2" fill="var(--heaven)" opacity=".45"/>`}
+  return`<svg class="minimap" viewBox="0 0 100 60" aria-hidden="true">
+    <path d="${FL.map||"M4 8H96M4 30H96M4 52H96M50 8V52"}" stroke="var(--line)" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+    <text x="50" y="4" font-size="5.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono,monospace">${ITF?"C":"na"}</text>
+    ${trail}<circle cx="${x}" cy="${y}" r="6" fill="var(--fire)" opacity=".18"/><circle cx="${x}" cy="${y}" r="3.4" fill="var(--fire)"/>
+    <path d="M${x} ${y} l9 0" transform="rotate(${ROT[m.dir]} ${x} ${y})" stroke="var(--fire)" stroke-width="1.6" stroke-linecap="round"/>
+  </svg>`;
+}
+/* the large floor line (View bar → Floor line): the path so far on the form's floor shape, the newest leg drawn in */
+function floorline(i){
+  const m=M[i],[x,y]=POS[m.id],pts=M.slice(0,i+1).map(k=>POS[k.id]);
+  const dots=M.map((k,j)=>{const[px,py]=POS[k.id];return`<circle data-i="${j}" cx="${px}" cy="${py}" r="${j<=i?1.7:1.3}" class="${j<=i?"been":"todo"}"><title>${k.id==="J"?"Ready":"Move "+k.id}</title></circle>`}).join("");
+  const done=pts.length>1?`<path class="trail" d="M${pts.slice(0,-1).map(p=>p.join(" ")).join(" L")}"/>`:"";
+  const prev=i>0?POS[M[i-1].id]:null,last=prev&&(prev[0]!==x||prev[1]!==y)?`<path class="leg" pathLength="1" d="M${prev.join(" ")} L${x} ${y}"/>`:"";
+  return`<svg class="flplan" viewBox="-8 -8 116 76" role="img" aria-label="Floor line, move ${m.id} of the form">
+    <path class="floor" d="${FL.map||"M4 8H96M4 30H96M4 52H96M50 8V52"}"/>
+    <text x="50" y="-2.5">${CMP[0]}</text><text x="50" y="64.5">${CMP[1]}</text>${SIDES}
+    ${done}${last}<g class="dots">${dots}</g>
+    <circle cx="${x}" cy="${y}" r="5.2" class="halo"/><circle cx="${x}" cy="${y}" r="3.1" class="you"/>
+    <path d="M${x} ${y} l7.5 0" transform="rotate(${ROT[m.dir]} ${x} ${y})" class="face"/>
+    <text class="id" x="${x}" y="${y-7.2}">${m.id==="J"?"준비":m.id}</text></svg>`;
+}
+function slide(i){
+  const m=M[i],te=T[m.tech],st=STANCE[m.stance];
+  return`<div class="slide" role="group" aria-roledescription="slide" aria-label="${m.id==="J"?"Ready":"Move "+m.id}, ${i+1} of ${M.length}"><div class="sc">
+    <div class="sc-head"><div class="sc-no">${m.id==="J"?"READY":"MOVE"} · FACING ${DIRN[m.dir].toUpperCase()}<b>${m.id==="J"?"준비":m.id}</b></div>${minimap(i)}</div>
+    <div class="sc-fig">${fig(i,"slide")}${fp(i)}</div>
+    <h3><a class="lib" href="${techHref(m.tech)}">${te[0]}</a> <span>${te[1]}</span></h3>
+    <div class="en">${te[2]}${m.note?" · "+m.note:""}</div>
+    <div class="row"><a class="chiplink" href="${stanceHref(m.stance)}" aria-label="${st[2]}: stance details">${chip(m)}</a><span class="ko" style="color:var(--muted);font-size:13px">${st[1]}</span>${m.kihap?'<span class="kh" style="margin:0">기합 KIHAP</span>':""}</div>
+    <p>${m.desc}</p>
+  </div></div>`;
+}
+const track=document.getElementById("track");
+let progScroll=false,progTimer=null;
+function buildSlides(){track.innerHTML=M.map((_,i)=>slide(i)).join("");track.scrollLeft=cur*track.clientWidth}
+const carouselOn=()=>getComputedStyle(document.querySelector(".carousel")).display!=="none";
+function goSlide(i){
+  if(!carouselOn())return;
+  progScroll=true;clearTimeout(progTimer);
+  const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  track.scrollTo({left:i*track.clientWidth,behavior:reduce?"auto":"smooth"});
+  progTimer=setTimeout(()=>progScroll=false,700);
+}
+track.addEventListener("scroll",()=>{
+  if(progScroll)return;
+  clearTimeout(track._t);
+  track._t=setTimeout(()=>{const i=Math.round(track.scrollLeft/track.clientWidth);if(i!==cur){stop();show(i,"swipe")}},90);
+});
+track.addEventListener("scrollend",()=>{progScroll=false});
+
+/* study panel */
+let cur=0,timer=null;
+function show(i,src){
+  cur=(i+M.length)%M.length;const m=M[cur];
+  if(src!=="swipe")goSlide(cur);
+  document.getElementById("cpos").textContent=`${cur+1} / ${M.length}`;
+  document.getElementById("cbar").style.width=((cur+1)/M.length*100)+"%";
+  document.querySelectorAll(".fig").forEach(b=>b.classList.toggle("on",b.dataset.g?b.dataset.g.split(" ").includes(String(cur)):+b.dataset.i===cur));
+  rows.querySelectorAll("tr").forEach(r=>r.classList.toggle("on",+r.dataset.i===cur));
+  document.getElementById("stage").innerHTML=fig(cur,"stage")+fp(cur);
+  if(FLON){document.getElementById("flbox").innerHTML=floorline(cur);
+    document.getElementById("flcap").innerHTML=`<b>${m.id==="J"?"Ready":"Move "+m.id}</b> · facing ${DIRN[m.dir]} · ${T[m.tech][0]} <span style="color:var(--muted)">${T[m.tech][2]}</span>`;
+    document.getElementById("flbar").style.width=(cur/(M.length-1)*100)+"%";}
+  if(FWON){FWDRAW.mark(document.querySelector("#fwsec svg.fwplan"),SIM,cur);
+    document.getElementById("fwcap").innerHTML=`<b>${m.id==="J"?"Ready":"Move "+m.id}</b> · ${FWDRAW.say(SIM,cur,M)}`;
+    document.getElementById("fwbar").style.width=(cur/(M.length-1)*100)+"%";}
+  document.getElementById("kicker").textContent=(m.id==="J"?"READY":"MOVE "+m.id)+"  ·  FACING "+DIRN[m.dir].toUpperCase();
+  const te=T[m.tech],st=STANCE[m.stance];
+  document.getElementById("name").innerHTML=`<a class="lib" href="${techHref(m.tech)}">${te[0]}</a> <span style="font-weight:400;color:var(--muted)">${te[1]}</span><small>${te[2]}${m.note?" · "+m.note:""}</small>`;
+  document.getElementById("facts").innerHTML=
+    `<div><small>Stance</small><b><a class="lib" href="${stanceHref(m.stance)}">${["ready","kick","skick","rkick","knee","horse","close"].includes(m.stance)?st[0]:sideWord(chipSide(m))+" "+st[0].toLowerCase()}</a> · ${st[1]}</b></div>`+
+    (m.hand?`<div><small>${m.foot?"Kicking leg":"Hand"}</small><b>${sideWord(m.hand)}</b></div>`:"")+
+    `<div><small>Line</small><b>${DIRN[m.dir]}</b></div>`+(m.kihap?`<div><small>Shout</small><b style="color:var(--fire)">Kihap 기합</b></div>`:"");
+  document.getElementById("desc").textContent=m.desc;
+  document.getElementById("more").href=techHref(m.tech);
+  document.getElementById("bar").style.width=(cur/(M.length-1)*100)+"%";
+}
+function stop(){clearInterval(timer);timer=null;["play","mplay","fwplay","flplay"].forEach(id=>document.getElementById(id).textContent="Play the form")}
+function togglePlay(){
+  if(timer){stop();return}
+  if(cur===M.length-1)show(0);
+  ["play","mplay","fwplay","flplay"].forEach(id=>document.getElementById(id).textContent="Pause");
+  timer=setInterval(()=>{if(cur>=M.length-1){stop();return}show(cur+1)},1900);
+}
+document.getElementById("play").addEventListener("click",togglePlay);
+document.getElementById("mplay").addEventListener("click",togglePlay);
+document.getElementById("mprev").addEventListener("click",()=>{stop();show(cur-1)});
+document.getElementById("mnext").addEventListener("click",()=>{stop();show(cur+1)});
+
+/* phone view: move-by-move carousel or the full floor plan */
+document.body.dataset.mview="swipe";
+const mt=document.querySelector(".mtoggle");
+mt.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;document.body.dataset.mview=b.dataset.v;
+  mt.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+  if(b.dataset.v==="swipe")requestAnimationFrame(()=>{track.scrollLeft=cur*track.clientWidth});else placeRail();});
+document.getElementById("prev").addEventListener("click",()=>{stop();show(cur-1)});
+document.getElementById("next").addEventListener("click",()=>{stop();show(cur+1)});
+document.addEventListener("keydown",e=>{if(e.target.closest("input,textarea"))return;if(e.key==="ArrowRight"){stop();show(cur+1)}if(e.key==="ArrowLeft"){stop();show(cur-1)}});
+window.addEventListener("resize",()=>{placeRail();progScroll=true;track.scrollLeft=cur*track.clientWidth;setTimeout(()=>progScroll=false,100)});
+document.fonts&&document.fonts.ready.then(placeRail);
+// deep links from the technique library: /taegeuk/1/#move-8-2 opens that move
+function fromHash(){const h=location.hash.match(/^#move-(.+)$/),i=h?byId[decodeURIComponent(h[1])]:undefined;
+  if(i===undefined)return false;stop();show(i);
+  if(!carouselOn())document.querySelector(".study").scrollIntoView({block:"center"});return true}
+window.addEventListener("hashchange",fromHash);
+build();
+fromHash();
+})();
+</script>
+
+</body>
+</html>

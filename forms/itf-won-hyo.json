@@ -1,0 +1,664 @@
+{
+ "slug": "itf/won-hyo",
+ "pdf": "won-hyo-print.pdf",
+ "family": "itf",
+ "title": "Won-Hyo",
+ "ko": "원효",
+ "symbol": {
+  "name": "Won-Hyo",
+  "hanja": "元曉",
+  "meaning": "The monk Wonhyo · ITF pattern 4 of 24"
+ },
+ "movements": 28,
+ "note": {
+  "h": "I · Won-Hyo · the monk",
+  "p": "Won-Hyo was the monk who brought Buddhism to the Silla court in 686. The diagram is I. You start feet together in the middle of the A–B line facing D: twin forearm blocks, inward knife-hand strikes and side punches to B and A; a bending ready stance and side kick down the stem, three knife-hand guarding blocks and a fingertip thrust; the same block, strike and punch to E and F; then back up toward C with circular blocks, low kicks and punches, a second side kick, and two forearm guarding blocks where you began."
+ },
+ "footer": "Move numbers follow the ITF Encyclopedia count (28 movements, one technique each). Directions use the ITF letters: you start facing D, with B on your left and A on your right; E and F are the ends of the far line. Finish by bringing the right foot back to close ready stance A.",
+ "boardMin": 1340,
+ "floor": {
+  "glyph": "I",
+  "bars": {
+   "r3": "gone"
+  },
+  "notesBelow": true,
+  "map": "M8 8H92M50 8V52M8 52H92"
+ },
+ "layout": {
+  "r1": [
+   [
+    "28"
+   ],
+   [
+    "6",
+    "5",
+    "4"
+   ],
+   [
+    "J"
+   ],
+   [
+    "1",
+    "2",
+    "3"
+   ],
+   [
+    "27"
+   ]
+  ],
+  "c2": [
+   "7",
+   "8",
+   "9",
+   "10",
+   "11",
+   "12"
+  ],
+  "c4": [
+   "19",
+   "20",
+   "21",
+   "22",
+   "23",
+   "24",
+   "25",
+   "26"
+  ],
+  "r5": [
+   [
+    "15",
+    "14",
+    "13"
+   ],
+   [
+    "16",
+    "17",
+    "18"
+   ]
+  ]
+ },
+ "pos": {
+  "J": [
+   50,
+   8
+  ],
+  "1": [
+   55.9,
+   8
+  ],
+  "2": [
+   55.9,
+   8
+  ],
+  "3": [
+   61.2,
+   8
+  ],
+  "4": [
+   43.2,
+   8
+  ],
+  "5": [
+   43.2,
+   8
+  ],
+  "6": [
+   37.9,
+   8
+  ],
+  "7": [
+   50,
+   8
+  ],
+  "8": [
+   50,
+   11.4
+  ],
+  "9": [
+   50,
+   12.2
+  ],
+  "10": [
+   50,
+   20.6
+  ],
+  "11": [
+   50,
+   29.0
+  ],
+  "12": [
+   50,
+   38.6
+  ],
+  "13": [
+   27.3,
+   52
+  ],
+  "14": [
+   27.3,
+   52
+  ],
+  "15": [
+   21.9,
+   52
+  ],
+  "16": [
+   39.9,
+   52
+  ],
+  "17": [
+   39.9,
+   52
+  ],
+  "18": [
+   45.3,
+   52
+  ],
+  "19": [
+   50,
+   38.4
+  ],
+  "20": [
+   50,
+   29.6
+  ],
+  "21": [
+   50,
+   27.6
+  ],
+  "22": [
+   50,
+   27.6
+  ],
+  "23": [
+   50,
+   18.8
+  ],
+  "24": [
+   50,
+   16.8
+  ],
+  "25": [
+   50,
+   11.4
+  ],
+  "26": [
+   50,
+   8
+  ],
+  "27": [
+   45.1,
+   8
+  ],
+  "28": [
+   27.1,
+   8
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "ga",
+   "view": "front",
+   "stance": "close",
+   "arms": {
+    "L": "cover",
+    "R": "cover"
+   },
+   "tech": "moajunbia",
+   "desc": "Stand at the centre of the A–B line facing D in close ready stance A: feet together, the left hand wrapped over the right fist in front of the body."
+  },
+  {
+   "id": "1",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk",
+    "R": "twinhigh"
+   },
+   "tech": "sangpalmok",
+   "desc": "Turn left: move the left foot to B into a right L-stance facing B (left foot forward, weight on the right leg). Twin forearm block."
+  },
+  {
+   "id": "2",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "R": "neck",
+    "L": "xshoulder"
+   },
+   "tech": "neck",
+   "desc": "In the same stance, right knife-hand high inward strike, the left fist drawn back in front of the right shoulder."
+  },
+  {
+   "id": "3",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "fixed",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "sidepunch",
+   "carry": false,
+   "step": {
+    "move": [
+     0.6,
+     0
+    ]
+   },
+   "desc": "Slip the left foot forward toward B into a left fixed stance. Left middle side punch."
+  },
+  {
+   "id": "4",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk",
+    "L": "twinhigh"
+   },
+   "tech": "sangpalmok",
+   "step": {
+    "move": [
+     2.0,
+     0
+    ]
+   },
+   "desc": "Bring the left foot to the right foot, then move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Twin forearm block."
+  },
+  {
+   "id": "5",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "L": "neck",
+    "R": "xshoulder"
+   },
+   "tech": "neck",
+   "desc": "In the same stance, left knife-hand high inward strike, the right fist drawn back in front of the left shoulder."
+  },
+  {
+   "id": "6",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "fixed",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "sidepunch",
+   "carry": false,
+   "step": {
+    "move": [
+     0.6,
+     0
+    ]
+   },
+   "desc": "Slip the right foot forward toward A into a right fixed stance. Right middle side punch."
+  },
+  {
+   "id": "7",
+   "dir": "ga",
+   "view": "side",
+   "face": "L",
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "sideblk",
+    "R": "guard"
+   },
+   "tech": "guburyoa",
+   "step": {
+    "plant": "L"
+   },
+   "desc": "Bring the right foot to the left foot and turn the head to face D, standing on the bent right leg with the left foot lifted beside the knee, side-on to D: right bending ready stance A, arms in the forearm guarding position."
+  },
+  {
+   "id": "8",
+   "dir": "ga",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "desc": "Left middle side piercing kick toward D."
+  },
+  {
+   "id": "9",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "desc": "Set the left foot down toward D into a right L-stance facing D (left foot forward, weight on the right leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "10",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "ksblock",
+   "desc": "Step the right foot forward toward D into a left L-stance (right foot forward, weight on the left leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "11",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "desc": "Step the left foot forward toward D into a right L-stance (left foot forward). Knife-hand middle guarding block."
+  },
+  {
+   "id": "12",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "spear",
+    "L": "press"
+   },
+   "tech": "spear",
+   "kihap": true,
+   "desc": "Step the right foot forward toward D into a right walking stance. Right straight fingertip middle thrust, the left hand under the right elbow, with a kihap."
+  },
+  {
+   "id": "13",
+   "dir": "ra3",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk",
+    "R": "twinhigh"
+   },
+   "tech": "sangpalmok",
+   "desc": "Turn 270° to the left: move the left foot round to E into a right L-stance facing E (left foot forward, weight on the right leg). Twin forearm block."
+  },
+  {
+   "id": "14",
+   "dir": "ra3",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "R": "neck",
+    "L": "xshoulder"
+   },
+   "tech": "neck",
+   "desc": "In the same stance, right knife-hand high inward strike, the left fist drawn back in front of the right shoulder."
+  },
+  {
+   "id": "15",
+   "dir": "ra3",
+   "view": "side",
+   "face": "L",
+   "stance": "fixed",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "sidepunch",
+   "carry": false,
+   "step": {
+    "move": [
+     0.6,
+     0
+    ]
+   },
+   "desc": "Slip the left foot forward toward E into a left fixed stance. Left middle side punch."
+  },
+  {
+   "id": "16",
+   "dir": "da3",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk",
+    "L": "twinhigh"
+   },
+   "tech": "sangpalmok",
+   "step": {
+    "move": [
+     2.0,
+     0
+    ]
+   },
+   "desc": "Bring the left foot to the right foot, then move the right foot to F into a left L-stance facing F (right foot forward, weight on the left leg). Twin forearm block."
+  },
+  {
+   "id": "17",
+   "dir": "da3",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "L": "neck",
+    "R": "xshoulder"
+   },
+   "tech": "neck",
+   "desc": "In the same stance, left knife-hand high inward strike, the right fist drawn back in front of the left shoulder."
+  },
+  {
+   "id": "18",
+   "dir": "da3",
+   "view": "side",
+   "face": "R",
+   "stance": "fixed",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "sidepunch",
+   "carry": false,
+   "step": {
+    "move": [
+     0.6,
+     0
+    ]
+   },
+   "desc": "Slip the right foot forward toward F into a right fixed stance. Right middle side punch."
+  },
+  {
+   "id": "19",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "sideblk"
+   },
+   "tech": "circular",
+   "step": {
+    "move": [
+     1.4,
+     -1.0
+    ]
+   },
+   "desc": "Bring the right foot to the left foot, then move the left foot toward C into a left walking stance facing C. Right inner forearm circular block toward CF."
+  },
+  {
+   "id": "20",
+   "dir": "na",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk"
+   },
+   "tech": "lowkick",
+   "desc": "Right low front snap kick toward C, the hands held where they were."
+  },
+  {
+   "id": "21",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "note": "reverse",
+   "desc": "Set the right foot down toward C into a right walking stance. Left middle punch."
+  },
+  {
+   "id": "22",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "sideblk"
+   },
+   "tech": "circular",
+   "desc": "In the same stance, left inner forearm circular block toward CE."
+  },
+  {
+   "id": "23",
+   "dir": "na",
+   "view": "side",
+   "face": "L",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk"
+   },
+   "tech": "lowkick",
+   "desc": "Left low front snap kick toward C, the hands held where they were."
+  },
+  {
+   "id": "24",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "reverse",
+   "desc": "Set the left foot down toward C into a left walking stance. Right middle punch."
+  },
+  {
+   "id": "25",
+   "dir": "na",
+   "view": "side",
+   "face": "R",
+   "stance": "crane",
+   "lead": "L",
+   "arms": {
+    "R": "sideblk",
+    "L": "guard"
+   },
+   "tech": "guburyoa",
+   "desc": "Turn the head to face C and draw up into a left bending ready stance A, side-on to C: standing on the bent left leg, the right foot lifted beside the knee, arms in the forearm guarding position."
+  },
+  {
+   "id": "26",
+   "dir": "na",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "desc": "Right middle side piercing kick toward C."
+  },
+  {
+   "id": "27",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk",
+    "R": "guard"
+   },
+   "tech": "fguard",
+   "desc": "Land the right foot on the C–D line, then turn counter-clockwise and move the left foot to B into a right L-stance facing B (left foot forward, weight on the right leg). Forearm middle guarding block."
+  },
+  {
+   "id": "28",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk",
+    "L": "guard"
+   },
+   "tech": "fguard",
+   "step": {
+    "move": [
+     2.0,
+     0
+    ]
+   },
+   "desc": "Bring the left foot to the right foot, then move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Forearm middle guarding block."
+  }
+ ],
+ "refs": [
+  {
+   "go": "itf-won-hyo",
+   "kind": "itf",
+   "icon": "gate",
+   "src": "ITF · Official site",
+   "title": "Won-Hyo",
+   "desc": "The pattern's official text: meaning, ready posture and all 28 movements (ITF, Choi Jung Hwa).",
+   "url": "https://www.itf-administration.com/articles/?arturn=837"
+  },
+  {
+   "go": "itf-encyclopedia",
+   "kind": "itf",
+   "icon": "gate",
+   "src": "ITF · Vienna · Official site",
+   "title": "Encyclopedia of Taekwon-Do",
+   "desc": "General Choi's reference work, the source of the patterns; selected chapters online.",
+   "url": "https://itf-tkd.org/encyclopedia-of-taekwon%E2%80%91do/"
+  }
+ ]
+}
