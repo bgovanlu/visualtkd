@@ -1,5 +1,10 @@
 # Status — 14 October 2026
 
+## Basic forms: 0 of 4 built (stubs)
+| Form | Path | Figures | Review |
+|---|---|---|---|
+| Kicho Hana – Net | /kicho/1 … /4 | – | Planned cards on /forms/; waiting on which school version to draw (REVIEW.md) |
+
 ## World Taekwondo forms: 17 of 17 built
 | Form | Path | Figures | Review |
 |---|---|---|---|

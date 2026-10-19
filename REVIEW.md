@@ -70,6 +70,16 @@ See `design/footwork.md` and `design/same-stance.md`. Open any form with `?footw
 - [ ] **Where each form ends, simulated** (foot lengths from the start, before the final baro step): T1 1.4, T2 0.6, T3 1.1, T4 0.8, T5 1.7, T6 2.3, T7 5.2, T8 3.1, Koryo 2.3, Keumgang 2.7, Taebaek 4.2. The largest values point at steps worth checking against the video (T7 and Taebaek).
 - [ ] **The minimap still uses the hand-placed `pos`.** The simulated positions could replace it once the footwork is approved.
 
+## Basic forms · Kicho Hana – Net (stubs)
+
+Four planned cards on `/forms/#kicho`, no pages yet. Before any of them is drawn:
+
+- **Which version?** There is no official sequence. The Kukkiwon syllabus starts at Taegeuk Il Jang, and every school teaches its own basic forms. Even Hana has a 16-move version and one that repeats the first line for 20; Net is rarer and varies most. The two-source rule can't work as written, so the source has to be your school's version: a written sequence or a video. Each page will say which version it shows.
+- **Name.** Kicho (기초) or Kibon (기본)? Schools use both; the cards say Kicho, as asked.
+- **Paths.** `/kicho/1` … `/kicho/4`, like `/taegeuk/1`. They are not printed yet, so this can still change. Once a sheet is printed it can't.
+- **Card texts** (what each form usually adds) follow the common pattern described in the cross-check sources, not one school's version. Adjust them once the version is chosen.
+- **History line.** The forms are said to be modelled on Hwang Kee's Kicho Hyung (late 1940s, Moo Duk Kwan). That comes from secondary sources, and the page words it as "credited to".
+
 ## Taegeuk 1 · Il Jang
 
 Sources: Kukkiwon page, standard Kukkiwon sequence. The fandom page wouldn't load when this was built.

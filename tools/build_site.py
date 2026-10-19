@@ -114,6 +114,7 @@ header.top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px 32px;a
 .meter i{height:6px;border-radius:3px;background:var(--line)}
 .meter i.done{background:var(--fire)}
 .grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.grid>li>.card{height:100%;box-sizing:border-box}
 .card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:12px;min-height:236px;color:inherit;text-decoration:none;transition:border-color .2s,transform .2s}
 a.card:hover{border-color:var(--heaven);transform:translateY(-2px)}
 a.card:focus-visible{outline:2px solid var(--heaven);outline-offset:3px}
@@ -163,6 +164,8 @@ h3.sub span{font-weight:700;color:var(--muted);font-size:.72em;margin-left:.3em}
 
 WT = CAT["taegeuk"] + CAT["blackbelt"]     # World Taekwondo (Kukkiwon) poomsae
 ITF = CAT["itf"]                            # ITF (Chang Hon) tul
+KICHO = CAT.get("kicho", [])                # basic forms taught before Taegeuk 1 (school-defined)
+KICHO_I = {"d": "M6 6H34M20 6V34M6 34H34", "start": [20, 6]}   # the I most versions use; start on the near bar
 
 def meter(allf=WT):
     live = sum(c["slug"] in LIVE for c in allf)
@@ -217,24 +220,43 @@ def itf_cards(group):
                    else f'<li><div class="card soon">{inner}</div></li>')
     return "".join(out)
 
+def kicho_cards():
+    out = []
+    for c in KICHO:
+        live = c["slug"] in LIVE
+        pill = '<span class="pill live">Open</span>' if live else '<span class="pill plan">Planned</span>'
+        mv = f'{c["moves"]} movements' if c.get("moves") else "Varies by school"
+        inner = (f'<div class="top"><span class="num">{c["n"]}</span>{diagram({"diagram": KICHO_I})}</div>'
+                 f'<div class="name"><h3>{c["rom"]}</h3><span class="ko">{c["ko"]} · {c["en"]}</span></div>'
+                 f'<p class="mean">{c["mean"]}</p><div class="foot"><span class="mv">{mv}</span>{pill}</div>')
+        out.append(f'<li><a class="card" href="/{c["slug"]}/" aria-label="Open {c["rom"]}">{inner}</a></li>' if live
+                   else f'<li><div class="card soon">{inner}</div></li>')
+    return "".join(out)
+
 def refs(rows):
     return "".join(S.ref_card(r["kind"], r["icon"], r["src"], r["title"], r["desc"], r["url"]) for r in rows)
 
 def forms_index():
     wl, wt, wbar = meter(WT)
     il, it, ibar = meter(ITF)
+    kl, kt, kbar = meter(KICHO)
     body = f"""<header class="top">
   <div>
     <div class="eyebrow">Taekwondo forms · poomsae and tul</div>
     <h1>Forms <span>품새 · 틀</span></h1>
-    <p class="lede">Two families of forms: the World Taekwondo forms set by the Kukkiwon (the eight Taegeuk and the black-belt poomsae), and the ITF patterns (Chang Hon tul). Every form gets the same treatment: the floor plan on its line, move-by-move cards on phones, the full sequence, and a two-page print sheet.</p>
-    <p class="jump"><a href="#wt">World Taekwondo forms</a><a href="#itf">ITF forms</a></p>
+    <p class="lede">The basic forms many schools teach first, then two families of forms: the World Taekwondo forms set by the Kukkiwon (the eight Taegeuk and the black-belt poomsae), and the ITF patterns (Chang Hon tul). Every form gets the same treatment: the floor plan on its line, move-by-move cards on phones, the full sequence, and a two-page print sheet.</p>
+    <p class="jump"><a href="#kicho">Basic forms</a><a href="#wt">World Taekwondo forms</a><a href="#itf">ITF forms</a></p>
   </div>
   <div class="status" aria-label="Progress">
+    <div><small>Basic forms · published</small><b>{kl} / {kt}</b>{kbar}</div>
     <div><small>World Taekwondo · published</small><b>{wl} / {wt}</b>{wbar}</div>
     <div><small>ITF · published</small><b>{il} / {it}</b>{ibar}</div>
   </div>
 </header>
+<section id="kicho" class="family" aria-labelledby="kicho-h"><h2 id="kicho-h">Basic forms <span>Kicho poomsae · 기초 품새</span></h2>
+  <p class="intro">Many World Taekwondo schools teach a few short basic forms before Taegeuk Il Jang: Kicho Hana, Dul, Set and Net (one to four). They teach the basics, such as the walking and front stances, the low block, the middle punch and how to turn, before the student has to remember a full Taegeuk. Each form is usually done on an I-shaped line, walking up and back across it, and repeats the same few techniques until they become automatic.</p>
+  <p class="intro">These forms are not set by the Kukkiwon. The official syllabus starts at Taegeuk Il Jang, and each school or association teaches its own version, so names (kicho or kibon), counts and techniques differ from one school to the next. Many are modelled on the three Kicho Hyung, the basic forms credited to Hwang Kee of the Moo Duk Kwan in the late 1940s. When we draw them, each page will say which version it shows. Check it against what your instructor teaches.</p>
+  <ul class="grid">{kicho_cards()}</ul></section>
 <section id="wt" class="family" aria-labelledby="wt-h"><h2 id="wt-h">World Taekwondo forms <span>Kukkiwon poomsae · 품새</span></h2>
   <p class="intro">The forms of World Taekwondo, as set and published by the Kukkiwon. Sequences and counts follow the Kukkiwon.</p>
   <h3 class="sub">Taegeuk <span>태극</span></h3><ul class="grid">{taegeuk_cards()}</ul>

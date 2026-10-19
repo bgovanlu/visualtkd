@@ -41,8 +41,8 @@ def lib_js(itf=False):
     return json.dumps({"t": t, "s": s}, ensure_ascii=False).replace("</", "<\\/")
 
 def form_files():
-    """forms/*.json in teaching order: Taegeuk 1-8, the black-belt forms, then the ITF patterns, in catalogue order."""
-    order = [f["slug"] for f in CATALOG["taegeuk"] + CATALOG["blackbelt"] + CATALOG.get("itf", [])]
+    """forms/*.json in teaching order: the basic forms, Taegeuk 1-8, the black-belt forms, then the ITF patterns, in catalogue order."""
+    order = [f["slug"] for f in CATALOG.get("kicho", []) + CATALOG["taegeuk"] + CATALOG["blackbelt"] + CATALOG.get("itf", [])]
     files = {}
     for name in os.listdir(os.path.join(ROOT, "forms")):
         if name.endswith(".json"):
