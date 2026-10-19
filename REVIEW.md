@@ -682,6 +682,19 @@ The other differences are typos ("closed"/"close" at 26 and 43). Neither source 
 - [ ] **Library.** New entries: `warriorb`, `sitelbows`, `ksxrising`, `rdhighside`, `upunch`, `wavekick`, `houterout`, `backhandhoriz`, `crescentkick`, `changehands`.
 - [ ] **Footwork.** The simulator ends 4.2 foot-lengths from the start.
 
+## Choi-Yong · 최영 (ITF) — 18 October 2026
+
+`/itf/choi-yong`, with a 2-page print sheet. The moves go back and forth through the centre of the + diagram, so the board shows them in order, read down the page in rows, as on Sam-Il.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart are identical for all 46 movements. The chart's Korean for the reverse hooking kick is "Nopunde bandae dollyo gorochagi", which supports the name used on the Juche page. Fandom was not used. There is no official video.
+
+- [ ] **Move 46 and how the fixed stance is named (please decide).** 45 ends in a right L-stance toward A (left foot forward), and 46 slides toward A into a "right fixed stance" with a right side punch. A slide can't swap the feet, so the right foot stays back: here "right fixed stance" names the rear foot. But in Won-Hyo 3 and Hwa-Rang 6 the fixed stance is named by the front foot. One of the two readings has to give. The page draws the left foot forward with the right punch, and the chip reads "L · Gojung sogi"; the instruction says the texts call it a right fixed stance.
+- [ ] **No kihap.** Neither source marks one.
+- [ ] **Knife-hand W-shape block (23, 26)** uses the fist W-shape arms; the open hands don't show.
+- [ ] **Move 29** ("move the left foot to C and the right foot to C, then slide to C turning clockwise") has a two-foot-length travel hint.
+- [ ] **Library.** New entries: `joongjihigh`, `kssan`.
+- [ ] **Footwork.** The simulator ends 6.8 foot-lengths from the start, toward A, after the side kicks, jumps and slide at the end. The real pattern may finish closer to the centre.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:

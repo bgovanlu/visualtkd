@@ -1,0 +1,739 @@
+{
+ "form": "Choi-Yong",
+ "slug": "itf/choi-yong",
+ "moves": [
+  {
+   "id": "J",
+   "file": "J.png",
+   "view": "front",
+   "face": null,
+   "stance": "close",
+   "lead": null,
+   "arms": {
+    "L": "cover",
+    "R": "cover"
+   },
+   "tech": "moajunbic",
+   "name": "Moa junbi sogi C · Close ready stance C",
+   "desc": "Stand at the centre of the C–D line facing D in close ready stance C.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: moa seogi (closed stance): feet together, inside edges touching, legs straight. RIGHT hand: covering palm wrapped over the other fist in front of the chest. LEFT hand: covering palm wrapped over the other fist in front of the chest. This is the ready posture of Choi-Yong: Stand at the centre of the C–D line facing D in close ready stance C."
+  },
+  {
+   "id": "1",
+   "file": "1.png",
+   "view": "front",
+   "face": null,
+   "stance": "tiger",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk",
+    "R": "guard"
+   },
+   "tech": "fguard",
+   "name": "Palmok kaunde daebi makgi · Forearm middle guarding block",
+   "desc": "Move the left foot to D into a right rear foot stance facing D (left foot forward on its ball). Forearm middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. LEFT foot forward. RIGHT hand: fist raised in front of the chest in a guard (kick guard). LEFT hand: ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 1 of Choi-Yong: Move the left foot to D into a right rear foot stance facing D (left foot forward on its ball). Forearm middle guarding block."
+  },
+  {
+   "id": "2",
+   "file": "2.png",
+   "view": "front",
+   "face": null,
+   "stance": "tiger",
+   "lead": "L",
+   "arms": {
+    "L": "hpunch"
+   },
+   "tech": "joongjihigh",
+   "name": "Joongji joomuk nopunde jirugi · Middle knuckle fist high punch",
+   "desc": "In the same stance, left middle knuckle fist high punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: high punch (eolgul jireugi): arm fully extended straight forward at face height, fist palm-down. This is count 2 of Choi-Yong: In the same stance, left middle knuckle fist high punch."
+  },
+  {
+   "id": "3",
+   "file": "3.png",
+   "view": "back",
+   "face": null,
+   "stance": "tiger",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk",
+    "L": "guard"
+   },
+   "tech": "fguard",
+   "name": "Palmok kaunde daebi makgi · Forearm middle guarding block",
+   "desc": "Move the right foot along the C–D line into a left rear foot stance facing C (right foot forward on its ball). Forearm middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. RIGHT foot forward. RIGHT hand: ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand: fist raised in front of the chest in a guard (kick guard). This is count 3 of Choi-Yong: Move the right foot along the C–D line into a left rear foot stance facing C (right foot forward on its ball). Forearm middle guarding block."
+  },
+  {
+   "id": "4",
+   "file": "4.png",
+   "view": "back",
+   "face": null,
+   "stance": "tiger",
+   "lead": "R",
+   "arms": {
+    "R": "hpunch"
+   },
+   "tech": "joongjihigh",
+   "name": "Joongji joomuk nopunde jirugi · Middle knuckle fist high punch",
+   "desc": "In the same stance, right middle knuckle fist high punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. RIGHT foot forward. RIGHT hand: high punch (eolgul jireugi): arm fully extended straight forward at face height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 4 of Choi-Yong: In the same stance, right middle knuckle fist high punch."
+  },
+  {
+   "id": "5",
+   "file": "5.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "khigh"
+   },
+   "tech": "ksrising",
+   "name": "Sonkal chookyo makgi · Knife-hand rising block",
+   "desc": "Move the right foot along the C–D line into a left walking stance facing D. Left knife-hand rising block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: knife-hand high block (sonnal eolgul makki): open hand held across and above the forehead, knife edge up. This is count 5 of Choi-Yong: Move the right foot along the C–D line into a left walking stance facing D. Left knife-hand rising block."
+  },
+  {
+   "id": "6",
+   "file": "6.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "sideblk"
+   },
+   "tech": "circular",
+   "name": "Anpalmok dollimyo makgi · Inner forearm circular block",
+   "desc": "In the same stance, right inner forearm circular block toward AD.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 6 of Choi-Yong: In the same stance, right inner forearm circular block toward AD."
+  },
+  {
+   "id": "7",
+   "file": "7.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, left middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 7 of Choi-Yong: In the same stance, left middle punch."
+  },
+  {
+   "id": "8",
+   "file": "8.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "khigh"
+   },
+   "tech": "ksrising",
+   "name": "Sonkal chookyo makgi · Knife-hand rising block",
+   "desc": "Move the left foot along the C–D line into a right walking stance facing C. Right knife-hand rising block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: knife-hand high block (sonnal eolgul makki): open hand held across and above the forehead, knife edge up. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 8 of Choi-Yong: Move the left foot along the C–D line into a right walking stance facing C. Right knife-hand rising block."
+  },
+  {
+   "id": "9",
+   "file": "9.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "sideblk"
+   },
+   "tech": "circular",
+   "name": "Anpalmok dollimyo makgi · Inner forearm circular block",
+   "desc": "In the same stance, left inner forearm circular block toward AC.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 9 of Choi-Yong: In the same stance, left inner forearm circular block toward AC."
+  },
+  {
+   "id": "10",
+   "file": "10.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 10 of Choi-Yong: In the same stance, right middle punch."
+  },
+  {
+   "id": "11",
+   "file": "11.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "ksguard"
+   },
+   "tech": "kslowguard",
+   "name": "Sonkal najunde daebi makgi · Knife-hand low guarding block",
+   "desc": "Move the right foot along the C–D line into a right L-stance facing D (left foot forward, weight on the right leg). Knife-hand low guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 11 of Choi-Yong: Move the right foot along the C–D line into a right L-stance facing D (left foot forward, weight on the right leg). Knife-hand low guarding block."
+  },
+  {
+   "id": "12",
+   "file": "12.png",
+   "view": "side",
+   "face": "L",
+   "stance": "rkick",
+   "lead": "R",
+   "arms": {
+    "L": "kslow",
+    "R": "ksguard"
+   },
+   "tech": "rkick",
+   "name": "Dollyeo chagi · Roundhouse kick",
+   "desc": "Right middle turning kick toward AD, then lower the right foot to the side front of the left foot.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dollyeo chagi (roundhouse kick): the hip turned over, the kicking leg swung round at head height striking with the instep. Kicking leg: RIGHT. RIGHT hand (far arm): guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand (near arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 12 of Choi-Yong: Right middle turning kick toward AD, then lower the right foot to the side front of the left foot."
+  },
+  {
+   "id": "13",
+   "file": "13.png",
+   "view": "side",
+   "face": "L",
+   "stance": "rkick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "revhook",
+   "name": "Nopunde bandae dollyo gorochagi · High reverse hooking kick",
+   "desc": "Left high reverse hooking kick toward D.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dollyeo chagi (roundhouse kick): the hip turned over, the kicking leg swung round at head height striking with the instep. Kicking leg: LEFT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 13 of Choi-Yong: Left high reverse hooking kick toward D."
+  },
+  {
+   "id": "14",
+   "file": "14.png",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Without setting the foot down, left middle side piercing kick toward D, pulling both hands apart.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: LEFT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 14 of Choi-Yong: Without setting the foot down, left middle side piercing kick toward D, pulling both hands apart."
+  },
+  {
+   "id": "15",
+   "file": "15.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "elbow",
+    "L": "eltarget"
+   },
+   "tech": "eltarget",
+   "name": "Palkup pyojeok chigi · Elbow target strike",
+   "desc": "Lower the left foot toward D into a left walking stance. Right front elbow strike into the left palm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: elbow strike (palkup dollyeo chigi): arm folded, elbow swung forward horizontally at chin height. LEFT hand: open hand held as a target in front of the chest, palm toward the striking elbow. This is count 15 of Choi-Yong: Lower the left foot toward D into a left walking stance. Right front elbow strike into the left palm."
+  },
+  {
+   "id": "16",
+   "file": "16.png",
+   "view": "back",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "kslow",
+    "L": "ksguard"
+   },
+   "tech": "kslowguard",
+   "name": "Sonkal najunde daebi makgi · Knife-hand low guarding block",
+   "desc": "Move the left foot along the C–D line into a left L-stance facing C (right foot forward, weight on the left leg). Knife-hand low guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. LEFT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 16 of Choi-Yong: Move the left foot along the C–D line into a left L-stance facing C (right foot forward, weight on the left leg). Knife-hand low guarding block."
+  },
+  {
+   "id": "17",
+   "file": "17.png",
+   "view": "side",
+   "face": "L",
+   "stance": "rkick",
+   "lead": "L",
+   "arms": {
+    "R": "kslow",
+    "L": "ksguard"
+   },
+   "tech": "rkick",
+   "name": "Dollyeo chagi · Roundhouse kick",
+   "desc": "Left middle turning kick toward AC, then lower the left foot to the side front of the right foot.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dollyeo chagi (roundhouse kick): the hip turned over, the kicking leg swung round at head height striking with the instep. Kicking leg: LEFT. RIGHT hand (far arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. LEFT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 17 of Choi-Yong: Left middle turning kick toward AC, then lower the left foot to the side front of the right foot."
+  },
+  {
+   "id": "18",
+   "file": "18.png",
+   "view": "side",
+   "face": "R",
+   "stance": "rkick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "revhook",
+   "name": "Nopunde bandae dollyo gorochagi · High reverse hooking kick",
+   "desc": "Right high reverse hooking kick toward C.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dollyeo chagi (roundhouse kick): the hip turned over, the kicking leg swung round at head height striking with the instep. Kicking leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 18 of Choi-Yong: Right high reverse hooking kick toward C."
+  },
+  {
+   "id": "19",
+   "file": "19.png",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Without setting the foot down, right middle side piercing kick toward C, pulling both hands apart.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 19 of Choi-Yong: Without setting the foot down, right middle side piercing kick toward C, pulling both hands apart."
+  },
+  {
+   "id": "20",
+   "file": "20.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "elbow",
+    "R": "eltarget"
+   },
+   "tech": "eltarget",
+   "name": "Palkup pyojeok chigi · Elbow target strike",
+   "desc": "Lower the right foot toward C into a right walking stance. Left front elbow strike into the right palm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: open hand held as a target in front of the chest, palm toward the striking elbow. LEFT hand: elbow strike (palkup dollyeo chigi): arm folded, elbow swung forward horizontally at chin height. This is count 20 of Choi-Yong: Lower the right foot toward C into a right walking stance. Left front elbow strike into the right palm."
+  },
+  {
+   "id": "21",
+   "file": "21.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "pressdown"
+   },
+   "tech": "pressdown",
+   "name": "Batangson nulleo makki · Palm pressing block",
+   "desc": "Move the left foot to C into a left walking stance. Right palm pressing block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: palm pressing block (batangson nulleo makki): open hand pushing straight down in front of the belly, palm down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 21 of Choi-Yong: Move the left foot to C into a left walking stance. Right palm pressing block."
+  },
+  {
+   "id": "22",
+   "file": "22.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "pressdown"
+   },
+   "tech": "pressdown",
+   "name": "Batangson nulleo makki · Palm pressing block",
+   "desc": "Move the right foot to C into a right walking stance. Left palm pressing block, fast after 21.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: palm pressing block (batangson nulleo makki): open hand pushing straight down in front of the belly, palm down. This is count 22 of Choi-Yong: Move the right foot to C into a right walking stance. Left palm pressing block, fast after 21."
+  },
+  {
+   "id": "23",
+   "file": "23.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "kssan",
+   "name": "Sonkal san makgi · Knife-hand W-shape block",
+   "desc": "Move the right foot toward D, then the left foot toward D, turning counter-clockwise into a left walking stance facing D. Knife-hand W-shape block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 23 of Choi-Yong: Move the right foot toward D, then the left foot toward D, turning counter-clockwise into a left walking stance facing D. Knife-hand W-shape block."
+  },
+  {
+   "id": "24",
+   "file": "24.png",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Right middle front snap kick toward D, the hands held where they were.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand (near arm): high outer block: forearm upright at the side of the head, fist at head height. LEFT hand (far arm): high outer block: forearm upright at the side of the head, fist at head height. This is count 24 of Choi-Yong: Right middle front snap kick toward D, the hands held where they were."
+  },
+  {
+   "id": "25",
+   "file": "25.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk",
+    "R": "guard"
+   },
+   "tech": "fguard",
+   "name": "Palmok kaunde daebi makgi · Forearm middle guarding block",
+   "desc": "Lower the right foot back toward C into a right L-stance facing D (left foot forward, weight on the right leg). Forearm middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: fist raised in front of the chest in a guard (kick guard). LEFT hand: ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 25 of Choi-Yong: Lower the right foot back toward C into a right L-stance facing D (left foot forward, weight on the right leg). Forearm middle guarding block."
+  },
+  {
+   "id": "26",
+   "file": "26.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "kssan",
+   "name": "Sonkal san makgi · Knife-hand W-shape block",
+   "desc": "Move the right foot to D into a right walking stance. Knife-hand W-shape block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 26 of Choi-Yong: Move the right foot to D into a right walking stance. Knife-hand W-shape block."
+  },
+  {
+   "id": "27",
+   "file": "27.png",
+   "view": "side",
+   "face": "L",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "kick",
+   "name": "Ap chagi · Front kick",
+   "desc": "Left middle front snap kick toward D, the hands held where they were.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand (far arm): high outer block: forearm upright at the side of the head, fist at head height. LEFT hand (near arm): high outer block: forearm upright at the side of the head, fist at head height. This is count 27 of Choi-Yong: Left middle front snap kick toward D, the hands held where they were."
+  },
+  {
+   "id": "28",
+   "file": "28.png",
+   "view": "back",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk",
+    "L": "guard"
+   },
+   "tech": "fguard",
+   "name": "Palmok kaunde daebi makgi · Forearm middle guarding block",
+   "desc": "Lower the left foot toward D into a left L-stance facing C (right foot forward, weight on the left leg). Forearm middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand: fist raised in front of the chest in a guard (kick guard). This is count 28 of Choi-Yong: Lower the left foot toward D into a left L-stance facing C (right foot forward, weight on the left leg). Forearm middle guarding block."
+  },
+  {
+   "id": "29",
+   "file": "29.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk",
+    "L": "guard"
+   },
+   "tech": "fguard",
+   "name": "Palmok kaunde daebi makgi · Forearm middle guarding block",
+   "desc": "Move the left foot toward C and the right foot toward C, then slide toward C turning clockwise into a left L-stance facing D (right foot forward, weight on the left leg). Forearm middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand: fist raised in front of the chest in a guard (kick guard). This is count 29 of Choi-Yong: Move the left foot toward C and the right foot toward C, then slide toward C turning clockwise into a left L-stance facing D (right foot forward, weight on the left leg). Forearm middle guarding block."
+  },
+  {
+   "id": "30",
+   "file": "30.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "spear"
+   },
+   "tech": "hspear",
+   "name": "Pyeonsonkkeut eopeo jjireugi · Flat spear-hand thrust",
+   "desc": "Move the left foot to D into a left walking stance. Left flat fingertip high thrust.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: spear-hand thrust (pyeonsonkkeut sewo tzireugi): open hand, fingers straight, thrust forward at solar-plexus height with the palm facing sideways. This is count 30 of Choi-Yong: Move the left foot to D into a left walking stance. Left flat fingertip high thrust."
+  },
+  {
+   "id": "31",
+   "file": "31.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "spear"
+   },
+   "tech": "hspear",
+   "name": "Pyeonsonkkeut eopeo jjireugi · Flat spear-hand thrust",
+   "desc": "Move the left foot along the C–D line into a right walking stance facing C. Right flat fingertip high thrust.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: spear-hand thrust (pyeonsonkkeut sewo tzireugi): open hand, fingers straight, thrust forward at solar-plexus height with the palm facing sideways. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 31 of Choi-Yong: Move the left foot along the C–D line into a right walking stance facing C. Right flat fingertip high thrust."
+  },
+  {
+   "id": "32",
+   "file": "32.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "R": "palm"
+   },
+   "tech": "golcho",
+   "name": "Sonbadak kaunde golcho makgi · Palm middle hooking block",
+   "desc": "Move the right foot toward D, turning clockwise into a parallel stance facing B. Right palm middle hooking block toward B.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: palm inside block (batangson an makki): open hand, heel of the palm sweeping in front of the chest to the centre line. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 32 of Choi-Yong: Move the right foot toward D, turning clockwise into a parallel stance facing B. Right palm middle hooking block toward B."
+  },
+  {
+   "id": "33",
+   "file": "33.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, left middle punch toward B.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 33 of Choi-Yong: In the same stance, left middle punch toward B."
+  },
+  {
+   "id": "34",
+   "file": "34.png",
+   "view": "side",
+   "face": "L",
+   "stance": "crane",
+   "lead": "L",
+   "arms": {
+    "R": "sideblk",
+    "L": "guard"
+   },
+   "tech": "guburyoa",
+   "name": "Guburyo junbi sogi A · Bending ready stance A",
+   "desc": "Turn the face toward A, drawing the right foot up into a left bending ready stance A, side-on to A.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: LEFT. RIGHT hand (far arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 34 of Choi-Yong: Turn the face toward A, drawing the right foot up into a left bending ready stance A, side-on to A."
+  },
+  {
+   "id": "35",
+   "file": "35.png",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk",
+    "L": "guard"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Right middle side piercing kick toward A, forming a forearm guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (far arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 35 of Choi-Yong: Right middle side piercing kick toward A, forming a forearm guarding block."
+  },
+  {
+   "id": "36",
+   "file": "36.png",
+   "view": "side",
+   "face": "L",
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "R": "backfist",
+    "L": "assist"
+   },
+   "tech": "backfist",
+   "name": "Deung jumeok ap chigi · Back-fist strike",
+   "desc": "Land the right foot toward A with a jump, into a right X-stance facing AD. Right back fist high side strike toward A, the left fingertips on the right side fist.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. RIGHT foot forward. RIGHT hand (far arm): back-fist strike (deungjumeok ap chigi): arm arcs up and forward, back of the fist striking at face height, elbow slightly bent. LEFT hand (near arm): supporting fist placed under the elbow of the blocking arm. This is count 36 of Choi-Yong: Land the right foot toward A with a jump, into a right X-stance facing AD. Right back fist high side strike toward A, the left fingertips on the right side fist."
+  },
+  {
+   "id": "37",
+   "file": "37.png",
+   "view": "side",
+   "face": "R",
+   "stance": "rkick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "revhook",
+   "name": "Nopunde bandae dollyo gorochagi · High reverse hooking kick",
+   "desc": "Right high reverse hooking kick toward B.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dollyeo chagi (roundhouse kick): the hip turned over, the kicking leg swung round at head height striking with the instep. Kicking leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 37 of Choi-Yong: Right high reverse hooking kick toward B."
+  },
+  {
+   "id": "38",
+   "file": "38.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksstrike"
+   },
+   "tech": "ksstrike",
+   "name": "Hansonnal bakkat chigi · Knife-hand outer strike",
+   "desc": "Stamp the right foot down toward B into a left L-stance facing B (right foot forward, weight on the left leg). Right knife-hand middle outward strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (near arm): knife-hand outer strike (sonnal bakkat chigi): open hand swung outward horizontally at neck height, palm down. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 38 of Choi-Yong: Stamp the right foot down toward B into a left L-stance facing B (right foot forward, weight on the left leg). Right knife-hand middle outward strike."
+  },
+  {
+   "id": "39",
+   "file": "39.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "palm"
+   },
+   "tech": "golcho",
+   "name": "Sonbadak kaunde golcho makgi · Palm middle hooking block",
+   "desc": "Move the left foot toward D, turning counter-clockwise into a parallel stance facing A. Left palm middle hooking block toward A.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: palm inside block (batangson an makki): open hand, heel of the palm sweeping in front of the chest to the centre line. This is count 39 of Choi-Yong: Move the left foot toward D, turning counter-clockwise into a parallel stance facing A. Left palm middle hooking block toward A."
+  },
+  {
+   "id": "40",
+   "file": "40.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, right middle punch toward A.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 40 of Choi-Yong: In the same stance, right middle punch toward A."
+  },
+  {
+   "id": "41",
+   "file": "41.png",
+   "view": "side",
+   "face": "R",
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "sideblk",
+    "R": "guard"
+   },
+   "tech": "guburyoa",
+   "name": "Guburyo junbi sogi A · Bending ready stance A",
+   "desc": "Turn the face toward B, drawing the left foot up into a right bending ready stance A, side-on to B.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 41 of Choi-Yong: Turn the face toward B, drawing the left foot up into a right bending ready stance A, side-on to B."
+  },
+  {
+   "id": "42",
+   "file": "42.png",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Left middle side piercing kick toward B, forming a forearm guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: LEFT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 42 of Choi-Yong: Left middle side piercing kick toward B, forming a forearm guarding block."
+  },
+  {
+   "id": "43",
+   "file": "43.png",
+   "view": "side",
+   "face": "R",
+   "stance": "cross",
+   "lead": "L",
+   "arms": {
+    "L": "backfist",
+    "R": "assist"
+   },
+   "tech": "backfist",
+   "name": "Deung jumeok ap chigi · Back-fist strike",
+   "desc": "Land the left foot toward B with a jump, into a left X-stance facing BD. Left back fist high side strike toward B, the right fingertips on the left side fist.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. LEFT foot forward. RIGHT hand (near arm): supporting fist placed under the elbow of the blocking arm. LEFT hand (far arm): back-fist strike (deungjumeok ap chigi): arm arcs up and forward, back of the fist striking at face height, elbow slightly bent. This is count 43 of Choi-Yong: Land the left foot toward B with a jump, into a left X-stance facing BD. Left back fist high side strike toward B, the right fingertips on the left side fist."
+  },
+  {
+   "id": "44",
+   "file": "44.png",
+   "view": "side",
+   "face": "L",
+   "stance": "rkick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "revhook",
+   "name": "Nopunde bandae dollyo gorochagi · High reverse hooking kick",
+   "desc": "Left high reverse hooking kick toward A.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dollyeo chagi (roundhouse kick): the hip turned over, the kicking leg swung round at head height striking with the instep. Kicking leg: LEFT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 44 of Choi-Yong: Left high reverse hooking kick toward A."
+  },
+  {
+   "id": "45",
+   "file": "45.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksstrike"
+   },
+   "tech": "ksstrike",
+   "name": "Hansonnal bakkat chigi · Knife-hand outer strike",
+   "desc": "Stamp the left foot down toward A into a right L-stance facing A (left foot forward, weight on the right leg). Left knife-hand middle outward strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): knife-hand outer strike (sonnal bakkat chigi): open hand swung outward horizontally at neck height, palm down. This is count 45 of Choi-Yong: Stamp the left foot down toward A into a right L-stance facing A (left foot forward, weight on the right leg). Left knife-hand middle outward strike."
+  },
+  {
+   "id": "46",
+   "file": "46.png",
+   "view": "side",
+   "face": "L",
+   "stance": "fixed",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "sidepunch",
+   "name": "Yeop jireugi · Side punch",
+   "desc": "Slide toward A, keeping the left foot forward, into a fixed stance facing A (the texts call it a right fixed stance). Right middle side punch toward A.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ITF gojung sogi (fixed stance): like an L-stance but a little longer, front foot pointing forward, rear foot turned out about 90 degrees, both knees bent, weight even on both legs, body half-facing. LEFT foot forward. RIGHT hand (far arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 46 of Choi-Yong: Slide toward A, keeping the left foot forward, into a fixed stance facing A (the texts call it a right fixed stance). Right middle side punch toward A."
+  }
+ ]
+}
