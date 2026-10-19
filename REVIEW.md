@@ -770,6 +770,20 @@ Fandom was not used. There is no official video.
 - [ ] **Library.** New entries: `fguardhigh`, `oneleghilo`, `backforearm`.
 - [ ] **Footwork.** The simulator ends 7.3 foot-lengths from the start, toward B; the distances between the three lines are a guess, so the minimap places each count on its line.
 
+## Tong-Il · 통일 (ITF) — 18 October 2026
+
+`/itf/tong-il`, with a 2-page print sheet. The whole pattern is on the C–D line, so the board shows the moves in order, read down the page in rows, as on Ge-Baek.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 56 movements. One small difference: the official text says to do 24 and 25 "in a normal motion", the chart "in a slow motion"; the page says neither. The official page's "Perform … in a fast motion" notes count one lower than its move numbers, because it numbers the ready posture as 1. Fandom was not used. There is no official video.
+
+- [ ] **No kihap.** Neither source marks one.
+- [ ] **Parallel stance with an overlapped back hand (ready posture)**: the chart gives no Korean name, so "Narani sogi kyop sondung" is my name for it. It's drawn with the low open-hand arms.
+- [ ] **Twin side back elbow thrust (54-2)**: the Korean name "Sang yop dwit palkup tulgi" is mine too.
+- [ ] **Inward and outward vertical kicks, downward kick (8, 10, 16, 18)** are drawn with the front kick figure.
+- [ ] **Bow wrist upward block (22, 23)** uses the upward palm arm; **under fist front strike (48, 49)** uses the uppercut arm.
+- [ ] **Library.** New entries: `overlapback`, `twinpunch`, `outerin`, `palmlowin`, `backhandout`, `invertkick`, `twinpalmhoriz`, `rdmidside`, `downkick`, `outvertkick`, `bowwrist`, `moakspalm`, `anglefinger`, `ksoutlow`, `underfist`, `palmpush`, `kscircular`, `twinbackelbow`.
+- [ ] **Footwork.** The simulator ends 3.4 foot-lengths from the start.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:
