@@ -1,0 +1,1104 @@
+{
+ "form": "Yoo-Sin",
+ "slug": "itf/yoo-sin",
+ "moves": [
+  {
+   "id": "J",
+   "file": "J.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "warriorb",
+   "name": "Gyesa junbi sogi B · Warrior ready stance B",
+   "desc": "Stand at the start facing D in warrior ready stance B.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: fist raised in front of the chest in a guard (kick guard). LEFT hand: fist raised in front of the chest in a guard (kick guard). This is the ready posture of Yoo-Sin: Stand at the start facing D in warrior ready stance B."
+  },
+  {
+   "id": "1",
+   "file": "1.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "sideelbow",
+    "R": "sideelbow"
+   },
+   "tech": "sitelbows",
+   "name": "Annun sogi · Sitting stance, elbows out",
+   "desc": "Move the left foot to B into a sitting stance facing D, both elbows raised out level to the sides.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is count 1 of Yoo-Sin: Move the left foot to B into a sitting stance facing D, both elbows raised out level to the sides."
+  },
+  {
+   "id": "2",
+   "file": "2.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "crosspunch"
+   },
+   "tech": "giokja",
+   "name": "Giokja jirugi · Angle punch",
+   "desc": "Slide toward A, keeping the sitting stance. Left angle punch toward C.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: punch across the body into the target hand at chest height. This is count 2 of Yoo-Sin: Slide toward A, keeping the sitting stance. Left angle punch toward C."
+  },
+  {
+   "id": "3",
+   "file": "3.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "crosspunch"
+   },
+   "tech": "giokja",
+   "name": "Giokja jirugi · Angle punch",
+   "desc": "Slide toward B, keeping the sitting stance. Right angle punch toward C, fast after 2.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: punch across the body into the target hand at chest height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 3 of Yoo-Sin: Slide toward B, keeping the sitting stance. Right angle punch toward C, fast after 2."
+  },
+  {
+   "id": "4",
+   "file": "4.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "R": "palm"
+   },
+   "tech": "golcho",
+   "name": "Sonbadak kaunde golcho makgi · Palm middle hooking block",
+   "desc": "Stand up, facing D. Right palm middle hooking block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: palm inside block (batangson an makki): open hand, heel of the palm sweeping in front of the chest to the centre line. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 4 of Yoo-Sin: Stand up, facing D. Right palm middle hooking block."
+  },
+  {
+   "id": "5",
+   "file": "5.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Sink back into the sitting stance. Left middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 5 of Yoo-Sin: Sink back into the sitting stance. Left middle punch."
+  },
+  {
+   "id": "6",
+   "file": "6.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "palm"
+   },
+   "tech": "golcho",
+   "name": "Sonbadak kaunde golcho makgi · Palm middle hooking block",
+   "desc": "Stand up, facing D. Left palm middle hooking block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: palm inside block (batangson an makki): open hand, heel of the palm sweeping in front of the chest to the centre line. This is count 6 of Yoo-Sin: Stand up, facing D. Left palm middle hooking block."
+  },
+  {
+   "id": "7",
+   "file": "7.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Sink back into the sitting stance. Right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 7 of Yoo-Sin: Sink back into the sitting stance. Right middle punch."
+  },
+  {
+   "id": "8",
+   "file": "8.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "houter"
+   },
+   "tech": "houter",
+   "name": "Eolgul bakkat makki · High outer block",
+   "desc": "Move the left foot to BD into a left walking stance facing BD. Left outer forearm high side block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): high outer block: forearm upright at the side of the head, fist at head height. This is count 8 of Yoo-Sin: Move the left foot to BD into a left walking stance facing BD. Left outer forearm high side block."
+  },
+  {
+   "id": "9",
+   "file": "9.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "sideblk"
+   },
+   "tech": "circular",
+   "name": "Anpalmok dollimyo makgi · Inner forearm circular block",
+   "desc": "In the same stance, right inner forearm circular block toward D.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 9 of Yoo-Sin: In the same stance, right inner forearm circular block toward D."
+  },
+  {
+   "id": "10",
+   "file": "10.png",
+   "view": "side",
+   "face": "L",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "palmup"
+   },
+   "tech": "scoop",
+   "name": "Sonbadak duro makgi · Palm scooping block",
+   "desc": "Turn into a sitting stance facing AD. Left palm scooping block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): ITF upward palm block: open palm rising in front of the chest, palm up, elbow bent. This is count 10 of Yoo-Sin: Turn into a sitting stance facing AD. Left palm scooping block."
+  },
+  {
+   "id": "11",
+   "file": "11.png",
+   "view": "side",
+   "face": "L",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, right middle punch toward AD, straight on from 10.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (far arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 11 of Yoo-Sin: In the same stance, right middle punch toward AD, straight on from 10."
+  },
+  {
+   "id": "12",
+   "file": "12.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "houter"
+   },
+   "tech": "houter",
+   "name": "Eolgul bakkat makki · High outer block",
+   "desc": "Bring the left foot to the right foot, then move the right foot to AD into a right walking stance facing AD. Right outer forearm high side block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): high outer block: forearm upright at the side of the head, fist at head height. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 12 of Yoo-Sin: Bring the left foot to the right foot, then move the right foot to AD into a right walking stance facing AD. Right outer forearm high side block."
+  },
+  {
+   "id": "13",
+   "file": "13.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "sideblk"
+   },
+   "tech": "circular",
+   "name": "Anpalmok dollimyo makgi · Inner forearm circular block",
+   "desc": "In the same stance, left inner forearm circular block toward D.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 13 of Yoo-Sin: In the same stance, left inner forearm circular block toward D."
+  },
+  {
+   "id": "14",
+   "file": "14.png",
+   "view": "side",
+   "face": "R",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "palmup"
+   },
+   "tech": "scoop",
+   "name": "Sonbadak duro makgi · Palm scooping block",
+   "desc": "Turn into a sitting stance facing BD. Right palm scooping block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (near arm): ITF upward palm block: open palm rising in front of the chest, palm up, elbow bent. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 14 of Yoo-Sin: Turn into a sitting stance facing BD. Right palm scooping block."
+  },
+  {
+   "id": "15",
+   "file": "15.png",
+   "view": "side",
+   "face": "R",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, left middle punch toward BD, straight on from 14.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 15 of Yoo-Sin: In the same stance, left middle punch toward BD, straight on from 14."
+  },
+  {
+   "id": "16",
+   "file": "16.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "palm"
+   },
+   "tech": "golchohi",
+   "name": "Sonbadak nopunde golcho makgi · Palm high hooking block",
+   "desc": "Turn into a left walking stance facing BC. Right palm high hooking block; 16 to 19 in one continuous motion.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): palm inside block (batangson an makki): open hand, heel of the palm sweeping in front of the chest to the centre line. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 16 of Yoo-Sin: Turn into a left walking stance facing BC. Right palm high hooking block; 16 to 19 in one continuous motion."
+  },
+  {
+   "id": "17",
+   "file": "17.png",
+   "view": "side",
+   "face": "R",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Turn into a sitting stance facing BD. Left middle punch toward BD.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 17 of Yoo-Sin: Turn into a sitting stance facing BD. Left middle punch toward BD."
+  },
+  {
+   "id": "18",
+   "file": "18.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "palm"
+   },
+   "tech": "golchohi",
+   "name": "Sonbadak nopunde golcho makgi · Palm high hooking block",
+   "desc": "Turn into a right walking stance facing AD. Left palm high hooking block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): palm inside block (batangson an makki): open hand, heel of the palm sweeping in front of the chest to the centre line. This is count 18 of Yoo-Sin: Turn into a right walking stance facing AD. Left palm high hooking block."
+  },
+  {
+   "id": "19",
+   "file": "19.png",
+   "view": "side",
+   "face": "R",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Turn into a sitting stance facing BD. Right middle punch toward BD.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (near arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 19 of Yoo-Sin: Turn into a sitting stance facing BD. Right middle punch toward BD."
+  },
+  {
+   "id": "20",
+   "file": "20.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "xlow",
+    "R": "xlow"
+   },
+   "tech": "xlow",
+   "name": "Eotgeoreo arae makki · Low X block",
+   "desc": "Move the right foot to C into a left walking stance facing D. X-fist pressing block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: low X block (otgeoreo arae makki): both wrists crossed in an X in front of the lower belly, arms angled down. LEFT hand: low X block (otgeoreo arae makki): both wrists crossed in an X in front of the lower belly, arms angled down. This is count 20 of Yoo-Sin: Move the right foot to C into a left walking stance facing D. X-fist pressing block."
+  },
+  {
+   "id": "21",
+   "file": "21.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "khigh",
+    "R": "khigh"
+   },
+   "tech": "ksxrising",
+   "name": "Kyocha sonkal chookyo makgi · X-knife-hand rising block",
+   "desc": "In the same stance, X-knife-hand rising block, straight on from 20.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: knife-hand high block (sonnal eolgul makki): open hand held across and above the forehead, knife edge up. LEFT hand: knife-hand high block (sonnal eolgul makki): open hand held across and above the forehead, knife edge up. This is count 21 of Yoo-Sin: In the same stance, X-knife-hand rising block, straight on from 20."
+  },
+  {
+   "id": "22",
+   "file": "22.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch",
+    "L": "press"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, right middle punch, the left palm slipping up to the right elbow joint.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: open hand palm-down under the elbow of the thrusting arm, pressing. This is count 22 of Yoo-Sin: In the same stance, right middle punch, the left palm slipping up to the right elbow joint."
+  },
+  {
+   "id": "23",
+   "file": "23.png",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "R": "punch",
+    "L": "press"
+   },
+   "tech": "lowkick",
+   "name": "Najunde apcha busigi · Low front snap kick",
+   "desc": "Right low front snap kick toward D, the hands held where they were.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand (near arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand (far arm): open hand palm-down under the elbow of the thrusting arm, pressing. This is count 23 of Yoo-Sin: Right low front snap kick toward D, the hands held where they were."
+  },
+  {
+   "id": "24",
+   "file": "24.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Lower the right foot toward D into a right walking stance. Left middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 24 of Yoo-Sin: Lower the right foot toward D into a right walking stance. Left middle punch."
+  },
+  {
+   "id": "25",
+   "file": "25.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "xlow",
+    "R": "xlow"
+   },
+   "tech": "xlow",
+   "name": "Eotgeoreo arae makki · Low X block",
+   "desc": "In the same stance, X-fist pressing block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: low X block (otgeoreo arae makki): both wrists crossed in an X in front of the lower belly, arms angled down. LEFT hand: low X block (otgeoreo arae makki): both wrists crossed in an X in front of the lower belly, arms angled down. This is count 25 of Yoo-Sin: In the same stance, X-fist pressing block."
+  },
+  {
+   "id": "26",
+   "file": "26.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "khigh",
+    "R": "khigh"
+   },
+   "tech": "ksxrising",
+   "name": "Kyocha sonkal chookyo makgi · X-knife-hand rising block",
+   "desc": "In the same stance, X-knife-hand rising block, straight on from 25.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: knife-hand high block (sonnal eolgul makki): open hand held across and above the forehead, knife edge up. LEFT hand: knife-hand high block (sonnal eolgul makki): open hand held across and above the forehead, knife edge up. This is count 26 of Yoo-Sin: In the same stance, X-knife-hand rising block, straight on from 25."
+  },
+  {
+   "id": "27",
+   "file": "27.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch",
+    "R": "press"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, left middle punch, the right palm slipping up to the left elbow joint.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: open hand palm-down under the elbow of the thrusting arm, pressing. LEFT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 27 of Yoo-Sin: In the same stance, left middle punch, the right palm slipping up to the left elbow joint."
+  },
+  {
+   "id": "28",
+   "file": "28.png",
+   "view": "side",
+   "face": "L",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "punch",
+    "R": "press"
+   },
+   "tech": "lowkick",
+   "name": "Najunde apcha busigi · Low front snap kick",
+   "desc": "Left low front snap kick toward D, the hands held where they were.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand (far arm): open hand palm-down under the elbow of the thrusting arm, pressing. LEFT hand (near arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 28 of Yoo-Sin: Left low front snap kick toward D, the hands held where they were."
+  },
+  {
+   "id": "29",
+   "file": "29.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Lower the left foot toward D into a left walking stance. Right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 29 of Yoo-Sin: Lower the left foot toward D into a left walking stance. Right middle punch."
+  },
+  {
+   "id": "30",
+   "file": "30.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Move the right foot to D into a left L-stance facing D (right foot forward, weight on the left leg). Knife-hand middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. LEFT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 30 of Yoo-Sin: Move the right foot to D into a left L-stance facing D (right foot forward, weight on the left leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "31",
+   "file": "31.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Move the left foot to D into a right L-stance facing D (left foot forward, weight on the right leg). Knife-hand middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand: knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. This is count 31 of Yoo-Sin: Move the left foot to D into a right L-stance facing D (left foot forward, weight on the right leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "32",
+   "file": "32.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Move the left foot back to C into a left L-stance facing D (right foot forward, weight on the left leg). Knife-hand middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. LEFT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 32 of Yoo-Sin: Move the left foot back to C into a left L-stance facing D (right foot forward, weight on the left leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "33",
+   "file": "33.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Move the right foot back to C into a right L-stance facing D (left foot forward, weight on the right leg). Knife-hand middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand: knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. This is count 33 of Yoo-Sin: Move the right foot back to C into a right L-stance facing D (left foot forward, weight on the right leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "34",
+   "file": "34.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "high",
+    "L": "assist"
+   },
+   "tech": "doopalmok",
+   "name": "Doo palmok nopunde makgi · Double forearm high block",
+   "desc": "Move the right foot to D into a right walking stance. Right double forearm high block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. LEFT hand: supporting fist placed under the elbow of the blocking arm. This is count 34 of Yoo-Sin: Move the right foot to D into a right walking stance. Right double forearm high block."
+  },
+  {
+   "id": "35",
+   "file": "35.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "high",
+    "L": "low"
+   },
+   "tech": "low",
+   "name": "Arae makki · Low block",
+   "desc": "In the same stance, left forearm low block, the right forearm held where it was, fast after 34.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 35 of Yoo-Sin: In the same stance, left forearm low block, the right forearm held where it was, fast after 34."
+  },
+  {
+   "id": "36",
+   "file": "36.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "high",
+    "R": "assist"
+   },
+   "tech": "doopalmok",
+   "name": "Doo palmok nopunde makgi · Double forearm high block",
+   "desc": "Move the left foot to D into a left walking stance. Left double forearm high block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: supporting fist placed under the elbow of the blocking arm. LEFT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. This is count 36 of Yoo-Sin: Move the left foot to D into a left walking stance. Left double forearm high block."
+  },
+  {
+   "id": "37",
+   "file": "37.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "high",
+    "R": "low"
+   },
+   "tech": "low",
+   "name": "Arae makki · Low block",
+   "desc": "In the same stance, right forearm low block, the left forearm held where it was, fast after 36.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. LEFT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. This is count 37 of Yoo-Sin: In the same stance, right forearm low block, the left forearm held where it was, fast after 36."
+  },
+  {
+   "id": "38",
+   "file": "38.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Move the right foot to D into a right walking stance. Right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 38 of Yoo-Sin: Move the right foot to D into a right walking stance. Right middle punch."
+  },
+  {
+   "id": "39",
+   "file": "39.png",
+   "view": "back",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksside"
+   },
+   "tech": "rdhighside",
+   "name": "Sonkal dung nopunde yop makgi · Reverse knife-hand high side block",
+   "desc": "Move the left foot along the C–D line, then pivoting on the left foot turn counter-clockwise into a right L-stance facing C (left foot forward, weight on the right leg). Left reverse knife-hand high side block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: knife-hand side block (sonnal yeop makki): open hand extended straight out to the side at shoulder height. This is count 39 of Yoo-Sin: Move the left foot along the C–D line, then pivoting on the left foot turn counter-clockwise into a right L-stance facing C (left foot forward, weight on the right leg). Left reverse knife-hand high side block."
+  },
+  {
+   "id": "40",
+   "file": "40.png",
+   "view": "back",
+   "face": null,
+   "stance": "close",
+   "lead": null,
+   "arms": {
+    "L": "cover",
+    "R": "cover"
+   },
+   "tech": "moajunbic",
+   "name": "Moa junbi sogi C · Close ready stance C",
+   "desc": "Bring the right foot to the left foot into close ready stance C facing C.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: moa seogi (closed stance): feet together, inside edges touching, legs straight. RIGHT hand: covering palm wrapped over the other fist in front of the chest. LEFT hand: covering palm wrapped over the other fist in front of the chest. This is count 40 of Yoo-Sin: Bring the right foot to the left foot into close ready stance C facing C."
+  },
+  {
+   "id": "41",
+   "file": "41.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "upset",
+    "R": "upset"
+   },
+   "tech": "duppercut",
+   "name": "Dujumeok jeocho jireugi · Double uppercut",
+   "desc": "Stamp the right foot toward CF into a right walking stance facing CF. Twin fist upset punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (near arm): ITF upset punch: arm extended forward at solar-plexus height, fist palm-up, elbow slightly bent. LEFT hand (far arm): ITF upset punch: arm extended forward at solar-plexus height, fist palm-up, elbow slightly bent. This is count 41 of Yoo-Sin: Stamp the right foot toward CF into a right walking stance facing CF. Twin fist upset punch."
+  },
+  {
+   "id": "42",
+   "file": "42.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "upset",
+    "R": "upset"
+   },
+   "tech": "duppercut",
+   "name": "Dujumeok jeocho jireugi · Double uppercut",
+   "desc": "Bring the right foot to the left foot, then stamp the left foot toward CE into a left walking stance facing CE. Twin fist upset punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (far arm): ITF upset punch: arm extended forward at solar-plexus height, fist palm-up, elbow slightly bent. LEFT hand (near arm): ITF upset punch: arm extended forward at solar-plexus height, fist palm-up, elbow slightly bent. This is count 42 of Yoo-Sin: Bring the right foot to the left foot, then stamp the left foot toward CE into a left walking stance facing CE. Twin fist upset punch."
+  },
+  {
+   "id": "43",
+   "file": "43.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk"
+   },
+   "tech": "anpalmokm",
+   "name": "Anpalmok kaunde makgi · Inner forearm middle block",
+   "desc": "Bring the left foot to the right foot, then move the right foot to F into a left L-stance facing F (right foot forward, weight on the left leg). Right inner forearm middle block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (near arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 43 of Yoo-Sin: Bring the left foot to the right foot, then move the right foot to F into a left L-stance facing F (right foot forward, weight on the left leg). Right inner forearm middle block."
+  },
+  {
+   "id": "44",
+   "file": "44.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, left middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 44 of Yoo-Sin: In the same stance, left middle punch."
+  },
+  {
+   "id": "45",
+   "file": "45.png",
+   "view": "back",
+   "face": null,
+   "stance": "close",
+   "lead": null,
+   "arms": {
+    "R": "crosspunch"
+   },
+   "tech": "giokja",
+   "name": "Giokja jirugi · Angle punch",
+   "desc": "Bring the left foot to the right foot into a closed stance facing C. Right angle punch, slowly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: moa seogi (closed stance): feet together, inside edges touching, legs straight. RIGHT hand: punch across the body into the target hand at chest height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 45 of Yoo-Sin: Bring the left foot to the right foot into a closed stance facing C. Right angle punch, slowly."
+  },
+  {
+   "id": "46",
+   "file": "46.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk"
+   },
+   "tech": "anpalmokm",
+   "name": "Anpalmok kaunde makgi · Inner forearm middle block",
+   "desc": "Move the left foot to E into a right L-stance facing E (left foot forward, weight on the right leg). Left inner forearm middle block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 46 of Yoo-Sin: Move the left foot to E into a right L-stance facing E (left foot forward, weight on the right leg). Left inner forearm middle block."
+  },
+  {
+   "id": "47",
+   "file": "47.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (far arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 47 of Yoo-Sin: In the same stance, right middle punch."
+  },
+  {
+   "id": "48",
+   "file": "48.png",
+   "view": "back",
+   "face": null,
+   "stance": "close",
+   "lead": null,
+   "arms": {
+    "L": "crosspunch"
+   },
+   "tech": "giokja",
+   "name": "Giokja jirugi · Angle punch",
+   "desc": "Bring the right foot to the left foot into a closed stance facing C. Left angle punch, slowly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: moa seogi (closed stance): feet together, inside edges touching, legs straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: punch across the body into the target hand at chest height. This is count 48 of Yoo-Sin: Bring the right foot to the left foot into a closed stance facing C. Left angle punch, slowly."
+  },
+  {
+   "id": "49",
+   "file": "49.png",
+   "view": "side",
+   "face": "L",
+   "stance": "fixed",
+   "lead": "L",
+   "arms": {
+    "L": "uhigh",
+    "R": "ulow"
+   },
+   "tech": "upunch",
+   "name": "Digutja jirugi · U-shape punch",
+   "desc": "Move the left foot to E into a left fixed stance facing E (left foot forward). U-shape punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ITF gojung sogi (fixed stance): like an L-stance but a little longer, front foot pointing forward, rear foot turned out about 90 degrees, both knees bent, weight even on both legs, body half-facing. LEFT foot forward. RIGHT hand (far arm): lower arm of the ITF U-shape block: forearm level at middle height, fist pointing forward. LEFT hand (near arm): upper arm of the ITF U-shape block: forearm level at head height, fist pointing forward. This is count 49 of Yoo-Sin: Move the left foot to E into a left fixed stance facing E (left foot forward). U-shape punch."
+  },
+  {
+   "id": "50",
+   "file": "50.png",
+   "view": "side",
+   "face": "L",
+   "stance": "fixed",
+   "lead": "R",
+   "arms": {
+    "R": "uhigh",
+    "L": "ulow"
+   },
+   "tech": "upunch",
+   "name": "Digutja jirugi · U-shape punch",
+   "desc": "Bring the left foot to the right foot, then move the right foot to E into a right fixed stance facing E (right foot forward). U-shape punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ITF gojung sogi (fixed stance): like an L-stance but a little longer, front foot pointing forward, rear foot turned out about 90 degrees, both knees bent, weight even on both legs, body half-facing. RIGHT foot forward. RIGHT hand (far arm): upper arm of the ITF U-shape block: forearm level at head height, fist pointing forward. LEFT hand (near arm): lower arm of the ITF U-shape block: forearm level at middle height, fist pointing forward. This is count 50 of Yoo-Sin: Bring the left foot to the right foot, then move the right foot to E into a right fixed stance facing E (right foot forward). U-shape punch."
+  },
+  {
+   "id": "51",
+   "file": "51.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "backfist"
+   },
+   "tech": "bffront",
+   "name": "Dung joomuk ap taerigi · Back fist front strike",
+   "desc": "Stamp the right foot along the C–D line into a sitting stance facing E. Right back fist front strike toward E.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: back-fist strike (deungjumeok ap chigi): arm arcs up and forward, back of the fist striking at face height, elbow slightly bent. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 51 of Yoo-Sin: Stamp the right foot along the C–D line into a sitting stance facing E. Right back fist front strike toward E."
+  },
+  {
+   "id": "52-1",
+   "file": "52-1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "R": "backfist"
+   },
+   "tech": "wavekick",
+   "name": "Doro chagi · Waving kick",
+   "desc": "Right waving kick toward D, the hands held where they were.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand (near arm): back-fist strike (deungjumeok ap chigi): arm arcs up and forward, back of the fist striking at face height, elbow slightly bent. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 52-1 of Yoo-Sin: Right waving kick toward D, the hands held where they were."
+  },
+  {
+   "id": "52-2",
+   "file": "52-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "houter"
+   },
+   "tech": "houterout",
+   "name": "Bakat palmok nopunde bakuro makgi · Outer forearm high outward block",
+   "desc": "Set the right foot back down into the sitting stance facing E. Right outer forearm high outward block toward AC.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 52-2 of Yoo-Sin: Set the right foot back down into the sitting stance facing E. Right outer forearm high outward block toward AC."
+  },
+  {
+   "id": "53-1",
+   "file": "53-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "R": "houter"
+   },
+   "tech": "wavekick",
+   "name": "Doro chagi · Waving kick",
+   "desc": "Left waving kick toward C, the hands held where they were.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand (far arm): high outer block: forearm upright at the side of the head, fist at head height. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 53-1 of Yoo-Sin: Left waving kick toward C, the hands held where they were."
+  },
+  {
+   "id": "53-2",
+   "file": "53-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "houter"
+   },
+   "tech": "houterfront",
+   "name": "Bakat palmok nopunde ap makgi · Outer forearm high front block",
+   "desc": "Set the left foot back down into the sitting stance facing E. Right outer forearm high front block toward ED.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 53-2 of Yoo-Sin: Set the left foot back down into the sitting stance facing E. Right outer forearm high front block toward ED."
+  },
+  {
+   "id": "54",
+   "file": "54.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "ksstrike"
+   },
+   "tech": "backhandhoriz",
+   "name": "Sondung soopyong taerigi · Back hand horizontal strike",
+   "desc": "In the same stance, right back hand horizontal strike toward C.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: knife-hand outer strike (sonnal bakkat chigi): open hand swung outward horizontally at neck height, palm down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 54 of Yoo-Sin: In the same stance, right back hand horizontal strike toward C."
+  },
+  {
+   "id": "55",
+   "file": "55.png",
+   "view": "side",
+   "face": "L",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "R": "eltarget"
+   },
+   "tech": "crescentkick",
+   "name": "Kaunde bandal chagi · Middle crescent kick",
+   "desc": "Left middle crescent kick into the right palm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand (far arm): open hand held as a target in front of the chest, palm toward the striking elbow. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 55 of Yoo-Sin: Left middle crescent kick into the right palm."
+  },
+  {
+   "id": "56",
+   "file": "56.png",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Without setting the foot down, left middle side piercing kick toward C, forming a forearm guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: LEFT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 56 of Yoo-Sin: Without setting the foot down, left middle side piercing kick toward C, forming a forearm guarding block."
+  },
+  {
+   "id": "57",
+   "file": "57.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "ksstrike"
+   },
+   "tech": "backhandhoriz",
+   "name": "Sondung soopyong taerigi · Back hand horizontal strike",
+   "desc": "Lower the left foot toward C into a sitting stance facing B. Left back hand horizontal strike toward C.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: knife-hand outer strike (sonnal bakkat chigi): open hand swung outward horizontally at neck height, palm down. This is count 57 of Yoo-Sin: Lower the left foot toward C into a sitting stance facing B. Left back hand horizontal strike toward C."
+  },
+  {
+   "id": "58",
+   "file": "58.png",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "eltarget"
+   },
+   "tech": "crescentkick",
+   "name": "Kaunde bandal chagi · Middle crescent kick",
+   "desc": "Right middle crescent kick into the left palm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): open hand held as a target in front of the chest, palm toward the striking elbow. This is count 58 of Yoo-Sin: Right middle crescent kick into the left palm."
+  },
+  {
+   "id": "59",
+   "file": "59.png",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk",
+    "L": "guard"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Without setting the foot down, right middle side piercing kick toward C, forming a forearm guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (near arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 59 of Yoo-Sin: Without setting the foot down, right middle side piercing kick toward C, forming a forearm guarding block."
+  },
+  {
+   "id": "60",
+   "file": "60.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "houter",
+    "L": "assist"
+   },
+   "tech": "gutja",
+   "name": "Gutja makgi · 9-shape block",
+   "desc": "Lower the right foot toward C into a sitting stance facing A. Right 9-shape block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: supporting fist placed under the elbow of the blocking arm. This is count 60 of Yoo-Sin: Lower the right foot toward C into a sitting stance facing A. Right 9-shape block."
+  },
+  {
+   "id": "61",
+   "file": "61.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "assist"
+   },
+   "tech": "changehands",
+   "name": "Annun sogi · Sitting stance, changing hands",
+   "desc": "In the same stance, change the position of the hands.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: supporting fist placed under the elbow of the blocking arm. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 61 of Yoo-Sin: In the same stance, change the position of the hands."
+  },
+  {
+   "id": "62",
+   "file": "62.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "houter",
+    "L": "assist"
+   },
+   "tech": "gutja",
+   "name": "Gutja makgi · 9-shape block",
+   "desc": "Move the left foot to C, turning clockwise into a sitting stance facing B. Right 9-shape block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: supporting fist placed under the elbow of the blocking arm. This is count 62 of Yoo-Sin: Move the left foot to C, turning clockwise into a sitting stance facing B. Right 9-shape block."
+  },
+  {
+   "id": "63",
+   "file": "63.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "assist"
+   },
+   "tech": "changehands",
+   "name": "Annun sogi · Sitting stance, changing hands",
+   "desc": "In the same stance, change the position of the hands.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: supporting fist placed under the elbow of the blocking arm. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 63 of Yoo-Sin: In the same stance, change the position of the hands."
+  },
+  {
+   "id": "64",
+   "file": "64.png",
+   "view": "front",
+   "face": null,
+   "stance": "vertical",
+   "lead": "R",
+   "arms": {
+    "R": "hammer"
+   },
+   "tech": "hammer",
+   "name": "Mejumeok naeryeo chigi · Hammer-fist strike",
+   "desc": "Pull the left foot into a left vertical stance facing D (right foot forward, the left foot back). Right side fist downward strike toward D.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ITF soojik sogi (vertical stance): short, about one shoulder width from heel to heel, front foot pointing forward, rear foot turned out about 90 degrees, both legs straight, slightly more weight on the rear leg. RIGHT foot forward. RIGHT hand: hammer-fist strike (me jumeok naeryeo chigi): arm swung down and forward, bottom of the fist striking at chest height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 64 of Yoo-Sin: Pull the left foot into a left vertical stance facing D (right foot forward, the left foot back). Right side fist downward strike toward D."
+  },
+  {
+   "id": "65",
+   "file": "65.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "twinv",
+    "R": "twinv"
+   },
+   "tech": "twinvert",
+   "name": "Sang joomuk nopunde sewo jirugi · Twin fist high vertical punch",
+   "desc": "Move the right foot to A into a left walking stance facing B. Twin fist high vertical punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): ITF twin fist high vertical punch: both arms extended forward at eye level, fists vertical (thumbs up), shoulder-width apart. LEFT hand (far arm): ITF twin fist high vertical punch: both arms extended forward at eye level, fists vertical (thumbs up), shoulder-width apart. This is count 65 of Yoo-Sin: Move the right foot to A into a left walking stance facing B. Twin fist high vertical punch."
+  },
+  {
+   "id": "66",
+   "file": "66.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "twinv",
+    "R": "twinv"
+   },
+   "tech": "twinvert",
+   "name": "Sang joomuk nopunde sewo jirugi · Twin fist high vertical punch",
+   "desc": "Move the right foot to B, turning counter-clockwise into a left walking stance facing A. Twin fist high vertical punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (far arm): ITF twin fist high vertical punch: both arms extended forward at eye level, fists vertical (thumbs up), shoulder-width apart. LEFT hand (near arm): ITF twin fist high vertical punch: both arms extended forward at eye level, fists vertical (thumbs up), shoulder-width apart. This is count 66 of Yoo-Sin: Move the right foot to B, turning counter-clockwise into a left walking stance facing A. Twin fist high vertical punch."
+  },
+  {
+   "id": "67",
+   "file": "67.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Bring the right foot to the left foot, then move the left foot to BD into a right L-stance facing BD (left foot forward, weight on the right leg). Knife-hand middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand (far arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. This is count 67 of Yoo-Sin: Bring the right foot to the left foot, then move the left foot to BD into a right L-stance facing BD (left foot forward, weight on the right leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "68",
+   "file": "68.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Bring the left foot to the right foot, then move the right foot to AD into a left L-stance facing AD (right foot forward, weight on the left leg). Knife-hand middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. LEFT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 68 of Yoo-Sin: Bring the left foot to the right foot, then move the right foot to AD into a left L-stance facing AD (right foot forward, weight on the left leg). Knife-hand middle guarding block."
+  }
+ ]
+}

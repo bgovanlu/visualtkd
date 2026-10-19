@@ -8,7 +8,7 @@ const T=Object.fromEntries(Object.entries(LIB.t).map(([k,v])=>[k,v.slice(0,3)]))
 const STANCE=Object.fromEntries(Object.entries(LIB.s).map(([k,v])=>[k,v.slice(0,3)]));
 // library links: /library/<family>/#<slug>
 const techHref=k=>LIB.t[k][3],stanceHref=k=>LIB.s[k][3];
-const DIRN={na:"na",ga:"ga",na4:"na",na5:"na",ga4:"ga",ga5:"ga",da1:"da¹",da2:"da²",da3:"da³",ra1:"ra¹",ra2:"ra²",ra3:"ra³",gada:"ga-da",nada:"na-da",gara:"ga-ra",nara:"na-ra"};
+const DIRN={na:"na",ga:"ga",na4:"na",na5:"na",ga4:"ga",ga5:"ga",gada2:"ga-da",nada2:"na-da",gara2:"ga-ra",nara2:"na-ra",da1:"da¹",da2:"da²",da3:"da³",ra1:"ra¹",ra2:"ra²",ra3:"ra³",gada:"ga-da",nada:"na-da",gara:"ga-ra",nara:"na-ra"};
 
 let gid=0;
 /* ---------- vector helpers ---------- */
@@ -544,7 +544,7 @@ function feet(m){
   if(m.stance==="sasun")m={...m,stance:"horse"};
   if(m.stance==="fixed"||m.stance==="vertical")m={...m,stance:"back"};
   if(m.stance==="lowst")m={...m,stance:"front"};
-  const rot={na:0,ga:180,na4:0,na5:0,ga4:180,ga5:180,da1:90,da2:90,da3:90,ra1:-90,ra2:-90,ra3:-90,gada:135,nada:45,gara:-135,nara:-45}[m.dir]*Math.PI/180;
+  const rot={na:0,ga:180,na4:0,na5:0,ga4:180,ga5:180,gada2:135,nada2:45,gara2:-135,nara2:-45,da1:90,da2:90,da3:90,ra1:-90,ra2:-90,ra3:-90,gada:135,nada:45,gara:-135,nara:-45}[m.dir]*Math.PI/180;
   const sgn=s=>s==="L"?-1:1,other=s=>s==="L"?"R":"L";
   const foot=(x,y,a,on)=>`<path d="${spline(xf(FT,[x,y],a))}" fill="${on?"var(--fire)":"var(--muted)"}"/>`;
   let s="";

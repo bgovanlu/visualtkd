@@ -424,7 +424,7 @@ const M=FORM.moves;
 const ITF=FORM.family==="itf";
 /* rows r1/r3 are the A–B line and r5 the far E–F bar (Dan-Gun's I); floor.letters overrides per row: {"r5":["E","F"]} */
 const LET=Object.assign({r1:["A","B"],r3:["A","B"],r5:["E","F"]},(FORM.floor||{}).letters||{});
-if(ITF){itfNames();Object.assign(DIRN,{na:"C",ga:"D",na4:"C",na5:"C",ga4:"D",ga5:"D",da1:LET.r1[1],da2:LET.r3[1],da3:LET.r5[1],ra1:LET.r1[0],ra2:LET.r3[0],ra3:LET.r5[0],
+if(ITF){itfNames();Object.assign(DIRN,{na:"C",ga:"D",na4:"C",na5:"C",ga4:"D",ga5:"D",gada2:"D"+LET.r5[1],nada2:"C"+LET.r5[1],gara2:"D"+LET.r5[0],nara2:"C"+LET.r5[0],da1:LET.r1[1],da2:LET.r3[1],da3:LET.r5[1],ra1:LET.r1[0],ra2:LET.r3[0],ra3:LET.r5[0],
     nara:"C"+LET.r5[0],nada:"C"+LET.r5[1],gara:"D"+LET.r5[0],gada:"D"+LET.r5[1]},(FORM.floor||{}).diag||{});   // diagonals named as the ITF does: CE, CF …; floor.diag overrides ({"gara":"AD"})
   document.querySelector(".compass.n").textContent="C";document.querySelector(".compass.s").textContent="D";
   ["r1","r3","r5"].forEach(r=>{const b=document.getElementById(r);b.querySelector(".dl.l").textContent=LET[r][0];b.querySelector(".dl.r").textContent=LET[r][1]});
@@ -618,7 +618,7 @@ rows.addEventListener("click",e=>{const r=e.target.closest("tr");if(r&&!e.target
 
 /* mini floor map for the carousel: the 王 line with every position on it */
 const POS=FORM.pos;
-const ROT={na:-90,ga:90,na4:-90,na5:-90,ga4:90,ga5:90,da1:0,da2:0,da3:0,ra1:180,ra2:180,ra3:180,gada:45,nada:-45,gara:135,nara:-135};
+const ROT={na:-90,ga:90,na4:-90,na5:-90,ga4:90,ga5:90,gada2:45,nada2:-45,gara2:135,nara2:-135,da1:0,da2:0,da3:0,ra1:180,ra2:180,ra3:180,gada:45,nada:-45,gara:135,nara:-135};
 function minimap(i){
   const m=M[i],[x,y]=POS[m.id];
   let trail="";for(let k=0;k<i;k++){const p=POS[M[k].id];trail+=`<circle cx="${p[0]}" cy="${p[1]}" r="2" fill="var(--heaven)" opacity=".45"/>`}

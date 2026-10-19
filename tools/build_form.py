@@ -44,7 +44,7 @@ def check(F):
         # every technique and stance must have a library entry (data/techniques.json)
         assert m["tech"] in S.LIB["techniques"], f'move {m["id"]}: no library entry for technique "{m["tech"]}"'
         assert m["stance"] in S.LIB["stances"], f'move {m["id"]}: no library entry for stance "{m["stance"]}"'
-        assert m["dir"] in ("na","ga","na4","na5","ga4","ga5","da1","da2","da3","ra1","ra2","ra3","gada","nada","gara","nara"), m
+        assert m["dir"] in ("na","ga","na4","na5","ga4","ga5","gada2","nada2","gara2","nara2","da1","da2","da3","ra1","ra2","ra3","gada","nada","gara","nara"), m
         if m["view"] == "side": assert m.get("face") in ("L","R"), m
 
 def build(path, do_print, images=False):

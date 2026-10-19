@@ -665,6 +665,23 @@ The other differences are typos ("closed"/"close" at 26 and 43). Neither source 
 - [ ] **Library.** New entries: `kshighside`, `twistkickm`, `rdwedgem`, `houterlow`, `doublefistlow`, `rdhguard`, `sweepkick`.
 - [ ] **Footwork.** The simulator ends 2.5 foot-lengths from the start.
 
+## Yoo-Sin · 유신 (ITF) — 18 October 2026
+
+`/itf/yoo-sin`, with a 2-page print sheet. The moves go to both ends of the C–D line and onto the diagonals at each end, so the board shows them in order, read down the page in five rows of about 15, as on Ge-Baek. The board is wide (2060 px), so the printed floor plan is small.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 68 movements. The chart adds "perform in slow motion" at 45 and 48. Typos in both: "CG" for CF at 41, "Ac" at 52, "ten" for "then". Fandom was not used. There is no official video.
+
+- [ ] **Move 15.** Both English texts say "maintaining a right walking stance toward BD", but 14 is a sitting stance and the chart's Korean for 15 is "Annun so" (sitting stance). The page draws a sitting stance.
+- [ ] **Moves 16–19.** The hooking blocks go to BC and AD, and both punches go to BD in sitting stance. The page follows the text, though BD for 17 and 19 looks odd; please check.
+- [ ] **No kihap.** Neither source marks one.
+- [ ] **Warrior ready stance B (ready posture).** Neither text describes it beyond the sword drawn on the right. It's drawn in parallel stance with the fists in front; please check the Encyclopedia.
+- [ ] **More direction codes.** Yoo-Sin names seven diagonals (BD, AD, BC, CF, CE, AC, ED). BC and CF point the same way on the board, as do AD and ED, and CE and AC, so I added second diagonal codes (`nada2`, `nara2`, `gara2`).
+- [ ] **Waving kick (52-1, 53-1)** is new (`wavekick`, Doro chagi). The Hangul 도로차기 is my guess; please check. Drawn as a front kick.
+- [ ] **U-shape punch (49, 50)** uses the U-shape block arms.
+- [ ] **Changing hands (61, 63)** has its own entry, using the chart's name for the stance.
+- [ ] **Library.** New entries: `warriorb`, `sitelbows`, `ksxrising`, `rdhighside`, `upunch`, `wavekick`, `houterout`, `backhandhoriz`, `crescentkick`, `changehands`.
+- [ ] **Footwork.** The simulator ends 4.2 foot-lengths from the start.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:

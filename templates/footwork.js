@@ -16,7 +16,7 @@
    Returns one entry per move: {feet:{L,R} (each {p:[x,y], a:angle, air}), prev, moved:[sides], how, pivot}.
    Usable in the browser (inlined) and in Node (module.exports) for the checks in tools/check/footwork.py. */
 const FW=(()=>{
-const DIRV={na:[0,-1],ga:[0,1],na4:[0,-1],na5:[0,-1],ga4:[0,1],ga5:[0,1],da1:[1,0],da2:[1,0],da3:[1,0],ra1:[-1,0],ra2:[-1,0],ra3:[-1,0],
+const DIRV={na:[0,-1],ga:[0,1],na4:[0,-1],na5:[0,-1],ga4:[0,1],ga5:[0,1],gada2:[Math.SQRT1_2,Math.SQRT1_2],nada2:[Math.SQRT1_2,-Math.SQRT1_2],gara2:[-Math.SQRT1_2,Math.SQRT1_2],nara2:[-Math.SQRT1_2,-Math.SQRT1_2],da1:[1,0],da2:[1,0],da3:[1,0],ra1:[-1,0],ra2:[-1,0],ra3:[-1,0],
   gada:[Math.SQRT1_2,Math.SQRT1_2],nada:[Math.SQRT1_2,-Math.SQRT1_2],gara:[-Math.SQRT1_2,Math.SQRT1_2],nara:[-Math.SQRT1_2,-Math.SQRT1_2]};   // diagonals (Hansu)
 // stance shapes: lead foot relative to the other foot, in the body frame [forward, toward the lead foot's side]
 const SHAPE={ready:[0,.8],close:[0,.42],walk:[1.6,.42],front:[2.7,.85],back:[2.1,0],nieun:[1.1,0],gyeot:[.6,.15],tiger:[1.1,.3],
