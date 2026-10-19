@@ -29,6 +29,7 @@ STANCE = {
     "nieun": "nieunja seogi (ㄴ-shaped stance): feet at right angles like a short back stance, heels about one foot-length apart, knees slightly bent, weight even",
     "gyeot": "gyeotdari seogi (assisting stance): front knee bent, the rear foot close behind the front heel with only its ball down, rear knee bent in behind the front knee",
     "lowst": "ITF nachuo sogi (low stance): like the walking stance but a little longer and lower, front knee well bent",
+    "oneleg": "ITF waebal sogi (one-leg stance): standing on one leg, knee slightly bent, the other foot drawn up with its sole beside the standing knee joint",
     "vertical": "ITF soojik sogi (vertical stance): short, about one shoulder width from heel to heel, front foot pointing forward, rear foot turned out about 90 degrees, both legs straight, slightly more weight on the rear leg",
     "fixed": "ITF gojung sogi (fixed stance): like an L-stance but a little longer, front foot pointing forward, rear foot turned out about 90 degrees, both knees bent, weight even on both legs, body half-facing",
     "ogeum": "ogeum seogi (reverse crane stance): standing on one bent leg, the instep of the other foot pressed into the back of the standing knee",

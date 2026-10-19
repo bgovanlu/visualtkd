@@ -1,0 +1,756 @@
+{
+ "slug": "itf/po-eun",
+ "pdf": "po-eun-print.pdf",
+ "family": "itf",
+ "title": "Po-Eun",
+ "ko": "포은",
+ "symbol": {
+  "name": "Po-Eun",
+  "hanja": "圃隱",
+  "meaning": "The loyal subject Jeong Mong-ju · ITF pattern 11 of 24"
+ },
+ "movements": 36,
+ "note": {
+  "h": "一 · Po-Eun · the loyal subject",
+  "p": "Po-Eun is the pen name of Jeong Mong-ju (1337–1392), a loyal subject of the late Goryeo kingdom and a famous poet. His poem saying he would not serve a second master, though he die a hundred times, is known to every Korean; he was also a pioneer of physics. The diagram, a single line, stands for his unbending loyalty to king and country at the end of Goryeo. The whole pattern stays on the A–B line, facing D for almost all of it: from a forearm guarding block, a one-leg stance and pressing kick, then a long continuous run in sitting stance (knife-hand strike, angle punch, pressing and side front blocks, wedging block, back elbow thrusts, punch and horizontal punch, with a kihap), X-stance low blocks, a U-shape grasp, a slow twin elbow thrust and a back fist strike behind; then the same again to the other side."
+ },
+ "footer": "Move numbers follow the ITF Encyclopedia count (36 movements, one technique each). Every count happens on the one line from A (left of the page) to B (right); each column is one spot on that line, with the counts made there. You face D, down the page, for all but the guarding blocks and kicks. Finish by bringing the left foot back to the ready posture.",
+ "boardMin": 1780,
+ "floor": {
+  "glyph": "一",
+  "spots": true,
+  "rail": [
+   "r1",
+   "r1"
+  ],
+  "notesBelow": true,
+  "map": "M4 30H96"
+ },
+ "layout": {
+  "r1": [
+   [
+    "14",
+    "15",
+    "16"
+   ],
+   [
+    "J",
+    "1"
+   ],
+   [
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13"
+   ],
+   [
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "36"
+   ],
+   [
+    "2"
+   ],
+   [
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31"
+   ],
+   [
+    "35"
+   ],
+   [
+    "32",
+    "33",
+    "34"
+   ]
+  ]
+ },
+ "pos": {
+  "J": [
+   40.4,
+   30
+  ],
+  "1": [
+   48.2,
+   30
+  ],
+  "2": [
+   58.9,
+   30
+  ],
+  "3": [
+   50.6,
+   30
+  ],
+  "4": [
+   46.4,
+   30
+  ],
+  "5": [
+   46.4,
+   30
+  ],
+  "6": [
+   46.4,
+   30
+  ],
+  "7": [
+   46.4,
+   30
+  ],
+  "8": [
+   46.4,
+   30
+  ],
+  "9": [
+   46.4,
+   30
+  ],
+  "10": [
+   46.4,
+   30
+  ],
+  "11": [
+   46.4,
+   30
+  ],
+  "12": [
+   46.4,
+   30
+  ],
+  "13": [
+   31.9,
+   30
+  ],
+  "14": [
+   18.1,
+   30
+  ],
+  "15": [
+   8.0,
+   30
+  ],
+  "16": [
+   19.9,
+   30
+  ],
+  "17": [
+   34.4,
+   30
+  ],
+  "18": [
+   50.0,
+   30
+  ],
+  "19": [
+   51.8,
+   30
+  ],
+  "20": [
+   41.1,
+   30
+  ],
+  "21": [
+   49.4,
+   30
+  ],
+  "22": [
+   53.6,
+   30
+  ],
+  "23": [
+   53.6,
+   30
+  ],
+  "24": [
+   53.6,
+   30
+  ],
+  "25": [
+   53.6,
+   30
+  ],
+  "26": [
+   53.6,
+   30
+  ],
+  "27": [
+   53.6,
+   30
+  ],
+  "28": [
+   53.6,
+   30
+  ],
+  "29": [
+   53.6,
+   30
+  ],
+  "30": [
+   53.6,
+   30
+  ],
+  "31": [
+   68.1,
+   30
+  ],
+  "32": [
+   81.9,
+   30
+  ],
+  "33": [
+   92.0,
+   30
+  ],
+  "34": [
+   80.1,
+   30
+  ],
+  "35": [
+   65.6,
+   30
+  ],
+  "36": [
+   50.0,
+   30
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "ga",
+   "view": "front",
+   "stance": "ready",
+   "arms": {
+    "L": "heaven",
+    "R": "heaven"
+   },
+   "tech": "haneulson",
+   "desc": "Stand facing D in parallel stance with a heaven hand: feet parallel, both open hands raised in front of the forehead to form a triangle."
+  },
+  {
+   "id": "1",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk",
+    "R": "guard"
+   },
+   "tech": "fguard",
+   "desc": "Turn left: move the left foot to B into a right L-stance facing B (left foot forward, weight on the right leg). Forearm middle guarding block."
+  },
+  {
+   "id": "2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "oneleg",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "waebaljunbi",
+   "carry": false,
+   "desc": "Pull the right foot up to the left knee joint into a left one-leg stance facing D, lifting both fists and turning the face toward A."
+  },
+  {
+   "id": "3",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "pressingkick",
+   "desc": "Right pressing kick toward A, the hands held where they were."
+  },
+  {
+   "id": "4",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "ksstrike"
+   },
+   "tech": "kssidestrike",
+   "carry": false,
+   "desc": "Lower the right foot toward A into a sitting stance facing D. Right knife-hand middle side strike toward A."
+  },
+  {
+   "id": "5",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "crosspunch"
+   },
+   "tech": "giokja",
+   "desc": "In the same stance, left angle punch."
+  },
+  {
+   "id": "6",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "hammerlow",
+    "R": "sideblk"
+   },
+   "tech": "presside",
+   "desc": "Left forefist pressing block and right inner forearm side front block, together."
+  },
+  {
+   "id": "7",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "hammerlow",
+    "L": "sideblk"
+   },
+   "tech": "presside",
+   "desc": "Right forefist pressing block and left inner forearm side front block, together."
+  },
+  {
+   "id": "8",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "tech": "anwedge",
+   "desc": "Inner forearm middle wedging block."
+  },
+  {
+   "id": "9",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "sideelbow",
+    "L": "elbowpush"
+   },
+   "tech": "backelbow",
+   "desc": "Right back elbow thrust toward C, the left palm pushing the right fist, the face kept toward A."
+  },
+  {
+   "id": "10",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "punch",
+    "L": "press"
+   },
+   "tech": "punch",
+   "desc": "Right middle punch toward D, the left palm slipping up to the right elbow joint."
+  },
+  {
+   "id": "11",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "sideelbow",
+    "R": "elbowpush"
+   },
+   "tech": "backelbow",
+   "desc": "Left back elbow thrust toward C, the right palm pushing the left fist."
+  },
+  {
+   "id": "12",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "sidepunch"
+   },
+   "tech": "soopyong",
+   "kihap": true,
+   "desc": "Right horizontal punch toward A, with a kihap. Moves 6 to 12 run on in one continuous motion."
+  },
+  {
+   "id": "13",
+   "dir": "ga",
+   "view": "front",
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "R": "low",
+    "L": "assist"
+   },
+   "tech": "xslowfront",
+   "carry": false,
+   "step": {
+    "move": [
+     0,
+     1.2
+    ]
+   },
+   "desc": "Cross the left foot over the right foot into a right X-stance facing D. Right outer forearm low front block, the left fingertips on the blocking forearm."
+  },
+  {
+   "id": "14",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "uhigh",
+    "L": "ulow"
+   },
+   "tech": "ugrasp",
+   "desc": "Move the right foot to A into a left L-stance facing A (right foot forward). U-shape grasp toward A."
+  },
+  {
+   "id": "15",
+   "dir": "ga",
+   "view": "front",
+   "stance": "close",
+   "arms": {
+    "L": "sideelbow",
+    "R": "sideelbow"
+   },
+   "tech": "twinelbowh",
+   "carry": false,
+   "desc": "Bring the left foot to the right foot into a closed stance facing D. Twin elbow horizontal thrust, turning the face toward B, slowly."
+  },
+  {
+   "id": "16",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "bfback",
+    "L": "spread"
+   },
+   "tech": "yopdwi",
+   "carry": false,
+   "desc": "Move the left foot to B into a sitting stance facing D. Right back fist side back strike toward C, the left arm extended down to the side."
+  },
+  {
+   "id": "17",
+   "dir": "ga",
+   "view": "front",
+   "stance": "cross",
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "assist"
+   },
+   "tech": "xslowfront",
+   "carry": false,
+   "step": {
+    "move": [
+     0,
+     -1.2
+    ]
+   },
+   "desc": "Cross the right foot over the left foot into a left X-stance facing D. Left outer forearm low front block, the right fingertips on the left side fist."
+  },
+  {
+   "id": "18",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "kslow",
+    "R": "ksguard"
+   },
+   "tech": "rdlowguard",
+   "carry": false,
+   "desc": "Move the left foot to B into a sitting stance facing D. Reverse knife-hand low guarding block toward B."
+  },
+  {
+   "id": "19",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk",
+    "L": "guard"
+   },
+   "tech": "fguard",
+   "desc": "Pivoting on the left foot, turn into a left L-stance facing A (right foot forward, weight on the left leg). Forearm middle guarding block."
+  },
+  {
+   "id": "20",
+   "dir": "ga",
+   "view": "front",
+   "stance": "oneleg",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "waebaljunbi",
+   "carry": false,
+   "desc": "Pull the left foot up to the right knee joint into a right one-leg stance facing D, lifting both fists and turning the face toward B."
+  },
+  {
+   "id": "21",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "pressingkick",
+   "desc": "Left pressing kick toward B, the hands held where they were."
+  },
+  {
+   "id": "22",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "ksstrike"
+   },
+   "tech": "kssidestrike",
+   "carry": false,
+   "desc": "Lower the left foot toward B into a sitting stance facing D. Left knife-hand middle side strike toward B."
+  },
+  {
+   "id": "23",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "crosspunch"
+   },
+   "tech": "giokja",
+   "desc": "In the same stance, right angle punch."
+  },
+  {
+   "id": "24",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "hammerlow",
+    "L": "sideblk"
+   },
+   "tech": "presside",
+   "desc": "Right forefist pressing block and left inner forearm side front block, together."
+  },
+  {
+   "id": "25",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "hammerlow",
+    "R": "sideblk"
+   },
+   "tech": "presside",
+   "desc": "Left forefist pressing block and right inner forearm side front block, together."
+  },
+  {
+   "id": "26",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "wedge",
+    "R": "wedge"
+   },
+   "tech": "anwedge",
+   "desc": "Inner forearm middle wedging block."
+  },
+  {
+   "id": "27",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "sideelbow",
+    "R": "elbowpush"
+   },
+   "tech": "backelbow",
+   "desc": "Left back elbow thrust toward C, the right palm pushing the left fist, the face kept toward B."
+  },
+  {
+   "id": "28",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "punch",
+    "R": "press"
+   },
+   "tech": "punch",
+   "desc": "Left middle punch toward D, the right palm slipping up to the left elbow joint."
+  },
+  {
+   "id": "29",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "sideelbow",
+    "L": "elbowpush"
+   },
+   "tech": "backelbow",
+   "desc": "Right back elbow thrust toward C, the left palm pushing the right fist."
+  },
+  {
+   "id": "30",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "sidepunch"
+   },
+   "tech": "soopyong",
+   "kihap": true,
+   "desc": "Left horizontal punch toward B, with a kihap. Moves 24 to 30 run on in one continuous motion."
+  },
+  {
+   "id": "31",
+   "dir": "ga",
+   "view": "front",
+   "stance": "cross",
+   "lead": "L",
+   "arms": {
+    "L": "low",
+    "R": "assist"
+   },
+   "tech": "xslowfront",
+   "carry": false,
+   "step": {
+    "move": [
+     0,
+     -1.2
+    ]
+   },
+   "desc": "Cross the right foot over the left foot into a left X-stance facing D. Left outer forearm low front block, the right fingertips on the blocking forearm."
+  },
+  {
+   "id": "32",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "uhigh",
+    "R": "ulow"
+   },
+   "tech": "ugrasp",
+   "desc": "Move the left foot to B into a right L-stance facing B (left foot forward). U-shape grasp toward B."
+  },
+  {
+   "id": "33",
+   "dir": "ga",
+   "view": "front",
+   "stance": "close",
+   "arms": {
+    "L": "sideelbow",
+    "R": "sideelbow"
+   },
+   "tech": "twinelbowh",
+   "carry": false,
+   "desc": "Bring the right foot to the left foot into a closed stance facing D. Twin elbow horizontal thrust, turning the face toward A, slowly."
+  },
+  {
+   "id": "34",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "bfback",
+    "R": "spread"
+   },
+   "tech": "yopdwi",
+   "carry": false,
+   "desc": "Move the right foot to A into a sitting stance facing D. Left back fist side back strike toward C, the right arm extended down to the side."
+  },
+  {
+   "id": "35",
+   "dir": "ga",
+   "view": "front",
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "R": "low",
+    "L": "assist"
+   },
+   "tech": "xslowfront",
+   "carry": false,
+   "step": {
+    "move": [
+     0,
+     1.2
+    ]
+   },
+   "desc": "Cross the left foot over the right foot into a right X-stance facing D. Right outer forearm low front block, the left fingertips on the right side fist."
+  },
+  {
+   "id": "36",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "kslow",
+    "L": "ksguard"
+   },
+   "tech": "rdlowguard",
+   "carry": false,
+   "desc": "Move the right foot to A into a sitting stance facing D. Reverse knife-hand low guarding block toward A."
+  }
+ ],
+ "refs": [
+  {
+   "go": "itf-po-eun",
+   "kind": "itf",
+   "icon": "gate",
+   "src": "ITF · Official site",
+   "title": "Po-Eun",
+   "desc": "The pattern's official text: meaning, ready posture and all 36 movements (ITF, Choi Jung Hwa).",
+   "url": "https://www.itf-administration.com/articles/?arturn=844"
+  },
+  {
+   "go": "itf-encyclopedia",
+   "kind": "itf",
+   "icon": "gate",
+   "src": "ITF · Vienna · Official site",
+   "title": "Encyclopedia of Taekwon-Do",
+   "desc": "General Choi's reference work, the source of the patterns; selected chapters online.",
+   "url": "https://itf-tkd.org/encyclopedia-of-taekwon%E2%80%91do/"
+  }
+ ],
+ "cardW": 104,
+ "figH": 124
+}

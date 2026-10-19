@@ -557,6 +557,23 @@ This is the first ITF page: `/itf/chon-ji`, with a 2-page print sheet.
 - [ ] **Library.** New entries: `haneulson`, `upsetpunch`, `golchohi`, `kshguard`, `kslowfront`, `pressingkick`, `doopalmokm`. New arm `heaven`.
 - [ ] **Footwork.** The simulator ends 5.4 foot-lengths from the start, toward C. The way down includes two slides back, and the way back has two full low-stance steps past the short line, so the end is behind the start line. The real pattern may be shorter.
 
+## Po-Eun · 포은 (ITF) — 18 October 2026
+
+`/itf/po-eun`, with a 2-page print sheet, on a one-line (一) board like Pyongwon's: each column is one spot on the A–B line, from A (left of the page) to B, with the counts made there. Crowded spots are split into columns of consecutive counts.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 36 movements. The official page says moves 6–12 and 24–30 are done "in a fast motion", the chart says "continuous motion". The ITF Korean names come from the chart. Fandom was not used. There is no official video.
+
+- [ ] **Kihap at 12 and 30.** These follow the official ITF page, where "Ki-Hap" stands as its own line after the fast-motion note; the chart marks none.
+- [ ] **One-leg stance (2, 20)** is a new stance key (`oneleg`, waebal sogi), drawn as the crane stance, with both fists lifted (`guard` arms). The turn of the face isn't shown.
+- [ ] **Forefist pressing block with inner forearm side front block (6, 7, 24, 25)** is a new combined entry; the pressing fist uses the Kukkiwon low hammer-fist arm (`hammerlow`).
+- [ ] **Back elbow thrust (9, 11, 27, 29)** goes back toward C; the front view shows the elbow out to the side with the other palm on the fist (`sideelbow` + `elbowpush`).
+- [ ] **U-shape grasp (14, 32)** is drawn with the U-shape block arms; the open hands of the grasp don't show.
+- [ ] **Twin elbow horizontal thrust (15, 33)** uses the twin side elbow arms from Toi-Gye.
+- [ ] **Reverse knife-hand low guarding block (18, 36)** is drawn with the knife-hand low guarding arms. The chart's Korean names add "B-bang" / "A-bang" (toward B / toward A).
+- [ ] **X-stance moves (13, 17, 31, 35)** have small travel hints so the simulator moves the feet the right way along the line.
+- [ ] **Library.** New stance `oneleg`. New entries: `waebaljunbi`, `presside`, `anwedge`, `backelbow`, `soopyong`, `xslowfront`, `ugrasp`, `twinelbowh`, `rdlowguard`.
+- [ ] **Footwork.** The simulator ends 1.4 foot-lengths from the start.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:
