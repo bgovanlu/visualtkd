@@ -18,7 +18,7 @@
 
 Planned: none; all 17 Kukkiwon forms are published.
 
-## ITF forms: 18 of 24 built
+## ITF forms: 19 of 24 built
 | Form | Path | Figures | Review |
 |---|---|---|---|
 | Chon-Ji 天地 (+) | /itf/chon-ji | 20 | Open items in REVIEW.md; orientation (D at the bottom) is the big one |
@@ -39,8 +39,9 @@ Planned: none; all 17 Kukkiwon forms are published.
 | Sam-Il 三一 (+) | /itf/sam-il | 35 | Open items in REVIEW.md; no kihap in either source |
 | Yoo-Sin 庾信 (I) | /itf/yoo-sin | 71 | Open items in REVIEW.md; stance at 15; wide board |
 | Choi-Yong 崔瑩 (+) | /itf/choi-yong | 47 | Open items in REVIEW.md; fixed-stance naming at 46 |
+| Yon-Gae 淵蓋 (+) | /itf/yon-gae | 52 | Open items in REVIEW.md; no kihap in either source |
 
-The forms index has an **ITF forms** section, next to **World Taekwondo forms**, with a planned card for each of the 24 Chang Hon patterns. Each card has the pattern's floor diagram (skeleton layout), rank and move count from `itf` in `data/catalog.json`. The other 6 have no pages or print sheets yet. Each card links to its official pattern page; the section lists the official ITF references.
+The forms index has an **ITF forms** section, next to **World Taekwondo forms**, with a planned card for each of the 24 Chang Hon patterns. Each card has the pattern's floor diagram (skeleton layout), rank and move count from `itf` in `data/catalog.json`. The other 5 have no pages or print sheets yet. Each card links to its official pattern page; the section lists the official ITF references.
 
 ## History page
 `/history/` is a top-level page in the nav, between Library and How to read. It gives a short history of taekwondo (roots, kwans, the 1955 name, the ITF and Chang Hon patterns, the Kukkiwon and the WTF, WTF → World Taekwondo, the ITF after Choi, other branches, the two families of forms), with a family-tree diagram and official references. The claims that need checking are in REVIEW.md. Open questions (URLs, orientation, federation, Juche/Ko-Dang, diagrams) are in REVIEW.md.

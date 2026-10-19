@@ -164,6 +164,7 @@ function skel(m,pr){
       else if(act==="tongmil")h=add(sh,mul([24,-8],ak));
       else if(act==="ksstrike")h=add(sh,mul([40,-6],ak));
       else if(act==="ksdown")h=add(sh,mul([38,8],ak));
+      else if(act==="xcheck")h=add(sh,mul([30,2],ak));   // ITF X-fist checking block: fists crossed at the wrists in front of the chest
       else if(act==="kswedge")h=add(sh,mul([18,-8],ak));   // ITF knife-hand wedging block: the open-hand wedge block
       else if(act==="heaven"){h=add(sh,mul([16,-30],ak));p=[1,-.2]}   // ITF heaven hand: open hands raised to a triangle in front of the forehead
       else if(act==="kxcheck")h=add(sh,mul([30,2],ak));               // ITF X-knife-hand checking block: both hands crossed at the wrists in front of the chest                // ITF knife-hand downward strike: edge brought down to chest height in front
@@ -321,6 +322,7 @@ function skel(m,pr){
       else if(act==="tongmil"){h=[x*-1.5,T+15*tk];p=[x,.15]}   // hands meet below the chin, elbows out
       else if(act==="ksstrike"){h=[x*(pr.shW+30),T+2*tk];p=[x*.3,1]}
       else if(act==="ksdown"){h=[x*(pr.shW+6),T+14*tk];p=[x*.4,1]}
+      else if(act==="xcheck"){h=[x*-4,T+10*tk];p=[x,.4]}
       else if(act==="kswedge"){h=[x*(pr.shW+6),T+2*tk];p=[x*.4,1]}
       else if(act==="heaven"){h=[x*-2,T-26*tk];p=[x,-.3]}
       else if(act==="kxcheck"){h=[x*-4,T+10*tk];p=[x,.4]}

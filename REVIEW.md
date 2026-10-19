@@ -695,6 +695,21 @@ The other differences are typos ("closed"/"close" at 26 and 43). Neither source 
 - [ ] **Library.** New entries: `joongjihigh`, `kssan`.
 - [ ] **Footwork.** The simulator ends 6.8 foot-lengths from the start, toward A, after the side kicks, jumps and slide at the end. The real pattern may finish closer to the centre.
 
+## Yon-Gae · 연개 (ITF) — 18 October 2026
+
+`/itf/yon-gae`, with a 2-page print sheet. The moves go back and forth through the centre of the + diagram, so the board shows them in order, read down the page in rows, as on Sam-Il.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart are identical for all 49 movements. The chart's Korean name at 4 repeats the guarding block of 3 (a copy error); the page uses the name from 15, its mirror. The chart heads the pattern "YONG-GAE". Fandom was not used. There is no official video.
+
+- [ ] **No kihap.** Neither source marks one.
+- [ ] **Warrior ready stance A (ready posture)** isn't described in either text; it's drawn in parallel stance with the fists in front, like Yoo-Sin's B.
+- [ ] **Hard-to-draw moves.** The flying knife-hand strike (4, 15) is drawn as its landing; the mid-air spinning kicks (44, 45) as turning kicks, each split from the guarding block on landing.
+- [ ] **Inner forearm waist block (38, 41)** uses the low fist arm at the centre (`hammerlow`).
+- [ ] **Twin straight forearm checking block (25, 32)** uses the outer forearm arms on both sides.
+- [ ] **X-fist checking block (5, 16)** is a new arm (`xcheck`), the fist version of the X-knife-hand checking block.
+- [ ] **Library.** New entries: `warriora`, `longfist`, `xfistcheck`, `flyks`, `kslowout`, `rdsan`, `twinforearmcheck`, `waistblock`, `kshighout`, `spinkick`.
+- [ ] **Footwork.** The simulator ends 1.0 foot-length from the start.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:
