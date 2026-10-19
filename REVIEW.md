@@ -756,6 +756,20 @@ Fandom was not used. There is no official video.
 - [ ] **Library.** New entries: `vertpunch`, `joongjiupset`, `flykick`, `forearmhighfront`, `doobandalm`, `anoutkslow`.
 - [ ] **Footwork.** The simulator ends 9.8 foot-lengths from the start, toward D. Moves 34–49 step forward toward D twice, and the slides and jumps after 50 don't fully bring you back. That may be right (the text has no step back toward C to match), but please check where the pattern really finishes.
 
+## Se-Jong · 세종 (ITF) — 18 October 2026
+
+`/itf/se-jong`, with a 2-page print sheet, on a 王 board: the A–B line with the start at the top, the E–F line in the middle and the G–H line at the bottom, with the counts made on each line beside its ends.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart are identical for all 24 movements. The ITF Korean names come from the chart. Fandom was not used. There is no official video.
+
+- [ ] **No kihap.** Neither source marks one.
+- [ ] **Letters.** E and G are read as being on the A side (the right foot moves to them from facing D), F and H on the B side; CF, CE and DG are diagonals. Please check this against the Encyclopedia diagram.
+- [ ] **Move 21** (left instep into the hollow of the right knee) is drawn with the one-leg stance (`oneleg`), not the Kukkiwon reverse crane stance, because both texts call it a one-leg stance. The foot behind the knee doesn't show.
+- [ ] **Move 9** "left fixed stance toward H" follows the front-foot naming (left foot forward), as in Won-Hyo and Hwa-Rang (see the open item on Choi-Yong 46).
+- [ ] **Slow fist extension (15)** reuses Yul-Gok's "sitting stance, fist extended" entry.
+- [ ] **Library.** New entries: `fguardhigh`, `oneleghilo`, `backforearm`.
+- [ ] **Footwork.** The simulator ends 7.3 foot-lengths from the start, toward B; the distances between the three lines are a guess, so the minimap places each count on its line.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:

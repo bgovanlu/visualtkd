@@ -1,0 +1,577 @@
+{
+ "slug": "itf/se-jong",
+ "pdf": "se-jong-print.pdf",
+ "family": "itf",
+ "title": "Se-Jong",
+ "ko": "세종",
+ "symbol": {
+  "name": "Se-Jong",
+  "hanja": "世宗",
+  "meaning": "King Sejong the Great · ITF pattern 23 of 24"
+ },
+ "movements": 24,
+ "note": {
+  "h": "王 · Se-Jong · the king",
+  "p": "Se-Jong is named after Sejong the Great, the greatest Korean king, who created the Korean alphabet in 1443 and was also a noted meteorologist. The diagram 王 stands for the king, and the 24 movements for the 24 letters of the Korean alphabet. You start in close ready stance B in the middle of the A–B line facing D: a low block to B, a twin forearm block toward A and a side kick toward D; a rising block and knife-hand strike on the E–F line; a jump into X-stance onto the G–H line, with a punch, a high guarding block in fixed stance, a fingertip thrust and a back fist; a scooping block, turning kick and jump back onto the E–F line; slow fist extension and back fist in sitting stance, palm and arc-hand blocks, one-leg blocks and a back forearm strike; then a side elbow thrust, a guarding block and a punch back on the A–B line."
+ },
+ "footer": "Move numbers follow the ITF Encyclopedia count (24 movements, one technique each). The three lines of the 王 are the A–B line with the start (top), the E–F line (middle) and the G–H line (bottom). Directions use the ITF letters: you start facing D, with B on your left and A on your right; E and G are on the A side, F and H on the B side; DG, CF and CE are diagonals. Finish by bringing the left foot back to the ready posture.",
+ "boardMin": 1500,
+ "floor": {
+  "glyph": "王",
+  "bars": {
+   "r1": "full",
+   "r3": "full",
+   "r5": "full"
+  },
+  "letters": {
+   "r3": [
+    "E",
+    "F"
+   ],
+   "r5": [
+    "G",
+    "H"
+   ]
+  },
+  "diag": {
+   "nada": "CF",
+   "nara": "CE"
+  },
+  "notesBelow": true,
+  "map": "M8 8H92M8 30H92M8 52H92M50 8V52"
+ },
+ "layout": {
+  "r1": [
+   [
+    "23",
+    "2",
+    "3"
+   ],
+   [
+    "J"
+   ],
+   [
+    "1",
+    "24"
+   ]
+  ],
+  "c2": [
+   "22"
+  ],
+  "r3": [
+   [
+    "5",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21"
+   ],
+   [
+    "6",
+    "14"
+   ],
+   [
+    "4",
+    "15",
+    "16"
+   ]
+  ],
+  "c4": [],
+  "r5": [
+   [
+    "8",
+    "9",
+    "11"
+   ],
+   [
+    "7",
+    "12",
+    "13"
+   ],
+   [
+    "10"
+   ]
+  ]
+ },
+ "pos": {
+  "J": [
+   50.0,
+   8
+  ],
+  "1": [
+   58.5,
+   8
+  ],
+  "2": [
+   55.9,
+   8
+  ],
+  "3": [
+   63.7,
+   8
+  ],
+  "4": [
+   74.3,
+   30
+  ],
+  "5": [
+   73.0,
+   30
+  ],
+  "6": [
+   81.9,
+   30
+  ],
+  "7": [
+   69.1,
+   52
+  ],
+  "8": [
+   54.4,
+   52
+  ],
+  "9": [
+   57.1,
+   52
+  ],
+  "10": [
+   78.7,
+   52
+  ],
+  "11": [
+   78.7,
+   52
+  ],
+  "12": [
+   80.1,
+   52
+  ],
+  "13": [
+   89.3,
+   52
+  ],
+  "14": [
+   94,
+   30
+  ],
+  "15": [
+   94,
+   30
+  ],
+  "16": [
+   94,
+   30
+  ],
+  "17": [
+   94,
+   30
+  ],
+  "18": [
+   94,
+   30
+  ],
+  "19": [
+   94,
+   30
+  ],
+  "20": [
+   94,
+   30
+  ],
+  "21": [
+   94,
+   30
+  ],
+  "22": [
+   94,
+   19
+  ],
+  "23": [
+   94,
+   8
+  ],
+  "24": [
+   94,
+   8
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "ga",
+   "view": "front",
+   "stance": "close",
+   "arms": {
+    "L": "cover",
+    "R": "cover"
+   },
+   "tech": "moajunbib",
+   "desc": "Stand at the centre of the A–B line facing D in close ready stance B."
+  },
+  {
+   "id": "1",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "desc": "Turn left: move the left foot to B into a left walking stance facing B. Left forearm low block."
+  },
+  {
+   "id": "2",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk",
+    "L": "twinhigh"
+   },
+   "tech": "sangpalmok",
+   "carry": false,
+   "desc": "Bring the left foot to the right foot, then move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Twin forearm block."
+  },
+  {
+   "id": "3",
+   "dir": "ga",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk",
+    "L": "twinhigh"
+   },
+   "tech": "skick",
+   "desc": "Right middle side piercing kick toward D."
+  },
+  {
+   "id": "4",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "high"
+   },
+   "tech": "high",
+   "carry": false,
+   "desc": "Lower the right foot toward D, then move the left foot to F into a left walking stance facing F. Left forearm rising block."
+  },
+  {
+   "id": "5",
+   "dir": "ga",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "ksstrike"
+   },
+   "tech": "kssidestrike",
+   "carry": false,
+   "desc": "Bring the left foot to the right foot, then move the right foot to E into a sitting stance facing D. Right knife-hand middle strike toward E."
+  },
+  {
+   "id": "6",
+   "dir": "ga",
+   "view": "front",
+   "stance": "close",
+   "arms": {
+    "L": "cover",
+    "R": "cover"
+   },
+   "tech": "moajunbib",
+   "carry": false,
+   "desc": "Bring the right foot to the left foot into close ready stance B facing D."
+  },
+  {
+   "id": "7",
+   "dir": "gara",
+   "view": "side",
+   "face": "L",
+   "stance": "cross",
+   "lead": "L",
+   "arms": {
+    "L": "backfist",
+    "R": "assist"
+   },
+   "tech": "backfist",
+   "carry": false,
+   "step": {
+    "move": [
+     2.0,
+     0
+    ]
+   },
+   "desc": "Jump toward D, landing in a left X-stance facing DG. Left back fist high side strike toward D, the right fingertips on the left side fist."
+  },
+  {
+   "id": "8",
+   "dir": "ra3",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "hpunch"
+   },
+   "tech": "hpunch",
+   "note": "obverse",
+   "carry": false,
+   "desc": "Move the right foot to G into a right walking stance facing G. Right high punch."
+  },
+  {
+   "id": "9",
+   "dir": "da3",
+   "view": "side",
+   "face": "R",
+   "stance": "fixed",
+   "lead": "L",
+   "arms": {
+    "L": "houter",
+    "R": "guard"
+   },
+   "tech": "fguardhigh",
+   "carry": false,
+   "desc": "Move the right foot along the G–H line into a left fixed stance facing H (left foot forward). Forearm high guarding block."
+  },
+  {
+   "id": "10",
+   "dir": "da3",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "spear",
+    "L": "press"
+   },
+   "tech": "spear",
+   "carry": false,
+   "desc": "Move the right foot to H into a right walking stance facing H. Right straight fingertip middle thrust."
+  },
+  {
+   "id": "11",
+   "dir": "ra3",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "backfist"
+   },
+   "tech": "backfist",
+   "carry": false,
+   "desc": "Bring the right foot to the left foot, then move the left foot to G into a left walking stance facing G. Left back fist high side strike."
+  },
+  {
+   "id": "12",
+   "dir": "na",
+   "view": "back",
+   "stance": "horse",
+   "arms": {
+    "L": "palmup"
+   },
+   "tech": "scoop",
+   "carry": false,
+   "desc": "Move the left foot along the G–H line into a sitting stance facing C. Left palm scooping block."
+  },
+  {
+   "id": "13",
+   "dir": "na",
+   "view": "side",
+   "face": "L",
+   "stance": "rkick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "rkick",
+   "desc": "Left middle turning kick toward C."
+  },
+  {
+   "id": "14",
+   "dir": "nada",
+   "view": "side",
+   "face": "R",
+   "stance": "cross",
+   "lead": "L",
+   "arms": {
+    "L": "high",
+    "R": "assist"
+   },
+   "tech": "doopalmok",
+   "carry": false,
+   "step": {
+    "move": [
+     1.5,
+     0
+    ]
+   },
+   "desc": "Land the left foot toward C with a jump, into a left X-stance facing CF. Left double forearm high block toward C."
+  },
+  {
+   "id": "15",
+   "dir": "na",
+   "view": "back",
+   "stance": "horse",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "sitext",
+   "carry": false,
+   "desc": "Move the right foot to F into a sitting stance facing C, extending the right fist straight out toward C, slowly."
+  },
+  {
+   "id": "16",
+   "dir": "na",
+   "view": "back",
+   "stance": "horse",
+   "arms": {
+    "L": "backfist"
+   },
+   "tech": "bffront",
+   "desc": "In the same stance, left back fist front strike toward C."
+  },
+  {
+   "id": "17",
+   "dir": "na",
+   "view": "back",
+   "stance": "sasun",
+   "lead": "L",
+   "arms": {
+    "L": "pressdown",
+    "R": "pressdown"
+   },
+   "tech": "twinpress",
+   "carry": false,
+   "desc": "Bring the right foot behind the left foot, then move the left foot to E into a left diagonal stance facing C. Twin palm pressing block."
+  },
+  {
+   "id": "18",
+   "dir": "nara",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "heaven",
+    "R": "heaven"
+   },
+   "tech": "doobandalm",
+   "carry": false,
+   "desc": "Turn into a left walking stance facing CE. Double arc-hand middle block toward C."
+  },
+  {
+   "id": "19",
+   "dir": "na",
+   "view": "back",
+   "stance": "oneleg",
+   "lead": "R",
+   "arms": {
+    "R": "houter",
+    "L": "low"
+   },
+   "tech": "oneleghilo",
+   "carry": false,
+   "desc": "Pull the left reverse footsword up to the right knee joint into a right one-leg stance facing C. Right outer forearm high side block toward F and left forearm low side block toward E."
+  },
+  {
+   "id": "20",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "pressdown"
+   },
+   "tech": "pressdown",
+   "carry": false,
+   "desc": "Lower the left foot toward D into a right walking stance facing C. Right palm pressing block, slowly."
+  },
+  {
+   "id": "21",
+   "dir": "na",
+   "view": "back",
+   "stance": "oneleg",
+   "lead": "R",
+   "arms": {
+    "R": "outer",
+    "L": "eltarget"
+   },
+   "tech": "backforearm",
+   "carry": false,
+   "desc": "Pull the left instep into the hollow of the right knee into a right one-leg stance facing C. Right back forearm strike into the left palm."
+  },
+  {
+   "id": "22",
+   "dir": "ga",
+   "view": "front",
+   "stance": "fixed",
+   "lead": "R",
+   "arms": {
+    "L": "sideelbow"
+   },
+   "tech": "yopelbow",
+   "carry": false,
+   "desc": "Lower the left foot toward C, turning clockwise into a right fixed stance facing D (right foot forward). Left side elbow thrust toward C."
+  },
+  {
+   "id": "23",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "kshguard",
+   "carry": false,
+   "desc": "Move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Knife-hand high guarding block."
+  },
+  {
+   "id": "24",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "note": "obverse",
+   "carry": false,
+   "desc": "Bring the right foot to the left foot, then move the left foot to B into a right L-stance facing B (left foot forward, weight on the right leg). Right middle punch."
+  }
+ ],
+ "refs": [
+  {
+   "go": "itf-se-jong",
+   "kind": "itf",
+   "icon": "gate",
+   "src": "ITF · Official site",
+   "title": "Se-Jong",
+   "desc": "The pattern's official text: meaning, ready posture and all 24 movements (ITF, Choi Jung Hwa).",
+   "url": "https://www.itf-administration.com/articles/?arturn=856"
+  },
+  {
+   "go": "itf-encyclopedia",
+   "kind": "itf",
+   "icon": "gate",
+   "src": "ITF · Vienna · Official site",
+   "title": "Encyclopedia of Taekwon-Do",
+   "desc": "General Choi's reference work, the source of the patterns; selected chapters online.",
+   "url": "https://itf-tkd.org/encyclopedia-of-taekwon%E2%80%91do/"
+  }
+ ]
+}
