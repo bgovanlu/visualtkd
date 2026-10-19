@@ -742,6 +742,20 @@ Fandom was not used. There is no official video.
 - [ ] **Library.** New entries: `skickhigh`, `flatmid`, `kshilo`, `bkickhigh`, `palmdown`, `yobapchamid`, `sidefistside`, `kslowside`, `pushkick`, `twistkickh`, `checkkick`, `skickthrust`, `xlowpunch`, `arcrising`.
 - [ ] **Footwork.** The simulator ends 4.7 foot-lengths from the start.
 
+## So-San · 서산 (ITF) — 18 October 2026
+
+`/itf/so-san`, with a 2-page print sheet. The moves go back and forth through the centre of the + diagram, so the board shows them in order, read down the page in five rows, as on Yoo-Sin. The board is wide (2060 px), so the printed floor plan is small.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 72 movements (spelling only: "forefist", "amiddle"). The chart's list of Korean names drops two entries near 43–44, so the names after that are shifted; the page uses the English text. Fandom was not used. There is no official video.
+
+- [ ] **No kihap.** Neither source marks one.
+- [ ] **Releases (18, 21)** use the Joong-Gun release entry (`jappyosul`), drawn as the fist with the other palm on it.
+- [ ] **Middle knuckle fist upset punch (23, 25)** uses the upset punch arm with the other fist at the shoulder.
+- [ ] **Double arc-hand middle block (34, 42)** uses the heaven-hand arms, as in Ge-Baek.
+- [ ] **Jumping spins (51, 56)** are drawn as their landing; the flying front kick (28) as a front kick.
+- [ ] **Library.** New entries: `vertpunch`, `joongjiupset`, `flykick`, `forearmhighfront`, `doobandalm`, `anoutkslow`.
+- [ ] **Footwork.** The simulator ends 9.8 foot-lengths from the start, toward D. Moves 34–49 step forward toward D twice, and the slides and jumps after 50 don't fully bring you back. That may be right (the text has no step back toward C to match), but please check where the pattern really finishes.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:
