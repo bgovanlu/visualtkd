@@ -81,15 +81,18 @@ Published at `/kicho/1`, drawn from the Taekwondo Preschool "Kibon Basic #1" cha
 - **Floor:** drawn on Taebaek's 工 layout (start line walked twice). Moves 9–12 are on the far bar (ra³/da³).
 - **Finish:** the chart says "bring back the left leg into ready stance". The footer says to turn to face ga on the starting spot.
 
-## Basic forms · Kicho Dul – Net (stubs)
+## Basic forms · Kicho Dul, Set, Net
 
-Planned cards on `/forms/#kicho`. Before any of them is drawn:
+Published at `/kicho/2` … `/kicho/4` from the Park's Tae Kwon Do videos ("2 Kicho Dul", "3 Kicho Set", "4 Kicho Net"; Net was sent by Brian, and Brian chose Park's for Dul and Set). Each video was read frame by frame; none has a voice-over or captions. Park's "Kicho Hana" video matches the Hana page, so it is now Hana's second reference.
 
-- **Which version?** There is no official sequence. The Kukkiwon syllabus starts at Taegeuk Il Jang, and every school teaches its own basic forms. Even Hana has a 16-move version and one that repeats the first line for 20; Net is rarer and varies most. The two-source rule can't work as written, so the source has to be your school's version: a written sequence or a video. Each page will say which version it shows.
-- **Name.** Kicho (기초) or Kibon (기본)? Schools use both; the cards say Kicho, as asked.
-- **Paths.** `/kicho/1` … `/kicho/4`, like `/taegeuk/1`. They are not printed yet, so this can still change. Once a sheet is printed it can't.
-- **Card texts** (what each form usually adds) follow the common pattern described in the cross-check sources, not one school's version. Adjust them once the version is chosen.
-- **History line.** The forms are said to be modelled on Hwang Kee's Kicho Hyung (late 1940s, Moo Duk Kwan). That comes from secondary sources, and the page words it as "credited to".
+- **One source each.** Each page has a single video; Fandom (Kibon Dool, Kibon Set) was a cross-check only. For Dul and Set the Tang Soo Do Giecho Hyung (WTSDF forms page) is linked as the form it comes from.
+- **Kihaps** on 8 and 16 in all three: the soundtrack is music, so they are read from the performer's open mouth at those counts (clear in Net and Set; Dul at 16 only). Check them.
+- **Dul 8 and 16** are a third high block (Fandom's common version has a high punch there; Park's does not).
+- **Set** differs most from Fandom: the centre line is three walking-stance middle punches after the low block, not horse-stance side punches. The side-line block is drawn as an outer middle block (bakkat makki) in back stance, judged from the chamber (blocking fist at the opposite shoulder). Fandom says the same; check the video.
+- **Set centre stance** looks short and upright, so it's drawn as walking stance (ap seogi), not front stance.
+- **Net side lines:** single knife-hand outer block (hansonnal bakkat makki) in back stance, the other fist at the hip, the same move as Taegeuk 3 move 7. **Net centre:** double knife-hand block (sonnal momtong makki) in back stance, three times after the low block.
+- **Turns at 9 and 17** are drawn as 270° left like Hana. In the videos the camera cuts there, so the turn direction isn't visible; it follows the floor line.
+- **Fandom variants** noted in the footers: high punch at 8/16 (Dul), horse-stance side punches (Set).
 
 ## Taegeuk 1 · Il Jang
 

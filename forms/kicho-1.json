@@ -462,6 +462,15 @@
    "url": "https://www.taekwondopreschool.com/basic1.html"
   },
   {
+   "go": "video-kicho-1",
+   "kind": "yt",
+   "icon": "play",
+   "src": "YouTube · Park's Tae Kwon Do",
+   "title": "Kicho Hana",
+   "desc": "A full performance of the same 20 movements.",
+   "url": "https://youtu.be/fF4mUUQQ-Rs"
+  },
+  {
    "go": "kukkiwon-poomsae",
    "kind": "kuk",
    "icon": "gate",

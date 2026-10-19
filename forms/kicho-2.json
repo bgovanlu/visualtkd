@@ -1,0 +1,477 @@
+{
+ "slug": "kicho/2",
+ "pdf": "kicho-2-print.pdf",
+ "title": "Kicho Dul",
+ "ko": "기초 둘",
+ "symbol": {
+  "name": "Kicho Dul",
+  "hanja": "基礎",
+  "meaning": "Basic form two"
+ },
+ "movements": 20,
+ "note": {
+  "h": "基礎 · Kicho · basics",
+  "p": "The second basic form keeps Kicho Hana's floor line and its low blocks, and raises everything else to face height: high punches on the side lines, and three high blocks after the low block on the centre line. Basic forms are not set by the Kukkiwon and every school has its own version; this page draws the version shown by Park's Tae Kwon Do."
+ },
+ "footer": "20 movements: the first line (1–4) is walked again at the end (17–20). Some schools stop after 16, and some punch high instead of the third high block at 8 and 16. The kihaps are on 8 and 16. Finish with <b>Baro</b>: bring the left foot back and turn to face ga in the ready stance, on the spot where you started.",
+ "boardMin": 1380,
+ "floor": {
+  "glyph": "工",
+  "bars": {
+   "r3": "gone"
+  },
+  "rail": [
+   "r1",
+   "r5"
+  ],
+  "map": "M14 8H86M14 52H86M50 8V52"
+ },
+ "layout": {
+  "r1": [
+   [
+    "4",
+    "20"
+   ],
+   [
+    "3",
+    "19"
+   ],
+   "J",
+   [
+    "1",
+    "17"
+   ],
+   [
+    "2",
+    "18"
+   ]
+  ],
+  "c2": [
+   "5",
+   "6",
+   "15",
+   "16"
+  ],
+  "c4": [
+   "7",
+   "8",
+   "13",
+   "14"
+  ],
+  "r5": [
+   "10",
+   "9",
+   "11",
+   "12"
+  ]
+ },
+ "pos": {
+  "J": [
+   50,
+   8
+  ],
+  "1": [
+   62,
+   8
+  ],
+  "2": [
+   80,
+   8
+  ],
+  "3": [
+   38,
+   8
+  ],
+  "4": [
+   20,
+   8
+  ],
+  "5": [
+   50,
+   15
+  ],
+  "6": [
+   50,
+   24
+  ],
+  "7": [
+   50,
+   34
+  ],
+  "8": [
+   50,
+   45
+  ],
+  "9": [
+   38,
+   52
+  ],
+  "10": [
+   20,
+   52
+  ],
+  "11": [
+   62,
+   52
+  ],
+  "12": [
+   80,
+   52
+  ],
+  "13": [
+   50,
+   45
+  ],
+  "14": [
+   50,
+   34
+  ],
+  "15": [
+   50,
+   24
+  ],
+  "16": [
+   50,
+   15
+  ],
+  "17": [
+   62,
+   8
+  ],
+  "18": [
+   80,
+   8
+  ],
+  "19": [
+   38,
+   8
+  ],
+  "20": [
+   20,
+   8
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "na",
+   "view": "front",
+   "stance": "ready",
+   "arms": {
+    "L": "junbi",
+    "R": "junbi"
+   },
+   "tech": "junbi",
+   "desc": "Stand at na facing ga, feet parallel and one foot-width apart, fists in front of the belt."
+  },
+  {
+   "id": "1",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "hand": "L",
+   "desc": "Turn 90° left toward da¹, stepping the left foot into a left front stance. Left low block."
+  },
+  {
+   "id": "2",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "hpunch"
+   },
+   "tech": "hpunch",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Step forward into a right front stance. Right high punch."
+  },
+  {
+   "id": "3",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "low"
+   },
+   "tech": "low",
+   "hand": "R",
+   "desc": "Turn 180° right toward ra¹, moving the right foot into a right front stance. Right low block."
+  },
+  {
+   "id": "4",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "hpunch"
+   },
+   "tech": "hpunch",
+   "hand": "L",
+   "note": "bandae",
+   "desc": "Step forward into a left front stance. Left high punch."
+  },
+  {
+   "id": "5",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "hand": "L",
+   "desc": "Turn 90° left toward ga, stepping the left foot into a left front stance. Left low block."
+  },
+  {
+   "id": "6",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "high"
+   },
+   "tech": "high",
+   "hand": "R",
+   "desc": "Step forward into a right front stance. Right high block."
+  },
+  {
+   "id": "7",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "high"
+   },
+   "tech": "high",
+   "hand": "L",
+   "desc": "Step forward into a left front stance. Left high block."
+  },
+  {
+   "id": "8",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "high"
+   },
+   "tech": "high",
+   "hand": "R",
+   "kihap": true,
+   "desc": "Step forward into a right front stance. Right high block. Kihap."
+  },
+  {
+   "id": "9",
+   "dir": "ra3",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "hand": "L",
+   "desc": "Turn 270° left toward ra³, moving the left foot into a left front stance. Left low block."
+  },
+  {
+   "id": "10",
+   "dir": "ra3",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "hpunch"
+   },
+   "tech": "hpunch",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Step forward into a right front stance. Right high punch."
+  },
+  {
+   "id": "11",
+   "dir": "da3",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "low"
+   },
+   "tech": "low",
+   "hand": "R",
+   "desc": "Turn 180° right toward da³, moving the right foot into a right front stance. Right low block."
+  },
+  {
+   "id": "12",
+   "dir": "da3",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "hpunch"
+   },
+   "tech": "hpunch",
+   "hand": "L",
+   "note": "bandae",
+   "desc": "Step forward into a left front stance. Left high punch."
+  },
+  {
+   "id": "13",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "hand": "L",
+   "desc": "Turn 90° left toward na, stepping the left foot into a left front stance. Left low block."
+  },
+  {
+   "id": "14",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "high"
+   },
+   "tech": "high",
+   "hand": "R",
+   "desc": "Step forward into a right front stance. Right high block."
+  },
+  {
+   "id": "15",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "high"
+   },
+   "tech": "high",
+   "hand": "L",
+   "desc": "Step forward into a left front stance. Left high block."
+  },
+  {
+   "id": "16",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "high"
+   },
+   "tech": "high",
+   "hand": "R",
+   "kihap": true,
+   "desc": "Step forward into a right front stance. Right high block. Kihap."
+  },
+  {
+   "id": "17",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "hand": "L",
+   "desc": "Turn 270° left toward da¹, moving the left foot into a left front stance. Left low block."
+  },
+  {
+   "id": "18",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "hpunch"
+   },
+   "tech": "hpunch",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Step forward into a right front stance. Right high punch."
+  },
+  {
+   "id": "19",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "low"
+   },
+   "tech": "low",
+   "hand": "R",
+   "desc": "Turn 180° right toward ra¹, moving the right foot into a right front stance. Right low block."
+  },
+  {
+   "id": "20",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "hpunch"
+   },
+   "tech": "hpunch",
+   "hand": "L",
+   "note": "bandae",
+   "desc": "Step forward into a left front stance. Left high punch."
+  }
+ ],
+ "refs": [
+  {
+   "go": "video-kicho-2",
+   "kind": "yt",
+   "icon": "play",
+   "src": "YouTube · Park's Tae Kwon Do",
+   "title": "2 Kicho Dul",
+   "desc": "The full performance this page follows.",
+   "url": "https://youtu.be/eFAap1I80bs"
+  },
+  {
+   "go": "wtsdf-forms",
+   "kind": "wt",
+   "icon": "page",
+   "src": "Western Tang Soo Do Federation · Forms",
+   "title": "Giecho Hyung Yi Bu",
+   "desc": "The Tang Soo Do basic form this one comes from (16 movements, manual PDF and video). The side lines match; its centre line uses inside, high and outside blocks.",
+   "url": "https://westerntangsoodofederation.org/hyungs-forms/"
+  },
+  {
+   "go": "kukkiwon-poomsae",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Poomsae index",
+   "desc": "The official syllabus, which starts at Taegeuk 1 Jang; basic forms are not part of it.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/list?boardManagementNo=55&menuLevel=3&menuNo=72"
+  }
+ ]
+}

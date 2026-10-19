@@ -1,0 +1,483 @@
+{
+ "slug": "kicho/3",
+ "pdf": "kicho-3-print.pdf",
+ "title": "Kicho Set",
+ "ko": "기초 셋",
+ "symbol": {
+  "name": "Kicho Set",
+  "hanja": "基礎",
+  "meaning": "Basic form three"
+ },
+ "movements": 20,
+ "note": {
+  "h": "基礎 · Kicho · basics",
+  "p": "The third basic form brings in the back stance, with an outer middle block before each punch on the side lines, and the short walking stance on the centre line, where the student punches on every step. Basic forms are not set by the Kukkiwon and every school has its own version; this page draws the version shown by Park's Tae Kwon Do."
+ },
+ "footer": "20 movements: the first line (1–4) is walked again at the end (17–20). Some schools do the centre line in horse stance with side punches instead. The kihaps are on 8 and 16. Finish with <b>Baro</b>: bring the left foot back and turn to face ga in the ready stance, on the spot where you started.",
+ "boardMin": 1380,
+ "floor": {
+  "glyph": "工",
+  "bars": {
+   "r3": "gone"
+  },
+  "rail": [
+   "r1",
+   "r5"
+  ],
+  "map": "M14 8H86M14 52H86M50 8V52"
+ },
+ "layout": {
+  "r1": [
+   [
+    "4",
+    "20"
+   ],
+   [
+    "3",
+    "19"
+   ],
+   "J",
+   [
+    "1",
+    "17"
+   ],
+   [
+    "2",
+    "18"
+   ]
+  ],
+  "c2": [
+   "5",
+   "6",
+   "15",
+   "16"
+  ],
+  "c4": [
+   "7",
+   "8",
+   "13",
+   "14"
+  ],
+  "r5": [
+   "10",
+   "9",
+   "11",
+   "12"
+  ]
+ },
+ "pos": {
+  "J": [
+   50,
+   8
+  ],
+  "1": [
+   62,
+   8
+  ],
+  "2": [
+   80,
+   8
+  ],
+  "3": [
+   38,
+   8
+  ],
+  "4": [
+   20,
+   8
+  ],
+  "5": [
+   50,
+   15
+  ],
+  "6": [
+   50,
+   24
+  ],
+  "7": [
+   50,
+   34
+  ],
+  "8": [
+   50,
+   45
+  ],
+  "9": [
+   38,
+   52
+  ],
+  "10": [
+   20,
+   52
+  ],
+  "11": [
+   62,
+   52
+  ],
+  "12": [
+   80,
+   52
+  ],
+  "13": [
+   50,
+   45
+  ],
+  "14": [
+   50,
+   34
+  ],
+  "15": [
+   50,
+   24
+  ],
+  "16": [
+   50,
+   15
+  ],
+  "17": [
+   62,
+   8
+  ],
+  "18": [
+   80,
+   8
+  ],
+  "19": [
+   38,
+   8
+  ],
+  "20": [
+   20,
+   8
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "na",
+   "view": "front",
+   "stance": "ready",
+   "arms": {
+    "L": "junbi",
+    "R": "junbi"
+   },
+   "tech": "junbi",
+   "desc": "Stand at na facing ga, feet parallel and one foot-width apart, fists in front of the belt."
+  },
+  {
+   "id": "1",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "outer"
+   },
+   "tech": "outer",
+   "hand": "L",
+   "desc": "Turn 90° left toward da¹, stepping the left foot into a back stance with the left foot forward. Left outer middle block."
+  },
+  {
+   "id": "2",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Step forward into a right front stance. Right middle punch."
+  },
+  {
+   "id": "3",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "outer"
+   },
+   "tech": "outer",
+   "hand": "R",
+   "desc": "Turn 180° right toward ra¹, moving the right foot into a back stance with the right foot forward. Right outer middle block."
+  },
+  {
+   "id": "4",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "hand": "L",
+   "note": "bandae",
+   "desc": "Step forward into a left front stance. Left middle punch."
+  },
+  {
+   "id": "5",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "hand": "L",
+   "desc": "Turn 90° left toward ga, stepping the left foot into a left front stance. Left low block."
+  },
+  {
+   "id": "6",
+   "dir": "ga",
+   "view": "front",
+   "stance": "walk",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Step forward into a right walking stance. Right middle punch."
+  },
+  {
+   "id": "7",
+   "dir": "ga",
+   "view": "front",
+   "stance": "walk",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "hand": "L",
+   "note": "bandae",
+   "desc": "Step forward into a left walking stance. Left middle punch."
+  },
+  {
+   "id": "8",
+   "dir": "ga",
+   "view": "front",
+   "stance": "walk",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "bandae",
+   "kihap": true,
+   "desc": "Step forward into a right walking stance. Right middle punch. Kihap."
+  },
+  {
+   "id": "9",
+   "dir": "ra3",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "outer"
+   },
+   "tech": "outer",
+   "hand": "L",
+   "desc": "Turn left toward ra³, moving the left foot into a back stance with the left foot forward. Left outer middle block."
+  },
+  {
+   "id": "10",
+   "dir": "ra3",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Step forward into a right front stance. Right middle punch."
+  },
+  {
+   "id": "11",
+   "dir": "da3",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "outer"
+   },
+   "tech": "outer",
+   "hand": "R",
+   "desc": "Turn 180° right toward da³, moving the right foot into a back stance with the right foot forward. Right outer middle block."
+  },
+  {
+   "id": "12",
+   "dir": "da3",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "hand": "L",
+   "note": "bandae",
+   "desc": "Step forward into a left front stance. Left middle punch."
+  },
+  {
+   "id": "13",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "hand": "L",
+   "desc": "Turn 90° left toward na, stepping the left foot into a left front stance. Left low block."
+  },
+  {
+   "id": "14",
+   "dir": "na",
+   "view": "back",
+   "stance": "walk",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Step forward into a right walking stance. Right middle punch."
+  },
+  {
+   "id": "15",
+   "dir": "na",
+   "view": "back",
+   "stance": "walk",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "hand": "L",
+   "note": "bandae",
+   "desc": "Step forward into a left walking stance. Left middle punch."
+  },
+  {
+   "id": "16",
+   "dir": "na",
+   "view": "back",
+   "stance": "walk",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "bandae",
+   "kihap": true,
+   "desc": "Step forward into a right walking stance. Right middle punch. Kihap."
+  },
+  {
+   "id": "17",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "outer"
+   },
+   "tech": "outer",
+   "hand": "L",
+   "desc": "Turn left toward da¹, moving the left foot into a back stance with the left foot forward. Left outer middle block."
+  },
+  {
+   "id": "18",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "hand": "R",
+   "note": "bandae",
+   "desc": "Step forward into a right front stance. Right middle punch."
+  },
+  {
+   "id": "19",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "outer"
+   },
+   "tech": "outer",
+   "hand": "R",
+   "desc": "Turn 180° right toward ra¹, moving the right foot into a back stance with the right foot forward. Right outer middle block."
+  },
+  {
+   "id": "20",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "hand": "L",
+   "note": "bandae",
+   "desc": "Step forward into a left front stance. Left middle punch."
+  }
+ ],
+ "refs": [
+  {
+   "go": "video-kicho-3",
+   "kind": "yt",
+   "icon": "play",
+   "src": "YouTube · Park's Tae Kwon Do",
+   "title": "3 Kicho Set",
+   "desc": "The full performance this page follows.",
+   "url": "https://youtu.be/6DRFMhotcBo"
+  },
+  {
+   "go": "wtsdf-forms",
+   "kind": "wt",
+   "icon": "page",
+   "src": "Western Tang Soo Do Federation · Forms",
+   "title": "Giecho Hyung Sahm Bu",
+   "desc": "The Tang Soo Do basic form this one comes from (16 movements, manual PDF and video): the same back-stance blocks on the side lines; its centre line uses side-stance punches.",
+   "url": "https://westerntangsoodofederation.org/hyungs-forms/"
+  },
+  {
+   "go": "kukkiwon-poomsae",
+   "kind": "kuk",
+   "icon": "gate",
+   "src": "Kukkiwon · Official site",
+   "title": "Poomsae index",
+   "desc": "The official syllabus, which starts at Taegeuk 1 Jang; basic forms are not part of it.",
+   "url": "https://www.kukkiwon.or.kr/eng/board/list?boardManagementNo=55&menuLevel=3&menuNo=72"
+  }
+ ]
+}
