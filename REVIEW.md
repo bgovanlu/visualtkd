@@ -574,6 +574,22 @@ This is the first ITF page: `/itf/chon-ji`, with a 2-page print sheet.
 - [ ] **Library.** New stance `oneleg`. New entries: `waebaljunbi`, `presside`, `anwedge`, `backelbow`, `soopyong`, `xslowfront`, `ugrasp`, `twinelbowh`, `rdlowguard`.
 - [ ] **Footwork.** The simulator ends 1.4 foot-lengths from the start.
 
+## Ge-Baek · 계백 (ITF) — 18 October 2026
+
+`/itf/ge-baek`, with a 2-page print sheet. The whole pattern is on the C–D line, so the board shows the moves **in order, nine to a row**, read down the page along the centre line (a new layout). The minimap places each count roughly along the line.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart are word-for-word identical for all 44 movements. The ITF Korean names come from the chart. Fandom was not used. There is no official video.
+
+- [ ] **Board layout (please look).** Rows follow the sequence, not the floor. The real back-and-forth along the line is only in the minimap, and that minimap is my estimate from reading the instructions: the footwork simulator doesn't follow this pattern's steps well enough.
+- [ ] **Kihap at 19 and 28.** These follow the official ITF page; the chart marks none.
+- [ ] **Double arc-hand high block (7, 25)** toward AD / AC is drawn with the heaven-hand arms, facing D / C; the diagonal isn't shown.
+- [ ] **Sitting stance on the diagonals (9–11, 29–31)** is drawn in profile facing AC / BD. The palm scooping block uses the upward palm arm (`palmup`).
+- [ ] **9-shape block (20, 36)** is drawn with the high outer forearm arm and the other fist under it (`houter` + `assist`). Please check against the Encyclopedia picture.
+- [ ] **Reverse knife-hand low guarding block toward C (37)** from sitting stance facing B: the page assumes the left hand leads, because C is on the left.
+- [ ] **Front elbow strike into the palm (27)** uses the Kukkiwon elbow target strike, which already carries the ITF name (Ap palkup taerigi).
+- [ ] **Library.** The low knife-hand block now carries its ITF name (Sonkal najunde makgi). New entries: `twistkick`, `doobandal`, `scoop`, `bffront`, `gutja`, `joongji`.
+- [ ] **Footwork.** The simulator ends 3.2 foot-lengths from the start, but its positions along the way aren't reliable here (see above).
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:

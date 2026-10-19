@@ -1,0 +1,707 @@
+{
+ "form": "Ge-Baek",
+ "slug": "itf/ge-baek",
+ "moves": [
+  {
+   "id": "J",
+   "file": "J.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "junbi",
+    "R": "junbi"
+   },
+   "tech": "junbi",
+   "name": "Junbi · Ready",
+   "desc": "Stand at the centre of the C–D line facing D in parallel ready stance.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: fist in front of the belt, a fist-width from the body, both fists at the same height. LEFT hand: fist in front of the belt, a fist-width from the body, both fists at the same height. This is the ready posture of Ge-Baek: Stand at the centre of the C–D line facing D in parallel ready stance."
+  },
+  {
+   "id": "1",
+   "file": "1.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kxcheck",
+    "R": "kxcheck"
+   },
+   "tech": "ksxcheck",
+   "name": "Kyocha sonkal momchau makgi · X-knife-hand checking block",
+   "desc": "Move the right foot back toward C into a right L-stance facing D (left foot forward, weight on the right leg). X-knife-hand checking block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: ITF X-knife-hand checking block: both open hands crossed at the wrists in front of the chest, edges forward. LEFT hand: ITF X-knife-hand checking block: both open hands crossed at the wrists in front of the chest, edges forward. This is count 1 of Ge-Baek: Move the right foot back toward C into a right L-stance facing D (left foot forward, weight on the right leg). X-knife-hand checking block."
+  },
+  {
+   "id": "2",
+   "file": "2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "kxcheck",
+    "R": "kxcheck"
+   },
+   "tech": "twistkick",
+   "name": "Najunde bituro chagi · Low twisting kick",
+   "desc": "Right low twisting kick toward D, the hands held where they were.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: RIGHT. RIGHT hand (near arm): ITF X-knife-hand checking block: both open hands crossed at the wrists in front of the chest, edges forward. LEFT hand (far arm): ITF X-knife-hand checking block: both open hands crossed at the wrists in front of the chest, edges forward. This is count 2 of Ge-Baek: Right low twisting kick toward D, the hands held where they were."
+  },
+  {
+   "id": "3",
+   "file": "3.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Lower the right foot toward D into a right walking stance. Right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 3 of Ge-Baek: Lower the right foot toward D into a right walking stance. Right middle punch."
+  },
+  {
+   "id": "4",
+   "file": "4.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, left middle punch, fast after 3.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 4 of Ge-Baek: In the same stance, left middle punch, fast after 3."
+  },
+  {
+   "id": "5",
+   "file": "5.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "high"
+   },
+   "tech": "high",
+   "name": "Eolgul makki · High block",
+   "desc": "Move the right foot back toward C into a left walking stance facing D. Left forearm rising block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. This is count 5 of Ge-Baek: Move the right foot back toward C into a left walking stance facing D. Left forearm rising block."
+  },
+  {
+   "id": "6",
+   "file": "6.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "low",
+   "name": "Arae makki · Low block",
+   "desc": "In the same stance, left forearm low block, flowing on from 5.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 6 of Ge-Baek: In the same stance, left forearm low block, flowing on from 5."
+  },
+  {
+   "id": "7",
+   "file": "7.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "heaven",
+    "R": "heaven"
+   },
+   "tech": "doobandal",
+   "name": "Nopunde doo bandalson makgi · Double arc-hand high block",
+   "desc": "In the same stance, double arc-hand high block toward AD, looking through the hands.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: ITF heaven hand: both open hands raised in front of the forehead, thumbs and forefingers touching to form a triangle the eyes look through. LEFT hand: ITF heaven hand: both open hands raised in front of the forehead, thumbs and forefingers touching to form a triangle the eyes look through. This is count 7 of Ge-Baek: In the same stance, double arc-hand high block toward AD, looking through the hands."
+  },
+  {
+   "id": "8",
+   "file": "8.png",
+   "view": "side",
+   "face": "L",
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "sideblk",
+    "R": "guard"
+   },
+   "tech": "guburyoa",
+   "name": "Guburyo junbi sogi A · Bending ready stance A",
+   "desc": "Turn the face toward D, drawing the left foot up to the right knee into a right bending ready stance A.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: RIGHT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 8 of Ge-Baek: Turn the face toward D, drawing the left foot up to the right knee into a right bending ready stance A."
+  },
+  {
+   "id": "9",
+   "file": "9.png",
+   "view": "side",
+   "face": "L",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "palmup"
+   },
+   "tech": "scoop",
+   "name": "Sonbadak duro makgi · Palm scooping block",
+   "desc": "Lower the left foot toward AD into a sitting stance facing AC. Left palm scooping block toward AC.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): ITF upward palm block: open palm rising in front of the chest, palm up, elbow bent. This is count 9 of Ge-Baek: Lower the left foot toward AD into a sitting stance facing AC. Left palm scooping block toward AC."
+  },
+  {
+   "id": "10",
+   "file": "10.png",
+   "view": "side",
+   "face": "L",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, right middle punch toward AC, straight on from 9.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (far arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 10 of Ge-Baek: In the same stance, right middle punch toward AC, straight on from 9."
+  },
+  {
+   "id": "11",
+   "file": "11.png",
+   "view": "side",
+   "face": "L",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "backfist"
+   },
+   "tech": "bffront",
+   "name": "Dung joomuk ap taerigi · Back fist front strike",
+   "desc": "In the same stance, left back fist front strike toward AC.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): back-fist strike (deungjumeok ap chigi): arm arcs up and forward, back of the fist striking at face height, elbow slightly bent. This is count 11 of Ge-Baek: In the same stance, left back fist front strike toward AC."
+  },
+  {
+   "id": "12",
+   "file": "12.png",
+   "view": "back",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Move the right foot onto the A–B line, then move the left foot to C into a right L-stance facing C (left foot forward, weight on the right leg). Knife-hand middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand: knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. This is count 12 of Ge-Baek: Move the right foot onto the A–B line, then move the left foot to C into a right L-stance facing C (left foot forward, weight on the right leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "13",
+   "file": "13.png",
+   "view": "side",
+   "face": "L",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "yobapcha",
+   "name": "Najunde yobap cha busigi · Low side front snap kick",
+   "desc": "Left low side front snap kick toward C, the hands held where they were.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand (far arm): guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand (near arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. This is count 13 of Ge-Baek: Left low side front snap kick toward C, the hands held where they were."
+  },
+  {
+   "id": "14",
+   "file": "14.png",
+   "view": "back",
+   "face": null,
+   "stance": "lowst",
+   "lead": "L",
+   "arms": {
+    "L": "spear"
+   },
+   "tech": "hspear",
+   "name": "Pyeonsonkkeut eopeo jjireugi · Flat spear-hand thrust",
+   "desc": "Lower the left foot toward C into a left low stance. Left flat fingertip high thrust.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ITF nachuo sogi (low stance): like the walking stance but a little longer and lower, front knee well bent. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: spear-hand thrust (pyeonsonkkeut sewo tzireugi): open hand, fingers straight, thrust forward at solar-plexus height with the palm facing sideways. This is count 14 of Ge-Baek: Lower the left foot toward C into a left low stance. Left flat fingertip high thrust."
+  },
+  {
+   "id": "15",
+   "file": "15.png",
+   "view": "back",
+   "face": null,
+   "stance": "lowst",
+   "lead": "L",
+   "arms": {
+    "R": "spear"
+   },
+   "tech": "hspear",
+   "name": "Pyeonsonkkeut eopeo jjireugi · Flat spear-hand thrust",
+   "desc": "In the same stance, right flat fingertip high thrust.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ITF nachuo sogi (low stance): like the walking stance but a little longer and lower, front knee well bent. LEFT foot forward. RIGHT hand: spear-hand thrust (pyeonsonkkeut sewo tzireugi): open hand, fingers straight, thrust forward at solar-plexus height with the palm facing sideways. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 15 of Ge-Baek: In the same stance, right flat fingertip high thrust."
+  },
+  {
+   "id": "16",
+   "file": "16.png",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Right middle side piercing kick toward C, pulling both hands apart.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 16 of Ge-Baek: Right middle side piercing kick toward C, pulling both hands apart."
+  },
+  {
+   "id": "17",
+   "file": "17.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk",
+    "R": "guard"
+   },
+   "tech": "fguard",
+   "name": "Palmok kaunde daebi makgi · Forearm middle guarding block",
+   "desc": "Lower the right foot toward C into a right L-stance facing D (left foot forward toward D, weight on the right leg). Forearm middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: fist raised in front of the chest in a guard (kick guard). LEFT hand: ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 17 of Ge-Baek: Lower the right foot toward C into a right L-stance facing D (left foot forward toward D, weight on the right leg). Forearm middle guarding block."
+  },
+  {
+   "id": "18",
+   "file": "18.png",
+   "view": "back",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk",
+    "R": "guard"
+   },
+   "tech": "fguard",
+   "name": "Palmok kaunde daebi makgi · Forearm middle guarding block",
+   "desc": "Move the right foot to D, turning counter-clockwise into a right L-stance facing C (left foot forward, weight on the right leg). Forearm middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: fist raised in front of the chest in a guard (kick guard). LEFT hand: ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 18 of Ge-Baek: Move the right foot to D, turning counter-clockwise into a right L-stance facing C (left foot forward, weight on the right leg). Forearm middle guarding block."
+  },
+  {
+   "id": "19",
+   "file": "19.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Move the left foot to D, turning counter-clockwise into a right L-stance facing D (left foot forward, weight on the right leg). Knife-hand middle guarding block, with a kihap.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand: knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. This is count 19 of Ge-Baek: Move the left foot to D, turning counter-clockwise into a right L-stance facing D (left foot forward, weight on the right leg). Knife-hand middle guarding block, with a kihap."
+  },
+  {
+   "id": "20",
+   "file": "20.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "houter",
+    "L": "assist"
+   },
+   "tech": "gutja",
+   "name": "Gutja makgi · 9-shape block",
+   "desc": "Move the left foot along the C–D line into a sitting stance facing A. Right 9-shape block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: supporting fist placed under the elbow of the blocking arm. This is count 20 of Ge-Baek: Move the left foot along the C–D line into a sitting stance facing A. Right 9-shape block."
+  },
+  {
+   "id": "21",
+   "file": "21.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "kslow"
+   },
+   "tech": "kslow",
+   "name": "Sonnal arae makki · Low knife-hand block",
+   "desc": "Move the right foot to D, turning counter-clockwise into a left walking stance facing C. Left knife-hand low block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 21 of Ge-Baek: Move the right foot to D, turning counter-clockwise into a left walking stance facing C. Left knife-hand low block."
+  },
+  {
+   "id": "22",
+   "file": "22.png",
+   "view": "side",
+   "face": "R",
+   "stance": "rkick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "rkick",
+   "name": "Dollyeo chagi · Roundhouse kick",
+   "desc": "Right middle turning kick toward BC, then lower the right foot toward C.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dollyeo chagi (roundhouse kick): the hip turned over, the kicking leg swung round at head height striking with the instep. Kicking leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 22 of Ge-Baek: Right middle turning kick toward BC, then lower the right foot toward C."
+  },
+  {
+   "id": "23",
+   "file": "23.png",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "flyskick",
+   "name": "Twimyo yopcha jirugi · Flying side piercing kick",
+   "desc": "Jump: right flying side piercing kick toward C, fast after 22.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 23 of Ge-Baek: Jump: right flying side piercing kick toward C, fast after 22."
+  },
+  {
+   "id": "24",
+   "file": "24.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "twinv",
+    "R": "twinv"
+   },
+   "tech": "twinvert",
+   "name": "Sang joomuk nopunde sewo jirugi · Twin fist high vertical punch",
+   "desc": "Land toward C in a right walking stance. Twin fist high vertical punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: ITF twin fist high vertical punch: both arms extended forward at eye level, fists vertical (thumbs up), shoulder-width apart. LEFT hand: ITF twin fist high vertical punch: both arms extended forward at eye level, fists vertical (thumbs up), shoulder-width apart. This is count 24 of Ge-Baek: Land toward C in a right walking stance. Twin fist high vertical punch."
+  },
+  {
+   "id": "25",
+   "file": "25.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "heaven",
+    "R": "heaven"
+   },
+   "tech": "doobandal",
+   "name": "Nopunde doo bandalson makgi · Double arc-hand high block",
+   "desc": "In the same stance, double arc-hand high block toward AC, looking through the hands.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: ITF heaven hand: both open hands raised in front of the forehead, thumbs and forefingers touching to form a triangle the eyes look through. LEFT hand: ITF heaven hand: both open hands raised in front of the forehead, thumbs and forefingers touching to form a triangle the eyes look through. This is count 25 of Ge-Baek: In the same stance, double arc-hand high block toward AC, looking through the hands."
+  },
+  {
+   "id": "26",
+   "file": "26.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "upset"
+   },
+   "tech": "upsetpunch",
+   "name": "Dwijibo jirugi · Upset punch",
+   "desc": "In the same stance, left upset punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: ITF upset punch: arm extended forward at solar-plexus height, fist palm-up, elbow slightly bent. This is count 26 of Ge-Baek: In the same stance, left upset punch."
+  },
+  {
+   "id": "27",
+   "file": "27.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "elbow",
+    "L": "eltarget"
+   },
+   "tech": "eltarget",
+   "name": "Palkup pyojeok chigi · Elbow target strike",
+   "desc": "Move the right foot along the C–D line into a left walking stance facing D. Right front elbow strike into the left palm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: elbow strike (palkup dollyeo chigi): arm folded, elbow swung forward horizontally at chin height. LEFT hand: open hand held as a target in front of the chest, palm toward the striking elbow. This is count 27 of Ge-Baek: Move the right foot along the C–D line into a left walking stance facing D. Right front elbow strike into the left palm."
+  },
+  {
+   "id": "28",
+   "file": "28.png",
+   "view": "side",
+   "face": "R",
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "R": "high",
+    "L": "assist"
+   },
+   "tech": "doopalmok",
+   "name": "Doo palmok nopunde makgi · Double forearm high block",
+   "desc": "Jump toward D, landing in a right X-stance facing BD. Right double forearm high block toward D, with a kihap.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. RIGHT foot forward. RIGHT hand (near arm): high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. LEFT hand (far arm): supporting fist placed under the elbow of the blocking arm. This is count 28 of Ge-Baek: Jump toward D, landing in a right X-stance facing BD. Right double forearm high block toward D, with a kihap."
+  },
+  {
+   "id": "29",
+   "file": "29.png",
+   "view": "side",
+   "face": "R",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "palmup"
+   },
+   "tech": "scoop",
+   "name": "Sonbadak duro makgi · Palm scooping block",
+   "desc": "Move the left foot toward BC into a sitting stance facing BD. Right palm scooping block toward BD.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (near arm): ITF upward palm block: open palm rising in front of the chest, palm up, elbow bent. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 29 of Ge-Baek: Move the left foot toward BC into a sitting stance facing BD. Right palm scooping block toward BD."
+  },
+  {
+   "id": "30",
+   "file": "30.png",
+   "view": "side",
+   "face": "R",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, left middle punch toward BD, straight on from 29.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (near arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (far arm): middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 30 of Ge-Baek: In the same stance, left middle punch toward BD, straight on from 29."
+  },
+  {
+   "id": "31",
+   "file": "31.png",
+   "view": "side",
+   "face": "R",
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "backfist"
+   },
+   "tech": "bffront",
+   "name": "Dung joomuk ap taerigi · Back fist front strike",
+   "desc": "In the same stance, right back fist front strike toward BD.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand (near arm): back-fist strike (deungjumeok ap chigi): arm arcs up and forward, back of the fist striking at face height, elbow slightly bent. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 31 of Ge-Baek: In the same stance, right back fist front strike toward BD."
+  },
+  {
+   "id": "32",
+   "file": "32.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "neck"
+   },
+   "tech": "rdfront",
+   "name": "Sonkal dung nopunde ap taerigi · Reverse knife-hand high front strike",
+   "desc": "Move the left foot to C into a left walking stance facing C. Right reverse knife-hand high front strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: knife-hand neck strike (sonnal mok chigi): open hand swung horizontally inward, palm up, knife edge at neck height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 32 of Ge-Baek: Move the left foot to C into a left walking stance facing C. Right reverse knife-hand high front strike."
+  },
+  {
+   "id": "33",
+   "file": "33.png",
+   "view": "side",
+   "face": "R",
+   "stance": "rkick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "rkick",
+   "name": "Dollyeo chagi · Roundhouse kick",
+   "desc": "Move the left foot about half a shoulder width toward A, then right middle turning kick toward C.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dollyeo chagi (roundhouse kick): the hip turned over, the kicking leg swung round at head height striking with the instep. Kicking leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 33 of Ge-Baek: Move the left foot about half a shoulder width toward A, then right middle turning kick toward C."
+  },
+  {
+   "id": "34",
+   "file": "34.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "twinv",
+    "R": "twinv"
+   },
+   "tech": "twinvert",
+   "name": "Sang joomuk nopunde sewo jirugi · Twin fist high vertical punch",
+   "desc": "Lower the right foot toward C, then pivoting on the right foot turn counter-clockwise into a left walking stance facing D. Twin fist high vertical punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: ITF twin fist high vertical punch: both arms extended forward at eye level, fists vertical (thumbs up), shoulder-width apart. LEFT hand: ITF twin fist high vertical punch: both arms extended forward at eye level, fists vertical (thumbs up), shoulder-width apart. This is count 34 of Ge-Baek: Lower the right foot toward C, then pivoting on the right foot turn counter-clockwise into a left walking stance facing D. Twin fist high vertical punch."
+  },
+  {
+   "id": "35",
+   "file": "35.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "R": "punch",
+    "L": "xshoulder"
+   },
+   "tech": "joongji",
+   "name": "Joongji joomuk kaunde jirugi · Middle knuckle fist middle punch",
+   "desc": "Pull the left foot back into a right L-stance facing D (left foot forward, weight on the right leg). Right middle knuckle fist middle punch, the left side fist in front of the right shoulder.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist drawn back in front of the opposite shoulder, forearm across the chest. This is count 35 of Ge-Baek: Pull the left foot back into a right L-stance facing D (left foot forward, weight on the right leg). Right middle knuckle fist middle punch, the left side fist in front of the right shoulder."
+  },
+  {
+   "id": "36",
+   "file": "36.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "assist"
+   },
+   "tech": "gutja",
+   "name": "Gutja makgi · 9-shape block",
+   "desc": "Move the right foot toward D into a sitting stance facing B. Left 9-shape block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: supporting fist placed under the elbow of the blocking arm. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 36 of Ge-Baek: Move the right foot toward D into a sitting stance facing B. Left 9-shape block."
+  },
+  {
+   "id": "37",
+   "file": "37.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "kslow",
+    "R": "ksguard"
+   },
+   "tech": "rdlowguard",
+   "name": "Sonkal dung najunde daebi makgi · Reverse knife-hand low guarding block",
+   "desc": "In the same stance, reverse knife-hand low guarding block toward C.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 37 of Ge-Baek: In the same stance, reverse knife-hand low guarding block toward C."
+  },
+  {
+   "id": "38",
+   "file": "38.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "kslow",
+    "L": "ksguard"
+   },
+   "tech": "kslowguard",
+   "name": "Sonkal najunde daebi makgi · Knife-hand low guarding block",
+   "desc": "In the same stance, knife-hand low guarding block toward D, straight on from 37.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. LEFT hand: guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 38 of Ge-Baek: In the same stance, knife-hand low guarding block toward D, straight on from 37."
+  },
+  {
+   "id": "39",
+   "file": "39.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "name": "Santeul makki · Mountain block",
+   "desc": "Stamp the left foot toward D into a sitting stance facing A. W-shape block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 39 of Ge-Baek: Stamp the left foot toward D into a sitting stance facing A. W-shape block."
+  },
+  {
+   "id": "40",
+   "file": "40.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "houter",
+    "R": "houter"
+   },
+   "tech": "santeul",
+   "name": "Santeul makki · Mountain block",
+   "desc": "Stamp the left foot toward C into a sitting stance facing B. W-shape block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: high outer block: forearm upright at the side of the head, fist at head height. LEFT hand: high outer block: forearm upright at the side of the head, fist at head height. This is count 40 of Ge-Baek: Stamp the left foot toward C into a sitting stance facing B. W-shape block."
+  },
+  {
+   "id": "41",
+   "file": "41.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "high"
+   },
+   "tech": "high",
+   "name": "Eolgul makki · High block",
+   "desc": "Move the right foot to C into a right walking stance facing C. Right forearm rising block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 41 of Ge-Baek: Move the right foot to C into a right walking stance facing C. Right forearm rising block."
+  },
+  {
+   "id": "42",
+   "file": "42.png",
+   "view": "back",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, left middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 42 of Ge-Baek: In the same stance, left middle punch."
+  },
+  {
+   "id": "43",
+   "file": "43.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "high"
+   },
+   "tech": "high",
+   "name": "Eolgul makki · High block",
+   "desc": "Move the right foot along the C–D line into a left walking stance facing D. Left forearm rising block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: high block (eolgul makki): forearm held across and a fist-width above the forehead, angled slightly upward. This is count 43 of Ge-Baek: Move the right foot along the C–D line into a left walking stance facing D. Left forearm rising block."
+  },
+  {
+   "id": "44",
+   "file": "44.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "In the same stance, right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 44 of Ge-Baek: In the same stance, right middle punch."
+  }
+ ]
+}
