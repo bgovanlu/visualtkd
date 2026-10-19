@@ -590,6 +590,24 @@ This is the first ITF page: `/itf/chon-ji`, with a 2-page print sheet.
 - [ ] **Library.** The low knife-hand block now carries its ITF name (Sonkal najunde makgi). New entries: `twistkick`, `doobandal`, `scoop`, `bffront`, `gutja`, `joongji`.
 - [ ] **Footwork.** The simulator ends 3.2 foot-lengths from the start, but its positions along the way aren't reliable here (see above).
 
+## Eui-Am · 의암 (ITF) — 18 October 2026
+
+`/itf/eui-am`, with a 2-page print sheet. The whole pattern is on the C–D line, so the board shows the moves in order, read down the page in rows, as on Ge-Baek. The minimap places each count along the line using the footwork simulator.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 45 movements (only "knifehand" vs "knife-hand" at 43). The ITF Korean names come from the chart. Fandom was not used. There is no official video.
+
+- [ ] **No kihap.** Neither the official page nor the chart marks one, so the page shows none. Please check your book.
+- [ ] **Close ready stance D (ready posture).** Neither text describes the hands. It's drawn like ready stances A–C (left hand over the right fist).
+- [ ] **Knife-hand low inward blocks (1, 14) and reverse knife-hand low inward blocks (31, 36)** are drawn with the low open-hand arms (`palmlow`), the hand at the centre line.
+- [ ] **X-fist downward block (5, 18)** uses the low X block arms; new entry `xdown`, separate from the X-fist pressing block.
+- [ ] **Reverse turning kicks (9, 22, 37, 39)** are drawn with the turning kick figure.
+- [ ] **Middle turning punch (13, 26)** in parallel stance uses the angle punch arm (`crosspunch`).
+- [ ] **Reverse knife-hand circular block (28, 33)** uses the knife-hand inside block arm (`ksin`).
+- [ ] **Alternate palm downward block (29, 34)**: one palm pressing down in front and the other low (`pressdown` + `palmlow`).
+- [ ] **Move 42 and 44** say "slipping the right (left) foot" while ending in a left (right) walking stance; drawn as the text says.
+- [ ] **Library.** New entries: `moajunbid`, `kslowin`, `xdown`, `ksrising`, `revturn`, `crescentpunch`, `turnpunch`, `kswedge`, `rdcircular`, `altpalm`, `rdlowin`. New arm `kswedge`.
+- [ ] **Footwork.** The simulator ends 3.6 foot-lengths from the start, toward D.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:
