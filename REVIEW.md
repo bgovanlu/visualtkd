@@ -537,6 +537,26 @@ This is the first ITF page: `/itf/chon-ji`, with a 2-page print sheet.
 - [ ] **Library.** The swallow-form neck strike now carries its ITF name (Sonkal nopunde ap taerigi). New entries: `rdfront`, `flyskick`, `bkick`, `apmakgi`, `ksxcheck`, `sangollyo`; new surface `dwitkumchi` (heel).
 - [ ] **Footwork.** The simulator ends 2.5 foot-lengths from the start. The flying side kick (9-1) has a 1.5 foot-length travel hint and the reverse knife-hand strike (13) a one foot-length hint.
 
+## Kwang-Gae · 광개 (ITF) — 18 October 2026
+
+`/itf/kwang-gae`, with a 2-page print sheet, on a 土 board:
+- the long A–B line with the start at the top (1, 32–39);
+- the stem down toward D (2–7), the short E–F line across it (12–20), and the D end of the stem below it (8–11);
+- the moves back along the C–D line (21–31) in the bottom row.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 39 movements. Small wording differences only: at 6 the official text says "the side of the left foot", the chart "the side front"; the chart marks 30 "slow motion", the official text doesn't. The ITF Korean names come from the chart. Fandom was not used. There is no official video.
+
+- [ ] **Board order (please look).** The moves back toward C (21–31) really happen between the short E–F line and the start, but there's no room there, so they are drawn in the bottom row, below the D end. The footer says so. The minimap shows the real positions.
+- [ ] **Kihap at 23 and 27.** These follow the official ITF page; the chart marks none.
+- [ ] **Heaven hand (ready posture)** is a new arm (`heaven`): both open hands raised in front of the forehead. The triangle the hands make doesn't really show at this size.
+- [ ] **Sitting stance facing F with a back fist toward D or C (23, 27)** is drawn in front view with the fist beside the head, as in Toi-Gye 12; the footprint shows the facing.
+- [ ] **Knife-hand low front block into the palm (12)** uses the Kukkiwon low palm arms (`palmlow`), seen from behind, so the hands hardly show.
+- [ ] **Pressing kick (13, 17)** is new (`pressingkick`) and drawn with the side kick figure.
+- [ ] **Side fist downward strike (16, 20)** uses the Kukkiwon hammer-fist strike, which now carries the ITF name (Yop joomuk naeryo taerigi), drawn from behind with the arm out to the side.
+- [ ] **Shifting moves (25, 29)** keep the stance and move back half a step; the simulator shows the shift only roughly.
+- [ ] **Library.** New entries: `haneulson`, `upsetpunch`, `golchohi`, `kshguard`, `kslowfront`, `pressingkick`, `doopalmokm`. New arm `heaven`.
+- [ ] **Footwork.** The simulator ends 5.4 foot-lengths from the start, toward C. The way down includes two slides back, and the way back has two full low-stance steps past the short line, so the end is behind the start line. The real pattern may be shorter.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:

@@ -57,6 +57,7 @@ ARM = {
     "ulow": "lower arm of the ITF U-shape block: forearm level at middle height, fist pointing forward",
     "palmup": "ITF upward palm block: open palm rising in front of the chest, palm up, elbow bent",
     "kxcheck": "ITF X-knife-hand checking block: both open hands crossed at the wrists in front of the chest, edges forward",
+    "heaven": "ITF heaven hand: both open hands raised in front of the forehead, thumbs and forefingers touching to form a triangle the eyes look through",
     "ksdown": "ITF knife-hand downward strike: open hand brought down in front to chest height, edge of the hand leading, arm nearly straight",
     "bfback": "ITF back fist side back strike: fist driven back past the shoulder at head height, back of the fist toward the target behind",
     "sideblk": "ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned",

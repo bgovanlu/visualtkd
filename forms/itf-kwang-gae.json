@@ -1,0 +1,876 @@
+{
+ "slug": "itf/kwang-gae",
+ "pdf": "kwang-gae-print.pdf",
+ "family": "itf",
+ "title": "Kwang-Gae",
+ "ko": "광개",
+ "symbol": {
+  "name": "Kwang-Gae",
+  "hanja": "廣開",
+  "meaning": "King Gwanggaeto the Great · ITF pattern 10 of 24"
+ },
+ "movements": 39,
+ "note": {
+  "h": "土 · Kwang-Gae · the king who expanded the realm",
+  "p": "Kwang-Gae is named after Gwanggaeto the Great, the 19th king of Goguryeo, who won back the lost territories including much of Manchuria. The diagram 土 (earth) stands for that recovered land, and the 39 movements for the first two figures of 391, the year he came to the throne. You start in parallel stance with a heaven hand in the middle of the A–B line facing D: slow upset punches, double steps with palm hooking blocks and sliding knife-hand low guarding blocks down toward D; palm upward blocks back toward C; pressing and side kicks to E and F from closed stance with knife-hand and side-fist strikes; slow palm pressing blocks in low stance; stamping back fist strikes and double forearm blocks along the C–D line; then twin fist punches, front kicks, guarding blocks and high punches to A and B."
+ },
+ "footer": "Move numbers follow the ITF Encyclopedia count (39 movements, one technique each). Directions use the ITF letters: you start facing D, with B on your left and A on your right; E and F are the ends of the short line across the stem. The moves back along the C–D line (21–31) are drawn in the bottom row so the stem stays readable; their real place is between the short line and the start. Finish by bringing the left foot back to the ready posture.",
+ "boardMin": 1640,
+ "floor": {
+  "glyph": "土",
+  "bars": {
+   "r3": "fit",
+   "r5": "noline"
+  },
+  "letters": {
+   "r3": [
+    "E",
+    "F"
+   ],
+   "r5": [
+    "",
+    ""
+   ]
+  },
+  "notesBelow": true,
+  "map": "M8 8H92M50 8V56M28 30H72"
+ },
+ "layout": {
+  "r1": [
+   [
+    "33",
+    "32",
+    "34"
+   ],
+   [
+    "J",
+    "1",
+    "38",
+    "39"
+   ],
+   [
+    "35",
+    "36",
+    "37"
+   ]
+  ],
+  "c2": [
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7"
+  ],
+  "r3": [
+   [
+    "16",
+    "15",
+    "14",
+    "13"
+   ],
+   [
+    "12"
+   ],
+   [
+    "17",
+    "18",
+    "19",
+    "20"
+   ]
+  ],
+  "c4": [
+   "8",
+   "9",
+   "10",
+   "11"
+  ],
+  "r5": [
+   [
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31"
+   ]
+  ]
+ },
+ "pos": {
+  "J": [
+   50,
+   8
+  ],
+  "1": [
+   50,
+   8
+  ],
+  "2": [
+   50,
+   12.7
+  ],
+  "3": [
+   50,
+   22.2
+  ],
+  "4": [
+   50,
+   30.6
+  ],
+  "5": [
+   50,
+   22.2
+  ],
+  "6": [
+   50,
+   30.6
+  ],
+  "7": [
+   50,
+   22.2
+  ],
+  "8": [
+   50,
+   27.8
+  ],
+  "9": [
+   50,
+   31.6
+  ],
+  "10": [
+   50,
+   28.8
+  ],
+  "11": [
+   50,
+   19.4
+  ],
+  "12": [
+   50,
+   14.6
+  ],
+  "13": [
+   42.6,
+   30
+  ],
+  "14": [
+   42.6,
+   30
+  ],
+  "15": [
+   40.8,
+   30
+  ],
+  "16": [
+   50,
+   14.6
+  ],
+  "17": [
+   54.1,
+   30
+  ],
+  "18": [
+   54.1,
+   30
+  ],
+  "19": [
+   55.9,
+   30
+  ],
+  "20": [
+   50,
+   14.6
+  ],
+  "21": [
+   50,
+   9.9
+  ],
+  "22": [
+   50,
+   8
+  ],
+  "23": [
+   50,
+   9.4
+  ],
+  "24": [
+   50,
+   9.9
+  ],
+  "25": [
+   50,
+   8
+  ],
+  "26": [
+   50,
+   9.2
+  ],
+  "27": [
+   50,
+   8
+  ],
+  "28": [
+   50,
+   8
+  ],
+  "29": [
+   50,
+   8
+  ],
+  "30": [
+   50,
+   8
+  ],
+  "31": [
+   50,
+   8
+  ],
+  "32": [
+   34.2,
+   8
+  ],
+  "33": [
+   14.4,
+   8
+  ],
+  "34": [
+   6,
+   8
+  ],
+  "35": [
+   27.1,
+   8
+  ],
+  "36": [
+   51.4,
+   8
+  ],
+  "37": [
+   71.2,
+   8
+  ],
+  "38": [
+   80.2,
+   8
+  ],
+  "39": [
+   58.6,
+   8
+  ]
+ },
+ "moves": [
+  {
+   "id": "J",
+   "dir": "ga",
+   "view": "front",
+   "stance": "ready",
+   "arms": {
+    "L": "heaven",
+    "R": "heaven"
+   },
+   "tech": "haneulson",
+   "desc": "Stand at the centre of the A–B line facing D in parallel stance with a heaven hand: feet parallel, both open hands raised in front of the forehead to form a triangle."
+  },
+  {
+   "id": "1",
+   "dir": "ga",
+   "view": "front",
+   "stance": "close",
+   "arms": {
+    "L": "cover",
+    "R": "cover"
+   },
+   "tech": "moajunbib",
+   "desc": "Bring the left foot to the right foot into close ready stance B facing D, bringing both hands down in a circle, slowly."
+  },
+  {
+   "id": "2",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "upset"
+   },
+   "tech": "upsetpunch",
+   "note": "reverse",
+   "desc": "Move the left foot to D into a left walking stance. Right upset punch, slowly."
+  },
+  {
+   "id": "3",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "upset"
+   },
+   "tech": "upsetpunch",
+   "note": "reverse",
+   "desc": "Step the right foot forward toward D into a right walking stance. Left upset punch, slowly."
+  },
+  {
+   "id": "4",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "palm"
+   },
+   "tech": "golchohi",
+   "carry": false,
+   "step": {
+    "move": [
+     2.4,
+     0
+    ]
+   },
+   "desc": "Double step: move the left foot to the side front of the right foot, then the right foot to D into a right walking stance. Right palm high hooking block."
+  },
+  {
+   "id": "5",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "kslow",
+    "R": "ksguard"
+   },
+   "tech": "kslowguard",
+   "step": {
+    "plant": "L"
+   },
+   "desc": "Slide the right foot back toward C into a right L-stance facing D (left foot forward, weight on the right leg). Knife-hand low guarding block."
+  },
+  {
+   "id": "6",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "palm"
+   },
+   "tech": "golchohi",
+   "carry": false,
+   "step": {
+    "move": [
+     2.4,
+     0
+    ]
+   },
+   "desc": "Double step: move the right foot beside the left foot, then the left foot to D into a left walking stance. Left palm high hooking block."
+  },
+  {
+   "id": "7",
+   "dir": "ga",
+   "view": "front",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "kslow",
+    "L": "ksguard"
+   },
+   "tech": "kslowguard",
+   "step": {
+    "plant": "R"
+   },
+   "desc": "Slide the left foot back toward C into a left L-stance facing D (right foot forward, weight on the left leg). Knife-hand low guarding block."
+  },
+  {
+   "id": "8",
+   "dir": "ga",
+   "view": "front",
+   "stance": "tiger",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "kshguard",
+   "desc": "Move the left foot to D into a right rear foot stance (left foot forward on its ball, weight on the right leg). Knife-hand high guarding block."
+  },
+  {
+   "id": "9",
+   "dir": "ga",
+   "view": "front",
+   "stance": "tiger",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "kshguard",
+   "desc": "Step the right foot forward toward D into a left rear foot stance (right foot forward on its ball, weight on the left leg). Knife-hand high guarding block."
+  },
+  {
+   "id": "10",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "palmup"
+   },
+   "tech": "ollyo",
+   "carry": false,
+   "desc": "Move the left foot to the side front of the right foot, then pivoting on the left foot turn counter-clockwise into a left walking stance facing C. Right palm upward block, slowly."
+  },
+  {
+   "id": "11",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "palmup"
+   },
+   "tech": "ollyo",
+   "desc": "Step the right foot forward toward C into a right walking stance. Left palm upward block, slowly."
+  },
+  {
+   "id": "12",
+   "dir": "na",
+   "view": "back",
+   "stance": "close",
+   "arms": {
+    "R": "palmlow",
+    "L": "palmlow"
+   },
+   "tech": "kslowfront",
+   "desc": "Bring the left foot to the right foot into a closed stance facing C. Right knife-hand low front block in a circle, striking into the left palm."
+  },
+  {
+   "id": "13",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "R": "palmlow",
+    "L": "palmlow"
+   },
+   "tech": "pressingkick",
+   "desc": "Left pressing kick toward E, the hands held where they were."
+  },
+  {
+   "id": "14",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "R": "palmlow",
+    "L": "palmlow"
+   },
+   "tech": "skick",
+   "desc": "Without setting the foot down, left middle side piercing kick toward E."
+  },
+  {
+   "id": "15",
+   "dir": "ra2",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "R": "neck",
+    "L": "xshoulder"
+   },
+   "tech": "neck",
+   "desc": "Lower the left foot toward E into a right L-stance facing E (left foot forward, weight on the right leg). Right knife-hand high inward strike, the left side fist in front of the right shoulder."
+  },
+  {
+   "id": "16",
+   "dir": "na",
+   "view": "back",
+   "stance": "close",
+   "arms": {
+    "L": "hammer"
+   },
+   "tech": "hammer",
+   "carry": false,
+   "desc": "Pull the left foot to the right foot into a closed stance facing C. Left side fist downward strike toward E."
+  },
+  {
+   "id": "17",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "hammer"
+   },
+   "tech": "pressingkick",
+   "desc": "Right pressing kick toward F, the hands held where they were."
+  },
+  {
+   "id": "18",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "hammer"
+   },
+   "tech": "skick",
+   "desc": "Without setting the foot down, right middle side piercing kick toward F."
+  },
+  {
+   "id": "19",
+   "dir": "da2",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "L": "neck",
+    "R": "xshoulder"
+   },
+   "tech": "neck",
+   "desc": "Lower the right foot toward F into a left L-stance facing F (right foot forward, weight on the left leg). Left knife-hand high inward strike, the right side fist in front of the left shoulder."
+  },
+  {
+   "id": "20",
+   "dir": "na",
+   "view": "back",
+   "stance": "close",
+   "arms": {
+    "R": "hammer"
+   },
+   "tech": "hammer",
+   "carry": false,
+   "desc": "Pull the right foot to the left foot into a closed stance facing C. Right side fist downward strike toward F."
+  },
+  {
+   "id": "21",
+   "dir": "na",
+   "view": "back",
+   "stance": "lowst",
+   "lead": "L",
+   "arms": {
+    "R": "pressdown"
+   },
+   "tech": "pressdown",
+   "desc": "Move the left foot to C into a left low stance. Right palm pressing block, slowly."
+  },
+  {
+   "id": "22",
+   "dir": "na",
+   "view": "back",
+   "stance": "lowst",
+   "lead": "R",
+   "arms": {
+    "L": "pressdown"
+   },
+   "tech": "pressdown",
+   "desc": "Step the right foot forward toward C into a right low stance. Left palm pressing block, slowly."
+  },
+  {
+   "id": "23",
+   "dir": "da2",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "R": "bfside"
+   },
+   "tech": "backfist",
+   "kihap": true,
+   "carry": false,
+   "desc": "Stamp the right foot back toward D into a sitting stance facing F. Right back fist high side strike toward D, with a kihap."
+  },
+  {
+   "id": "24",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "outer",
+    "L": "assist"
+   },
+   "tech": "doopalmokm",
+   "desc": "Pivoting on the left foot, turn into a right walking stance facing D. Right double forearm middle block."
+  },
+  {
+   "id": "25",
+   "dir": "ga",
+   "view": "front",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "outer",
+    "L": "low"
+   },
+   "tech": "low",
+   "carry": false,
+   "step": {
+    "move": [
+     -0.8,
+     0
+    ]
+   },
+   "desc": "Shift back toward C, keeping the right walking stance. Left forearm low block, the right arm held where it was."
+  },
+  {
+   "id": "26",
+   "dir": "ga",
+   "view": "front",
+   "stance": "lowst",
+   "lead": "R",
+   "arms": {
+    "R": "spear"
+   },
+   "tech": "hspear",
+   "carry": false,
+   "step": {
+    "move": [
+     0.6,
+     0
+    ]
+   },
+   "desc": "Slip the right foot forward toward D into a right low stance. Right flat fingertip high thrust, slowly."
+  },
+  {
+   "id": "27",
+   "dir": "da2",
+   "view": "front",
+   "stance": "horse",
+   "arms": {
+    "L": "bfside"
+   },
+   "tech": "backfist",
+   "kihap": true,
+   "carry": false,
+   "step": {
+    "move": [
+     0,
+     -2.0
+    ]
+   },
+   "desc": "Stamp the left foot along the C–D line into a sitting stance facing F. Left back fist high side strike toward C, with a kihap."
+  },
+  {
+   "id": "28",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "outer",
+    "R": "assist"
+   },
+   "tech": "doopalmokm",
+   "desc": "Pivoting on the left foot, turn into a left walking stance facing C. Left double forearm middle block."
+  },
+  {
+   "id": "29",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "outer",
+    "R": "low"
+   },
+   "tech": "low",
+   "carry": false,
+   "step": {
+    "move": [
+     -0.8,
+     0
+    ]
+   },
+   "desc": "Shift back toward D, keeping the left walking stance. Right forearm low block, the left arm held where it was."
+  },
+  {
+   "id": "30",
+   "dir": "na",
+   "view": "back",
+   "stance": "lowst",
+   "lead": "L",
+   "arms": {
+    "L": "spear"
+   },
+   "tech": "hspear",
+   "carry": false,
+   "step": {
+    "move": [
+     0.6,
+     0
+    ]
+   },
+   "desc": "Slip the left foot forward toward C into a left low stance. Left flat fingertip high thrust."
+  },
+  {
+   "id": "31",
+   "dir": "na",
+   "view": "back",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "twinv",
+    "R": "twinv"
+   },
+   "tech": "twinvert",
+   "desc": "Stamp the right foot forward toward C into a right walking stance. Twin fist high vertical punch."
+  },
+  {
+   "id": "32",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "upset",
+    "R": "upset"
+   },
+   "tech": "duppercut",
+   "desc": "Stamp the left foot to A into a left walking stance facing A. Twin fist upset punch."
+  },
+  {
+   "id": "33",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "kick",
+   "lead": "R",
+   "arms": {
+    "L": "upset",
+    "R": "upset"
+   },
+   "tech": "kick",
+   "desc": "Right middle front snap kick toward A, the hands held where they were."
+  },
+  {
+   "id": "34",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "ksblock",
+   "carry": false,
+   "step": {
+    "move": [
+     -1.0,
+     0
+    ]
+   },
+   "desc": "Lower the right foot, then move the left foot toward A into a left L-stance facing B (right foot forward, weight on the left leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "35",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "L": "hpunch"
+   },
+   "tech": "hpunch",
+   "note": "obverse",
+   "desc": "Move the left foot to B into a left walking stance. Left high punch."
+  },
+  {
+   "id": "36",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "upset",
+    "R": "upset"
+   },
+   "tech": "duppercut",
+   "desc": "Stamp the right foot forward toward B into a right walking stance. Twin fist upset punch."
+  },
+  {
+   "id": "37",
+   "dir": "da1",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "upset",
+    "R": "upset"
+   },
+   "tech": "kick",
+   "desc": "Left middle front snap kick toward B, the hands held where they were."
+  },
+  {
+   "id": "38",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "carry": false,
+   "step": {
+    "move": [
+     -1.0,
+     0
+    ]
+   },
+   "desc": "Lower the left foot to the right foot, then move the right foot toward B into a right L-stance facing A (left foot forward, weight on the right leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "39",
+   "dir": "ra1",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "R": "hpunch"
+   },
+   "tech": "hpunch",
+   "note": "obverse",
+   "desc": "Move the right foot to A into a right walking stance. Right high punch."
+  }
+ ],
+ "refs": [
+  {
+   "go": "itf-kwang-gae",
+   "kind": "itf",
+   "icon": "gate",
+   "src": "ITF · Official site",
+   "title": "Kwang-Gae",
+   "desc": "The pattern's official text: meaning, ready posture and all 39 movements (ITF, Choi Jung Hwa).",
+   "url": "https://www.itf-administration.com/articles/?arturn=843"
+  },
+  {
+   "go": "itf-encyclopedia",
+   "kind": "itf",
+   "icon": "gate",
+   "src": "ITF · Vienna · Official site",
+   "title": "Encyclopedia of Taekwon-Do",
+   "desc": "General Choi's reference work, the source of the patterns; selected chapters online.",
+   "url": "https://itf-tkd.org/encyclopedia-of-taekwon%E2%80%91do/"
+  }
+ ]
+}
