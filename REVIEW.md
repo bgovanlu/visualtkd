@@ -649,6 +649,22 @@ The other differences are typos ("closed"/"close" at 26 and 43). Neither source 
 - [ ] **Library.** New stance `sasun`. New entries: `twinelbowready`, `anparallel`, `outparallel`, `revhook`, `bfdown`, `hookkick`, `crosscut`, `crosscutin`, `highelbow`, `rdlowfront`, `spinks`, `pickkick`, `moaheaven`, `straightelbow`, `arccrescent`, `twinneck`, `downpunch`, `outerdown`, `dodgehook`, `twodirkick`, `twinpalmrising`, `guburyob`, `bfhoriz`, `flypunch`, `ksfrontdown`.
 - [ ] **Footwork.** The simulator ends 1.5 foot-lengths from the start.
 
+## Sam-Il · 삼일 (ITF) — 18 October 2026
+
+`/itf/sam-il`, with a 2-page print sheet. The moves go back and forth through the centre of the + diagram, so the board shows them in order, read down the page in rows, as on Ge-Baek; the minimap places them using the footwork simulator.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart are identical for all 33 movements. The ITF Korean names come from the chart. Fandom was not used. There is no official video.
+
+- [ ] **No kihap.** Neither source marks one.
+- [ ] **Move 8** combines a high outward block behind toward D with a low block toward C; it's drawn from behind with the high outer forearm arm.
+- [ ] **Double fist low punch (10, 13)** is drawn as a low fist with the other fist bracing it (`hammerlow` + `assist`).
+- [ ] **Double arc-hand block toward BC (11)** uses the heaven-hand arms, as in Ge-Baek.
+- [ ] **Sweeping kick then U-shape block (16)** is split into 16-1 and 16-2; the sweep is drawn as a front kick.
+- [ ] **Move 20** is a diagonal stance facing D with a back elbow thrust toward C; drawn in front view.
+- [ ] **Move 28**: "the left fist pulled under the left armpit" isn't drawn; the fist is chambered.
+- [ ] **Library.** New entries: `kshighside`, `twistkickm`, `rdwedgem`, `houterlow`, `doublefistlow`, `rdhguard`, `sweepkick`.
+- [ ] **Footwork.** The simulator ends 2.5 foot-lengths from the start.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:
