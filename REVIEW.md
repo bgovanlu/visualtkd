@@ -710,6 +710,23 @@ The other differences are typos ("closed"/"close" at 26 and 43). Neither source 
 - [ ] **Library.** New entries: `warriora`, `longfist`, `xfistcheck`, `flyks`, `kslowout`, `rdsan`, `twinforearmcheck`, `waistblock`, `kshighout`, `spinkick`.
 - [ ] **Footwork.** The simulator ends 1.0 foot-length from the start.
 
+## Ul-Ji · 을지 (ITF) — 18 October 2026
+
+`/itf/ul-ji`, with a 2-page print sheet. The moves run along the three lines of the 乙 diagram and back, so the board shows them in order, read down the page in rows, as on Ge-Baek.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on 41 of the 42 movements, plus one detail at 28:
+- [ ] **Move 11.** The official text says "Cross the left foot **to** the right foot, forming a **close stance** toward D"; the chart says "Cross the left foot **over** the right foot, forming a **right X-stance**", and its Korean is "Kyocha sogi". The page follows the chart (X-stance).
+- [ ] **Move 28.** Both English texts say right fixed stance; the chart's Korean says "Dwitbal so" (rear foot stance). The page follows the English (fixed stance).
+
+Fandom was not used. There is no official video.
+
+- [ ] **No kihap.** Neither source marks one.
+- [ ] **E and F** are read as the ends of a line parallel to A–B (F on the B side, E on the A side), from the diagonals DF, DE and ED and the turn at 26. BD and ED use the second diagonal codes.
+- [ ] **Hard-to-draw moves.** The mid-air spinning kick (17) is drawn as a turning kick; the flying high kick (27) as a front kick.
+- [ ] **Parallel stance with an X-back hand (ready posture)** uses the X-knife-hand checking arms.
+- [ ] **Library.** New entries: `xbackhand`, `twinsidefist`, `xstance`, `walkready`, `flyhighkick`, `ybkickwedge`, `ksoutpush`.
+- [ ] **Footwork.** The simulator ends 8.4 foot-lengths from the start, toward B: it can't place the E–F line relative to the start. The end really depends on where that line is.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:
