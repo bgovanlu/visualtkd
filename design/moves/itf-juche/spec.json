@@ -1,0 +1,862 @@
+{
+ "form": "Juche",
+ "slug": "itf/juche",
+ "moves": [
+  {
+   "id": "J",
+   "file": "J.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "sideelbow",
+    "R": "sideelbow"
+   },
+   "tech": "twinelbowready",
+   "name": "Narani sogi sang yop palkup · Parallel stance with twin side elbow",
+   "desc": "Stand on the start facing D in parallel stance with twin side elbow: feet parallel, fists in front of the chest, elbows out.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. This is the ready posture of Juche: Stand on the start facing D in parallel stance with twin side elbow: feet parallel, fists in front of the chest, elbows out."
+  },
+  {
+   "id": "1",
+   "file": "1.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "sideblk",
+    "R": "sideblk"
+   },
+   "tech": "anparallel",
+   "name": "Anpalmok narani makgi · Inner forearm parallel block",
+   "desc": "Move the left foot to B into a sitting stance facing D. Inner forearm parallel block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand: ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 1 of Juche: Move the left foot to B into a sitting stance facing D. Inner forearm parallel block."
+  },
+  {
+   "id": "2",
+   "file": "2.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "R": "palm"
+   },
+   "tech": "golcho",
+   "name": "Sonbadak kaunde golcho makgi · Palm middle hooking block",
+   "desc": "Stand up, facing D. Right palm middle hooking block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: palm inside block (batangson an makki): open hand, heel of the palm sweeping in front of the chest to the centre line. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 2 of Juche: Stand up, facing D. Right palm middle hooking block."
+  },
+  {
+   "id": "3",
+   "file": "3.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Sink back into the sitting stance. Left middle punch toward D.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. This is count 3 of Juche: Sink back into the sitting stance. Left middle punch toward D."
+  },
+  {
+   "id": "4",
+   "file": "4.png",
+   "view": "front",
+   "face": null,
+   "stance": "oneleg",
+   "lead": "L",
+   "arms": {
+    "L": "outer",
+    "R": "outer"
+   },
+   "tech": "outparallel",
+   "name": "Bakat palmok narani makgi · Outer forearm parallel block",
+   "desc": "Pull the right reverse footsword up to the left knee joint into a left one-leg stance facing D. Outer forearm parallel block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ITF waebal sogi (one-leg stance): standing on one leg, knee slightly bent, the other foot drawn up with its sole beside the standing knee joint. LEFT foot forward. RIGHT hand: outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. LEFT hand: outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. This is count 4 of Juche: Pull the right reverse footsword up to the left knee joint into a left one-leg stance facing D. Outer forearm parallel block."
+  },
+  {
+   "id": "5-1",
+   "file": "5-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "outer",
+    "R": "outer"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Right middle side piercing kick toward A, slowly, the hands held where they were.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (far arm): outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. LEFT hand (near arm): outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. This is count 5-1 of Juche: Right middle side piercing kick toward A, slowly, the hands held where they were."
+  },
+  {
+   "id": "5-2",
+   "file": "5-2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "rkick",
+   "lead": "R",
+   "arms": {
+    "L": "outer",
+    "R": "outer"
+   },
+   "tech": "revhook",
+   "name": "Nopunde bandae dollyo gorochagi · High reverse hooking kick",
+   "desc": "Without setting the foot down, right high reverse hooking kick toward B, slowly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dollyeo chagi (roundhouse kick): the hip turned over, the kicking leg swung round at head height striking with the instep. Kicking leg: RIGHT. RIGHT hand (near arm): outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. LEFT hand (far arm): outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. This is count 5-2 of Juche: Without setting the foot down, right high reverse hooking kick toward B, slowly."
+  },
+  {
+   "id": "6",
+   "file": "6.png",
+   "view": "back",
+   "face": null,
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "R": "backfist"
+   },
+   "tech": "bfdown",
+   "name": "Dung joomuk naeryo taerigi · Back fist downward strike",
+   "desc": "Land the right foot toward B with a jump, into a right X-stance facing F. Right back fist downward strike toward B.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. RIGHT foot forward. RIGHT hand: back-fist strike (deungjumeok ap chigi): arm arcs up and forward, back of the fist striking at face height, elbow slightly bent. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 6 of Juche: Land the right foot toward B with a jump, into a right X-stance facing F. Right back fist downward strike toward B."
+  },
+  {
+   "id": "7-1",
+   "file": "7-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "hookkick",
+   "name": "Kaunde golcho chagi · Middle hooking kick",
+   "desc": "Left middle hooking kick toward F, both fists drawn in front of the chest.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: LEFT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 7-1 of Juche: Left middle hooking kick toward F, both fists drawn in front of the chest."
+  },
+  {
+   "id": "7-2",
+   "file": "7-2.png",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Without setting the foot down, left high side piercing kick toward F.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: LEFT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 7-2 of Juche: Without setting the foot down, left high side piercing kick toward F."
+  },
+  {
+   "id": "8",
+   "file": "8.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "ksstrike"
+   },
+   "tech": "crosscut",
+   "name": "Opun sonkut nopunde bakuro ghutgi · Flat fingertip high outward cross-cut",
+   "desc": "Stamp the left foot down toward F into a sitting stance facing B. Left flat fingertip high outward cross-cut toward F.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: knife-hand outer strike (sonnal bakkat chigi): open hand swung outward horizontally at neck height, palm down. This is count 8 of Juche: Stamp the left foot down toward F into a sitting stance facing B. Left flat fingertip high outward cross-cut toward F."
+  },
+  {
+   "id": "9",
+   "file": "9.png",
+   "view": "side",
+   "face": "R",
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "elbow",
+    "L": "elbowpush"
+   },
+   "tech": "highelbow",
+   "name": "Nopun palkup taerigi · High elbow strike",
+   "desc": "Turn into a left walking stance facing BF. Right high elbow strike, the left palm pressing the right side fist.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand (near arm): elbow strike (palkup dollyeo chigi): arm folded, elbow swung forward horizontally at chin height. LEFT hand (far arm): open palm pushing against the fist of the striking arm. This is count 9 of Juche: Turn into a left walking stance facing BF. Right high elbow strike, the left palm pressing the right side fist."
+  },
+  {
+   "id": "10",
+   "file": "10.png",
+   "view": "side",
+   "face": "R",
+   "stance": "cross",
+   "lead": "R",
+   "arms": {
+    "L": "kslow",
+    "R": "assist"
+   },
+   "tech": "rdlowfront",
+   "name": "Sonkal dung najunde ap makgi · Reverse knife-hand low front block",
+   "desc": "Cross the left foot over the right foot into a right X-stance facing B. Left reverse knife-hand low front block, the right fingertips on the left forearm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. RIGHT foot forward. RIGHT hand (near arm): supporting fist placed under the elbow of the blocking arm. LEFT hand (far arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. This is count 10 of Juche: Cross the left foot over the right foot into a right X-stance facing B. Left reverse knife-hand low front block, the right fingertips on the left forearm."
+  },
+  {
+   "id": "11",
+   "file": "11.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksblock",
+    "L": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Knife-hand middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (far arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. LEFT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. This is count 11 of Juche: Move the right foot to A into a left L-stance facing A (right foot forward, weight on the left leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "12",
+   "file": "12.png",
+   "view": "side",
+   "face": "L",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksstrike"
+   },
+   "tech": "spinks",
+   "name": "Sonkal twio dolmyo taerigi · Mid-air spinning knife-hand strike",
+   "desc": "Jump and spin counter-clockwise, striking toward A in mid-air with the left knife-hand; land toward A in a right L-stance (left foot forward), the left arm extended.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand (near arm): knife-hand outer strike (sonnal bakkat chigi): open hand swung outward horizontally at neck height, palm down. This is count 12 of Juche: Jump and spin counter-clockwise, striking toward A in mid-air with the left knife-hand; land toward A in a right L-stance (left foot forward), the left arm extended."
+  },
+  {
+   "id": "13",
+   "file": "13.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "L": "sideblk",
+    "R": "sideblk"
+   },
+   "tech": "anparallel",
+   "name": "Anpalmok narani makgi · Inner forearm parallel block",
+   "desc": "Move the right foot to A into a sitting stance facing D. Inner forearm parallel block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand: ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 13 of Juche: Move the right foot to A into a sitting stance facing D. Inner forearm parallel block."
+  },
+  {
+   "id": "14",
+   "file": "14.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "L": "palm"
+   },
+   "tech": "golcho",
+   "name": "Sonbadak kaunde golcho makgi · Palm middle hooking block",
+   "desc": "Stand up, facing D. Left palm middle hooking block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: palm inside block (batangson an makki): open hand, heel of the palm sweeping in front of the chest to the centre line. This is count 14 of Juche: Stand up, facing D. Left palm middle hooking block."
+  },
+  {
+   "id": "15",
+   "file": "15.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Sink back into the sitting stance. Right middle punch toward D.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 15 of Juche: Sink back into the sitting stance. Right middle punch toward D."
+  },
+  {
+   "id": "16",
+   "file": "16.png",
+   "view": "front",
+   "face": null,
+   "stance": "oneleg",
+   "lead": "R",
+   "arms": {
+    "L": "outer",
+    "R": "outer"
+   },
+   "tech": "outparallel",
+   "name": "Bakat palmok narani makgi · Outer forearm parallel block",
+   "desc": "Pull the left reverse footsword up to the right knee joint into a right one-leg stance facing D. Outer forearm parallel block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ITF waebal sogi (one-leg stance): standing on one leg, knee slightly bent, the other foot drawn up with its sole beside the standing knee joint. RIGHT foot forward. RIGHT hand: outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. LEFT hand: outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. This is count 16 of Juche: Pull the left reverse footsword up to the right knee joint into a right one-leg stance facing D. Outer forearm parallel block."
+  },
+  {
+   "id": "17-1",
+   "file": "17-1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "outer",
+    "R": "outer"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Left middle side piercing kick toward B, slowly, the hands held where they were.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: LEFT. RIGHT hand (near arm): outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. LEFT hand (far arm): outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. This is count 17-1 of Juche: Left middle side piercing kick toward B, slowly, the hands held where they were."
+  },
+  {
+   "id": "17-2",
+   "file": "17-2.png",
+   "view": "side",
+   "face": "L",
+   "stance": "rkick",
+   "lead": "L",
+   "arms": {
+    "L": "outer",
+    "R": "outer"
+   },
+   "tech": "revhook",
+   "name": "Nopunde bandae dollyo gorochagi · High reverse hooking kick",
+   "desc": "Without setting the foot down, left high reverse hooking kick toward A, slowly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dollyeo chagi (roundhouse kick): the hip turned over, the kicking leg swung round at head height striking with the instep. Kicking leg: LEFT. RIGHT hand (far arm): outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. LEFT hand (near arm): outer middle block (momtong bakkat makki): forearm upright at the side of the body at shoulder level, fist at shoulder height, palm forward. This is count 17-2 of Juche: Without setting the foot down, left high reverse hooking kick toward A, slowly."
+  },
+  {
+   "id": "18",
+   "file": "18.png",
+   "view": "back",
+   "face": null,
+   "stance": "cross",
+   "lead": "L",
+   "arms": {
+    "L": "backfist"
+   },
+   "tech": "bfdown",
+   "name": "Dung joomuk naeryo taerigi · Back fist downward strike",
+   "desc": "Land the left foot toward A with a jump, into a left X-stance facing E. Left back fist downward strike toward A.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: back-fist strike (deungjumeok ap chigi): arm arcs up and forward, back of the fist striking at face height, elbow slightly bent. This is count 18 of Juche: Land the left foot toward A with a jump, into a left X-stance facing E. Left back fist downward strike toward A."
+  },
+  {
+   "id": "19-1",
+   "file": "19-1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "hookkick",
+   "name": "Kaunde golcho chagi · Middle hooking kick",
+   "desc": "Right middle hooking kick toward E, both fists drawn in front of the chest.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 19-1 of Juche: Right middle hooking kick toward E, both fists drawn in front of the chest."
+  },
+  {
+   "id": "19-2",
+   "file": "19-2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "skick",
+   "name": "Yeop chagi · Side kick",
+   "desc": "Without setting the foot down, right high side piercing kick toward E.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 19-2 of Juche: Without setting the foot down, right high side piercing kick toward E."
+  },
+  {
+   "id": "20",
+   "file": "20.png",
+   "view": "front",
+   "face": null,
+   "stance": "horse",
+   "lead": null,
+   "arms": {
+    "R": "ksstrike"
+   },
+   "tech": "crosscut",
+   "name": "Opun sonkut nopunde bakuro ghutgi · Flat fingertip high outward cross-cut",
+   "desc": "Stamp the right foot down toward E into a sitting stance facing A. Right flat fingertip high outward cross-cut toward E.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: juchum seogi (horse-riding stance): feet parallel about two shoulder widths apart, knees bent deeply and pushed outward over the toes, back straight. RIGHT hand: knife-hand outer strike (sonnal bakkat chigi): open hand swung outward horizontally at neck height, palm down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 20 of Juche: Stamp the right foot down toward E into a sitting stance facing A. Right flat fingertip high outward cross-cut toward E."
+  },
+  {
+   "id": "21",
+   "file": "21.png",
+   "view": "side",
+   "face": "L",
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "elbow",
+    "R": "elbowpush"
+   },
+   "tech": "highelbow",
+   "name": "Nopun palkup taerigi · High elbow strike",
+   "desc": "Turn into a right walking stance facing AE. Left high elbow strike, the right palm pressing the left side fist.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand (far arm): open palm pushing against the fist of the striking arm. LEFT hand (near arm): elbow strike (palkup dollyeo chigi): arm folded, elbow swung forward horizontally at chin height. This is count 21 of Juche: Turn into a right walking stance facing AE. Left high elbow strike, the right palm pressing the left side fist."
+  },
+  {
+   "id": "22",
+   "file": "22.png",
+   "view": "side",
+   "face": "L",
+   "stance": "cross",
+   "lead": "L",
+   "arms": {
+    "R": "kslow",
+    "L": "assist"
+   },
+   "tech": "rdlowfront",
+   "name": "Sonkal dung najunde ap makgi · Reverse knife-hand low front block",
+   "desc": "Cross the right foot over the left foot into a left X-stance facing A. Right reverse knife-hand low front block, the left fingertips on the right forearm.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: kkoa seogi (cross stance): the rear foot crossed close behind the front foot, rear knee tucked behind the front knee, both knees bent, weight on the front foot. LEFT foot forward. RIGHT hand (far arm): low knife-hand block (sonnal arae makki): open hand extended down over the front thigh, knife edge down. LEFT hand (near arm): supporting fist placed under the elbow of the blocking arm. This is count 22 of Juche: Cross the right foot over the left foot into a left X-stance facing A. Right reverse knife-hand low front block, the left fingertips on the right forearm."
+  },
+  {
+   "id": "23",
+   "file": "23.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "ksblock",
+   "name": "Sonnal momtong makki · Double knife-hand block",
+   "desc": "Move the left foot to B into a right L-stance facing B (left foot forward, weight on the right leg). Knife-hand middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand (far arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. This is count 23 of Juche: Move the left foot to B into a right L-stance facing B (left foot forward, weight on the right leg). Knife-hand middle guarding block."
+  },
+  {
+   "id": "24",
+   "file": "24.png",
+   "view": "side",
+   "face": "R",
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "ksstrike"
+   },
+   "tech": "spinks",
+   "name": "Sonkal twio dolmyo taerigi · Mid-air spinning knife-hand strike",
+   "desc": "Jump and spin clockwise, striking toward B in mid-air with the right knife-hand; land toward B in a left L-stance (right foot forward), the right arm extended.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand (near arm): knife-hand outer strike (sonnal bakkat chigi): open hand swung outward horizontally at neck height, palm down. LEFT hand (far arm): fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 24 of Juche: Jump and spin clockwise, striking toward B in mid-air with the right knife-hand; land toward B in a left L-stance (right foot forward), the right arm extended."
+  },
+  {
+   "id": "25-1",
+   "file": "25-1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "kick",
+   "lead": "L",
+   "arms": {
+    "L": "ksblock",
+    "R": "ksguard"
+   },
+   "tech": "pickkick",
+   "name": "Gokaeng-i chagi · Pick-shape kick",
+   "desc": "Left pick-shape kick toward B.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: ap chagi (front kick): standing leg straight, the kicking leg extended forward at chest height striking with the ball of the foot, toes pulled back. Kicking leg: LEFT. RIGHT hand (near arm): guarding open hand palm-up across the solar plexus, below the blocking arm. LEFT hand (far arm): knife-hand block (sonnal makki): open hand, forearm upright at shoulder height in front of the lead shoulder, knife edge forward. This is count 25-1 of Juche: Left pick-shape kick toward B."
+  },
+  {
+   "id": "25-2",
+   "file": "25-2.png",
+   "view": "side",
+   "face": "R",
+   "stance": "tiger",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk",
+    "R": "guard"
+   },
+   "tech": "fguard",
+   "name": "Palmok kaunde daebi makgi · Forearm middle guarding block",
+   "desc": "Lower the left foot toward B into a right rear foot stance facing B (left foot forward on its ball). Forearm middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. LEFT foot forward. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 25-2 of Juche: Lower the left foot toward B into a right rear foot stance facing B (left foot forward on its ball). Forearm middle guarding block."
+  },
+  {
+   "id": "26",
+   "file": "26.png",
+   "view": "front",
+   "face": null,
+   "stance": "close",
+   "lead": null,
+   "arms": {
+    "L": "heaven",
+    "R": "heaven"
+   },
+   "tech": "moaheaven",
+   "name": "Moa sogi haneul son · Close stance with a heaven hand",
+   "desc": "Bring the right foot to the left foot into a closed stance facing D, raising a heaven hand, slowly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: moa seogi (closed stance): feet together, inside edges touching, legs straight. RIGHT hand: ITF heaven hand: both open hands raised in front of the forehead, thumbs and forefingers touching to form a triangle the eyes look through. LEFT hand: ITF heaven hand: both open hands raised in front of the forehead, thumbs and forefingers touching to form a triangle the eyes look through. This is count 26 of Juche: Bring the right foot to the left foot into a closed stance facing D, raising a heaven hand, slowly."
+  },
+  {
+   "id": "27",
+   "file": "27.png",
+   "view": "front",
+   "face": null,
+   "stance": "tiger",
+   "lead": "R",
+   "arms": {
+    "R": "elbow"
+   },
+   "tech": "straightelbow",
+   "name": "Sun palkup naeryo tulgi · Straight elbow downward thrust",
+   "desc": "Slide back toward C into a left rear foot stance facing D (right foot forward on its ball). Right straight elbow downward thrust.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. RIGHT foot forward. RIGHT hand: elbow strike (palkup dollyeo chigi): arm folded, elbow swung forward horizontally at chin height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 27 of Juche: Slide back toward C into a left rear foot stance facing D (right foot forward on its ball). Right straight elbow downward thrust."
+  },
+  {
+   "id": "28",
+   "file": "28.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "arc"
+   },
+   "tech": "arccrescent",
+   "name": "Bandal son nopunde bandal taerigi · Arc-hand high crescent strike",
+   "desc": "Slip the right foot forward into a right walking stance facing D. Left arc-hand high crescent strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: arc-hand strike (kaljaebi): hand open in a C between thumb and fingers, thrust forward at throat height. This is count 28 of Juche: Slip the right foot forward into a right walking stance facing D. Left arc-hand high crescent strike."
+  },
+  {
+   "id": "29",
+   "file": "29.png",
+   "view": "front",
+   "face": null,
+   "stance": "tiger",
+   "lead": "L",
+   "arms": {
+    "L": "elbow"
+   },
+   "tech": "straightelbow",
+   "name": "Sun palkup naeryo tulgi · Straight elbow downward thrust",
+   "desc": "Slide back toward C into a right rear foot stance facing D (left foot forward on its ball). Left straight elbow downward thrust.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: elbow strike (palkup dollyeo chigi): arm folded, elbow swung forward horizontally at chin height. This is count 29 of Juche: Slide back toward C into a right rear foot stance facing D (left foot forward on its ball). Left straight elbow downward thrust."
+  },
+  {
+   "id": "30",
+   "file": "30.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "arc"
+   },
+   "tech": "arccrescent",
+   "name": "Bandal son nopunde bandal taerigi · Arc-hand high crescent strike",
+   "desc": "Slip the left foot forward into a left walking stance facing D. Right arc-hand high crescent strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: arc-hand strike (kaljaebi): hand open in a C between thumb and fingers, thrust forward at throat height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 30 of Juche: Slip the left foot forward into a left walking stance facing D. Right arc-hand high crescent strike."
+  },
+  {
+   "id": "31",
+   "file": "31.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "neck",
+    "R": "neck"
+   },
+   "tech": "twinneck",
+   "name": "Sang sonkal nopunde anuro taerigi · Twin knife-hand high inward strike",
+   "desc": "Move the left foot back to C into a right walking stance facing D. Twin knife-hand high inward strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: knife-hand neck strike (sonnal mok chigi): open hand swung horizontally inward, palm up, knife edge at neck height. LEFT hand: knife-hand neck strike (sonnal mok chigi): open hand swung horizontally inward, palm up, knife edge at neck height. This is count 31 of Juche: Move the left foot back to C into a right walking stance facing D. Twin knife-hand high inward strike."
+  },
+  {
+   "id": "32",
+   "file": "32.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "hammerlow"
+   },
+   "tech": "downpunch",
+   "name": "Naeryo jirugi · Downward punch",
+   "desc": "Move the right foot back to C into a left walking stance facing D. Right downward punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: hammer-fist striking down in front of the belly. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 32 of Juche: Move the right foot back to C into a left walking stance facing D. Right downward punch."
+  },
+  {
+   "id": "33",
+   "file": "33.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "low"
+   },
+   "tech": "outerdown",
+   "name": "Bakat palmok naeryo makgi · Outer forearm downward block",
+   "desc": "Move the left foot to the side rear of the right foot, then slide toward C into a right L-stance facing D (left foot forward, weight on the right leg). Left outer forearm downward block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. This is count 33 of Juche: Move the left foot to the side rear of the right foot, then slide toward C into a right L-stance facing D (left foot forward, weight on the right leg). Left outer forearm downward block."
+  },
+  {
+   "id": "34-1",
+   "file": "34-1.png",
+   "view": "side",
+   "face": "R",
+   "stance": "rkick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "dodgehook",
+   "name": "Pihamyo bandae dollyo gorochagi · Dodging reverse hooking kick",
+   "desc": "Jump back away from D: right dodging reverse hooking kick toward D.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: dollyeo chagi (roundhouse kick): the hip turned over, the kicking leg swung round at head height striking with the instep. Kicking leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 34-1 of Juche: Jump back away from D: right dodging reverse hooking kick toward D."
+  },
+  {
+   "id": "34-2",
+   "file": "34-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "sideblk",
+    "L": "guard"
+   },
+   "tech": "fguard",
+   "name": "Palmok kaunde daebi makgi · Forearm middle guarding block",
+   "desc": "Land toward C in a left L-stance facing D (right foot forward, weight on the left leg). Forearm middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. LEFT hand: fist raised in front of the chest in a guard (kick guard). This is count 34-2 of Juche: Land toward C in a left L-stance facing D (right foot forward, weight on the left leg). Forearm middle guarding block."
+  },
+  {
+   "id": "35",
+   "file": "35.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "R",
+   "arms": {
+    "R": "low"
+   },
+   "tech": "outerdown",
+   "name": "Bakat palmok naeryo makgi · Outer forearm downward block",
+   "desc": "Move the right foot to the side rear of the left foot, then slide toward C into a left L-stance facing D (right foot forward, weight on the left leg). Right outer forearm downward block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. RIGHT foot forward. RIGHT hand: low block (arae makki): arm extended straight down and forward over the front thigh, fist a fist-width above the knee. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 35 of Juche: Move the right foot to the side rear of the left foot, then slide toward C into a left L-stance facing D (right foot forward, weight on the left leg). Right outer forearm downward block."
+  },
+  {
+   "id": "36-1",
+   "file": "36-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "rkick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "dodgehook",
+   "name": "Pihamyo bandae dollyo gorochagi · Dodging reverse hooking kick",
+   "desc": "Jump back away from D: left dodging reverse hooking kick toward D.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: dollyeo chagi (roundhouse kick): the hip turned over, the kicking leg swung round at head height striking with the instep. Kicking leg: LEFT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 36-1 of Juche: Jump back away from D: left dodging reverse hooking kick toward D."
+  },
+  {
+   "id": "36-2",
+   "file": "36-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "sideblk",
+    "R": "guard"
+   },
+   "tech": "fguard",
+   "name": "Palmok kaunde daebi makgi · Forearm middle guarding block",
+   "desc": "Land toward C in a right L-stance facing D (left foot forward, weight on the right leg). Forearm middle guarding block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: fist raised in front of the chest in a guard (kick guard). LEFT hand: ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 36-2 of Juche: Land toward C in a right L-stance facing D (left foot forward, weight on the right leg). Forearm middle guarding block."
+  },
+  {
+   "id": "37",
+   "file": "37.png",
+   "view": "side",
+   "face": "R",
+   "stance": "skick",
+   "lead": "R",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "twodirkick",
+   "name": "Twimyo sangbang chagi · Flying two-direction kick",
+   "desc": "Step the right foot, then the left foot toward D and fly: flying two-direction kick, a left twisting kick and a right side piercing kick.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the RIGHT edge of the image (its right side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: RIGHT. RIGHT hand (near arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (far arm): fist raised in front of the chest in a guard (kick guard). This is count 37 of Juche: Step the right foot, then the left foot toward D and fly: flying two-direction kick, a left twisting kick and a right side piercing kick."
+  },
+  {
+   "id": "38",
+   "file": "38.png",
+   "view": "front",
+   "face": null,
+   "stance": "sasun",
+   "lead": "L",
+   "arms": {
+    "L": "palmup",
+    "R": "palmup"
+   },
+   "tech": "twinpalmrising",
+   "name": "Sang sonbadak chookyo makgi · Twin palm rising block",
+   "desc": "Land toward D in a left diagonal stance facing D. Twin palm rising block.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ITF sasun sogi (diagonal stance): like the sitting stance, knees bent and pushed out, but one foot about half a foot ahead of the other. LEFT foot forward. RIGHT hand: ITF upward palm block: open palm rising in front of the chest, palm up, elbow bent. LEFT hand: ITF upward palm block: open palm rising in front of the chest, palm up, elbow bent. This is count 38 of Juche: Land toward D in a left diagonal stance facing D. Twin palm rising block."
+  },
+  {
+   "id": "39",
+   "file": "39.png",
+   "view": "back",
+   "face": null,
+   "stance": "tiger",
+   "lead": "L",
+   "arms": {
+    "R": "sideelbow"
+   },
+   "tech": "yopelbow",
+   "name": "Yop palkup tulgi · Side elbow thrust",
+   "desc": "Slide toward D into a right rear foot stance facing C (left foot forward on its ball). Right side elbow thrust toward D.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. BACK view: the figure faces away from the viewer, back to us. Stance: beom seogi (tiger stance): short stance, front foot light with only the ball touching the floor, nearly all the weight on the bent rear leg, both knees bent. LEFT foot forward. RIGHT hand: side elbow strike (palkup yeop chigi): arm folded, elbow driven straight out to the side at shoulder height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 39 of Juche: Slide toward D into a right rear foot stance facing C (left foot forward on its ball). Right side elbow thrust toward D."
+  },
+  {
+   "id": "40-1",
+   "file": "40-1.png",
+   "view": "side",
+   "face": "L",
+   "stance": "crane",
+   "lead": "R",
+   "arms": {
+    "L": "sideblk",
+    "R": "guard"
+   },
+   "tech": "guburyob",
+   "name": "Guburyo junbi sogi B · Bending ready stance B",
+   "desc": "Turn the face to D, drawing the left foot up into a right bending ready stance B facing C, slowly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: hakdari seogi (crane stance): standing on one bent leg, the other foot lifted with its sole against the inside of the standing knee. Standing leg: RIGHT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): ITF inner forearm side block: forearm upright out in front of the shoulder, fist at shoulder height, thumb side of the forearm facing the target, body half-turned. This is count 40-1 of Juche: Turn the face to D, drawing the left foot up into a right bending ready stance B facing C, slowly."
+  },
+  {
+   "id": "40-2",
+   "file": "40-2.png",
+   "view": "side",
+   "face": "L",
+   "stance": "skick",
+   "lead": "L",
+   "arms": {
+    "L": "guard",
+    "R": "guard"
+   },
+   "tech": "bkick",
+   "name": "Dwitcha jirugi · Back piercing kick",
+   "desc": "Left middle back piercing kick toward D, slowly.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. SIDE view, in profile, facing the LEFT edge of the image (its left side is nearest the viewer). Stance: yeop chagi (side kick): body leaning away, the kicking leg extended straight out to the side at chest height, striking with the foot blade (outer edge of the foot). Kicking leg: LEFT. RIGHT hand (far arm): fist raised in front of the chest in a guard (kick guard). LEFT hand (near arm): fist raised in front of the chest in a guard (kick guard). This is count 40-2 of Juche: Left middle back piercing kick toward D, slowly."
+  },
+  {
+   "id": "41",
+   "file": "41.png",
+   "view": "front",
+   "face": null,
+   "stance": "back",
+   "lead": "L",
+   "arms": {
+    "L": "bfside"
+   },
+   "tech": "bfhoriz",
+   "name": "Dung joomuk soopyong taerigi · Back fist horizontal strike",
+   "desc": "Stamp the left foot down toward D into a right L-stance facing D (left foot forward, weight on the right leg). Left back fist horizontal strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: dwit kubi (back stance): front foot points forward, rear foot turned 90 degrees out, heels on one line in an L, about 70 percent of the weight on the deeply bent rear leg with the rear knee pushed out over the rear toes, front knee slightly bent, hips and chest turned sideways. LEFT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: ITF back fist high side strike: elbow bent, back of the fist striking forward at temple height, the fist beside the head, never across the face. This is count 41 of Juche: Stamp the left foot down toward D into a right L-stance facing D (left foot forward, weight on the right leg). Left back fist horizontal strike."
+  },
+  {
+   "id": "42",
+   "file": "42.png",
+   "view": "front",
+   "face": null,
+   "stance": "ready",
+   "lead": null,
+   "arms": {
+    "R": "neck"
+   },
+   "tech": "crosscutin",
+   "name": "Opun sonkut nopunde anuro ghutgi · Flat fingertip high inward cross-cut",
+   "desc": "Pull the right foot up into a parallel stance facing D. Right flat fingertip high inward cross-cut.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: naranhi seogi (parallel stance): feet parallel, one foot-width apart, legs straight. RIGHT hand: knife-hand neck strike (sonnal mok chigi): open hand swung horizontally inward, palm up, knife edge at neck height. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 42 of Juche: Pull the right foot up into a parallel stance facing D. Right flat fingertip high inward cross-cut."
+  },
+  {
+   "id": "43-1",
+   "file": "43-1.png",
+   "view": "front",
+   "face": null,
+   "stance": "close",
+   "lead": null,
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "flypunch",
+   "name": "Twimyo ap jirugi · Flying front punch",
+   "desc": "Fly forward toward D: right front punch in the air.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: moa seogi (closed stance): feet together, inside edges touching, legs straight. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 43-1 of Juche: Fly forward toward D: right front punch in the air."
+  },
+  {
+   "id": "43-2",
+   "file": "43-2.png",
+   "view": "front",
+   "face": null,
+   "stance": "close",
+   "lead": null,
+   "arms": {
+    "R": "upset"
+   },
+   "tech": "upsetpunch",
+   "name": "Dwijibo jirugi · Upset punch",
+   "desc": "Still in the air, right upset punch; land toward D in a closed stance, the right fist extended.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: moa seogi (closed stance): feet together, inside edges touching, legs straight. RIGHT hand: ITF upset punch: arm extended forward at solar-plexus height, fist palm-up, elbow slightly bent. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 43-2 of Juche: Still in the air, right upset punch; land toward D in a closed stance, the right fist extended."
+  },
+  {
+   "id": "44",
+   "file": "44.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "R",
+   "arms": {
+    "L": "ksdown"
+   },
+   "tech": "ksfrontdown",
+   "name": "Sonkal ap naeryo taerigi · Knife-hand front downward strike",
+   "desc": "Move the right foot to D into a right walking stance. Left knife-hand front downward strike.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. RIGHT foot forward. RIGHT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. LEFT hand: ITF knife-hand downward strike: open hand brought down in front to chest height, edge of the hand leading, arm nearly straight. This is count 44 of Juche: Move the right foot to D into a right walking stance. Left knife-hand front downward strike."
+  },
+  {
+   "id": "45",
+   "file": "45.png",
+   "view": "front",
+   "face": null,
+   "stance": "front",
+   "lead": "L",
+   "arms": {
+    "R": "punch"
+   },
+   "tech": "punch",
+   "name": "Momtong jireugi · Middle punch",
+   "desc": "Move the left foot to D into a left walking stance. Right middle punch.",
+   "prompt": "Same character and drawing style as the reference image: realistic anatomical ink figure drawing, fine line, light cross-contour shading, plain white background; adult, 7.5 heads tall; faceless head with short dark hair; white dobok with black V-collar; black belt with knot and tails; bare feet. ONE figure only, full body, 2:3 portrait, the whole figure inside the frame with a margin all round (kicking foot and raised hands included), soles resting on a faint floor line near the bottom edge. No text, no labels, no numbers, no footprint diagram, no logos. FRONT view: the figure faces the viewer. Stance: ap kubi (front stance): long stance about 1.5 shoulder widths, front knee bent over the toes with the shin vertical, rear leg locked straight, rear heel flat and rear foot turned out about 30 degrees, hips and chest square to the front, torso upright. LEFT foot forward. RIGHT hand: middle punch (momtong jireugi): arm fully extended straight forward at solar-plexus height, fist palm-down. LEFT hand: fist chambered palm-up on top of the belt at the side of the waist, elbow drawn back. This is count 45 of Juche: Move the left foot to D into a left walking stance. Right middle punch."
+  }
+ ]
+}

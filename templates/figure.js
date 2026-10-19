@@ -8,7 +8,7 @@ const T=Object.fromEntries(Object.entries(LIB.t).map(([k,v])=>[k,v.slice(0,3)]))
 const STANCE=Object.fromEntries(Object.entries(LIB.s).map(([k,v])=>[k,v.slice(0,3)]));
 // library links: /library/<family>/#<slug>
 const techHref=k=>LIB.t[k][3],stanceHref=k=>LIB.s[k][3];
-const DIRN={na:"na",ga:"ga",da1:"da¹",da2:"da²",da3:"da³",ra1:"ra¹",ra2:"ra²",ra3:"ra³",gada:"ga-da",nada:"na-da",gara:"ga-ra",nara:"na-ra"};
+const DIRN={na:"na",ga:"ga",na4:"na",na5:"na",ga4:"ga",ga5:"ga",da1:"da¹",da2:"da²",da3:"da³",ra1:"ra¹",ra2:"ra²",ra3:"ra³",gada:"ga-da",nada:"na-da",gara:"ga-ra",nara:"na-ra"};
 
 let gid=0;
 /* ---------- vector helpers ---------- */
@@ -80,7 +80,8 @@ const mk=far=>({far,legs:[],arms:[],feet:[],fists:[],torso:null,head:null,neck:n
 
 function skel(m,pr){
   if(m.stance==="ogeum")m={...m,stance:"crane",ogeum:true};
-  if(m.stance==="oneleg")m={...m,stance:"crane"};   // ITF waebal sogi (one-leg stance): drawn as the crane stance   // ogeum seogi: drawn as crane stance, lifted foot behind the knee
+  if(m.stance==="oneleg")m={...m,stance:"crane"};   // ITF waebal sogi (one-leg stance): drawn as the crane stance
+  if(m.stance==="sasun")m={...m,stance:"horse"};   // ITF sasun sogi (diagonal stance): drawn as the sitting stance   // ogeum seogi: drawn as crane stance, lifted foot behind the knee
   if(m.stance==="fixed")m={...m,stance:"back"};   // ITF gojung sogi (fixed stance): drawn with L-stance geometry
   if(m.stance==="vertical")m={...m,stance:"back"};   // ITF soojik sogi (vertical stance): a short, upright L shape
   if(m.stance==="lowst")m={...m,stance:"front"};  // ITF nachuo sogi (low stance): drawn as the walking stance
@@ -540,9 +541,10 @@ function figure(m,opt={}){
 const FT=[[0,-7.4],[3,-5.6],[3.5,1.5],[2.4,6.3],[0,7.4],[-2.4,6.3],[-3.5,1.5],[-3,-5.6]];
 function feet(m){
   if(m.stance==="ogeum"||m.stance==="oneleg")m={...m,stance:"crane"};
+  if(m.stance==="sasun")m={...m,stance:"horse"};
   if(m.stance==="fixed"||m.stance==="vertical")m={...m,stance:"back"};
   if(m.stance==="lowst")m={...m,stance:"front"};
-  const rot={na:0,ga:180,da1:90,da2:90,da3:90,ra1:-90,ra2:-90,ra3:-90,gada:135,nada:45,gara:-135,nara:-45}[m.dir]*Math.PI/180;
+  const rot={na:0,ga:180,na4:0,na5:0,ga4:180,ga5:180,da1:90,da2:90,da3:90,ra1:-90,ra2:-90,ra3:-90,gada:135,nada:45,gara:-135,nara:-45}[m.dir]*Math.PI/180;
   const sgn=s=>s==="L"?-1:1,other=s=>s==="L"?"R":"L";
   const foot=(x,y,a,on)=>`<path d="${spline(xf(FT,[x,y],a))}" fill="${on?"var(--fire)":"var(--muted)"}"/>`;
   let s="";
@@ -574,10 +576,10 @@ const sideWord=s=>s==="L"?"Left":"Right";
 /* chip names per stance. ITF forms (FORM.family "itf") swap in the ITF names, and name the L-stance
    (niunja sogi) by the rear foot as the ITF does: "R · Niunja sogi" = right foot back, left foot forward. */
 const CHIPN={ready:"Naranhi",kick:"Ap chagi",skick:"Yeop chagi",rkick:"Dollyeo chagi",knee:"Mureup",tiger:"Beom seogi",
-  horse:"Juchum seogi",cross:"Kkoa seogi",gyeot:"Gyeotdari seogi",close:"Moa seogi",crane:"Hakdari",ogeum:"Ogeum seogi",fixed:"Gojung sogi",lowst:"Nachuo sogi",vertical:"Soojik sogi",oneleg:"Waebal sogi",
+  horse:"Juchum seogi",cross:"Kkoa seogi",gyeot:"Gyeotdari seogi",close:"Moa seogi",crane:"Hakdari",ogeum:"Ogeum seogi",fixed:"Gojung sogi",lowst:"Nachuo sogi",vertical:"Soojik sogi",oneleg:"Waebal sogi",sasun:"Sasun sogi",
   back:"Dwit kubi",nieun:"Nieunja seogi",walk:"Ap seogi",front:"Ap kubi"};
 const CHIPCLS={ready:"ready",close:"ready",kick:"kick",skick:"kick",rkick:"kick",knee:"kick",tiger:"tiger",horse:"horse",
-  crane:"crane",ogeum:"crane",oneleg:"crane",back:"back",nieun:"back",fixed:"back",vertical:"back",lowst:"front",walk:"walk",front:"front"};
+  crane:"crane",ogeum:"crane",oneleg:"crane",sasun:"horse",back:"back",nieun:"back",fixed:"back",vertical:"back",lowst:"front",walk:"walk",front:"front"};
 let ITFNAMES=false;
 function itfNames(){ITFNAMES=true;Object.assign(CHIPN,{ready:"Narani",front:"Gunnun sogi",back:"Niunja sogi",horse:"Annun sogi",kick:"Apcha busigi",skick:"Yopcha jirugi",crane:"Guburyo sogi",close:"Moa sogi",cross:"Kyocha sogi",tiger:"Dwitbal sogi"})}
 const flipLR=s=>s==="L"?"R":"L";
@@ -597,5 +599,6 @@ function stanceLabel(m){
   if(ITFNAMES&&m.stance==="tiger")return sideWord(flipLR(m.lead))+" rear foot";
   if(m.stance==="vertical")return sideWord(flipLR(m.lead))+" vertical";
   if(m.stance==="oneleg")return sideWord(m.lead)+" one-leg";
+  if(m.stance==="sasun")return sideWord(m.lead)+" diagonal";
   return sideWord(m.lead)+({walk:" walking",front:" front",back:" back",tiger:" tiger",cross:" cross",crane:" crane",nieun:" ㄴ-shape",gyeot:" assisting",ogeum:" reverse crane",fixed:" fixed",lowst:" low"})[m.stance];
 }

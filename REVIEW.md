@@ -626,6 +626,29 @@ This is the first ITF page: `/itf/chon-ji`, with a 2-page print sheet.
 - [ ] **Library.** New surface `sondung` (back of the hand). New entries: `doublefinger`, `groundkick`, `groundpunch`, `kneelowkick`, `twinpress`, `houterfront`, `backhanddown`, `palmpunch`, `bfsidefront`, `twinkshoriz`, `archigh`, `twinknuckle`, `openfist`.
 - [ ] **Footwork.** The simulator ends 1.5 foot-lengths from the start.
 
+## Juche · 주체 (ITF) — 18 October 2026
+
+`/itf/juche`, with a 2-page print sheet. The moves go out along the line through the start and up both short legs of the 山, then back and forth on the C–D line, so the board shows them in order, read down the page in five rows. The minimap places them using the footwork simulator.
+
+**Name (please decide).** The page keeps the catalog's name and path, Juche (`/itf/juche`). The pattern note says Choi Jung Hwa's ITF teaches the same 45 movements as **Kodang**: its official page, which the page links to, is titled Kodang. The chart (Encyclopedia-based) calls it Juche. The open item about the name above still stands.
+
+**Sources.** The official ITF page (titled Kodang) and the chart (titled Juche) agree on all 45 movements except two:
+- [ ] **34 and 36:** the official text says a "dodging reverse **hooking** kick", the chart a "dodging reverse **turning** kick" (its Korean: Pihamyo bandae dollyo chagi). The page follows the official text ("Pihamyo bandae dollyo gorochagi" is my Korean name for it). Please check the Encyclopedia.
+
+The other differences are typos ("closed"/"close" at 26 and 43). Neither source marks a kihap. Fandom was not used. There is no official video.
+
+- [ ] **New direction letters.** E and F are the ends of the two short legs, which run toward C from the A and B ends. On the site they point up the page, like C, so I added two direction codes (`na4` = E, `na5` = F) that point the same way as C but carry the letters E and F. AE and BF are the diagonals. Please check this reading of the diagram against the book.
+- [ ] **New stance** `sasun` (diagonal stance, 38), drawn as the sitting stance.
+- [ ] **Hard-to-draw moves:**
+  - the mid-air spinning knife-hand strike (12, 24) is drawn as its landing, L-stance with the arm out;
+  - the flying two-direction kick (37) as a side kick;
+  - the flying punch then upset punch (43) as a closed stance, with the punch then the upset punch.
+- [ ] **Bending ready stance B (40-1)** is drawn like bending ready stance A; I haven't confirmed how B differs.
+- [ ] **Splits.** 5, 7, 25, 34, 36, 40 and 43 are split into -1 and -2 (two kicks, kick then block, stance then kick, two punches).
+- [ ] **Standing up and sinking back (2, 3, 14, 15)**: 2 and 14 are drawn in parallel stance with the feet where they were.
+- [ ] **Library.** New stance `sasun`. New entries: `twinelbowready`, `anparallel`, `outparallel`, `revhook`, `bfdown`, `hookkick`, `crosscut`, `crosscutin`, `highelbow`, `rdlowfront`, `spinks`, `pickkick`, `moaheaven`, `straightelbow`, `arccrescent`, `twinneck`, `downpunch`, `outerdown`, `dodgehook`, `twodirkick`, `twinpalmrising`, `guburyob`, `bfhoriz`, `flypunch`, `ksfrontdown`.
+- [ ] **Footwork.** The simulator ends 1.5 foot-lengths from the start.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:

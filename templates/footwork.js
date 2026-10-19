@@ -16,7 +16,7 @@
    Returns one entry per move: {feet:{L,R} (each {p:[x,y], a:angle, air}), prev, moved:[sides], how, pivot}.
    Usable in the browser (inlined) and in Node (module.exports) for the checks in tools/check/footwork.py. */
 const FW=(()=>{
-const DIRV={na:[0,-1],ga:[0,1],da1:[1,0],da2:[1,0],da3:[1,0],ra1:[-1,0],ra2:[-1,0],ra3:[-1,0],
+const DIRV={na:[0,-1],ga:[0,1],na4:[0,-1],na5:[0,-1],ga4:[0,1],ga5:[0,1],da1:[1,0],da2:[1,0],da3:[1,0],ra1:[-1,0],ra2:[-1,0],ra3:[-1,0],
   gada:[Math.SQRT1_2,Math.SQRT1_2],nada:[Math.SQRT1_2,-Math.SQRT1_2],gara:[-Math.SQRT1_2,Math.SQRT1_2],nara:[-Math.SQRT1_2,-Math.SQRT1_2]};   // diagonals (Hansu)
 // stance shapes: lead foot relative to the other foot, in the body frame [forward, toward the lead foot's side]
 const SHAPE={ready:[0,.8],close:[0,.42],walk:[1.6,.42],front:[2.7,.85],back:[2.1,0],nieun:[1.1,0],gyeot:[.6,.15],tiger:[1.1,.3],
@@ -75,7 +75,8 @@ function place(m,plant,P,face){
 function simulate(M){
   const out=[];let cur=null,air=null;
   M.forEach((m,i)=>{
-    if(m.stance==="ogeum"||m.stance==="oneleg")m={...m,stance:"crane"};   // ogeum seogi stands like crane stance
+    if(m.stance==="ogeum"||m.stance==="oneleg")m={...m,stance:"crane"};
+    if(m.stance==="sasun")m={...m,stance:"horse"};   // ITF diagonal stance: a sitting stance with one foot a little forward   // ogeum seogi stands like crane stance
     if(m.stance==="fixed"||m.stance==="vertical")m={...m,stance:"back"};    // ITF gojung sogi (fixed stance): an L-stance with the weight even
     if(m.stance==="lowst")m={...m,stance:"front"};   // ITF nachuo sogi (low stance): a long walking stance
     const face=DIRV[m.dir],S=said(m),st=m.stance,step=m.step||{};
