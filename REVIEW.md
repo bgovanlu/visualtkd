@@ -727,6 +727,21 @@ Fandom was not used. There is no official video.
 - [ ] **Library.** New entries: `xbackhand`, `twinsidefist`, `xstance`, `walkready`, `flyhighkick`, `ybkickwedge`, `ksoutpush`.
 - [ ] **Footwork.** The simulator ends 8.4 foot-lengths from the start, toward B: it can't place the E–F line relative to the start. The end really depends on where that line is.
 
+## Moon-Moo · 문무 (ITF) — 18 October 2026
+
+`/itf/moon-moo`, with a 2-page print sheet. The moves go back and forth through the centre of the + diagram, so the board shows them in order, read down the page in rows, as on Sam-Il. The board is wide (1800 px).
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 61 movements (the chart adds "stance" at 1). In the chart, the Korean names around 31–41 are shifted by one line; the page uses the English text. Fandom was not used. There is no official video.
+
+- [ ] **No kihap.** Neither source marks one.
+- [ ] **Splits.** 49 and 52 (sweeping kick, then the guarding block on landing) and 50 and 53 (checking kick, then thrusting kick) are split into -1 and -2.
+- [ ] **Back piercing kicks (20, 23)** are drawn with the side kick figure. The bending ready stance B before them is drawn like A.
+- [ ] **Knife-hand high and low side block on one leg (9, 18)** uses the knife-hand side block and low knife-hand arms.
+- [ ] **Side fist middle side strike (27, 36)** uses the hammer-fist arm out to the side.
+- [ ] **Low punch in X-stance (56, 57)** uses the low fist arm with the other fist at the shoulder.
+- [ ] **Library.** New entries: `skickhigh`, `flatmid`, `kshilo`, `bkickhigh`, `palmdown`, `yobapchamid`, `sidefistside`, `kslowside`, `pushkick`, `twistkickh`, `checkkick`, `skickthrust`, `xlowpunch`, `arcrising`.
+- [ ] **Footwork.** The simulator ends 4.7 foot-lengths from the start.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:
