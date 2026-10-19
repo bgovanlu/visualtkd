@@ -46,7 +46,7 @@ Planned: none; all 17 Kukkiwon forms are published.
 | Se-Jong 世宗 (王) | /itf/se-jong | 25 | Open items in REVIEW.md; letter placement |
 | Tong-Il 統一 (I) | /itf/tong-il | 58 | Open items in REVIEW.md; Korean names supplied for two entries |
 
-The forms index has an **ITF forms** section, next to **World Taekwondo forms**, with a planned card for each of the 24 Chang Hon patterns. Each card has the pattern's floor diagram (skeleton layout), rank and move count from `itf` in `data/catalog.json`. The other 0 have no pages or print sheets yet. Each card links to its official pattern page; the section lists the official ITF references.
+The forms index has an **ITF forms** section, next to **World Taekwondo forms**, with a card for each of the 24 Chang Hon patterns. Each card has the pattern's floor diagram (skeleton layout), rank and move count from `itf` in `data/catalog.json`. All 24 have pages and print sheets. Each card links to its official pattern page; the section lists the official ITF references.
 
 ## History page
 `/history/` is a top-level page in the nav, between Library and How to read. It gives a short history of taekwondo (roots, kwans, the 1955 name, the ITF and Chang Hon patterns, the Kukkiwon and the WTF, WTF → World Taekwondo, the ITF after Choi, other branches, the two families of forms), with a family-tree diagram and official references. The claims that need checking are in REVIEW.md. Open questions (URLs, orientation, federation, Juche/Ko-Dang, diagrams) are in REVIEW.md.
