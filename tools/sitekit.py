@@ -77,6 +77,7 @@ REF_ICON = {
  "gate": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 7.5c3 .9 6 1.3 9.5 1.3s6.5-.4 9.5-1.3M4 10.5h16M6 10.5V20M18 10.5V20M10 10.5V20M14 10.5V20M4.5 20h15M7.5 8.6 6.4 5.8M16.5 8.6l1.1-2.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>',
  "play": '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10 8.3v7.4l6-3.7z" fill="currentColor"/></svg>',
  "channel": '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="13" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10.2 8.6v5.8l4.8-2.9z" fill="currentColor"/><path d="M7 21h10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>',
+ "page": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.8h8.4L19 7.4v13.8H6z M14.2 2.8v4.8H19M9 12h7M9 15.5h7M9 19h4.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>',
  "pdf": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.8h8.4L19 7.4v13.8H6z M14.2 2.8v4.8H19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><text x="12.4" y="17.6" font-size="5.6" font-weight="700" text-anchor="middle" fill="currentColor" font-family="IBM Plex Sans Condensed,Arial,sans-serif">PDF</text></svg>',
 }
 

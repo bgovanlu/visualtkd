@@ -70,9 +70,20 @@ See `design/footwork.md` and `design/same-stance.md`. Open any form with `?footw
 - [ ] **Where each form ends, simulated** (foot lengths from the start, before the final baro step): T1 1.4, T2 0.6, T3 1.1, T4 0.8, T5 1.7, T6 2.3, T7 5.2, T8 3.1, Koryo 2.3, Keumgang 2.7, Taebaek 4.2. The largest values point at steps worth checking against the video (T7 and Taebaek).
 - [ ] **The minimap still uses the hand-placed `pos`.** The simulated positions could replace it once the footwork is approved.
 
-## Basic forms · Kicho Hana – Net (stubs)
+## Basic forms · Kicho Hana
 
-Four planned cards on `/forms/#kicho`, no pages yet. Before any of them is drawn:
+Published at `/kicho/1`, drawn from the Taekwondo Preschool "Kibon Basic #1" chart (20 movements), as Brian chose. Cross-checked against the Fandom 20-step Kibon Hana (same sequence, same kihaps on 8 and 16).
+
+- **Only one linkable source.** The chart is a school-style site, not an official source; the Kukkiwon has no page for this form. The second reference card is the Kukkiwon poomsae index, there to show the official syllabus starts at Taegeuk 1.
+- **Move 4.** The chart's caption says "left leg … right hand middle punch". Its picture and the pattern of the form (every punch on the side of the front foot, like 2, 12 and 20) give a left punch. The page draws a left punch.
+- **Front stance throughout.** The chart and Fandom both say front stance (ap kubi) for every move, including 1–4 (Taegeuk Il Jang uses walking stance there).
+- **Turns at 9 and 17** are 270° to the left, as the chart says.
+- **Floor:** drawn on Taebaek's 工 layout (start line walked twice). Moves 9–12 are on the far bar (ra³/da³).
+- **Finish:** the chart says "bring back the left leg into ready stance". The footer says to turn to face ga on the starting spot.
+
+## Basic forms · Kicho Dul – Net (stubs)
+
+Planned cards on `/forms/#kicho`. Before any of them is drawn:
 
 - **Which version?** There is no official sequence. The Kukkiwon syllabus starts at Taegeuk Il Jang, and every school teaches its own basic forms. Even Hana has a 16-move version and one that repeats the first line for 20; Net is rarer and varies most. The two-source rule can't work as written, so the source has to be your school's version: a written sequence or a video. Each page will say which version it shows.
 - **Name.** Kicho (기초) or Kibon (기본)? Schools use both; the cards say Kicho, as asked.
