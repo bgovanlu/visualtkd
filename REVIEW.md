@@ -608,6 +608,24 @@ This is the first ITF page: `/itf/chon-ji`, with a 2-page print sheet.
 - [ ] **Library.** New entries: `moajunbid`, `kslowin`, `xdown`, `ksrising`, `revturn`, `crescentpunch`, `turnpunch`, `kswedge`, `rdcircular`, `altpalm`, `rdlowin`. New arm `kswedge`.
 - [ ] **Footwork.** The simulator ends 3.6 foot-lengths from the start, toward D.
 
+## Choong-Jang · 충장 (ITF) — 18 October 2026
+
+`/itf/choong-jang`, with a 2-page print sheet, on a ⊥ board: the A–B line with the start at the top (J–3, 48–52). The moves along the C–D line (4–47) go back and forth, so they are drawn in order, read down the page in four rows along the stem, as on Ge-Baek and Eui-Am. The minimap shows roughly where each one is.
+
+**Sources.** The official pattern text (ITF, Choi Jung Hwa) and the Encyclopedia-based chart agree on all 52 movements; the only differences are typos ("closed"/"close" at 3, "whi8le" at 35, "for"/"fore" at 48). The ITF Korean names come from the chart. Fandom was not used. There is no official video.
+
+- [ ] **No kihap.** Neither source marks one.
+- [ ] **Turning kick and punch from the ground (12, 13).** The figures can't kneel: 12 is drawn as a standing turning kick, and 13 as a low stance with the high punch and the left palm low. Both instructions say what really happens.
+- [ ] **Move 19** is described in both texts as "a low front snap kick … with the right knee". It's drawn as a knee kick with the hands pulling in; new entry `kneelowkick` under the chart's Korean name (Moorup najunde apcha busigi).
+- [ ] **Move 49** turns counter-clockwise from facing C to B, which is a 270° turn; the instruction says so.
+- [ ] **Back hand downward strike (29, 31)** uses the knife-hand downward strike arm; **punch into the palm (30, 32)** uses the punch with the elbow-target palm. "Punch into the palm" is my English name (the chart gives only "Kaunde baro jirugi").
+- [ ] **Back fist side front strike with the elbow into the palm (34, 36)**: the back fist arm plus the target palm.
+- [ ] **Twin knife-hand horizontal strike (41)** uses the knife-hand neck strike arm on both sides; **arc-hand strikes (42, 44)** the Kukkiwon arc-hand arm; **twin fore-knuckle crescent punch (48)** two high punches.
+- [ ] **Double finger thrusts (4, 5)** use the spear-hand arm.
+- [ ] **High front block then back fist (25)** is split into 25-1 and 25-2.
+- [ ] **Library.** New surface `sondung` (back of the hand). New entries: `doublefinger`, `groundkick`, `groundpunch`, `kneelowkick`, `twinpress`, `houterfront`, `backhanddown`, `palmpunch`, `bfsidefront`, `twinkshoriz`, `archigh`, `twinknuckle`, `openfist`.
+- [ ] **Footwork.** The simulator ends 1.5 foot-lengths from the start.
+
 ## History page (/history/) — 18 October 2026
 
 This is a short history in our own words. It's checked against the Kukkiwon's History of Taekwondo, its 1970s chronology and its introduction page, the Vienna ITF's history page and World Taekwondo's 2017 rebrand notice. Those five pages are linked at the bottom of the history page. These points rest on general knowledge rather than those pages, so check them:
