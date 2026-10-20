@@ -84,7 +84,8 @@ def work(n, log, dry):
             relabel(n, FAILED, f"🤖 **Dev-box fixer:** no PR opened: {why}. Details in the run log on the dev box.")
             return
         B.git("push", "-q", "-f", "origin", branch, cwd=wt)
-        body = R["body"][:50000] + f"\n\nFixes #{n}" + FOOTER
+        body = R["body"][:50000].replace("🤖 Generated with [Claude Code](https://claude.com/claude-code)", "").rstrip()
+        body += f"\n\nFixes #{n}" + FOOTER
         url = B.gh("pr", "create", "-R", B.REPO, "--base", "main", "--head", branch,
                    "--title", R["title"][:200], "--body", body, "--label", OPENED).strip()
         relabel(n, OPENED, f"🤖 **Dev-box fixer:** proposed fix in {url}")
