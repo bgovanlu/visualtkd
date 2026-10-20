@@ -57,11 +57,21 @@ BRAND = ('<svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="2
 NAV = [("forms", "/forms/", "Forms"), ("library", "/library/", "Library"), ("history", "/history/", "History"),
        ("how-to-read", "/how-to-read/", "How to read"), ("about", "/#about", "About")]
 
+# Feedback opens the GitHub issue form (.github/ISSUE_TEMPLATE/feedback.yml); the script fills in
+# the page field with the address at the moment of the click, so a form page's #move-<id> comes along.
+REPO = "https://github.com/bgovanlu/visualtkd"
+FEEDBACK = f"{REPO}/issues/new?template=feedback.yml"
+FEEDBACK_JS = ("<script>document.querySelectorAll('a.feedback').forEach(a=>{const f=()=>{a.href=a.dataset.base"
+               "+'&page='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('Feedback: '+document.title)};"
+               "f();['pointerdown','focus'].forEach(e=>a.addEventListener(e,f))})</script>")
+
 def nav(active=None):
     items = "".join(f'<li><a href="{href}"{" aria-current=\"page\"" if key == active else ""}>{label}</a></li>'
                     for key, href, label in NAV)
+    fb = (f'<a class="feedback" href="{FEEDBACK}" data-base="{FEEDBACK}" target="_blank" rel="noopener" '
+          f'title="Report a problem or suggest a change (opens GitHub)">Feedback</a>')
     return (f'<nav class="sitenav" aria-label="Site"><a class="brand" href="/">{BRAND}visualtkd</a>'
-            f'<ul>{items}</ul></nav>')
+            f'<ul>{items}</ul>{fb}</nav>{FEEDBACK_JS}')
 
 def footer(extra=""):
     return ('<footer class="sitefoot"><p>World Taekwondo form names, sequences and counts follow Kukkiwon; ITF patterns follow the ITF Encyclopedia of Taekwon-Do. '

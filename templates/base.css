@@ -20,11 +20,14 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
 .sitenav{display:flex;align-items:center;justify-content:space-between;gap:8px 20px;flex-wrap:wrap;padding-bottom:12px;border-bottom:1px solid var(--line)}
 .sitenav .brand{display:inline-flex;align-items:center;gap:9px;font-family:var(--f-mono);font-size:14px;font-weight:500;letter-spacing:.04em;color:var(--ink);text-decoration:none}
 .sitenav .brand svg{width:22px;height:22px;flex:none}
-.sitenav ul{list-style:none;margin:0;padding:0;display:flex;gap:2px 4px;flex-wrap:wrap}
+.sitenav ul{list-style:none;margin:0 0 0 auto;padding:0;display:flex;gap:2px 4px;flex-wrap:wrap}
 .sitenav ul a{display:block;font-size:14px;font-weight:600;color:var(--muted);text-decoration:none;padding:4px 10px;border-radius:99px}
 .sitenav ul a:hover{color:var(--ink);background:var(--mat)}
 .sitenav ul a[aria-current="page"]{color:var(--ink);background:var(--mat)}
 .sitenav a:focus-visible{outline:2px solid var(--heaven);outline-offset:2px}
+.sitenav .feedback{font-size:14px;font-weight:600;color:var(--heaven);text-decoration:none;padding:3px 11px;border-radius:99px;box-shadow:inset 0 0 0 1px currentColor;margin-left:-12px}
+.sitenav .feedback:hover{background:color-mix(in srgb,var(--heaven) 10%,transparent)}
+@media (max-width:760px){.sitenav{display:grid;grid-template-columns:1fr auto}.sitenav ul{grid-column:1/-1;order:3;margin:0}.sitenav .feedback{margin-left:0}}
 @media (max-width:480px){.sitenav ul a{padding:4px 7px;font-size:13.5px}}
 
 /* Site footer */

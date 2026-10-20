@@ -1,0 +1,37 @@
+name: Site feedback
+description: Something wrong or unclear on visualtkd.com (a move, a diagram, a print sheet, a typo)
+title: "Feedback: "
+labels: [feedback]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping. Please say which page and, on a form page, which count. If your school does a move differently, tell us which version you learned.
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: Filled in when you use the Feedback button on the site.
+      placeholder: https://visualtkd.com/taegeuk/1/#move-3
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem?
+      options:
+        - A move is wrong (stance, technique, direction, hand or foot)
+        - A diagram or figure is hard to read
+        - Print sheet or QR code
+        - Typo or wording
+        - Page broken or slow
+        - Suggestion
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What you saw, and what you expected. A source (Kukkiwon page, ITF Encyclopedia page, video timestamp) helps a lot.
+    validations:
+      required: true
