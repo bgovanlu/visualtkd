@@ -71,12 +71,18 @@ def nav(active=None):
     fb = (f'<a class="feedback" href="{FEEDBACK}" data-base="{FEEDBACK}" target="_blank" rel="noopener" '
           f'title="Report a problem or suggest a change (opens GitHub)">Feedback</a>')
     return (f'<nav class="sitenav" aria-label="Site"><a class="brand" href="/">{BRAND}visualtkd</a>'
-            f'<ul>{items}</ul>{fb}</nav>{FEEDBACK_JS}')
+            f'<ul>{items}</ul>{fb}</nav>')
 
+# The footer invites corrections through the same issue form as the nav button, and carries
+# FEEDBACK_JS so both links exist when it runs. Print sheets hide the footer (build_print.py).
 def footer(extra=""):
-    return ('<footer class="sitefoot"><p>World Taekwondo form names, sequences and counts follow Kukkiwon; ITF patterns follow the ITF Encyclopedia of Taekwon-Do. '
+    fb = (f'<a class="feedback" href="{FEEDBACK}" data-base="{FEEDBACK}" target="_blank" rel="noopener" '
+          f'title="Report a problem or suggest a change (opens GitHub)">Feedback</a>')
+    return ('<footer class="sitefoot"><div><p class="fix">Spotted a mistake, or does your school do a move differently? '
+            f'Use {fb} at the top of the page.</p>'
+            '<p>World Taekwondo form names, sequences and counts follow Kukkiwon; ITF patterns follow the ITF Encyclopedia of Taekwon-Do. '
             'Descriptions are our own words; see each form&rsquo;s official references for the source text.'
-            f'{(" " + extra) if extra else ""}</p><p><a href="/">visualtkd.com</a></p></footer>')
+            f'{(" " + extra) if extra else ""}</p></div><p><a href="/">visualtkd.com</a></p></footer>{FEEDBACK_JS}')
 
 def esc(s):
     return html.escape(str(s), quote=True)
