@@ -1,0 +1,35 @@
+{
+  "sandbox": {
+    "enabled": true,
+    "failIfUnavailable": true,
+    "allowUnsandboxedCommands": false,
+    "autoAllowBashIfSandboxed": true,
+    "excludedCommands": [],
+    "filesystem": {
+      "denyRead": ["~/.aws", "~/.ssh", "~/.config/gh", "~/.gnupg", "~/.netrc", "~/.claude/.credentials.json",
+                   "~/.claude.json", "~/.local/share/keyrings", "/run/user/1000"]
+    },
+    "network": {"allowedDomains": []},
+    "credentials": {
+      "envVars": [
+        {"name": "GH_TOKEN", "mode": "deny"}, {"name": "GITHUB_TOKEN", "mode": "deny"},
+        {"name": "AWS_ACCESS_KEY_ID", "mode": "deny"}, {"name": "AWS_SECRET_ACCESS_KEY", "mode": "deny"},
+        {"name": "AWS_SESSION_TOKEN", "mode": "deny"}, {"name": "ANTHROPIC_API_KEY", "mode": "deny"},
+        {"name": "CLAUDE_CODE_OAUTH_TOKEN", "mode": "deny"}, {"name": "SSH_AUTH_SOCK", "mode": "deny"},
+        {"name": "DBUS_SESSION_BUS_ADDRESS", "mode": "deny"}
+      ]
+    }
+  },
+  "permissions": {
+    "deny": [
+      "Read(~/.aws/**)", "Read(~/.ssh/**)", "Read(~/.config/gh/**)", "Read(~/.gnupg/**)", "Read(~/.netrc)",
+      "Read(~/.claude/.credentials.json)", "Read(~/.claude.json)", "Read(~/.local/share/keyrings/**)", "Read(//run/user/**)",
+      "Edit(~/.claude/**)", "Edit(~/.config/**)", "Edit(~/.bashrc)", "Edit(~/.profile)", "Edit(~/.local/bin/**)",
+      "Bash(git push *)", "Bash(gh *)", "WebSearch"
+    ],
+    "allow": [
+      "WebFetch(domain:www.kukkiwon.or.kr)", "WebFetch(domain:kukkiwon.or.kr)", "WebFetch(domain:www.worldtaekwondo.org)",
+      "WebFetch(domain:itf-tkd.org)", "WebFetch(domain:www.itf-administration.com)", "WebFetch(domain:taekwondo.fandom.com)"
+    ]
+  }
+}

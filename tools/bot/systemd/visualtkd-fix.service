@@ -1,0 +1,12 @@
+[Unit]
+Description=visualtkd: fix bot-ready issues with Claude Code and open PRs
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/visualtkd
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+UnsetEnvironment=ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN
+ExecStart=/usr/bin/python3 %h/visualtkd/tools/bot/fix_issues.py
+TimeoutStartSec=5h
+Nice=10

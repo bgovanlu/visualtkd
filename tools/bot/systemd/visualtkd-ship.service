@@ -1,0 +1,10 @@
+[Unit]
+Description=visualtkd: merge PRs labelled ship and deploy main
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/visualtkd
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/usr/bin/python3 %h/visualtkd/tools/bot/ship.py
+TimeoutStartSec=30min
