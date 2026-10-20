@@ -201,6 +201,7 @@ Sources: [Blue Dragon TKD](https://www.bluedragontkd.net/taekwondo/poomse/black-
 - [ ] **Moves 20-2 and 25-2, side elbow.** **Drawn facing ga in a horse stance,** with the elbow toward the side you came from and the other palm pushing the fist.
 - [ ] **Moves 27–30, strikes and stances.** Blue Dragon has an outer strike in 27 and inward neck strikes in 28–29, with walking stances in 29 and 30. MTC has front stances throughout. **Drawn as Blue Dragon** (walking stances bring you back to the start; four front stances would overshoot).
 - [ ] **Kihaps** at 11-3 and 30 (Blue Dragon, NBTKDA, Taekwondo Nation agree).
+- [ ] **"The first-Dan form" (#19).** The form note now says a new Il Dan (1st Dan) black belt is expected to learn and know Koryo. The Kukkiwon Koryo page and poomsae index don't name a rank for any black-belt form (the index only calls Koryo, Keumgang and Taebaek the first Yudanja forms); the MTC sheet above is titled "1st Dan Koryo". Confirm the wording, and say if Keumgang (2nd Dan) and the other black-belt forms should get the same line.
 
 ## Keumgang · 금강
 

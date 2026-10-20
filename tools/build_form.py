@@ -23,6 +23,10 @@ def seal(sym):
     """Black-belt forms: the name in Hanja, set as a vertical seal, instead of a trigram."""
     return f'<div class="seal" lang="zh-Hant" aria-label="{sym["name"]} {sym["hanja"]}">{sym["hanja"]}</div>'
 
+def note_p(p):
+    """The form note: one paragraph, or a list of paragraphs (Koryo adds the rank it belongs to)."""
+    return p if isinstance(p, str) else "</p>\n          <p>".join(p)
+
 def refs(F):
     out = ""
     for r in F["refs"]:
@@ -65,7 +69,7 @@ def build(path, do_print, images=False):
         "BASE_CSS": S.read("templates/base.css"), "NAV": S.nav("forms"), "SITEFOOT": S.footer(),
         "FIGURE_JS": S.read("templates/figure.js"), "LIB_JSON": S.lib_js(F.get("family") == "itf"),
         "FOOTWORK_JS": S.read("templates/footwork.js").replace("if(typeof module", "if(false&&typeof module"),
-        "NOTE_H": F["note"]["h"], "NOTE_P": F["note"]["p"], "REFS": refs(F), "FOOTER": F["footer"], "FORM_JSON": data,
+        "NOTE_H": F["note"]["h"], "NOTE_P": note_p(F["note"]["p"]), "REFS": refs(F), "FOOTER": F["footer"], "FORM_JSON": data,
     }
     # --images: figures from design/moves/<form>/ (tools/figures.py), built into preview/ until they are approved
     out_dir = os.path.join(ROOT, "preview" if images else "site", F["slug"]); os.makedirs(out_dir, exist_ok=True)
