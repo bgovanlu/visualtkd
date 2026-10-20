@@ -50,6 +50,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
 .sitefoot{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
 .sitefoot a{color:var(--heaven)}
 .sitefoot p{margin:0;max-width:72ch}
+.sitefoot .fix{margin-bottom:6px;color:var(--ink)}
 
 /* Stance chips (form pages, library, how-to-read): walking outlined, front filled, back double, kick dashed, crane dotted blue */
 .chip{font-size:11.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:2px 9px;border-radius:99px;border:1.5px solid var(--muted);color:var(--muted);white-space:nowrap;display:inline-flex;gap:5px;align-items:center}
@@ -331,7 +332,7 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
 </style>
 
 <div class="wrap">
-  <nav class="sitenav" aria-label="Site"><a class="brand" href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="var(--heaven)"/><path d="M5 6h14M6.5 12h11M5 18h14M12 6v12" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>visualtkd</a><ul><li><a href="/forms/" aria-current="page">Forms</a></li><li><a href="/library/">Library</a></li><li><a href="/history/">History</a></li><li><a href="/how-to-read/">How to read</a></li><li><a href="/#about">About</a></li></ul><a class="feedback" href="https://github.com/bgovanlu/visualtkd/issues/new?template=feedback.yml" data-base="https://github.com/bgovanlu/visualtkd/issues/new?template=feedback.yml" target="_blank" rel="noopener" title="Report a problem or suggest a change (opens GitHub)">Feedback</a></nav><script>document.querySelectorAll('a.feedback').forEach(a=>{const f=()=>{a.href=a.dataset.base+'&page='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('Feedback: '+document.title)};f();['pointerdown','focus'].forEach(e=>a.addEventListener(e,f))})</script>
+  <nav class="sitenav" aria-label="Site"><a class="brand" href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="var(--heaven)"/><path d="M5 6h14M6.5 12h11M5 18h14M12 6v12" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>visualtkd</a><ul><li><a href="/forms/" aria-current="page">Forms</a></li><li><a href="/library/">Library</a></li><li><a href="/history/">History</a></li><li><a href="/how-to-read/">How to read</a></li><li><a href="/#about">About</a></li></ul><a class="feedback" href="https://github.com/bgovanlu/visualtkd/issues/new?template=feedback.yml" data-base="https://github.com/bgovanlu/visualtkd/issues/new?template=feedback.yml" target="_blank" rel="noopener" title="Report a problem or suggest a change (opens GitHub)">Feedback</a></nav>
   <nav class="actions" aria-label="Page actions">
     <a class="back" href="/forms/">← All forms</a>
     <a class="print" href="kicho-4-print.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4.5V9.5A1.5 1.5 0 0 1 6 8h12a1.5 1.5 0 0 1 1.5 1.5V17H17M7 13.5h10V21H7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>Print sheet <span>PDF · 2 pages</span></a>
@@ -461,7 +462,7 @@ footer{font-size:13px;color:var(--muted);max-width:72ch}
   </section>
 
   <footer>20 movements on the same I-shaped line as Kicho Hana: the first line (1–4) is walked again at the end (17–20). The kihaps are on 8 and 16. Finish with <b>Baro</b>: bring the left foot back and turn to face ga in the ready stance, on the spot where you started.</footer>
-  <footer class="sitefoot"><p>World Taekwondo form names, sequences and counts follow Kukkiwon; ITF patterns follow the ITF Encyclopedia of Taekwon-Do. Descriptions are our own words; see each form&rsquo;s official references for the source text.</p><p><a href="/">visualtkd.com</a></p></footer>
+  <footer class="sitefoot"><div><p class="fix">Spotted a mistake, or does your school do a move differently? Use <a class="feedback" href="https://github.com/bgovanlu/visualtkd/issues/new?template=feedback.yml" data-base="https://github.com/bgovanlu/visualtkd/issues/new?template=feedback.yml" target="_blank" rel="noopener" title="Report a problem or suggest a change (opens GitHub)">Feedback</a> at the top of the page.</p><p>World Taekwondo form names, sequences and counts follow Kukkiwon; ITF patterns follow the ITF Encyclopedia of Taekwon-Do. Descriptions are our own words; see each form&rsquo;s official references for the source text.</p></div><p><a href="/">visualtkd.com</a></p></footer><script>document.querySelectorAll('a.feedback').forEach(a=>{const f=()=>{a.href=a.dataset.base+'&page='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('Feedback: '+document.title)};f();['pointerdown','focus'].forEach(e=>a.addEventListener(e,f))})</script>
 </div>
 
 <script>

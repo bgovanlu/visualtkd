@@ -45,6 +45,7 @@ body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:1
 .sitefoot{border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
 .sitefoot a{color:var(--heaven)}
 .sitefoot p{margin:0;max-width:72ch}
+.sitefoot .fix{margin-bottom:6px;color:var(--ink)}
 
 /* Stance chips (form pages, library, how-to-read): walking outlined, front filled, back double, kick dashed, crane dotted blue */
 .chip{font-size:11.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:2px 9px;border-radius:99px;border:1.5px solid var(--muted);color:var(--muted);white-space:nowrap;display:inline-flex;gap:5px;align-items:center}
@@ -117,7 +118,7 @@ section > p.intro{margin:0 0 16px;color:var(--muted);max-width:68ch}
 </head>
 <body>
 <div class="wrap">
-<nav class="sitenav" aria-label="Site"><a class="brand" href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="var(--heaven)"/><path d="M5 6h14M6.5 12h11M5 18h14M12 6v12" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>visualtkd</a><ul><li><a href="/forms/">Forms</a></li><li><a href="/library/">Library</a></li><li><a href="/history/">History</a></li><li><a href="/how-to-read/">How to read</a></li><li><a href="/#about">About</a></li></ul><a class="feedback" href="https://github.com/bgovanlu/visualtkd/issues/new?template=feedback.yml" data-base="https://github.com/bgovanlu/visualtkd/issues/new?template=feedback.yml" target="_blank" rel="noopener" title="Report a problem or suggest a change (opens GitHub)">Feedback</a></nav><script>document.querySelectorAll('a.feedback').forEach(a=>{const f=()=>{a.href=a.dataset.base+'&page='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('Feedback: '+document.title)};f();['pointerdown','focus'].forEach(e=>a.addEventListener(e,f))})</script>
+<nav class="sitenav" aria-label="Site"><a class="brand" href="/"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5" fill="var(--heaven)"/><path d="M5 6h14M6.5 12h11M5 18h14M12 6v12" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>visualtkd</a><ul><li><a href="/forms/">Forms</a></li><li><a href="/library/">Library</a></li><li><a href="/history/">History</a></li><li><a href="/how-to-read/">How to read</a></li><li><a href="/#about">About</a></li></ul><a class="feedback" href="https://github.com/bgovanlu/visualtkd/issues/new?template=feedback.yml" data-base="https://github.com/bgovanlu/visualtkd/issues/new?template=feedback.yml" target="_blank" rel="noopener" title="Report a problem or suggest a change (opens GitHub)">Feedback</a></nav>
 <section class="hero">
   <div>
     <div class="eyebrow">Kukkiwon poomsae, drawn clearly</div>
@@ -158,7 +159,7 @@ section > p.intro{margin:0 0 16px;color:var(--muted);max-width:68ch}
   <div><h3>Print sheets and QR codes</h3>
     <p>Each form prints as two US Letter pages: the floor plan, then the full sequence and references. A QR code on each page opens the form on your phone, and every reference has its own short <b>visualtkd.com/go/</b> link, so printed sheets keep working even when a video or page moves.</p></div>
 </div></section>
-<footer class="sitefoot"><p>World Taekwondo form names, sequences and counts follow Kukkiwon; ITF patterns follow the ITF Encyclopedia of Taekwon-Do. Descriptions are our own words; see each form&rsquo;s official references for the source text.</p><p><a href="/">visualtkd.com</a></p></footer>
+<footer class="sitefoot"><div><p class="fix">Spotted a mistake, or does your school do a move differently? Use <a class="feedback" href="https://github.com/bgovanlu/visualtkd/issues/new?template=feedback.yml" data-base="https://github.com/bgovanlu/visualtkd/issues/new?template=feedback.yml" target="_blank" rel="noopener" title="Report a problem or suggest a change (opens GitHub)">Feedback</a> at the top of the page.</p><p>World Taekwondo form names, sequences and counts follow Kukkiwon; ITF patterns follow the ITF Encyclopedia of Taekwon-Do. Descriptions are our own words; see each form&rsquo;s official references for the source text.</p></div><p><a href="/">visualtkd.com</a></p></footer><script>document.querySelectorAll('a.feedback').forEach(a=>{const f=()=>{a.href=a.dataset.base+'&page='+encodeURIComponent(location.href)+'&title='+encodeURIComponent('Feedback: '+document.title)};f();['pointerdown','focus'].forEach(e=>a.addEventListener(e,f))})</script>
 </div>
 
 </body>
